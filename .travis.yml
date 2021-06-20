@@ -1,0 +1,42 @@
+language: ruby
+
+sudo: required
+dist: trusty
+addons:
+  chrome: stable
+
+cache:
+  bundler: true
+
+branches:
+  except:
+    - gh-pages
+
+rvm:
+  - 2.4.1
+  - ruby-head
+
+bundler_args: --without production
+
+before_install:
+  - wget -N https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P ~/Downloads
+  - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
+  - sudo mv -f ~/Downloads/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+
+  - bundle exec rake travis
+
+script:
+  - cd _tests
+  - bundle exec cucumber --tags ~@ignore
+
+notifications:
+  email: false
