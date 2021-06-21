@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-06-20T20:37:37+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">让世界是世界, 你甘心是你的茧</title><link href="https://empvalley.com/2014/03/17/FIGHTING/" rel="alternate" type="text/html" title="让世界是世界, 你甘心是你的茧" /><published>2014-03-17T00:00:00+08:00</published><updated>2014-03-17T00:00:00+08:00</updated><id>https://empvalley.com/2014/03/17/FIGHTING</id><content type="html" xml:base="https://empvalley.com/2014/03/17/FIGHTING/">&lt;h2 id=&quot;heading-让世界是世界你甘心是你的茧&quot;&gt;让世界是世界，你甘心是你的茧。&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-06-21T21:12:15+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">备份 VMware Workstation 虚拟机的最佳做法</title><link href="https://empvalley.com/2021/06/20/backup-vmware-workstation/" rel="alternate" type="text/html" title="备份 VMware Workstation 虚拟机的最佳做法" /><published>2021-06-20T00:00:00+08:00</published><updated>2021-06-20T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/20/backup-vmware-workstation</id><content type="html" xml:base="https://empvalley.com/2021/06/20/backup-vmware-workstation/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-操作步骤&quot; id=&quot;markdown-toc-heading-操作步骤&quot;&gt;操作步骤&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-操作步骤&quot;&gt;操作步骤&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;确保虚拟机电源处于已关闭状态。&lt;/li&gt;
+  &lt;li&gt;找到虚拟机文件夹。
+    &lt;ol&gt;
+      &lt;li&gt;右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。&lt;/li&gt;
+      &lt;li&gt;点击 Options。&lt;/li&gt;
+      &lt;li&gt;点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。&lt;/li&gt;
+  &lt;li&gt;复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。&lt;/li&gt;
+  &lt;li&gt;点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。&lt;/li&gt;
+  &lt;li&gt;右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。&lt;/li&gt;
+  &lt;li&gt;选中 Hard Disk &amp;gt; Remove。&lt;/li&gt;
+  &lt;li&gt;Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。&lt;/li&gt;
+  &lt;li&gt;启动时会询问是移动还是复制的虚拟机，选复制的选项。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/2006202?lang=zh_CN&quot;&gt;备份 VMware Workstation 虚拟机的最佳做法 (2006202)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/1003880&quot;&gt;找出虚拟机文件的位置 (1003880)&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VMware Workstation" /><summary type="html">操作步骤 操作步骤 确保虚拟机电源处于已关闭状态。 找到虚拟机文件夹。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 点击 Options。 点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。 复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。 复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。 点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 选中 Hard Disk &amp;gt; Remove。 Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。 启动时会询问是移动还是复制的虚拟机，选复制的选项。 参考： 备份 VMware Workstation 虚拟机的最佳做法 (2006202) 找出虚拟机文件的位置 (1003880)</summary></entry><entry><title type="html">让世界是世界, 你甘心是你的茧</title><link href="https://empvalley.com/2014/03/17/FIGHTING/" rel="alternate" type="text/html" title="让世界是世界, 你甘心是你的茧" /><published>2014-03-17T00:00:00+08:00</published><updated>2014-03-17T00:00:00+08:00</updated><id>https://empvalley.com/2014/03/17/FIGHTING</id><content type="html" xml:base="https://empvalley.com/2014/03/17/FIGHTING/">&lt;h2 id=&quot;heading-让世界是世界你甘心是你的茧&quot;&gt;让世界是世界，你甘心是你的茧。&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;– In memoriam a girl (26th January, 1990 ~ 17th March, 2012)&lt;/p&gt;
@@ -6,4 +36,298 @@
 
 &lt;h2 id=&quot;heading-你必须非常努力才能看起来毫不费力&quot;&gt;你必须非常努力，才能看起来毫不费力。&lt;/h2&gt;
 
-&lt;h2 id=&quot;heading-要么读书要么旅行身体和灵魂必须有一个在路上&quot;&gt;要么读书，要么旅行，身体和灵魂必须有一个在路上。&lt;/h2&gt;</content><author><name>晨霜</name></author><category term="FIGHTING" /><category term="FIGHTING" /><summary type="html">让世界是世界，你甘心是你的茧。 – In memoriam a girl (26th January, 1990 ~ 17th March, 2012) 你必须非常努力，才能看起来毫不费力。 要么读书，要么旅行，身体和灵魂必须有一个在路上。</summary></entry></feed>
+&lt;h2 id=&quot;heading-要么读书要么旅行身体和灵魂必须有一个在路上&quot;&gt;要么读书，要么旅行，身体和灵魂必须有一个在路上。&lt;/h2&gt;</content><author><name>晨霜</name></author><category term="FIGHTING" /><category term="FIGHTING" /><summary type="html">让世界是世界，你甘心是你的茧。 – In memoriam a girl (26th January, 1990 ~ 17th March, 2012) 你必须非常努力，才能看起来毫不费力。 要么读书，要么旅行，身体和灵魂必须有一个在路上。</summary></entry><entry><title type="html">Kramdown使用示例</title><link href="https://empvalley.com/2013/04/22/quick-kramdown-demo-and-code-highlighting/" rel="alternate" type="text/html" title="Kramdown使用示例" /><published>2013-04-22T00:00:00+08:00</published><updated>2013-04-22T00:00:00+08:00</updated><id>https://empvalley.com/2013/04/22/quick-kramdown-demo-and-code-highlighting</id><content type="html" xml:base="https://empvalley.com/2013/04/22/quick-kramdown-demo-and-code-highlighting/">&lt;blockquote&gt;
+  &lt;p&gt;2017年5月24日更新&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这篇文章用于测试 &lt;a href=&quot;https://github.com/yizeng/simple-texture-jekyll-theme&quot;&gt;Simple Texture&lt;/a&gt; 主题的 &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;kramdown&lt;/a&gt; 格式。&lt;/p&gt;
+
+&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-常规使用&quot; id=&quot;markdown-toc-heading-常规使用&quot;&gt;常规使用&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-引用&quot; id=&quot;markdown-toc-heading-引用&quot;&gt;引用&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-嵌套引用&quot; id=&quot;markdown-toc-heading-嵌套引用&quot;&gt;嵌套引用&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-列表引用&quot; id=&quot;markdown-toc-heading-列表引用&quot;&gt;列表引用&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-长文本引用&quot; id=&quot;markdown-toc-heading-长文本引用&quot;&gt;长文本引用&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-列表&quot; id=&quot;markdown-toc-heading-列表&quot;&gt;列表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-表格&quot; id=&quot;markdown-toc-heading-表格&quot;&gt;表格&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-水平线&quot; id=&quot;markdown-toc-heading-水平线&quot;&gt;水平线&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-图片&quot; id=&quot;markdown-toc-heading-图片&quot;&gt;图片&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-代码&quot; id=&quot;markdown-toc-heading-代码&quot;&gt;代码&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-代码段&quot; id=&quot;markdown-toc-heading-代码段&quot;&gt;代码段&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-围栏式代码块&quot; id=&quot;markdown-toc-heading-围栏式代码块&quot;&gt;围栏式代码块&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-长代码块&quot; id=&quot;markdown-toc-heading-长代码块&quot;&gt;长代码块&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-代码块语言&quot; id=&quot;markdown-toc-heading-代码块语言&quot;&gt;代码块语言&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-高亮&quot; id=&quot;markdown-toc-heading-高亮&quot;&gt;高亮&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-外部引用&quot; id=&quot;markdown-toc-heading-外部引用&quot;&gt;外部引用&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-常规高亮&quot; id=&quot;markdown-toc-heading-常规高亮&quot;&gt;常规高亮&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-长文本高亮&quot; id=&quot;markdown-toc-heading-长文本高亮&quot;&gt;长文本高亮&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-带有行号的长文本高亮&quot; id=&quot;markdown-toc-heading-带有行号的长文本高亮&quot;&gt;带有行号的长文本高亮&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-常规使用&quot;&gt;常规使用&lt;/h2&gt;
+
+&lt;p&gt;普通段落。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://empvalley.com&quot;&gt;一个链接&lt;/a&gt;，链接到我的主页。&lt;/p&gt;
+
+&lt;p&gt;带有标题（title）的&lt;a href=&quot;https://empvalley.com/blog&quot; title=&quot;晨霜's Blog&quot;&gt;链接&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;斜体并加粗。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;加粗。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;斜体。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;文本加粗。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;脚注&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-引用&quot;&gt;引用&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ruby -v&lt;/p&gt;
+
+  &lt;p&gt;tsc -v&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;heading-嵌套引用&quot;&gt;嵌套引用&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;引用块中的段落。&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;嵌套引用。&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;heading-列表引用&quot;&gt;列表引用&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;无序列表&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;列表一&lt;/li&gt;
+    &lt;li&gt;列表二&lt;/li&gt;
+    &lt;li&gt;列表三&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;有序列表&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;列表一&lt;/li&gt;
+    &lt;li&gt;列表二&lt;/li&gt;
+    &lt;li&gt;列表三&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;heading-长文本引用&quot;&gt;长文本引用&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll 是一个用于个人、项目或组织站点，简单的、博客相关的静态站点生成器。&lt;/p&gt;
+
+  &lt;p&gt;可以理解为是一个 CMS （内容管理系统），但是没有那么复杂。Jekyll 获取内容，渲染 Markdown 和模板，然后输出完整的、可托管在 Apache、Nginx 或其它网站服务器上的静态网站。&lt;/p&gt;
+
+  &lt;p&gt;Jekyll 是 GitHub Pages 的引擎，可以托管 GitHub 仓库中的网站。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;heading-列表&quot;&gt;列表&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;列表一 项目一
+    &lt;ul&gt;
+      &lt;li&gt;内嵌列表 项目一&lt;/li&gt;
+      &lt;li&gt;内嵌列表 项目二&lt;/li&gt;
+      &lt;li&gt;内嵌列表 项目三 包含引用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ruby -v&lt;/p&gt;
+
+  &lt;p&gt;tsc -v&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;列表一 项目二&lt;/li&gt;
+  &lt;li&gt;列表一 项目三&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-表格&quot;&gt;表格&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;表格一&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Default aligned&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
+          &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;First body part&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Second line&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Third line&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Footer row&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;表格二&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Default aligned&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
+          &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;First body part&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Second line&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Third line&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Footer row&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-水平线&quot;&gt;水平线&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;heading-图片&quot;&gt;图片&lt;/h2&gt;
+
+&lt;p&gt;图片来了！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kramdown.gettalong.org/overview.png&quot; alt=&quot;smiley&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-代码&quot;&gt;代码&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-代码段&quot;&gt;代码段&lt;/h3&gt;
+
+&lt;p&gt;行内代码块  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:/Ruby23-x64&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SELECT  &quot;offices&quot;.* FROM &quot;offices&quot; &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;反引号 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;`&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; `一些` &lt;/code&gt; 文本 (注意：使用两个空格，以便能够输出一个空格！)。&lt;/p&gt;
+
+&lt;p&gt;Ruby 代码块 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-围栏式代码块&quot;&gt;围栏式代码块&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+~~~~~~~
+带有波浪符的代码
+~~~~~~~~
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;heading-长代码块&quot;&gt;长代码块&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function myFunction() {
+    alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;heading-代码块语言&quot;&gt;代码块语言&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;what?&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-高亮&quot;&gt;高亮&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-外部引用&quot;&gt;外部引用&lt;/h3&gt;
+
+&lt;script src=&quot;https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;heading-常规高亮&quot;&gt;常规高亮&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;heading-长文本高亮&quot;&gt;长文本高亮&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;heading-带有行号的长文本高亮&quot;&gt;带有行号的长文本高亮&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;脚注。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Jekyll" /><summary type="html">2017年5月24日更新 这篇文章用于测试 Simple Texture 主题的 kramdown 格式。 常规使用 引用 嵌套引用 列表引用 长文本引用 列表 表格 水平线 图片 代码 代码段 围栏式代码块 长代码块 代码块语言 高亮 外部引用 常规高亮 长文本高亮 带有行号的长文本高亮 常规使用 普通段落。 一个链接，链接到我的主页。 带有标题（title）的链接。 斜体并加粗。 加粗。 斜体。 文本加粗。 脚注1。 引用 ruby -v tsc -v 嵌套引用 引用块中的段落。 嵌套引用。 列表引用 无序列表 列表一 列表二 列表三 有序列表 列表一 列表二 列表三 长文本引用 Jekyll 是一个用于个人、项目或组织站点，简单的、博客相关的静态站点生成器。 可以理解为是一个 CMS （内容管理系统），但是没有那么复杂。Jekyll 获取内容，渲染 Markdown 和模板，然后输出完整的、可托管在 Apache、Nginx 或其它网站服务器上的静态网站。 Jekyll 是 GitHub Pages 的引擎，可以托管 GitHub 仓库中的网站。 列表 列表一 项目一 内嵌列表 项目一 内嵌列表 项目二 内嵌列表 项目三 包含引用 ruby -v tsc -v 列表一 项目二 列表一 项目三 表格 表格一 Default aligned Left aligned Center aligned Right aligned First body part Second cell Third cell fourth cell Second line foo strong baz Third line quux baz bar Footer row       表格二 Default aligned Left aligned Center aligned Right aligned First body part Second cell Third cell fourth cell Second line foo strong baz Third line quux baz bar Footer row       水平线 图片 图片来了！ 代码 代码段 行内代码块 C:/Ruby23-x64 or SELECT &quot;offices&quot;.* FROM &quot;offices&quot; 反引号 ` `一些` 文本 (注意：使用两个空格，以便能够输出一个空格！)。 Ruby 代码块 x = Class.new 围栏式代码块 ~~~~~~~ 带有波浪符的代码 ~~~~~~~~ 长代码块 function myFunction() { alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;); } 代码块语言 def what? 42 end 高亮 外部引用 常规高亮 def foo puts 'foo' end 长文本高亮 public class Hello { public static void Main() { Console.WriteLine(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;); } } 带有行号的长文本高亮 1 2 3 function myFunction() { alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;); } 脚注。 &amp;#8617;</summary></entry></feed>

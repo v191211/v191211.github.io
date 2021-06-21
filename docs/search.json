@@ -1,10 +1,24 @@
 [
   
     {
+      "title"      : "备份 VMware Workstation 虚拟机的最佳做法",
+      "url"        : "/2021/06/20/backup-vmware-workstation/",
+      "date"       : "2021-06-20 00:00:00 +0800",
+      "shortdate"  : "June 20, 2021"
+    } ,
+  
+    {
       "title"      : "让世界是世界, 你甘心是你的茧",
       "url"        : "/2014/03/17/FIGHTING/",
       "date"       : "2014-03-17 00:00:00 +0800",
       "shortdate"  : "March 17, 2014"
+    } ,
+  
+    {
+      "title"      : "Kramdown使用示例",
+      "url"        : "/2013/04/22/quick-kramdown-demo-and-code-highlighting/",
+      "date"       : "2013-04-22 00:00:00 +0800",
+      "shortdate"  : "April 22, 2013"
     } 
   
 ]
