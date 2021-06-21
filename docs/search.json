@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "Intellij Idea 常用插件",
+      "url"        : "/2021/06/21/intellij-idea-common-plugins/",
+      "date"       : "2021-06-21 00:00:00 +0800",
+      "shortdate"  : "June 21, 2021"
+    } ,
+  
+    {
       "title"      : "备份 VMware Workstation 虚拟机的最佳做法",
       "url"        : "/2021/06/20/backup-vmware-workstation/",
       "date"       : "2021-06-20 00:00:00 +0800",
