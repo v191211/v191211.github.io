@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-06-21T21:57:41+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">Intellij Idea 常用插件</title><link href="https://empvalley.com/2021/06/21/intellij-idea-common-plugins/" rel="alternate" type="text/html" title="Intellij Idea 常用插件" /><published>2021-06-21T00:00:00+08:00</published><updated>2021-06-21T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/21/intellij-idea-common-plugins</id><content type="html" xml:base="https://empvalley.com/2021/06/21/intellij-idea-common-plugins/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-06-22T21:42:24+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">生成 SSH Key</title><link href="https://empvalley.com/2021/06/22/generating-a-new-ssh-key/" rel="alternate" type="text/html" title="生成 SSH Key" /><published>2021-06-22T00:00:00+08:00</published><updated>2021-06-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/22/generating-a-new-ssh-key</id><content type="html" xml:base="https://empvalley.com/2021/06/22/generating-a-new-ssh-key/">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;打开 Git Bash。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;粘贴下面代码，替换为自己的邮箱。&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; ed25519 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;注意：如果使用的系统版本较低，不支持 Ed25519 算法，使用下面代码：&lt;/p&gt;
+
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
+
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;这样就使用提供的邮箱创建了一个新的 key。&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Generating public/private ed25519 key pair.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;提示”输入一个路径保存 key“时，直接按回车键，会将 key 保存到默认位置。&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Enter a file &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;which to save the key &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/c/Users/you/.ssh/id_ed25519&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:[Press enter]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;输入密码，直接回车表示不设置密码。&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Enter passphrase &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;empty &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;no passphrase&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Type a passphrase]
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Enter same passphrase again: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Type passphrase again]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot;&gt;生成 ssh key 并添加到 ssh-agent&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSH Key" /><summary type="html">打开 Git Bash。 粘贴下面代码，替换为自己的邮箱。 $ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; 注意：如果使用的系统版本较低，不支持 Ed25519 算法，使用下面代码： $ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 这样就使用提供的邮箱创建了一个新的 key。 &amp;gt; Generating public/private ed25519 key pair. 提示”输入一个路径保存 key“时，直接按回车键，会将 key 保存到默认位置。 &amp;gt; Enter a file in which to save the key (/c/Users/you/.ssh/id_ed25519):[Press enter] 输入密码，直接回车表示不设置密码。 &amp;gt; Enter passphrase (empty for no passphrase): [Type a passphrase] &amp;gt; Enter same passphrase again: [Type passphrase again] 参考： 生成 ssh key 并添加到 ssh-agent</summary></entry><entry><title type="html">客户端使用多个 SSH Keys</title><link href="https://empvalley.com/2021/06/22/use-multiple-ssh-private-keys-on-client/" rel="alternate" type="text/html" title="客户端使用多个 SSH Keys" /><published>2021-06-22T00:00:00+08:00</published><updated>2021-06-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/22/use-multiple-ssh-private-keys-on-client</id><content type="html" xml:base="https://empvalley.com/2021/06/22/use-multiple-ssh-private-keys-on-client/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-生成-ssh-key&quot; id=&quot;markdown-toc-heading-生成-ssh-key&quot;&gt;生成 SSH Key&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-创建配置文件管理-ssh-keys&quot; id=&quot;markdown-toc-heading-创建配置文件管理-ssh-keys&quot;&gt;创建配置文件管理 SSH Keys&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-生成-ssh-key&quot;&gt;生成 SSH Key&lt;/h2&gt;
+
+&lt;p&gt;参考：&lt;a href=&quot;https://empvalley.com/2021/06/22/generating-a-new-ssh-key/&quot;&gt;生成 SSH Key&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-创建配置文件管理-ssh-keys&quot;&gt;创建配置文件管理 SSH Keys&lt;/h2&gt;
+
+&lt;p&gt;假设&lt;strong&gt;你公司的 GitHub 账户用户名是 abc1234&lt;/strong&gt;，&lt;strong&gt;你个人的 GitHub 账户用户名是 jack1234&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;假设你创建了两个 RSA Keys，分别命名为 &lt;strong&gt;id_rsa_company&lt;/strong&gt; 和 &lt;strong&gt;id_rsa_personal&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;你在 &lt;strong&gt;~/.ssh  目录下创建 config 文件&lt;/strong&gt;，文件内容如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Company account&lt;/span&gt;
+Host company
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_company
+
+&lt;span class=&quot;c&quot;&gt;# Personal account&lt;/span&gt;
+Host personal
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_personal
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;当你要克隆公司 GitHub 账号上的仓库（仓库名为 demo），仓库的 URL 大概是这样：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Repo URL: git@github.com:abc1234/demo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;你需要在克隆的时候修改上面的仓库 URL 地址为：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git@company:abc1234/demo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;注意 github.com 是如何被替换为我们定义在配置文件中的 &quot;company&quot; 别名的。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;同样，你必须根据配置文件中的别名修改个人账户仓库的 URL 地址。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/38454037/4612522&quot;&gt;客户端使用多个 SSH Keys 最佳实践&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSH Keys" /><summary type="html">生成 SSH Key 创建配置文件管理 SSH Keys 生成 SSH Key 参考：生成 SSH Key 创建配置文件管理 SSH Keys 假设你公司的 GitHub 账户用户名是 abc1234，你个人的 GitHub 账户用户名是 jack1234。 假设你创建了两个 RSA Keys，分别命名为 id_rsa_company 和 id_rsa_personal。 你在 ~/.ssh 目录下创建 config 文件，文件内容如下： # Company account Host company HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa_company # Personal account Host personal HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa_personal 当你要克隆公司 GitHub 账号上的仓库（仓库名为 demo），仓库的 URL 大概是这样： Repo URL: git@github.com:abc1234/demo.git 你需要在克隆的时候修改上面的仓库 URL 地址为： git@company:abc1234/demo.git 注意 github.com 是如何被替换为我们定义在配置文件中的 &quot;company&quot; 别名的。 同样，你必须根据配置文件中的别名修改个人账户仓库的 URL 地址。 参考： 客户端使用多个 SSH Keys 最佳实践</summary></entry><entry><title type="html">Intellij Idea 常用插件</title><link href="https://empvalley.com/2021/06/21/intellij-idea-common-plugins/" rel="alternate" type="text/html" title="Intellij Idea 常用插件" /><published>2021-06-21T00:00:00+08:00</published><updated>2021-06-21T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/21/intellij-idea-common-plugins</id><content type="html" xml:base="https://empvalley.com/2021/06/21/intellij-idea-common-plugins/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-lombok&quot; id=&quot;markdown-toc-heading-lombok&quot;&gt;Lombok&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-restfultoolkit&quot; id=&quot;markdown-toc-heading-restfultoolkit&quot;&gt;RestfulToolkit&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-mybatisx&quot; id=&quot;markdown-toc-heading-mybatisx&quot;&gt;MyBatisX&lt;/a&gt;&lt;/li&gt;
@@ -67,306 +158,380 @@
 
 &lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/2006202?lang=zh_CN&quot;&gt;备份 VMware Workstation 虚拟机的最佳做法 (2006202)&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/1003880&quot;&gt;找出虚拟机文件的位置 (1003880)&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VMware Workstation" /><summary type="html">操作步骤 操作步骤 确保虚拟机电源处于已关闭状态。 找到虚拟机文件夹。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 点击 Options。 点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。 复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。 复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。 点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 选中 Hard Disk &amp;gt; Remove。 Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。 启动时会询问是移动还是复制的虚拟机，选复制的选项。 参考： 备份 VMware Workstation 虚拟机的最佳做法 (2006202) 找出虚拟机文件的位置 (1003880)</summary></entry><entry><title type="html">让世界是世界, 你甘心是你的茧</title><link href="https://empvalley.com/2014/03/17/FIGHTING/" rel="alternate" type="text/html" title="让世界是世界, 你甘心是你的茧" /><published>2014-03-17T00:00:00+08:00</published><updated>2014-03-17T00:00:00+08:00</updated><id>https://empvalley.com/2014/03/17/FIGHTING</id><content type="html" xml:base="https://empvalley.com/2014/03/17/FIGHTING/">&lt;h2 id=&quot;heading-让世界是世界你甘心是你的茧&quot;&gt;让世界是世界，你甘心是你的茧。&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/1003880&quot;&gt;找出虚拟机文件的位置 (1003880)&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VMware Workstation" /><summary type="html">操作步骤 操作步骤 确保虚拟机电源处于已关闭状态。 找到虚拟机文件夹。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 点击 Options。 点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。 复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。 复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。 点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 选中 Hard Disk &amp;gt; Remove。 Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。 启动时会询问是移动还是复制的虚拟机，选复制的选项。 参考： 备份 VMware Workstation 虚拟机的最佳做法 (2006202) 找出虚拟机文件的位置 (1003880)</summary></entry><entry><title type="html">疯子唧唧</title><link href="https://empvalley.com/2019/08/08/all-nonsense/" rel="alternate" type="text/html" title="疯子唧唧" /><published>2019-08-08T00:00:00+08:00</published><updated>2019-08-08T00:00:00+08:00</updated><id>https://empvalley.com/2019/08/08/all-nonsense</id><content type="html" xml:base="https://empvalley.com/2019/08/08/all-nonsense/">&lt;p&gt;动摇过的事物，要恢复其原先的稳固性，需要比原先更稳固的基础。信仰不像小孩子玩积木，扰乱一百次，还可以重搭一百次。信仰的恢复需要比原先更深刻的思想和认识。这比给表上弦的时间长很多。&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;– In memoriam a girl (26th January, 1990 ~ 17th March, 2012)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;—— 睁眼说瞎话的晓声	2019.08.11&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-你必须非常努力才能看起来毫不费力&quot;&gt;你必须非常努力，才能看起来毫不费力。&lt;/h2&gt;
+&lt;p&gt;素食主义者。&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-要么读书要么旅行身体和灵魂必须有一个在路上&quot;&gt;要么读书，要么旅行，身体和灵魂必须有一个在路上。&lt;/h2&gt;</content><author><name>晨霜</name></author><category term="FIGHTING" /><category term="FIGHTING" /><summary type="html">让世界是世界，你甘心是你的茧。 – In memoriam a girl (26th January, 1990 ~ 17th March, 2012) 你必须非常努力，才能看起来毫不费力。 要么读书，要么旅行，身体和灵魂必须有一个在路上。</summary></entry><entry><title type="html">Kramdown使用示例</title><link href="https://empvalley.com/2013/04/22/quick-kramdown-demo-and-code-highlighting/" rel="alternate" type="text/html" title="Kramdown使用示例" /><published>2013-04-22T00:00:00+08:00</published><updated>2013-04-22T00:00:00+08:00</updated><id>https://empvalley.com/2013/04/22/quick-kramdown-demo-and-code-highlighting</id><content type="html" xml:base="https://empvalley.com/2013/04/22/quick-kramdown-demo-and-code-highlighting/">&lt;blockquote&gt;
-  &lt;p&gt;2017年5月24日更新&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;爱好：食肉！&lt;/p&gt;
 
-&lt;p&gt;这篇文章用于测试 &lt;a href=&quot;https://github.com/yizeng/simple-texture-jekyll-theme&quot;&gt;Simple Texture&lt;/a&gt; 主题的 &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;kramdown&lt;/a&gt; 格式。&lt;/p&gt;
-
-&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-常规使用&quot; id=&quot;markdown-toc-heading-常规使用&quot;&gt;常规使用&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-引用&quot; id=&quot;markdown-toc-heading-引用&quot;&gt;引用&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-嵌套引用&quot; id=&quot;markdown-toc-heading-嵌套引用&quot;&gt;嵌套引用&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-列表引用&quot; id=&quot;markdown-toc-heading-列表引用&quot;&gt;列表引用&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-长文本引用&quot; id=&quot;markdown-toc-heading-长文本引用&quot;&gt;长文本引用&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-列表&quot; id=&quot;markdown-toc-heading-列表&quot;&gt;列表&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-表格&quot; id=&quot;markdown-toc-heading-表格&quot;&gt;表格&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-水平线&quot; id=&quot;markdown-toc-heading-水平线&quot;&gt;水平线&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-图片&quot; id=&quot;markdown-toc-heading-图片&quot;&gt;图片&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-代码&quot; id=&quot;markdown-toc-heading-代码&quot;&gt;代码&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-代码段&quot; id=&quot;markdown-toc-heading-代码段&quot;&gt;代码段&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-围栏式代码块&quot; id=&quot;markdown-toc-heading-围栏式代码块&quot;&gt;围栏式代码块&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-长代码块&quot; id=&quot;markdown-toc-heading-长代码块&quot;&gt;长代码块&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-代码块语言&quot; id=&quot;markdown-toc-heading-代码块语言&quot;&gt;代码块语言&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-高亮&quot; id=&quot;markdown-toc-heading-高亮&quot;&gt;高亮&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-外部引用&quot; id=&quot;markdown-toc-heading-外部引用&quot;&gt;外部引用&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-常规高亮&quot; id=&quot;markdown-toc-heading-常规高亮&quot;&gt;常规高亮&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-长文本高亮&quot; id=&quot;markdown-toc-heading-长文本高亮&quot;&gt;长文本高亮&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-带有行号的长文本高亮&quot; id=&quot;markdown-toc-heading-带有行号的长文本高亮&quot;&gt;带有行号的长文本高亮&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;p&gt;—— His judgment cometh and that right soon. 2020.01.11&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="生活" /><summary type="html">动摇过的事物，要恢复其原先的稳固性，需要比原先更稳固的基础。信仰不像小孩子玩积木，扰乱一百次，还可以重搭一百次。信仰的恢复需要比原先更深刻的思想和认识。这比给表上弦的时间长很多。 —— 睁眼说瞎话的晓声 2019.08.11 素食主义者。 爱好：食肉！ —— His judgment cometh and that right soon. 2020.01.11</summary></entry><entry><title type="html">落了片白茫茫大地真干净</title><link href="https://empvalley.com/2019/07/13/nothing-at-all/" rel="alternate" type="text/html" title="落了片白茫茫大地真干净" /><published>2019-07-13T00:00:00+08:00</published><updated>2019-07-13T00:00:00+08:00</updated><id>https://empvalley.com/2019/07/13/nothing-at-all</id><content type="html" xml:base="https://empvalley.com/2019/07/13/nothing-at-all/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-落了片白茫茫大地真干净&quot; id=&quot;markdown-toc-heading-落了片白茫茫大地真干净&quot;&gt;落了片白茫茫大地真干净&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-好了歌&quot; id=&quot;markdown-toc-heading-好了歌&quot;&gt;«好了歌»&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-好了歌解注&quot; id=&quot;markdown-toc-heading-好了歌解注&quot;&gt;«好了歌解注»&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;heading-常规使用&quot;&gt;常规使用&lt;/h2&gt;
+&lt;h1 id=&quot;heading-落了片白茫茫大地真干净&quot;&gt;落了片白茫茫大地真干净&lt;/h1&gt;
 
-&lt;p&gt;普通段落。&lt;/p&gt;
+&lt;p&gt;为官的家业凋零，富贵的金银散尽。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://empvalley.com&quot;&gt;一个链接&lt;/a&gt;，链接到我的主页。&lt;/p&gt;
+&lt;p&gt;有恩的死里逃生，无情的分明报应。&lt;/p&gt;
 
-&lt;p&gt;带有标题（title）的&lt;a href=&quot;https://empvalley.com/blog&quot; title=&quot;晨霜's Blog&quot;&gt;链接&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;欠命的命已还，欠泪的泪已尽。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;斜体并加粗。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;冤冤相报自非轻，分离聚合皆前定。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;加粗。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;欲知命短问前生，老来富贵也真侥幸。&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;斜体。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;看破的遁入空门，痴迷的枉送了性命。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;文本加粗。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好一似食尽鸟投林，落了片白茫茫大地真干净！&lt;/p&gt;
 
-&lt;p&gt;脚注&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h1 id=&quot;heading-好了歌&quot;&gt;«好了歌»&lt;/h1&gt;
 
-&lt;h2 id=&quot;heading-引用&quot;&gt;引用&lt;/h2&gt;
+&lt;p&gt;世人都晓神仙好，惟有功名忘不了！&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;ruby -v&lt;/p&gt;
+&lt;p&gt;古今将相在何方？荒冢一堆草没了。&lt;/p&gt;
 
-  &lt;p&gt;tsc -v&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;世人都晓神仙好，只有金银忘不了！&lt;/p&gt;
 
-&lt;h3 id=&quot;heading-嵌套引用&quot;&gt;嵌套引用&lt;/h3&gt;
+&lt;p&gt;终朝只恨聚无多，及到多时眼闭了。&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;引用块中的段落。&lt;/p&gt;
+&lt;p&gt;世人都晓神仙好，只有姣妻忘不了！&lt;/p&gt;
 
-  &lt;blockquote&gt;
-    &lt;p&gt;嵌套引用。&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;君生日日说恩情，君死又随人去了。&lt;/p&gt;
 
-&lt;h3 id=&quot;heading-列表引用&quot;&gt;列表引用&lt;/h3&gt;
+&lt;p&gt;世人都晓神仙好，只有儿孙忘不了！&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;无序列表&lt;/p&gt;
+&lt;p&gt;痴心父母古来多，孝顺儿孙谁见了？&lt;/p&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;列表一&lt;/li&gt;
-    &lt;li&gt;列表二&lt;/li&gt;
-    &lt;li&gt;列表三&lt;/li&gt;
-  &lt;/ul&gt;
+&lt;h1 id=&quot;heading-好了歌解注&quot;&gt;«好了歌解注»&lt;/h1&gt;
 
-  &lt;p&gt;有序列表&lt;/p&gt;
+&lt;p&gt;陋室空堂，当年笏满床；&lt;/p&gt;
 
-  &lt;ol&gt;
-    &lt;li&gt;列表一&lt;/li&gt;
-    &lt;li&gt;列表二&lt;/li&gt;
-    &lt;li&gt;列表三&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;衰草枯杨，曾为歌舞场。&lt;/p&gt;
 
-&lt;h3 id=&quot;heading-长文本引用&quot;&gt;长文本引用&lt;/h3&gt;
+&lt;p&gt;蛛丝儿结满雕梁，绿纱今又糊在蓬窗上。&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll 是一个用于个人、项目或组织站点，简单的、博客相关的静态站点生成器。&lt;/p&gt;
+&lt;p&gt;说甚么脂正浓，粉正香，如何两鬓又成霜？&lt;/p&gt;
 
-  &lt;p&gt;可以理解为是一个 CMS （内容管理系统），但是没有那么复杂。Jekyll 获取内容，渲染 Markdown 和模板，然后输出完整的、可托管在 Apache、Nginx 或其它网站服务器上的静态网站。&lt;/p&gt;
+&lt;p&gt;昨日黄土陇头送白骨，今宵红灯帐底卧鸳鸯。&lt;/p&gt;
 
-  &lt;p&gt;Jekyll 是 GitHub Pages 的引擎，可以托管 GitHub 仓库中的网站。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;金满箱，银满箱，展眼乞丐人皆谤。&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-列表&quot;&gt;列表&lt;/h2&gt;
+&lt;p&gt;正叹他人命不长，哪知自己归来丧！&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;列表一 项目一
-    &lt;ul&gt;
-      &lt;li&gt;内嵌列表 项目一&lt;/li&gt;
-      &lt;li&gt;内嵌列表 项目二&lt;/li&gt;
-      &lt;li&gt;内嵌列表 项目三 包含引用&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;训有方，保不定日后作强梁；&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;ruby -v&lt;/p&gt;
+&lt;p&gt;择膏梁，谁承望流落在烟花巷！&lt;/p&gt;
 
-  &lt;p&gt;tsc -v&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;因嫌纱帽小，致使锁枷扛；&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;列表一 项目二&lt;/li&gt;
-  &lt;li&gt;列表一 项目三&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;昨怜破袄寒，今嫌紫蟒长。&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-表格&quot;&gt;表格&lt;/h2&gt;
+&lt;p&gt;乱哄哄，你方唱罢我登场，反认他乡是故乡；&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;表格一&lt;/p&gt;
+&lt;p&gt;甚荒唐，到头来都是为他人作嫁衣裳！&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="读书" /><summary type="html">落了片白茫茫大地真干净 «好了歌» «好了歌解注» 落了片白茫茫大地真干净 为官的家业凋零，富贵的金银散尽。 有恩的死里逃生，无情的分明报应。 欠命的命已还，欠泪的泪已尽。 冤冤相报自非轻，分离聚合皆前定。 欲知命短问前生，老来富贵也真侥幸。 看破的遁入空门，痴迷的枉送了性命。 好一似食尽鸟投林，落了片白茫茫大地真干净！ «好了歌» 世人都晓神仙好，惟有功名忘不了！ 古今将相在何方？荒冢一堆草没了。 世人都晓神仙好，只有金银忘不了！ 终朝只恨聚无多，及到多时眼闭了。 世人都晓神仙好，只有姣妻忘不了！ 君生日日说恩情，君死又随人去了。 世人都晓神仙好，只有儿孙忘不了！ 痴心父母古来多，孝顺儿孙谁见了？ «好了歌解注» 陋室空堂，当年笏满床； 衰草枯杨，曾为歌舞场。 蛛丝儿结满雕梁，绿纱今又糊在蓬窗上。 说甚么脂正浓，粉正香，如何两鬓又成霜？ 昨日黄土陇头送白骨，今宵红灯帐底卧鸳鸯。 金满箱，银满箱，展眼乞丐人皆谤。 正叹他人命不长，哪知自己归来丧！ 训有方，保不定日后作强梁； 择膏梁，谁承望流落在烟花巷！ 因嫌纱帽小，致使锁枷扛； 昨怜破袄寒，今嫌紫蟒长。 乱哄哄，你方唱罢我登场，反认他乡是故乡； 甚荒唐，到头来都是为他人作嫁衣裳！</summary></entry><entry><title type="html">一个大屎坑</title><link href="https://empvalley.com/2019/05/21/a-big-cesspool/" rel="alternate" type="text/html" title="一个大屎坑" /><published>2019-05-21T00:00:00+08:00</published><updated>2019-05-21T00:00:00+08:00</updated><id>https://empvalley.com/2019/05/21/a-big-cesspool</id><content type="html" xml:base="https://empvalley.com/2019/05/21/a-big-cesspool/">&lt;p&gt;一个浮在树梢的我，问一个身陷满黄屎坑只露头颈的我：“你愿意枕着月亮还是六便士睡？”&lt;/p&gt;
 
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Default aligned&lt;/th&gt;
-          &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
-          &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;First body part&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Second line&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Third line&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Footer row&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;表格二&lt;/p&gt;
+&lt;p&gt;身陷屎坑的我回答说：“都不行，我一直在一个大屎坑中，周围全是屎”。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="梦与幻" /><summary type="html">一个浮在树梢的我，问一个身陷满黄屎坑只露头颈的我：“你愿意枕着月亮还是六便士睡？” 身陷屎坑的我回答说：“都不行，我一直在一个大屎坑中，周围全是屎”。</summary></entry><entry><title type="html">一暴十寒</title><link href="https://empvalley.com/2018/05/18/yi-pu-shi-han/" rel="alternate" type="text/html" title="一暴十寒" /><published>2018-05-18T00:00:00+08:00</published><updated>2018-05-18T00:00:00+08:00</updated><id>https://empvalley.com/2018/05/18/yi-pu-shi-han</id><content type="html" xml:base="https://empvalley.com/2018/05/18/yi-pu-shi-han/">&lt;p&gt;雖有天下易生之物也，&lt;/p&gt;
 
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Default aligned&lt;/th&gt;
-          &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
-          &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;First body part&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Second line&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Third line&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Footer row&lt;/td&gt;
-          &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-          &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;一日暴之、十日寒之，&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-水平线&quot;&gt;水平线&lt;/h2&gt;
+&lt;p&gt;未有能生者也。&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;引用：《孟子·告子上》&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="读书" /><summary type="html">雖有天下易生之物也， 一日暴之、十日寒之， 未有能生者也。 引用：《孟子·告子上》</summary></entry><entry><title type="html">林则徐</title><link href="https://empvalley.com/2018/05/09/lin-zexu/" rel="alternate" type="text/html" title="林则徐" /><published>2018-05-09T00:00:00+08:00</published><updated>2018-05-09T00:00:00+08:00</updated><id>https://empvalley.com/2018/05/09/lin-zexu</id><content type="html" xml:base="https://empvalley.com/2018/05/09/lin-zexu/">&lt;p&gt;子孙若如我，留钱做什么？贤而多财，则损其志。&lt;/p&gt;
+
+&lt;p&gt;子孙不如我，留钱做什么？愚而多财，益增其过。&lt;/p&gt;
+
+&lt;p&gt;1.存心不善，风水无益。&lt;/p&gt;
+
+&lt;p&gt;2.父母不孝，奉神无益。&lt;/p&gt;
+
+&lt;p&gt;3.兄弟不和，交友无益。&lt;/p&gt;
+
+&lt;p&gt;4.行止不端，读书无益。&lt;/p&gt;
+
+&lt;p&gt;5.作事乖张，聪明无益。&lt;/p&gt;
+
+&lt;p&gt;6.心高气傲，博学无益。&lt;/p&gt;
+
+&lt;p&gt;7.为富不仁，积聚无益。&lt;/p&gt;
+
+&lt;p&gt;8.劫取人财，布施无益。&lt;/p&gt;
+
+&lt;p&gt;9.不惜元气，服药无益。&lt;/p&gt;
+
+&lt;p&gt;10.淫逸骄奢，仕途无益。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="读书" /><summary type="html">子孙若如我，留钱做什么？贤而多财，则损其志。 子孙不如我，留钱做什么？愚而多财，益增其过。 1.存心不善，风水无益。 2.父母不孝，奉神无益。 3.兄弟不和，交友无益。 4.行止不端，读书无益。 5.作事乖张，聪明无益。 6.心高气傲，博学无益。 7.为富不仁，积聚无益。 8.劫取人财，布施无益。 9.不惜元气，服药无益。 10.淫逸骄奢，仕途无益。</summary></entry><entry><title type="html">素书</title><link href="https://empvalley.com/2018/03/25/sushu/" rel="alternate" type="text/html" title="素书" /><published>2018-03-25T00:00:00+08:00</published><updated>2018-03-25T00:00:00+08:00</updated><id>https://empvalley.com/2018/03/25/sushu</id><content type="html" xml:base="https://empvalley.com/2018/03/25/sushu/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-原始章第一&quot; id=&quot;markdown-toc-heading-原始章第一&quot;&gt;原始章第一&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-正道章第二&quot; id=&quot;markdown-toc-heading-正道章第二&quot;&gt;正道章第二&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-求人之志章第三&quot; id=&quot;markdown-toc-heading-求人之志章第三&quot;&gt;求人之志章第三&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-本德宗道章第四&quot; id=&quot;markdown-toc-heading-本德宗道章第四&quot;&gt;本德宗道章第四&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-遵義章第五&quot; id=&quot;markdown-toc-heading-遵義章第五&quot;&gt;遵義章第五&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-安禮章第六&quot; id=&quot;markdown-toc-heading-安禮章第六&quot;&gt;安禮章第六&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-原始章第一&quot;&gt;原始章第一&lt;/h2&gt;
+
+&lt;p&gt;夫道、德、仁、義、禮，五者一體也。&lt;/p&gt;
+
+&lt;p&gt;道者，人之所蹈，使萬物不知其所由；&lt;/p&gt;
+
+&lt;p&gt;德者，人之所得，使萬物各得其所欲；&lt;/p&gt;
+
+&lt;p&gt;仁者，人之所親，有慈惠惻隱之心，以遂其生成；&lt;/p&gt;
+
+&lt;p&gt;義者，人之所宜，賞善罰惡，以立功立事；&lt;/p&gt;
+
+&lt;p&gt;禮者，人之所履，夙興夜寐，以成人倫之序。&lt;/p&gt;
+
+&lt;p&gt;夫欲為人之本，不可無一焉。&lt;/p&gt;
+
+&lt;p&gt;賢人君子明於盛衰之道，通乎成敗之數，審乎治亂之勢，達乎去就之理，故潛居抱道，以待其時。&lt;/p&gt;
+
+&lt;p&gt;若時至而行，則能極人臣之位；得機而動，則能成絕代之功。&lt;/p&gt;
+
+&lt;p&gt;如其不遇，沒身而已。&lt;/p&gt;
+
+&lt;p&gt;是以其道足高，而名重於後代。&lt;/p&gt;
+
+&lt;p&gt;右第一章，言道不可以無始。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-正道章第二&quot;&gt;正道章第二&lt;/h2&gt;
+
+&lt;p&gt;德足以懷遠，信足以一異，義足以得眾，才足以鑒古，明足以照下－－此人之俊也。&lt;/p&gt;
+
+&lt;p&gt;行足以為儀表，智足以決嫌疑，信足以使守約，廉足以使分財－－此人之豪也。&lt;/p&gt;
+
+&lt;p&gt;守職而不廢，處義而不回，見嫌而不茍免，見利而不茍得，此人之傑也。&lt;/p&gt;
+
+&lt;p&gt;右第二章，言道不可以非正。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-求人之志章第三&quot;&gt;求人之志章第三&lt;/h2&gt;
+
+&lt;p&gt;絕嗜禁慾，所以除累；&lt;/p&gt;
+
+&lt;p&gt;抑非損惡，所以禳過；&lt;/p&gt;
+
+&lt;p&gt;貶酒闕色，所以無污；&lt;/p&gt;
+
+&lt;p&gt;避嫌遠疑，所以不誤；&lt;/p&gt;
+
+&lt;p&gt;博學切問，所以廣知；&lt;/p&gt;
+
+&lt;p&gt;高行微言，所以修身；&lt;/p&gt;
+
+&lt;p&gt;恭儉謙約，所以自守；&lt;/p&gt;
+
+&lt;p&gt;深計遠慮，所以不窮；&lt;/p&gt;
+
+&lt;p&gt;親仁友直，所以扶顛；&lt;/p&gt;
+
+&lt;p&gt;近恕篤行，所以接人；&lt;/p&gt;
+
+&lt;p&gt;任材使能，所以濟務；&lt;/p&gt;
+
+&lt;p&gt;癉惡斥讒，所以止亂；&lt;/p&gt;
+
+&lt;p&gt;推古驗今，所以不惑；&lt;/p&gt;
+
+&lt;p&gt;先揆後度，所以應卒；&lt;/p&gt;
+
+&lt;p&gt;設變致權，所以解結；&lt;/p&gt;
+
+&lt;p&gt;括囊順會，所以無咎；&lt;/p&gt;
+
+&lt;p&gt;橛橛梗梗，所以立功；&lt;/p&gt;
+
+&lt;p&gt;孜孜淑淑，所以保終。&lt;/p&gt;
+
+&lt;p&gt;右第三章，言志不可以妄求。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-本德宗道章第四&quot;&gt;本德宗道章第四&lt;/h2&gt;
+
+&lt;p&gt;夫志心篤行之術，&lt;/p&gt;
+
+&lt;p&gt;長莫長於博謀，&lt;/p&gt;
+
+&lt;p&gt;安莫安於忍辱，&lt;/p&gt;
+
+&lt;p&gt;先莫先於修德，&lt;/p&gt;
+
+&lt;p&gt;樂莫樂於好善，&lt;/p&gt;
+
+&lt;p&gt;神莫神於至誠；&lt;/p&gt;
+
+&lt;p&gt;明莫明於體物；&lt;/p&gt;
+
+&lt;p&gt;吉莫吉於知足，&lt;/p&gt;
+
+&lt;p&gt;苦莫苦於多願，&lt;/p&gt;
+
+&lt;p&gt;悲莫悲於精散，&lt;/p&gt;
+
+&lt;p&gt;病莫病於無常，&lt;/p&gt;
+
+&lt;p&gt;短莫短於茍得，&lt;/p&gt;
+
+&lt;p&gt;幽莫幽於貪鄙，&lt;/p&gt;
+
+&lt;p&gt;孤莫孤於自恃，&lt;/p&gt;
+
+&lt;p&gt;危莫危於任疑，&lt;/p&gt;
+
+&lt;p&gt;敗莫敗於多私。&lt;/p&gt;
+
+&lt;p&gt;右第四章，言本宗不可以離德。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-遵義章第五&quot;&gt;遵義章第五&lt;/h2&gt;
+
+&lt;p&gt;以明示下者暗，&lt;/p&gt;
+
+&lt;p&gt;有過不知者弊，&lt;/p&gt;
+
+&lt;p&gt;迷而不返者惑，&lt;/p&gt;
+
+&lt;p&gt;以言取怨者禍，&lt;/p&gt;
+
+&lt;p&gt;令與心乖者廢，&lt;/p&gt;
+
+&lt;p&gt;後令謬前者毀，&lt;/p&gt;
+
+&lt;p&gt;怒而無威者犯，&lt;/p&gt;
+
+&lt;p&gt;好直辱人者殃，&lt;/p&gt;
+
+&lt;p&gt;戮辱所任者危，&lt;/p&gt;
+
+&lt;p&gt;慢其所敬者兇，&lt;/p&gt;
+
+&lt;p&gt;貌合心離者孤，&lt;/p&gt;
+
+&lt;p&gt;親讒遠忠者亡，&lt;/p&gt;
+
+&lt;p&gt;近色遠賢者惛，&lt;/p&gt;
+
+&lt;p&gt;女謁公行者亂，&lt;/p&gt;
+
+&lt;p&gt;私人以官者浮，&lt;/p&gt;
+
+&lt;p&gt;凌下取勝者侵，&lt;/p&gt;
+
+&lt;p&gt;名不勝實者耗，&lt;/p&gt;
+
+&lt;p&gt;略己而責人者不治，&lt;/p&gt;
+
+&lt;p&gt;自厚而薄人者棄，&lt;/p&gt;
+
+&lt;p&gt;以過棄功者損，&lt;/p&gt;
+
+&lt;p&gt;群下外異者淪，&lt;/p&gt;
+
+&lt;p&gt;既用不任者疏，&lt;/p&gt;
+
+&lt;p&gt;行賞吝色者沮，&lt;/p&gt;
+
+&lt;p&gt;多許少與者怨，&lt;/p&gt;
+
+&lt;p&gt;既迎而拒者乖，&lt;/p&gt;
+
+&lt;p&gt;薄施厚望者不報，&lt;/p&gt;
+
+&lt;p&gt;貴而忘賤者不久，&lt;/p&gt;
+
+&lt;p&gt;念舊怨而棄新功者兇，&lt;/p&gt;
+
+&lt;p&gt;用人不得正者殆，&lt;/p&gt;
+
+&lt;p&gt;強用人者不畜，&lt;/p&gt;
+
+&lt;p&gt;為人擇官者亂，&lt;/p&gt;
+
+&lt;p&gt;失其所強者弱，&lt;/p&gt;
+
+&lt;p&gt;決策於不仁者險，&lt;/p&gt;
+
+&lt;p&gt;陰計外泄者敗，&lt;/p&gt;
+
+&lt;p&gt;厚斂薄施者凋。&lt;/p&gt;
+
+&lt;p&gt;戰士貧、游士富者衰，&lt;/p&gt;
+
+&lt;p&gt;貨賂公行者昧，&lt;/p&gt;
+
+&lt;p&gt;聞善忽略、記過不忘者暴，&lt;/p&gt;
+
+&lt;p&gt;所任不可信，所信不可任者濁，&lt;/p&gt;
+
+&lt;p&gt;牧人以德者集，繩人以刑者散。&lt;/p&gt;
+
+&lt;p&gt;小功不賞，則大功不立，小怨不赦，則大怨必生。&lt;/p&gt;
+
+&lt;p&gt;賞不服人，罰不甘心者叛，賞及無功，罰及無罪者酷。&lt;/p&gt;
+
+&lt;p&gt;聽讒而美、聞諫而仇者亡。&lt;/p&gt;
+
+&lt;p&gt;能有其有者安，貪人之有者殘。&lt;/p&gt;
+
+&lt;p&gt;右第五章，言遵而行之者義也。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-安禮章第六&quot;&gt;安禮章第六&lt;/h2&gt;
+
+&lt;p&gt;怨在不舍小過，患在不預定謀。&lt;/p&gt;
+
+&lt;p&gt;福在積善，禍在積惡，饑在賤農，寒在惰織，安在得人，危在失事。&lt;/p&gt;
+
+&lt;p&gt;富在迎來，貧在棄時。&lt;/p&gt;
+
+&lt;p&gt;上無常躁，下無疑心。&lt;/p&gt;
+
+&lt;p&gt;輕上生罪，侮下無親。&lt;/p&gt;
+
+&lt;p&gt;近臣不重，遠臣輕之。&lt;/p&gt;
+
+&lt;p&gt;自疑不信人，自信不疑人。&lt;/p&gt;
+
+&lt;p&gt;枉士無直友，曲上無直下，危國無賢人，亂政無善人。&lt;/p&gt;
+
+&lt;p&gt;愛人深者求賢急，樂得賢者養人厚。&lt;/p&gt;
+
+&lt;p&gt;國將霸者士皆歸，邦將亡者賢先避。&lt;/p&gt;
+
+&lt;p&gt;地薄者大物不產，水淺者大物不游，樹禿者大禽不棲，林疏者大獸不居。&lt;/p&gt;
+
+&lt;p&gt;山峭者崩，澤滿者溢。&lt;/p&gt;
+
+&lt;p&gt;棄玉取石者盲，羊質虎皮者飾。&lt;/p&gt;
+
+&lt;p&gt;衣不舉領者倒，走不視地者顛。&lt;/p&gt;
+
+&lt;p&gt;柱弱者屋壞，輔弱者國傾。&lt;/p&gt;
+
+&lt;p&gt;足寒傷心，人怨傷國，山將崩者下先隳，國將衰者人先弊。&lt;/p&gt;
+
+&lt;p&gt;根枯枝朽，人困國殘。&lt;/p&gt;
+
+&lt;p&gt;與覆車同軌者傾，與亡國同事者滅。&lt;/p&gt;
+
+&lt;p&gt;見已生者慎將生，惡其跡者須避之。&lt;/p&gt;
+
+&lt;p&gt;畏危者安，畏亡者存。&lt;/p&gt;
+
+&lt;p&gt;夫人之所行，有道則吉，無道則兇。&lt;/p&gt;
+
+&lt;p&gt;吉者百福所歸，兇者百禍所攻，非其神聖，自然所鐘。&lt;/p&gt;
+
+&lt;p&gt;務善策者無惡事，無遠慮者有近憂。&lt;/p&gt;
+
+&lt;p&gt;同志相得，同仁相憂，同惡相黨，同愛相求，同美相妒，同智相謀，同貴相害，同利相忌，同聲相應，同氣相感，同類相依，同義相親，同難相濟，同道相成，同藝相規，同巧相勝，此乃數之所得，不有與理違。&lt;/p&gt;
+
+&lt;p&gt;釋己而教人者逆，正己而化人者順，逆者難從，順者易行，難從則亂，易行則理。&lt;/p&gt;
+
+&lt;p&gt;如此，理身，理家，理國，可也。&lt;/p&gt;
+
+&lt;p&gt;右第六章，言安而履之謂禮。&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;heading-图片&quot;&gt;图片&lt;/h2&gt;
-
-&lt;p&gt;图片来了！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://kramdown.gettalong.org/overview.png&quot; alt=&quot;smiley&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-代码&quot;&gt;代码&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-代码段&quot;&gt;代码段&lt;/h3&gt;
-
-&lt;p&gt;行内代码块  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:/Ruby23-x64&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SELECT  &quot;offices&quot;.* FROM &quot;offices&quot; &lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;反引号 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;`&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; `一些` &lt;/code&gt; 文本 (注意：使用两个空格，以便能够输出一个空格！)。&lt;/p&gt;
-
-&lt;p&gt;Ruby 代码块 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-围栏式代码块&quot;&gt;围栏式代码块&lt;/h3&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-~~~~~~~
-带有波浪符的代码
-~~~~~~~~
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;heading-长代码块&quot;&gt;长代码块&lt;/h3&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function myFunction() {
-    alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;heading-代码块语言&quot;&gt;代码块语言&lt;/h3&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;what?&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;heading-高亮&quot;&gt;高亮&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-外部引用&quot;&gt;外部引用&lt;/h3&gt;
-
-&lt;script src=&quot;https://gist.github.com/yizeng/9b871ad619e6dcdcc0545cac3101f361.js&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;heading-常规高亮&quot;&gt;常规高亮&lt;/h3&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;heading-长文本高亮&quot;&gt;长文本高亮&lt;/h3&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;heading-带有行号的长文本高亮&quot;&gt;带有行号的长文本高亮&lt;/h3&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;脚注。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Jekyll" /><summary type="html">2017年5月24日更新 这篇文章用于测试 Simple Texture 主题的 kramdown 格式。 常规使用 引用 嵌套引用 列表引用 长文本引用 列表 表格 水平线 图片 代码 代码段 围栏式代码块 长代码块 代码块语言 高亮 外部引用 常规高亮 长文本高亮 带有行号的长文本高亮 常规使用 普通段落。 一个链接，链接到我的主页。 带有标题（title）的链接。 斜体并加粗。 加粗。 斜体。 文本加粗。 脚注1。 引用 ruby -v tsc -v 嵌套引用 引用块中的段落。 嵌套引用。 列表引用 无序列表 列表一 列表二 列表三 有序列表 列表一 列表二 列表三 长文本引用 Jekyll 是一个用于个人、项目或组织站点，简单的、博客相关的静态站点生成器。 可以理解为是一个 CMS （内容管理系统），但是没有那么复杂。Jekyll 获取内容，渲染 Markdown 和模板，然后输出完整的、可托管在 Apache、Nginx 或其它网站服务器上的静态网站。 Jekyll 是 GitHub Pages 的引擎，可以托管 GitHub 仓库中的网站。 列表 列表一 项目一 内嵌列表 项目一 内嵌列表 项目二 内嵌列表 项目三 包含引用 ruby -v tsc -v 列表一 项目二 列表一 项目三 表格 表格一 Default aligned Left aligned Center aligned Right aligned First body part Second cell Third cell fourth cell Second line foo strong baz Third line quux baz bar Footer row       表格二 Default aligned Left aligned Center aligned Right aligned First body part Second cell Third cell fourth cell Second line foo strong baz Third line quux baz bar Footer row       水平线 图片 图片来了！ 代码 代码段 行内代码块 C:/Ruby23-x64 or SELECT &quot;offices&quot;.* FROM &quot;offices&quot; 反引号 ` `一些` 文本 (注意：使用两个空格，以便能够输出一个空格！)。 Ruby 代码块 x = Class.new 围栏式代码块 ~~~~~~~ 带有波浪符的代码 ~~~~~~~~ 长代码块 function myFunction() { alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;); } 代码块语言 def what? 42 end 高亮 外部引用 常规高亮 def foo puts 'foo' end 长文本高亮 public class Hello { public static void Main() { Console.WriteLine(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;); } } 带有行号的长文本高亮 1 2 3 function myFunction() { alert(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;); } 脚注。 &amp;#8617;</summary></entry></feed>
+&lt;p&gt;原文: &lt;a href=&quot;https://zh.wikisource.org/zh-hant/%E7%B4%A0%E6%9B%B8&quot;&gt;wiki - 素书&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="读书" /><summary type="html">原始章第一 正道章第二 求人之志章第三 本德宗道章第四 遵義章第五 安禮章第六 原始章第一 夫道、德、仁、義、禮，五者一體也。 道者，人之所蹈，使萬物不知其所由； 德者，人之所得，使萬物各得其所欲； 仁者，人之所親，有慈惠惻隱之心，以遂其生成； 義者，人之所宜，賞善罰惡，以立功立事； 禮者，人之所履，夙興夜寐，以成人倫之序。 夫欲為人之本，不可無一焉。 賢人君子明於盛衰之道，通乎成敗之數，審乎治亂之勢，達乎去就之理，故潛居抱道，以待其時。 若時至而行，則能極人臣之位；得機而動，則能成絕代之功。 如其不遇，沒身而已。 是以其道足高，而名重於後代。 右第一章，言道不可以無始。 正道章第二 德足以懷遠，信足以一異，義足以得眾，才足以鑒古，明足以照下－－此人之俊也。 行足以為儀表，智足以決嫌疑，信足以使守約，廉足以使分財－－此人之豪也。 守職而不廢，處義而不回，見嫌而不茍免，見利而不茍得，此人之傑也。 右第二章，言道不可以非正。 求人之志章第三 絕嗜禁慾，所以除累； 抑非損惡，所以禳過； 貶酒闕色，所以無污； 避嫌遠疑，所以不誤； 博學切問，所以廣知； 高行微言，所以修身； 恭儉謙約，所以自守； 深計遠慮，所以不窮； 親仁友直，所以扶顛； 近恕篤行，所以接人； 任材使能，所以濟務； 癉惡斥讒，所以止亂； 推古驗今，所以不惑； 先揆後度，所以應卒； 設變致權，所以解結； 括囊順會，所以無咎； 橛橛梗梗，所以立功； 孜孜淑淑，所以保終。 右第三章，言志不可以妄求。 本德宗道章第四 夫志心篤行之術， 長莫長於博謀， 安莫安於忍辱， 先莫先於修德， 樂莫樂於好善， 神莫神於至誠； 明莫明於體物； 吉莫吉於知足， 苦莫苦於多願， 悲莫悲於精散， 病莫病於無常， 短莫短於茍得， 幽莫幽於貪鄙， 孤莫孤於自恃， 危莫危於任疑， 敗莫敗於多私。 右第四章，言本宗不可以離德。 遵義章第五 以明示下者暗， 有過不知者弊， 迷而不返者惑， 以言取怨者禍， 令與心乖者廢， 後令謬前者毀， 怒而無威者犯， 好直辱人者殃， 戮辱所任者危， 慢其所敬者兇， 貌合心離者孤， 親讒遠忠者亡， 近色遠賢者惛， 女謁公行者亂， 私人以官者浮， 凌下取勝者侵， 名不勝實者耗， 略己而責人者不治， 自厚而薄人者棄， 以過棄功者損， 群下外異者淪， 既用不任者疏， 行賞吝色者沮， 多許少與者怨， 既迎而拒者乖， 薄施厚望者不報， 貴而忘賤者不久， 念舊怨而棄新功者兇， 用人不得正者殆， 強用人者不畜， 為人擇官者亂， 失其所強者弱， 決策於不仁者險， 陰計外泄者敗， 厚斂薄施者凋。 戰士貧、游士富者衰， 貨賂公行者昧， 聞善忽略、記過不忘者暴， 所任不可信，所信不可任者濁， 牧人以德者集，繩人以刑者散。 小功不賞，則大功不立，小怨不赦，則大怨必生。 賞不服人，罰不甘心者叛，賞及無功，罰及無罪者酷。 聽讒而美、聞諫而仇者亡。 能有其有者安，貪人之有者殘。 右第五章，言遵而行之者義也。 安禮章第六 怨在不舍小過，患在不預定謀。 福在積善，禍在積惡，饑在賤農，寒在惰織，安在得人，危在失事。 富在迎來，貧在棄時。 上無常躁，下無疑心。 輕上生罪，侮下無親。 近臣不重，遠臣輕之。 自疑不信人，自信不疑人。 枉士無直友，曲上無直下，危國無賢人，亂政無善人。 愛人深者求賢急，樂得賢者養人厚。 國將霸者士皆歸，邦將亡者賢先避。 地薄者大物不產，水淺者大物不游，樹禿者大禽不棲，林疏者大獸不居。 山峭者崩，澤滿者溢。 棄玉取石者盲，羊質虎皮者飾。 衣不舉領者倒，走不視地者顛。 柱弱者屋壞，輔弱者國傾。 足寒傷心，人怨傷國，山將崩者下先隳，國將衰者人先弊。 根枯枝朽，人困國殘。 與覆車同軌者傾，與亡國同事者滅。 見已生者慎將生，惡其跡者須避之。 畏危者安，畏亡者存。 夫人之所行，有道則吉，無道則兇。 吉者百福所歸，兇者百禍所攻，非其神聖，自然所鐘。 務善策者無惡事，無遠慮者有近憂。 同志相得，同仁相憂，同惡相黨，同愛相求，同美相妒，同智相謀，同貴相害，同利相忌，同聲相應，同氣相感，同類相依，同義相親，同難相濟，同道相成，同藝相規，同巧相勝，此乃數之所得，不有與理違。 釋己而教人者逆，正己而化人者順，逆者難從，順者易行，難從則亂，易行則理。 如此，理身，理家，理國，可也。 右第六章，言安而履之謂禮。 原文: wiki - 素书</summary></entry></feed>
