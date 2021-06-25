@@ -9,7 +9,7 @@ tags: ["SSH Keys"]
 {:toc .toc}
 ## 生成 SSH Key
 
-参考：[生成 SSH Key](https://empvalley.com/2021/06/22/generating-a-new-ssh-key/)
+参考：[生成 SSH Key]({{ site.url }}/2021/06/22/generating-a-new-ssh-key/)
 
 
 
