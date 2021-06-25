@@ -163,11 +163,11 @@ tags: ["Windows10 驱动"]
 
 5. 输入数字执行相应的操作（如下图）。
 
-   ![批处理备份恢复驱动(图1)]({{ site.url }}/assets/images/posts/backup_1.png "批处理备份恢复驱动(图1)")
+   ![批处理备份恢复驱动(图1)]({{ site.url }}/assets/images/posts/backup_1.jpg "批处理备份恢复驱动(图1)")
    
 6. 选择你要保存驱动的位置或用于恢复驱动的文件夹位置（如下图）。
 
-   ![批处理备份恢复驱动(图2)]({{ site.url }}/assets/images/posts/backup_2.png "批处理备份恢复驱动(图2)")
+   ![批处理备份恢复驱动(图2)]({{ site.url }}/assets/images/posts/backup_2.jpg "批处理备份恢复驱动(图2)")
 
 
 ---
