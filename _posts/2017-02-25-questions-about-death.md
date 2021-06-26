@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "公开课《死亡》QA"
-categories: 生活
-tags: ["读书"]
+categories: 学习
+tags: ["哲学", "死亡"]
 ---
 
 * 目录

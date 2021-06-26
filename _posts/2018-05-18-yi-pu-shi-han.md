@@ -2,7 +2,7 @@
 layout: post
 title: 一暴十寒
 description:
-categories: 生活
+categories: 学习
 tags: ["读书"]
 ---
 
