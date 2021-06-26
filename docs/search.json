@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "解决 Maven 仓库镜像被锁定",
+      "url"        : "/2021/06/26/blocked-mirror-for-repositories-of-maven/",
+      "date"       : "2021-06-26 00:00:00 +0800",
+      "shortdate"  : "June 26, 2021"
+    } ,
+  
+    {
       "title"      : "备份和恢复 Windows10 驱动",
       "url"        : "/2021/06/23/backup-and-restore-device-drivers-in-windows10/",
       "date"       : "2021-06-23 00:00:00 +0800",

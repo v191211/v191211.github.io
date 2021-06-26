@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-06-25T22:18:14+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">备份和恢复 Windows10 驱动</title><link href="https://empvalley.com/2021/06/23/backup-and-restore-device-drivers-in-windows10/" rel="alternate" type="text/html" title="备份和恢复 Windows10 驱动" /><published>2021-06-23T00:00:00+08:00</published><updated>2021-06-23T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/23/backup-and-restore-device-drivers-in-windows10</id><content type="html" xml:base="https://empvalley.com/2021/06/23/backup-and-restore-device-drivers-in-windows10/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-06-26T12:00:15+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">解决 Maven 仓库镜像被锁定</title><link href="https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven/" rel="alternate" type="text/html" title="解决 Maven 仓库镜像被锁定" /><published>2021-06-26T00:00:00+08:00</published><updated>2021-06-26T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven</id><content type="html" xml:base="https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-问题&quot; id=&quot;markdown-toc-heading-问题&quot;&gt;问题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-问题原因&quot; id=&quot;markdown-toc-heading-问题原因&quot;&gt;问题原因&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-解决方法&quot; id=&quot;markdown-toc-heading-解决方法&quot;&gt;解决方法&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-方法一&quot; id=&quot;markdown-toc-heading-方法一&quot;&gt;方法一&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-方法二&quot; id=&quot;markdown-toc-heading-方法二&quot;&gt;方法二&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-方法三&quot; id=&quot;markdown-toc-heading-方法三&quot;&gt;方法三&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-问题&quot;&gt;问题&lt;/h2&gt;
+
+&lt;p&gt;执行 mvn 命令时错误，提示：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Could not transfer artifact x from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [x, default, releases+snapshots), releases (x, default, releases+snapshots)]&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-问题原因&quot;&gt;问题原因&lt;/h2&gt;
+
+&lt;p&gt;从 3.8.1 版本，Maven 引入了一条锁定所有使用 HTTP 协议（不安全连接）仓库的默认配置。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-解决方法&quot;&gt;解决方法&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-方法一&quot;&gt;方法一&lt;/h3&gt;
+
+&lt;p&gt;降级 Maven 版本为 &lt;a href=&quot;https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/&quot;&gt;&lt;strong&gt;3.6.3&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-方法二&quot;&gt;方法二&lt;/h3&gt;
+
+&lt;p&gt;在 ~/.m2/settings.xml 配置文件 &amp;lt;mirror&amp;gt; 标签内添加 &amp;lt;blocked&amp;gt; 标签，值为 false，例如：&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;mirror&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;insecure-repo&lt;span class=&quot;nt&quot;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;mirrorOf&amp;gt;&lt;/span&gt;external:http:*&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mirrorOf&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;url&amp;gt;&lt;/span&gt;http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/&lt;span class=&quot;nt&quot;&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;blocked&amp;gt;&lt;/span&gt;false&lt;span class=&quot;nt&quot;&gt;&amp;lt;/blocked&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mirror&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;heading-方法三&quot;&gt;方法三&lt;/h3&gt;
+
+&lt;p&gt;使仓库支持 HTTPS 协议，修改 ~/.m2/settings.xml 配置文件中的镜像 URL 为 HTTPS 方式的连接。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/67121849/4612522&quot;&gt;Maven构造失败 - 依赖异常&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Maven" /><summary type="html">问题 问题原因 解决方法 方法一 方法二 方法三 问题 执行 mvn 命令时错误，提示： Could not transfer artifact x from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [x, default, releases+snapshots), releases (x, default, releases+snapshots)] 问题原因 从 3.8.1 版本，Maven 引入了一条锁定所有使用 HTTP 协议（不安全连接）仓库的默认配置。 解决方法 方法一 降级 Maven 版本为 3.6.3 方法二 在 ~/.m2/settings.xml 配置文件 &amp;lt;mirror&amp;gt; 标签内添加 &amp;lt;blocked&amp;gt; 标签，值为 false，例如： &amp;lt;mirror&amp;gt; &amp;lt;id&amp;gt;insecure-repo&amp;lt;/id&amp;gt; &amp;lt;mirrorOf&amp;gt;external:http:*&amp;lt;/mirrorOf&amp;gt; &amp;lt;url&amp;gt;http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/&amp;lt;/url&amp;gt; &amp;lt;blocked&amp;gt;false&amp;lt;/blocked&amp;gt; &amp;lt;/mirror&amp;gt; 方法三 使仓库支持 HTTPS 协议，修改 ~/.m2/settings.xml 配置文件中的镜像 URL 为 HTTPS 方式的连接。 参考： Maven构造失败 - 依赖异常</summary></entry><entry><title type="html">备份和恢复 Windows10 驱动</title><link href="https://empvalley.com/2021/06/23/backup-and-restore-device-drivers-in-windows10/" rel="alternate" type="text/html" title="备份和恢复 Windows10 驱动" /><published>2021-06-23T00:00:00+08:00</published><updated>2021-06-23T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/23/backup-and-restore-device-drivers-in-windows10</id><content type="html" xml:base="https://empvalley.com/2021/06/23/backup-and-restore-device-drivers-in-windows10/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-命令行方式备份驱动&quot; id=&quot;markdown-toc-heading-命令行方式备份驱动&quot;&gt;命令行方式备份驱动&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-powershell-中备份驱动&quot; id=&quot;markdown-toc-heading-powershell-中备份驱动&quot;&gt;PowerShell 中备份驱动&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-从设备管理器中恢复备份的驱动&quot; id=&quot;markdown-toc-heading-从设备管理器中恢复备份的驱动&quot;&gt;从设备管理器中恢复备份的驱动&lt;/a&gt;&lt;/li&gt;
@@ -678,38 +724,4 @@ IdentityFile ~/.ssh/id_rsa_personal
 
 &lt;hr /&gt;
 
-&lt;p&gt;原文：&lt;a href=&quot;http://www.ruanyifeng.com/blog/2004/06/post_82.html&quot;&gt;限制房租对谁有利？&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">这两天，我在读经济学大师弗里德曼的回忆录《两个幸运的人》，看到一个很有意思的细节。 第二次世界大战时，美国实行价格管制，其中包括房租。战争结束后，有些城市打算继续限制房租，不许房租涨得太高，以免穷人租不起。弗里德曼坚决反对任何限制房租的措施，要求房租由市场定价。 猜猜他的理由是什么？因为限制房租，反而会让穷人住不起房！ 他的逻辑是这样的： 限制房租会导致一些房主不再愿意出租房屋，尤其是高价房的房主。 一部分高价房退出租房市场，导致在高价房的部分，出现需大于供的局面。 次级房屋的租金因此上涨，超过应有水平。 次级房屋租金上涨，拉动它下面的整个低档房屋市场的租金上涨。 中低收入者恰恰是次级房屋的主要需求者，结果他们要比过去付出更多的租金，生活水平下降。 说得很有道理啊！ 弗里德曼接着分析了，如何真正促进社会公平，值得我们每一个人深思。 &quot;我们希望看到，比现有政策更平等的经济政策，不仅是住房，还包裹所有商品和服务。 对我们来说，最好还是直接解决收入与财富源头上的不公平，而不是对现有的商品与服务重新分配。 允许一些人获得不公平的货币收入，然后再采取精心设计、成本高昂的措施去阻止他们支配自己的收入，这是最为愚蠢的做法。&quot; 原文：限制房租对谁有利？</summary></entry><entry><title type="html">共享 SESSION</title><link href="https://empvalley.com/2019/12/23/share-session/" rel="alternate" type="text/html" title="共享 SESSION" /><published>2019-12-23T00:00:00+08:00</published><updated>2019-12-23T00:00:00+08:00</updated><id>https://empvalley.com/2019/12/23/share-session</id><content type="html" xml:base="https://empvalley.com/2019/12/23/share-session/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-为什么需要共享-session&quot; id=&quot;markdown-toc-heading-为什么需要共享-session&quot;&gt;为什么需要共享 SESSION&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-共享-session-的几种方式&quot; id=&quot;markdown-toc-heading-共享-session-的几种方式&quot;&gt;共享 SESSION 的几种方式&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-方案一基于-nfs-的-session-共享&quot; id=&quot;markdown-toc-heading-方案一基于-nfs-的-session-共享&quot;&gt;方案一：基于 NFS 的 Session 共享&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-方案二基于-cookie-的-session-共享&quot; id=&quot;markdown-toc-heading-方案二基于-cookie-的-session-共享&quot;&gt;方案二：基于 Cookie 的 Session 共享&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-方案三基于数据库的-session-共享&quot; id=&quot;markdown-toc-heading-方案三基于数据库的-session-共享&quot;&gt;方案三：基于数据库的 Session 共享&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-方案四基于-memcacheredis-的-session-共享&quot; id=&quot;markdown-toc-heading-方案四基于-memcacheredis-的-session-共享&quot;&gt;方案四：基于 Memcache/Redis 的 Session 共享&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-为什么需要共享-session&quot;&gt;为什么需要共享 SESSION&lt;/h2&gt;
-
-&lt;p&gt;假设某个网站是由多台服务器提供服务，Nginx 采用轮询机制做负载均衡，那么同一个 IP 访问该网站时，请求就可能会被分配到不同的服务器上，如果 Session 没有实现共享，就会出现重复登陆授权的情况。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-共享-session-的几种方式&quot;&gt;共享 SESSION 的几种方式&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-方案一基于-nfs-的-session-共享&quot;&gt;方案一：基于 NFS 的 Session 共享&lt;/h3&gt;
-
-&lt;p&gt;NFS（Net File System），顾名思义，也就是网络文件系统，即将 Session 存储目录挂载到所有的服务器上，实现 Session 的读写。该方案实现简单、快速，无需在应用程序上做太多操作。但是缺点也很明显，一是只适合小规模的网站，二是文件读写速度严重依赖网络速度，几台服务器在同一局域网内还能接受，如果跨机房就很容易受到影响，而且安全问题也是需要考虑的，三是需要实时监控每一台服务器目录挂载情况。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-方案二基于-cookie-的-session-共享&quot;&gt;方案二：基于 Cookie 的 Session 共享&lt;/h3&gt;
-
-&lt;p&gt;简单的说就是登陆时将创建的 Session 信息经过加密处理后一并保存在客户端的 Cookie 里，其他服务器响应请求时，先判断本地服务器是否有已保存的 Session，如果没有就再将客户端的 Cookie 里保存的 Session 信息同步到本地服务器。这种方式的缺点就是受客户端的影响较大，而且安全性无法得到保障。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-方案三基于数据库的-session-共享&quot;&gt;方案三：基于数据库的 Session 共享&lt;/h3&gt;
-
-&lt;p&gt;该方案就是将 Session 数据直接存储在数据库中。该方案操作性较强、安全性高，缺点就是 Session 的并发读写能力取决于数据库的性能，而且需要应用程序支持或者编写一个额外的维护脚本，实现 Session 的更新和过期删除。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-方案四基于-memcacheredis-的-session-共享&quot;&gt;方案四：基于 Memcache/Redis 的 Session 共享&lt;/h3&gt;
-
-&lt;p&gt;该方案时可以看作时方案三的升级版，该方案不仅性能好而且安全性也得到了保障，更重要的是Memcache/Redis原生支持数据的 Expire 过期淘汰。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;原文：&lt;a href=&quot;https://blog.csdn.net/u010938610/article/details/79665852&quot;&gt;共享 Session 的几种方式&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="WEB" /><summary type="html">为什么需要共享 SESSION 共享 SESSION 的几种方式 方案一：基于 NFS 的 Session 共享 方案二：基于 Cookie 的 Session 共享 方案三：基于数据库的 Session 共享 方案四：基于 Memcache/Redis 的 Session 共享 为什么需要共享 SESSION 假设某个网站是由多台服务器提供服务，Nginx 采用轮询机制做负载均衡，那么同一个 IP 访问该网站时，请求就可能会被分配到不同的服务器上，如果 Session 没有实现共享，就会出现重复登陆授权的情况。 共享 SESSION 的几种方式 方案一：基于 NFS 的 Session 共享 NFS（Net File System），顾名思义，也就是网络文件系统，即将 Session 存储目录挂载到所有的服务器上，实现 Session 的读写。该方案实现简单、快速，无需在应用程序上做太多操作。但是缺点也很明显，一是只适合小规模的网站，二是文件读写速度严重依赖网络速度，几台服务器在同一局域网内还能接受，如果跨机房就很容易受到影响，而且安全问题也是需要考虑的，三是需要实时监控每一台服务器目录挂载情况。 方案二：基于 Cookie 的 Session 共享 简单的说就是登陆时将创建的 Session 信息经过加密处理后一并保存在客户端的 Cookie 里，其他服务器响应请求时，先判断本地服务器是否有已保存的 Session，如果没有就再将客户端的 Cookie 里保存的 Session 信息同步到本地服务器。这种方式的缺点就是受客户端的影响较大，而且安全性无法得到保障。 方案三：基于数据库的 Session 共享 该方案就是将 Session 数据直接存储在数据库中。该方案操作性较强、安全性高，缺点就是 Session 的并发读写能力取决于数据库的性能，而且需要应用程序支持或者编写一个额外的维护脚本，实现 Session 的更新和过期删除。 方案四：基于 Memcache/Redis 的 Session 共享 该方案时可以看作时方案三的升级版，该方案不仅性能好而且安全性也得到了保障，更重要的是Memcache/Redis原生支持数据的 Expire 过期淘汰。 原文：共享 Session 的几种方式</summary></entry></feed>
+&lt;p&gt;原文：&lt;a href=&quot;http://www.ruanyifeng.com/blog/2004/06/post_82.html&quot;&gt;限制房租对谁有利？&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">这两天，我在读经济学大师弗里德曼的回忆录《两个幸运的人》，看到一个很有意思的细节。 第二次世界大战时，美国实行价格管制，其中包括房租。战争结束后，有些城市打算继续限制房租，不许房租涨得太高，以免穷人租不起。弗里德曼坚决反对任何限制房租的措施，要求房租由市场定价。 猜猜他的理由是什么？因为限制房租，反而会让穷人住不起房！ 他的逻辑是这样的： 限制房租会导致一些房主不再愿意出租房屋，尤其是高价房的房主。 一部分高价房退出租房市场，导致在高价房的部分，出现需大于供的局面。 次级房屋的租金因此上涨，超过应有水平。 次级房屋租金上涨，拉动它下面的整个低档房屋市场的租金上涨。 中低收入者恰恰是次级房屋的主要需求者，结果他们要比过去付出更多的租金，生活水平下降。 说得很有道理啊！ 弗里德曼接着分析了，如何真正促进社会公平，值得我们每一个人深思。 &quot;我们希望看到，比现有政策更平等的经济政策，不仅是住房，还包裹所有商品和服务。 对我们来说，最好还是直接解决收入与财富源头上的不公平，而不是对现有的商品与服务重新分配。 允许一些人获得不公平的货币收入，然后再采取精心设计、成本高昂的措施去阻止他们支配自己的收入，这是最为愚蠢的做法。&quot; 原文：限制房租对谁有利？</summary></entry></feed>
