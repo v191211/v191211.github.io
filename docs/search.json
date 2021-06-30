@@ -162,6 +162,13 @@
     } ,
   
     {
+      "title"      : "配置安装在 Virtual box 中的 Ubuntu",
+      "url"        : "/2018/04/19/install-ubuntu-on-virtualbox/",
+      "date"       : "2018-04-19 00:00:00 +0800",
+      "shortdate"  : "April 19, 2018"
+    } ,
+  
+    {
       "title"      : "Docker 入门教程",
       "url"        : "/2018/04/19/docker-tutorial/",
       "date"       : "2018-04-19 00:00:00 +0800",
