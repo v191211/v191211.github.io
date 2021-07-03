@@ -355,6 +355,9 @@ $ git archive
 
 # 提交时不写提交信息
 $ git commit -a --allow-empty-message -m ''
+
+# 改变远程仓库地址
+$ git remote set-url origin [remote URL]
 ```
 
 ## 十一、同步 fork 的仓库
