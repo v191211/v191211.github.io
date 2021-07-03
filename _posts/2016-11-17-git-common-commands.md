@@ -355,7 +355,43 @@ $ git archive
 
 # 提交时不写提交信息
 $ git commit -a --allow-empty-message -m ''
+
+# 改变远程仓库地址
+$ git remote set-url origin [remote URL]
 ```
+
+## 十一、同步 fork 的仓库
+```bash
+# 添加上游仓库地址
+$ git remote add upstream git@github.com:[ORIGINAL_OWNER]/[ORIGINAL_REPOSITORY.git]
+
+# 拉取上游变动
+$ git fetch upstream
+
+# 切换到 fork 仓库的 master 分支（如果本身就在 master 分支，可跳过该步操作）
+$ git checkout master
+
+# 暂存本地改变（如没有可跳过该步骤）
+$ git stash
+
+# 合并变动（这一步也可以用 rebase 命令）
+$ git merge upstream/master
+
+# 解决合并冲突然后提交合并
+$ git commit -m "merge from upstream"
+
+# 推送改变到 fork
+$ git push
+
+# 恢复暂存的改变（如果存在）
+$ git stash pop
+
+```
+
+
+
+
+
 
 ---
 参考：
