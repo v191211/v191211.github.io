@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "Commit message 和 Change log 编写指南",
+      "url"        : "/2021/07/01/commit-message-change-log/",
+      "date"       : "2021-07-01 00:00:00 +0800",
+      "shortdate"  : "July 01, 2021"
+    } ,
+  
+    {
       "title"      : "解决 Maven 仓库镜像被锁定",
       "url"        : "/2021/06/26/blocked-mirror-for-repositories-of-maven/",
       "date"       : "2021-06-26 00:00:00 +0800",
@@ -159,6 +166,13 @@
       "url"        : "/2018/05/09/lin-zexu/",
       "date"       : "2018-05-09 00:00:00 +0800",
       "shortdate"  : "May 09, 2018"
+    } ,
+  
+    {
+      "title"      : "配置安装在 Virtual box 中的 Ubuntu",
+      "url"        : "/2018/04/19/install-ubuntu-on-virtualbox/",
+      "date"       : "2018-04-19 00:00:00 +0800",
+      "shortdate"  : "April 19, 2018"
     } ,
   
     {
