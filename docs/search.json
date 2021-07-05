@@ -134,6 +134,13 @@
     } ,
   
     {
+      "title"      : "Java 中的多节点树",
+      "url"        : "/2018/10/22/java-multi-way-tree/",
+      "date"       : "2018-10-22 00:00:00 +0800",
+      "shortdate"  : "October 22, 2018"
+    } ,
+  
+    {
       "title"      : "RabbitMQ ConfirmCallback 和 ReturnCallback 的区别",
       "url"        : "/2018/10/08/rabbitmq-confirmcallback-returncallback-difference/",
       "date"       : "2018-10-08 00:00:00 +0800",
@@ -148,10 +155,24 @@
     } ,
   
     {
+      "title"      : "web.xml 配置示例",
+      "url"        : "/2018/06/29/web-xml-deployment-descriptor-examples/",
+      "date"       : "2018-06-29 00:00:00 +0800",
+      "shortdate"  : "June 29, 2018"
+    } ,
+  
+    {
       "title"      : "JavaEE 中 web.xml 文件的作用",
       "url"        : "/2018/06/29/the-functions-of-the-web-xml-file-in-javaee/",
       "date"       : "2018-06-29 00:00:00 +0800",
       "shortdate"  : "June 29, 2018"
+    } ,
+  
+    {
+      "title"      : "SpringBoot 中 application.yml 和 bootstrap.yml 文件的区别",
+      "url"        : "/2018/06/10/the-difference-between-application.yml-and-bootstrap.yml/",
+      "date"       : "2018-06-10 00:00:00 +0800",
+      "shortdate"  : "June 10, 2018"
     } ,
   
     {
@@ -169,8 +190,22 @@
     } ,
   
     {
+      "title"      : "Linux 命令",
+      "url"        : "/2018/05/03/linux-commands/",
+      "date"       : "2018-05-03 00:00:00 +0800",
+      "shortdate"  : "May 03, 2018"
+    } ,
+  
+    {
       "title"      : "配置安装在 Virtual box 中的 Ubuntu",
       "url"        : "/2018/04/19/install-ubuntu-on-virtualbox/",
+      "date"       : "2018-04-19 00:00:00 +0800",
+      "shortdate"  : "April 19, 2018"
+    } ,
+  
+    {
+      "title"      : "配置安装在 Virtual box 中的 Ubuntu",
+      "url"        : "/2018/04/19/install-centos-on-virtualbox/",
       "date"       : "2018-04-19 00:00:00 +0800",
       "shortdate"  : "April 19, 2018"
     } ,
@@ -211,8 +246,8 @@
     } ,
   
     {
-      "title"      : "In such a way that",
-      "url"        : "/2017/01/04/in-such-a-way-that/",
+      "title"      : "英语中的同义词",
+      "url"        : "/2017/01/04/english-synonyms/",
       "date"       : "2017-01-04 00:00:00 +0800",
       "shortdate"  : "January 04, 2017"
     } ,
@@ -225,6 +260,13 @@
     } ,
   
     {
+      "title"      : "Mybatis 一对多和多对一关系映射配置",
+      "url"        : "/2016/12/23/mybatis-one-to-many-and-many-to-one-relations-mapping/",
+      "date"       : "2016-12-23 00:00:00 +0800",
+      "shortdate"  : "December 23, 2016"
+    } ,
+  
+    {
       "title"      : "一碗毒鸡汤",
       "url"        : "/2016/12/10/a-bowl-of-toxic-chicken-soup/",
       "date"       : "2016-12-10 00:00:00 +0800",
@@ -232,10 +274,24 @@
     } ,
   
     {
+      "title"      : "Oracle 和 Mysql 中的分页 SQL",
+      "url"        : "/2016/11/26/paging-sql/",
+      "date"       : "2016-11-26 00:00:00 +0800",
+      "shortdate"  : "November 26, 2016"
+    } ,
+  
+    {
       "title"      : "常用 Git 命令清单",
       "url"        : "/2016/11/17/git-common-commands/",
       "date"       : "2016-11-17 00:00:00 +0800",
       "shortdate"  : "November 17, 2016"
+    } ,
+  
+    {
+      "title"      : "Mybatis 批量插入数据到 Oracle 数据库",
+      "url"        : "/2016/11/15/mybatis-batch-insert-data-to-oracle/",
+      "date"       : "2016-11-15 00:00:00 +0800",
+      "shortdate"  : "November 15, 2016"
     } ,
   
     {

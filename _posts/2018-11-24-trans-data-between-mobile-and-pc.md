@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "使用 ES File Explorer 在手机和电脑之间传输数据"
-categories: 技术
+categories: ["技术"]
 tags: ["手机电脑互传数据"]
 ---
 
