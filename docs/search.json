@@ -211,7 +211,7 @@
     } ,
   
     {
-      "title"      : "配置安装在 Virtual box 中的 Ubuntu",
+      "title"      : "配置安装在 Virtual box 中的 CentOS",
       "url"        : "/2018/04/19/install-centos-on-virtualbox/",
       "date"       : "2018-04-19 00:00:00 +0800",
       "shortdate"  : "April 19, 2018"
