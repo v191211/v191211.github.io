@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "配置安装在 Virtual box 中的 Ubuntu"
+title: "配置安装在 Virtual box 中的 CentOS"
 categories: ["技术"]
-tags: ["Linux", "Ubuntu", "Virtual box"]
+tags: ["Linux", "CentOS", "Virtual box"]
 ---
 
 * 目录
