@@ -65,5 +65,26 @@ $ netstat -anp | grep :<port_number>
 
 
 
+## SSH 登录后自动切换目录[^2]
+
+1. 登录 Linux。
+
+2. 编辑 ~/.bash_profile 文件。
+
+3. 在文件末尾追加命令：
+
+   ```bash
+   $ cd /登陆后/自动切换的目录/路径
+   ```
+
+4. 保存并退出。
+
+5. 登出 Linux。
+
+6. 重新登录后会切换到配置的路径。
+
+
+
 [^1]: [Linux 中查找包含指定文本的所有文件](https://stackoverflow.com/a/16956844/4612522){:target="_blank"}
+[^2]: [SSH 登录后自动切换目录](https://newbedev.com/how-can-i-automatically-change-directory-on-ssh-login){:target="_blank"}
 

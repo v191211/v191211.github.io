@@ -13,6 +13,26 @@ tags: ["Git"]
 
 在参照文章中的工具安装步骤进行实操时，遇到一些问题，这里记录一下成功安装的过程，方便以后在新的环境中可以直接依照以下步骤安装。
 
+而实际工作中，可直接在 IDE 中安装支持 Angular 规范的插件而无须使用命令行的方式。
+
+例如接下来笔者要介绍的在 Idea 中安装使用 Git Commit Template 插件。
+
+### Idea 中安装使用 Git Commit Template 插件
+
+
+
+1. Ctrl + Shift + a 打开 Idea 中的插件商店。
+
+2. 输入 Git Commit Template，选中安装。
+
+3. Ctrl + K 快捷键或是点击 Git 提交代码按钮，如下图：
+
+   ![]({{ site.url }}/assets/images/posts/git-commit-template.png)
+
+4. 点击 Git Commit Template 插件提供的 Create commit message 按钮，填写提交信息 > OK > Commit，如图：
+
+   ![]({{ site.url }}/assets/images/posts/git-commit-template2.png)
+
 ### 配置 .gitignore 忽略安装工具产生的文件
 
 .gitignore 文件中添加如下内容：
