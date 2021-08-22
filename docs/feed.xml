@@ -1,5 +1,798 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-07-11T20:11:27+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">Commit message 和 Change log 编写指南</title><link href="https://empvalley.com/2021/07/01/commit-message-change-log/" rel="alternate" type="text/html" title="Commit message 和 Change log 编写指南" /><published>2021-07-01T00:00:00+08:00</published><updated>2021-07-01T00:00:00+08:00</updated><id>https://empvalley.com/2021/07/01/commit-message-change-log</id><content type="html" xml:base="https://empvalley.com/2021/07/01/commit-message-change-log/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-08-22T16:16:30+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;（摄影：Christopher Michel）&lt;/p&gt;
+
+&lt;p&gt;上个月 28 号是凯文·凯利（Kevin Kelly，网名 KK）的 68 岁生日，他准备了 68 条简短的建议，作为礼物送给年轻人。&lt;/p&gt;
+
+&lt;p&gt;(1) Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe.&lt;/p&gt;
+
+&lt;p&gt;学着从那些你不认同甚至是冒犯你的人身上学习。看是否能从他们所信奉的东西中找到真相。&lt;/p&gt;
+
+&lt;p&gt;(2) Being enthusiastic is worth 25 IQ points.&lt;/p&gt;
+
+&lt;p&gt;充满热情抵得上 25 点智商。&lt;/p&gt;
+
+&lt;p&gt;(3) Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.&lt;/p&gt;
+
+&lt;p&gt;做任何事都应该设个 deadline。它可以帮你排除那些无关紧要之事，并避免追求尽善尽美，而是努力去做到与众不同。差异胜于完美。&lt;/p&gt;
+
+&lt;p&gt;(4) Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.&lt;/p&gt;
+
+&lt;p&gt;不要担心自己问的问题听起来很傻。99% 的情况下，其他人都有和你一样的问题，只不过羞于问出口而已。&lt;/p&gt;
+
+&lt;p&gt;(5) Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more.&lt;/p&gt;
+
+&lt;p&gt;善于倾听是一种超能力。倾听时，要不时地追问「还有吗」，直到他们没有更多东西可讲。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;原译：善于倾听是一种超能力。倾听你所喜欢的人时，要不时地追问「还有吗」，直到他们没有更多东西可讲。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(6) A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier.&lt;/p&gt;
+
+&lt;p&gt;一个有意义的年度目标是去充分了解一个话题。这样，（到了年底的时候，）你就会对一年前的无知感到难以置信。&lt;/p&gt;
+
+&lt;p&gt;(7) Gratitude will unlock all other virtues and is something you can get better at.&lt;/p&gt;
+
+&lt;p&gt;感恩可以解锁其他所有美德，也是你能做得更好的一件事情。&lt;/p&gt;
+
+&lt;p&gt;(8) Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends.&lt;/p&gt;
+
+&lt;p&gt;不管是旧识还是新交，请他吃饭都是一个既简单又行得通的办法。&lt;/p&gt;
+
+&lt;p&gt;(9) Don’t trust all-purpose glue.&lt;/p&gt;
+
+&lt;p&gt;别信有什么万能药。&lt;/p&gt;
+
+&lt;p&gt;(10) Reading to your children regularly will bond you together and kickstart their imaginations.&lt;/p&gt;
+
+&lt;p&gt;经常为你的孩子读书既能巩固你们的感情，也能开启他们的想象力。&lt;/p&gt;
+
+&lt;p&gt;(11) Never use a credit card for credit. The only kind of credit, or debt, that is acceptable is debt to acquire something whose exchange value is extremely likely to increase, like in a home. The exchange value of most things diminishes or vanishes the moment you purchase them. Don’t be in debt to losers.&lt;/p&gt;
+
+&lt;p&gt;永远不要用信用卡去透支。唯一可接受的透支或负债，应该用来获取那些极可能增值的事物。绝大多数事物在你买下它的那一刻起就开始贬值了。别为那些没有未来的事物而透支。&lt;/p&gt;
+
+&lt;p&gt;(12) Pros are just amateurs who know how to gracefully recover from their mistakes.&lt;/p&gt;
+
+&lt;p&gt;所谓高手，不过是善于从跌跤中优雅起身的菜鸟而已。&lt;/p&gt;
+
+&lt;p&gt;(13) Extraordinary claims should require extraordinary evidence to be believed.&lt;/p&gt;
+
+&lt;p&gt;非同寻常的观点要有非同寻常的证据，才能令人信服。&lt;/p&gt;
+
+&lt;p&gt;(14) Don’t be the smartest person in the room. Hangout with, and learn from, people smarter than yourself. Even better, find smart people who will disagree with you.&lt;/p&gt;
+
+&lt;p&gt;别成为一群人里最聪明的那个。和那些比你聪明的人待在一起，向他们学习。如果能找到和你观点相左的聪明人，那就更好了。&lt;/p&gt;
+
+&lt;p&gt;(15) Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth.&lt;/p&gt;
+
+&lt;p&gt;对话的“数字 3 原则”：想要摸清一个人的真正意图，请他就刚才所说再深入一些，如此反复，直到第三遍，你所得到的就近于真相了。&lt;/p&gt;
+
+&lt;p&gt;(16) Don’t be the best. Be the only.&lt;/p&gt;
+
+&lt;p&gt;别做最好的。做唯一的。&lt;/p&gt;
+
+&lt;p&gt;(17) Everyone is shy. Other people are waiting for you to introduce yourself to them, they are waiting for you to send them an email, they are waiting for you to ask them on a date. Go ahead.&lt;/p&gt;
+
+&lt;p&gt;大家其实都很羞涩。没准儿人们正等着你去向他们做自我介绍，或是给他们发邮件，或是约他们见面。大胆往前走。&lt;/p&gt;
+
+&lt;p&gt;(18) Don’t take it personally when someone turns you down. Assume they are like you: busy, occupied, distracted. Try again later. It’s amazing how often a second try works.&lt;/p&gt;
+
+&lt;p&gt;如果被别人拒绝了，别往心里去。假设他们和你一样忙，一样腾不出手来，一样无暇分心。稍后再试一次。第二次的成功率超乎你想象。&lt;/p&gt;
+
+&lt;p&gt;(19) The purpose of a habit is to remove that action from self-negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing.&lt;/p&gt;
+
+&lt;p&gt;习惯的意义在于无需再为某类行为纠结，不用再为要不要做它而费思量。做就是了。讲真话和用牙线都属于好习惯。&lt;/p&gt;
+
+&lt;p&gt;(20) Promptness is a sign of respect.&lt;/p&gt;
+
+&lt;p&gt;及时回应是表示尊重的一种方式。&lt;/p&gt;
+
+&lt;p&gt;(21) When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.&lt;/p&gt;
+
+&lt;p&gt;在你年轻的时候，至少花六个月到一年的时间，尽可能穷地过日子，尽可能少地拥有身外之物，居陋室而箪食瓢饮，以体验你可能会经历的最穷困潦倒的生活。这样，当你在将来需要行冒险之事时，就不至于为最糟糕的情况而忧心不已。&lt;/p&gt;
+
+&lt;p&gt;(22) Trust me: There is no “them”.&lt;/p&gt;
+
+&lt;p&gt;相信我，这世上没有“他们”。（注：出自爱尔兰摇滚乐队 U2 的一首歌 Invisible，&quot;There's no them / only us&quot;。）&lt;/p&gt;
+
+&lt;p&gt;(23) The more you are interested in others, the more interesting they find you. To be interesting, be interested.&lt;/p&gt;
+
+&lt;p&gt;你越有兴趣了解他人，他人就会发现你越有趣。要成为有趣的人，先要对别人感兴趣。&lt;/p&gt;
+
+&lt;p&gt;(24) Optimize your generosity. No one on their deathbed has ever regretted giving too much away.&lt;/p&gt;
+
+&lt;p&gt;尽你所能行慷慨之事。没人会在死前后悔给出去太多。&lt;/p&gt;
+
+&lt;p&gt;(25) To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them.&lt;/p&gt;
+
+&lt;p&gt;想做好一件事，做就是了。想把一件事做到令人称颂，那就再来一遍，再来一遍，再来一遍。把事情做到极致的秘诀在于不停地重做。&lt;/p&gt;
+
+&lt;p&gt;(26) The Golden Rule will never fail you. It is the foundation of all other virtues.&lt;/p&gt;
+
+&lt;p&gt;“设身处地”是待人接物之道。它是所有其他美德的基石。（注：英文中，“黄金法则”是指应该用自己希望被对待的方式来对待他人。）&lt;/p&gt;
+
+&lt;p&gt;(27) If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it.&lt;/p&gt;
+
+&lt;p&gt;如果你在房间里遍寻某样东西并最终找到的话，那么用完后不要放回你找到它的地方，而是放到你最初找它的地方。&lt;/p&gt;
+
+&lt;p&gt;(28) Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth.&lt;/p&gt;
+
+&lt;p&gt;存钱和投资都是好习惯。几十年如一日不假思索地进行定期小额投资，是一条致富之道。&lt;/p&gt;
+
+&lt;p&gt;(29) To make mistakes is human. To own your mistakes is divine. Nothing elevates a person higher than quickly admitting and taking personal responsibility for the mistakes you make and then fixing them fairly. If you mess up, fess up. It’s astounding how powerful this ownership is.&lt;/p&gt;
+
+&lt;p&gt;犯错乃是人性。难的是责己。承认错误，勇于担责，并尽力弥补——没有什么比这更可贵的了。是自己搞砸的，就该坦承。这反而能彰显你的强大。&lt;/p&gt;
+
+&lt;p&gt;(30) Never get involved in a land war in Asia.&lt;/p&gt;
+
+&lt;p&gt;永远不要在亚洲陷入地面战争。&lt;/p&gt;
+
+&lt;p&gt;(31) You can obsess about serving your customers/audience/clients, or you can obsess about beating the competition. Both work, but of the two, obsessing about your customers will take you further.&lt;/p&gt;
+
+&lt;p&gt;你既可以专注于服务你的客户或听众，也可以专注于打败你的竞争对手。两者都行得通。但专注于服务你的客户会让你走得更远。&lt;/p&gt;
+
+&lt;p&gt;(32) Show up. Keep showing up. Somebody successful said: 99% of success is just showing up.&lt;/p&gt;
+
+&lt;p&gt;在场。坚持在场。某个成功人士说过：99% 的成功只不过是因为在场。&lt;/p&gt;
+
+&lt;p&gt;(33) Separate the processes of creation from improving. You can’t write and edit, or sculpt and polish, or make and analyze at the same time. If you do, the editor stops the creator. While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator mind must be unleashed from judgement.&lt;/p&gt;
+
+&lt;p&gt;将创造和改进分开。你不可能在写做的同时进行编辑，也不可能在凿刻的同时进行打磨，更不可能在制造的同时进行分析。如果你这么做，求善之心就会打断创造之意。创新时就要忘掉已有方案；勾勒草图时就不能太着眼于细处。写作时，先打草稿而不要去抠细节。在新事物之初，创意的思想必须得到无拘无束的释放。&lt;/p&gt;
+
+&lt;p&gt;(34) If you are not falling down occasionally, you are just coasting.&lt;/p&gt;
+
+&lt;p&gt;如果你从未跌倒过，那么你也就从未努力过。&lt;/p&gt;
+
+&lt;p&gt;(35) Perhaps the most counter-intuitive truth of the universe is that the more you give to others, the more you’ll get. Understanding this is the beginning of wisdom.&lt;/p&gt;
+
+&lt;p&gt;也许宇宙中最违反直觉的真理就是，你给予他人越多，你收获的就越多。这是智慧的起点。&lt;/p&gt;
+
+&lt;p&gt;(36) Friends are better than money. Almost anything money can do, friends can do better. In so many ways a friend with a boat is better than owning a boat.&lt;/p&gt;
+
+&lt;p&gt;朋友胜过金钱。用钱能办到的事情，朋友可以做得更好。很多时候，自己有条船不如有个有船的朋友。&lt;/p&gt;
+
+&lt;p&gt;(37) This is true: It’s hard to cheat an honest man.&lt;/p&gt;
+
+&lt;p&gt;相信我，你很难欺骗一个诚实的人。&lt;/p&gt;
+
+&lt;p&gt;(38) When an object is lost, 95% of the time it is hiding within arm’s reach of where it was last seen. Search in all possible locations in that radius and you’ll find it.&lt;/p&gt;
+
+&lt;p&gt;当你找不到一样东西时，它往往就在上次现身之处的一臂之内。仔细搜寻这个范围，你就能找到它。&lt;/p&gt;
+
+&lt;p&gt;(39) You are what you do. Not what you say, not what you believe, not how you vote, but what you spend your time on.&lt;/p&gt;
+
+&lt;p&gt;你的所作所为定义了你——既不是你所说的，也不是你所信的，更不是你所支持的，而是你花费时间于其上的。&lt;/p&gt;
+
+&lt;p&gt;(40) If you lose or forget to bring a cable, adapter or charger, check with your hotel. Most hotels now have a drawer full of cables, adapters and chargers others have left behind, and probably have the one you are missing. You can often claim it after borrowing it.&lt;/p&gt;
+
+&lt;p&gt;如果你把电源线、充电器什么的丢在或落在某个地方，不妨去问问你的酒店。绝大多数酒店都会有满满一抽屉的电源线、数据线和充电器——都是其他人落下的，没准儿其中就有你的。酒店也并不介意你借用后随身带走。&lt;/p&gt;
+
+&lt;p&gt;(41) Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison.&lt;/p&gt;
+
+&lt;p&gt;仇恨是一种对被仇恨者无用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;原译：仇恨是一种对被仇恨者并无卵用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(42) There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with.&lt;/p&gt;
+
+&lt;p&gt;没有最好，只有更好。个人的天分有高有低，但不论高低，自身的提升都永无止境。&lt;/p&gt;
+
+&lt;p&gt;(43) Be prepared: When you are 90% done any large project (a house, a film, an event, an app) the rest of the myriad details will take a second 90% to complete.&lt;/p&gt;
+
+&lt;p&gt;任何一项大工程（修房子、拍电影、开发 app）完成度为 90% 的时候，你都要做好心理准备：剩余的大量细节工作会占掉你另一段与之前相当的时间。&lt;/p&gt;
+
+&lt;p&gt;(44) When you die you take absolutely nothing with you except your reputation.&lt;/p&gt;
+
+&lt;p&gt;离世时，除了名声，你什么都带不走。&lt;/p&gt;
+
+&lt;p&gt;(45) Before you are old, attend as many funerals as you can bear, and listen. Nobody talks about the departed’s achievements. The only thing people will remember is what kind of person you were while you were achieving.&lt;/p&gt;
+
+&lt;p&gt;上岁数之前，尽可能多地参加葬礼并听听人们的谈话。没人会谈论死者的成就。人们记住的只有死者的人品。&lt;/p&gt;
+
+&lt;p&gt;(46) For every dollar you spend purchasing something substantial, expect to pay a dollar in repairs, maintenance, or disposal by the end of its life.&lt;/p&gt;
+
+&lt;p&gt;你购买实体商品时所花的每一元钱，将来都要再花一元钱去维修、保养，或是在它报废后处理掉它。&lt;/p&gt;
+
+&lt;p&gt;(47) Anything real begins with the fiction of what could be. Imagination is therefore the most potent force in the universe, and a skill you can get better at. It’s the one skill in life that benefits from ignoring what everyone else knows.&lt;/p&gt;
+
+&lt;p&gt;任何真实之物都源于虚构之意。想象是宇宙中最强大的力量，也是你能够日益精进的能力。生命中可以因不知众人所知而获益的能力，仅此一项。&lt;/p&gt;
+
+&lt;p&gt;(48) When crisis and disaster strike, don’t waste them. No problems, no progress.&lt;/p&gt;
+
+&lt;p&gt;当危机和灾难来袭时，别错过他们。没有问题，就没有进步。&lt;/p&gt;
+
+&lt;p&gt;(49) On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back.&lt;/p&gt;
+
+&lt;p&gt;度假时，先跳过城市，去路线中最偏远的地方。这样你就能最大程度地体验到异域风情带给你的冲击。而在返程的路上，你则可以享受熟悉的城市所带给你的舒适。&lt;/p&gt;
+
+&lt;p&gt;(50) When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter.&lt;/p&gt;
+
+&lt;p&gt;当你被邀请在未来的某个时间点做某件事情时，问问自己：如果这件事情明天就启动，你会否接受？绝大多数邀约都经不住这种迫切性检验。&lt;/p&gt;
+
+&lt;p&gt;(51) Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they &lt;em&gt;will&lt;/em&gt; read it.&lt;/p&gt;
+
+&lt;p&gt;不要在邮件里对他人品头论足——如果这些话你不会当面说给那些人听的话。要知道，他们早晚会读到你的这些评论。&lt;/p&gt;
+
+&lt;p&gt;(52) If you desperately need a job, you are just another problem for a boss; if you can solve many of the problems the boss has right now, you are hired. To be hired, think like your boss.&lt;/p&gt;
+
+&lt;p&gt;如果你只是迫切需要一份工作，那么对老板来说，你不过是又一个问题。如果你能解决老板的很多问题，那你自然能得到这份工作。要得到一份工作，需要像老板一样去想问题。&lt;/p&gt;
+
+&lt;p&gt;(53) Art is in what you leave out.&lt;/p&gt;
+
+&lt;p&gt;艺术藏身于你所遗漏之处。&lt;/p&gt;
+
+&lt;p&gt;(54) Acquiring things will rarely bring you deep satisfaction. But acquiring experiences will.&lt;/p&gt;
+
+&lt;p&gt;拥有物品很少能带给你极大的满足感。但拥有体验则能。&lt;/p&gt;
+
+&lt;p&gt;(55) Rule of 7 in research. You can find out anything if you are willing to go seven levels. If the first source you ask doesn’t know, ask them who you should ask next, and so on down the line. If you are willing to go to the 7th source, you’ll almost always get your answer.&lt;/p&gt;
+
+&lt;p&gt;研究的“数字 7 原则”：当你愿意就一个问题深入七层时，总能找到你想要的答案。如果你求教的第一层人不知道，那么就问问他们应该去找谁。如此追索下去。到第七层时，通常都会如愿以偿。&lt;/p&gt;
+
+&lt;p&gt;(56) How to apologize: Quickly, specifically, sincerely.&lt;/p&gt;
+
+&lt;p&gt;如何道歉？快速，具体，真诚。&lt;/p&gt;
+
+&lt;p&gt;(57) Don’t ever respond to a solicitation or a proposal on the phone. The urgency is a disguise.&lt;/p&gt;
+
+&lt;p&gt;不要在电话上答应任何请求或提议。所谓的紧急不过是个假象。&lt;/p&gt;
+
+&lt;p&gt;(58) When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict.&lt;/p&gt;
+
+&lt;p&gt;当一个人对你粗鄙、无礼、刻薄、甚至是无耻下流时，当他们有病就好。这有利于你对他生出同情心，从而缓解冲突。&lt;/p&gt;
+
+&lt;p&gt;(59) Eliminating clutter makes room for your true treasures.&lt;/p&gt;
+
+&lt;p&gt;清除杂物，为真正重要的东西腾出空间。&lt;/p&gt;
+
+&lt;p&gt;(60) You really don’t want to be famous. Read the biography of any famous person.&lt;/p&gt;
+
+&lt;p&gt;你绝不会想要出名。不信的话，随便找本名人传记读读。&lt;/p&gt;
+
+&lt;p&gt;(61) Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time.&lt;/p&gt;
+
+&lt;p&gt;经验往往被高估了。招募的时候，要看资质，技能则可以培训。许多令人惊奇和赞叹的事情，都是由第一次做的人做出来的。&lt;/p&gt;
+
+&lt;p&gt;(62) A vacation + a disaster = an adventure.&lt;/p&gt;
+
+&lt;p&gt;假期 + 灾难 = 冒险。&lt;/p&gt;
+
+&lt;p&gt;(63) Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford.&lt;/p&gt;
+
+&lt;p&gt;买工具时，起步阶段一定要买最便宜的。升级那些使用频次高的工具。如果你的工具是用于工作，那么买你能买得起的最好的。&lt;/p&gt;
+
+&lt;p&gt;(64) Learn how to take a 20-minute power nap without embarrassment.&lt;/p&gt;
+
+&lt;p&gt;学会毫不尴尬地打 20 分钟小盹儿。（注：20-minute power nap 通常指午后 20～30 分钟的小憩。近期有研究表明，20-minute power nap 有助于提振情绪，提升专注度和创造力。）&lt;/p&gt;
+
+&lt;p&gt;(65) Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.&lt;/p&gt;
+
+&lt;p&gt;在你不知道自己真正的激情所在时，追寻心之所向往往会带你误入歧途。对年轻人来说，更好的格言是：“精通一件事，任何事。”在精通一件事的过程中，你可以顺着带给你更多快乐的方向继续深入，并最终发现你的心之所向。&lt;/p&gt;
+
+&lt;p&gt;(66) I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today.&lt;/p&gt;
+
+&lt;p&gt;我敢肯定，我今天确信的很多事情在 100 年后都会被证明是错误的，甚至是错得离谱。而我非常努力在做的事情，就是去识别我对今天的错误认知。&lt;/p&gt;
+
+&lt;p&gt;(67) Over the long term, the future is decided by optimists. To be an optimist you don’t have to ignore all the many problems we create; you just have to imagine improving our capacity to solve problems.&lt;/p&gt;
+
+&lt;p&gt;从长远来说，未来取决于乐观主义者。成为一个乐观主义者并非要对我们制造的问题视而不见，而是要想象如何提升我们解决问题的能力。&lt;/p&gt;
+
+&lt;p&gt;(68) The universe is conspiring behind your back to make you a success. This will be much easier to do if you embrace this pronoia.&lt;/p&gt;
+
+&lt;p&gt;整个宇宙都在背后为你而谋划。如果你不怀有人人都与自己为敌的心态，会更容易成功。（注：pronoia 是 paranoia 的反义词。Paranoia 可以译为“迫害妄想症”，也即觉得所有人、所有事都与自己为敌的心理状态。）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;原译：整个宇宙都在背后为你而谋划。要相信，天助人愿。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/143834871&quot;&gt;KK 在 68 岁生日时给出的 68 条建议&lt;/a&gt;，略作修改并注明。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">（摄影：Christopher Michel） 上个月 28 号是凯文·凯利（Kevin Kelly，网名 KK）的 68 岁生日，他准备了 68 条简短的建议，作为礼物送给年轻人。 (1) Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe. 学着从那些你不认同甚至是冒犯你的人身上学习。看是否能从他们所信奉的东西中找到真相。 (2) Being enthusiastic is worth 25 IQ points. 充满热情抵得上 25 点智商。 (3) Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better. 做任何事都应该设个 deadline。它可以帮你排除那些无关紧要之事，并避免追求尽善尽美，而是努力去做到与众不同。差异胜于完美。 (4) Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it. 不要担心自己问的问题听起来很傻。99% 的情况下，其他人都有和你一样的问题，只不过羞于问出口而已。 (5) Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more. 善于倾听是一种超能力。倾听时，要不时地追问「还有吗」，直到他们没有更多东西可讲。 原译：善于倾听是一种超能力。倾听你所喜欢的人时，要不时地追问「还有吗」，直到他们没有更多东西可讲。 (6) A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier. 一个有意义的年度目标是去充分了解一个话题。这样，（到了年底的时候，）你就会对一年前的无知感到难以置信。 (7) Gratitude will unlock all other virtues and is something you can get better at. 感恩可以解锁其他所有美德，也是你能做得更好的一件事情。 (8) Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends. 不管是旧识还是新交，请他吃饭都是一个既简单又行得通的办法。 (9) Don’t trust all-purpose glue. 别信有什么万能药。 (10) Reading to your children regularly will bond you together and kickstart their imaginations. 经常为你的孩子读书既能巩固你们的感情，也能开启他们的想象力。 (11) Never use a credit card for credit. The only kind of credit, or debt, that is acceptable is debt to acquire something whose exchange value is extremely likely to increase, like in a home. The exchange value of most things diminishes or vanishes the moment you purchase them. Don’t be in debt to losers. 永远不要用信用卡去透支。唯一可接受的透支或负债，应该用来获取那些极可能增值的事物。绝大多数事物在你买下它的那一刻起就开始贬值了。别为那些没有未来的事物而透支。 (12) Pros are just amateurs who know how to gracefully recover from their mistakes. 所谓高手，不过是善于从跌跤中优雅起身的菜鸟而已。 (13) Extraordinary claims should require extraordinary evidence to be believed. 非同寻常的观点要有非同寻常的证据，才能令人信服。 (14) Don’t be the smartest person in the room. Hangout with, and learn from, people smarter than yourself. Even better, find smart people who will disagree with you. 别成为一群人里最聪明的那个。和那些比你聪明的人待在一起，向他们学习。如果能找到和你观点相左的聪明人，那就更好了。 (15) Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth. 对话的“数字 3 原则”：想要摸清一个人的真正意图，请他就刚才所说再深入一些，如此反复，直到第三遍，你所得到的就近于真相了。 (16) Don’t be the best. Be the only. 别做最好的。做唯一的。 (17) Everyone is shy. Other people are waiting for you to introduce yourself to them, they are waiting for you to send them an email, they are waiting for you to ask them on a date. Go ahead. 大家其实都很羞涩。没准儿人们正等着你去向他们做自我介绍，或是给他们发邮件，或是约他们见面。大胆往前走。 (18) Don’t take it personally when someone turns you down. Assume they are like you: busy, occupied, distracted. Try again later. It’s amazing how often a second try works. 如果被别人拒绝了，别往心里去。假设他们和你一样忙，一样腾不出手来，一样无暇分心。稍后再试一次。第二次的成功率超乎你想象。 (19) The purpose of a habit is to remove that action from self-negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing. 习惯的意义在于无需再为某类行为纠结，不用再为要不要做它而费思量。做就是了。讲真话和用牙线都属于好习惯。 (20) Promptness is a sign of respect. 及时回应是表示尊重的一种方式。 (21) When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario. 在你年轻的时候，至少花六个月到一年的时间，尽可能穷地过日子，尽可能少地拥有身外之物，居陋室而箪食瓢饮，以体验你可能会经历的最穷困潦倒的生活。这样，当你在将来需要行冒险之事时，就不至于为最糟糕的情况而忧心不已。 (22) Trust me: There is no “them”. 相信我，这世上没有“他们”。（注：出自爱尔兰摇滚乐队 U2 的一首歌 Invisible，&quot;There's no them / only us&quot;。） (23) The more you are interested in others, the more interesting they find you. To be interesting, be interested. 你越有兴趣了解他人，他人就会发现你越有趣。要成为有趣的人，先要对别人感兴趣。 (24) Optimize your generosity. No one on their deathbed has ever regretted giving too much away. 尽你所能行慷慨之事。没人会在死前后悔给出去太多。 (25) To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them. 想做好一件事，做就是了。想把一件事做到令人称颂，那就再来一遍，再来一遍，再来一遍。把事情做到极致的秘诀在于不停地重做。 (26) The Golden Rule will never fail you. It is the foundation of all other virtues. “设身处地”是待人接物之道。它是所有其他美德的基石。（注：英文中，“黄金法则”是指应该用自己希望被对待的方式来对待他人。） (27) If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it. 如果你在房间里遍寻某样东西并最终找到的话，那么用完后不要放回你找到它的地方，而是放到你最初找它的地方。 (28) Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth. 存钱和投资都是好习惯。几十年如一日不假思索地进行定期小额投资，是一条致富之道。 (29) To make mistakes is human. To own your mistakes is divine. Nothing elevates a person higher than quickly admitting and taking personal responsibility for the mistakes you make and then fixing them fairly. If you mess up, fess up. It’s astounding how powerful this ownership is. 犯错乃是人性。难的是责己。承认错误，勇于担责，并尽力弥补——没有什么比这更可贵的了。是自己搞砸的，就该坦承。这反而能彰显你的强大。 (30) Never get involved in a land war in Asia. 永远不要在亚洲陷入地面战争。 (31) You can obsess about serving your customers/audience/clients, or you can obsess about beating the competition. Both work, but of the two, obsessing about your customers will take you further. 你既可以专注于服务你的客户或听众，也可以专注于打败你的竞争对手。两者都行得通。但专注于服务你的客户会让你走得更远。 (32) Show up. Keep showing up. Somebody successful said: 99% of success is just showing up. 在场。坚持在场。某个成功人士说过：99% 的成功只不过是因为在场。 (33) Separate the processes of creation from improving. You can’t write and edit, or sculpt and polish, or make and analyze at the same time. If you do, the editor stops the creator. While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator mind must be unleashed from judgement. 将创造和改进分开。你不可能在写做的同时进行编辑，也不可能在凿刻的同时进行打磨，更不可能在制造的同时进行分析。如果你这么做，求善之心就会打断创造之意。创新时就要忘掉已有方案；勾勒草图时就不能太着眼于细处。写作时，先打草稿而不要去抠细节。在新事物之初，创意的思想必须得到无拘无束的释放。 (34) If you are not falling down occasionally, you are just coasting. 如果你从未跌倒过，那么你也就从未努力过。 (35) Perhaps the most counter-intuitive truth of the universe is that the more you give to others, the more you’ll get. Understanding this is the beginning of wisdom. 也许宇宙中最违反直觉的真理就是，你给予他人越多，你收获的就越多。这是智慧的起点。 (36) Friends are better than money. Almost anything money can do, friends can do better. In so many ways a friend with a boat is better than owning a boat. 朋友胜过金钱。用钱能办到的事情，朋友可以做得更好。很多时候，自己有条船不如有个有船的朋友。 (37) This is true: It’s hard to cheat an honest man. 相信我，你很难欺骗一个诚实的人。 (38) When an object is lost, 95% of the time it is hiding within arm’s reach of where it was last seen. Search in all possible locations in that radius and you’ll find it. 当你找不到一样东西时，它往往就在上次现身之处的一臂之内。仔细搜寻这个范围，你就能找到它。 (39) You are what you do. Not what you say, not what you believe, not how you vote, but what you spend your time on. 你的所作所为定义了你——既不是你所说的，也不是你所信的，更不是你所支持的，而是你花费时间于其上的。 (40) If you lose or forget to bring a cable, adapter or charger, check with your hotel. Most hotels now have a drawer full of cables, adapters and chargers others have left behind, and probably have the one you are missing. You can often claim it after borrowing it. 如果你把电源线、充电器什么的丢在或落在某个地方，不妨去问问你的酒店。绝大多数酒店都会有满满一抽屉的电源线、数据线和充电器——都是其他人落下的，没准儿其中就有你的。酒店也并不介意你借用后随身带走。 (41) Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison. 仇恨是一种对被仇恨者无用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。 原译：仇恨是一种对被仇恨者并无卵用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。 (42) There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with. 没有最好，只有更好。个人的天分有高有低，但不论高低，自身的提升都永无止境。 (43) Be prepared: When you are 90% done any large project (a house, a film, an event, an app) the rest of the myriad details will take a second 90% to complete. 任何一项大工程（修房子、拍电影、开发 app）完成度为 90% 的时候，你都要做好心理准备：剩余的大量细节工作会占掉你另一段与之前相当的时间。 (44) When you die you take absolutely nothing with you except your reputation. 离世时，除了名声，你什么都带不走。 (45) Before you are old, attend as many funerals as you can bear, and listen. Nobody talks about the departed’s achievements. The only thing people will remember is what kind of person you were while you were achieving. 上岁数之前，尽可能多地参加葬礼并听听人们的谈话。没人会谈论死者的成就。人们记住的只有死者的人品。 (46) For every dollar you spend purchasing something substantial, expect to pay a dollar in repairs, maintenance, or disposal by the end of its life. 你购买实体商品时所花的每一元钱，将来都要再花一元钱去维修、保养，或是在它报废后处理掉它。 (47) Anything real begins with the fiction of what could be. Imagination is therefore the most potent force in the universe, and a skill you can get better at. It’s the one skill in life that benefits from ignoring what everyone else knows. 任何真实之物都源于虚构之意。想象是宇宙中最强大的力量，也是你能够日益精进的能力。生命中可以因不知众人所知而获益的能力，仅此一项。 (48) When crisis and disaster strike, don’t waste them. No problems, no progress. 当危机和灾难来袭时，别错过他们。没有问题，就没有进步。 (49) On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back. 度假时，先跳过城市，去路线中最偏远的地方。这样你就能最大程度地体验到异域风情带给你的冲击。而在返程的路上，你则可以享受熟悉的城市所带给你的舒适。 (50) When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter. 当你被邀请在未来的某个时间点做某件事情时，问问自己：如果这件事情明天就启动，你会否接受？绝大多数邀约都经不住这种迫切性检验。 (51) Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they will read it. 不要在邮件里对他人品头论足——如果这些话你不会当面说给那些人听的话。要知道，他们早晚会读到你的这些评论。 (52) If you desperately need a job, you are just another problem for a boss; if you can solve many of the problems the boss has right now, you are hired. To be hired, think like your boss. 如果你只是迫切需要一份工作，那么对老板来说，你不过是又一个问题。如果你能解决老板的很多问题，那你自然能得到这份工作。要得到一份工作，需要像老板一样去想问题。 (53) Art is in what you leave out. 艺术藏身于你所遗漏之处。 (54) Acquiring things will rarely bring you deep satisfaction. But acquiring experiences will. 拥有物品很少能带给你极大的满足感。但拥有体验则能。 (55) Rule of 7 in research. You can find out anything if you are willing to go seven levels. If the first source you ask doesn’t know, ask them who you should ask next, and so on down the line. If you are willing to go to the 7th source, you’ll almost always get your answer. 研究的“数字 7 原则”：当你愿意就一个问题深入七层时，总能找到你想要的答案。如果你求教的第一层人不知道，那么就问问他们应该去找谁。如此追索下去。到第七层时，通常都会如愿以偿。 (56) How to apologize: Quickly, specifically, sincerely. 如何道歉？快速，具体，真诚。 (57) Don’t ever respond to a solicitation or a proposal on the phone. The urgency is a disguise. 不要在电话上答应任何请求或提议。所谓的紧急不过是个假象。 (58) When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict. 当一个人对你粗鄙、无礼、刻薄、甚至是无耻下流时，当他们有病就好。这有利于你对他生出同情心，从而缓解冲突。 (59) Eliminating clutter makes room for your true treasures. 清除杂物，为真正重要的东西腾出空间。 (60) You really don’t want to be famous. Read the biography of any famous person. 你绝不会想要出名。不信的话，随便找本名人传记读读。 (61) Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time. 经验往往被高估了。招募的时候，要看资质，技能则可以培训。许多令人惊奇和赞叹的事情，都是由第一次做的人做出来的。 (62) A vacation + a disaster = an adventure. 假期 + 灾难 = 冒险。 (63) Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford. 买工具时，起步阶段一定要买最便宜的。升级那些使用频次高的工具。如果你的工具是用于工作，那么买你能买得起的最好的。 (64) Learn how to take a 20-minute power nap without embarrassment. 学会毫不尴尬地打 20 分钟小盹儿。（注：20-minute power nap 通常指午后 20～30 分钟的小憩。近期有研究表明，20-minute power nap 有助于提振情绪，提升专注度和创造力。） (65) Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is. 在你不知道自己真正的激情所在时，追寻心之所向往往会带你误入歧途。对年轻人来说，更好的格言是：“精通一件事，任何事。”在精通一件事的过程中，你可以顺着带给你更多快乐的方向继续深入，并最终发现你的心之所向。 (66) I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today. 我敢肯定，我今天确信的很多事情在 100 年后都会被证明是错误的，甚至是错得离谱。而我非常努力在做的事情，就是去识别我对今天的错误认知。 (67) Over the long term, the future is decided by optimists. To be an optimist you don’t have to ignore all the many problems we create; you just have to imagine improving our capacity to solve problems. 从长远来说，未来取决于乐观主义者。成为一个乐观主义者并非要对我们制造的问题视而不见，而是要想象如何提升我们解决问题的能力。 (68) The universe is conspiring behind your back to make you a success. This will be much easier to do if you embrace this pronoia. 整个宇宙都在背后为你而谋划。如果你不怀有人人都与自己为敌的心态，会更容易成功。（注：pronoia 是 paranoia 的反义词。Paranoia 可以译为“迫害妄想症”，也即觉得所有人、所有事都与自己为敌的心理状态。） 原译：整个宇宙都在背后为你而谋划。要相信，天助人愿。 原文：KK 在 68 岁生日时给出的 68 条建议，略作修改并注明。</summary></entry><entry><title type="html">KK 在 69 岁生日时给出的 99 条建议</title><link href="https://empvalley.com/2021/08/22/99-additional-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 69 岁生日时给出的 99 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/99-additional-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/99-additional-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/99-additional-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I have another birthday, and another bunch of unsolicited advice.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;又一年生日；又一堆碎碎念。&lt;/p&gt;
+
+&lt;p&gt;(1) That thing that made you weird as a kid could make you great as an adult — if you don’t lose it.&lt;/p&gt;
+
+&lt;p&gt;儿时让你显得出格的事情会让你成年后与众不同——只要你还没有丢掉它。&lt;/p&gt;
+
+&lt;p&gt;【weird 一词的常用义是“怪异、离奇”。原文评论中有人指出，这个词来源于古英语 wyrd，意指“命运”。每个人都有自己的 wyrd 或 weird；也许应该学会运用我们身上的出格之处，而不是把它装进世俗的框架。KK 表示，涨姿势了。有兴趣的童鞋可以参考&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Wyrd&quot;&gt;维基百科上 wyrd 这个词条&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;另外，KK 也承认，很多建议都来自老话，他只不过把它们收集进来。所以，如果你在其他地方也读到过类似的建议，不用惊讶。】&lt;/p&gt;
+
+&lt;p&gt;(2) If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips.&lt;/p&gt;
+
+&lt;p&gt;如果你担心一趟带不上所有家伙事儿，那就分两次带好了。&lt;/p&gt;
+
+&lt;p&gt;(3) What you get by achieving your goals is not as important as what you become by achieving your goals. At your funeral people will not recall what you did; they will only remember how you made them feel.&lt;/p&gt;
+
+&lt;p&gt;达成目标所带给你的，远不及你为此而做出的自身改变。在你的葬礼上，人们不会记得你做过什么，只会记得你带给他们的感受。&lt;/p&gt;
+
+&lt;p&gt;(4) Recipe for success: under-promise and over-deliver.&lt;/p&gt;
+
+&lt;p&gt;成功的秘诀：不要承诺太满，而要超预期交付。&lt;/p&gt;
+
+&lt;p&gt;【看到网上有些译文把 under- 翻译成“少”，over- 翻译成“多”，但更确切的理解应该是：under- 为“不足”，over- 为“过度”。这其中的差别比较微妙。】&lt;/p&gt;
+
+&lt;p&gt;(5) It’s not an apology if it comes with an excuse. It is not a compliment if it comes with a request.&lt;/p&gt;
+
+&lt;p&gt;带有借口的道歉不是道歉；附有请求的夸赞也不是夸赞。&lt;/p&gt;
+
+&lt;p&gt;(6) Jesus, Superman, and Mother Teresa never made art. Only imperfect beings can make art because art begins in what is broken.&lt;/p&gt;
+
+&lt;p&gt;耶稣、超人和特蕾莎修女搞不了艺术。只有不完美的存在才能创作艺术，因为艺术始于残缺。&lt;/p&gt;
+
+&lt;p&gt;(7) If someone is trying to convince you it’s not a pyramid scheme, it’s a pyramid scheme.&lt;/p&gt;
+
+&lt;p&gt;如果某人试图让你相信这不是个老鼠会，那它就是个老鼠会。&lt;/p&gt;
+
+&lt;p&gt;(8) Learn how to tie a bowline knot. Practice in the dark. With one hand. For the rest of your life you’ll use this knot more times than you would ever believe.&lt;/p&gt;
+
+&lt;p&gt;学会如何打称人结。练习在黑暗中打；练习用一只手打。你会发现今后用到它的地方要远超出你的想象。&lt;/p&gt;
+
+&lt;p&gt;【称人结，也有叫单套结、帆索结的，是一种安全性较高也较容易解开的绳结。我照着视频学习了一下，闭着眼睛打应该没问题，单手打还不能够。】&lt;/p&gt;
+
+&lt;p&gt;(9) If something fails where you thought it would fail, that is not a failure.&lt;/p&gt;
+
+&lt;p&gt;预料中的失败算不上失败。&lt;/p&gt;
+
+&lt;p&gt;【这句做了一定程度的意译。原文评论中有人对此不解，认为失败就是失败，不能阻止可以预见的失败也是失败。这是看问题的角度不同，或者说，对失败的定义不同。】&lt;/p&gt;
+
+&lt;p&gt;(10) Be governed not by the tyranny of the urgent but by the elevation of the important.&lt;/p&gt;
+
+&lt;p&gt;不要被事情的紧急性牵着鼻子走，而要看它的重要性。&lt;/p&gt;
+
+&lt;p&gt;(11) Leave a gate behind you the way you first found it.&lt;/p&gt;
+
+&lt;p&gt;穿过一扇门后，保持它原来开或合的状态。&lt;/p&gt;
+
+&lt;p&gt;【没想到这居然是一条写入英国《乡村守则》（The Country Code）的规则，原始条文是“Leave all gates as you found them”。 有兴趣的童鞋可以查看&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Leave_the_gate_as_you_found_it&quot;&gt;维基百科上的词条&lt;/a&gt;。】&lt;/p&gt;
+
+&lt;p&gt;(12) The greatest rewards come from working on something that nobody has a name for. If you possibly can, work where there are no words for what you do.&lt;/p&gt;
+
+&lt;p&gt;做一件没有人能说清楚的事儿会带给你最大的回报。但凡有可能的话，去做一件还未被人们谈及的事情。&lt;/p&gt;
+
+&lt;p&gt;(13) A balcony or porch needs to be at least 6 feet (2m) deep or it won’t be used.&lt;/p&gt;
+
+&lt;p&gt;阳台至少应该有两米宽才有用。&lt;/p&gt;
+
+&lt;p&gt;(14) Don’t create things to make money; make money so you can create things. The reward for good work is more work.&lt;/p&gt;
+
+&lt;p&gt;不要为了赚钱而去做事；而是为了做事去赚钱。干好工作的回报是有更多的工作。&lt;/p&gt;
+
+&lt;p&gt;(15) In all things — except love — start with the exit strategy. Prepare for the ending. Almost anything is easier to get into than out of.&lt;/p&gt;
+
+&lt;p&gt;在所有事情（除去爱情）开始时做好退出计划。为结局做准备。几乎任何事情都是陷入易而抽身难。&lt;/p&gt;
+
+&lt;p&gt;(16) Train employees well enough they could get another job, but treat them well enough so they never want to.&lt;/p&gt;
+
+&lt;p&gt;尽力培训员工，使他们能有更多的职业机会；尽心善待员工，让他们永远不会考虑跳槽。&lt;/p&gt;
+
+&lt;p&gt;(17) Don’t aim to have others like you; aim to have them respect you.&lt;/p&gt;
+
+&lt;p&gt;要以获得他人的尊重而非喜爱为目标。&lt;/p&gt;
+
+&lt;p&gt;(18) The foundation of maturity: Just because it’s not your fault doesn’t mean it’s not your responsibility.&lt;/p&gt;
+
+&lt;p&gt;成熟的基本要素：不因事不关己而高高挂起。&lt;/p&gt;
+
+&lt;p&gt;(19) A multitude of bad ideas is necessary for one good idea.&lt;/p&gt;
+
+&lt;p&gt;无数个糟糕的想法中才能诞生一个好想法。&lt;/p&gt;
+
+&lt;p&gt;(20) Being wise means having more questions than answers.&lt;/p&gt;
+
+&lt;p&gt;有智慧意味着有更多的问题而非答案。&lt;/p&gt;
+
+&lt;p&gt;(21) Compliment people behind their back. It’ll come back to you.&lt;/p&gt;
+
+&lt;p&gt;背后夸人。别人也会背后夸你。&lt;/p&gt;
+
+&lt;p&gt;(22) Most overnight successes — in fact any significant successes — take at least 5 years. Budget your life accordingly.&lt;/p&gt;
+
+&lt;p&gt;绝大多数一夜之间的功成名就——事实上，任何显著的成就——都要经过至少五年（的准备）。请据此来规划你的人生。&lt;/p&gt;
+
+&lt;p&gt;(23) You are only as young as the last time you changed your mind.&lt;/p&gt;
+
+&lt;p&gt;你的年轻程度取决于你上一次改变想法的时候（想法有多成熟）。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;原译：你的年轻程度取决于你上一次改变想法的时候（距今有多久）。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(24) Assume anyone asking for your account information for any reason is guilty of scamming you, unless proven innocent. The way to prove innocence is to call them back, or login to your account using numbers or a website that you provide, not them. Don’t release any identifying information while they are contacting you via phone, message or email. You must control the channel.&lt;/p&gt;
+
+&lt;p&gt;任何人以任何借口向你索要账号信息，都可以认为他们是骗子，除非能证明他们是无辜的。而证明他们无辜的方法是，给你自己确知的号码打电话或登录你自己确知的网站，而不是用他们给你的号码或网页地址。不要在他们打给你的电话或是在回复他们发给你的消息、邮件中透露任何个人信息。你的数据安全你掌控。&lt;/p&gt;
+
+&lt;p&gt;(25) Sustained outrage makes you stupid.&lt;/p&gt;
+
+&lt;p&gt;持续的愤怒会让你变得愚蠢。&lt;/p&gt;
+
+&lt;p&gt;(26) Be strict with yourself and forgiving of others. The reverse is hell for everyone.&lt;/p&gt;
+
+&lt;p&gt;严以律己，宽以待人。反其道而行对谁来说都是灾难。&lt;/p&gt;
+
+&lt;p&gt;(27) Your best response to an insult is “You’re probably right.” Often they are.&lt;/p&gt;
+
+&lt;p&gt;当别人冒犯你时，最好的回应是“也许您是对的”。而通常他们确实是对的。&lt;/p&gt;
+
+&lt;p&gt;(28) The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil.&lt;/p&gt;
+
+&lt;p&gt;历史上最严重的罪行总是由那些真心相信自己在与邪恶战斗的人而犯下的。警惕与邪恶做斗争。&lt;/p&gt;
+
+&lt;p&gt;(29) If you can avoid seeking approval of others, your power is limitless.&lt;/p&gt;
+
+&lt;p&gt;如果你不用在意别人的眼光，那你的力量就是无穷的。&lt;/p&gt;
+
+&lt;p&gt;(30) When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?”&lt;/p&gt;
+
+&lt;p&gt;当孩子不停地问“为什么”时，最聪明的回答是：“我不知道。你怎么看呢？”&lt;/p&gt;
+
+&lt;p&gt;(31) To be wealthy, accumulate all those things that money can’t buy.&lt;/p&gt;
+
+&lt;p&gt;积攒那些用钱买不到的东西可以致富。&lt;/p&gt;
+
+&lt;p&gt;(32) Be the change you wish to see.&lt;/p&gt;
+
+&lt;p&gt;成为你想要看见的改变。&lt;/p&gt;
+
+&lt;p&gt;【这句话曾被认为是圣雄甘地所说，但其实甘地并没有说过这句话。】&lt;/p&gt;
+
+&lt;p&gt;(33) When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply.&lt;/p&gt;
+
+&lt;p&gt;在与他人一起头脑风暴或是即兴创作时，用令人鼓舞的“没错——而且”——而非令人泄气的“不——可是”——来回应每一条贡献，那你就能走得更深更远。&lt;/p&gt;
+
+&lt;p&gt;(34) Work to become, not to acquire.&lt;/p&gt;
+
+&lt;p&gt;工作是为了成长而非获取。&lt;/p&gt;
+
+&lt;p&gt;【注：此句出自美国作家和出版人阿尔伯特·哈伯德（Elbert Hubbard）。他以短篇故事《把信送给加西亚》（另译为《致加西亚的信》，A Message to Garcia）而闻名。】&lt;/p&gt;
+
+&lt;p&gt;(35) Don’t loan money to a friend unless you are ready to make it a gift.&lt;/p&gt;
+
+&lt;p&gt;别借钱给朋友，除非你已做好心理准备当作是送给他。&lt;/p&gt;
+
+&lt;p&gt;(36) On the way to a grand goal, celebrate the smallest victories as if each one were the final goal. No matter where it ends you are victorious.&lt;/p&gt;
+
+&lt;p&gt;在通往宏伟目标的路上，把每一次微不足道的胜利都当作最终目标来庆祝。这样无论在哪里结束，你都是胜利者。&lt;/p&gt;
+
+&lt;p&gt;(37) Calm is contagious.&lt;/p&gt;
+
+&lt;p&gt;镇定具有传染力。&lt;/p&gt;
+
+&lt;p&gt;(38) Even a foolish person can still be right about most things. Most conventional wisdom is true.&lt;/p&gt;
+
+&lt;p&gt;即便是一个蠢人，在大多数事情上也是对的。大多数老话都是有道理的。&lt;/p&gt;
+
+&lt;p&gt;(39) Always cut away from yourself.&lt;/p&gt;
+
+&lt;p&gt;切削时刀子的方向要朝外。&lt;/p&gt;
+
+&lt;p&gt;(40) Show me your calendar and I will tell you your priorities. Tell me who your friends are, and I’ll tell you where you’re going.&lt;/p&gt;
+
+&lt;p&gt;从你的日程安排可以看出你看重什么事情；从你的交往圈子可以看出你会是什么样的人。&lt;/p&gt;
+
+&lt;p&gt;【我再补充半句：从一个国家的年轻人可以看出这个国家的未来。】&lt;/p&gt;
+
+&lt;p&gt;(41) When hitchhiking, look like the person you want to pick you up.&lt;/p&gt;
+
+&lt;p&gt;搭便车时，要表现得像是你自己愿意搭载的人。&lt;/p&gt;
+
+&lt;p&gt;(42) Contemplating the weaknesses of others is easy; contemplating the weaknesses in yourself is hard, but it pays a much higher reward.&lt;/p&gt;
+
+&lt;p&gt;审视别人的弱点很容易；审视自己的弱点很难，但这会让你受益匪浅。&lt;/p&gt;
+
+&lt;p&gt;(43) Worth repeating: measure twice, cut once.&lt;/p&gt;
+
+&lt;p&gt;值得多念两遍：量两次，切一次。&lt;/p&gt;
+
+&lt;p&gt;【这是一句木工谚语，指在动手切割之前要核查测量是否准确，以免浪费材料。也有译为“三思而后行”的。】&lt;/p&gt;
+
+&lt;p&gt;(44) Your passion in life should fit you exactly; but your purpose in life should exceed you. Work for something much larger than yourself.&lt;/p&gt;
+
+&lt;p&gt;生活的欲望应与自身相匹配，但生命的意义应超越自我。致力于那些超越自我的事情。&lt;/p&gt;
+
+&lt;p&gt;【passion 的常用译法是“热情”。不过，这种热情往往是受内心的欲望或渴望而驱动的，它和另一个词 &lt;em&gt;lust&lt;/em&gt; 可以看作是同一个本源的正反两面。】&lt;/p&gt;
+
+&lt;p&gt;(45) If you can’t tell what you desperately need, it’s probably sleep.&lt;/p&gt;
+
+&lt;p&gt;如果你不知道自己迫切想要什么的话，那么答案很可能是“睡上一觉”。&lt;/p&gt;
+
+&lt;p&gt;(46) When playing Monopoly, spend all you have to buy, barter, or trade for the Orange properties. Don’t bother with Utilities.&lt;/p&gt;
+
+&lt;p&gt;在玩《地产大亨》（也译为《大富翁》、《强手棋》）时，尽你所能去购买、交换或是竞标那些橙色资产。别管那些水、电、气公司。&lt;/p&gt;
+
+&lt;p&gt;【在《地产大亨》游戏中，玩家在橙色地段停留的几率最高。】&lt;/p&gt;
+
+&lt;p&gt;(47) If you borrow something, try to return it in better shape than you received it. Clean it, sharpen it, fill it up.&lt;/p&gt;
+
+&lt;p&gt;还东西时，要让它比你借它时状态更好。清洗它，磨快它，加满它。&lt;/p&gt;
+
+&lt;p&gt;(48) Even in the tropics it gets colder at night than you think. Pack warmly.&lt;/p&gt;
+
+&lt;p&gt;即便在热带，夜晚也比你想象的冷。多带两件衣服。&lt;/p&gt;
+
+&lt;p&gt;(49) To quiet a crowd or a drunk, just whisper.&lt;/p&gt;
+
+&lt;p&gt;让人群或醉鬼安静下来的办法是对他们低声耳语。&lt;/p&gt;
+
+&lt;p&gt;(50) Writing down one thing you are grateful for each day is the cheapest possible therapy ever.&lt;/p&gt;
+
+&lt;p&gt;每天记下一件让你感恩的事情。这是成本最低的（心灵）疗法。&lt;/p&gt;
+
+&lt;p&gt;(51) When someone tells you something is wrong, they’re usually right. When someone tells you how to fix it, they’re usually wrong.&lt;/p&gt;
+
+&lt;p&gt;如果人们告诉你某件事是错的，他们通常是对的；但如果他们告诉你该如何去解决问题，那通常都行不通。&lt;/p&gt;
+
+&lt;p&gt;(52) If you think you saw a mouse, you did. And, if there is one, there are more.&lt;/p&gt;
+
+&lt;p&gt;如果你觉得自己看到了一只老鼠，那一定是看到了。如果有一只的话，就一定会有更多。&lt;/p&gt;
+
+&lt;p&gt;(53) Money is overrated. Truly new things rarely need an abundance of money. If that was so, billionaires would have a monopoly on inventing new things, and they don’t. Instead almost all breakthroughs are made by those who lack money, because they are forced to rely on their passion, persistence and ingenuity to figure out new ways. Being poor is an advantage in innovation.&lt;/p&gt;
+
+&lt;p&gt;金钱被高估了。真正的新事物很少需要大量金钱。不然的话，所有新发明都会被那些亿万富翁们所垄断，但并没有。相反，几乎所有的突破都来自于那些囊中羞涩的人——他们唯有依赖自己的热情、执着和才智，才能闯出一条新路来。穷，则思变。&lt;/p&gt;
+
+&lt;p&gt;【穷则思变这个成语中，“穷”的原意并非贫穷，而是“穷尽”，指事物走到了尽头。不过今天，这则成语更多用来指贫穷会促使人想办法改变现状。&lt;/p&gt;
+
+&lt;p&gt;这和前段时间网上流行的“贫穷限制了你的想象力”是截然不同的两个视角。也许，限制想象力的从来都不是贫穷或富有。】&lt;/p&gt;
+
+&lt;p&gt;(54) Ignore what others may be thinking of you, because they aren’t.&lt;/p&gt;
+
+&lt;p&gt;不用在意别人怎么看你。他们也并不在意你。&lt;/p&gt;
+
+&lt;p&gt;(55) Avoid hitting the snooze button. That’s just training you to oversleep.&lt;/p&gt;
+
+&lt;p&gt;（闹钟响时）别按“稍后提醒（snooze）”按钮。这只能让你习惯性地睡过头。&lt;/p&gt;
+
+&lt;p&gt;(56) Always say less than necessary.&lt;/p&gt;
+
+&lt;p&gt;智者不多言。&lt;/p&gt;
+
+&lt;p&gt;【原文出自美国作家罗伯特·格林（Robert Greene）的《权力的 48 条法则》（The 48 Laws of Power）。意思是说，当你试图用言语打动他人时，说得越多，越显得你所言之事平淡无奇。要少言，要留白。&lt;/p&gt;
+
+&lt;p&gt;《老子·道德经》中有“知者不言，言者不知”的说法，虽然不完全是一个意思，但可以参照着来回味。】&lt;/p&gt;
+
+&lt;p&gt;(57) You are given the gift of life in order to discover what your gift in life is. You will complete your mission when you figure out what your mission is. This is not a paradox. This is the way.&lt;/p&gt;
+
+&lt;p&gt;上天赋予你生命，是要你来发现你的天赋所在。当你找到你的使命时，你就完成了你的使命。这并非自相矛盾，而是道之所在。&lt;/p&gt;
+
+&lt;p&gt;【中文可以用三个字来概括这段话，就是“知天命”。】&lt;/p&gt;
+
+&lt;p&gt;(58) Don’t treat people as bad as they are. Treat them as good as you are.&lt;/p&gt;
+
+&lt;p&gt;投我以木瓜，报之以琼琚。&lt;/p&gt;
+
+&lt;p&gt;【这句纯粹是意译。原文直译是：“不要以他人对你的恶意来待他，而要以你的善意来待他”。】&lt;/p&gt;
+
+&lt;p&gt;(59) It is much easier to change how you think by changing your behavior, than it is to change your behavior by changing how you think. Act out the change you seek.&lt;/p&gt;
+
+&lt;p&gt;通过改变行为而改变想法，要比通过改变想法来改变行为容易得多。去实践你所寻求的改变。&lt;/p&gt;
+
+&lt;p&gt;(60) You can eat any dessert you want if you take only 3 bites.&lt;/p&gt;
+
+&lt;p&gt;如果你能只吃三小口，那任何甜点随你吃。&lt;/p&gt;
+
+&lt;p&gt;(61) Each time you reach out to people, bring them a blessing; then they’ll be happy to see you when you bring them a problem.&lt;/p&gt;
+
+&lt;p&gt;每次去到别人那里都能给人带来祝福的话，那人们也很乐意帮你解决你的问题。&lt;/p&gt;
+
+&lt;p&gt;【这段做了一定程度的意译。】&lt;/p&gt;
+
+&lt;p&gt;(62) Bad things can happen fast, but almost all good things happen slowly.&lt;/p&gt;
+
+&lt;p&gt;坏事无常，好事多磨。&lt;/p&gt;
+
+&lt;p&gt;(63) Don’t worry how or where you begin. As long as you keep moving, your success will be far from where you start.&lt;/p&gt;
+
+&lt;p&gt;不要太在意从哪儿或是如何开始。只要不停前进，你的成就将远远超越你的起点。&lt;/p&gt;
+
+&lt;p&gt;(64) When you confront a stuck bolt or screw: righty tighty, lefty loosey.&lt;/p&gt;
+
+&lt;p&gt;遇上卡住的螺栓时，记住：右旋（顺时针）紧，左旋（逆时针）松。&lt;/p&gt;
+
+&lt;p&gt;【相信我们都碰到过这种情况：想要把一个拧紧的螺丝拧松时，忽然就想不清楚该往哪个方向拧了。英语里面用 righty tighty, lefty loosey 这个押韵的短语来帮助记忆。不过，我还是会经常糊涂，特别是螺丝的位置是在物体的底部时。】&lt;/p&gt;
+
+&lt;p&gt;(65) If you meet a jerk, overlook them. If you meet jerks everywhere everyday, look deeper into yourself.&lt;/p&gt;
+
+&lt;p&gt;碰上一个混蛋的话，不用理他。总是碰上混蛋的话，好好反省一下自己。&lt;/p&gt;
+
+&lt;p&gt;(66) Dance with your hips.&lt;/p&gt;
+
+&lt;p&gt;要用你的臀部来跳舞。&lt;/p&gt;
+
+&lt;p&gt;【说实话，不是很清楚为啥。原文的评论里也有人较真儿说，交谊舞是不能动胯的，功夫全在脚上。&lt;/p&gt;
+
+&lt;p&gt;但&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//www.scientificamerican.com/article/what-makes-for-the-hottest-dance-moves-hips-dont-lie-video1/&quot;&gt;有科学研究表明&lt;/a&gt;，女性舞者摆臀的动作是最吸引异性的；而男性舞者则应该动脖子和上身，再加上右膝的快速动作。&lt;/p&gt;
+
+&lt;p&gt;所以，这段建议其实不完整，有冒犯女权之嫌。应该再加上半句：（男舞者）要用你的脖子来跳舞。】&lt;/p&gt;
+
+&lt;p&gt;(67) We are not bodies that temporarily have souls. We are souls that temporarily have bodies.&lt;/p&gt;
+
+&lt;p&gt;我们并非短暂拥有灵魂的躯壳，而是短暂拥有躯壳的灵魂。&lt;/p&gt;
+
+&lt;p&gt;(68) You can reduce the annoyance of someone’s stupid belief by increasing your understanding of why they believe it.&lt;/p&gt;
+
+&lt;p&gt;如果你对某些人的愚蠢信念感到费解的话，不妨试着去理解他们为什么会有这种信念。&lt;/p&gt;
+
+&lt;p&gt;(69) If your goal does not have a schedule, it is a dream.&lt;/p&gt;
+
+&lt;p&gt;没有行动计划的目标只不过是白日梦。&lt;/p&gt;
+
+&lt;p&gt;(70) All the greatest gains in life — in wealth, relationships, or knowledge —come from the magic of compounding interest — amplifying small steady gains. All you need for abundance is to keep adding 1% more than you subtract on a regular basis.&lt;/p&gt;
+
+&lt;p&gt;生命中所有最重要的收益——不论是财富、人际关系还是知识——都来自于神奇的复利，它可以将持续的微小收益进一步放大。你所要做的，就是在日常基础上，持之以恒地加上 1%。&lt;/p&gt;
+
+&lt;p&gt;(71) The greatest breakthroughs are missed because they look like hard work.&lt;/p&gt;
+
+&lt;p&gt;人们之所以会错过重大突破，是因为它们看着就很难。&lt;/p&gt;
+
+&lt;p&gt;(72) People can’t remember more than 3 points from a speech.&lt;/p&gt;
+
+&lt;p&gt;一段讲话中能被人记住的点不超过三个。&lt;/p&gt;
+
+&lt;p&gt;(73) I have never met a person I admired who did not read more books than I did.&lt;/p&gt;
+
+&lt;p&gt;我所仰慕的人，读的书都比我多。&lt;/p&gt;
+
+&lt;p&gt;(74) The greatest teacher is called “doing”.&lt;/p&gt;
+
+&lt;p&gt;实践出真知。&lt;/p&gt;
+
+&lt;p&gt;(75) Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards.&lt;/p&gt;
+
+&lt;p&gt;有限的游戏旨在分出胜负；无限的游戏旨在让游戏继续进行下去。去寻找那些无限的游戏，因为它们能带给你无尽的回报。&lt;/p&gt;
+
+&lt;p&gt;【关于有限游戏和无限游戏，可以读读「东西文库」出品的一本小书&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//book.douban.com/subject/25742296/&quot;&gt;《有限与无限的游戏》&lt;/a&gt;。】&lt;/p&gt;
+
+&lt;p&gt;(76) Everything is hard before it is easy. The day before something is a breakthrough, it’s a stupid idea.&lt;/p&gt;
+
+&lt;p&gt;每件事在变得容易之前都是很难的。某个想法在取得突破之前都会显得很愚蠢。&lt;/p&gt;
+
+&lt;p&gt;(77) A problem that can be solved with money is not really a problem.&lt;/p&gt;
+
+&lt;p&gt;能用钱解决的事儿就不叫事儿。&lt;/p&gt;
+
+&lt;p&gt;(78) When you are stuck, sleep on it. Let your subconscious work for you.&lt;/p&gt;
+
+&lt;p&gt;碰到卡壳的时候就睡上一觉。让潜意识来帮你解决问题。&lt;/p&gt;
+
+&lt;p&gt;(79) Your work will be endless, but your time is finite. You cannot limit the work so you must limit your time. Hours are the only thing you can manage.&lt;/p&gt;
+
+&lt;p&gt;事情是做不完的，但时间是有限的。你不可能不去做事儿，但你可以控制你的时间。时间是你唯一能掌控的事情。&lt;/p&gt;
+
+&lt;p&gt;(80) To succeed, get other people to pay you; to become wealthy, help other people to succeed.&lt;/p&gt;
+
+&lt;p&gt;让别人付钱给你可成事；帮别人成事可致富。&lt;/p&gt;
+
+&lt;p&gt;(81) Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies.&lt;/p&gt;
+
+&lt;p&gt;孩子对立规矩其实是接受甚至欢迎的。家长想要立规矩的话，只需声明“我们家对这事儿有个规矩”。事实上，你想为自己定规矩的话，也只需要“我对这件事情有个规矩”这一个理由。&lt;/p&gt;
+
+&lt;p&gt;(82) All guns are loaded.&lt;/p&gt;
+
+&lt;p&gt;所有的枪都是上了膛的。&lt;/p&gt;
+
+&lt;p&gt;【这是保证枪支安全的一条重要原则。永远不要将你的枪口对着人。】&lt;/p&gt;
+
+&lt;p&gt;(83) Many backward steps are made by standing still.&lt;/p&gt;
+
+&lt;p&gt;逆水行舟，不进则退。&lt;/p&gt;
+
+&lt;p&gt;(84) This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late.&lt;/p&gt;
+
+&lt;p&gt;当下是创造的最佳时机。未来二十年内最伟大、最酷炫的发明尚未诞生。你一点儿都不晚。&lt;/p&gt;
+
+&lt;p&gt;(85) No rain, no rainbow.&lt;/p&gt;
+
+&lt;p&gt;不经历风雨，怎能见彩虹。&lt;/p&gt;
+
+&lt;p&gt;(86) Every person you meet knows an amazing lot about something you know virtually nothing about. Your job is to discover what it is, and it won’t be obvious.&lt;/p&gt;
+
+&lt;p&gt;你遇到的每个人都会熟知某个你几乎一无所知的事物，而你的任务就是发现这个事物是什么。答案并非显而易见。&lt;/p&gt;
+
+&lt;p&gt;(87) You don’t marry a person, you marry a family.&lt;/p&gt;
+
+&lt;p&gt;你与之步入婚姻的并非是一个人，而是一个家庭。&lt;/p&gt;
+
+&lt;p&gt;(88) Always give credit, take blame.&lt;/p&gt;
+
+&lt;p&gt;功劳归于他人，责难归于自己。&lt;/p&gt;
+
+&lt;p&gt;【西方人很重视给别人足够的 credit。该给别人的 credit 没有给，就构成 plagiarism（抄袭、剽窃），是非常严重的学术不端行为。&lt;/p&gt;
+
+&lt;p&gt;国内年轻人缺少这方面的意识和习惯。如果你的成果中含有别人的工作，一定要明确声明，哪怕你觉得这种声明并不能给他人带来任何好处。因为这体现的是，你是否尊重事实并能如实陈述。】&lt;/p&gt;
+
+&lt;p&gt;(89) Be frugal in all things, except in your passions splurge.&lt;/p&gt;
+
+&lt;p&gt;在任何事情上都要精打细算，唯有你的热情无需如此。&lt;/p&gt;
+
+&lt;p&gt;(90) When making something, always get a few extras — extra material, extra parts, extra space, extra finishes. The extras serve as backups for mistakes, reduce stress, and fill your inventory for the future. They are the cheapest insurance.&lt;/p&gt;
+
+&lt;p&gt;做事留出裕量——多备些材料和部件，多留些空间和时间，多做些成品。这些裕量可以弥补错误、减轻压力，并可放入仓库以备将来所需。裕量是最便宜的保险。&lt;/p&gt;
+
+&lt;p&gt;(91) Something does not need to be perfect to be wonderful. Especially weddings.&lt;/p&gt;
+
+&lt;p&gt;某些事情即便不完美也很精彩，特别是婚礼。&lt;/p&gt;
+
+&lt;p&gt;(92) Don’t let your email inbox become your to-do list.&lt;/p&gt;
+
+&lt;p&gt;别把你的邮件收件箱当 to-do list 来用。&lt;/p&gt;
+
+&lt;p&gt;【很多时候我们并没有意识到，我们在把邮件收件箱当 to-do list 来用。比如，你可能会想着稍后再回复一封邮件；再比如，有一封看起来重要但又不紧急的邮件，你也许会故意让它保持“未读”状态，这样你有空或想起来的时候就可以把它读了。这些做法都不如用一个专门的 to-do list 工具来得有效。如果你想稍后再回复一封邮件，那就在 to-do list 里记上一笔；如果你想稍后再读某封邮件，同样把这件事记在 to-do list 里。&lt;/p&gt;
+
+&lt;p&gt;当然，另一种做法是，立刻、马上把该做的事儿做了。第一时间读该读的邮件，第一时间回复该回复的邮件。任何管理工具都会带来额外的成本。】&lt;/p&gt;
+
+&lt;p&gt;(93) The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables.&lt;/p&gt;
+
+&lt;p&gt;解开一团乱麻的最好方法不是去“解”，而是把它不断向外拉扯，尽可能让它变大、变松。打结处就会自然而然地解开。绳索、软管、毛线、电缆，都可以用这种方法。&lt;/p&gt;
+
+&lt;p&gt;【也适用于想法或心情。】&lt;/p&gt;
+
+&lt;p&gt;(94) Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree.&lt;/p&gt;
+
+&lt;p&gt;做一个称职的祖先，做一些造福子孙后代的事情。一件简单的事情就是种棵树。&lt;/p&gt;
+
+&lt;p&gt;(95) To combat an adversary, become their friend.&lt;/p&gt;
+
+&lt;p&gt;对敌之道是化敌为友。&lt;/p&gt;
+
+&lt;p&gt;(96) Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky.&lt;/p&gt;
+
+&lt;p&gt;找一件简单的事情——任何事情，极其认真地对待它，仿佛它是世界上唯一的事情。只要认真对待，你就能照亮天空。&lt;/p&gt;
+
+&lt;p&gt;(97) History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?”&lt;/p&gt;
+
+&lt;p&gt;历史告诉我们，今天我们相信的很多道理一百年后都将不再正确。今天给自己提的一个好问题就是：“我有哪些看法可能是错的？”&lt;/p&gt;
+
+&lt;p&gt;(98) Be nice to your children because they are going to choose your nursing home.&lt;/p&gt;
+
+&lt;p&gt;善待子女，因为他们会决定你的养老条件。&lt;/p&gt;
+
+&lt;p&gt;(99) Advice like these are not laws. They are like hats. If one doesn’t fit, try another.&lt;/p&gt;
+
+&lt;p&gt;这些建议并非什么金科玉律。它们更像是帽子。如果戴着不合适，换一顶就是了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/372580671&quot;&gt;KK 在 69 岁生日时给出的 99 条建议&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">I have another birthday, and another bunch of unsolicited advice. 又一年生日；又一堆碎碎念。 (1) That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. 儿时让你显得出格的事情会让你成年后与众不同——只要你还没有丢掉它。 【weird 一词的常用义是“怪异、离奇”。原文评论中有人指出，这个词来源于古英语 wyrd，意指“命运”。每个人都有自己的 wyrd 或 weird；也许应该学会运用我们身上的出格之处，而不是把它装进世俗的框架。KK 表示，涨姿势了。有兴趣的童鞋可以参考维基百科上 wyrd 这个词条。 另外，KK 也承认，很多建议都来自老话，他只不过把它们收集进来。所以，如果你在其他地方也读到过类似的建议，不用惊讶。】 (2) If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips. 如果你担心一趟带不上所有家伙事儿，那就分两次带好了。 (3) What you get by achieving your goals is not as important as what you become by achieving your goals. At your funeral people will not recall what you did; they will only remember how you made them feel. 达成目标所带给你的，远不及你为此而做出的自身改变。在你的葬礼上，人们不会记得你做过什么，只会记得你带给他们的感受。 (4) Recipe for success: under-promise and over-deliver. 成功的秘诀：不要承诺太满，而要超预期交付。 【看到网上有些译文把 under- 翻译成“少”，over- 翻译成“多”，但更确切的理解应该是：under- 为“不足”，over- 为“过度”。这其中的差别比较微妙。】 (5) It’s not an apology if it comes with an excuse. It is not a compliment if it comes with a request. 带有借口的道歉不是道歉；附有请求的夸赞也不是夸赞。 (6) Jesus, Superman, and Mother Teresa never made art. Only imperfect beings can make art because art begins in what is broken. 耶稣、超人和特蕾莎修女搞不了艺术。只有不完美的存在才能创作艺术，因为艺术始于残缺。 (7) If someone is trying to convince you it’s not a pyramid scheme, it’s a pyramid scheme. 如果某人试图让你相信这不是个老鼠会，那它就是个老鼠会。 (8) Learn how to tie a bowline knot. Practice in the dark. With one hand. For the rest of your life you’ll use this knot more times than you would ever believe. 学会如何打称人结。练习在黑暗中打；练习用一只手打。你会发现今后用到它的地方要远超出你的想象。 【称人结，也有叫单套结、帆索结的，是一种安全性较高也较容易解开的绳结。我照着视频学习了一下，闭着眼睛打应该没问题，单手打还不能够。】 (9) If something fails where you thought it would fail, that is not a failure. 预料中的失败算不上失败。 【这句做了一定程度的意译。原文评论中有人对此不解，认为失败就是失败，不能阻止可以预见的失败也是失败。这是看问题的角度不同，或者说，对失败的定义不同。】 (10) Be governed not by the tyranny of the urgent but by the elevation of the important. 不要被事情的紧急性牵着鼻子走，而要看它的重要性。 (11) Leave a gate behind you the way you first found it. 穿过一扇门后，保持它原来开或合的状态。 【没想到这居然是一条写入英国《乡村守则》（The Country Code）的规则，原始条文是“Leave all gates as you found them”。 有兴趣的童鞋可以查看维基百科上的词条。】 (12) The greatest rewards come from working on something that nobody has a name for. If you possibly can, work where there are no words for what you do. 做一件没有人能说清楚的事儿会带给你最大的回报。但凡有可能的话，去做一件还未被人们谈及的事情。 (13) A balcony or porch needs to be at least 6 feet (2m) deep or it won’t be used. 阳台至少应该有两米宽才有用。 (14) Don’t create things to make money; make money so you can create things. The reward for good work is more work. 不要为了赚钱而去做事；而是为了做事去赚钱。干好工作的回报是有更多的工作。 (15) In all things — except love — start with the exit strategy. Prepare for the ending. Almost anything is easier to get into than out of. 在所有事情（除去爱情）开始时做好退出计划。为结局做准备。几乎任何事情都是陷入易而抽身难。 (16) Train employees well enough they could get another job, but treat them well enough so they never want to. 尽力培训员工，使他们能有更多的职业机会；尽心善待员工，让他们永远不会考虑跳槽。 (17) Don’t aim to have others like you; aim to have them respect you. 要以获得他人的尊重而非喜爱为目标。 (18) The foundation of maturity: Just because it’s not your fault doesn’t mean it’s not your responsibility. 成熟的基本要素：不因事不关己而高高挂起。 (19) A multitude of bad ideas is necessary for one good idea. 无数个糟糕的想法中才能诞生一个好想法。 (20) Being wise means having more questions than answers. 有智慧意味着有更多的问题而非答案。 (21) Compliment people behind their back. It’ll come back to you. 背后夸人。别人也会背后夸你。 (22) Most overnight successes — in fact any significant successes — take at least 5 years. Budget your life accordingly. 绝大多数一夜之间的功成名就——事实上，任何显著的成就——都要经过至少五年（的准备）。请据此来规划你的人生。 (23) You are only as young as the last time you changed your mind. 你的年轻程度取决于你上一次改变想法的时候（想法有多成熟）。 原译：你的年轻程度取决于你上一次改变想法的时候（距今有多久）。 (24) Assume anyone asking for your account information for any reason is guilty of scamming you, unless proven innocent. The way to prove innocence is to call them back, or login to your account using numbers or a website that you provide, not them. Don’t release any identifying information while they are contacting you via phone, message or email. You must control the channel. 任何人以任何借口向你索要账号信息，都可以认为他们是骗子，除非能证明他们是无辜的。而证明他们无辜的方法是，给你自己确知的号码打电话或登录你自己确知的网站，而不是用他们给你的号码或网页地址。不要在他们打给你的电话或是在回复他们发给你的消息、邮件中透露任何个人信息。你的数据安全你掌控。 (25) Sustained outrage makes you stupid. 持续的愤怒会让你变得愚蠢。 (26) Be strict with yourself and forgiving of others. The reverse is hell for everyone. 严以律己，宽以待人。反其道而行对谁来说都是灾难。 (27) Your best response to an insult is “You’re probably right.” Often they are. 当别人冒犯你时，最好的回应是“也许您是对的”。而通常他们确实是对的。 (28) The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil. 历史上最严重的罪行总是由那些真心相信自己在与邪恶战斗的人而犯下的。警惕与邪恶做斗争。 (29) If you can avoid seeking approval of others, your power is limitless. 如果你不用在意别人的眼光，那你的力量就是无穷的。 (30) When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?” 当孩子不停地问“为什么”时，最聪明的回答是：“我不知道。你怎么看呢？” (31) To be wealthy, accumulate all those things that money can’t buy. 积攒那些用钱买不到的东西可以致富。 (32) Be the change you wish to see. 成为你想要看见的改变。 【这句话曾被认为是圣雄甘地所说，但其实甘地并没有说过这句话。】 (33) When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply. 在与他人一起头脑风暴或是即兴创作时，用令人鼓舞的“没错——而且”——而非令人泄气的“不——可是”——来回应每一条贡献，那你就能走得更深更远。 (34) Work to become, not to acquire. 工作是为了成长而非获取。 【注：此句出自美国作家和出版人阿尔伯特·哈伯德（Elbert Hubbard）。他以短篇故事《把信送给加西亚》（另译为《致加西亚的信》，A Message to Garcia）而闻名。】 (35) Don’t loan money to a friend unless you are ready to make it a gift. 别借钱给朋友，除非你已做好心理准备当作是送给他。 (36) On the way to a grand goal, celebrate the smallest victories as if each one were the final goal. No matter where it ends you are victorious. 在通往宏伟目标的路上，把每一次微不足道的胜利都当作最终目标来庆祝。这样无论在哪里结束，你都是胜利者。 (37) Calm is contagious. 镇定具有传染力。 (38) Even a foolish person can still be right about most things. Most conventional wisdom is true. 即便是一个蠢人，在大多数事情上也是对的。大多数老话都是有道理的。 (39) Always cut away from yourself. 切削时刀子的方向要朝外。 (40) Show me your calendar and I will tell you your priorities. Tell me who your friends are, and I’ll tell you where you’re going. 从你的日程安排可以看出你看重什么事情；从你的交往圈子可以看出你会是什么样的人。 【我再补充半句：从一个国家的年轻人可以看出这个国家的未来。】 (41) When hitchhiking, look like the person you want to pick you up. 搭便车时，要表现得像是你自己愿意搭载的人。 (42) Contemplating the weaknesses of others is easy; contemplating the weaknesses in yourself is hard, but it pays a much higher reward. 审视别人的弱点很容易；审视自己的弱点很难，但这会让你受益匪浅。 (43) Worth repeating: measure twice, cut once. 值得多念两遍：量两次，切一次。 【这是一句木工谚语，指在动手切割之前要核查测量是否准确，以免浪费材料。也有译为“三思而后行”的。】 (44) Your passion in life should fit you exactly; but your purpose in life should exceed you. Work for something much larger than yourself. 生活的欲望应与自身相匹配，但生命的意义应超越自我。致力于那些超越自我的事情。 【passion 的常用译法是“热情”。不过，这种热情往往是受内心的欲望或渴望而驱动的，它和另一个词 lust 可以看作是同一个本源的正反两面。】 (45) If you can’t tell what you desperately need, it’s probably sleep. 如果你不知道自己迫切想要什么的话，那么答案很可能是“睡上一觉”。 (46) When playing Monopoly, spend all you have to buy, barter, or trade for the Orange properties. Don’t bother with Utilities. 在玩《地产大亨》（也译为《大富翁》、《强手棋》）时，尽你所能去购买、交换或是竞标那些橙色资产。别管那些水、电、气公司。 【在《地产大亨》游戏中，玩家在橙色地段停留的几率最高。】 (47) If you borrow something, try to return it in better shape than you received it. Clean it, sharpen it, fill it up. 还东西时，要让它比你借它时状态更好。清洗它，磨快它，加满它。 (48) Even in the tropics it gets colder at night than you think. Pack warmly. 即便在热带，夜晚也比你想象的冷。多带两件衣服。 (49) To quiet a crowd or a drunk, just whisper. 让人群或醉鬼安静下来的办法是对他们低声耳语。 (50) Writing down one thing you are grateful for each day is the cheapest possible therapy ever. 每天记下一件让你感恩的事情。这是成本最低的（心灵）疗法。 (51) When someone tells you something is wrong, they’re usually right. When someone tells you how to fix it, they’re usually wrong. 如果人们告诉你某件事是错的，他们通常是对的；但如果他们告诉你该如何去解决问题，那通常都行不通。 (52) If you think you saw a mouse, you did. And, if there is one, there are more. 如果你觉得自己看到了一只老鼠，那一定是看到了。如果有一只的话，就一定会有更多。 (53) Money is overrated. Truly new things rarely need an abundance of money. If that was so, billionaires would have a monopoly on inventing new things, and they don’t. Instead almost all breakthroughs are made by those who lack money, because they are forced to rely on their passion, persistence and ingenuity to figure out new ways. Being poor is an advantage in innovation. 金钱被高估了。真正的新事物很少需要大量金钱。不然的话，所有新发明都会被那些亿万富翁们所垄断，但并没有。相反，几乎所有的突破都来自于那些囊中羞涩的人——他们唯有依赖自己的热情、执着和才智，才能闯出一条新路来。穷，则思变。 【穷则思变这个成语中，“穷”的原意并非贫穷，而是“穷尽”，指事物走到了尽头。不过今天，这则成语更多用来指贫穷会促使人想办法改变现状。 这和前段时间网上流行的“贫穷限制了你的想象力”是截然不同的两个视角。也许，限制想象力的从来都不是贫穷或富有。】 (54) Ignore what others may be thinking of you, because they aren’t. 不用在意别人怎么看你。他们也并不在意你。 (55) Avoid hitting the snooze button. That’s just training you to oversleep. （闹钟响时）别按“稍后提醒（snooze）”按钮。这只能让你习惯性地睡过头。 (56) Always say less than necessary. 智者不多言。 【原文出自美国作家罗伯特·格林（Robert Greene）的《权力的 48 条法则》（The 48 Laws of Power）。意思是说，当你试图用言语打动他人时，说得越多，越显得你所言之事平淡无奇。要少言，要留白。 《老子·道德经》中有“知者不言，言者不知”的说法，虽然不完全是一个意思，但可以参照着来回味。】 (57) You are given the gift of life in order to discover what your gift in life is. You will complete your mission when you figure out what your mission is. This is not a paradox. This is the way. 上天赋予你生命，是要你来发现你的天赋所在。当你找到你的使命时，你就完成了你的使命。这并非自相矛盾，而是道之所在。 【中文可以用三个字来概括这段话，就是“知天命”。】 (58) Don’t treat people as bad as they are. Treat them as good as you are. 投我以木瓜，报之以琼琚。 【这句纯粹是意译。原文直译是：“不要以他人对你的恶意来待他，而要以你的善意来待他”。】 (59) It is much easier to change how you think by changing your behavior, than it is to change your behavior by changing how you think. Act out the change you seek. 通过改变行为而改变想法，要比通过改变想法来改变行为容易得多。去实践你所寻求的改变。 (60) You can eat any dessert you want if you take only 3 bites. 如果你能只吃三小口，那任何甜点随你吃。 (61) Each time you reach out to people, bring them a blessing; then they’ll be happy to see you when you bring them a problem. 每次去到别人那里都能给人带来祝福的话，那人们也很乐意帮你解决你的问题。 【这段做了一定程度的意译。】 (62) Bad things can happen fast, but almost all good things happen slowly. 坏事无常，好事多磨。 (63) Don’t worry how or where you begin. As long as you keep moving, your success will be far from where you start. 不要太在意从哪儿或是如何开始。只要不停前进，你的成就将远远超越你的起点。 (64) When you confront a stuck bolt or screw: righty tighty, lefty loosey. 遇上卡住的螺栓时，记住：右旋（顺时针）紧，左旋（逆时针）松。 【相信我们都碰到过这种情况：想要把一个拧紧的螺丝拧松时，忽然就想不清楚该往哪个方向拧了。英语里面用 righty tighty, lefty loosey 这个押韵的短语来帮助记忆。不过，我还是会经常糊涂，特别是螺丝的位置是在物体的底部时。】 (65) If you meet a jerk, overlook them. If you meet jerks everywhere everyday, look deeper into yourself. 碰上一个混蛋的话，不用理他。总是碰上混蛋的话，好好反省一下自己。 (66) Dance with your hips. 要用你的臀部来跳舞。 【说实话，不是很清楚为啥。原文的评论里也有人较真儿说，交谊舞是不能动胯的，功夫全在脚上。 但有科学研究表明，女性舞者摆臀的动作是最吸引异性的；而男性舞者则应该动脖子和上身，再加上右膝的快速动作。 所以，这段建议其实不完整，有冒犯女权之嫌。应该再加上半句：（男舞者）要用你的脖子来跳舞。】 (67) We are not bodies that temporarily have souls. We are souls that temporarily have bodies. 我们并非短暂拥有灵魂的躯壳，而是短暂拥有躯壳的灵魂。 (68) You can reduce the annoyance of someone’s stupid belief by increasing your understanding of why they believe it. 如果你对某些人的愚蠢信念感到费解的话，不妨试着去理解他们为什么会有这种信念。 (69) If your goal does not have a schedule, it is a dream. 没有行动计划的目标只不过是白日梦。 (70) All the greatest gains in life — in wealth, relationships, or knowledge —come from the magic of compounding interest — amplifying small steady gains. All you need for abundance is to keep adding 1% more than you subtract on a regular basis. 生命中所有最重要的收益——不论是财富、人际关系还是知识——都来自于神奇的复利，它可以将持续的微小收益进一步放大。你所要做的，就是在日常基础上，持之以恒地加上 1%。 (71) The greatest breakthroughs are missed because they look like hard work. 人们之所以会错过重大突破，是因为它们看着就很难。 (72) People can’t remember more than 3 points from a speech. 一段讲话中能被人记住的点不超过三个。 (73) I have never met a person I admired who did not read more books than I did. 我所仰慕的人，读的书都比我多。 (74) The greatest teacher is called “doing”. 实践出真知。 (75) Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards. 有限的游戏旨在分出胜负；无限的游戏旨在让游戏继续进行下去。去寻找那些无限的游戏，因为它们能带给你无尽的回报。 【关于有限游戏和无限游戏，可以读读「东西文库」出品的一本小书《有限与无限的游戏》。】 (76) Everything is hard before it is easy. The day before something is a breakthrough, it’s a stupid idea. 每件事在变得容易之前都是很难的。某个想法在取得突破之前都会显得很愚蠢。 (77) A problem that can be solved with money is not really a problem. 能用钱解决的事儿就不叫事儿。 (78) When you are stuck, sleep on it. Let your subconscious work for you. 碰到卡壳的时候就睡上一觉。让潜意识来帮你解决问题。 (79) Your work will be endless, but your time is finite. You cannot limit the work so you must limit your time. Hours are the only thing you can manage. 事情是做不完的，但时间是有限的。你不可能不去做事儿，但你可以控制你的时间。时间是你唯一能掌控的事情。 (80) To succeed, get other people to pay you; to become wealthy, help other people to succeed. 让别人付钱给你可成事；帮别人成事可致富。 (81) Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies. 孩子对立规矩其实是接受甚至欢迎的。家长想要立规矩的话，只需声明“我们家对这事儿有个规矩”。事实上，你想为自己定规矩的话，也只需要“我对这件事情有个规矩”这一个理由。 (82) All guns are loaded. 所有的枪都是上了膛的。 【这是保证枪支安全的一条重要原则。永远不要将你的枪口对着人。】 (83) Many backward steps are made by standing still. 逆水行舟，不进则退。 (84) This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late. 当下是创造的最佳时机。未来二十年内最伟大、最酷炫的发明尚未诞生。你一点儿都不晚。 (85) No rain, no rainbow. 不经历风雨，怎能见彩虹。 (86) Every person you meet knows an amazing lot about something you know virtually nothing about. Your job is to discover what it is, and it won’t be obvious. 你遇到的每个人都会熟知某个你几乎一无所知的事物，而你的任务就是发现这个事物是什么。答案并非显而易见。 (87) You don’t marry a person, you marry a family. 你与之步入婚姻的并非是一个人，而是一个家庭。 (88) Always give credit, take blame. 功劳归于他人，责难归于自己。 【西方人很重视给别人足够的 credit。该给别人的 credit 没有给，就构成 plagiarism（抄袭、剽窃），是非常严重的学术不端行为。 国内年轻人缺少这方面的意识和习惯。如果你的成果中含有别人的工作，一定要明确声明，哪怕你觉得这种声明并不能给他人带来任何好处。因为这体现的是，你是否尊重事实并能如实陈述。】 (89) Be frugal in all things, except in your passions splurge. 在任何事情上都要精打细算，唯有你的热情无需如此。 (90) When making something, always get a few extras — extra material, extra parts, extra space, extra finishes. The extras serve as backups for mistakes, reduce stress, and fill your inventory for the future. They are the cheapest insurance. 做事留出裕量——多备些材料和部件，多留些空间和时间，多做些成品。这些裕量可以弥补错误、减轻压力，并可放入仓库以备将来所需。裕量是最便宜的保险。 (91) Something does not need to be perfect to be wonderful. Especially weddings. 某些事情即便不完美也很精彩，特别是婚礼。 (92) Don’t let your email inbox become your to-do list. 别把你的邮件收件箱当 to-do list 来用。 【很多时候我们并没有意识到，我们在把邮件收件箱当 to-do list 来用。比如，你可能会想着稍后再回复一封邮件；再比如，有一封看起来重要但又不紧急的邮件，你也许会故意让它保持“未读”状态，这样你有空或想起来的时候就可以把它读了。这些做法都不如用一个专门的 to-do list 工具来得有效。如果你想稍后再回复一封邮件，那就在 to-do list 里记上一笔；如果你想稍后再读某封邮件，同样把这件事记在 to-do list 里。 当然，另一种做法是，立刻、马上把该做的事儿做了。第一时间读该读的邮件，第一时间回复该回复的邮件。任何管理工具都会带来额外的成本。】 (93) The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables. 解开一团乱麻的最好方法不是去“解”，而是把它不断向外拉扯，尽可能让它变大、变松。打结处就会自然而然地解开。绳索、软管、毛线、电缆，都可以用这种方法。 【也适用于想法或心情。】 (94) Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree. 做一个称职的祖先，做一些造福子孙后代的事情。一件简单的事情就是种棵树。 (95) To combat an adversary, become their friend. 对敌之道是化敌为友。 (96) Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky. 找一件简单的事情——任何事情，极其认真地对待它，仿佛它是世界上唯一的事情。只要认真对待，你就能照亮天空。 (97) History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?” 历史告诉我们，今天我们相信的很多道理一百年后都将不再正确。今天给自己提的一个好问题就是：“我有哪些看法可能是错的？” (98) Be nice to your children because they are going to choose your nursing home. 善待子女，因为他们会决定你的养老条件。 (99) Advice like these are not laws. They are like hats. If one doesn’t fit, try another. 这些建议并非什么金科玉律。它们更像是帽子。如果戴着不合适，换一顶就是了。 原文：KK 在 69 岁生日时给出的 99 条建议</summary></entry><entry><title type="html">Mysql CTE</title><link href="https://empvalley.com/2021/08/02/mysql-cte/" rel="alternate" type="text/html" title="Mysql CTE" /><published>2021-08-02T00:00:00+08:00</published><updated>2021-08-02T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/02/mysql-cte</id><content type="html" xml:base="https://empvalley.com/2021/08/02/mysql-cte/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-异常mysql-cte-data-too-long-for-column-str-at-row-1&quot; id=&quot;markdown-toc-heading-异常mysql-cte-data-too-long-for-column-str-at-row-1&quot;&gt;异常：Mysql CTE Data too long for column 'str' at row 1…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-异常mysql-cte-data-too-long-for-column-str-at-row-1&quot;&gt;异常：Mysql CTE Data too long for column 'str' at row 1…&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;p&gt;对于该异常 Mysql 官网上描述的很详细：&lt;/p&gt;
+
+&lt;p&gt;在严格（strict）SQL 模式下，语句会产生一个错误：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mysql&quot;&gt;ERROR 1406 (22001): Data too long for column 'str' at row 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;因为要对该错误进行处理，所以语句不会执行长度截断的操作。&lt;/p&gt;
+
+&lt;p&gt;在非递归的 SELECT 部分使用 CAST() 方法增加 str 列的长度。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mysql&quot;&gt;WITH RECURSIVE cte AS
+(
+  SELECT 1 AS n, CAST('abc' AS CHAR(20)) AS str
+  UNION ALL
+  SELECT n + 1, CONCAT(str, str) FROM cte WHERE n &amp;lt; 3
+)
+SELECT * FROM cte;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://dev.mysql.com/doc/refman/8.0/en/with.html&quot; target=&quot;_blank&quot;&gt;Mysql8 参考手册&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Mysql" /><category term="CTE" /><summary type="html">异常：Mysql CTE Data too long for column 'str' at row 1… 异常：Mysql CTE Data too long for column 'str' at row 1…1 对于该异常 Mysql 官网上描述的很详细： 在严格（strict）SQL 模式下，语句会产生一个错误： ERROR 1406 (22001): Data too long for column 'str' at row 1 因为要对该错误进行处理，所以语句不会执行长度截断的操作。 在非递归的 SELECT 部分使用 CAST() 方法增加 str 列的长度。 WITH RECURSIVE cte AS ( SELECT 1 AS n, CAST('abc' AS CHAR(20)) AS str UNION ALL SELECT n + 1, CONCAT(str, str) FROM cte WHERE n &amp;lt; 3 ) SELECT * FROM cte; Mysql8 参考手册 &amp;#8617;</summary></entry><entry><title type="html">Commit message 和 Change log 编写指南</title><link href="https://empvalley.com/2021/07/01/commit-message-change-log/" rel="alternate" type="text/html" title="Commit message 和 Change log 编写指南" /><published>2021-07-01T00:00:00+08:00</published><updated>2021-07-01T00:00:00+08:00</updated><id>https://empvalley.com/2021/07/01/commit-message-change-log</id><content type="html" xml:base="https://empvalley.com/2021/07/01/commit-message-change-log/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-工具安装实践&quot; id=&quot;markdown-toc-heading-工具安装实践&quot;&gt;工具安装实践&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-idea-中安装使用-git-commit-template-插件&quot; id=&quot;markdown-toc-heading-idea-中安装使用-git-commit-template-插件&quot;&gt;Idea 中安装使用 Git Commit Template 插件&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-配置-gitignore-忽略安装工具产生的文件&quot; id=&quot;markdown-toc-heading-配置-gitignore-忽略安装工具产生的文件&quot;&gt;配置 .gitignore 忽略安装工具产生的文件&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-commitizen-工具的安装&quot; id=&quot;markdown-toc-heading-commitizen-工具的安装&quot;&gt;Commitizen 工具的安装&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-change-log-工具的安装&quot; id=&quot;markdown-toc-heading-change-log-工具的安装&quot;&gt;Change log 工具的安装&lt;/a&gt;&lt;/li&gt;
@@ -24,6 +817,31 @@
 &lt;p&gt;这篇文章主要内容来源为阮一峰老师的博客。&lt;/p&gt;
 
 &lt;p&gt;在参照文章中的工具安装步骤进行实操时，遇到一些问题，这里记录一下成功安装的过程，方便以后在新的环境中可以直接依照以下步骤安装。&lt;/p&gt;
+
+&lt;p&gt;而实际工作中，可直接在 IDE 中安装支持 Angular 规范的插件而无须使用命令行的方式。&lt;/p&gt;
+
+&lt;p&gt;例如接下来笔者要介绍的在 Idea 中安装使用 Git Commit Template 插件。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-idea-中安装使用-git-commit-template-插件&quot;&gt;Idea 中安装使用 Git Commit Template 插件&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ctrl + Shift + a 打开 Idea 中的插件商店。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;输入 Git Commit Template，选中安装。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ctrl + K 快捷键或是点击 Git 提交代码按钮，如下图：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/git-commit-template.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;点击 Git Commit Template 插件提供的 Create commit message 按钮，填写提交信息 &amp;gt; OK &amp;gt; Commit，如图：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/git-commit-template2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h3 id=&quot;heading-配置-gitignore-忽略安装工具产生的文件&quot;&gt;配置 .gitignore 忽略安装工具产生的文件&lt;/h3&gt;
 
@@ -325,7 +1143,7 @@ Breaking changes.
 
 &lt;p&gt;参考：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html&quot;&gt;Commit message 和 Change log 编写指南&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html">工具安装实践 配置 .gitignore 忽略安装工具产生的文件 Commitizen 工具的安装 Change log 工具的安装 validate-commit-msg 工具的安装 Git commit 命令 一、Commit message 的作用 二、Commit message 的格式 2.1 Header 2.2 Body 2.3 Footer 2.4 Revert 三、Commitizen 四、validate-commit-msg 五、生成 Change log 工具安装实践 这篇文章主要内容来源为阮一峰老师的博客。 在参照文章中的工具安装步骤进行实操时，遇到一些问题，这里记录一下成功安装的过程，方便以后在新的环境中可以直接依照以下步骤安装。 配置 .gitignore 忽略安装工具产生的文件 .gitignore 文件中添加如下内容： node_modules package.json package-lock.json Commitizen 工具的安装 # 安装 commitizen 工具 $ npm install -g commitizen # 创建一个空的 package.json 文件 $ npm init --yes # 使项目支持 Angular 的 Commit message 格式 $ commitizen init cz-conventional-changelog --save --save-exact 以后，凡是用到 git commit 命令，一律改为使用 git cz。这时，就会出现选项，用来生成符合格式的 Commit message。 Change log 工具的安装 # 安装 Change log 工具 $ npm install -g conventional-changelog-cli # 使用 Change log 工具生成 CHANGELOG.md 文件 $ conventional-changelog -p angular -i CHANGELOG.md -s validate-commit-msg 工具的安装 # 安装 ghooks $ npm install ghooks --save-dev # 安装 validate-comit-msg npm install --save-dev validate-commit-msg # 在 package.json 文件中增加如下配置 &quot;config&quot;: { &quot;ghooks&quot;: { &quot;commit-msg&quot;: &quot;validate-commit-msg&quot; } } 该工具每次 git commit 时自动检查 Commit message 是否合格。而 Commitizen 工具使用时执行的是 git cz 命令，因此在实际工作中并没有使用到该工具。 Git commit 命令 Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。 $ git commit -m &quot;hello world&quot; 上面代码的 -m 参数，就是用来指定 commit mesage 的。 如果一行不够，可以只执行 git commit，就会跳出文本编辑器，让你写多行。 $ git commit 基本上，你写什么都行（这里，这里和这里）。 但是，一般来说，commit message 应该清晰明了，说明本次提交的目的。 目前，社区有多种 Commit message 的写法规范。本文介绍Angular 规范（见上图），这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。 一、Commit message 的作用 格式化的Commit message，有几个好处。 （1）提供更多的历史信息，方便快速浏览。 比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的。 $ git log &amp;lt;last tag&amp;gt; HEAD --pretty=format:%s （2）可以过滤某些commit（比如文档改动），便于快速查找信息。 比如，下面的命令仅仅显示本次发布新增加的功能。 $ git log &amp;lt;last release&amp;gt; HEAD --grep feature （3）可以直接从commit生成Change log。 Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。 二、Commit message 的格式 每次提交，Commit message 都包括三个部分：Header，Body 和 Footer。 &amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt; // 空一行 &amp;lt;body&amp;gt; // 空一行 &amp;lt;footer&amp;gt; 其中，Header 是必需的，Body 和 Footer 可以省略。 不管是哪一个部分，任何一行都不得超过72个字符（或100个字符）。这是为了避免自动换行影响美观。 2.1 Header Header部分只有一行，包括三个字段：type（必需）、scope（可选）和subject（必需）。 （1）type type用于说明 commit 的类别，只允许使用下面7个标识。 feat：新功能（feature） fix：修补bug docs：文档（documentation） style： 格式（不影响代码运行的变动） refactor：重构（即不是新增功能，也不是修改bug的代码变动） test：增加测试 chore：构建过程或辅助工具的变动 如果type为feat和fix，则该 commit 将肯定出现在 Change log 之中。其他情况（docs、chore、style、refactor、test）由你决定，要不要放入 Change log，建议是不要。 （2）scope scope用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。 （3）subject subject是 commit 目的的简短描述，不超过50个字符。 以动词开头，使用第一人称现在时，比如change，而不是changed或changes 第一个字母小写 结尾不加句号（.） 2.2 Body Body 部分是对本次 commit 的详细描述，可以分成多行。下面是一个范例。 More detailed explanatory text, if necessary. Wrap it to about 72 characters or so. Further paragraphs come after blank lines. - Bullet points are okay, too - Use a hanging indent 有两个注意点。 （1）使用第一人称现在时，比如使用change而不是changed或changes。 （2）应该说明代码变动的动机，以及与以前行为的对比。 2.3 Footer Footer 部分只用于两种情况。 （1）不兼容变动 如果当前代码与上一个版本不兼容，则 Footer 部分以BREAKING CHANGE开头，后面是对变动的描述、以及变动理由和迁移方法。 BREAKING CHANGE: isolate scope bindings definition has changed. To migrate the code follow the example below: Before: scope: { myAttr: 'attribute', } After: scope: { myAttr: '@', } The removed `inject` wasn't generaly useful for directives so there should be no code using it. （2）关闭 Issue 如果当前 commit 针对某个issue，那么可以在 Footer 部分关闭这个 issue 。 Closes #234 也可以一次关闭多个 issue 。 Closes #123, #245, #992 2.4 Revert 还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以 revert: 开头，后面跟着被撤销 Commit 的 Header。 revert: feat(pencil): add 'graphiteWidth' option This reverts commit 667ecc1654a317a13331b17617d973392f415f02. Body部分的格式是固定的，必须写成 This reverts commit &amp;lt;hash&amp;gt;.，其中的 hash 是被撤销 commit 的 SHA 标识符。 如果当前 commit 与被撤销的 commit，在同一个发布（release）里面，那么它们都不会出现在 Change log 里面。如果两者在不同的发布，那么当前 commit，会出现在 Change log 的 Reverts 小标题下面。 三、Commitizen Commitizen 是一个撰写合格 Commit message 的工具。 安装命令如下。 $ npm install -g commitizen 然后，在项目目录里，运行下面的命令，使其支持 Angular 的 Commit message 格式。 $ commitizen init cz-conventional-changelog --save --save-exact 以后，凡是用到 git commit 命令，一律改为使用 git cz。这时，就会出现选项，用来生成符合格式的 Commit message。 四、validate-commit-msg validate-commit-msg 用于检查 Node 项目的 Commit message 是否符合格式。 它的安装是手动的。首先，拷贝下面这个JS文件，放入你的代码库。文件名可以取为 validate-commit-msg.js。 接着，把这个脚本加入 Git 的 hook。下面是在 package.json 里面使用 ghooks，把这个脚本加为 commit-msg 时运行。 &quot;config&quot;: { &quot;ghooks&quot;: { &quot;commit-msg&quot;: &quot;./validate-commit-msg.js&quot; } } 然后，每次 git commit 的时候，这个脚本就会自动检查 Commit message 是否合格。如果不合格，就会报错。 $ git add -A $ git commit -m &quot;edit markdown&quot; INVALID COMMIT MSG: does not match &quot;&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt;&quot; ! was: edit markdown 五、生成 Change log 如果你的所有 Commit 都符合 Angular 格式，那么发布新版本时， Change log 就可以用脚本自动生成（例1，例2，例3）。 生成的文档包括以下三个部分。 New features Bug fixes Breaking changes. 每个部分都会罗列相关的 commit ，并且有指向这些 commit 的链接。当然，生成的文档允许手动修改，所以发布前，你还可以添加其他内容。 conventional-changelog 就是生成 Change log 的工具，运行下面的命令即可。 $ npm install -g conventional-changelog $ cd my-project $ conventional-changelog -p angular -i CHANGELOG.md -w 上面命令不会覆盖以前的 Change log，只会在 CHANGELOG.md 的头部加上自从上次发布以来的变动。 如果你想生成所有发布的 Change log，要改为运行下面的命令。 $ conventional-changelog -p angular -i CHANGELOG.md -w -r 0 为了方便使用，可以将其写入 package.json 的 scripts 字段。 { &quot;scripts&quot;: { &quot;changelog&quot;: &quot;conventional-changelog -p angular -i CHANGELOG.md -w -r 0&quot; } } 以后，直接运行下面的命令即可。 $ npm run changelog 参考： Commit message 和 Change log 编写指南</summary></entry><entry><title type="html">解决 Maven 仓库镜像被锁定</title><link href="https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven/" rel="alternate" type="text/html" title="解决 Maven 仓库镜像被锁定" /><published>2021-06-26T00:00:00+08:00</published><updated>2021-06-26T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven</id><content type="html" xml:base="https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html&quot;&gt;Commit message 和 Change log 编写指南&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html">工具安装实践 Idea 中安装使用 Git Commit Template 插件 配置 .gitignore 忽略安装工具产生的文件 Commitizen 工具的安装 Change log 工具的安装 validate-commit-msg 工具的安装 Git commit 命令 一、Commit message 的作用 二、Commit message 的格式 2.1 Header 2.2 Body 2.3 Footer 2.4 Revert 三、Commitizen 四、validate-commit-msg 五、生成 Change log 工具安装实践 这篇文章主要内容来源为阮一峰老师的博客。 在参照文章中的工具安装步骤进行实操时，遇到一些问题，这里记录一下成功安装的过程，方便以后在新的环境中可以直接依照以下步骤安装。 而实际工作中，可直接在 IDE 中安装支持 Angular 规范的插件而无须使用命令行的方式。 例如接下来笔者要介绍的在 Idea 中安装使用 Git Commit Template 插件。 Idea 中安装使用 Git Commit Template 插件 Ctrl + Shift + a 打开 Idea 中的插件商店。 输入 Git Commit Template，选中安装。 Ctrl + K 快捷键或是点击 Git 提交代码按钮，如下图： 点击 Git Commit Template 插件提供的 Create commit message 按钮，填写提交信息 &amp;gt; OK &amp;gt; Commit，如图： 配置 .gitignore 忽略安装工具产生的文件 .gitignore 文件中添加如下内容： node_modules package.json package-lock.json Commitizen 工具的安装 # 安装 commitizen 工具 $ npm install -g commitizen # 创建一个空的 package.json 文件 $ npm init --yes # 使项目支持 Angular 的 Commit message 格式 $ commitizen init cz-conventional-changelog --save --save-exact 以后，凡是用到 git commit 命令，一律改为使用 git cz。这时，就会出现选项，用来生成符合格式的 Commit message。 Change log 工具的安装 # 安装 Change log 工具 $ npm install -g conventional-changelog-cli # 使用 Change log 工具生成 CHANGELOG.md 文件 $ conventional-changelog -p angular -i CHANGELOG.md -s validate-commit-msg 工具的安装 # 安装 ghooks $ npm install ghooks --save-dev # 安装 validate-comit-msg npm install --save-dev validate-commit-msg # 在 package.json 文件中增加如下配置 &quot;config&quot;: { &quot;ghooks&quot;: { &quot;commit-msg&quot;: &quot;validate-commit-msg&quot; } } 该工具每次 git commit 时自动检查 Commit message 是否合格。而 Commitizen 工具使用时执行的是 git cz 命令，因此在实际工作中并没有使用到该工具。 Git commit 命令 Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。 $ git commit -m &quot;hello world&quot; 上面代码的 -m 参数，就是用来指定 commit mesage 的。 如果一行不够，可以只执行 git commit，就会跳出文本编辑器，让你写多行。 $ git commit 基本上，你写什么都行（这里，这里和这里）。 但是，一般来说，commit message 应该清晰明了，说明本次提交的目的。 目前，社区有多种 Commit message 的写法规范。本文介绍Angular 规范（见上图），这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。 一、Commit message 的作用 格式化的Commit message，有几个好处。 （1）提供更多的历史信息，方便快速浏览。 比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的。 $ git log &amp;lt;last tag&amp;gt; HEAD --pretty=format:%s （2）可以过滤某些commit（比如文档改动），便于快速查找信息。 比如，下面的命令仅仅显示本次发布新增加的功能。 $ git log &amp;lt;last release&amp;gt; HEAD --grep feature （3）可以直接从commit生成Change log。 Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。 二、Commit message 的格式 每次提交，Commit message 都包括三个部分：Header，Body 和 Footer。 &amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt; // 空一行 &amp;lt;body&amp;gt; // 空一行 &amp;lt;footer&amp;gt; 其中，Header 是必需的，Body 和 Footer 可以省略。 不管是哪一个部分，任何一行都不得超过72个字符（或100个字符）。这是为了避免自动换行影响美观。 2.1 Header Header部分只有一行，包括三个字段：type（必需）、scope（可选）和subject（必需）。 （1）type type用于说明 commit 的类别，只允许使用下面7个标识。 feat：新功能（feature） fix：修补bug docs：文档（documentation） style： 格式（不影响代码运行的变动） refactor：重构（即不是新增功能，也不是修改bug的代码变动） test：增加测试 chore：构建过程或辅助工具的变动 如果type为feat和fix，则该 commit 将肯定出现在 Change log 之中。其他情况（docs、chore、style、refactor、test）由你决定，要不要放入 Change log，建议是不要。 （2）scope scope用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。 （3）subject subject是 commit 目的的简短描述，不超过50个字符。 以动词开头，使用第一人称现在时，比如change，而不是changed或changes 第一个字母小写 结尾不加句号（.） 2.2 Body Body 部分是对本次 commit 的详细描述，可以分成多行。下面是一个范例。 More detailed explanatory text, if necessary. Wrap it to about 72 characters or so. Further paragraphs come after blank lines. - Bullet points are okay, too - Use a hanging indent 有两个注意点。 （1）使用第一人称现在时，比如使用change而不是changed或changes。 （2）应该说明代码变动的动机，以及与以前行为的对比。 2.3 Footer Footer 部分只用于两种情况。 （1）不兼容变动 如果当前代码与上一个版本不兼容，则 Footer 部分以BREAKING CHANGE开头，后面是对变动的描述、以及变动理由和迁移方法。 BREAKING CHANGE: isolate scope bindings definition has changed. To migrate the code follow the example below: Before: scope: { myAttr: 'attribute', } After: scope: { myAttr: '@', } The removed `inject` wasn't generaly useful for directives so there should be no code using it. （2）关闭 Issue 如果当前 commit 针对某个issue，那么可以在 Footer 部分关闭这个 issue 。 Closes #234 也可以一次关闭多个 issue 。 Closes #123, #245, #992 2.4 Revert 还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以 revert: 开头，后面跟着被撤销 Commit 的 Header。 revert: feat(pencil): add 'graphiteWidth' option This reverts commit 667ecc1654a317a13331b17617d973392f415f02. Body部分的格式是固定的，必须写成 This reverts commit &amp;lt;hash&amp;gt;.，其中的 hash 是被撤销 commit 的 SHA 标识符。 如果当前 commit 与被撤销的 commit，在同一个发布（release）里面，那么它们都不会出现在 Change log 里面。如果两者在不同的发布，那么当前 commit，会出现在 Change log 的 Reverts 小标题下面。 三、Commitizen Commitizen 是一个撰写合格 Commit message 的工具。 安装命令如下。 $ npm install -g commitizen 然后，在项目目录里，运行下面的命令，使其支持 Angular 的 Commit message 格式。 $ commitizen init cz-conventional-changelog --save --save-exact 以后，凡是用到 git commit 命令，一律改为使用 git cz。这时，就会出现选项，用来生成符合格式的 Commit message。 四、validate-commit-msg validate-commit-msg 用于检查 Node 项目的 Commit message 是否符合格式。 它的安装是手动的。首先，拷贝下面这个JS文件，放入你的代码库。文件名可以取为 validate-commit-msg.js。 接着，把这个脚本加入 Git 的 hook。下面是在 package.json 里面使用 ghooks，把这个脚本加为 commit-msg 时运行。 &quot;config&quot;: { &quot;ghooks&quot;: { &quot;commit-msg&quot;: &quot;./validate-commit-msg.js&quot; } } 然后，每次 git commit 的时候，这个脚本就会自动检查 Commit message 是否合格。如果不合格，就会报错。 $ git add -A $ git commit -m &quot;edit markdown&quot; INVALID COMMIT MSG: does not match &quot;&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt;&quot; ! was: edit markdown 五、生成 Change log 如果你的所有 Commit 都符合 Angular 格式，那么发布新版本时， Change log 就可以用脚本自动生成（例1，例2，例3）。 生成的文档包括以下三个部分。 New features Bug fixes Breaking changes. 每个部分都会罗列相关的 commit ，并且有指向这些 commit 的链接。当然，生成的文档允许手动修改，所以发布前，你还可以添加其他内容。 conventional-changelog 就是生成 Change log 的工具，运行下面的命令即可。 $ npm install -g conventional-changelog $ cd my-project $ conventional-changelog -p angular -i CHANGELOG.md -w 上面命令不会覆盖以前的 Change log，只会在 CHANGELOG.md 的头部加上自从上次发布以来的变动。 如果你想生成所有发布的 Change log，要改为运行下面的命令。 $ conventional-changelog -p angular -i CHANGELOG.md -w -r 0 为了方便使用，可以将其写入 package.json 的 scripts 字段。 { &quot;scripts&quot;: { &quot;changelog&quot;: &quot;conventional-changelog -p angular -i CHANGELOG.md -w -r 0&quot; } } 以后，直接运行下面的命令即可。 $ npm run changelog 参考： Commit message 和 Change log 编写指南</summary></entry><entry><title type="html">解决 Maven 仓库镜像被锁定</title><link href="https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven/" rel="alternate" type="text/html" title="解决 Maven 仓库镜像被锁定" /><published>2021-06-26T00:00:00+08:00</published><updated>2021-06-26T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven</id><content type="html" xml:base="https://empvalley.com/2021/06/26/blocked-mirror-for-repositories-of-maven/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-问题&quot; id=&quot;markdown-toc-heading-问题&quot;&gt;问题&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-问题原因&quot; id=&quot;markdown-toc-heading-问题原因&quot;&gt;问题原因&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-解决方法&quot; id=&quot;markdown-toc-heading-解决方法&quot;&gt;解决方法&lt;/a&gt;    &lt;ul&gt;
@@ -753,270 +1571,4 @@ IdentityFile ~/.ssh/id_rsa_personal
 
 &lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/2006202?lang=zh_CN&quot;&gt;备份 VMware Workstation 虚拟机的最佳做法 (2006202)&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/1003880&quot;&gt;找出虚拟机文件的位置 (1003880)&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VMware Workstation" /><summary type="html">操作步骤 操作步骤 确保虚拟机电源处于已关闭状态。 找到虚拟机文件夹。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 点击 Options。 点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。 复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。 复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。 点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 选中 Hard Disk &amp;gt; Remove。 Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。 启动时会询问是移动还是复制的虚拟机，选复制的选项。 参考： 备份 VMware Workstation 虚拟机的最佳做法 (2006202) 找出虚拟机文件的位置 (1003880)</summary></entry><entry><title type="html">Dell Inspiron 5488 双硬盘安装 Win10 Ubuntu 双系统</title><link href="https://empvalley.com/2020/08/28/win10-ubuntu-dual-boot/" rel="alternate" type="text/html" title="Dell Inspiron 5488 双硬盘安装 Win10 Ubuntu 双系统" /><published>2020-08-28T00:00:00+08:00</published><updated>2020-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2020/08/28/win10-ubuntu-dual-boot</id><content type="html" xml:base="https://empvalley.com/2020/08/28/win10-ubuntu-dual-boot/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-阅读说明&quot; id=&quot;markdown-toc-heading-阅读说明&quot;&gt;阅读说明&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-硬件环境&quot; id=&quot;markdown-toc-heading-硬件环境&quot;&gt;硬件环境&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-软件环境&quot; id=&quot;markdown-toc-heading-软件环境&quot;&gt;软件环境&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-作业记录&quot; id=&quot;markdown-toc-heading-作业记录&quot;&gt;作业记录&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-一关闭磁盘加密&quot; id=&quot;markdown-toc-heading-一关闭磁盘加密&quot;&gt;一：关闭磁盘加密&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-二设置bios&quot; id=&quot;markdown-toc-heading-二设置bios&quot;&gt;二：设置BIOS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-三安装-windows-系统&quot; id=&quot;markdown-toc-heading-三安装-windows-系统&quot;&gt;三：安装 Windows 系统&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-四关闭-windows-快速启动&quot; id=&quot;markdown-toc-heading-四关闭-windows-快速启动&quot;&gt;四：关闭 Windows 快速启动&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-五划分-ubuntu-系统空间&quot; id=&quot;markdown-toc-heading-五划分-ubuntu-系统空间&quot;&gt;五：划分 Ubuntu 系统空间&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-六安装-ubuntu-系统&quot; id=&quot;markdown-toc-heading-六安装-ubuntu-系统&quot;&gt;六：安装 Ubuntu 系统&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-阅读说明&quot;&gt;阅读说明&lt;/h2&gt;
-
-&lt;p&gt;记录&lt;strong&gt;正确的安装流程&lt;/strong&gt;和&lt;strong&gt;需要注意的事项&lt;/strong&gt;，并不提供具体的细节（可自行Google）。&lt;/p&gt;
-
-&lt;p&gt;因此并非是一篇可以拿来即用的文章，但根据这篇文章的安装顺序和注意事项进行双系统的安装可以节省你大量宝贵的时间。&lt;/p&gt;
-
-&lt;p&gt;我大概用了12h左右的时间完成的安装，时间主要花费在有很多需要注意的地方在大多数教程中并未提起，遇到一个解决一个。&lt;/p&gt;
-
-&lt;p&gt;Windows系统和Ubuntu系统全是英文版本，因此过程中出现的错误提示信息我会翻译成中文，和中文版安装时的错误提示信息并不能完全一样，对照着看意思一样应该就属同一个错误。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-硬件环境&quot;&gt;硬件环境&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;品牌&lt;/th&gt;
-      &lt;th&gt;Dell&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;型号&lt;/td&gt;
-      &lt;td&gt;Inspiron 5488&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;CPU&lt;/td&gt;
-      &lt;td&gt;i7-8565U&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;内存&lt;/td&gt;
-      &lt;td&gt;32GB。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PS：官方原版为8GB，最高支持升级至32GB&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;硬盘&lt;/td&gt;
-      &lt;td&gt;256GB固态硬盘+1TB机械硬盘。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PS：官方原版为256GB固态硬盘。&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;显卡&lt;/td&gt;
-      &lt;td&gt;NVIDIA GeForce MX250&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;heading-软件环境&quot;&gt;软件环境&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Windows系统&lt;/th&gt;
-      &lt;th&gt;Windows10 Pro N 1909&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Linux系统&lt;/td&gt;
-      &lt;td&gt;Ubuntu 20.04.01&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;USB系统盘制作工具&lt;/td&gt;
-      &lt;td&gt;rufus-3.11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;引导模式&lt;/td&gt;
-      &lt;td&gt;UEFI&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;heading-作业记录&quot;&gt;作业记录&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-一关闭磁盘加密&quot;&gt;一：关闭磁盘加密&lt;/h3&gt;
-
-&lt;p&gt;打开 Control Panel （控制面板） &amp;gt; System and Security （系统和安全） &amp;gt; BitLocker Drive Encryption（磁盘加密），点击 Turn off BitLocker（关闭磁盘加密）。&lt;/p&gt;
-
-&lt;p&gt;注：加密的磁盘才会有关闭选项，如果找不到关闭选项，可能是磁盘未进行加密。&lt;/p&gt;
-
-&lt;p&gt;关闭磁盘加密非常耗时，系统右下角有可以查看进度的图标，如果没有可以通过命令查看完成百分比，例如查看 D 盘关闭磁盘加密进度：&lt;/p&gt;
-
-&lt;p&gt;打开 powershell 或 cmd 命令，运行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manage-bde -status d:&lt;/code&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;如果存在加密的磁盘，安装 Ubuntu 时会提示错误：&lt;/p&gt;
-
-  &lt;p&gt;Turn off BitLocker. This Computer uses Windows BitLocker encryption. You need to turn off BitLocker in Windows before installing Ubuntu. For instructions, open this page on a phone or other device: &lt;a href=&quot;help.ubuntu.com/bitlocker&quot;&gt;help.ubuntu.com/bitlocker&lt;/a&gt;。&lt;/p&gt;
-
-  &lt;p&gt;中文意思为：关闭磁盘加密。电脑使用了 Windows 的磁盘加密技术，安装 Ubuntu 系统前需要先进行关闭。操作方法可以查看 &lt;a href=&quot;help.ubuntu.com/bitlocker&quot;&gt;help.ubuntu.com/bitlocker&lt;/a&gt;页面。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;heading-二设置bios&quot;&gt;二：设置BIOS&lt;/h3&gt;
-
-&lt;p&gt;开机按F2键，进入BIOS界面。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;选择 Secure Boot &amp;gt; Secure Boot Enable，将 Enabled 改为 Disabled。&lt;/li&gt;
-  &lt;li&gt;选择 Security &amp;gt; PPT security，取消勾选 PPT On。&lt;/li&gt;
-  &lt;li&gt;选择 System Configuration &amp;gt; SATA Operation，选择 AHCI。&lt;/li&gt;
-  &lt;li&gt;选择 General &amp;gt; Boot Sequence &amp;gt; Boot List Option，选择UEFI。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;如果不设置 SATA Operation 为 AHCI 模式，而先安装了 Windows 系统，这时 Windows 系统使用的是 RST ( Intel Rapid Storage，因特尔磁盘快速存储技术)，在安装 Ubuntu 时可能会出现错误提示：&lt;/p&gt;
-
-  &lt;p&gt;Turn off RST. This computer uses Intel RST(Rapid Storage Technology). You need to turn off RST before installing Ubuntu. For instructions, open this page on a phone or other device:&lt;/p&gt;
-
-  &lt;p&gt;中文意思为：关闭 RST，当前电脑使用了 RST 技术，安装 Ubuntu 前需要进行关闭，操作方法可查看 &lt;a href=&quot;help.ubuntu.com/rst&quot;&gt;help.ubuntu.com/rst&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;heading-三安装-windows-系统&quot;&gt;三：安装 Windows 系统&lt;/h3&gt;
-
-&lt;p&gt;安装 Windows 系统到 256GB 硬盘上面。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-四关闭-windows-快速启动&quot;&gt;四：关闭 Windows 快速启动&lt;/h3&gt;
-
-&lt;p&gt;Control Panel（控制面板） &amp;gt; Hardware and Sound（硬件和声音） &amp;gt; Power Options（电源选项） &amp;gt; Choose what the power buttons do（电源按钮）&amp;gt; Change settings that are currently unavailable （更改当前不可用的选项），取消勾选 Turn on fast startup(recommended) （开启快速启动（推荐））按钮。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-五划分-ubuntu-系统空间&quot;&gt;五：划分 Ubuntu 系统空间&lt;/h3&gt;
-
-&lt;p&gt;进入 Windows 系统，我的电脑（右键） &amp;gt; 管理 &amp;gt; 磁盘管理 &amp;gt; 需要进行压缩的磁盘（右键） &amp;gt; 压缩磁盘，选择合适的大小。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; Ubuntu 的 /boot 分区，必须和 Windows 系统在同一物理磁盘上面。其它分区无要求，划分到任意磁盘都可以。&lt;/p&gt;
-
-  &lt;p&gt;我的分区方案是：/boot（划分10GB空间） 和 Windows 放在 256GB 固态硬盘，swap（划分16GB空间） 放在 256GB 固态硬盘，/home（划分74GB）放在256固态硬盘。/（划分100G）放在 1TB 机械硬盘。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;heading-六安装-ubuntu-系统&quot;&gt;六：安装 Ubuntu 系统&lt;/h3&gt;
-
-&lt;p&gt;安装 Ubuntu 系统。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;再次强调，Ubuntu 的 /boot 分区，必须和 Windows 系统在同一物理磁盘上面。其它分区无要求，划分到任意磁盘都可以。&lt;/li&gt;
-    &lt;li&gt;Ubuntu 的安装过程中要联网并勾选安装第三方软件、Graphcis 和 Wifi 等功能，否则启动时可能一直停留在 Logo 画面。&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;至此，安装 Windows 和 Ubuntu 双系统到 Dell Inspiron 5488 双硬盘完成。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;参考：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aKKdiqVHNqw&amp;amp;list=PLME0oHvpJ2pWFzvUhpK1nTJ_dn1W3ktpp&amp;amp;index=2&amp;amp;t=251s&quot;&gt;如何安装 Ubuntu 20.04 和 Windows 10 双系统 UEFI - GTP 模式&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://discourse.ubuntu.com/t/ubuntu-installation-on-computers-with-intel-r-rst-enabled/15347&quot;&gt;在启用 RST 的电脑上安装 Ubuntu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://discourse.ubuntu.com/t/ubuntu-installation-on-computers-running-windows-and-bitlocker-turned-on/15338&quot;&gt;在开启磁盘加密的 Windows 系统上安装 Ubuntu&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html">阅读说明 硬件环境 软件环境 作业记录 一：关闭磁盘加密 二：设置BIOS 三：安装 Windows 系统 四：关闭 Windows 快速启动 五：划分 Ubuntu 系统空间 六：安装 Ubuntu 系统 阅读说明 记录正确的安装流程和需要注意的事项，并不提供具体的细节（可自行Google）。 因此并非是一篇可以拿来即用的文章，但根据这篇文章的安装顺序和注意事项进行双系统的安装可以节省你大量宝贵的时间。 我大概用了12h左右的时间完成的安装，时间主要花费在有很多需要注意的地方在大多数教程中并未提起，遇到一个解决一个。 Windows系统和Ubuntu系统全是英文版本，因此过程中出现的错误提示信息我会翻译成中文，和中文版安装时的错误提示信息并不能完全一样，对照着看意思一样应该就属同一个错误。 硬件环境 品牌 Dell 型号 Inspiron 5488 CPU i7-8565U 内存 32GB。PS：官方原版为8GB，最高支持升级至32GB 硬盘 256GB固态硬盘+1TB机械硬盘。PS：官方原版为256GB固态硬盘。 显卡 NVIDIA GeForce MX250 软件环境 Windows系统 Windows10 Pro N 1909 Linux系统 Ubuntu 20.04.01 USB系统盘制作工具 rufus-3.11 引导模式 UEFI 作业记录 一：关闭磁盘加密 打开 Control Panel （控制面板） &amp;gt; System and Security （系统和安全） &amp;gt; BitLocker Drive Encryption（磁盘加密），点击 Turn off BitLocker（关闭磁盘加密）。 注：加密的磁盘才会有关闭选项，如果找不到关闭选项，可能是磁盘未进行加密。 关闭磁盘加密非常耗时，系统右下角有可以查看进度的图标，如果没有可以通过命令查看完成百分比，例如查看 D 盘关闭磁盘加密进度： 打开 powershell 或 cmd 命令，运行 manage-bde -status d: 注意：如果存在加密的磁盘，安装 Ubuntu 时会提示错误： Turn off BitLocker. This Computer uses Windows BitLocker encryption. You need to turn off BitLocker in Windows before installing Ubuntu. For instructions, open this page on a phone or other device: help.ubuntu.com/bitlocker。 中文意思为：关闭磁盘加密。电脑使用了 Windows 的磁盘加密技术，安装 Ubuntu 系统前需要先进行关闭。操作方法可以查看 help.ubuntu.com/bitlocker页面。 二：设置BIOS 开机按F2键，进入BIOS界面。 选择 Secure Boot &amp;gt; Secure Boot Enable，将 Enabled 改为 Disabled。 选择 Security &amp;gt; PPT security，取消勾选 PPT On。 选择 System Configuration &amp;gt; SATA Operation，选择 AHCI。 选择 General &amp;gt; Boot Sequence &amp;gt; Boot List Option，选择UEFI。 注意：如果不设置 SATA Operation 为 AHCI 模式，而先安装了 Windows 系统，这时 Windows 系统使用的是 RST ( Intel Rapid Storage，因特尔磁盘快速存储技术)，在安装 Ubuntu 时可能会出现错误提示： Turn off RST. This computer uses Intel RST(Rapid Storage Technology). You need to turn off RST before installing Ubuntu. For instructions, open this page on a phone or other device: 中文意思为：关闭 RST，当前电脑使用了 RST 技术，安装 Ubuntu 前需要进行关闭，操作方法可查看 help.ubuntu.com/rst 三：安装 Windows 系统 安装 Windows 系统到 256GB 硬盘上面。 四：关闭 Windows 快速启动 Control Panel（控制面板） &amp;gt; Hardware and Sound（硬件和声音） &amp;gt; Power Options（电源选项） &amp;gt; Choose what the power buttons do（电源按钮）&amp;gt; Change settings that are currently unavailable （更改当前不可用的选项），取消勾选 Turn on fast startup(recommended) （开启快速启动（推荐））按钮。 五：划分 Ubuntu 系统空间 进入 Windows 系统，我的电脑（右键） &amp;gt; 管理 &amp;gt; 磁盘管理 &amp;gt; 需要进行压缩的磁盘（右键） &amp;gt; 压缩磁盘，选择合适的大小。 注意： Ubuntu 的 /boot 分区，必须和 Windows 系统在同一物理磁盘上面。其它分区无要求，划分到任意磁盘都可以。 我的分区方案是：/boot（划分10GB空间） 和 Windows 放在 256GB 固态硬盘，swap（划分16GB空间） 放在 256GB 固态硬盘，/home（划分74GB）放在256固态硬盘。/（划分100G）放在 1TB 机械硬盘。 六：安装 Ubuntu 系统 安装 Ubuntu 系统。 注意： 再次强调，Ubuntu 的 /boot 分区，必须和 Windows 系统在同一物理磁盘上面。其它分区无要求，划分到任意磁盘都可以。 Ubuntu 的安装过程中要联网并勾选安装第三方软件、Graphcis 和 Wifi 等功能，否则启动时可能一直停留在 Logo 画面。 至此，安装 Windows 和 Ubuntu 双系统到 Dell Inspiron 5488 双硬盘完成。 参考： 如何安装 Ubuntu 20.04 和 Windows 10 双系统 UEFI - GTP 模式 在启用 RST 的电脑上安装 Ubuntu 在开启磁盘加密的 Windows 系统上安装 Ubuntu</summary></entry><entry><title type="html">人生只有900个月</title><link href="https://empvalley.com/2020/04/12/900-month-lifespan/" rel="alternate" type="text/html" title="人生只有900个月" /><published>2020-04-12T00:00:00+08:00</published><updated>2020-04-12T00:00:00+08:00</updated><id>https://empvalley.com/2020/04/12/900-month-lifespan</id><content type="html" xml:base="https://empvalley.com/2020/04/12/900-month-lifespan/">&lt;p&gt;有人在&lt;a href=&quot;http://www.quora.com/What-are-some-of-the-most-mind-blowing-facts&quot;&gt;Quora&lt;/a&gt;问：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&quot;最令你吃惊的事实是什么？&quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;他得到了56个回答。其中最震撼我的，是下面的回答：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&quot;人生只有900个月。&quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我从没意识到，人生可以短暂到如此精确。回想刚刚过去的四月份，不过就是一眨眼的时间，但是人生的900分之一就已经消失了，真是恐怖啊。&lt;/p&gt;
-
-&lt;p&gt;事实上，你可以画一个30x30的表格，一张A4纸就够了。每过一个月，就在一个格子里打钩。你全部的人生就在这张纸上。你会因此有一个清晰的概念：你的人生是如何蹉跎的。&lt;/p&gt;
-
-&lt;p&gt;===============================&lt;/p&gt;
-
-&lt;p&gt;下面转载美国摄影师Tom Hussey的作品《A Mirrored Memory》（镜中回忆）。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan04.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan06.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan07.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/900-month-lifespan08.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;========================================&lt;/p&gt;
-
-&lt;p&gt;P.S.&lt;/p&gt;
-
-&lt;p&gt;下面的事实也很让人吃惊。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;剑龙（Stegosaurus）与霸王龙（Tyrannosaurus）相隔的年代，比霸王龙（Tyrannosaurus）与人类相隔的年代还要久远。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;一付52张的扑克牌，共有8x1067种洗牌顺序。如果每秒洗牌一次，从地球诞生至今还没洗完。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;指挥Apollo 11登月的计算机，运行频率为1.024 MHz，不及今天的可编程计算器的六分之一。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;身上三种颜色的猫一定是母的。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;如果一个班有50个人，其中有两个人生日相同的概率是97%。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;原文：&lt;a href=&quot;http://www.ruanyifeng.com/blog/2011/05/900-month_lifespan.html&quot;&gt;人生只有900个月&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">有人在Quora问： &quot;最令你吃惊的事实是什么？&quot; 他得到了56个回答。其中最震撼我的，是下面的回答： &quot;人生只有900个月。&quot; 我从没意识到，人生可以短暂到如此精确。回想刚刚过去的四月份，不过就是一眨眼的时间，但是人生的900分之一就已经消失了，真是恐怖啊。 事实上，你可以画一个30x30的表格，一张A4纸就够了。每过一个月，就在一个格子里打钩。你全部的人生就在这张纸上。你会因此有一个清晰的概念：你的人生是如何蹉跎的。 =============================== 下面转载美国摄影师Tom Hussey的作品《A Mirrored Memory》（镜中回忆）。 ======================================== P.S. 下面的事实也很让人吃惊。 剑龙（Stegosaurus）与霸王龙（Tyrannosaurus）相隔的年代，比霸王龙（Tyrannosaurus）与人类相隔的年代还要久远。 一付52张的扑克牌，共有8x1067种洗牌顺序。如果每秒洗牌一次，从地球诞生至今还没洗完。 指挥Apollo 11登月的计算机，运行频率为1.024 MHz，不及今天的可编程计算器的六分之一。 身上三种颜色的猫一定是母的。 如果一个班有50个人，其中有两个人生日相同的概率是97%。 原文：人生只有900个月</summary></entry><entry><title type="html">理查德·斯托曼一直是对的</title><link href="https://empvalley.com/2020/04/11/richard-stallman-was-right-all-along/" rel="alternate" type="text/html" title="理查德·斯托曼一直是对的" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>https://empvalley.com/2020/04/11/richard-stallman-was-right-all-along</id><content type="html" xml:base="https://empvalley.com/2020/04/11/richard-stallman-was-right-all-along/">&lt;p&gt;所有反对 &lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/01/why_sopa_is_evil.html&quot;&gt;SOPA&lt;/a&gt; 的文章之中，有一篇的题目是&lt;a href=&quot;http://www.osnews.com/story/25469/Richard_Stallman_Was_Right_All_Along&quot;&gt;《理查德·斯托曼一直是对的》&lt;/a&gt;，我印象最深。&lt;/p&gt;
-
-&lt;p&gt;它指出，最近几个月，美国的公民自由严重倒退。先是&lt;a href=&quot;http://en.wikipedia.org/wiki/National_Defense_Authorization_Act_for_Fiscal_Year_2012&quot;&gt;《国防授权法案》&lt;/a&gt;（NDAA）允许政府可以不经任何程序，无限期拘捕具有恐怖活动嫌疑的人；接着是参与&quot;占领华尔街&quot;运动的民众被污蔑成&quot;恐怖分子&quot;；现在又是SOPA，它企图通过控制传播渠道，来抑制信息的流通。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/richard-stallman-was-right-all-along01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这些对公民自由的侵犯，不禁让人联想到，30年前的1983年，有一个叫做&lt;a href=&quot;http://www.ruanyifeng.com/blog/2005/03/post_112.html&quot;&gt;理查德·斯托曼&lt;/a&gt;的程序员，声称&lt;strong&gt;&quot;软件的自由，关系到人类的自由&quot;&lt;/strong&gt;。这个观点当时被认为荒唐偏激，但是现在来看，他担心的事情正在变成现实，他其实是对的。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/richard-stallman-was-right-all-along02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;很多人不赞成理查德·斯托曼，一部分原因是觉得他过于极端，是一个狂热的偏执症患者。比如，他仅有的个人电脑是一台&lt;a href=&quot;http://www.lemote.com/en/products/Notebook/2010/0310/112.html&quot;&gt;龙芯上网本&lt;/a&gt;，因为这是世界唯一的全部使用自由软件（Bios、硬件驱动、操作系统、应用软件）的电脑；他拒绝使用手机，因为手机的硬件和软件太封闭，使用某个品牌的手机，几乎等同于接受某家公司的控制；甚至他的头发、他的胡子、他的服装，都让人们觉得这是一个怪人，大可不必理会他的观点。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/richard-stallman-was-right-all-along03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;他创立的&lt;a href=&quot;http://www.fsf.org/&quot;&gt;自由软件基金会&lt;/a&gt;的主页上这样&lt;a href=&quot;http://www.fsf.org/about/&quot;&gt;写道&lt;/a&gt;：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&quot;我们的社会正越来越依赖计算机，我们使用的软件对保证未来社会的自由至关重要。&lt;strong&gt;自由软件使我们能够控制我们使用的技术，让技术造福个人和社会，而不是让技术被商业公司或政府控制，用来限制或监视我们。&lt;/strong&gt;&quot;&lt;/p&gt;
-
-  &lt;p&gt;(As our society grows more dependent on computers, the software we run is of critical importance to securing the future of a free society. Free software is about having control over the technology we use in our homes, schools and businesses, where computers work for our individual and communal benefit, not for proprietary software companies or governments who might seek to restrict and monitor us.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;很长时间内，我也认为理查德·斯托曼太极端，对他说的&quot;软件=自由&quot;根本没有感觉，只是觉得自由软件可以免费使用，这点很不错。我从没想过，软件与大公司的垄断、政府的独裁有什么关系，言论自由、公民权力，这些问题怎么会涉及到编程呢？任何时候，只要自由软件能让我不花钱就用上新功能，我就心满意足了。&lt;/p&gt;
-
-&lt;p&gt;但是近几年来，随着《爱国者法案》、国家防火墙、实名制、SOPA这样的事情越来越多，我逐渐意识到，我是错的，理查德·斯托曼是对的。&lt;strong&gt;如今，政府控制人民不再需要警察和军队了，他们只需要控制软件和硬件就行了。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;电脑和网络技术，在现代社会中占据了至关重要的位置。控制了它们，就可以监视人们的一举一动、一言一行，等同于控制言论、思想、真理和权力。你或许会说，面对面的交谈，就可以免受控制。错！想一想我们怎么安排见面？再想一想，我们身上的每一台设备都与网络相连，这意味着什么？&lt;/p&gt;
-
-&lt;p&gt;假设一个邪恶的政府与大资本家联手，企图剥夺人民的自由。只要自由软件存在，他们就不可能完全成功，因为代码和技术细节都是开放的，他们无法掩人耳目，自由软件将是人民反抗的武器。反过来，如果没有自由软件，代码、协议、操作系统、硬件驱动、文件格式都是保密的，请问你怎么反抗呢？你拿什么反抗呢？根本不需要SOPA，你的自由早就在他人的控制之下了。&lt;/p&gt;
-
-&lt;p&gt;这就是斯托曼一直重复的警告，可惜大多数人都忽视了他的话，只从经济角度看待代码。直到有一天，代码与我们的自由紧密相关的时候，我们才开始醒悟。&lt;strong&gt;自由软件是抵抗邪恶政府、捍卫自由的武器。&lt;/strong&gt;源码包含着力量，我们必须保证，它控制在自由的人们手里。&lt;/p&gt;
-
-&lt;p&gt;最终来说，自由软件与商业无关，它只关系到人类的自由。GPL许可证从来不反对用软件挣钱，它只反对你通过限制他人的自由来挣钱。在理查德·斯托曼看来，专有软件剥夺用户的自由，最终将导致灾难性的后果，高度依赖计算机的社会尤其如此。&lt;/p&gt;
-
-&lt;p&gt;如果你想推广你的代码，让更多的人使用，那么&lt;a href=&quot;http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html&quot;&gt;BSD许可证&lt;/a&gt;效果更好。但是，如果你想保证自由从此再不会消失、而是像雪球那样越滚越大，那么GPL许可证是最好的选择。&lt;/p&gt;
-
-&lt;p&gt;理查德·斯托曼在30年前，就意识到这一点。他忍受各种艰难困苦，绝不妥协，到处鼓吹自由软件的合理性和必要性。今天我们已经看清楚了，30年了，他一直是对的！&lt;/p&gt;
-
-&lt;p&gt;必须让大家明白，软件代码不仅仅是商业产品，更重要的，它是人类自由的一部分。如果我们要保卫自由，就必须支持自由软件。你可以使用闭源软件，但是你应该支持自由软件，因为没有它，就没有我们的自由，不仅未来如此，而且现在已经如此了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;原文：&lt;a href=&quot;https://www.ruanyifeng.com/blog/2012/01/richard_stallman_was_right_all_along.html&quot;&gt;理查德·斯托曼一直是对的&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">所有反对 SOPA 的文章之中，有一篇的题目是《理查德·斯托曼一直是对的》，我印象最深。 它指出，最近几个月，美国的公民自由严重倒退。先是《国防授权法案》（NDAA）允许政府可以不经任何程序，无限期拘捕具有恐怖活动嫌疑的人；接着是参与&quot;占领华尔街&quot;运动的民众被污蔑成&quot;恐怖分子&quot;；现在又是SOPA，它企图通过控制传播渠道，来抑制信息的流通。 这些对公民自由的侵犯，不禁让人联想到，30年前的1983年，有一个叫做理查德·斯托曼的程序员，声称&quot;软件的自由，关系到人类的自由&quot;。这个观点当时被认为荒唐偏激，但是现在来看，他担心的事情正在变成现实，他其实是对的。 很多人不赞成理查德·斯托曼，一部分原因是觉得他过于极端，是一个狂热的偏执症患者。比如，他仅有的个人电脑是一台龙芯上网本，因为这是世界唯一的全部使用自由软件（Bios、硬件驱动、操作系统、应用软件）的电脑；他拒绝使用手机，因为手机的硬件和软件太封闭，使用某个品牌的手机，几乎等同于接受某家公司的控制；甚至他的头发、他的胡子、他的服装，都让人们觉得这是一个怪人，大可不必理会他的观点。 他创立的自由软件基金会的主页上这样写道： &quot;我们的社会正越来越依赖计算机，我们使用的软件对保证未来社会的自由至关重要。自由软件使我们能够控制我们使用的技术，让技术造福个人和社会，而不是让技术被商业公司或政府控制，用来限制或监视我们。&quot; (As our society grows more dependent on computers, the software we run is of critical importance to securing the future of a free society. Free software is about having control over the technology we use in our homes, schools and businesses, where computers work for our individual and communal benefit, not for proprietary software companies or governments who might seek to restrict and monitor us.) 很长时间内，我也认为理查德·斯托曼太极端，对他说的&quot;软件=自由&quot;根本没有感觉，只是觉得自由软件可以免费使用，这点很不错。我从没想过，软件与大公司的垄断、政府的独裁有什么关系，言论自由、公民权力，这些问题怎么会涉及到编程呢？任何时候，只要自由软件能让我不花钱就用上新功能，我就心满意足了。 但是近几年来，随着《爱国者法案》、国家防火墙、实名制、SOPA这样的事情越来越多，我逐渐意识到，我是错的，理查德·斯托曼是对的。如今，政府控制人民不再需要警察和军队了，他们只需要控制软件和硬件就行了。 电脑和网络技术，在现代社会中占据了至关重要的位置。控制了它们，就可以监视人们的一举一动、一言一行，等同于控制言论、思想、真理和权力。你或许会说，面对面的交谈，就可以免受控制。错！想一想我们怎么安排见面？再想一想，我们身上的每一台设备都与网络相连，这意味着什么？ 假设一个邪恶的政府与大资本家联手，企图剥夺人民的自由。只要自由软件存在，他们就不可能完全成功，因为代码和技术细节都是开放的，他们无法掩人耳目，自由软件将是人民反抗的武器。反过来，如果没有自由软件，代码、协议、操作系统、硬件驱动、文件格式都是保密的，请问你怎么反抗呢？你拿什么反抗呢？根本不需要SOPA，你的自由早就在他人的控制之下了。 这就是斯托曼一直重复的警告，可惜大多数人都忽视了他的话，只从经济角度看待代码。直到有一天，代码与我们的自由紧密相关的时候，我们才开始醒悟。自由软件是抵抗邪恶政府、捍卫自由的武器。源码包含着力量，我们必须保证，它控制在自由的人们手里。 最终来说，自由软件与商业无关，它只关系到人类的自由。GPL许可证从来不反对用软件挣钱，它只反对你通过限制他人的自由来挣钱。在理查德·斯托曼看来，专有软件剥夺用户的自由，最终将导致灾难性的后果，高度依赖计算机的社会尤其如此。 如果你想推广你的代码，让更多的人使用，那么BSD许可证效果更好。但是，如果你想保证自由从此再不会消失、而是像雪球那样越滚越大，那么GPL许可证是最好的选择。 理查德·斯托曼在30年前，就意识到这一点。他忍受各种艰难困苦，绝不妥协，到处鼓吹自由软件的合理性和必要性。今天我们已经看清楚了，30年了，他一直是对的！ 必须让大家明白，软件代码不仅仅是商业产品，更重要的，它是人类自由的一部分。如果我们要保卫自由，就必须支持自由软件。你可以使用闭源软件，但是你应该支持自由软件，因为没有它，就没有我们的自由，不仅未来如此，而且现在已经如此了。 原文：理查德·斯托曼一直是对的</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/1003880&quot;&gt;找出虚拟机文件的位置 (1003880)&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VMware Workstation" /><summary type="html">操作步骤 操作步骤 确保虚拟机电源处于已关闭状态。 找到虚拟机文件夹。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 点击 Options。 点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。 复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。 复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。 点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 选中 Hard Disk &amp;gt; Remove。 Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。 启动时会询问是移动还是复制的虚拟机，选复制的选项。 参考： 备份 VMware Workstation 虚拟机的最佳做法 (2006202) 找出虚拟机文件的位置 (1003880)</summary></entry></feed>
