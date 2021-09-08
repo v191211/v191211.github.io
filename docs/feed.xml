@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-08-22T16:16:30+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-08T09:01:02+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-2.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-3.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-4.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-5.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-6.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-7.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。&lt;/p&gt;
+
+&lt;p&gt;所以&lt;strong&gt;学习一门新的语言，更重要的是关注它和你所掌握语言的不同之处&lt;/strong&gt;。这些不同之处所涉及到的基本概念是有限的，本文就列出了一些。&lt;/p&gt;
+
+&lt;p&gt;另外，学完了一门新语言以后，如果项目中用不到，是无法熟练使用的，也有可能很快忘记那些语法，因为编程确实需要不断的练习，尤其是项目的历练，从这个意义上来说，学习并理解那些基本概念会更加重要。&lt;/p&gt;
+
+&lt;p&gt;本文的灵感来源于 &lt;a href=&quot;https://www.coderscat.com/how-to-learn-all-pl&quot;&gt;How to learn all programming languages, YES! ALL!&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/q922LRPmln1n2JXIOFOV_A&quot; target=&quot;_blank&quot;&gt;两年，我学会了所有的编程语言！&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">1 本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。 所以学习一门新的语言，更重要的是关注它和你所掌握语言的不同之处。这些不同之处所涉及到的基本概念是有限的，本文就列出了一些。 另外，学完了一门新语言以后，如果项目中用不到，是无法熟练使用的，也有可能很快忘记那些语法，因为编程确实需要不断的练习，尤其是项目的历练，从这个意义上来说，学习并理解那些基本概念会更加重要。 本文的灵感来源于 How to learn all programming languages, YES! ALL! 两年，我学会了所有的编程语言！ &amp;#8617;</summary></entry><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;（摄影：Christopher Michel）&lt;/p&gt;
 
@@ -1541,34 +1564,4 @@ IdentityFile ~/.ssh/id_rsa_personal
 
 &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jajian/p/8081658.html&quot;&gt;IntelliJ IDEA（九） ：酷炫插件系列&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://projectlombok.org/setup/intellij&quot;&gt;Intellij Idea 配置 Lombok&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Intellij Idea" /><category term="插件" /><summary type="html">Lombok RestfulToolkit MyBatisX Lombok Java 语言，每次写实体类的时候都需要写一大堆的 setter，getter，如果 bean 中的属性一旦有修改、删除或增加时，需要重新生成或删除 get/set 等方法，给代码维护增加负担，这也是 Java 被诟病的一种原因。 Lombok 则为我们解决了这些问题，使用了 lombok 的注解（@Setter、@Getter、@ToString、@RequiredArgsConstructor、@EqualsAndHashCode、@Data）之后，就不需要编写或生成 get/set 等方法，很大程度上减少了代码量，而且减少了代码维护的负担。 安装完成之后，在应用 Lombok 的时候注意别忘了需要添加依赖。 在 Idea 2020.3. 版本之后，默认集成了 Lombok。 RestfulToolkit Spring MVC 网页开发的时候，我们都是通过 requestmapping 的方式来定义页面的 URL 地址的，为了找到这个地址我们一般都是 cmd+shift+F 的方式进行查找。 大家都知道，我们 URL 的命名一个是类 requestmapping + 方法 requestmapping，查找的时候还是有那么一点不方便的，restfultookit 就能很方便的帮忙进行查找。 例如：我要找到 /user/add 对应的controller，那么只要Ctrl+斜杠 ，就能直接定位到我们想要的controller。 这个也是真心方便，当然 restfultookit 还为我们提供的其他的功能。 根据我们的 controller 帮我们生成默认的测试数据，还能直接调用测试，这个可以是解决了我们每次 postman 调试数据时，自己傻傻的组装数据的的操作，这个更加清晰，比在 console 找数据包要方便多了。 MyBatisX 我们开发中使用 mybatis 时时常需要通过 mapper 接口查找对应的 xml 中的 sql 语句，该插件方便了我们的操作。 安装完成重启IDEA之后，我们会看到code左侧或多出一列小鸟的图标，点击图标我们就可以直接定位到 xml 相应文件的位置。 参考： IntelliJ IDEA（九） ：酷炫插件系列 Intellij Idea 配置 Lombok</summary></entry><entry><title type="html">备份 VMware Workstation 虚拟机的最佳做法</title><link href="https://empvalley.com/2021/06/20/backup-vmware-workstation/" rel="alternate" type="text/html" title="备份 VMware Workstation 虚拟机的最佳做法" /><published>2021-06-20T00:00:00+08:00</published><updated>2021-06-20T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/20/backup-vmware-workstation</id><content type="html" xml:base="https://empvalley.com/2021/06/20/backup-vmware-workstation/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-操作步骤&quot; id=&quot;markdown-toc-heading-操作步骤&quot;&gt;操作步骤&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;heading-操作步骤&quot;&gt;操作步骤&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;确保虚拟机电源处于已关闭状态。&lt;/li&gt;
-  &lt;li&gt;找到虚拟机文件夹。
-    &lt;ol&gt;
-      &lt;li&gt;右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。&lt;/li&gt;
-      &lt;li&gt;点击 Options。&lt;/li&gt;
-      &lt;li&gt;点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。&lt;/li&gt;
-  &lt;li&gt;复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。&lt;/li&gt;
-  &lt;li&gt;点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。&lt;/li&gt;
-  &lt;li&gt;右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。&lt;/li&gt;
-  &lt;li&gt;选中 Hard Disk &amp;gt; Remove。&lt;/li&gt;
-  &lt;li&gt;Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。&lt;/li&gt;
-  &lt;li&gt;启动时会询问是移动还是复制的虚拟机，选复制的选项。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;参考：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/2006202?lang=zh_CN&quot;&gt;备份 VMware Workstation 虚拟机的最佳做法 (2006202)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://kb.vmware.com/s/article/1003880&quot;&gt;找出虚拟机文件的位置 (1003880)&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VMware Workstation" /><summary type="html">操作步骤 操作步骤 确保虚拟机电源处于已关闭状态。 找到虚拟机文件夹。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 点击 Options。 点击 Advanced，在 File locations 下面有 Configuration 和 Log，Configuration 就是虚拟机文件夹的位置。 复制虚拟机文件夹，粘贴到要存储备份文件夹的位置。 复制虚拟机的硬盘文件，粘贴到要存储备份虚拟机硬盘文件的位置。 点击菜单栏中的 File &amp;gt; Open，找到刚才备份的文件夹位置，选中 vmx 文件。 右键虚拟机 &amp;gt; Settings，或者选择虚拟机 点击菜单栏中的 VM &amp;gt; Settings。 选中 Hard Disk &amp;gt; Remove。 Add &amp;gt; Hard Disk &amp;gt; Next &amp;gt; SCSI &amp;gt; Next &amp;gt; Use an existing virtual disk &amp;gt; Next &amp;gt; 找到刚才备份虚拟机硬盘文件的位置，选中 vmdk 文件 &amp;gt; Finish。 启动时会询问是移动还是复制的虚拟机，选复制的选项。 参考： 备份 VMware Workstation 虚拟机的最佳做法 (2006202) 找出虚拟机文件的位置 (1003880)</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://projectlombok.org/setup/intellij&quot;&gt;Intellij Idea 配置 Lombok&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Intellij Idea" /><category term="插件" /><summary type="html">Lombok RestfulToolkit MyBatisX Lombok Java 语言，每次写实体类的时候都需要写一大堆的 setter，getter，如果 bean 中的属性一旦有修改、删除或增加时，需要重新生成或删除 get/set 等方法，给代码维护增加负担，这也是 Java 被诟病的一种原因。 Lombok 则为我们解决了这些问题，使用了 lombok 的注解（@Setter、@Getter、@ToString、@RequiredArgsConstructor、@EqualsAndHashCode、@Data）之后，就不需要编写或生成 get/set 等方法，很大程度上减少了代码量，而且减少了代码维护的负担。 安装完成之后，在应用 Lombok 的时候注意别忘了需要添加依赖。 在 Idea 2020.3. 版本之后，默认集成了 Lombok。 RestfulToolkit Spring MVC 网页开发的时候，我们都是通过 requestmapping 的方式来定义页面的 URL 地址的，为了找到这个地址我们一般都是 cmd+shift+F 的方式进行查找。 大家都知道，我们 URL 的命名一个是类 requestmapping + 方法 requestmapping，查找的时候还是有那么一点不方便的，restfultookit 就能很方便的帮忙进行查找。 例如：我要找到 /user/add 对应的controller，那么只要Ctrl+斜杠 ，就能直接定位到我们想要的controller。 这个也是真心方便，当然 restfultookit 还为我们提供的其他的功能。 根据我们的 controller 帮我们生成默认的测试数据，还能直接调用测试，这个可以是解决了我们每次 postman 调试数据时，自己傻傻的组装数据的的操作，这个更加清晰，比在 console 找数据包要方便多了。 MyBatisX 我们开发中使用 mybatis 时时常需要通过 mapper 接口查找对应的 xml 中的 sql 语句，该插件方便了我们的操作。 安装完成重启IDEA之后，我们会看到code左侧或多出一列小鸟的图标，点击图标我们就可以直接定位到 xml 相应文件的位置。 参考： IntelliJ IDEA（九） ：酷炫插件系列 Intellij Idea 配置 Lombok</summary></entry></feed>
