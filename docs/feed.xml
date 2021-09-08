@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-08T09:01:02+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-2.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-4.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-5.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-6.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-7.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-08T11:06:15+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。&lt;/p&gt;
 
