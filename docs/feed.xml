@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-08T11:06:15+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-10T17:40:51+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -28,7 +28,298 @@
       &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/q922LRPmln1n2JXIOFOV_A&quot; target=&quot;_blank&quot;&gt;两年，我学会了所有的编程语言！&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">1 本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。 所以学习一门新的语言，更重要的是关注它和你所掌握语言的不同之处。这些不同之处所涉及到的基本概念是有限的，本文就列出了一些。 另外，学完了一门新语言以后，如果项目中用不到，是无法熟练使用的，也有可能很快忘记那些语法，因为编程确实需要不断的练习，尤其是项目的历练，从这个意义上来说，学习并理解那些基本概念会更加重要。 本文的灵感来源于 How to learn all programming languages, YES! ALL! 两年，我学会了所有的编程语言！ &amp;#8617;</summary></entry><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">1 本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。 所以学习一门新的语言，更重要的是关注它和你所掌握语言的不同之处。这些不同之处所涉及到的基本概念是有限的，本文就列出了一些。 另外，学完了一门新语言以后，如果项目中用不到，是无法熟练使用的，也有可能很快忘记那些语法，因为编程确实需要不断的练习，尤其是项目的历练，从这个意义上来说，学习并理解那些基本概念会更加重要。 本文的灵感来源于 How to learn all programming languages, YES! ALL! 两年，我学会了所有的编程语言！ &amp;#8617;</summary></entry><entry><title type="html">如何学习所有编程语言</title><link href="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/" rel="alternate" type="text/html" title="如何学习所有编程语言" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages</id><content type="html" xml:base="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-如果编程语言是一辆车&quot; id=&quot;markdown-toc-heading-如果编程语言是一辆车&quot;&gt;如果编程语言是一辆车&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-为什么有这么多的编程语言&quot; id=&quot;markdown-toc-heading-为什么有这么多的编程语言&quot;&gt;为什么有这么多的编程语言&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-编程语言的基本要素&quot; id=&quot;markdown-toc-heading-编程语言的基本要素&quot;&gt;编程语言的基本要素&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-关注编程语言概念而不是语法&quot; id=&quot;markdown-toc-heading-关注编程语言概念而不是语法&quot;&gt;关注编程语言概念而不是语法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-实现或创建编程语言&quot; id=&quot;markdown-toc-heading-实现或创建编程语言&quot;&gt;实现或创建编程语言&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-学习新语言的步骤&quot; id=&quot;markdown-toc-heading-学习新语言的步骤&quot;&gt;学习新语言的步骤&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-1-明白该语言的设计哲学和语言特性&quot; id=&quot;markdown-toc-heading-1-明白该语言的设计哲学和语言特性&quot;&gt;#1 明白该语言的设计哲学和语言特性&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-2-学习语法按照教程或书籍进行实践&quot; id=&quot;markdown-toc-heading-2-学习语法按照教程或书籍进行实践&quot;&gt;#2 学习语法，按照教程或书籍进行实践&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-3-读写更多新语言的代码&quot; id=&quot;markdown-toc-heading-3-读写更多新语言的代码&quot;&gt;#3 读、写更多新语言的代码&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-4-理解更多语言实现细节&quot; id=&quot;markdown-toc-heading-4-理解更多语言实现细节&quot;&gt;#4 理解更多语言实现细节&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-如何选择你的第一个编程语言&quot; id=&quot;markdown-toc-heading-如何选择你的第一个编程语言&quot;&gt;如何选择你的第一个编程语言？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-哪一个编程语言是最好的&quot; id=&quot;markdown-toc-heading-哪一个编程语言是最好的&quot;&gt;哪一个编程语言是最好的？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;我应该从哪个编程语言开始学起？&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;许多新手刚开始学编码时都会问这个问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;最好的编程语言是什么？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;在获得一些实际的开发经验后，开发者便产生了这样的问题。&lt;/p&gt;
+
+&lt;p&gt;这种类型的问题能够引发无休止的争论，而根本不会有标准的答案。&lt;/p&gt;
+
+&lt;p&gt;相反，我想要分享的更重要的东西是：&lt;strong&gt;如何精通学习新语言的技巧。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;对于熟练的开发者来说，学习新的语言应该是一件简单的事情。花费一个周末的时间甚至几个小时就使用新的编程语言写代码是很平常的事。更熟练的开发者只需要看一眼手册，完成任务的过程中就能掌握该语言。&lt;/p&gt;
+
+&lt;p&gt;精通学习所有语言的技巧无需天资，只需知道编程语言的核心知识并多加练习就可以达成。&lt;/p&gt;
+
+&lt;p&gt;当然，我们不需要学会所有类型的编程语言，但掌握更多的编程语言能够让我们选择更适合的编程语言完成特定的任务。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-如果编程语言是一辆车&quot;&gt;如果编程语言是一辆车&lt;/h2&gt;
+
+&lt;p&gt;世界上有成千上万种编程语言，在 IT 领域种被广泛应用的只有大约20种。&lt;/p&gt;
+
+&lt;p&gt;进一步研究会发现所有编程语言都共享一些特性。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;拿汽车举例子，世界上有不同的车，有小而动力足的车，也有大而慢的车；不同品牌的车有不同类型的驾驶体验。&lt;/p&gt;
+
+&lt;p&gt;如果一个人会开一辆车，那么他也会开大部分的车；即使是一辆其它牌子的新车。&lt;/p&gt;
+
+&lt;p&gt;为什么？因为不同的车有许多相同的东西，从根本上来说，它们都是在发动机和轮胎的基础上制造出来的。汽车被设计出来用于相同的目的：送你到目的地。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;bctt 的推特：“设计编程语言的目的：表达程序员的思想。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;heading-为什么有这么多的编程语言&quot;&gt;为什么有这么多的编程语言&lt;/h2&gt;
+
+&lt;p&gt;在计算机的世界里，编程语言扮演两种角色：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;程序员利用它们发送指令给计算机，告诉计算机我们需要什么，从而得到我们想要的东西。&lt;/li&gt;
+  &lt;li&gt;传递想法给其他程序员，分享我们的经验和观点。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;因此，代码只是传递给其他程序员或计算机的“消息”。而在编程语言进行设计与实现时就需要进行权衡。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;主要原因应该是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;硬件和计算机理论是逐渐发展而来的，通常来说，编程语言被设计的更简单易用的同时具有更强的表现力。&lt;/li&gt;
+  &lt;li&gt;计算机被应用在许多领域，针对不同领域有不同的编程语言。&lt;/li&gt;
+  &lt;li&gt;不同的编程语言有不同的设计方法和哲学。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;语言有不同类型的语法或特性，但归根结底它们都是&lt;strong&gt;图灵完整的（Turing complete）&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;简洁地说，这意味着：&lt;strong&gt;所有的编程语言都能够用来实现任意算法。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-编程语言的基本要素&quot;&gt;编程语言的基本要素&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;几乎所有的编程语言都包含这些类型，事实上，它们全都是关于“抽象的“：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;数据类型和数据抽象&lt;/li&gt;
+  &lt;li&gt;控制流和控制抽象&lt;/li&gt;
+  &lt;li&gt;低级别的抽象&lt;/li&gt;
+  &lt;li&gt;特定领域额外的抽象&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这就是我们可以掌握所有的编程语言的原因：&lt;strong&gt;语言的概念是有限的&lt;/strong&gt;，经常被用到的只有不到15种。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;过程式&lt;/li&gt;
+  &lt;li&gt;面向对象&lt;/li&gt;
+  &lt;li&gt;指针&lt;/li&gt;
+  &lt;li&gt;递归&lt;/li&gt;
+  &lt;li&gt;异常&lt;/li&gt;
+  &lt;li&gt;静态类型&lt;/li&gt;
+  &lt;li&gt;动态类型&lt;/li&gt;
+  &lt;li&gt;类型推断&lt;/li&gt;
+  &lt;li&gt;匿名函数（Lambda function）&lt;/li&gt;
+  &lt;li&gt;垃圾回收&lt;/li&gt;
+  &lt;li&gt;程序剩下的部分（Continuation）&lt;/li&gt;
+  &lt;li&gt;宏指令和元编程&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;和设计原则一样，编程语言概念趋于固定。&lt;/p&gt;
+
+&lt;p&gt;编程语言设计者彼此借鉴想法，通过不同的实现方式实现出来。所以有时我们可能会说语言 PL_C 是语言 PL_A 和语言 PL_B 的孩子，语言 PL 家族树类似于这样：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;理解这些概念不仅帮助我们更快速的学习语言，同样能够帮助我们写出更好的代码。例如过程式编程语言和面向对象编程语言有着不同的编码风格和范式。&lt;/p&gt;
+
+&lt;p&gt;如果你不明白它们之间的区别，实践中将不可避免的写出糟糕的代码。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-关注编程语言概念而不是语法&quot;&gt;关注编程语言概念而不是语法&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如何开始学习编程语言的概念呢？&lt;/p&gt;
+
+&lt;p&gt;要完全理解编程语言的概念，首先需要我们回答几个关于它的问题。&lt;/p&gt;
+
+&lt;p&gt;为什么要发明编程语言的概念？&lt;/p&gt;
+
+&lt;p&gt;需要解决的问题是什么？&lt;/p&gt;
+
+&lt;p&gt;有什么好处和弊端？&lt;/p&gt;
+
+&lt;p&gt;如何实现？&lt;/p&gt;
+
+&lt;p&gt;拿垃圾回收为例，第一个问题是：什么是垃圾回收？&lt;/p&gt;
+
+&lt;p&gt;在谷歌上面进行搜索，来到 &lt;a href=&quot;https://en.wikipedia.org/wiki/Garbage_collection&quot;&gt;维基百科垃圾回收页面&lt;/a&gt;可以看到：发明垃圾回收是为了解决内存管理问题，它能减少程序中的内存错误；有了垃圾回收机制，写起代码会更加简单，因为无需再手动管理内存。代价是会损耗性能，因为会有额外的代码分配和释放内存；因此在使用有垃圾回收机制的编程语言时，要注意垃圾回收机制对程序性能的影响。&lt;/p&gt;
+
+&lt;p&gt;使用一段时间后，就需要知道垃圾回收是如何工作的，使用了什么算法？垃圾回收有多种不同类型的实现，各有优缺点。&lt;/p&gt;
+
+&lt;p&gt;学习一种新的编程语言时，就是学习编程语言概念最好的时机。&lt;/p&gt;
+
+&lt;p&gt;举个例子，假如 Ruby 是你学习的第一种编程语言，那么这同时也是你学习理解面向对象编程优缺点的最好时机。&lt;/p&gt;
+
+&lt;p&gt;理解了面向对面编程的概念再学其它面向对象的编程语言就会简单许多。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-实现或创建编程语言&quot;&gt;实现或创建编程语言&lt;/h2&gt;
+
+&lt;p&gt;别害怕，解释器和编译器只是一种特殊类型的程序。它们接收你的代码，之后运行你的代码或者是把你的代码编译为字符码或字节码。&lt;/p&gt;
+
+&lt;p&gt;实现或创建编程语言可以帮助你战胜内心深处对编程语言的恐惧。&lt;/p&gt;
+
+&lt;p&gt;这是学习所有编程语言的又一个秘密。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你的编程语言语法不是很复杂，实现起来并不费事。&lt;/p&gt;
+
+&lt;p&gt;看一下这个项目：&lt;a href=&quot;https://github.com/kanaka/mal&quot;&gt;写一个Lisp语言&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;任何语言都可以用来实现一个Lisp，Lisp/Scheme 有清晰的语法，很容易被解析；编程语言教育广泛采用Lisp。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/rui314/8cc&quot;&gt;8cc&lt;/a&gt; 是 C 语言的编译器，如果你意在写一个编译器，它将是一个很好的参考。&lt;/p&gt;
+
+&lt;p&gt;一些好的编程语言实现的数据对你学习同样是有帮助的：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://amzn.to/32Rq6tS&quot;&gt;EOPL&lt;/a&gt; 是一本教科书，包含许多可以拿来玩儿的编译器。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://amzn.to/31a7tjG&quot;&gt;Programming Language Pragmatics &lt;/a&gt; 同样是本编程语言教育性的书籍。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-学习新语言的步骤&quot;&gt;学习新语言的步骤&lt;/h2&gt;
+
+&lt;p&gt;按以下步骤学习编程语言的概念会更高效：&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-1-明白该语言的设计哲学和语言特性&quot;&gt;#1 明白该语言的设计哲学和语言特性&lt;/h3&gt;
+
+&lt;p&gt;例如，如果开始学习 Ruby，先看看它有什么特别的地方。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后看官网的介绍，更深一步进行了解：&lt;a href=&quot;http://www.ruby-lang.org/en/about/&quot;&gt;http://www.ruby-lang.org/en/about/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在开始学习之前，试着总结出需要理解的主要特性：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;简单、高效率、代码可读性高&lt;/li&gt;
+  &lt;li&gt;自带解释器，因此有垃圾回收机制，同样意味着对于某些任务，性能可能会受到影响&lt;/li&gt;
+  &lt;li&gt;一切皆对象，属于面向对象编程语言，甚至完全是面向对象的。&lt;/li&gt;
+  &lt;li&gt;灵活，语言的很多部分都能够被重新定义。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;了解语言最重要的特性，包括它的优缺点，在你使用新的语言写代码时会很有帮助，它就是你的路线图。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-2-学习语法按照教程或书籍进行实践&quot;&gt;#2 学习语法，按照教程或书籍进行实践&lt;/h3&gt;
+
+&lt;p&gt;你需要掌握语言基础的部分，包括语法、基础的IO、debug 工具、单元测试工具等。&lt;/p&gt;
+
+&lt;p&gt;如果你是个新手，试着找一些该语言权威的书籍，如该语言作者写的或在 Amazon 上面搜索该语言的名称，找那些评分高的书籍。&lt;/p&gt;
+
+&lt;p&gt;记着，在你没有成为专家前最好自己手写代码，不要只是复制粘贴。&lt;/p&gt;
+
+&lt;p&gt;在 &lt;a href=&quot;https://exercism.io/&quot;&gt;exercism.io&lt;/a&gt; 上面练习新语言，会有导师免费检查你的代码并给予你建议，棒极了。&lt;/p&gt;
+
+&lt;p&gt;如果你是编程语言的专家，只需找一些该语言简单的手册甚至只需要一些代码示例。&lt;/p&gt;
+
+&lt;p&gt;看一下这个网站 &lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;learnxinyminutes.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-3-读写更多新语言的代码&quot;&gt;#3 读、写更多新语言的代码&lt;/h3&gt;
+
+&lt;p&gt;是时候用新语言、相关知识、工具或库写一个项目了。&lt;/p&gt;
+
+&lt;p&gt;开始可以写些简单的项目，例如写一个猜数字的游戏或一个简单的书籍商店，又或者是一个待办事项应用。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/&quot;&gt;Github&lt;/a&gt; 上有许多类似的项目。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-4-理解更多语言实现细节&quot;&gt;#4 理解更多语言实现细节&lt;/h3&gt;
+
+&lt;p&gt;这不是必须的，如同我在 &lt;a href=&quot;https://www.coderscat.com/to-be-a-programmer&quot;&gt;成为一个程序员&lt;/a&gt; 中说的那样，一个有追求的程序员对语言的细节和实现是充满兴趣的。&lt;/p&gt;
+
+&lt;p&gt;有时 bug 的出现仅仅是由于我们不清楚该语言的实现细节导致的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-如何选择你的第一个编程语言&quot;&gt;如何选择你的第一个编程语言？&lt;/h2&gt;
+
+&lt;p&gt;根据你的目标和自身条件：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;有人指导你或你需要在学校学习一门编程语言吗？&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;如果老师告诉你做练习使用 C 语言，这是开始学习 C 语言的一个绝好机会，因为你有人指导（你的老师），也有同学；有利于开展学习。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;你的目标是什么？&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;如果你想开发一个 Web 应用，学习 Javascript/Python/Ruby 就可以了。&lt;/p&gt;
+
+    &lt;p&gt;如果你想开发游戏， C++ 是个不错的选择。&lt;/p&gt;
+
+    &lt;p&gt;如果你的目标是处理数据，Python/R 都可以。&lt;/p&gt;
+
+    &lt;p&gt;如果你想创建一个安卓应用，可以使用 Java/Kotlin。&lt;/p&gt;
+
+    &lt;p&gt;只需要在你选择的领域里挑选出被广泛使用的语言就可以了。如果你不清楚，可以请教有经验的开发者。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;你是为了申请一份需要特定语言的工作吗？&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;你只需要学习工作描述中提及的语言就可以了。&lt;/p&gt;
+
+    &lt;p&gt;不要花费太多时间选择第一个编程语言。&lt;/p&gt;
+
+    &lt;p&gt;先快速上手，获取一定的经验，之后如果你不喜欢或你涉及的领域有所改变，你可以很容易地学会并使用另一种编程语言。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;heading-哪一个编程语言是最好的&quot;&gt;哪一个编程语言是最好的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这同样取决于你涉及的领域，编程语言各有所长。&lt;/p&gt;
+
+&lt;p&gt;没有任何一种编程语言能适用于所有场景，如果存在，我们只需要学习一种编程语言就可以了，不是吗？记得，&lt;a href=&quot;https://en.wikipedia.org/wiki/No_Silver_Bullet&quot;&gt;没有银子弹&lt;/a&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;几乎所有的程序员由于各自不同的体验都有自己偏爱的程序语言。&lt;/p&gt;
+
+&lt;p&gt;一些人声称他们喜欢的语言是最好的，别信；他们喜欢的不代表就是最好的。&lt;/p&gt;
+
+&lt;p&gt;就个人的体会而言，我喜欢的语言包括 C/Ruby/Lua/OCaml；我能使用这些语言产出东西，但可能不是你喜欢的，你应该尝试不同的语言找到自己喜爱的。&lt;/p&gt;
+
+&lt;p&gt;有人说至少掌握5种程序语言才是一个合格的程序员。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;正如我上面说的那样，你不应该执着于学习越来越多的语言；而应该学习更多的语言思想和设计原理。&lt;/p&gt;
+
+&lt;p&gt;如果你日常的工作中使用的是过程式语言，为什么不学习一种面向对象的语言呢？&lt;/p&gt;
+
+&lt;p&gt;如果你使用动态语言，可以学习一种静态类型的语言。&lt;/p&gt;
+
+&lt;p&gt;这些就是我学习编程语言的技巧。&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://coderscat.com/learn-programming-languages/&quot; target=&quot;_blank&quot;&gt;如何学习所有编程语言，没错！是所有！&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;没有银子弹：指没有万能药的意思。（译者注） &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">如果编程语言是一辆车 为什么有这么多的编程语言 编程语言的基本要素 关注编程语言概念而不是语法 实现或创建编程语言 学习新语言的步骤 #1 明白该语言的设计哲学和语言特性 #2 学习语法，按照教程或书籍进行实践 #3 读、写更多新语言的代码 #4 理解更多语言实现细节 如何选择你的第一个编程语言？ 哪一个编程语言是最好的？ 我应该从哪个编程语言开始学起？1 许多新手刚开始学编码时都会问这个问题。 最好的编程语言是什么？ 在获得一些实际的开发经验后，开发者便产生了这样的问题。 这种类型的问题能够引发无休止的争论，而根本不会有标准的答案。 相反，我想要分享的更重要的东西是：如何精通学习新语言的技巧。 对于熟练的开发者来说，学习新的语言应该是一件简单的事情。花费一个周末的时间甚至几个小时就使用新的编程语言写代码是很平常的事。更熟练的开发者只需要看一眼手册，完成任务的过程中就能掌握该语言。 精通学习所有语言的技巧无需天资，只需知道编程语言的核心知识并多加练习就可以达成。 当然，我们不需要学会所有类型的编程语言，但掌握更多的编程语言能够让我们选择更适合的编程语言完成特定的任务。 如果编程语言是一辆车 世界上有成千上万种编程语言，在 IT 领域种被广泛应用的只有大约20种。 进一步研究会发现所有编程语言都共享一些特性。 拿汽车举例子，世界上有不同的车，有小而动力足的车，也有大而慢的车；不同品牌的车有不同类型的驾驶体验。 如果一个人会开一辆车，那么他也会开大部分的车；即使是一辆其它牌子的新车。 为什么？因为不同的车有许多相同的东西，从根本上来说，它们都是在发动机和轮胎的基础上制造出来的。汽车被设计出来用于相同的目的：送你到目的地。 bctt 的推特：“设计编程语言的目的：表达程序员的思想。” 为什么有这么多的编程语言 在计算机的世界里，编程语言扮演两种角色： 程序员利用它们发送指令给计算机，告诉计算机我们需要什么，从而得到我们想要的东西。 传递想法给其他程序员，分享我们的经验和观点。 因此，代码只是传递给其他程序员或计算机的“消息”。而在编程语言进行设计与实现时就需要进行权衡。 主要原因应该是： 硬件和计算机理论是逐渐发展而来的，通常来说，编程语言被设计的更简单易用的同时具有更强的表现力。 计算机被应用在许多领域，针对不同领域有不同的编程语言。 不同的编程语言有不同的设计方法和哲学。 语言有不同类型的语法或特性，但归根结底它们都是图灵完整的（Turing complete）。 简洁地说，这意味着：所有的编程语言都能够用来实现任意算法。 编程语言的基本要素 几乎所有的编程语言都包含这些类型，事实上，它们全都是关于“抽象的“： 数据类型和数据抽象 控制流和控制抽象 低级别的抽象 特定领域额外的抽象 这就是我们可以掌握所有的编程语言的原因：语言的概念是有限的，经常被用到的只有不到15种。 过程式 面向对象 指针 递归 异常 静态类型 动态类型 类型推断 匿名函数（Lambda function） 垃圾回收 程序剩下的部分（Continuation） 宏指令和元编程 和设计原则一样，编程语言概念趋于固定。 编程语言设计者彼此借鉴想法，通过不同的实现方式实现出来。所以有时我们可能会说语言 PL_C 是语言 PL_A 和语言 PL_B 的孩子，语言 PL 家族树类似于这样： 理解这些概念不仅帮助我们更快速的学习语言，同样能够帮助我们写出更好的代码。例如过程式编程语言和面向对象编程语言有着不同的编码风格和范式。 如果你不明白它们之间的区别，实践中将不可避免的写出糟糕的代码。 关注编程语言概念而不是语法 如何开始学习编程语言的概念呢？ 要完全理解编程语言的概念，首先需要我们回答几个关于它的问题。 为什么要发明编程语言的概念？ 需要解决的问题是什么？ 有什么好处和弊端？ 如何实现？ 拿垃圾回收为例，第一个问题是：什么是垃圾回收？ 在谷歌上面进行搜索，来到 维基百科垃圾回收页面可以看到：发明垃圾回收是为了解决内存管理问题，它能减少程序中的内存错误；有了垃圾回收机制，写起代码会更加简单，因为无需再手动管理内存。代价是会损耗性能，因为会有额外的代码分配和释放内存；因此在使用有垃圾回收机制的编程语言时，要注意垃圾回收机制对程序性能的影响。 使用一段时间后，就需要知道垃圾回收是如何工作的，使用了什么算法？垃圾回收有多种不同类型的实现，各有优缺点。 学习一种新的编程语言时，就是学习编程语言概念最好的时机。 举个例子，假如 Ruby 是你学习的第一种编程语言，那么这同时也是你学习理解面向对象编程优缺点的最好时机。 理解了面向对面编程的概念再学其它面向对象的编程语言就会简单许多。 实现或创建编程语言 别害怕，解释器和编译器只是一种特殊类型的程序。它们接收你的代码，之后运行你的代码或者是把你的代码编译为字符码或字节码。 实现或创建编程语言可以帮助你战胜内心深处对编程语言的恐惧。 这是学习所有编程语言的又一个秘密。 如果你的编程语言语法不是很复杂，实现起来并不费事。 看一下这个项目：写一个Lisp语言 任何语言都可以用来实现一个Lisp，Lisp/Scheme 有清晰的语法，很容易被解析；编程语言教育广泛采用Lisp。 8cc 是 C 语言的编译器，如果你意在写一个编译器，它将是一个很好的参考。 一些好的编程语言实现的数据对你学习同样是有帮助的： EOPL 是一本教科书，包含许多可以拿来玩儿的编译器。 Programming Language Pragmatics 同样是本编程语言教育性的书籍。 学习新语言的步骤 按以下步骤学习编程语言的概念会更高效： #1 明白该语言的设计哲学和语言特性 例如，如果开始学习 Ruby，先看看它有什么特别的地方。 然后看官网的介绍，更深一步进行了解：http://www.ruby-lang.org/en/about/ 在开始学习之前，试着总结出需要理解的主要特性： 简单、高效率、代码可读性高 自带解释器，因此有垃圾回收机制，同样意味着对于某些任务，性能可能会受到影响 一切皆对象，属于面向对象编程语言，甚至完全是面向对象的。 灵活，语言的很多部分都能够被重新定义。 了解语言最重要的特性，包括它的优缺点，在你使用新的语言写代码时会很有帮助，它就是你的路线图。 #2 学习语法，按照教程或书籍进行实践 你需要掌握语言基础的部分，包括语法、基础的IO、debug 工具、单元测试工具等。 如果你是个新手，试着找一些该语言权威的书籍，如该语言作者写的或在 Amazon 上面搜索该语言的名称，找那些评分高的书籍。 记着，在你没有成为专家前最好自己手写代码，不要只是复制粘贴。 在 exercism.io 上面练习新语言，会有导师免费检查你的代码并给予你建议，棒极了。 如果你是编程语言的专家，只需找一些该语言简单的手册甚至只需要一些代码示例。 看一下这个网站 learnxinyminutes.com #3 读、写更多新语言的代码 是时候用新语言、相关知识、工具或库写一个项目了。 开始可以写些简单的项目，例如写一个猜数字的游戏或一个简单的书籍商店，又或者是一个待办事项应用。 Github 上有许多类似的项目。 #4 理解更多语言实现细节 这不是必须的，如同我在 成为一个程序员 中说的那样，一个有追求的程序员对语言的细节和实现是充满兴趣的。 有时 bug 的出现仅仅是由于我们不清楚该语言的实现细节导致的。 如何选择你的第一个编程语言？ 根据你的目标和自身条件： 有人指导你或你需要在学校学习一门编程语言吗？ 如果老师告诉你做练习使用 C 语言，这是开始学习 C 语言的一个绝好机会，因为你有人指导（你的老师），也有同学；有利于开展学习。 你的目标是什么？ 如果你想开发一个 Web 应用，学习 Javascript/Python/Ruby 就可以了。 如果你想开发游戏， C++ 是个不错的选择。 如果你的目标是处理数据，Python/R 都可以。 如果你想创建一个安卓应用，可以使用 Java/Kotlin。 只需要在你选择的领域里挑选出被广泛使用的语言就可以了。如果你不清楚，可以请教有经验的开发者。 你是为了申请一份需要特定语言的工作吗？ 你只需要学习工作描述中提及的语言就可以了。 不要花费太多时间选择第一个编程语言。 先快速上手，获取一定的经验，之后如果你不喜欢或你涉及的领域有所改变，你可以很容易地学会并使用另一种编程语言。 哪一个编程语言是最好的？ 这同样取决于你涉及的领域，编程语言各有所长。 没有任何一种编程语言能适用于所有场景，如果存在，我们只需要学习一种编程语言就可以了，不是吗？记得，没有银子弹2 几乎所有的程序员由于各自不同的体验都有自己偏爱的程序语言。 一些人声称他们喜欢的语言是最好的，别信；他们喜欢的不代表就是最好的。 就个人的体会而言，我喜欢的语言包括 C/Ruby/Lua/OCaml；我能使用这些语言产出东西，但可能不是你喜欢的，你应该尝试不同的语言找到自己喜爱的。 有人说至少掌握5种程序语言才是一个合格的程序员。 正如我上面说的那样，你不应该执着于学习越来越多的语言；而应该学习更多的语言思想和设计原理。 如果你日常的工作中使用的是过程式语言，为什么不学习一种面向对象的语言呢？ 如果你使用动态语言，可以学习一种静态类型的语言。 这些就是我学习编程语言的技巧。 如何学习所有编程语言，没错！是所有！ &amp;#8617; 没有银子弹：指没有万能药的意思。（译者注） &amp;#8617;</summary></entry><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;（摄影：Christopher Michel）&lt;/p&gt;
 
@@ -1532,43 +1823,4 @@ IdentityFile ~/.ssh/id_rsa_personal
 
 &lt;p&gt;参考：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/38454037/4612522&quot;&gt;客户端使用多个 SSH Keys 最佳实践&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSH Keys" /><summary type="html">生成 SSH Key 创建配置文件管理 SSH Keys 生成 SSH Key 参考：生成 SSH Key 创建配置文件管理 SSH Keys 假设你公司的 GitHub 账户用户名是 abc1234，你个人的 GitHub 账户用户名是 jack1234。 假设你创建了两个 RSA Keys，分别命名为 id_rsa_company 和 id_rsa_personal。 你在 ~/.ssh 目录下创建 config 文件，文件内容如下： # Company account Host company HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa_company # Personal account Host personal HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa_personal 当你要克隆公司 GitHub 账号上的仓库（仓库名为 demo），仓库的 URL 大概是这样： Repo URL: git@github.com:abc1234/demo.git 你需要在克隆的时候修改上面的仓库 URL 地址为： git@company:abc1234/demo.git 注意 github.com 是如何被替换为我们定义在配置文件中的 &quot;company&quot; 别名的。 同样，你必须根据配置文件中的别名修改个人账户仓库的 URL 地址。 参考： 客户端使用多个 SSH Keys 最佳实践</summary></entry><entry><title type="html">Intellij Idea 常用插件</title><link href="https://empvalley.com/2021/06/21/intellij-idea-common-plugins/" rel="alternate" type="text/html" title="Intellij Idea 常用插件" /><published>2021-06-21T00:00:00+08:00</published><updated>2021-06-21T00:00:00+08:00</updated><id>https://empvalley.com/2021/06/21/intellij-idea-common-plugins</id><content type="html" xml:base="https://empvalley.com/2021/06/21/intellij-idea-common-plugins/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-lombok&quot; id=&quot;markdown-toc-heading-lombok&quot;&gt;Lombok&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-restfultoolkit&quot; id=&quot;markdown-toc-heading-restfultoolkit&quot;&gt;RestfulToolkit&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-mybatisx&quot; id=&quot;markdown-toc-heading-mybatisx&quot;&gt;MyBatisX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-lombok&quot;&gt;Lombok&lt;/h2&gt;
-
-&lt;p&gt;Java 语言，每次写实体类的时候都需要写一大堆的 setter，getter，如果 bean 中的属性一旦有修改、删除或增加时，需要重新生成或删除 get/set 等方法，给代码维护增加负担，这也是 Java 被诟病的一种原因。&lt;/p&gt;
-
-&lt;p&gt;Lombok 则为我们解决了这些问题，使用了 lombok 的注解（@Setter、@Getter、@ToString、@RequiredArgsConstructor、@EqualsAndHashCode、@Data）之后，就不需要编写或生成 get/set 等方法，很大程度上减少了代码量，而且减少了代码维护的负担。&lt;/p&gt;
-
-&lt;p&gt;安装完成之后，在应用 Lombok 的时候注意别忘了需要添加依赖。&lt;/p&gt;
-
-&lt;p&gt;在 Idea 2020.3. 版本之后，默认集成了 Lombok。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-restfultoolkit&quot;&gt;RestfulToolkit&lt;/h2&gt;
-
-&lt;p&gt;Spring MVC 网页开发的时候，我们都是通过 requestmapping 的方式来定义页面的 URL 地址的，为了找到这个地址我们一般都是 cmd+shift+F 的方式进行查找。&lt;/p&gt;
-
-&lt;p&gt;大家都知道，我们 URL 的命名一个是类 requestmapping + 方法 requestmapping，查找的时候还是有那么一点不方便的，restfultookit 就能很方便的帮忙进行查找。&lt;/p&gt;
-
-&lt;p&gt;例如：我要找到 /user/add 对应的controller，那么只要Ctrl+斜杠 ，就能直接定位到我们想要的controller。&lt;/p&gt;
-
-&lt;p&gt;这个也是真心方便，当然 restfultookit 还为我们提供的其他的功能。&lt;/p&gt;
-
-&lt;p&gt;根据我们的 controller 帮我们生成默认的测试数据，还能直接调用测试，这个可以是解决了我们每次 postman 调试数据时，自己傻傻的组装数据的的操作，这个更加清晰，比在 console 找数据包要方便多了。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-mybatisx&quot;&gt;MyBatisX&lt;/h2&gt;
-
-&lt;p&gt;我们开发中使用 mybatis 时时常需要通过 mapper 接口查找对应的 xml 中的 sql 语句，该插件方便了我们的操作。&lt;/p&gt;
-
-&lt;p&gt;安装完成重启IDEA之后，我们会看到code左侧或多出一列小鸟的图标，点击图标我们就可以直接定位到 xml 相应文件的位置。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;参考：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jajian/p/8081658.html&quot;&gt;IntelliJ IDEA（九） ：酷炫插件系列&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://projectlombok.org/setup/intellij&quot;&gt;Intellij Idea 配置 Lombok&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Intellij Idea" /><category term="插件" /><summary type="html">Lombok RestfulToolkit MyBatisX Lombok Java 语言，每次写实体类的时候都需要写一大堆的 setter，getter，如果 bean 中的属性一旦有修改、删除或增加时，需要重新生成或删除 get/set 等方法，给代码维护增加负担，这也是 Java 被诟病的一种原因。 Lombok 则为我们解决了这些问题，使用了 lombok 的注解（@Setter、@Getter、@ToString、@RequiredArgsConstructor、@EqualsAndHashCode、@Data）之后，就不需要编写或生成 get/set 等方法，很大程度上减少了代码量，而且减少了代码维护的负担。 安装完成之后，在应用 Lombok 的时候注意别忘了需要添加依赖。 在 Idea 2020.3. 版本之后，默认集成了 Lombok。 RestfulToolkit Spring MVC 网页开发的时候，我们都是通过 requestmapping 的方式来定义页面的 URL 地址的，为了找到这个地址我们一般都是 cmd+shift+F 的方式进行查找。 大家都知道，我们 URL 的命名一个是类 requestmapping + 方法 requestmapping，查找的时候还是有那么一点不方便的，restfultookit 就能很方便的帮忙进行查找。 例如：我要找到 /user/add 对应的controller，那么只要Ctrl+斜杠 ，就能直接定位到我们想要的controller。 这个也是真心方便，当然 restfultookit 还为我们提供的其他的功能。 根据我们的 controller 帮我们生成默认的测试数据，还能直接调用测试，这个可以是解决了我们每次 postman 调试数据时，自己傻傻的组装数据的的操作，这个更加清晰，比在 console 找数据包要方便多了。 MyBatisX 我们开发中使用 mybatis 时时常需要通过 mapper 接口查找对应的 xml 中的 sql 语句，该插件方便了我们的操作。 安装完成重启IDEA之后，我们会看到code左侧或多出一列小鸟的图标，点击图标我们就可以直接定位到 xml 相应文件的位置。 参考： IntelliJ IDEA（九） ：酷炫插件系列 Intellij Idea 配置 Lombok</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/38454037/4612522&quot;&gt;客户端使用多个 SSH Keys 最佳实践&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSH Keys" /><summary type="html">生成 SSH Key 创建配置文件管理 SSH Keys 生成 SSH Key 参考：生成 SSH Key 创建配置文件管理 SSH Keys 假设你公司的 GitHub 账户用户名是 abc1234，你个人的 GitHub 账户用户名是 jack1234。 假设你创建了两个 RSA Keys，分别命名为 id_rsa_company 和 id_rsa_personal。 你在 ~/.ssh 目录下创建 config 文件，文件内容如下： # Company account Host company HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa_company # Personal account Host personal HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa_personal 当你要克隆公司 GitHub 账号上的仓库（仓库名为 demo），仓库的 URL 大概是这样： Repo URL: git@github.com:abc1234/demo.git 你需要在克隆的时候修改上面的仓库 URL 地址为： git@company:abc1234/demo.git 注意 github.com 是如何被替换为我们定义在配置文件中的 &quot;company&quot; 别名的。 同样，你必须根据配置文件中的别名修改个人账户仓库的 URL 地址。 参考： 客户端使用多个 SSH Keys 最佳实践</summary></entry></feed>
