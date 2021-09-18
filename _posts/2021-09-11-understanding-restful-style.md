@@ -11,7 +11,7 @@ tags: ["REST架构"]
 
 
 
-本文是[“深入探索REST”专栏](http://www.infoq.com/cn/rest-deep-dive)系列深度内容中的第二篇，它将带您领略REST 架构的起源、与Web 的关系、REST 架构的本质及特性，以及REST 架构与其他架构风格之间的比较。
+本文是[“深入探索REST”专栏](http://www.infoq.com/cn/rest-deep-dive)系列深度内容中的第二篇，它将带您领略REST 架构的起源、与Web 的关系、REST 架构的本质及特性，以及REST 架构与其他架构风格之间的比较。[^1]
 
 ## 引子
 
