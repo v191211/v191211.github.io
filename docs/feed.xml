@@ -1,4 +1,536 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-18T20:19:59+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-22T05:42:34+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">从零搭建创业公司后台技术栈</title><link href="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/" rel="alternate" type="text/html" title="从零搭建创业公司后台技术栈" /><published>2021-09-22T00:00:00+08:00</published><updated>2021-09-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/22/build-technology-stack-from-scratch</id><content type="html" xml:base="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-前言&quot; id=&quot;markdown-toc-heading-前言&quot;&gt;前言&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-各系统组件选型&quot; id=&quot;markdown-toc-heading-各系统组件选型&quot;&gt;各系统组件选型&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-1项目管理bug管理问题管理&quot; id=&quot;markdown-toc-heading-1项目管理bug管理问题管理&quot;&gt;1、项目管理/Bug管理/问题管理&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-2dns&quot; id=&quot;markdown-toc-heading-2dns&quot;&gt;2、DNS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-3lb负载均衡&quot; id=&quot;markdown-toc-heading-3lb负载均衡&quot;&gt;3、LB（负载均衡）&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-4cdn&quot; id=&quot;markdown-toc-heading-4cdn&quot;&gt;4、CDN&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-5rpc-框架&quot; id=&quot;markdown-toc-heading-5rpc-框架&quot;&gt;5、RPC 框架&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-6名字发现服务发现&quot; id=&quot;markdown-toc-heading-6名字发现服务发现&quot;&gt;6、名字发现/服务发现&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-7关系数据库&quot; id=&quot;markdown-toc-heading-7关系数据库&quot;&gt;7、关系数据库&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-8nosql&quot; id=&quot;markdown-toc-heading-8nosql&quot;&gt;8、NoSQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-9消息中间件&quot; id=&quot;markdown-toc-heading-9消息中间件&quot;&gt;9、消息中间件&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-10代码管理&quot; id=&quot;markdown-toc-heading-10代码管理&quot;&gt;10、代码管理&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-11持续集成&quot; id=&quot;markdown-toc-heading-11持续集成&quot;&gt;11、持续集成&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-12日志系统&quot; id=&quot;markdown-toc-heading-12日志系统&quot;&gt;12、日志系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-13监控系统&quot; id=&quot;markdown-toc-heading-13监控系统&quot;&gt;13、监控系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-14配置系统&quot; id=&quot;markdown-toc-heading-14配置系统&quot;&gt;14、配置系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-15发布系统部署系统&quot; id=&quot;markdown-toc-heading-15发布系统部署系统&quot;&gt;15、发布系统/部署系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-16跳板机&quot; id=&quot;markdown-toc-heading-16跳板机&quot;&gt;16、跳板机&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-17机器管理&quot; id=&quot;markdown-toc-heading-17机器管理&quot;&gt;17、机器管理&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-创业公司的选择&quot; id=&quot;markdown-toc-heading-创业公司的选择&quot;&gt;创业公司的选择&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-1选择合适的语言&quot; id=&quot;markdown-toc-heading-1选择合适的语言&quot;&gt;1、选择合适的语言&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-2选择合适的组件和云服务商&quot; id=&quot;markdown-toc-heading-2选择合适的组件和云服务商&quot;&gt;2、选择合适的组件和云服务商&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-3制定流程和规范&quot; id=&quot;markdown-toc-heading-3制定流程和规范&quot;&gt;3、制定流程和规范&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-4自研和选型合适的辅助系统&quot; id=&quot;markdown-toc-heading-4自研和选型合适的辅助系统&quot;&gt;4、自研和选型合适的辅助系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-5选择过程中需要思考的问题&quot; id=&quot;markdown-toc-heading-5选择过程中需要思考的问题&quot;&gt;5、选择过程中需要思考的问题&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-基于云的创业公司后台技术架构&quot; id=&quot;markdown-toc-heading-基于云的创业公司后台技术架构&quot;&gt;基于云的创业公司后台技术架构&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;说到后台技术栈，脑海中是不是浮现的是这样一幅图？ &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_1.png&quot; alt=&quot;图 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;有点眼晕，以下只是我们会用到的一些语言的合集，而且只是语言层面的一部分，就整个后台技术栈来说，这只是一个开始，从语言开始，还有很多很多的内容。今天要说的后台是大后台的概念，放在服务器上的东西都属于后台的东西，比如使用的框架，语言，数据库，服务，操作系统等等。&lt;/p&gt;
+
+&lt;p&gt;整个后台技术栈我的理解包括 4 个层面的内容：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;语言：用了哪些开发语言，如：C++/Java/Go/PHP/Python/Ruby 等等；&lt;/li&gt;
+  &lt;li&gt;组件：用了哪些组件，如：MQ 组件，数据库组件等等；&lt;/li&gt;
+  &lt;li&gt;流程：怎样的流程和规范，如：开发流程，项目流程，发布流程，监控告警流程，代码规范等等；&lt;/li&gt;
+  &lt;li&gt;系统：系统化建设，上面的流程需要有系统来保证，如：规范发布流程的发布系统，代码管理系统等等；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;结合以上的的 4 个层面的内容，整个后台技术栈的结构如图 2 所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_2.png&quot; alt=&quot;图2 后台技术栈结构&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以上的这些内容都需要我们从零开始搭建，在创业公司，没有大公司那些完善的基础设施，需要我们从开源界，从云服务商甚至有些需要自己去组合，去拼装，去开发一个适合自己的组件或系统以达成我们的目标。咱们一个个系统和组件的做选型，最终形成我们的后台技术栈。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-各系统组件选型&quot;&gt;各系统组件选型&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-1项目管理bug管理问题管理&quot;&gt;1、项目管理/Bug管理/问题管理&lt;/h3&gt;
+
+&lt;p&gt;项目管理软件是整个业务的需求，问题，流程等等的集中地，大家的跨部门沟通协同大多依赖于项目管理工具。有一些 SaaS 的项目管理服务可以使用，但是很多时间不满足需求，此时我们可以选择一些开源的项目，这些项目本身有一定的定制能力，有丰富的插件可以使用，一般的创业公司需求基本上都能得到满足，常用的项目如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redmine：用 Ruby 开发的，有较多的插件可以使用，能自定义字段，集成了项目管理，Bug 问题跟踪，WIKI 等功能，不过好多插件 N 年没有更新了；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Phabricator：用 PHP 开发的，Facebook 之前的内部工具，开发这工具的哥们离职后自己搞了一个公司专门做这个软件，集成了代码托管， Code Review，任务管理，文档管理，问题跟踪等功能，强烈推荐较敏捷的团队使用；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jira：用 Java 开发的，有用户故事，task 拆分，燃尽图等等，可以做项目管理，也可以应用于跨部门沟通场景，较强大；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;悟空 CRM ：这个不是项目管理，这个是客户管理，之所以在这里提出来，是因为在 To B 的创业公司里面，往往是以客户为核心来做事情的，可以将项目管理和问题跟进的在悟空 CRM 上面来做，他的开源版本已经基本实现了 CR&amp;lt; 的核心 功能，还带有一个任务管理功能，用于问题跟进，不过用这个的话，还是需要另一个项目管理的软件协助，顺便说一嘴，这个系统的代码写得很难维护，只能适用于客户规模小（1万以内）时。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-2dns&quot;&gt;2、DNS&lt;/h3&gt;
+
+&lt;p&gt;DNS 是一个很通用的服务，创业公司基本上选择一个合适的云厂商就行了，国内主要是两家：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;阿里万网：阿里 2014 年收购了万网，整合了其域名服务，最终形成了现在的阿里万网，其中就包含 DNS 这块的服务；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;腾讯 DNSPod：腾讯 2012 年以 4000 万收购 DNSPod 100% 股份，主要提供域名解析和一些防护功能；&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果你的业务是在国内，主要就是这两家，选 一个就好，像今日头条这样的企业用的也是 DNSPod 的服务，除非一些特殊的原因才需要自建，比如一些 CDN 厂商，或者对区域有特殊限制的。要实惠一点用阿里最便宜的基础版就好了，要成功率高一些，还是用 DNSPod 的贵的那种。&lt;/p&gt;
+
+&lt;p&gt;在国外还是选择亚马逊吧，阿里的 DNS 服务只有在日本和美国有节点，东南亚最近才开始部点， DNSPod 也只有美国和日本，像一些出海的企业，其选择的云服务基本都是亚马逊。&lt;/p&gt;
+
+&lt;p&gt;如果是线上产品，DNS 强烈建议用付费版，阿里的那几十块钱的付费版基本可以满足需求。如果还需要一些按省份或按区域调试的逻辑，则需要加钱，一年也就几百块，省钱省力。&lt;/p&gt;
+
+&lt;p&gt;如果是国外，优先选择亚马逊，如果需要国内外互通并且有自己的 APP 的话，建议还是自己实现一些容灾逻辑或者智能调度，因为没有一个现成的 DNS 服务能同时较好的满足国内外场景，或者用多个域名，不同的域名走不同的 DNS 。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-3lb负载均衡&quot;&gt;3、LB（负载均衡）&lt;/h3&gt;
+
+&lt;p&gt;LB（负载均衡）是一个通用服务，一般云厂商的 LB 服务基本都会如下功能：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;支持四层协议请求（包括 TCP、UDP 协议）；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;支持七层协议请求（包括 HTTP、HTTPS 协议）；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;集中化的证书管理系统支持 HTTPS 协议；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;健康检查；&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果你线上的服务机器都是用的云服务，并且是在同一个云服务商的话，可以直接使用云服务商提供的 LB 服务，如阿里云的 SLB，腾讯云的 CLB，亚马逊的 ELB 等等。如果是自建机房基本都是 LVS + Nginx。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-4cdn&quot;&gt;4、CDN&lt;/h3&gt;
+
+&lt;p&gt;CDN 现在已经是一个很红很红的市场，基本上只能挣一些辛苦钱，都是贴着成本在卖。国内以网宿为龙头，他们家占据整个国内市场份额的 40% 以上，后面就是腾讯，阿里。网宿有很大一部分是因为直播的兴起而崛起。&lt;/p&gt;
+
+&lt;p&gt;国外，Amazon 和 Akamai 合起来占比大概在 50%，曾经的国际市场老大 Akamai 拥有全球超一半的份额，在 Amazon CDN入局后，份额跌去了将近 20%，众多中小企业都转向后者，Akamai 也是无能为力。&lt;/p&gt;
+
+&lt;p&gt;国内出海的 CDN 厂商，更多的是为国内的出海企业服务，三家大一点的 CDN 服务商里面也就网宿的节点多一些，但是也多不了多少。阿里和腾讯还处于前期阶段，仅少部分国家有节点。&lt;/p&gt;
+
+&lt;p&gt;就创业公司来说，CDN 用腾讯云或阿里云即可，其相关系统较完善，能轻松接入，网宿在系统支持层面相对较弱一些，而且还贵一些。并且，当流量上来后，CDN 不能只用一家，需要用多家，不同的 CDN 在全国的节点覆盖不一样，而且针对不同的客户云厂商内部有些区分客户集群，并不是全节点覆盖（但有些云厂商说自己是全网节点），除了节点覆盖的问题，多 CDN 也在一定程度上起到容灾的作用。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-5rpc-框架&quot;&gt;5、RPC 框架&lt;/h3&gt;
+
+&lt;p&gt;维基百科对 RPC 的定义是：远程过程调用（Remote Procedure Call，RPC）是一个计算机通信协议。该协议允许运行于一台计算机的程序调用另一台计算机的子程序，而程序员无需额外地为这个交互作用编程。&lt;/p&gt;
+
+&lt;p&gt;通俗来讲，一个完整的 RPC 调用过程，就是 Server 端实现了一个函数，客户端使用 RPC 框架提供的接口，调用这个函数的实现，并获取返回值的过程。&lt;/p&gt;
+
+&lt;p&gt;业界 RPC 框架大致分为两大流派，一种侧重跨语言调用，另一种是偏重服务治理。&lt;/p&gt;
+
+&lt;p&gt;跨语言调用型的 RPC 框架有 Thrift、gRPC、Hessian、Hprose 等。这类 RPC 框架侧重于服务的跨语言调用，能够支持大部分的语言进行语言无关的调用，非常适合多语言调用场景。但这类框架没有服务发现相关机制，实际使用时需要代理层进行请求转发和负载均衡策略控制。&lt;/p&gt;
+
+&lt;p&gt;其中，gRPC 是 Google 开发的高性能、通用的开源 RPC 框架，其由 Google 主要面向移动应用开发并基于 HTTP/2 协议标准而设计，基于 ProtoBuf（Protocol Buffers）序列化协议开发，且支持众多开发语言。本身它不是分布式的，所以要实现框架的功能需要进一步的开发。&lt;/p&gt;
+
+&lt;p&gt;Hprose（High Performance Remote Object Service Engine）是一个 MIT 开源许可的新型轻量级跨语言跨平台的面向对象的高性能远程动态通讯中间件。&lt;/p&gt;
+
+&lt;p&gt;服务治理型的 RPC 框架的特点是功能丰富，提供高性能的远程调用、服务发现及服务治理能力，适用于大型服务的服务解耦及服务治理，对于特定语言(Java)的项目可以实现透明化接入。缺点是语言耦合度较高，跨语言支持难度较大。国内常见的冶理型 RPC 框架如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dubbo：Dubbo 是阿里巴巴公司开源的一个 Java 高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring 框架无缝集成。当年在淘宝内部，Dubbo 由于跟淘宝另一个类似的框架 HSF 有竞争关系，导致 Dubbo 团队解散，最近又活过来了，有专职同学投入。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DubboX：DubboX 是由当当在基于 Dubbo 框架扩展的一个 RPC 框架，支持 REST 风格的远程调用、Kryo/FST 序列化，增加了一些新的feature。Motan：Motan 是新浪微博开源的一个 Java 框架。它诞生的比较晚，起于 2013 年，2016 年 5 月开源。Motan 在微博平台中已经广泛应用，每天为数百个服务完成近千亿次的调用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;rpcx：rpcx 是一个类似阿里巴巴 Dubbo 和微博 Motan 的分布式的 RPC 服务框架，基于 Golang net/rpc 实现。但是 rpcx 基本只有一个人在维护，没有完善的社区，使用前要慎重，之前做 Golang 的 RPC 选型时也有考虑这个，最终还是放弃了，选择了 gRPC，如果想自己自研一个 RPC 框架，可以参考学习一下。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-6名字发现服务发现&quot;&gt;6、名字发现/服务发现&lt;/h3&gt;
+
+&lt;p&gt;名字发现和服务发现分为两种模式，一个是客户端发现模式，一种是服务端发现模式。&lt;/p&gt;
+
+&lt;p&gt;框架中常用的服务发现是客户端发现模式。&lt;/p&gt;
+
+&lt;p&gt;所谓服务端发现模式是指客户端通过一个负载均衡器向服务发送请求，负载均衡器查询服务注册表并把请求路由到一台可用的服务实例上。现在常用的负载均衡器都是此类模式，常用于微服务中。&lt;/p&gt;
+
+&lt;p&gt;所有的名字发现和服务发现都要依赖于一个可用性非常高的服务注册表，业界常用的服务注册表有如下三个：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;etcd，一个高可用、分布式、一致性、key-value 方式的存储，被用在分享配置和服务发现中。两个著名的项目使用了它：Kubernetes 和 Cloud Foundry。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Consul，一个发现和配置服务的工具，为客户端注册和发现服务提供了API，Consul还可以通过执行健康检查决定服务的可用性。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache ZooKeeper，是一个广泛使用、高性能的针对分布式应用的协调服务。Apache ZooKeeper 本来是 Hadoop 的子工程，现在已经是顶级工程了。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;除此之外也可以自己实现服务实现，或者用 Redis 也行，只是需要自己实现高可用性。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-7关系数据库&quot;&gt;7、关系数据库&lt;/h3&gt;
+
+&lt;p&gt;关系数据库分为两种，一种是传统关系数据，如 Oracle，MySQL，Maria，DB2，PostgreSQL 等等，另一种是 NewSQL，即至少要满足以下五点的新型关系数据库：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;完整地支持 SQL，支持 JOIN / GROUP BY /子查询等复杂 SQL 查询。&lt;/li&gt;
+  &lt;li&gt;支持传统数据标配的 ACID 事务，支持强隔离级别。&lt;/li&gt;
+  &lt;li&gt;具有弹性伸缩的能力，扩容缩容对于业务层完全透明。&lt;/li&gt;
+  &lt;li&gt;真正的高可用，异地多活、故障恢复的过程不需要人为的接入，系统能够自动地容灾和进行强一致的数据恢复。&lt;/li&gt;
+  &lt;li&gt;具备一定的大数据分析能力。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;传统关系数据库用得最多的是 MySQL，成熟，稳定，一些基本的需求都能满足，在一定数据量级之前基本单机传统数据库都可以搞定，而且现在较多的开源系统都是基于 MySQL，开箱即用，再加上主从同步和前端缓存，百万 pv 的应用都可以搞定了。不过 CentOS 7 已经放弃了 MySQL，而改使用 MariaDB。MariaDB 数据库管理系统是 MySQ L的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。&lt;/p&gt;
+
+&lt;p&gt;在 Google 发布了 F1: A Distributed SQL Database That Scales 和 Spanner: Google’s Globally-Distributed Databasa 之后，业界开始流行起 NewSQL。于是有了 CockroachDB，于是有了奇叔公司的 TiDB。国内已经有比较多的公司使用 TiDB，之前在创业公司时在大数据分析时已经开始应用 TiDB，当时应用的主要原因是 MySQL 要使用分库分表，逻辑开发比较复杂，扩展性不够。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-8nosql&quot;&gt;8、NoSQL&lt;/h3&gt;
+
+&lt;p&gt;NoSQL 顾名思义就是 Not-Only SQL，也有人说是 No – SQL，个人偏向于 Not-Only SQL，它并不是用来替代关系库，而是作为关系型数据库的补充而存在。&lt;/p&gt;
+
+&lt;p&gt;常见 NoSQL 有4个类型：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;键值，适用于内容缓存，适合混合工作负载并发高扩展要求大的数据集，其优点是简单，查询速度快，缺点是缺少结构化数据，常见的有 Redis，Memcache，BerkeleyDB 和 Voldemort 等等；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;列式，以列簇式存储，将同一列数据存在一起，常见于分布式的文件系统，其中以 Hbase，Cassandra 为代表。Cassandra 多用于写多读少的场景，国内用得比较多的有 360，大概 1500 台机器的集群，国外大规模使用的公司比较多，如 eBay，Instagram，Apple 和沃尔玛等等；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;文档，数据存储方案非常适用承载大量不相关且结构差别很大的复杂信息。性能介于 kv 和关系数据库之间，它的灵感来于 lotus notes，常见的有 MongoDB，CouchDB 等等；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;图形，图形数据库擅长处理任何涉及关系的状况。社交网络，推荐系统等。专注于构建关系图谱，需要对整个图做计算才能得出结果，不容易做分布式的集群方案，常见的有 Neo4J，InfoGrid 等。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;除了以上4种类型，还有一些特种的数据库，如对象数据库，XML 数据库，这些都有针对性对某些存储类型做了优化的数据库。&lt;/p&gt;
+
+&lt;p&gt;在实际应用场景中，何时使用关系数据库，何时使用 NoSQL，使用哪种类型的数据库，这是我们在做架构选型时一个非常重要的考量，甚至会影响整个架构的方案。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-9消息中间件&quot;&gt;9、消息中间件&lt;/h3&gt;
+
+&lt;p&gt;消息中间件在后台系统中是必不可少的一个组件，一般我们会在以下场景中使用消息中间件：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;异步处理：异步处理是使用消息中间件的一个主要原因，在工作中最常见的异步场景有用户注册成功后需要发送注册成功邮件、缓存过期时先返回老的数据，然后异步更新缓存、异步写日志等等；通过异步处理，可以减少主流程的等待响应时间，让非主流程或者非重要业务通过消息中间件做集中的异步处理。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;系统解耦：比如在电商系统中，当用户成功支付完成订单后，需要将支付结果给通知ERP系统、发票系统、WMS、推荐系统、搜索系统、风控系统等进行业务处理；这些业务处理不需要实时处理、不需要强一致，只需要最终一致性即可，因此可以通过消息中间件进行系统解耦。通过这种系统解耦还可以应对未来不明确的系统需求。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;削峰填谷：当系统遇到大流量时，监控图上会看到一个一个的山峰样的流量图，通过使用消息中间件将大流量的请求放入队列，通过消费者程序将队列中的处理请求慢慢消化，达到消峰填谷的效果。最典型的场景是秒杀系统，在电商的秒杀系统中下单服务往往会是系统的瓶颈，因为下单需要对库存等做数据库操作，需要保证强一致性，此时使用消息中间件进行下单排队和流控，让下单服务慢慢把队列中的单处理完，保护下单服务，以达到削峰填谷的作用。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;业界消息中间件是一个非常通用的东西，大家在做选型时有使用开源的，也有自己造轮子的，甚至有直接用 MySQL 或 Redis 做队列的，关键看是否满足你的需求，如果是使用开源的项目，以下的表格在选型时可以参考：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_3.png&quot; alt=&quot;图 3&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-10代码管理&quot;&gt;10、代码管理&lt;/h3&gt;
+
+&lt;p&gt;代码是互联网创业公司的命脉之一，代码管理很重要，常见的考量点包括两块：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;安全和权限管理，将代码放到内网并且对于关系公司命脉的核心代码做严格的代码控制和机器的物理隔离；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;代码管理工具，Git 作为代码管理的不二之选，你值得拥有。GitLab 是当今最火的开源 Git 托管服务端，没有之一，虽然有企业版，但是其社区版基本能满足我们大部分需求，结合 Gerrit 做 Code review，基本就完美了。当然 GitLab 也有代码对比，但没 Gerrit 直观。Gerrit 比 GitLab 提供了更好的代码检查界面与主线管理体验，更适合在对代码质量有高要求的文化下使用。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-11持续集成&quot;&gt;11、持续集成&lt;/h3&gt;
+
+&lt;p&gt;持续集成简，称 CI（continuous integration），是一种软件开发实践，即团队开发成员经常集成他们的工作，每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。持续集成为研发流程提供了代码分支管理/比对、编译、检查、发布物输出等基础工作，为测试的覆盖率版本编译、生成等提供统一支持。&lt;/p&gt;
+
+&lt;p&gt;业界免费的持续集成工具中系统我们有如下一些选择：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jenkins：Java 写的有强大的插件机制，MIT 协议开源 （免费，定制化程度高，它可以在多台机器上进行分布式地构建和负载测试）。Jenkins 可以算是无所不能，基本没有 Jenkins 做不了的，无论从小型团队到大型团队 Jenkins 都可以搞定。不过如果要大规模使用，还是需要有人力来学习和维护。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TeamCity：TeamCity 与 Jenkins 相比使用更加友好，也是一个高度可定制化的平台。但是用的人多了，TeamCity就要收费了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Strider：Strider 是一个开源的持续集成和部署平台，使用 Node.js 实现，存储使用的是 MongoDB，BSD 许可证，概念上类似 Travis 和Jenkins。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GitLab CI：从GitLab 8.0开始，GitLab CI 就已经集成在 GitLab，我们只要在项目中添加一个 .gitlab-ci.yml 文件，然后添加一个 Runner，即可进行持续集成。并且 GitLab 与 Docker 有着非常好的相互协作的能力。免费版与付费版本不同可以参见这里：https://about.gitlab.com/products/feature-comparison/。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Travis：Travis 和 GitHub 强关联；闭源代码使用 SaaS 还需考虑安全问题；不可定制；开源项目免费，其它收费。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go：Go 是 ThoughtWorks 公司最新的 Cruise Control 的化身。除了 ThoughtWorks 提供的商业支持，Go 是免费的。它适用于 Windows，Mac 和各种 Linux 发行版。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-12日志系统&quot;&gt;12、日志系统&lt;/h3&gt;
+
+&lt;p&gt;日志系统一般包括打日志，采集，中转，收集，存储，分析，呈现，搜索还有分发等。一些特殊的如染色，全链条跟踪或者监控都可能需要依赖于日志系统实现。日志系统的建设不仅仅是工具的建设，还有规范和组件的建设，最好一些基本的日志在框架和组件层面加就行了，比如全链接跟踪之类的。&lt;/p&gt;
+
+&lt;p&gt;对于常规日志系统ELK能满足大部分的需求，ELK 包括如下组件：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ElasticSearch 是个开源分布式搜索引擎，它的特点有：分布式，零配置，自动发现，索引自动分片，索引副本机制，RESTful 风格接口，多数据源，自动搜索负载等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Logstash 是一个完全开源的工具，它可以对你的日志进行收集、分析，并将其存储供以后使用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kibana 是一个开源和免费的工具，它可以为 Logstash 和 ElasticSearch 提供的日志分析友好的 Web 界面，可以帮助汇总、分析和搜索重要数据日志。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Filebeat 已经完全替代了 Logstash-Forwarder 成为新一代的日志采集器，同时鉴于它轻量、安全等特点，越来越多人开始使用它。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;因为免费的 ELK 没有任何安全机制，所以这里使用了 Nginx 作反向代理，避免用户直接访问 Kibana 服务器。加上配置 Nginx 实现简单的用户认证，一定程度上提高安全性。另外，Nginx 本身具有负载均衡的作用，能够提高系统访问性能。ELK 架构如图4所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_4.png&quot; alt=&quot;图 4，ELK 流程图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对于有实时计算的需求，可以使用 Flume + Kafka + Storm + MySQL 方案，一 般架构如图 5 所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_5.png&quot; alt=&quot;图 5，实时分析系统架构图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其中：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Flume 是一个分布式、可靠、和高可用的海量日志采集、聚合和传输的日志收集系统，支持在日志系统中定制各类数据发送方，用于收集数据；同时，Flume 提供对数据进行简单处理，并写到各种数据接受方（可定制）的能力。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kafka 是由 Apache 软件基金会开发的一个开源流处理平台，由 Scala 和 Java 编写。其本质上是一个“按照分布式事务日志架构的大规模发布/订阅消息队列”，它以可水平扩展和高吞吐率而被广泛使用。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kafka 追求的是高吞吐量、高负载，Flume 追求的是数据的多样性，二者结合起来简直完美。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-13监控系统&quot;&gt;13、监控系统&lt;/h3&gt;
+
+&lt;p&gt;监控系统只包含与后台相关的，这里主要是两块，一个是操作系统层的监控，比如机器负载，IO，网络流量，CPU，内存等操作系统指标的监控。另一个是服务质量和业务质量的监控，比如服务的可用性，成功率，失败率，容量，QPS 等等。常见业务的监控系统先有操作系统层面的监控（这部分较成熟），然后扩展出其它监控，如 Zabbix，小米的 Open-Falcon，也有一出来就是两者都支持的，如 Prometheus。如果对业务监控要求比较高一些，在创业选型中建议可以优先考虑 Prometheus。这里有一个有趣的分布，如图6所示。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_6.png&quot; alt=&quot;图 6，监控系统分布&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;亚洲区域使用 Zabbix 较多，而美洲和欧洲，以及澳大利亚使用 Prometheus 居多，换句话说，英文国家地区（发达国家？）使用 Prometheus 较多。&lt;/p&gt;
+
+&lt;p&gt;Prometheus 是由 SoundCloud 开发的开源监控报警系统和时序列数据库（TSDB）。Prometheus 使用 Go 语言开发，是 Google BorgMon 监控系统的开源版本。相对于其它监控系统使用的 push 数据的方式，Prometheus 使用的是 pull 的方式，其架构如图 7 所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_7.png&quot; alt=&quot;图 7，Prometheus 架构图s&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如上图所示，Prometheus 包含的主要组件如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prometheus Server 主要负责数据采集和存储，提供 PromQL 查询语言的支持。Server 通过配置文件、文本文件、ZooKeeper、Consul、DNS SRV Lookup 等方式指定抓取目标。根据这些目标会，Server 定时去抓取 metrics 数据，每个抓取目标需要暴露一个 http 服务的接口给它定时抓取。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;客户端 SDK：官方提供的客户端类库有 Go、Java、Scala、Python、Ruby，其他还有很多第三方开发的类库，支持 Nodejs、PHP、Erlang 等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Push Gateway 支持临时性 Job 主动推送指标的中间网关。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Exporter Exporter 是 Prometheus 的一类数据采集组件的总称。它负责从目标处搜集数据，并将其转化为 Prometheus 支持的格式。与传统的数据采集组件不同的是，它并不向中央服务器发送数据，而是等待中央服务器主动前来抓取。Prometheus 提供多种类型的 Exporter 用于采集各种不同服务的运行状态。目前支持的有数据库、硬件、消息中间件、存储系统、HTTP 服务器、JMX 等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Alertmanager：是一个单独的服务，可以支持 Prometheus 的查询语句，提供十分灵活的报警方式。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prometheus HTTP API 的查询方式，自定义所需要的输出。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Grafana 是一套开源的分析监视平台，支持 Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch 等数据源，其 UI 非常漂亮且高度定制化。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;创业公司选择 Prometheus + Grafana 的方案，再加上统一的服务框架（如 gRPC），可以满足大部分中小团队的监控需求。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-14配置系统&quot;&gt;14、配置系统&lt;/h3&gt;
+
+&lt;p&gt;随着程序功能的日益复杂，程序的配置日益增多：各种功能的开关、降级开关，灰度开关，参数的配置、服务器的地址、数据库配置等等，除此之外，对后台程序配置的要求也越来越高：配置修改后实时生效，灰度发布，分环境、分用户，分集群管理配置，完善的权限、审核机制等等，在这样的大环境下，传统的通过配置文件、数据库等方式已经越来越无法满足开发人员对配置管理的需求，业界有如下两种方案：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;基于 zk 和 etcd，支持界面和 api ，用数据库来保存版本历史，预案，走审核流程，最后下发到 zk 或 etcd 这种有推送能力的存储里（服务注册本身也是用 zk 或 etcd，选型就一块了）。客户端都直接和 zk 或 etcd 打交道。至于灰度发布，各家不同，有一种实现是同时发布一个需要灰度的 IP 列表，客户端监听到配置节点变化时，对比一下自己是否属于该列表。PHP 这种无状态的语言和其他 zk/etcd 不支持的语言，只好自己在客户端的机器上起一个 Agent 来监听变化，再写到配置文件或共享内存，如 360 的 Qconf。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;基于运维自动化的配置文件的推送，审核流程，配置数据管理和方案一类似，下发时生成配置文件，基于运维自动化工具如 Puppet，Ansible 推送到每个客户端，而应用则定时重新读取这个外部的配置文件，灰度发布在下发配置时指定IP列表。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;创业公司前期不需要这种复杂，直接上 zk，弄一个界面管理 zk 的内容，记录一下所有人的操作日志，程序直连 zk，或者或者用 Qconf 等基于 zk 优化后的方案。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-15发布系统部署系统&quot;&gt;15、发布系统/部署系统&lt;/h3&gt;
+
+&lt;p&gt;从软件生产的层面看，代码到最终服务的典型流程如图 8 所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_8.png&quot; alt=&quot;图 8，流程图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;从上图中可以看出，从开发人员写下代码到服务最终用户是一个漫长过程，整体可以分成三个阶段：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;从代码（Code）到成品库（Artifact）这个阶段主要对开发人员的代码做持续构建并把构建产生的制品集中管理，是为部署系统准备输入内容的阶段。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;从制品到可运行服务 这个阶段主要完成制品部署到指定环境，是部署系统的最基本工作内容。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;从开发环境到最终生产环境 这个阶段主要完成一次变更在不同环境的迁移，是部署系统上线最终服务的核心能力。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;发布系统集成了制品管理，发布流程，权限控制，线上环境版本变更，灰度发布，线上服务回滚等几方面的内容，是开发人员工作结晶最终呈现的重要通道。开源的项目中没有完全满足的项目，如果只是 Web 类项目，Walle、Piplin 都是可用的，但是功能不太满足，创业初期可以集成 Jenkins + Gitlab + Walle（可以考虑两天时间完善一下），以上方案基本包括制品管理，发布流程，权限控制，线上环境版本变更，灰度发布（需要自己实现），线上服务回滚等功能。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-16跳板机&quot;&gt;16、跳板机&lt;/h3&gt;
+
+&lt;p&gt;跳板机面对的是需求是要有一种能满足角色管理与授权审批、信息资源访问控制、操作记录和审计、系统变更和维护控制要求，并生成一些统计报表配合管理规范来不断提升IT内控的合规性，能对运维人员操作行为的进行控制和审计，对误操作、违规操作导致的操作事故，快速定位原因和责任人。其功能模块一般包括：帐户管理、认证管理、授权管理、审计管理等等。&lt;/p&gt;
+
+&lt;p&gt;开源项目中，Jumpserver 能够实现跳板机常见需求，如授权、用户管理、服务器基本信息记录等，同时又可批量执行脚本等功能；其中录像回放、命令搜索、实时监控等特点，又能帮助运维人员回溯操作历史，方便查找操作痕迹，便于管理其他人员对服务器的操作控制。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-17机器管理&quot;&gt;17、机器管理&lt;/h3&gt;
+
+&lt;p&gt;机器管理的工具选择的考量可以包含以下三个方面：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;是否简单，是否需要每台机器部署 Agent（客户端）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;语言的选择（Puppet/Chef vs Ansible/SaltStack ）开源技术，不看官网不足以熟练，不懂源码不足以精通；Puppet、Chef 基于 Ruby 开发，Ansible、SaltStack 基于 Python 开发的&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;速度的选择（Ansible vs SaltStack）Ansible 基于 SSH 协议传输数据，SaltStack 使用消息队列 zeroMQ 传输数据；大规模并发的能力对于几十台-200 台规模的兄弟来讲，Ansible的性能也可接受，如果一次操作上千台，用 salt 好一些。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如图9所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_9.png&quot; alt=&quot;图 9，机器管理软件对比&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一般创业公司选择 Ansible 能解决大部问题，其简单，不需要安装额外的客户端，可以从命令行来运行，不需要使用配置文件。至于比较复杂的任务，Ansible 配置通过名为 Playbook 的配置文件中的 YAML 语法来加以处理。Playbook 还可以使用模板来扩展其功能。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-创业公司的选择&quot;&gt;创业公司的选择&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-1选择合适的语言&quot;&gt;1、选择合适的语言&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择团队熟悉的/能掌控的，创业公司人少事多，无太多冗余让研发团队熟悉新的语言，能快速上手，能快速出活，出了问题能快速解决的问题的语言才是好的选择。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择更现代一些的，这里的现代是指语言本身已经完成一些之前需要特殊处理的特性，比如内存管理，线程等等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择开源轮子多的或者社区活跃度高的，这个原则是为了保证在开发过程中减少投入，有稳定可靠的轮子可以使用，遇到问题可以在网上快速搜索到答案。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择好招人的 一门合适的语言会让创业团队减少招聘的成本，快速招到合适的人。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择能让人有兴趣的 与上面一点相关，让人感兴趣，在后面留人时有用。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-2选择合适的组件和云服务商&quot;&gt;2、选择合适的组件和云服务商&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择靠谱的云服务商；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择云服务商的组件；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择成熟的开源组件，而不是最新出的组件；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择采用在一线互联网公司落地并且开源的，且在社区内形成良好口碑的产品；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;开源社区活跃度；&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;选择靠谱的云服务商，其实这是一个伪命题，因为哪个服务商都不靠谱，他们所承诺的那些可用性问题基本上都会在你的身上发生，这里我们还是需要自己做一些工作，比如多服务商备份，如用 CDN，你一定不要只选一家，至少选两家，一个是灾备，保持后台切换的能力，另一个是多点覆盖，不同的服务商在 CDN 节点上的资源是不一样的。&lt;/p&gt;
+
+&lt;p&gt;选择了云服务商以后，就会有很多的产品你可以选择了，比较存储，队列这些都会有现成的产品，这个时候就纠结了，是用呢？还是自己在云主机上搭呢？在这里我的建议是前期先用云服务商的，大了后再自己搞，这样会少掉很多运维的事情，但是这里要多了解一下云服务商的组件特性以及一些坑，比如他们内网会经常断开，他们升级也会闪断，所以在业务侧要做好容错和规避。&lt;/p&gt;
+
+&lt;p&gt;关于开源组件，尽可能选择成熟的，成熟的组件经历了时间的考验，基本不会出大的问题，并且有成套的配套工具，出了问题在网上也可以很快的找到答案，你所遇到的坑基本上都有人踩过了。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-3制定流程和规范&quot;&gt;3、制定流程和规范&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;制定开发的规范，代码及代码分支管理规范，关键性代码仅少数人有权限；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;制定发布流程规范，从发布系统落地；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;制定运维规范；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;制定数据库操作规范，收拢数据库操作权限；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;制定告警处理流程，做到告警有人看有人处理；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;制定汇报机制，晨会/周报；&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;heading-4自研和选型合适的辅助系统&quot;&gt;4、自研和选型合适的辅助系统&lt;/h3&gt;
+
+&lt;p&gt;所有的流程和规范都需要用系统来固化，否则就是空中楼阁，如何选择这些系统呢？参照上个章节咱们那些开源的，对比一下选择的语言，组件之类的，选择一个最合适的即可。&lt;/p&gt;
+
+&lt;p&gt;比如项目管理的，看下自己是什么类型的公司，开发的节奏是怎样的，瀑布，敏捷的 按项目划分，还是按客户划分等等，平时是按项目组织还是按任务组织等等。&lt;/p&gt;
+
+&lt;p&gt;比如日志系统，之前是打的文本，那么上一个 ELK，规范化一些日志组件，基本上很长一段时间内不用考虑日志系统的问题，最多拆分一下或者扩容一下。等到组织大了，自己搞一个日志系统。&lt;/p&gt;
+
+&lt;p&gt;比如代码管理，项目管理系统这些都放内网，安全，在互联网公司来说，属于命脉了，命脉的东西还是放在别人拿不到或很难拿到的地方会比较靠谱一些。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-5选择过程中需要思考的问题&quot;&gt;5、选择过程中需要思考的问题&lt;/h3&gt;
+
+&lt;p&gt;技术栈的选择有点像做出了某种承诺，在一定的时间内这种承诺没法改变，于是我们需要在选择的时候有一些思考。&lt;/p&gt;
+
+&lt;p&gt;看前面内容，有一个词出现了三次，合适，选择是合适的，不是最好，也不是最新，是最合适，适合是针对当下，这种选择是最合适的吗？比如用 Go 这条线的东西，技术比较新，业界组件储备够吗？组织内的人员储备够吗？学习成本多少？写出来的东西能满足业务性能要求吗？能满足时间要求吗？&lt;/p&gt;
+
+&lt;p&gt;向未来看一眼，在一年到三年内，我们需要做出改变吗？技术栈要做根本性的改变吗？如果组织发展很快，在 200 人，500 人时，现有的技术栈是否需要大动？&lt;/p&gt;
+
+&lt;p&gt;创业过程中需要考虑成本，这里的成本不仅仅是花费多少钱，付出多少工资，有时更重要的是时间成本，很多业务在创业时大家拼的就是时间，就是一个时间窗，过了就没你什么事儿了。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-基于云的创业公司后台技术架构&quot;&gt;基于云的创业公司后台技术架构&lt;/h2&gt;
+
+&lt;p&gt;结合上面内容的考量，在对一个个系统和组件的做选型之后，以云服务为基础，一个创业公司的后台技术架构如图10所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_10.png&quot; alt=&quot;图 10，后台技术架构&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/sDzpa0BhkwvXuapPxZ7fug&quot; target=&quot;_blank&quot;&gt;从零搭建创业公司后台技术栈&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="技术栈" /><summary type="html">前言 各系统组件选型 1、项目管理/Bug管理/问题管理 2、DNS 3、LB（负载均衡） 4、CDN 5、RPC 框架 6、名字发现/服务发现 7、关系数据库 8、NoSQL 9、消息中间件 10、代码管理 11、持续集成 12、日志系统 13、监控系统 14、配置系统 15、发布系统/部署系统 16、跳板机 17、机器管理 创业公司的选择 1、选择合适的语言 2、选择合适的组件和云服务商 3、制定流程和规范 4、自研和选型合适的辅助系统 5、选择过程中需要思考的问题 基于云的创业公司后台技术架构 前言 说到后台技术栈，脑海中是不是浮现的是这样一幅图？ 1 有点眼晕，以下只是我们会用到的一些语言的合集，而且只是语言层面的一部分，就整个后台技术栈来说，这只是一个开始，从语言开始，还有很多很多的内容。今天要说的后台是大后台的概念，放在服务器上的东西都属于后台的东西，比如使用的框架，语言，数据库，服务，操作系统等等。 整个后台技术栈我的理解包括 4 个层面的内容： 语言：用了哪些开发语言，如：C++/Java/Go/PHP/Python/Ruby 等等； 组件：用了哪些组件，如：MQ 组件，数据库组件等等； 流程：怎样的流程和规范，如：开发流程，项目流程，发布流程，监控告警流程，代码规范等等； 系统：系统化建设，上面的流程需要有系统来保证，如：规范发布流程的发布系统，代码管理系统等等； 结合以上的的 4 个层面的内容，整个后台技术栈的结构如图 2 所示： 以上的这些内容都需要我们从零开始搭建，在创业公司，没有大公司那些完善的基础设施，需要我们从开源界，从云服务商甚至有些需要自己去组合，去拼装，去开发一个适合自己的组件或系统以达成我们的目标。咱们一个个系统和组件的做选型，最终形成我们的后台技术栈。 各系统组件选型 1、项目管理/Bug管理/问题管理 项目管理软件是整个业务的需求，问题，流程等等的集中地，大家的跨部门沟通协同大多依赖于项目管理工具。有一些 SaaS 的项目管理服务可以使用，但是很多时间不满足需求，此时我们可以选择一些开源的项目，这些项目本身有一定的定制能力，有丰富的插件可以使用，一般的创业公司需求基本上都能得到满足，常用的项目如下： Redmine：用 Ruby 开发的，有较多的插件可以使用，能自定义字段，集成了项目管理，Bug 问题跟踪，WIKI 等功能，不过好多插件 N 年没有更新了； Phabricator：用 PHP 开发的，Facebook 之前的内部工具，开发这工具的哥们离职后自己搞了一个公司专门做这个软件，集成了代码托管， Code Review，任务管理，文档管理，问题跟踪等功能，强烈推荐较敏捷的团队使用； Jira：用 Java 开发的，有用户故事，task 拆分，燃尽图等等，可以做项目管理，也可以应用于跨部门沟通场景，较强大； 悟空 CRM ：这个不是项目管理，这个是客户管理，之所以在这里提出来，是因为在 To B 的创业公司里面，往往是以客户为核心来做事情的，可以将项目管理和问题跟进的在悟空 CRM 上面来做，他的开源版本已经基本实现了 CR&amp;lt; 的核心 功能，还带有一个任务管理功能，用于问题跟进，不过用这个的话，还是需要另一个项目管理的软件协助，顺便说一嘴，这个系统的代码写得很难维护，只能适用于客户规模小（1万以内）时。 2、DNS DNS 是一个很通用的服务，创业公司基本上选择一个合适的云厂商就行了，国内主要是两家： 阿里万网：阿里 2014 年收购了万网，整合了其域名服务，最终形成了现在的阿里万网，其中就包含 DNS 这块的服务； 腾讯 DNSPod：腾讯 2012 年以 4000 万收购 DNSPod 100% 股份，主要提供域名解析和一些防护功能； 如果你的业务是在国内，主要就是这两家，选 一个就好，像今日头条这样的企业用的也是 DNSPod 的服务，除非一些特殊的原因才需要自建，比如一些 CDN 厂商，或者对区域有特殊限制的。要实惠一点用阿里最便宜的基础版就好了，要成功率高一些，还是用 DNSPod 的贵的那种。 在国外还是选择亚马逊吧，阿里的 DNS 服务只有在日本和美国有节点，东南亚最近才开始部点， DNSPod 也只有美国和日本，像一些出海的企业，其选择的云服务基本都是亚马逊。 如果是线上产品，DNS 强烈建议用付费版，阿里的那几十块钱的付费版基本可以满足需求。如果还需要一些按省份或按区域调试的逻辑，则需要加钱，一年也就几百块，省钱省力。 如果是国外，优先选择亚马逊，如果需要国内外互通并且有自己的 APP 的话，建议还是自己实现一些容灾逻辑或者智能调度，因为没有一个现成的 DNS 服务能同时较好的满足国内外场景，或者用多个域名，不同的域名走不同的 DNS 。 3、LB（负载均衡） LB（负载均衡）是一个通用服务，一般云厂商的 LB 服务基本都会如下功能： 支持四层协议请求（包括 TCP、UDP 协议）； 支持七层协议请求（包括 HTTP、HTTPS 协议）； 集中化的证书管理系统支持 HTTPS 协议； 健康检查； 如果你线上的服务机器都是用的云服务，并且是在同一个云服务商的话，可以直接使用云服务商提供的 LB 服务，如阿里云的 SLB，腾讯云的 CLB，亚马逊的 ELB 等等。如果是自建机房基本都是 LVS + Nginx。 4、CDN CDN 现在已经是一个很红很红的市场，基本上只能挣一些辛苦钱，都是贴着成本在卖。国内以网宿为龙头，他们家占据整个国内市场份额的 40% 以上，后面就是腾讯，阿里。网宿有很大一部分是因为直播的兴起而崛起。 国外，Amazon 和 Akamai 合起来占比大概在 50%，曾经的国际市场老大 Akamai 拥有全球超一半的份额，在 Amazon CDN入局后，份额跌去了将近 20%，众多中小企业都转向后者，Akamai 也是无能为力。 国内出海的 CDN 厂商，更多的是为国内的出海企业服务，三家大一点的 CDN 服务商里面也就网宿的节点多一些，但是也多不了多少。阿里和腾讯还处于前期阶段，仅少部分国家有节点。 就创业公司来说，CDN 用腾讯云或阿里云即可，其相关系统较完善，能轻松接入，网宿在系统支持层面相对较弱一些，而且还贵一些。并且，当流量上来后，CDN 不能只用一家，需要用多家，不同的 CDN 在全国的节点覆盖不一样，而且针对不同的客户云厂商内部有些区分客户集群，并不是全节点覆盖（但有些云厂商说自己是全网节点），除了节点覆盖的问题，多 CDN 也在一定程度上起到容灾的作用。 5、RPC 框架 维基百科对 RPC 的定义是：远程过程调用（Remote Procedure Call，RPC）是一个计算机通信协议。该协议允许运行于一台计算机的程序调用另一台计算机的子程序，而程序员无需额外地为这个交互作用编程。 通俗来讲，一个完整的 RPC 调用过程，就是 Server 端实现了一个函数，客户端使用 RPC 框架提供的接口，调用这个函数的实现，并获取返回值的过程。 业界 RPC 框架大致分为两大流派，一种侧重跨语言调用，另一种是偏重服务治理。 跨语言调用型的 RPC 框架有 Thrift、gRPC、Hessian、Hprose 等。这类 RPC 框架侧重于服务的跨语言调用，能够支持大部分的语言进行语言无关的调用，非常适合多语言调用场景。但这类框架没有服务发现相关机制，实际使用时需要代理层进行请求转发和负载均衡策略控制。 其中，gRPC 是 Google 开发的高性能、通用的开源 RPC 框架，其由 Google 主要面向移动应用开发并基于 HTTP/2 协议标准而设计，基于 ProtoBuf（Protocol Buffers）序列化协议开发，且支持众多开发语言。本身它不是分布式的，所以要实现框架的功能需要进一步的开发。 Hprose（High Performance Remote Object Service Engine）是一个 MIT 开源许可的新型轻量级跨语言跨平台的面向对象的高性能远程动态通讯中间件。 服务治理型的 RPC 框架的特点是功能丰富，提供高性能的远程调用、服务发现及服务治理能力，适用于大型服务的服务解耦及服务治理，对于特定语言(Java)的项目可以实现透明化接入。缺点是语言耦合度较高，跨语言支持难度较大。国内常见的冶理型 RPC 框架如下： Dubbo：Dubbo 是阿里巴巴公司开源的一个 Java 高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring 框架无缝集成。当年在淘宝内部，Dubbo 由于跟淘宝另一个类似的框架 HSF 有竞争关系，导致 Dubbo 团队解散，最近又活过来了，有专职同学投入。 DubboX：DubboX 是由当当在基于 Dubbo 框架扩展的一个 RPC 框架，支持 REST 风格的远程调用、Kryo/FST 序列化，增加了一些新的feature。Motan：Motan 是新浪微博开源的一个 Java 框架。它诞生的比较晚，起于 2013 年，2016 年 5 月开源。Motan 在微博平台中已经广泛应用，每天为数百个服务完成近千亿次的调用。 rpcx：rpcx 是一个类似阿里巴巴 Dubbo 和微博 Motan 的分布式的 RPC 服务框架，基于 Golang net/rpc 实现。但是 rpcx 基本只有一个人在维护，没有完善的社区，使用前要慎重，之前做 Golang 的 RPC 选型时也有考虑这个，最终还是放弃了，选择了 gRPC，如果想自己自研一个 RPC 框架，可以参考学习一下。 6、名字发现/服务发现 名字发现和服务发现分为两种模式，一个是客户端发现模式，一种是服务端发现模式。 框架中常用的服务发现是客户端发现模式。 所谓服务端发现模式是指客户端通过一个负载均衡器向服务发送请求，负载均衡器查询服务注册表并把请求路由到一台可用的服务实例上。现在常用的负载均衡器都是此类模式，常用于微服务中。 所有的名字发现和服务发现都要依赖于一个可用性非常高的服务注册表，业界常用的服务注册表有如下三个： etcd，一个高可用、分布式、一致性、key-value 方式的存储，被用在分享配置和服务发现中。两个著名的项目使用了它：Kubernetes 和 Cloud Foundry。 Consul，一个发现和配置服务的工具，为客户端注册和发现服务提供了API，Consul还可以通过执行健康检查决定服务的可用性。 Apache ZooKeeper，是一个广泛使用、高性能的针对分布式应用的协调服务。Apache ZooKeeper 本来是 Hadoop 的子工程，现在已经是顶级工程了。 除此之外也可以自己实现服务实现，或者用 Redis 也行，只是需要自己实现高可用性。 7、关系数据库 关系数据库分为两种，一种是传统关系数据，如 Oracle，MySQL，Maria，DB2，PostgreSQL 等等，另一种是 NewSQL，即至少要满足以下五点的新型关系数据库： 完整地支持 SQL，支持 JOIN / GROUP BY /子查询等复杂 SQL 查询。 支持传统数据标配的 ACID 事务，支持强隔离级别。 具有弹性伸缩的能力，扩容缩容对于业务层完全透明。 真正的高可用，异地多活、故障恢复的过程不需要人为的接入，系统能够自动地容灾和进行强一致的数据恢复。 具备一定的大数据分析能力。 传统关系数据库用得最多的是 MySQL，成熟，稳定，一些基本的需求都能满足，在一定数据量级之前基本单机传统数据库都可以搞定，而且现在较多的开源系统都是基于 MySQL，开箱即用，再加上主从同步和前端缓存，百万 pv 的应用都可以搞定了。不过 CentOS 7 已经放弃了 MySQL，而改使用 MariaDB。MariaDB 数据库管理系统是 MySQ L的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。 在 Google 发布了 F1: A Distributed SQL Database That Scales 和 Spanner: Google’s Globally-Distributed Databasa 之后，业界开始流行起 NewSQL。于是有了 CockroachDB，于是有了奇叔公司的 TiDB。国内已经有比较多的公司使用 TiDB，之前在创业公司时在大数据分析时已经开始应用 TiDB，当时应用的主要原因是 MySQL 要使用分库分表，逻辑开发比较复杂，扩展性不够。 8、NoSQL NoSQL 顾名思义就是 Not-Only SQL，也有人说是 No – SQL，个人偏向于 Not-Only SQL，它并不是用来替代关系库，而是作为关系型数据库的补充而存在。 常见 NoSQL 有4个类型： 键值，适用于内容缓存，适合混合工作负载并发高扩展要求大的数据集，其优点是简单，查询速度快，缺点是缺少结构化数据，常见的有 Redis，Memcache，BerkeleyDB 和 Voldemort 等等； 列式，以列簇式存储，将同一列数据存在一起，常见于分布式的文件系统，其中以 Hbase，Cassandra 为代表。Cassandra 多用于写多读少的场景，国内用得比较多的有 360，大概 1500 台机器的集群，国外大规模使用的公司比较多，如 eBay，Instagram，Apple 和沃尔玛等等； 文档，数据存储方案非常适用承载大量不相关且结构差别很大的复杂信息。性能介于 kv 和关系数据库之间，它的灵感来于 lotus notes，常见的有 MongoDB，CouchDB 等等； 图形，图形数据库擅长处理任何涉及关系的状况。社交网络，推荐系统等。专注于构建关系图谱，需要对整个图做计算才能得出结果，不容易做分布式的集群方案，常见的有 Neo4J，InfoGrid 等。 除了以上4种类型，还有一些特种的数据库，如对象数据库，XML 数据库，这些都有针对性对某些存储类型做了优化的数据库。 在实际应用场景中，何时使用关系数据库，何时使用 NoSQL，使用哪种类型的数据库，这是我们在做架构选型时一个非常重要的考量，甚至会影响整个架构的方案。 9、消息中间件 消息中间件在后台系统中是必不可少的一个组件，一般我们会在以下场景中使用消息中间件： 异步处理：异步处理是使用消息中间件的一个主要原因，在工作中最常见的异步场景有用户注册成功后需要发送注册成功邮件、缓存过期时先返回老的数据，然后异步更新缓存、异步写日志等等；通过异步处理，可以减少主流程的等待响应时间，让非主流程或者非重要业务通过消息中间件做集中的异步处理。 系统解耦：比如在电商系统中，当用户成功支付完成订单后，需要将支付结果给通知ERP系统、发票系统、WMS、推荐系统、搜索系统、风控系统等进行业务处理；这些业务处理不需要实时处理、不需要强一致，只需要最终一致性即可，因此可以通过消息中间件进行系统解耦。通过这种系统解耦还可以应对未来不明确的系统需求。 削峰填谷：当系统遇到大流量时，监控图上会看到一个一个的山峰样的流量图，通过使用消息中间件将大流量的请求放入队列，通过消费者程序将队列中的处理请求慢慢消化，达到消峰填谷的效果。最典型的场景是秒杀系统，在电商的秒杀系统中下单服务往往会是系统的瓶颈，因为下单需要对库存等做数据库操作，需要保证强一致性，此时使用消息中间件进行下单排队和流控，让下单服务慢慢把队列中的单处理完，保护下单服务，以达到削峰填谷的作用。 业界消息中间件是一个非常通用的东西，大家在做选型时有使用开源的，也有自己造轮子的，甚至有直接用 MySQL 或 Redis 做队列的，关键看是否满足你的需求，如果是使用开源的项目，以下的表格在选型时可以参考： 10、代码管理 代码是互联网创业公司的命脉之一，代码管理很重要，常见的考量点包括两块： 安全和权限管理，将代码放到内网并且对于关系公司命脉的核心代码做严格的代码控制和机器的物理隔离； 代码管理工具，Git 作为代码管理的不二之选，你值得拥有。GitLab 是当今最火的开源 Git 托管服务端，没有之一，虽然有企业版，但是其社区版基本能满足我们大部分需求，结合 Gerrit 做 Code review，基本就完美了。当然 GitLab 也有代码对比，但没 Gerrit 直观。Gerrit 比 GitLab 提供了更好的代码检查界面与主线管理体验，更适合在对代码质量有高要求的文化下使用。 11、持续集成 持续集成简，称 CI（continuous integration），是一种软件开发实践，即团队开发成员经常集成他们的工作，每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。持续集成为研发流程提供了代码分支管理/比对、编译、检查、发布物输出等基础工作，为测试的覆盖率版本编译、生成等提供统一支持。 业界免费的持续集成工具中系统我们有如下一些选择： Jenkins：Java 写的有强大的插件机制，MIT 协议开源 （免费，定制化程度高，它可以在多台机器上进行分布式地构建和负载测试）。Jenkins 可以算是无所不能，基本没有 Jenkins 做不了的，无论从小型团队到大型团队 Jenkins 都可以搞定。不过如果要大规模使用，还是需要有人力来学习和维护。 TeamCity：TeamCity 与 Jenkins 相比使用更加友好，也是一个高度可定制化的平台。但是用的人多了，TeamCity就要收费了。 Strider：Strider 是一个开源的持续集成和部署平台，使用 Node.js 实现，存储使用的是 MongoDB，BSD 许可证，概念上类似 Travis 和Jenkins。 GitLab CI：从GitLab 8.0开始，GitLab CI 就已经集成在 GitLab，我们只要在项目中添加一个 .gitlab-ci.yml 文件，然后添加一个 Runner，即可进行持续集成。并且 GitLab 与 Docker 有着非常好的相互协作的能力。免费版与付费版本不同可以参见这里：https://about.gitlab.com/products/feature-comparison/。 Travis：Travis 和 GitHub 强关联；闭源代码使用 SaaS 还需考虑安全问题；不可定制；开源项目免费，其它收费。 Go：Go 是 ThoughtWorks 公司最新的 Cruise Control 的化身。除了 ThoughtWorks 提供的商业支持，Go 是免费的。它适用于 Windows，Mac 和各种 Linux 发行版。 12、日志系统 日志系统一般包括打日志，采集，中转，收集，存储，分析，呈现，搜索还有分发等。一些特殊的如染色，全链条跟踪或者监控都可能需要依赖于日志系统实现。日志系统的建设不仅仅是工具的建设，还有规范和组件的建设，最好一些基本的日志在框架和组件层面加就行了，比如全链接跟踪之类的。 对于常规日志系统ELK能满足大部分的需求，ELK 包括如下组件： ElasticSearch 是个开源分布式搜索引擎，它的特点有：分布式，零配置，自动发现，索引自动分片，索引副本机制，RESTful 风格接口，多数据源，自动搜索负载等。 Logstash 是一个完全开源的工具，它可以对你的日志进行收集、分析，并将其存储供以后使用。 Kibana 是一个开源和免费的工具，它可以为 Logstash 和 ElasticSearch 提供的日志分析友好的 Web 界面，可以帮助汇总、分析和搜索重要数据日志。 Filebeat 已经完全替代了 Logstash-Forwarder 成为新一代的日志采集器，同时鉴于它轻量、安全等特点，越来越多人开始使用它。 因为免费的 ELK 没有任何安全机制，所以这里使用了 Nginx 作反向代理，避免用户直接访问 Kibana 服务器。加上配置 Nginx 实现简单的用户认证，一定程度上提高安全性。另外，Nginx 本身具有负载均衡的作用，能够提高系统访问性能。ELK 架构如图4所示： 对于有实时计算的需求，可以使用 Flume + Kafka + Storm + MySQL 方案，一 般架构如图 5 所示： 其中： Flume 是一个分布式、可靠、和高可用的海量日志采集、聚合和传输的日志收集系统，支持在日志系统中定制各类数据发送方，用于收集数据；同时，Flume 提供对数据进行简单处理，并写到各种数据接受方（可定制）的能力。 Kafka 是由 Apache 软件基金会开发的一个开源流处理平台，由 Scala 和 Java 编写。其本质上是一个“按照分布式事务日志架构的大规模发布/订阅消息队列”，它以可水平扩展和高吞吐率而被广泛使用。 Kafka 追求的是高吞吐量、高负载，Flume 追求的是数据的多样性，二者结合起来简直完美。 13、监控系统 监控系统只包含与后台相关的，这里主要是两块，一个是操作系统层的监控，比如机器负载，IO，网络流量，CPU，内存等操作系统指标的监控。另一个是服务质量和业务质量的监控，比如服务的可用性，成功率，失败率，容量，QPS 等等。常见业务的监控系统先有操作系统层面的监控（这部分较成熟），然后扩展出其它监控，如 Zabbix，小米的 Open-Falcon，也有一出来就是两者都支持的，如 Prometheus。如果对业务监控要求比较高一些，在创业选型中建议可以优先考虑 Prometheus。这里有一个有趣的分布，如图6所示。 亚洲区域使用 Zabbix 较多，而美洲和欧洲，以及澳大利亚使用 Prometheus 居多，换句话说，英文国家地区（发达国家？）使用 Prometheus 较多。 Prometheus 是由 SoundCloud 开发的开源监控报警系统和时序列数据库（TSDB）。Prometheus 使用 Go 语言开发，是 Google BorgMon 监控系统的开源版本。相对于其它监控系统使用的 push 数据的方式，Prometheus 使用的是 pull 的方式，其架构如图 7 所示： 如上图所示，Prometheus 包含的主要组件如下： Prometheus Server 主要负责数据采集和存储，提供 PromQL 查询语言的支持。Server 通过配置文件、文本文件、ZooKeeper、Consul、DNS SRV Lookup 等方式指定抓取目标。根据这些目标会，Server 定时去抓取 metrics 数据，每个抓取目标需要暴露一个 http 服务的接口给它定时抓取。 客户端 SDK：官方提供的客户端类库有 Go、Java、Scala、Python、Ruby，其他还有很多第三方开发的类库，支持 Nodejs、PHP、Erlang 等。 Push Gateway 支持临时性 Job 主动推送指标的中间网关。 Exporter Exporter 是 Prometheus 的一类数据采集组件的总称。它负责从目标处搜集数据，并将其转化为 Prometheus 支持的格式。与传统的数据采集组件不同的是，它并不向中央服务器发送数据，而是等待中央服务器主动前来抓取。Prometheus 提供多种类型的 Exporter 用于采集各种不同服务的运行状态。目前支持的有数据库、硬件、消息中间件、存储系统、HTTP 服务器、JMX 等。 Alertmanager：是一个单独的服务，可以支持 Prometheus 的查询语句，提供十分灵活的报警方式。 Prometheus HTTP API 的查询方式，自定义所需要的输出。 Grafana 是一套开源的分析监视平台，支持 Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch 等数据源，其 UI 非常漂亮且高度定制化。 创业公司选择 Prometheus + Grafana 的方案，再加上统一的服务框架（如 gRPC），可以满足大部分中小团队的监控需求。 14、配置系统 随着程序功能的日益复杂，程序的配置日益增多：各种功能的开关、降级开关，灰度开关，参数的配置、服务器的地址、数据库配置等等，除此之外，对后台程序配置的要求也越来越高：配置修改后实时生效，灰度发布，分环境、分用户，分集群管理配置，完善的权限、审核机制等等，在这样的大环境下，传统的通过配置文件、数据库等方式已经越来越无法满足开发人员对配置管理的需求，业界有如下两种方案： 基于 zk 和 etcd，支持界面和 api ，用数据库来保存版本历史，预案，走审核流程，最后下发到 zk 或 etcd 这种有推送能力的存储里（服务注册本身也是用 zk 或 etcd，选型就一块了）。客户端都直接和 zk 或 etcd 打交道。至于灰度发布，各家不同，有一种实现是同时发布一个需要灰度的 IP 列表，客户端监听到配置节点变化时，对比一下自己是否属于该列表。PHP 这种无状态的语言和其他 zk/etcd 不支持的语言，只好自己在客户端的机器上起一个 Agent 来监听变化，再写到配置文件或共享内存，如 360 的 Qconf。 基于运维自动化的配置文件的推送，审核流程，配置数据管理和方案一类似，下发时生成配置文件，基于运维自动化工具如 Puppet，Ansible 推送到每个客户端，而应用则定时重新读取这个外部的配置文件，灰度发布在下发配置时指定IP列表。 创业公司前期不需要这种复杂，直接上 zk，弄一个界面管理 zk 的内容，记录一下所有人的操作日志，程序直连 zk，或者或者用 Qconf 等基于 zk 优化后的方案。 15、发布系统/部署系统 从软件生产的层面看，代码到最终服务的典型流程如图 8 所示： 从上图中可以看出，从开发人员写下代码到服务最终用户是一个漫长过程，整体可以分成三个阶段： 从代码（Code）到成品库（Artifact）这个阶段主要对开发人员的代码做持续构建并把构建产生的制品集中管理，是为部署系统准备输入内容的阶段。 从制品到可运行服务 这个阶段主要完成制品部署到指定环境，是部署系统的最基本工作内容。 从开发环境到最终生产环境 这个阶段主要完成一次变更在不同环境的迁移，是部署系统上线最终服务的核心能力。 发布系统集成了制品管理，发布流程，权限控制，线上环境版本变更，灰度发布，线上服务回滚等几方面的内容，是开发人员工作结晶最终呈现的重要通道。开源的项目中没有完全满足的项目，如果只是 Web 类项目，Walle、Piplin 都是可用的，但是功能不太满足，创业初期可以集成 Jenkins + Gitlab + Walle（可以考虑两天时间完善一下），以上方案基本包括制品管理，发布流程，权限控制，线上环境版本变更，灰度发布（需要自己实现），线上服务回滚等功能。 16、跳板机 跳板机面对的是需求是要有一种能满足角色管理与授权审批、信息资源访问控制、操作记录和审计、系统变更和维护控制要求，并生成一些统计报表配合管理规范来不断提升IT内控的合规性，能对运维人员操作行为的进行控制和审计，对误操作、违规操作导致的操作事故，快速定位原因和责任人。其功能模块一般包括：帐户管理、认证管理、授权管理、审计管理等等。 开源项目中，Jumpserver 能够实现跳板机常见需求，如授权、用户管理、服务器基本信息记录等，同时又可批量执行脚本等功能；其中录像回放、命令搜索、实时监控等特点，又能帮助运维人员回溯操作历史，方便查找操作痕迹，便于管理其他人员对服务器的操作控制。 17、机器管理 机器管理的工具选择的考量可以包含以下三个方面： 是否简单，是否需要每台机器部署 Agent（客户端） 语言的选择（Puppet/Chef vs Ansible/SaltStack ）开源技术，不看官网不足以熟练，不懂源码不足以精通；Puppet、Chef 基于 Ruby 开发，Ansible、SaltStack 基于 Python 开发的 速度的选择（Ansible vs SaltStack）Ansible 基于 SSH 协议传输数据，SaltStack 使用消息队列 zeroMQ 传输数据；大规模并发的能力对于几十台-200 台规模的兄弟来讲，Ansible的性能也可接受，如果一次操作上千台，用 salt 好一些。 如图9所示： 一般创业公司选择 Ansible 能解决大部问题，其简单，不需要安装额外的客户端，可以从命令行来运行，不需要使用配置文件。至于比较复杂的任务，Ansible 配置通过名为 Playbook 的配置文件中的 YAML 语法来加以处理。Playbook 还可以使用模板来扩展其功能。 创业公司的选择 1、选择合适的语言 选择团队熟悉的/能掌控的，创业公司人少事多，无太多冗余让研发团队熟悉新的语言，能快速上手，能快速出活，出了问题能快速解决的问题的语言才是好的选择。 选择更现代一些的，这里的现代是指语言本身已经完成一些之前需要特殊处理的特性，比如内存管理，线程等等。 选择开源轮子多的或者社区活跃度高的，这个原则是为了保证在开发过程中减少投入，有稳定可靠的轮子可以使用，遇到问题可以在网上快速搜索到答案。 选择好招人的 一门合适的语言会让创业团队减少招聘的成本，快速招到合适的人。 选择能让人有兴趣的 与上面一点相关，让人感兴趣，在后面留人时有用。 2、选择合适的组件和云服务商 选择靠谱的云服务商； 选择云服务商的组件； 选择成熟的开源组件，而不是最新出的组件； 选择采用在一线互联网公司落地并且开源的，且在社区内形成良好口碑的产品； 开源社区活跃度； 选择靠谱的云服务商，其实这是一个伪命题，因为哪个服务商都不靠谱，他们所承诺的那些可用性问题基本上都会在你的身上发生，这里我们还是需要自己做一些工作，比如多服务商备份，如用 CDN，你一定不要只选一家，至少选两家，一个是灾备，保持后台切换的能力，另一个是多点覆盖，不同的服务商在 CDN 节点上的资源是不一样的。 选择了云服务商以后，就会有很多的产品你可以选择了，比较存储，队列这些都会有现成的产品，这个时候就纠结了，是用呢？还是自己在云主机上搭呢？在这里我的建议是前期先用云服务商的，大了后再自己搞，这样会少掉很多运维的事情，但是这里要多了解一下云服务商的组件特性以及一些坑，比如他们内网会经常断开，他们升级也会闪断，所以在业务侧要做好容错和规避。 关于开源组件，尽可能选择成熟的，成熟的组件经历了时间的考验，基本不会出大的问题，并且有成套的配套工具，出了问题在网上也可以很快的找到答案，你所遇到的坑基本上都有人踩过了。 3、制定流程和规范 制定开发的规范，代码及代码分支管理规范，关键性代码仅少数人有权限； 制定发布流程规范，从发布系统落地； 制定运维规范； 制定数据库操作规范，收拢数据库操作权限； 制定告警处理流程，做到告警有人看有人处理； 制定汇报机制，晨会/周报； 4、自研和选型合适的辅助系统 所有的流程和规范都需要用系统来固化，否则就是空中楼阁，如何选择这些系统呢？参照上个章节咱们那些开源的，对比一下选择的语言，组件之类的，选择一个最合适的即可。 比如项目管理的，看下自己是什么类型的公司，开发的节奏是怎样的，瀑布，敏捷的 按项目划分，还是按客户划分等等，平时是按项目组织还是按任务组织等等。 比如日志系统，之前是打的文本，那么上一个 ELK，规范化一些日志组件，基本上很长一段时间内不用考虑日志系统的问题，最多拆分一下或者扩容一下。等到组织大了，自己搞一个日志系统。 比如代码管理，项目管理系统这些都放内网，安全，在互联网公司来说，属于命脉了，命脉的东西还是放在别人拿不到或很难拿到的地方会比较靠谱一些。 5、选择过程中需要思考的问题 技术栈的选择有点像做出了某种承诺，在一定的时间内这种承诺没法改变，于是我们需要在选择的时候有一些思考。 看前面内容，有一个词出现了三次，合适，选择是合适的，不是最好，也不是最新，是最合适，适合是针对当下，这种选择是最合适的吗？比如用 Go 这条线的东西，技术比较新，业界组件储备够吗？组织内的人员储备够吗？学习成本多少？写出来的东西能满足业务性能要求吗？能满足时间要求吗？ 向未来看一眼，在一年到三年内，我们需要做出改变吗？技术栈要做根本性的改变吗？如果组织发展很快，在 200 人，500 人时，现有的技术栈是否需要大动？ 创业过程中需要考虑成本，这里的成本不仅仅是花费多少钱，付出多少工资，有时更重要的是时间成本，很多业务在创业时大家拼的就是时间，就是一个时间窗，过了就没你什么事儿了。 基于云的创业公司后台技术架构 结合上面内容的考量，在对一个个系统和组件的做选型之后，以云服务为基础，一个创业公司的后台技术架构如图10所示： 从零搭建创业公司后台技术栈 &amp;#8617;</summary></entry><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-描述&quot; id=&quot;markdown-toc-heading-error-描述&quot;&gt;Error 描述&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-环境&quot; id=&quot;markdown-toc-heading-环境&quot;&gt;环境&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-原因&quot; id=&quot;markdown-toc-heading-error-原因&quot;&gt;Error 原因&lt;/a&gt;&lt;/li&gt;
@@ -1727,36 +2259,4 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/372580671&quot;&gt;KK 在 69 岁生日时给出的 99 条建议&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">I have another birthday, and another bunch of unsolicited advice. 又一年生日；又一堆碎碎念。 (1) That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. 儿时让你显得出格的事情会让你成年后与众不同——只要你还没有丢掉它。 【weird 一词的常用义是“怪异、离奇”。原文评论中有人指出，这个词来源于古英语 wyrd，意指“命运”。每个人都有自己的 wyrd 或 weird；也许应该学会运用我们身上的出格之处，而不是把它装进世俗的框架。KK 表示，涨姿势了。有兴趣的童鞋可以参考维基百科上 wyrd 这个词条。 另外，KK 也承认，很多建议都来自老话，他只不过把它们收集进来。所以，如果你在其他地方也读到过类似的建议，不用惊讶。】 (2) If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips. 如果你担心一趟带不上所有家伙事儿，那就分两次带好了。 (3) What you get by achieving your goals is not as important as what you become by achieving your goals. At your funeral people will not recall what you did; they will only remember how you made them feel. 达成目标所带给你的，远不及你为此而做出的自身改变。在你的葬礼上，人们不会记得你做过什么，只会记得你带给他们的感受。 (4) Recipe for success: under-promise and over-deliver. 成功的秘诀：不要承诺太满，而要超预期交付。 【看到网上有些译文把 under- 翻译成“少”，over- 翻译成“多”，但更确切的理解应该是：under- 为“不足”，over- 为“过度”。这其中的差别比较微妙。】 (5) It’s not an apology if it comes with an excuse. It is not a compliment if it comes with a request. 带有借口的道歉不是道歉；附有请求的夸赞也不是夸赞。 (6) Jesus, Superman, and Mother Teresa never made art. Only imperfect beings can make art because art begins in what is broken. 耶稣、超人和特蕾莎修女搞不了艺术。只有不完美的存在才能创作艺术，因为艺术始于残缺。 (7) If someone is trying to convince you it’s not a pyramid scheme, it’s a pyramid scheme. 如果某人试图让你相信这不是个老鼠会，那它就是个老鼠会。 (8) Learn how to tie a bowline knot. Practice in the dark. With one hand. For the rest of your life you’ll use this knot more times than you would ever believe. 学会如何打称人结。练习在黑暗中打；练习用一只手打。你会发现今后用到它的地方要远超出你的想象。 【称人结，也有叫单套结、帆索结的，是一种安全性较高也较容易解开的绳结。我照着视频学习了一下，闭着眼睛打应该没问题，单手打还不能够。】 (9) If something fails where you thought it would fail, that is not a failure. 预料中的失败算不上失败。 【这句做了一定程度的意译。原文评论中有人对此不解，认为失败就是失败，不能阻止可以预见的失败也是失败。这是看问题的角度不同，或者说，对失败的定义不同。】 (10) Be governed not by the tyranny of the urgent but by the elevation of the important. 不要被事情的紧急性牵着鼻子走，而要看它的重要性。 (11) Leave a gate behind you the way you first found it. 穿过一扇门后，保持它原来开或合的状态。 【没想到这居然是一条写入英国《乡村守则》（The Country Code）的规则，原始条文是“Leave all gates as you found them”。 有兴趣的童鞋可以查看维基百科上的词条。】 (12) The greatest rewards come from working on something that nobody has a name for. If you possibly can, work where there are no words for what you do. 做一件没有人能说清楚的事儿会带给你最大的回报。但凡有可能的话，去做一件还未被人们谈及的事情。 (13) A balcony or porch needs to be at least 6 feet (2m) deep or it won’t be used. 阳台至少应该有两米宽才有用。 (14) Don’t create things to make money; make money so you can create things. The reward for good work is more work. 不要为了赚钱而去做事；而是为了做事去赚钱。干好工作的回报是有更多的工作。 (15) In all things — except love — start with the exit strategy. Prepare for the ending. Almost anything is easier to get into than out of. 在所有事情（除去爱情）开始时做好退出计划。为结局做准备。几乎任何事情都是陷入易而抽身难。 (16) Train employees well enough they could get another job, but treat them well enough so they never want to. 尽力培训员工，使他们能有更多的职业机会；尽心善待员工，让他们永远不会考虑跳槽。 (17) Don’t aim to have others like you; aim to have them respect you. 要以获得他人的尊重而非喜爱为目标。 (18) The foundation of maturity: Just because it’s not your fault doesn’t mean it’s not your responsibility. 成熟的基本要素：不因事不关己而高高挂起。 (19) A multitude of bad ideas is necessary for one good idea. 无数个糟糕的想法中才能诞生一个好想法。 (20) Being wise means having more questions than answers. 有智慧意味着有更多的问题而非答案。 (21) Compliment people behind their back. It’ll come back to you. 背后夸人。别人也会背后夸你。 (22) Most overnight successes — in fact any significant successes — take at least 5 years. Budget your life accordingly. 绝大多数一夜之间的功成名就——事实上，任何显著的成就——都要经过至少五年（的准备）。请据此来规划你的人生。 (23) You are only as young as the last time you changed your mind. 你的年轻程度取决于你上一次改变想法的时候（想法有多成熟）。 原译：你的年轻程度取决于你上一次改变想法的时候（距今有多久）。 (24) Assume anyone asking for your account information for any reason is guilty of scamming you, unless proven innocent. The way to prove innocence is to call them back, or login to your account using numbers or a website that you provide, not them. Don’t release any identifying information while they are contacting you via phone, message or email. You must control the channel. 任何人以任何借口向你索要账号信息，都可以认为他们是骗子，除非能证明他们是无辜的。而证明他们无辜的方法是，给你自己确知的号码打电话或登录你自己确知的网站，而不是用他们给你的号码或网页地址。不要在他们打给你的电话或是在回复他们发给你的消息、邮件中透露任何个人信息。你的数据安全你掌控。 (25) Sustained outrage makes you stupid. 持续的愤怒会让你变得愚蠢。 (26) Be strict with yourself and forgiving of others. The reverse is hell for everyone. 严以律己，宽以待人。反其道而行对谁来说都是灾难。 (27) Your best response to an insult is “You’re probably right.” Often they are. 当别人冒犯你时，最好的回应是“也许您是对的”。而通常他们确实是对的。 (28) The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil. 历史上最严重的罪行总是由那些真心相信自己在与邪恶战斗的人而犯下的。警惕与邪恶做斗争。 (29) If you can avoid seeking approval of others, your power is limitless. 如果你不用在意别人的眼光，那你的力量就是无穷的。 (30) When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?” 当孩子不停地问“为什么”时，最聪明的回答是：“我不知道。你怎么看呢？” (31) To be wealthy, accumulate all those things that money can’t buy. 积攒那些用钱买不到的东西可以致富。 (32) Be the change you wish to see. 成为你想要看见的改变。 【这句话曾被认为是圣雄甘地所说，但其实甘地并没有说过这句话。】 (33) When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply. 在与他人一起头脑风暴或是即兴创作时，用令人鼓舞的“没错——而且”——而非令人泄气的“不——可是”——来回应每一条贡献，那你就能走得更深更远。 (34) Work to become, not to acquire. 工作是为了成长而非获取。 【注：此句出自美国作家和出版人阿尔伯特·哈伯德（Elbert Hubbard）。他以短篇故事《把信送给加西亚》（另译为《致加西亚的信》，A Message to Garcia）而闻名。】 (35) Don’t loan money to a friend unless you are ready to make it a gift. 别借钱给朋友，除非你已做好心理准备当作是送给他。 (36) On the way to a grand goal, celebrate the smallest victories as if each one were the final goal. No matter where it ends you are victorious. 在通往宏伟目标的路上，把每一次微不足道的胜利都当作最终目标来庆祝。这样无论在哪里结束，你都是胜利者。 (37) Calm is contagious. 镇定具有传染力。 (38) Even a foolish person can still be right about most things. Most conventional wisdom is true. 即便是一个蠢人，在大多数事情上也是对的。大多数老话都是有道理的。 (39) Always cut away from yourself. 切削时刀子的方向要朝外。 (40) Show me your calendar and I will tell you your priorities. Tell me who your friends are, and I’ll tell you where you’re going. 从你的日程安排可以看出你看重什么事情；从你的交往圈子可以看出你会是什么样的人。 【我再补充半句：从一个国家的年轻人可以看出这个国家的未来。】 (41) When hitchhiking, look like the person you want to pick you up. 搭便车时，要表现得像是你自己愿意搭载的人。 (42) Contemplating the weaknesses of others is easy; contemplating the weaknesses in yourself is hard, but it pays a much higher reward. 审视别人的弱点很容易；审视自己的弱点很难，但这会让你受益匪浅。 (43) Worth repeating: measure twice, cut once. 值得多念两遍：量两次，切一次。 【这是一句木工谚语，指在动手切割之前要核查测量是否准确，以免浪费材料。也有译为“三思而后行”的。】 (44) Your passion in life should fit you exactly; but your purpose in life should exceed you. Work for something much larger than yourself. 生活的欲望应与自身相匹配，但生命的意义应超越自我。致力于那些超越自我的事情。 【passion 的常用译法是“热情”。不过，这种热情往往是受内心的欲望或渴望而驱动的，它和另一个词 lust 可以看作是同一个本源的正反两面。】 (45) If you can’t tell what you desperately need, it’s probably sleep. 如果你不知道自己迫切想要什么的话，那么答案很可能是“睡上一觉”。 (46) When playing Monopoly, spend all you have to buy, barter, or trade for the Orange properties. Don’t bother with Utilities. 在玩《地产大亨》（也译为《大富翁》、《强手棋》）时，尽你所能去购买、交换或是竞标那些橙色资产。别管那些水、电、气公司。 【在《地产大亨》游戏中，玩家在橙色地段停留的几率最高。】 (47) If you borrow something, try to return it in better shape than you received it. Clean it, sharpen it, fill it up. 还东西时，要让它比你借它时状态更好。清洗它，磨快它，加满它。 (48) Even in the tropics it gets colder at night than you think. Pack warmly. 即便在热带，夜晚也比你想象的冷。多带两件衣服。 (49) To quiet a crowd or a drunk, just whisper. 让人群或醉鬼安静下来的办法是对他们低声耳语。 (50) Writing down one thing you are grateful for each day is the cheapest possible therapy ever. 每天记下一件让你感恩的事情。这是成本最低的（心灵）疗法。 (51) When someone tells you something is wrong, they’re usually right. When someone tells you how to fix it, they’re usually wrong. 如果人们告诉你某件事是错的，他们通常是对的；但如果他们告诉你该如何去解决问题，那通常都行不通。 (52) If you think you saw a mouse, you did. And, if there is one, there are more. 如果你觉得自己看到了一只老鼠，那一定是看到了。如果有一只的话，就一定会有更多。 (53) Money is overrated. Truly new things rarely need an abundance of money. If that was so, billionaires would have a monopoly on inventing new things, and they don’t. Instead almost all breakthroughs are made by those who lack money, because they are forced to rely on their passion, persistence and ingenuity to figure out new ways. Being poor is an advantage in innovation. 金钱被高估了。真正的新事物很少需要大量金钱。不然的话，所有新发明都会被那些亿万富翁们所垄断，但并没有。相反，几乎所有的突破都来自于那些囊中羞涩的人——他们唯有依赖自己的热情、执着和才智，才能闯出一条新路来。穷，则思变。 【穷则思变这个成语中，“穷”的原意并非贫穷，而是“穷尽”，指事物走到了尽头。不过今天，这则成语更多用来指贫穷会促使人想办法改变现状。 这和前段时间网上流行的“贫穷限制了你的想象力”是截然不同的两个视角。也许，限制想象力的从来都不是贫穷或富有。】 (54) Ignore what others may be thinking of you, because they aren’t. 不用在意别人怎么看你。他们也并不在意你。 (55) Avoid hitting the snooze button. That’s just training you to oversleep. （闹钟响时）别按“稍后提醒（snooze）”按钮。这只能让你习惯性地睡过头。 (56) Always say less than necessary. 智者不多言。 【原文出自美国作家罗伯特·格林（Robert Greene）的《权力的 48 条法则》（The 48 Laws of Power）。意思是说，当你试图用言语打动他人时，说得越多，越显得你所言之事平淡无奇。要少言，要留白。 《老子·道德经》中有“知者不言，言者不知”的说法，虽然不完全是一个意思，但可以参照着来回味。】 (57) You are given the gift of life in order to discover what your gift in life is. You will complete your mission when you figure out what your mission is. This is not a paradox. This is the way. 上天赋予你生命，是要你来发现你的天赋所在。当你找到你的使命时，你就完成了你的使命。这并非自相矛盾，而是道之所在。 【中文可以用三个字来概括这段话，就是“知天命”。】 (58) Don’t treat people as bad as they are. Treat them as good as you are. 投我以木瓜，报之以琼琚。 【这句纯粹是意译。原文直译是：“不要以他人对你的恶意来待他，而要以你的善意来待他”。】 (59) It is much easier to change how you think by changing your behavior, than it is to change your behavior by changing how you think. Act out the change you seek. 通过改变行为而改变想法，要比通过改变想法来改变行为容易得多。去实践你所寻求的改变。 (60) You can eat any dessert you want if you take only 3 bites. 如果你能只吃三小口，那任何甜点随你吃。 (61) Each time you reach out to people, bring them a blessing; then they’ll be happy to see you when you bring them a problem. 每次去到别人那里都能给人带来祝福的话，那人们也很乐意帮你解决你的问题。 【这段做了一定程度的意译。】 (62) Bad things can happen fast, but almost all good things happen slowly. 坏事无常，好事多磨。 (63) Don’t worry how or where you begin. As long as you keep moving, your success will be far from where you start. 不要太在意从哪儿或是如何开始。只要不停前进，你的成就将远远超越你的起点。 (64) When you confront a stuck bolt or screw: righty tighty, lefty loosey. 遇上卡住的螺栓时，记住：右旋（顺时针）紧，左旋（逆时针）松。 【相信我们都碰到过这种情况：想要把一个拧紧的螺丝拧松时，忽然就想不清楚该往哪个方向拧了。英语里面用 righty tighty, lefty loosey 这个押韵的短语来帮助记忆。不过，我还是会经常糊涂，特别是螺丝的位置是在物体的底部时。】 (65) If you meet a jerk, overlook them. If you meet jerks everywhere everyday, look deeper into yourself. 碰上一个混蛋的话，不用理他。总是碰上混蛋的话，好好反省一下自己。 (66) Dance with your hips. 要用你的臀部来跳舞。 【说实话，不是很清楚为啥。原文的评论里也有人较真儿说，交谊舞是不能动胯的，功夫全在脚上。 但有科学研究表明，女性舞者摆臀的动作是最吸引异性的；而男性舞者则应该动脖子和上身，再加上右膝的快速动作。 所以，这段建议其实不完整，有冒犯女权之嫌。应该再加上半句：（男舞者）要用你的脖子来跳舞。】 (67) We are not bodies that temporarily have souls. We are souls that temporarily have bodies. 我们并非短暂拥有灵魂的躯壳，而是短暂拥有躯壳的灵魂。 (68) You can reduce the annoyance of someone’s stupid belief by increasing your understanding of why they believe it. 如果你对某些人的愚蠢信念感到费解的话，不妨试着去理解他们为什么会有这种信念。 (69) If your goal does not have a schedule, it is a dream. 没有行动计划的目标只不过是白日梦。 (70) All the greatest gains in life — in wealth, relationships, or knowledge —come from the magic of compounding interest — amplifying small steady gains. All you need for abundance is to keep adding 1% more than you subtract on a regular basis. 生命中所有最重要的收益——不论是财富、人际关系还是知识——都来自于神奇的复利，它可以将持续的微小收益进一步放大。你所要做的，就是在日常基础上，持之以恒地加上 1%。 (71) The greatest breakthroughs are missed because they look like hard work. 人们之所以会错过重大突破，是因为它们看着就很难。 (72) People can’t remember more than 3 points from a speech. 一段讲话中能被人记住的点不超过三个。 (73) I have never met a person I admired who did not read more books than I did. 我所仰慕的人，读的书都比我多。 (74) The greatest teacher is called “doing”. 实践出真知。 (75) Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards. 有限的游戏旨在分出胜负；无限的游戏旨在让游戏继续进行下去。去寻找那些无限的游戏，因为它们能带给你无尽的回报。 【关于有限游戏和无限游戏，可以读读「东西文库」出品的一本小书《有限与无限的游戏》。】 (76) Everything is hard before it is easy. The day before something is a breakthrough, it’s a stupid idea. 每件事在变得容易之前都是很难的。某个想法在取得突破之前都会显得很愚蠢。 (77) A problem that can be solved with money is not really a problem. 能用钱解决的事儿就不叫事儿。 (78) When you are stuck, sleep on it. Let your subconscious work for you. 碰到卡壳的时候就睡上一觉。让潜意识来帮你解决问题。 (79) Your work will be endless, but your time is finite. You cannot limit the work so you must limit your time. Hours are the only thing you can manage. 事情是做不完的，但时间是有限的。你不可能不去做事儿，但你可以控制你的时间。时间是你唯一能掌控的事情。 (80) To succeed, get other people to pay you; to become wealthy, help other people to succeed. 让别人付钱给你可成事；帮别人成事可致富。 (81) Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies. 孩子对立规矩其实是接受甚至欢迎的。家长想要立规矩的话，只需声明“我们家对这事儿有个规矩”。事实上，你想为自己定规矩的话，也只需要“我对这件事情有个规矩”这一个理由。 (82) All guns are loaded. 所有的枪都是上了膛的。 【这是保证枪支安全的一条重要原则。永远不要将你的枪口对着人。】 (83) Many backward steps are made by standing still. 逆水行舟，不进则退。 (84) This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late. 当下是创造的最佳时机。未来二十年内最伟大、最酷炫的发明尚未诞生。你一点儿都不晚。 (85) No rain, no rainbow. 不经历风雨，怎能见彩虹。 (86) Every person you meet knows an amazing lot about something you know virtually nothing about. Your job is to discover what it is, and it won’t be obvious. 你遇到的每个人都会熟知某个你几乎一无所知的事物，而你的任务就是发现这个事物是什么。答案并非显而易见。 (87) You don’t marry a person, you marry a family. 你与之步入婚姻的并非是一个人，而是一个家庭。 (88) Always give credit, take blame. 功劳归于他人，责难归于自己。 【西方人很重视给别人足够的 credit。该给别人的 credit 没有给，就构成 plagiarism（抄袭、剽窃），是非常严重的学术不端行为。 国内年轻人缺少这方面的意识和习惯。如果你的成果中含有别人的工作，一定要明确声明，哪怕你觉得这种声明并不能给他人带来任何好处。因为这体现的是，你是否尊重事实并能如实陈述。】 (89) Be frugal in all things, except in your passions splurge. 在任何事情上都要精打细算，唯有你的热情无需如此。 (90) When making something, always get a few extras — extra material, extra parts, extra space, extra finishes. The extras serve as backups for mistakes, reduce stress, and fill your inventory for the future. They are the cheapest insurance. 做事留出裕量——多备些材料和部件，多留些空间和时间，多做些成品。这些裕量可以弥补错误、减轻压力，并可放入仓库以备将来所需。裕量是最便宜的保险。 (91) Something does not need to be perfect to be wonderful. Especially weddings. 某些事情即便不完美也很精彩，特别是婚礼。 (92) Don’t let your email inbox become your to-do list. 别把你的邮件收件箱当 to-do list 来用。 【很多时候我们并没有意识到，我们在把邮件收件箱当 to-do list 来用。比如，你可能会想着稍后再回复一封邮件；再比如，有一封看起来重要但又不紧急的邮件，你也许会故意让它保持“未读”状态，这样你有空或想起来的时候就可以把它读了。这些做法都不如用一个专门的 to-do list 工具来得有效。如果你想稍后再回复一封邮件，那就在 to-do list 里记上一笔；如果你想稍后再读某封邮件，同样把这件事记在 to-do list 里。 当然，另一种做法是，立刻、马上把该做的事儿做了。第一时间读该读的邮件，第一时间回复该回复的邮件。任何管理工具都会带来额外的成本。】 (93) The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables. 解开一团乱麻的最好方法不是去“解”，而是把它不断向外拉扯，尽可能让它变大、变松。打结处就会自然而然地解开。绳索、软管、毛线、电缆，都可以用这种方法。 【也适用于想法或心情。】 (94) Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree. 做一个称职的祖先，做一些造福子孙后代的事情。一件简单的事情就是种棵树。 (95) To combat an adversary, become their friend. 对敌之道是化敌为友。 (96) Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky. 找一件简单的事情——任何事情，极其认真地对待它，仿佛它是世界上唯一的事情。只要认真对待，你就能照亮天空。 (97) History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?” 历史告诉我们，今天我们相信的很多道理一百年后都将不再正确。今天给自己提的一个好问题就是：“我有哪些看法可能是错的？” (98) Be nice to your children because they are going to choose your nursing home. 善待子女，因为他们会决定你的养老条件。 (99) Advice like these are not laws. They are like hats. If one doesn’t fit, try another. 这些建议并非什么金科玉律。它们更像是帽子。如果戴着不合适，换一顶就是了。 原文：KK 在 69 岁生日时给出的 99 条建议</summary></entry><entry><title type="html">Mysql CTE</title><link href="https://empvalley.com/2021/08/02/mysql-cte/" rel="alternate" type="text/html" title="Mysql CTE" /><published>2021-08-02T00:00:00+08:00</published><updated>2021-08-02T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/02/mysql-cte</id><content type="html" xml:base="https://empvalley.com/2021/08/02/mysql-cte/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-异常mysql-cte-data-too-long-for-column-str-at-row-1&quot; id=&quot;markdown-toc-heading-异常mysql-cte-data-too-long-for-column-str-at-row-1&quot;&gt;异常：Mysql CTE Data too long for column 'str' at row 1…&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;heading-异常mysql-cte-data-too-long-for-column-str-at-row-1&quot;&gt;异常：Mysql CTE Data too long for column 'str' at row 1…&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
-
-&lt;p&gt;对于该异常 Mysql 官网上描述的很详细：&lt;/p&gt;
-
-&lt;p&gt;在严格（strict）SQL 模式下，语句会产生一个错误：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mysql&quot;&gt;ERROR 1406 (22001): Data too long for column 'str' at row 1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;因为要对该错误进行处理，所以语句不会执行长度截断的操作。&lt;/p&gt;
-
-&lt;p&gt;在非递归的 SELECT 部分使用 CAST() 方法增加 str 列的长度。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mysql&quot;&gt;WITH RECURSIVE cte AS
-(
-  SELECT 1 AS n, CAST('abc' AS CHAR(20)) AS str
-  UNION ALL
-  SELECT n + 1, CONCAT(str, str) FROM cte WHERE n &amp;lt; 3
-)
-SELECT * FROM cte;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://dev.mysql.com/doc/refman/8.0/en/with.html&quot; target=&quot;_blank&quot;&gt;Mysql8 参考手册&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Mysql" /><category term="CTE" /><summary type="html">异常：Mysql CTE Data too long for column 'str' at row 1… 异常：Mysql CTE Data too long for column 'str' at row 1…1 对于该异常 Mysql 官网上描述的很详细： 在严格（strict）SQL 模式下，语句会产生一个错误： ERROR 1406 (22001): Data too long for column 'str' at row 1 因为要对该错误进行处理，所以语句不会执行长度截断的操作。 在非递归的 SELECT 部分使用 CAST() 方法增加 str 列的长度。 WITH RECURSIVE cte AS ( SELECT 1 AS n, CAST('abc' AS CHAR(20)) AS str UNION ALL SELECT n + 1, CONCAT(str, str) FROM cte WHERE n &amp;lt; 3 ) SELECT * FROM cte; Mysql8 参考手册 &amp;#8617;</summary></entry></feed>
+&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/372580671&quot;&gt;KK 在 69 岁生日时给出的 99 条建议&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">I have another birthday, and another bunch of unsolicited advice. 又一年生日；又一堆碎碎念。 (1) That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. 儿时让你显得出格的事情会让你成年后与众不同——只要你还没有丢掉它。 【weird 一词的常用义是“怪异、离奇”。原文评论中有人指出，这个词来源于古英语 wyrd，意指“命运”。每个人都有自己的 wyrd 或 weird；也许应该学会运用我们身上的出格之处，而不是把它装进世俗的框架。KK 表示，涨姿势了。有兴趣的童鞋可以参考维基百科上 wyrd 这个词条。 另外，KK 也承认，很多建议都来自老话，他只不过把它们收集进来。所以，如果你在其他地方也读到过类似的建议，不用惊讶。】 (2) If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips. 如果你担心一趟带不上所有家伙事儿，那就分两次带好了。 (3) What you get by achieving your goals is not as important as what you become by achieving your goals. At your funeral people will not recall what you did; they will only remember how you made them feel. 达成目标所带给你的，远不及你为此而做出的自身改变。在你的葬礼上，人们不会记得你做过什么，只会记得你带给他们的感受。 (4) Recipe for success: under-promise and over-deliver. 成功的秘诀：不要承诺太满，而要超预期交付。 【看到网上有些译文把 under- 翻译成“少”，over- 翻译成“多”，但更确切的理解应该是：under- 为“不足”，over- 为“过度”。这其中的差别比较微妙。】 (5) It’s not an apology if it comes with an excuse. It is not a compliment if it comes with a request. 带有借口的道歉不是道歉；附有请求的夸赞也不是夸赞。 (6) Jesus, Superman, and Mother Teresa never made art. Only imperfect beings can make art because art begins in what is broken. 耶稣、超人和特蕾莎修女搞不了艺术。只有不完美的存在才能创作艺术，因为艺术始于残缺。 (7) If someone is trying to convince you it’s not a pyramid scheme, it’s a pyramid scheme. 如果某人试图让你相信这不是个老鼠会，那它就是个老鼠会。 (8) Learn how to tie a bowline knot. Practice in the dark. With one hand. For the rest of your life you’ll use this knot more times than you would ever believe. 学会如何打称人结。练习在黑暗中打；练习用一只手打。你会发现今后用到它的地方要远超出你的想象。 【称人结，也有叫单套结、帆索结的，是一种安全性较高也较容易解开的绳结。我照着视频学习了一下，闭着眼睛打应该没问题，单手打还不能够。】 (9) If something fails where you thought it would fail, that is not a failure. 预料中的失败算不上失败。 【这句做了一定程度的意译。原文评论中有人对此不解，认为失败就是失败，不能阻止可以预见的失败也是失败。这是看问题的角度不同，或者说，对失败的定义不同。】 (10) Be governed not by the tyranny of the urgent but by the elevation of the important. 不要被事情的紧急性牵着鼻子走，而要看它的重要性。 (11) Leave a gate behind you the way you first found it. 穿过一扇门后，保持它原来开或合的状态。 【没想到这居然是一条写入英国《乡村守则》（The Country Code）的规则，原始条文是“Leave all gates as you found them”。 有兴趣的童鞋可以查看维基百科上的词条。】 (12) The greatest rewards come from working on something that nobody has a name for. If you possibly can, work where there are no words for what you do. 做一件没有人能说清楚的事儿会带给你最大的回报。但凡有可能的话，去做一件还未被人们谈及的事情。 (13) A balcony or porch needs to be at least 6 feet (2m) deep or it won’t be used. 阳台至少应该有两米宽才有用。 (14) Don’t create things to make money; make money so you can create things. The reward for good work is more work. 不要为了赚钱而去做事；而是为了做事去赚钱。干好工作的回报是有更多的工作。 (15) In all things — except love — start with the exit strategy. Prepare for the ending. Almost anything is easier to get into than out of. 在所有事情（除去爱情）开始时做好退出计划。为结局做准备。几乎任何事情都是陷入易而抽身难。 (16) Train employees well enough they could get another job, but treat them well enough so they never want to. 尽力培训员工，使他们能有更多的职业机会；尽心善待员工，让他们永远不会考虑跳槽。 (17) Don’t aim to have others like you; aim to have them respect you. 要以获得他人的尊重而非喜爱为目标。 (18) The foundation of maturity: Just because it’s not your fault doesn’t mean it’s not your responsibility. 成熟的基本要素：不因事不关己而高高挂起。 (19) A multitude of bad ideas is necessary for one good idea. 无数个糟糕的想法中才能诞生一个好想法。 (20) Being wise means having more questions than answers. 有智慧意味着有更多的问题而非答案。 (21) Compliment people behind their back. It’ll come back to you. 背后夸人。别人也会背后夸你。 (22) Most overnight successes — in fact any significant successes — take at least 5 years. Budget your life accordingly. 绝大多数一夜之间的功成名就——事实上，任何显著的成就——都要经过至少五年（的准备）。请据此来规划你的人生。 (23) You are only as young as the last time you changed your mind. 你的年轻程度取决于你上一次改变想法的时候（想法有多成熟）。 原译：你的年轻程度取决于你上一次改变想法的时候（距今有多久）。 (24) Assume anyone asking for your account information for any reason is guilty of scamming you, unless proven innocent. The way to prove innocence is to call them back, or login to your account using numbers or a website that you provide, not them. Don’t release any identifying information while they are contacting you via phone, message or email. You must control the channel. 任何人以任何借口向你索要账号信息，都可以认为他们是骗子，除非能证明他们是无辜的。而证明他们无辜的方法是，给你自己确知的号码打电话或登录你自己确知的网站，而不是用他们给你的号码或网页地址。不要在他们打给你的电话或是在回复他们发给你的消息、邮件中透露任何个人信息。你的数据安全你掌控。 (25) Sustained outrage makes you stupid. 持续的愤怒会让你变得愚蠢。 (26) Be strict with yourself and forgiving of others. The reverse is hell for everyone. 严以律己，宽以待人。反其道而行对谁来说都是灾难。 (27) Your best response to an insult is “You’re probably right.” Often they are. 当别人冒犯你时，最好的回应是“也许您是对的”。而通常他们确实是对的。 (28) The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil. 历史上最严重的罪行总是由那些真心相信自己在与邪恶战斗的人而犯下的。警惕与邪恶做斗争。 (29) If you can avoid seeking approval of others, your power is limitless. 如果你不用在意别人的眼光，那你的力量就是无穷的。 (30) When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?” 当孩子不停地问“为什么”时，最聪明的回答是：“我不知道。你怎么看呢？” (31) To be wealthy, accumulate all those things that money can’t buy. 积攒那些用钱买不到的东西可以致富。 (32) Be the change you wish to see. 成为你想要看见的改变。 【这句话曾被认为是圣雄甘地所说，但其实甘地并没有说过这句话。】 (33) When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply. 在与他人一起头脑风暴或是即兴创作时，用令人鼓舞的“没错——而且”——而非令人泄气的“不——可是”——来回应每一条贡献，那你就能走得更深更远。 (34) Work to become, not to acquire. 工作是为了成长而非获取。 【注：此句出自美国作家和出版人阿尔伯特·哈伯德（Elbert Hubbard）。他以短篇故事《把信送给加西亚》（另译为《致加西亚的信》，A Message to Garcia）而闻名。】 (35) Don’t loan money to a friend unless you are ready to make it a gift. 别借钱给朋友，除非你已做好心理准备当作是送给他。 (36) On the way to a grand goal, celebrate the smallest victories as if each one were the final goal. No matter where it ends you are victorious. 在通往宏伟目标的路上，把每一次微不足道的胜利都当作最终目标来庆祝。这样无论在哪里结束，你都是胜利者。 (37) Calm is contagious. 镇定具有传染力。 (38) Even a foolish person can still be right about most things. Most conventional wisdom is true. 即便是一个蠢人，在大多数事情上也是对的。大多数老话都是有道理的。 (39) Always cut away from yourself. 切削时刀子的方向要朝外。 (40) Show me your calendar and I will tell you your priorities. Tell me who your friends are, and I’ll tell you where you’re going. 从你的日程安排可以看出你看重什么事情；从你的交往圈子可以看出你会是什么样的人。 【我再补充半句：从一个国家的年轻人可以看出这个国家的未来。】 (41) When hitchhiking, look like the person you want to pick you up. 搭便车时，要表现得像是你自己愿意搭载的人。 (42) Contemplating the weaknesses of others is easy; contemplating the weaknesses in yourself is hard, but it pays a much higher reward. 审视别人的弱点很容易；审视自己的弱点很难，但这会让你受益匪浅。 (43) Worth repeating: measure twice, cut once. 值得多念两遍：量两次，切一次。 【这是一句木工谚语，指在动手切割之前要核查测量是否准确，以免浪费材料。也有译为“三思而后行”的。】 (44) Your passion in life should fit you exactly; but your purpose in life should exceed you. Work for something much larger than yourself. 生活的欲望应与自身相匹配，但生命的意义应超越自我。致力于那些超越自我的事情。 【passion 的常用译法是“热情”。不过，这种热情往往是受内心的欲望或渴望而驱动的，它和另一个词 lust 可以看作是同一个本源的正反两面。】 (45) If you can’t tell what you desperately need, it’s probably sleep. 如果你不知道自己迫切想要什么的话，那么答案很可能是“睡上一觉”。 (46) When playing Monopoly, spend all you have to buy, barter, or trade for the Orange properties. Don’t bother with Utilities. 在玩《地产大亨》（也译为《大富翁》、《强手棋》）时，尽你所能去购买、交换或是竞标那些橙色资产。别管那些水、电、气公司。 【在《地产大亨》游戏中，玩家在橙色地段停留的几率最高。】 (47) If you borrow something, try to return it in better shape than you received it. Clean it, sharpen it, fill it up. 还东西时，要让它比你借它时状态更好。清洗它，磨快它，加满它。 (48) Even in the tropics it gets colder at night than you think. Pack warmly. 即便在热带，夜晚也比你想象的冷。多带两件衣服。 (49) To quiet a crowd or a drunk, just whisper. 让人群或醉鬼安静下来的办法是对他们低声耳语。 (50) Writing down one thing you are grateful for each day is the cheapest possible therapy ever. 每天记下一件让你感恩的事情。这是成本最低的（心灵）疗法。 (51) When someone tells you something is wrong, they’re usually right. When someone tells you how to fix it, they’re usually wrong. 如果人们告诉你某件事是错的，他们通常是对的；但如果他们告诉你该如何去解决问题，那通常都行不通。 (52) If you think you saw a mouse, you did. And, if there is one, there are more. 如果你觉得自己看到了一只老鼠，那一定是看到了。如果有一只的话，就一定会有更多。 (53) Money is overrated. Truly new things rarely need an abundance of money. If that was so, billionaires would have a monopoly on inventing new things, and they don’t. Instead almost all breakthroughs are made by those who lack money, because they are forced to rely on their passion, persistence and ingenuity to figure out new ways. Being poor is an advantage in innovation. 金钱被高估了。真正的新事物很少需要大量金钱。不然的话，所有新发明都会被那些亿万富翁们所垄断，但并没有。相反，几乎所有的突破都来自于那些囊中羞涩的人——他们唯有依赖自己的热情、执着和才智，才能闯出一条新路来。穷，则思变。 【穷则思变这个成语中，“穷”的原意并非贫穷，而是“穷尽”，指事物走到了尽头。不过今天，这则成语更多用来指贫穷会促使人想办法改变现状。 这和前段时间网上流行的“贫穷限制了你的想象力”是截然不同的两个视角。也许，限制想象力的从来都不是贫穷或富有。】 (54) Ignore what others may be thinking of you, because they aren’t. 不用在意别人怎么看你。他们也并不在意你。 (55) Avoid hitting the snooze button. That’s just training you to oversleep. （闹钟响时）别按“稍后提醒（snooze）”按钮。这只能让你习惯性地睡过头。 (56) Always say less than necessary. 智者不多言。 【原文出自美国作家罗伯特·格林（Robert Greene）的《权力的 48 条法则》（The 48 Laws of Power）。意思是说，当你试图用言语打动他人时，说得越多，越显得你所言之事平淡无奇。要少言，要留白。 《老子·道德经》中有“知者不言，言者不知”的说法，虽然不完全是一个意思，但可以参照着来回味。】 (57) You are given the gift of life in order to discover what your gift in life is. You will complete your mission when you figure out what your mission is. This is not a paradox. This is the way. 上天赋予你生命，是要你来发现你的天赋所在。当你找到你的使命时，你就完成了你的使命。这并非自相矛盾，而是道之所在。 【中文可以用三个字来概括这段话，就是“知天命”。】 (58) Don’t treat people as bad as they are. Treat them as good as you are. 投我以木瓜，报之以琼琚。 【这句纯粹是意译。原文直译是：“不要以他人对你的恶意来待他，而要以你的善意来待他”。】 (59) It is much easier to change how you think by changing your behavior, than it is to change your behavior by changing how you think. Act out the change you seek. 通过改变行为而改变想法，要比通过改变想法来改变行为容易得多。去实践你所寻求的改变。 (60) You can eat any dessert you want if you take only 3 bites. 如果你能只吃三小口，那任何甜点随你吃。 (61) Each time you reach out to people, bring them a blessing; then they’ll be happy to see you when you bring them a problem. 每次去到别人那里都能给人带来祝福的话，那人们也很乐意帮你解决你的问题。 【这段做了一定程度的意译。】 (62) Bad things can happen fast, but almost all good things happen slowly. 坏事无常，好事多磨。 (63) Don’t worry how or where you begin. As long as you keep moving, your success will be far from where you start. 不要太在意从哪儿或是如何开始。只要不停前进，你的成就将远远超越你的起点。 (64) When you confront a stuck bolt or screw: righty tighty, lefty loosey. 遇上卡住的螺栓时，记住：右旋（顺时针）紧，左旋（逆时针）松。 【相信我们都碰到过这种情况：想要把一个拧紧的螺丝拧松时，忽然就想不清楚该往哪个方向拧了。英语里面用 righty tighty, lefty loosey 这个押韵的短语来帮助记忆。不过，我还是会经常糊涂，特别是螺丝的位置是在物体的底部时。】 (65) If you meet a jerk, overlook them. If you meet jerks everywhere everyday, look deeper into yourself. 碰上一个混蛋的话，不用理他。总是碰上混蛋的话，好好反省一下自己。 (66) Dance with your hips. 要用你的臀部来跳舞。 【说实话，不是很清楚为啥。原文的评论里也有人较真儿说，交谊舞是不能动胯的，功夫全在脚上。 但有科学研究表明，女性舞者摆臀的动作是最吸引异性的；而男性舞者则应该动脖子和上身，再加上右膝的快速动作。 所以，这段建议其实不完整，有冒犯女权之嫌。应该再加上半句：（男舞者）要用你的脖子来跳舞。】 (67) We are not bodies that temporarily have souls. We are souls that temporarily have bodies. 我们并非短暂拥有灵魂的躯壳，而是短暂拥有躯壳的灵魂。 (68) You can reduce the annoyance of someone’s stupid belief by increasing your understanding of why they believe it. 如果你对某些人的愚蠢信念感到费解的话，不妨试着去理解他们为什么会有这种信念。 (69) If your goal does not have a schedule, it is a dream. 没有行动计划的目标只不过是白日梦。 (70) All the greatest gains in life — in wealth, relationships, or knowledge —come from the magic of compounding interest — amplifying small steady gains. All you need for abundance is to keep adding 1% more than you subtract on a regular basis. 生命中所有最重要的收益——不论是财富、人际关系还是知识——都来自于神奇的复利，它可以将持续的微小收益进一步放大。你所要做的，就是在日常基础上，持之以恒地加上 1%。 (71) The greatest breakthroughs are missed because they look like hard work. 人们之所以会错过重大突破，是因为它们看着就很难。 (72) People can’t remember more than 3 points from a speech. 一段讲话中能被人记住的点不超过三个。 (73) I have never met a person I admired who did not read more books than I did. 我所仰慕的人，读的书都比我多。 (74) The greatest teacher is called “doing”. 实践出真知。 (75) Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards. 有限的游戏旨在分出胜负；无限的游戏旨在让游戏继续进行下去。去寻找那些无限的游戏，因为它们能带给你无尽的回报。 【关于有限游戏和无限游戏，可以读读「东西文库」出品的一本小书《有限与无限的游戏》。】 (76) Everything is hard before it is easy. The day before something is a breakthrough, it’s a stupid idea. 每件事在变得容易之前都是很难的。某个想法在取得突破之前都会显得很愚蠢。 (77) A problem that can be solved with money is not really a problem. 能用钱解决的事儿就不叫事儿。 (78) When you are stuck, sleep on it. Let your subconscious work for you. 碰到卡壳的时候就睡上一觉。让潜意识来帮你解决问题。 (79) Your work will be endless, but your time is finite. You cannot limit the work so you must limit your time. Hours are the only thing you can manage. 事情是做不完的，但时间是有限的。你不可能不去做事儿，但你可以控制你的时间。时间是你唯一能掌控的事情。 (80) To succeed, get other people to pay you; to become wealthy, help other people to succeed. 让别人付钱给你可成事；帮别人成事可致富。 (81) Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies. 孩子对立规矩其实是接受甚至欢迎的。家长想要立规矩的话，只需声明“我们家对这事儿有个规矩”。事实上，你想为自己定规矩的话，也只需要“我对这件事情有个规矩”这一个理由。 (82) All guns are loaded. 所有的枪都是上了膛的。 【这是保证枪支安全的一条重要原则。永远不要将你的枪口对着人。】 (83) Many backward steps are made by standing still. 逆水行舟，不进则退。 (84) This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late. 当下是创造的最佳时机。未来二十年内最伟大、最酷炫的发明尚未诞生。你一点儿都不晚。 (85) No rain, no rainbow. 不经历风雨，怎能见彩虹。 (86) Every person you meet knows an amazing lot about something you know virtually nothing about. Your job is to discover what it is, and it won’t be obvious. 你遇到的每个人都会熟知某个你几乎一无所知的事物，而你的任务就是发现这个事物是什么。答案并非显而易见。 (87) You don’t marry a person, you marry a family. 你与之步入婚姻的并非是一个人，而是一个家庭。 (88) Always give credit, take blame. 功劳归于他人，责难归于自己。 【西方人很重视给别人足够的 credit。该给别人的 credit 没有给，就构成 plagiarism（抄袭、剽窃），是非常严重的学术不端行为。 国内年轻人缺少这方面的意识和习惯。如果你的成果中含有别人的工作，一定要明确声明，哪怕你觉得这种声明并不能给他人带来任何好处。因为这体现的是，你是否尊重事实并能如实陈述。】 (89) Be frugal in all things, except in your passions splurge. 在任何事情上都要精打细算，唯有你的热情无需如此。 (90) When making something, always get a few extras — extra material, extra parts, extra space, extra finishes. The extras serve as backups for mistakes, reduce stress, and fill your inventory for the future. They are the cheapest insurance. 做事留出裕量——多备些材料和部件，多留些空间和时间，多做些成品。这些裕量可以弥补错误、减轻压力，并可放入仓库以备将来所需。裕量是最便宜的保险。 (91) Something does not need to be perfect to be wonderful. Especially weddings. 某些事情即便不完美也很精彩，特别是婚礼。 (92) Don’t let your email inbox become your to-do list. 别把你的邮件收件箱当 to-do list 来用。 【很多时候我们并没有意识到，我们在把邮件收件箱当 to-do list 来用。比如，你可能会想着稍后再回复一封邮件；再比如，有一封看起来重要但又不紧急的邮件，你也许会故意让它保持“未读”状态，这样你有空或想起来的时候就可以把它读了。这些做法都不如用一个专门的 to-do list 工具来得有效。如果你想稍后再回复一封邮件，那就在 to-do list 里记上一笔；如果你想稍后再读某封邮件，同样把这件事记在 to-do list 里。 当然，另一种做法是，立刻、马上把该做的事儿做了。第一时间读该读的邮件，第一时间回复该回复的邮件。任何管理工具都会带来额外的成本。】 (93) The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables. 解开一团乱麻的最好方法不是去“解”，而是把它不断向外拉扯，尽可能让它变大、变松。打结处就会自然而然地解开。绳索、软管、毛线、电缆，都可以用这种方法。 【也适用于想法或心情。】 (94) Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree. 做一个称职的祖先，做一些造福子孙后代的事情。一件简单的事情就是种棵树。 (95) To combat an adversary, become their friend. 对敌之道是化敌为友。 (96) Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky. 找一件简单的事情——任何事情，极其认真地对待它，仿佛它是世界上唯一的事情。只要认真对待，你就能照亮天空。 (97) History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?” 历史告诉我们，今天我们相信的很多道理一百年后都将不再正确。今天给自己提的一个好问题就是：“我有哪些看法可能是错的？” (98) Be nice to your children because they are going to choose your nursing home. 善待子女，因为他们会决定你的养老条件。 (99) Advice like these are not laws. They are like hats. If one doesn’t fit, try another. 这些建议并非什么金科玉律。它们更像是帽子。如果戴着不合适，换一顶就是了。 原文：KK 在 69 岁生日时给出的 99 条建议</summary></entry></feed>
