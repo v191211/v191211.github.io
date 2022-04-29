@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2021-09-22T05:42:34+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">从零搭建创业公司后台技术栈</title><link href="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/" rel="alternate" type="text/html" title="从零搭建创业公司后台技术栈" /><published>2021-09-22T00:00:00+08:00</published><updated>2021-09-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/22/build-technology-stack-from-scratch</id><content type="html" xml:base="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2022-04-29T04:17:39-04:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">乔布斯弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="乔布斯弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00-04:00</published><updated>2022-03-31T00:00:00-04:00</updated><id>https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。&lt;/p&gt;
+
+&lt;p&gt;However, aside from work, I have little joy. In the end, wealth is only a fact of life that I am accustomed to.&lt;/p&gt;
+
+&lt;p&gt;但是除工作外，我并不觉得幸福，财富只是一个我习惯了的生活方式。&lt;/p&gt;
+
+&lt;p&gt;At this moment, lying on the sick bed and recalling my whole life, I realize that all the recognition and wealth that I took so much pride in, have paled and become meaningless in the face of impending death.&lt;/p&gt;
+
+&lt;p&gt;此时此刻躺在病床上回顾我的一生，我知道我曾引为自豪的公众认可的财富和面临即将到来的死亡时显得得苍白和毫无意义。&lt;/p&gt;
+
+&lt;p&gt;In the darkness, I look at the green lights from the life supporting machines and hear the humming mechanical sounds, I can feel the breath of god of death drawing closer …&lt;/p&gt;
+
+&lt;p&gt;此时此刻在黑暗中，我双眼看着维持生命的仪器发出的绿光的时候，两耳听见这些仪器发出的蜂鸣声的时候，我切身感受到了死亡之神一步步走进时发出的呼吸声音……&lt;/p&gt;
+
+&lt;p&gt;Now I know, when we have accumulated sufficient wealth to last our lifetime, we should pursue other matters that are unrelated to wealth …&lt;/p&gt;
+
+&lt;p&gt;现在我明白了，在我们积累了足够的物质财富可以让我们享受一生的时候，我们还应该追求其它无关财富的东西……&lt;/p&gt;
+
+&lt;p&gt;Should be something that is more important:&lt;/p&gt;
+
+&lt;p&gt;一些比财富更重要的东西：&lt;/p&gt;
+
+&lt;p&gt;Perhaps relationships, perhaps art, perhaps a dream from younger days&lt;/p&gt;
+
+&lt;p&gt;可以是亲情关系的东西，可以是艺术的东西，可以是你少年时的梦。&lt;/p&gt;
+
+&lt;p&gt;Non-stop pursuing of wealth will only turn a person into a twisted being, just like me.&lt;/p&gt;
+
+&lt;p&gt;无休止地物质财富只会把一个人变成一具扭曲的生命，就好比现在的我。&lt;/p&gt;
+
+&lt;p&gt;God gave us the senses to let us feel the love in everyone’s heart, not the illusions brought about by wealth.&lt;/p&gt;
+
+&lt;p&gt;上帝给了我们知觉，让我们可以感受每个人内心的那份爱，不是感受财富带来的幻觉。&lt;/p&gt;
+
+&lt;p&gt;The wealth I have won in my life I cannot bring with me. What I can bring is only the memories precipitated by love.&lt;/p&gt;
+
+&lt;p&gt;我一生换来的荣华富贵我是无法带走的。我唯一能带走的，就是爱沉淀下来的美好回忆。&lt;/p&gt;
+
+&lt;p&gt;That’s the true riches which will follow you, accompany you, giving you strength and light to go on.&lt;/p&gt;
+
+&lt;p&gt;这才是真正的富有：它随你身后，它伴你左右，它给你前行的力量和一束光亮。&lt;/p&gt;
+
+&lt;p&gt;Love can travel a thousand miles. Life has no limit. Go where you want to go. Reach the height you want to reach. It is all in your heart and in your hands.&lt;/p&gt;
+
+&lt;p&gt;爱能跨越千山万水，生命无止境。放飞身心，无限攀登。这一切就在你心里就在你手中。&lt;/p&gt;
+
+&lt;p&gt;What is the most expensive bed in the world?&lt;/p&gt;
+
+&lt;p&gt;这世界上最昂贵的床榻是什么？&lt;/p&gt;
+
+&lt;p&gt;Sick bed …&lt;/p&gt;
+
+&lt;p&gt;是病榻……&lt;/p&gt;
+
+&lt;p&gt;You can employ someone to drive the car for you, make money for you but you cannot have someone to bear the sickness for you.&lt;/p&gt;
+
+&lt;p&gt;你可以请司机为你开车，请人为你赚钱，但是你请不到人为你分担病痛。&lt;/p&gt;
+
+&lt;p&gt;Material things lost can be found. But there is one thing that can never be found when it is lost — Life.&lt;/p&gt;
+
+&lt;p&gt;荣华富贵失去可以复还来，但有一样东西一旦失去将永不复归：那就是生命。&lt;/p&gt;
+
+&lt;p&gt;When a person goes into the operating room, he will realize that there is one book that he has yet to finish reading — Book of Healthy Life.&lt;/p&gt;
+
+&lt;p&gt;当人进到手术室时，他才会发现有一本书自己还没卒读，书名叫“健康生活之书”。&lt;/p&gt;
+
+&lt;p&gt;Whichever stage in life we are at right now, with time, we will face the day when the curtain comes down.&lt;/p&gt;
+
+&lt;p&gt;无论我们现在处于生活的哪个阶段，我们终有帷幕落下的那一天。&lt;/p&gt;
+
+&lt;p&gt;Treasure Love for your family, love for your spouse, love for your friends.&lt;/p&gt;
+
+&lt;p&gt;珍惜珍爱你的家庭，珍爱你的配偶，珍爱你的朋友。&lt;/p&gt;
+
+&lt;p&gt;Treat yourself well. Cherish others.&lt;/p&gt;
+
+&lt;p&gt;珍惜自己，珍惜他人。&lt;/p&gt;
+
+&lt;p&gt;进而，生活有四个真理：&lt;/p&gt;
+
+&lt;p&gt;1）不要教育孩子发财，而是教育他们快乐。当他们长大时，他们会知道事物的价值，而不仅仅是价格。&lt;/p&gt;
+
+&lt;p&gt;2）以食物为药，否则，你必须以药物为食。&lt;/p&gt;
+
+&lt;p&gt;3）爱你的人永远不会抛弃你，即使有100个理由放弃，她也会找到坚持的理由。&lt;/p&gt;
+
+&lt;p&gt;4）很少人知道，他出生时就被爱，死时也被爱着。在这两者之间，您必须对爱进行管理。&lt;/p&gt;
+
+&lt;p&gt;如果你只想走得快点，可以一个人走！但是，如果你想走得远一点，那就和朋友一起走吧！&lt;/p&gt;
+
+&lt;p&gt;世界上最好得医生：&lt;/p&gt;
+
+&lt;p&gt;1）阳光&lt;/p&gt;
+
+&lt;p&gt;2）休息&lt;/p&gt;
+
+&lt;p&gt;3）锻炼&lt;/p&gt;
+
+&lt;p&gt;4）健康饮食&lt;/p&gt;
+
+&lt;p&gt;5）信心与爱心&lt;/p&gt;
+
+&lt;p&gt;6）朋友&lt;/p&gt;
+
+&lt;p&gt;上面的道理来自一位海外的朋友，在最后的岁月，让我们共勉！&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://mrxn.net/other/466.html&quot; target=&quot;_blank&quot;&gt;乔布斯弥留之际关于生命意义的最后遗言&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="乔布斯" /><category term="生命意义" /><summary type="html"></summary></entry><entry><title type="html">从零搭建创业公司后台技术栈</title><link href="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/" rel="alternate" type="text/html" title="从零搭建创业公司后台技术栈" /><published>2021-09-22T00:00:00-04:00</published><updated>2021-09-22T00:00:00-04:00</updated><id>https://empvalley.com/2021/09/22/build-technology-stack-from-scratch</id><content type="html" xml:base="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-前言&quot; id=&quot;markdown-toc-heading-前言&quot;&gt;前言&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-各系统组件选型&quot; id=&quot;markdown-toc-heading-各系统组件选型&quot;&gt;各系统组件选型&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-1项目管理bug管理问题管理&quot; id=&quot;markdown-toc-heading-1项目管理bug管理问题管理&quot;&gt;1、项目管理/Bug管理/问题管理&lt;/a&gt;&lt;/li&gt;
@@ -530,7 +644,7 @@
       &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/sDzpa0BhkwvXuapPxZ7fug&quot; target=&quot;_blank&quot;&gt;从零搭建创业公司后台技术栈&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="技术栈" /><summary type="html">前言 各系统组件选型 1、项目管理/Bug管理/问题管理 2、DNS 3、LB（负载均衡） 4、CDN 5、RPC 框架 6、名字发现/服务发现 7、关系数据库 8、NoSQL 9、消息中间件 10、代码管理 11、持续集成 12、日志系统 13、监控系统 14、配置系统 15、发布系统/部署系统 16、跳板机 17、机器管理 创业公司的选择 1、选择合适的语言 2、选择合适的组件和云服务商 3、制定流程和规范 4、自研和选型合适的辅助系统 5、选择过程中需要思考的问题 基于云的创业公司后台技术架构 前言 说到后台技术栈，脑海中是不是浮现的是这样一幅图？ 1 有点眼晕，以下只是我们会用到的一些语言的合集，而且只是语言层面的一部分，就整个后台技术栈来说，这只是一个开始，从语言开始，还有很多很多的内容。今天要说的后台是大后台的概念，放在服务器上的东西都属于后台的东西，比如使用的框架，语言，数据库，服务，操作系统等等。 整个后台技术栈我的理解包括 4 个层面的内容： 语言：用了哪些开发语言，如：C++/Java/Go/PHP/Python/Ruby 等等； 组件：用了哪些组件，如：MQ 组件，数据库组件等等； 流程：怎样的流程和规范，如：开发流程，项目流程，发布流程，监控告警流程，代码规范等等； 系统：系统化建设，上面的流程需要有系统来保证，如：规范发布流程的发布系统，代码管理系统等等； 结合以上的的 4 个层面的内容，整个后台技术栈的结构如图 2 所示： 以上的这些内容都需要我们从零开始搭建，在创业公司，没有大公司那些完善的基础设施，需要我们从开源界，从云服务商甚至有些需要自己去组合，去拼装，去开发一个适合自己的组件或系统以达成我们的目标。咱们一个个系统和组件的做选型，最终形成我们的后台技术栈。 各系统组件选型 1、项目管理/Bug管理/问题管理 项目管理软件是整个业务的需求，问题，流程等等的集中地，大家的跨部门沟通协同大多依赖于项目管理工具。有一些 SaaS 的项目管理服务可以使用，但是很多时间不满足需求，此时我们可以选择一些开源的项目，这些项目本身有一定的定制能力，有丰富的插件可以使用，一般的创业公司需求基本上都能得到满足，常用的项目如下： Redmine：用 Ruby 开发的，有较多的插件可以使用，能自定义字段，集成了项目管理，Bug 问题跟踪，WIKI 等功能，不过好多插件 N 年没有更新了； Phabricator：用 PHP 开发的，Facebook 之前的内部工具，开发这工具的哥们离职后自己搞了一个公司专门做这个软件，集成了代码托管， Code Review，任务管理，文档管理，问题跟踪等功能，强烈推荐较敏捷的团队使用； Jira：用 Java 开发的，有用户故事，task 拆分，燃尽图等等，可以做项目管理，也可以应用于跨部门沟通场景，较强大； 悟空 CRM ：这个不是项目管理，这个是客户管理，之所以在这里提出来，是因为在 To B 的创业公司里面，往往是以客户为核心来做事情的，可以将项目管理和问题跟进的在悟空 CRM 上面来做，他的开源版本已经基本实现了 CR&amp;lt; 的核心 功能，还带有一个任务管理功能，用于问题跟进，不过用这个的话，还是需要另一个项目管理的软件协助，顺便说一嘴，这个系统的代码写得很难维护，只能适用于客户规模小（1万以内）时。 2、DNS DNS 是一个很通用的服务，创业公司基本上选择一个合适的云厂商就行了，国内主要是两家： 阿里万网：阿里 2014 年收购了万网，整合了其域名服务，最终形成了现在的阿里万网，其中就包含 DNS 这块的服务； 腾讯 DNSPod：腾讯 2012 年以 4000 万收购 DNSPod 100% 股份，主要提供域名解析和一些防护功能； 如果你的业务是在国内，主要就是这两家，选 一个就好，像今日头条这样的企业用的也是 DNSPod 的服务，除非一些特殊的原因才需要自建，比如一些 CDN 厂商，或者对区域有特殊限制的。要实惠一点用阿里最便宜的基础版就好了，要成功率高一些，还是用 DNSPod 的贵的那种。 在国外还是选择亚马逊吧，阿里的 DNS 服务只有在日本和美国有节点，东南亚最近才开始部点， DNSPod 也只有美国和日本，像一些出海的企业，其选择的云服务基本都是亚马逊。 如果是线上产品，DNS 强烈建议用付费版，阿里的那几十块钱的付费版基本可以满足需求。如果还需要一些按省份或按区域调试的逻辑，则需要加钱，一年也就几百块，省钱省力。 如果是国外，优先选择亚马逊，如果需要国内外互通并且有自己的 APP 的话，建议还是自己实现一些容灾逻辑或者智能调度，因为没有一个现成的 DNS 服务能同时较好的满足国内外场景，或者用多个域名，不同的域名走不同的 DNS 。 3、LB（负载均衡） LB（负载均衡）是一个通用服务，一般云厂商的 LB 服务基本都会如下功能： 支持四层协议请求（包括 TCP、UDP 协议）； 支持七层协议请求（包括 HTTP、HTTPS 协议）； 集中化的证书管理系统支持 HTTPS 协议； 健康检查； 如果你线上的服务机器都是用的云服务，并且是在同一个云服务商的话，可以直接使用云服务商提供的 LB 服务，如阿里云的 SLB，腾讯云的 CLB，亚马逊的 ELB 等等。如果是自建机房基本都是 LVS + Nginx。 4、CDN CDN 现在已经是一个很红很红的市场，基本上只能挣一些辛苦钱，都是贴着成本在卖。国内以网宿为龙头，他们家占据整个国内市场份额的 40% 以上，后面就是腾讯，阿里。网宿有很大一部分是因为直播的兴起而崛起。 国外，Amazon 和 Akamai 合起来占比大概在 50%，曾经的国际市场老大 Akamai 拥有全球超一半的份额，在 Amazon CDN入局后，份额跌去了将近 20%，众多中小企业都转向后者，Akamai 也是无能为力。 国内出海的 CDN 厂商，更多的是为国内的出海企业服务，三家大一点的 CDN 服务商里面也就网宿的节点多一些，但是也多不了多少。阿里和腾讯还处于前期阶段，仅少部分国家有节点。 就创业公司来说，CDN 用腾讯云或阿里云即可，其相关系统较完善，能轻松接入，网宿在系统支持层面相对较弱一些，而且还贵一些。并且，当流量上来后，CDN 不能只用一家，需要用多家，不同的 CDN 在全国的节点覆盖不一样，而且针对不同的客户云厂商内部有些区分客户集群，并不是全节点覆盖（但有些云厂商说自己是全网节点），除了节点覆盖的问题，多 CDN 也在一定程度上起到容灾的作用。 5、RPC 框架 维基百科对 RPC 的定义是：远程过程调用（Remote Procedure Call，RPC）是一个计算机通信协议。该协议允许运行于一台计算机的程序调用另一台计算机的子程序，而程序员无需额外地为这个交互作用编程。 通俗来讲，一个完整的 RPC 调用过程，就是 Server 端实现了一个函数，客户端使用 RPC 框架提供的接口，调用这个函数的实现，并获取返回值的过程。 业界 RPC 框架大致分为两大流派，一种侧重跨语言调用，另一种是偏重服务治理。 跨语言调用型的 RPC 框架有 Thrift、gRPC、Hessian、Hprose 等。这类 RPC 框架侧重于服务的跨语言调用，能够支持大部分的语言进行语言无关的调用，非常适合多语言调用场景。但这类框架没有服务发现相关机制，实际使用时需要代理层进行请求转发和负载均衡策略控制。 其中，gRPC 是 Google 开发的高性能、通用的开源 RPC 框架，其由 Google 主要面向移动应用开发并基于 HTTP/2 协议标准而设计，基于 ProtoBuf（Protocol Buffers）序列化协议开发，且支持众多开发语言。本身它不是分布式的，所以要实现框架的功能需要进一步的开发。 Hprose（High Performance Remote Object Service Engine）是一个 MIT 开源许可的新型轻量级跨语言跨平台的面向对象的高性能远程动态通讯中间件。 服务治理型的 RPC 框架的特点是功能丰富，提供高性能的远程调用、服务发现及服务治理能力，适用于大型服务的服务解耦及服务治理，对于特定语言(Java)的项目可以实现透明化接入。缺点是语言耦合度较高，跨语言支持难度较大。国内常见的冶理型 RPC 框架如下： Dubbo：Dubbo 是阿里巴巴公司开源的一个 Java 高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring 框架无缝集成。当年在淘宝内部，Dubbo 由于跟淘宝另一个类似的框架 HSF 有竞争关系，导致 Dubbo 团队解散，最近又活过来了，有专职同学投入。 DubboX：DubboX 是由当当在基于 Dubbo 框架扩展的一个 RPC 框架，支持 REST 风格的远程调用、Kryo/FST 序列化，增加了一些新的feature。Motan：Motan 是新浪微博开源的一个 Java 框架。它诞生的比较晚，起于 2013 年，2016 年 5 月开源。Motan 在微博平台中已经广泛应用，每天为数百个服务完成近千亿次的调用。 rpcx：rpcx 是一个类似阿里巴巴 Dubbo 和微博 Motan 的分布式的 RPC 服务框架，基于 Golang net/rpc 实现。但是 rpcx 基本只有一个人在维护，没有完善的社区，使用前要慎重，之前做 Golang 的 RPC 选型时也有考虑这个，最终还是放弃了，选择了 gRPC，如果想自己自研一个 RPC 框架，可以参考学习一下。 6、名字发现/服务发现 名字发现和服务发现分为两种模式，一个是客户端发现模式，一种是服务端发现模式。 框架中常用的服务发现是客户端发现模式。 所谓服务端发现模式是指客户端通过一个负载均衡器向服务发送请求，负载均衡器查询服务注册表并把请求路由到一台可用的服务实例上。现在常用的负载均衡器都是此类模式，常用于微服务中。 所有的名字发现和服务发现都要依赖于一个可用性非常高的服务注册表，业界常用的服务注册表有如下三个： etcd，一个高可用、分布式、一致性、key-value 方式的存储，被用在分享配置和服务发现中。两个著名的项目使用了它：Kubernetes 和 Cloud Foundry。 Consul，一个发现和配置服务的工具，为客户端注册和发现服务提供了API，Consul还可以通过执行健康检查决定服务的可用性。 Apache ZooKeeper，是一个广泛使用、高性能的针对分布式应用的协调服务。Apache ZooKeeper 本来是 Hadoop 的子工程，现在已经是顶级工程了。 除此之外也可以自己实现服务实现，或者用 Redis 也行，只是需要自己实现高可用性。 7、关系数据库 关系数据库分为两种，一种是传统关系数据，如 Oracle，MySQL，Maria，DB2，PostgreSQL 等等，另一种是 NewSQL，即至少要满足以下五点的新型关系数据库： 完整地支持 SQL，支持 JOIN / GROUP BY /子查询等复杂 SQL 查询。 支持传统数据标配的 ACID 事务，支持强隔离级别。 具有弹性伸缩的能力，扩容缩容对于业务层完全透明。 真正的高可用，异地多活、故障恢复的过程不需要人为的接入，系统能够自动地容灾和进行强一致的数据恢复。 具备一定的大数据分析能力。 传统关系数据库用得最多的是 MySQL，成熟，稳定，一些基本的需求都能满足，在一定数据量级之前基本单机传统数据库都可以搞定，而且现在较多的开源系统都是基于 MySQL，开箱即用，再加上主从同步和前端缓存，百万 pv 的应用都可以搞定了。不过 CentOS 7 已经放弃了 MySQL，而改使用 MariaDB。MariaDB 数据库管理系统是 MySQ L的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。 在 Google 发布了 F1: A Distributed SQL Database That Scales 和 Spanner: Google’s Globally-Distributed Databasa 之后，业界开始流行起 NewSQL。于是有了 CockroachDB，于是有了奇叔公司的 TiDB。国内已经有比较多的公司使用 TiDB，之前在创业公司时在大数据分析时已经开始应用 TiDB，当时应用的主要原因是 MySQL 要使用分库分表，逻辑开发比较复杂，扩展性不够。 8、NoSQL NoSQL 顾名思义就是 Not-Only SQL，也有人说是 No – SQL，个人偏向于 Not-Only SQL，它并不是用来替代关系库，而是作为关系型数据库的补充而存在。 常见 NoSQL 有4个类型： 键值，适用于内容缓存，适合混合工作负载并发高扩展要求大的数据集，其优点是简单，查询速度快，缺点是缺少结构化数据，常见的有 Redis，Memcache，BerkeleyDB 和 Voldemort 等等； 列式，以列簇式存储，将同一列数据存在一起，常见于分布式的文件系统，其中以 Hbase，Cassandra 为代表。Cassandra 多用于写多读少的场景，国内用得比较多的有 360，大概 1500 台机器的集群，国外大规模使用的公司比较多，如 eBay，Instagram，Apple 和沃尔玛等等； 文档，数据存储方案非常适用承载大量不相关且结构差别很大的复杂信息。性能介于 kv 和关系数据库之间，它的灵感来于 lotus notes，常见的有 MongoDB，CouchDB 等等； 图形，图形数据库擅长处理任何涉及关系的状况。社交网络，推荐系统等。专注于构建关系图谱，需要对整个图做计算才能得出结果，不容易做分布式的集群方案，常见的有 Neo4J，InfoGrid 等。 除了以上4种类型，还有一些特种的数据库，如对象数据库，XML 数据库，这些都有针对性对某些存储类型做了优化的数据库。 在实际应用场景中，何时使用关系数据库，何时使用 NoSQL，使用哪种类型的数据库，这是我们在做架构选型时一个非常重要的考量，甚至会影响整个架构的方案。 9、消息中间件 消息中间件在后台系统中是必不可少的一个组件，一般我们会在以下场景中使用消息中间件： 异步处理：异步处理是使用消息中间件的一个主要原因，在工作中最常见的异步场景有用户注册成功后需要发送注册成功邮件、缓存过期时先返回老的数据，然后异步更新缓存、异步写日志等等；通过异步处理，可以减少主流程的等待响应时间，让非主流程或者非重要业务通过消息中间件做集中的异步处理。 系统解耦：比如在电商系统中，当用户成功支付完成订单后，需要将支付结果给通知ERP系统、发票系统、WMS、推荐系统、搜索系统、风控系统等进行业务处理；这些业务处理不需要实时处理、不需要强一致，只需要最终一致性即可，因此可以通过消息中间件进行系统解耦。通过这种系统解耦还可以应对未来不明确的系统需求。 削峰填谷：当系统遇到大流量时，监控图上会看到一个一个的山峰样的流量图，通过使用消息中间件将大流量的请求放入队列，通过消费者程序将队列中的处理请求慢慢消化，达到消峰填谷的效果。最典型的场景是秒杀系统，在电商的秒杀系统中下单服务往往会是系统的瓶颈，因为下单需要对库存等做数据库操作，需要保证强一致性，此时使用消息中间件进行下单排队和流控，让下单服务慢慢把队列中的单处理完，保护下单服务，以达到削峰填谷的作用。 业界消息中间件是一个非常通用的东西，大家在做选型时有使用开源的，也有自己造轮子的，甚至有直接用 MySQL 或 Redis 做队列的，关键看是否满足你的需求，如果是使用开源的项目，以下的表格在选型时可以参考： 10、代码管理 代码是互联网创业公司的命脉之一，代码管理很重要，常见的考量点包括两块： 安全和权限管理，将代码放到内网并且对于关系公司命脉的核心代码做严格的代码控制和机器的物理隔离； 代码管理工具，Git 作为代码管理的不二之选，你值得拥有。GitLab 是当今最火的开源 Git 托管服务端，没有之一，虽然有企业版，但是其社区版基本能满足我们大部分需求，结合 Gerrit 做 Code review，基本就完美了。当然 GitLab 也有代码对比，但没 Gerrit 直观。Gerrit 比 GitLab 提供了更好的代码检查界面与主线管理体验，更适合在对代码质量有高要求的文化下使用。 11、持续集成 持续集成简，称 CI（continuous integration），是一种软件开发实践，即团队开发成员经常集成他们的工作，每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。持续集成为研发流程提供了代码分支管理/比对、编译、检查、发布物输出等基础工作，为测试的覆盖率版本编译、生成等提供统一支持。 业界免费的持续集成工具中系统我们有如下一些选择： Jenkins：Java 写的有强大的插件机制，MIT 协议开源 （免费，定制化程度高，它可以在多台机器上进行分布式地构建和负载测试）。Jenkins 可以算是无所不能，基本没有 Jenkins 做不了的，无论从小型团队到大型团队 Jenkins 都可以搞定。不过如果要大规模使用，还是需要有人力来学习和维护。 TeamCity：TeamCity 与 Jenkins 相比使用更加友好，也是一个高度可定制化的平台。但是用的人多了，TeamCity就要收费了。 Strider：Strider 是一个开源的持续集成和部署平台，使用 Node.js 实现，存储使用的是 MongoDB，BSD 许可证，概念上类似 Travis 和Jenkins。 GitLab CI：从GitLab 8.0开始，GitLab CI 就已经集成在 GitLab，我们只要在项目中添加一个 .gitlab-ci.yml 文件，然后添加一个 Runner，即可进行持续集成。并且 GitLab 与 Docker 有着非常好的相互协作的能力。免费版与付费版本不同可以参见这里：https://about.gitlab.com/products/feature-comparison/。 Travis：Travis 和 GitHub 强关联；闭源代码使用 SaaS 还需考虑安全问题；不可定制；开源项目免费，其它收费。 Go：Go 是 ThoughtWorks 公司最新的 Cruise Control 的化身。除了 ThoughtWorks 提供的商业支持，Go 是免费的。它适用于 Windows，Mac 和各种 Linux 发行版。 12、日志系统 日志系统一般包括打日志，采集，中转，收集，存储，分析，呈现，搜索还有分发等。一些特殊的如染色，全链条跟踪或者监控都可能需要依赖于日志系统实现。日志系统的建设不仅仅是工具的建设，还有规范和组件的建设，最好一些基本的日志在框架和组件层面加就行了，比如全链接跟踪之类的。 对于常规日志系统ELK能满足大部分的需求，ELK 包括如下组件： ElasticSearch 是个开源分布式搜索引擎，它的特点有：分布式，零配置，自动发现，索引自动分片，索引副本机制，RESTful 风格接口，多数据源，自动搜索负载等。 Logstash 是一个完全开源的工具，它可以对你的日志进行收集、分析，并将其存储供以后使用。 Kibana 是一个开源和免费的工具，它可以为 Logstash 和 ElasticSearch 提供的日志分析友好的 Web 界面，可以帮助汇总、分析和搜索重要数据日志。 Filebeat 已经完全替代了 Logstash-Forwarder 成为新一代的日志采集器，同时鉴于它轻量、安全等特点，越来越多人开始使用它。 因为免费的 ELK 没有任何安全机制，所以这里使用了 Nginx 作反向代理，避免用户直接访问 Kibana 服务器。加上配置 Nginx 实现简单的用户认证，一定程度上提高安全性。另外，Nginx 本身具有负载均衡的作用，能够提高系统访问性能。ELK 架构如图4所示： 对于有实时计算的需求，可以使用 Flume + Kafka + Storm + MySQL 方案，一 般架构如图 5 所示： 其中： Flume 是一个分布式、可靠、和高可用的海量日志采集、聚合和传输的日志收集系统，支持在日志系统中定制各类数据发送方，用于收集数据；同时，Flume 提供对数据进行简单处理，并写到各种数据接受方（可定制）的能力。 Kafka 是由 Apache 软件基金会开发的一个开源流处理平台，由 Scala 和 Java 编写。其本质上是一个“按照分布式事务日志架构的大规模发布/订阅消息队列”，它以可水平扩展和高吞吐率而被广泛使用。 Kafka 追求的是高吞吐量、高负载，Flume 追求的是数据的多样性，二者结合起来简直完美。 13、监控系统 监控系统只包含与后台相关的，这里主要是两块，一个是操作系统层的监控，比如机器负载，IO，网络流量，CPU，内存等操作系统指标的监控。另一个是服务质量和业务质量的监控，比如服务的可用性，成功率，失败率，容量，QPS 等等。常见业务的监控系统先有操作系统层面的监控（这部分较成熟），然后扩展出其它监控，如 Zabbix，小米的 Open-Falcon，也有一出来就是两者都支持的，如 Prometheus。如果对业务监控要求比较高一些，在创业选型中建议可以优先考虑 Prometheus。这里有一个有趣的分布，如图6所示。 亚洲区域使用 Zabbix 较多，而美洲和欧洲，以及澳大利亚使用 Prometheus 居多，换句话说，英文国家地区（发达国家？）使用 Prometheus 较多。 Prometheus 是由 SoundCloud 开发的开源监控报警系统和时序列数据库（TSDB）。Prometheus 使用 Go 语言开发，是 Google BorgMon 监控系统的开源版本。相对于其它监控系统使用的 push 数据的方式，Prometheus 使用的是 pull 的方式，其架构如图 7 所示： 如上图所示，Prometheus 包含的主要组件如下： Prometheus Server 主要负责数据采集和存储，提供 PromQL 查询语言的支持。Server 通过配置文件、文本文件、ZooKeeper、Consul、DNS SRV Lookup 等方式指定抓取目标。根据这些目标会，Server 定时去抓取 metrics 数据，每个抓取目标需要暴露一个 http 服务的接口给它定时抓取。 客户端 SDK：官方提供的客户端类库有 Go、Java、Scala、Python、Ruby，其他还有很多第三方开发的类库，支持 Nodejs、PHP、Erlang 等。 Push Gateway 支持临时性 Job 主动推送指标的中间网关。 Exporter Exporter 是 Prometheus 的一类数据采集组件的总称。它负责从目标处搜集数据，并将其转化为 Prometheus 支持的格式。与传统的数据采集组件不同的是，它并不向中央服务器发送数据，而是等待中央服务器主动前来抓取。Prometheus 提供多种类型的 Exporter 用于采集各种不同服务的运行状态。目前支持的有数据库、硬件、消息中间件、存储系统、HTTP 服务器、JMX 等。 Alertmanager：是一个单独的服务，可以支持 Prometheus 的查询语句，提供十分灵活的报警方式。 Prometheus HTTP API 的查询方式，自定义所需要的输出。 Grafana 是一套开源的分析监视平台，支持 Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch 等数据源，其 UI 非常漂亮且高度定制化。 创业公司选择 Prometheus + Grafana 的方案，再加上统一的服务框架（如 gRPC），可以满足大部分中小团队的监控需求。 14、配置系统 随着程序功能的日益复杂，程序的配置日益增多：各种功能的开关、降级开关，灰度开关，参数的配置、服务器的地址、数据库配置等等，除此之外，对后台程序配置的要求也越来越高：配置修改后实时生效，灰度发布，分环境、分用户，分集群管理配置，完善的权限、审核机制等等，在这样的大环境下，传统的通过配置文件、数据库等方式已经越来越无法满足开发人员对配置管理的需求，业界有如下两种方案： 基于 zk 和 etcd，支持界面和 api ，用数据库来保存版本历史，预案，走审核流程，最后下发到 zk 或 etcd 这种有推送能力的存储里（服务注册本身也是用 zk 或 etcd，选型就一块了）。客户端都直接和 zk 或 etcd 打交道。至于灰度发布，各家不同，有一种实现是同时发布一个需要灰度的 IP 列表，客户端监听到配置节点变化时，对比一下自己是否属于该列表。PHP 这种无状态的语言和其他 zk/etcd 不支持的语言，只好自己在客户端的机器上起一个 Agent 来监听变化，再写到配置文件或共享内存，如 360 的 Qconf。 基于运维自动化的配置文件的推送，审核流程，配置数据管理和方案一类似，下发时生成配置文件，基于运维自动化工具如 Puppet，Ansible 推送到每个客户端，而应用则定时重新读取这个外部的配置文件，灰度发布在下发配置时指定IP列表。 创业公司前期不需要这种复杂，直接上 zk，弄一个界面管理 zk 的内容，记录一下所有人的操作日志，程序直连 zk，或者或者用 Qconf 等基于 zk 优化后的方案。 15、发布系统/部署系统 从软件生产的层面看，代码到最终服务的典型流程如图 8 所示： 从上图中可以看出，从开发人员写下代码到服务最终用户是一个漫长过程，整体可以分成三个阶段： 从代码（Code）到成品库（Artifact）这个阶段主要对开发人员的代码做持续构建并把构建产生的制品集中管理，是为部署系统准备输入内容的阶段。 从制品到可运行服务 这个阶段主要完成制品部署到指定环境，是部署系统的最基本工作内容。 从开发环境到最终生产环境 这个阶段主要完成一次变更在不同环境的迁移，是部署系统上线最终服务的核心能力。 发布系统集成了制品管理，发布流程，权限控制，线上环境版本变更，灰度发布，线上服务回滚等几方面的内容，是开发人员工作结晶最终呈现的重要通道。开源的项目中没有完全满足的项目，如果只是 Web 类项目，Walle、Piplin 都是可用的，但是功能不太满足，创业初期可以集成 Jenkins + Gitlab + Walle（可以考虑两天时间完善一下），以上方案基本包括制品管理，发布流程，权限控制，线上环境版本变更，灰度发布（需要自己实现），线上服务回滚等功能。 16、跳板机 跳板机面对的是需求是要有一种能满足角色管理与授权审批、信息资源访问控制、操作记录和审计、系统变更和维护控制要求，并生成一些统计报表配合管理规范来不断提升IT内控的合规性，能对运维人员操作行为的进行控制和审计，对误操作、违规操作导致的操作事故，快速定位原因和责任人。其功能模块一般包括：帐户管理、认证管理、授权管理、审计管理等等。 开源项目中，Jumpserver 能够实现跳板机常见需求，如授权、用户管理、服务器基本信息记录等，同时又可批量执行脚本等功能；其中录像回放、命令搜索、实时监控等特点，又能帮助运维人员回溯操作历史，方便查找操作痕迹，便于管理其他人员对服务器的操作控制。 17、机器管理 机器管理的工具选择的考量可以包含以下三个方面： 是否简单，是否需要每台机器部署 Agent（客户端） 语言的选择（Puppet/Chef vs Ansible/SaltStack ）开源技术，不看官网不足以熟练，不懂源码不足以精通；Puppet、Chef 基于 Ruby 开发，Ansible、SaltStack 基于 Python 开发的 速度的选择（Ansible vs SaltStack）Ansible 基于 SSH 协议传输数据，SaltStack 使用消息队列 zeroMQ 传输数据；大规模并发的能力对于几十台-200 台规模的兄弟来讲，Ansible的性能也可接受，如果一次操作上千台，用 salt 好一些。 如图9所示： 一般创业公司选择 Ansible 能解决大部问题，其简单，不需要安装额外的客户端，可以从命令行来运行，不需要使用配置文件。至于比较复杂的任务，Ansible 配置通过名为 Playbook 的配置文件中的 YAML 语法来加以处理。Playbook 还可以使用模板来扩展其功能。 创业公司的选择 1、选择合适的语言 选择团队熟悉的/能掌控的，创业公司人少事多，无太多冗余让研发团队熟悉新的语言，能快速上手，能快速出活，出了问题能快速解决的问题的语言才是好的选择。 选择更现代一些的，这里的现代是指语言本身已经完成一些之前需要特殊处理的特性，比如内存管理，线程等等。 选择开源轮子多的或者社区活跃度高的，这个原则是为了保证在开发过程中减少投入，有稳定可靠的轮子可以使用，遇到问题可以在网上快速搜索到答案。 选择好招人的 一门合适的语言会让创业团队减少招聘的成本，快速招到合适的人。 选择能让人有兴趣的 与上面一点相关，让人感兴趣，在后面留人时有用。 2、选择合适的组件和云服务商 选择靠谱的云服务商； 选择云服务商的组件； 选择成熟的开源组件，而不是最新出的组件； 选择采用在一线互联网公司落地并且开源的，且在社区内形成良好口碑的产品； 开源社区活跃度； 选择靠谱的云服务商，其实这是一个伪命题，因为哪个服务商都不靠谱，他们所承诺的那些可用性问题基本上都会在你的身上发生，这里我们还是需要自己做一些工作，比如多服务商备份，如用 CDN，你一定不要只选一家，至少选两家，一个是灾备，保持后台切换的能力，另一个是多点覆盖，不同的服务商在 CDN 节点上的资源是不一样的。 选择了云服务商以后，就会有很多的产品你可以选择了，比较存储，队列这些都会有现成的产品，这个时候就纠结了，是用呢？还是自己在云主机上搭呢？在这里我的建议是前期先用云服务商的，大了后再自己搞，这样会少掉很多运维的事情，但是这里要多了解一下云服务商的组件特性以及一些坑，比如他们内网会经常断开，他们升级也会闪断，所以在业务侧要做好容错和规避。 关于开源组件，尽可能选择成熟的，成熟的组件经历了时间的考验，基本不会出大的问题，并且有成套的配套工具，出了问题在网上也可以很快的找到答案，你所遇到的坑基本上都有人踩过了。 3、制定流程和规范 制定开发的规范，代码及代码分支管理规范，关键性代码仅少数人有权限； 制定发布流程规范，从发布系统落地； 制定运维规范； 制定数据库操作规范，收拢数据库操作权限； 制定告警处理流程，做到告警有人看有人处理； 制定汇报机制，晨会/周报； 4、自研和选型合适的辅助系统 所有的流程和规范都需要用系统来固化，否则就是空中楼阁，如何选择这些系统呢？参照上个章节咱们那些开源的，对比一下选择的语言，组件之类的，选择一个最合适的即可。 比如项目管理的，看下自己是什么类型的公司，开发的节奏是怎样的，瀑布，敏捷的 按项目划分，还是按客户划分等等，平时是按项目组织还是按任务组织等等。 比如日志系统，之前是打的文本，那么上一个 ELK，规范化一些日志组件，基本上很长一段时间内不用考虑日志系统的问题，最多拆分一下或者扩容一下。等到组织大了，自己搞一个日志系统。 比如代码管理，项目管理系统这些都放内网，安全，在互联网公司来说，属于命脉了，命脉的东西还是放在别人拿不到或很难拿到的地方会比较靠谱一些。 5、选择过程中需要思考的问题 技术栈的选择有点像做出了某种承诺，在一定的时间内这种承诺没法改变，于是我们需要在选择的时候有一些思考。 看前面内容，有一个词出现了三次，合适，选择是合适的，不是最好，也不是最新，是最合适，适合是针对当下，这种选择是最合适的吗？比如用 Go 这条线的东西，技术比较新，业界组件储备够吗？组织内的人员储备够吗？学习成本多少？写出来的东西能满足业务性能要求吗？能满足时间要求吗？ 向未来看一眼，在一年到三年内，我们需要做出改变吗？技术栈要做根本性的改变吗？如果组织发展很快，在 200 人，500 人时，现有的技术栈是否需要大动？ 创业过程中需要考虑成本，这里的成本不仅仅是花费多少钱，付出多少工资，有时更重要的是时间成本，很多业务在创业时大家拼的就是时间，就是一个时间窗，过了就没你什么事儿了。 基于云的创业公司后台技术架构 结合上面内容的考量，在对一个个系统和组件的做选型之后，以云服务为基础，一个创业公司的后台技术架构如图10所示： 从零搭建创业公司后台技术栈 &amp;#8617;</summary></entry><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="技术栈" /><summary type="html"></summary></entry><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00-04:00</published><updated>2021-09-17T00:00:00-04:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-描述&quot; id=&quot;markdown-toc-heading-error-描述&quot;&gt;Error 描述&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-环境&quot; id=&quot;markdown-toc-heading-环境&quot;&gt;环境&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-原因&quot; id=&quot;markdown-toc-heading-error-原因&quot;&gt;Error 原因&lt;/a&gt;&lt;/li&gt;
@@ -612,7 +726,7 @@
       &lt;p&gt;&lt;a href=&quot;https://learnku.com/laravel/t/14111/curl-error-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate-see-httpcurlhaxxselibcurlclibcurl-errorshtml&quot; target=&quot;_blank&quot;&gt;cURL error 60: SSL证书问题:无法获取本地发行的证书&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSL" /><summary type="html">Error 描述 环境 Error 原因 解决方案 Error 描述 cURL error 60: SSL certificate problem: unable to get local issuer certificate (see http://curl.haxx.se/libcurl/c/libcurl-errors.html) 1 2 3 环境 名称 版本 来客PHP在线客服系统 LK_DIY5.0.8 PHP PHP-56 Web服务器 Apache2.4.48 DB MySQL5.7.26 部署环境 Windows Server 2019 Datacenter 管理软件 宝塔免费版7.3.0 Error 原因 操作系统中的 CA 证书列表过期了。 解决方案 下载证书 pem 文件。 修改 宝塔目录/php/php版本/php.ini 文件： curl.cainfo = &quot;下载的pem文件路径&quot; 重新启动 Apache 和 在线客服系统。 在线客服系统中的 CURLOPT_SSL_VERIFYPEER 参数本身就是关闭的。 curl: (60) SSL 证书问题 &amp;#8617; curl error 60 ssl证书问题，无法获取本地发行的证书 &amp;#8617; cURL error 60: SSL证书问题:无法获取本地发行的证书 &amp;#8617;</summary></entry><entry><title type="html">深入理解设计模式</title><link href="https://empvalley.com/2021/09/11/dive-into-design-patterns/" rel="alternate" type="text/html" title="深入理解设计模式" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/dive-into-design-patterns</id><content type="html" xml:base="https://empvalley.com/2021/09/11/dive-into-design-patterns/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSL" /><summary type="html">Error 描述 Error 描述</summary></entry><entry><title type="html">深入理解设计模式</title><link href="https://empvalley.com/2021/09/11/dive-into-design-patterns/" rel="alternate" type="text/html" title="深入理解设计模式" /><published>2021-09-11T00:00:00-04:00</published><updated>2021-09-11T00:00:00-04:00</updated><id>https://empvalley.com/2021/09/11/dive-into-design-patterns</id><content type="html" xml:base="https://empvalley.com/2021/09/11/dive-into-design-patterns/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-关于本书&quot; id=&quot;markdown-toc-heading-关于本书&quot;&gt;关于本书&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-关于作者&quot; id=&quot;markdown-toc-heading-关于作者&quot;&gt;关于作者&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-内容结构&quot; id=&quot;markdown-toc-heading-内容结构&quot;&gt;内容结构&lt;/a&gt;    &lt;ul&gt;
@@ -742,7 +856,7 @@
       &lt;p&gt;对原文章内容有所修改。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="设计模式" /><summary type="html">关于本书 关于作者 内容结构 前置部分 正文部分 附录 昨天读完了《深入理解设计模式》（《Dive Into Design Patterns》）这本书，还是有颇多感触的，这本书是由 Alexander Shvets 编写，主要对 22 种设计模式做了一个直观、形象并且足够简单的介绍。这本书的结构非常清晰，主要分为前置部分（介绍设计模式的出现的缘由以及其设计所应当遵循的原则）与正文（将 22 种设计模式分为了三类，并对每一个设计模式做了充分的介绍）两部分，其中正文部分是本书的重点，下面对这本书做一个必要的总结，以期在以后查阅该书时能够快速索引。1 2 关于本书 起初这本书是在浏览这个网站 Source Making 所注意到的，这个网站是代码洁癖的福音，因为里面这个网站对设计模式、反模式、重构以及 UML 做了一个全面的介绍，致力于让开发者能够写出更加漂亮的代码。因为最近打算深入了解下 TCP 在 Linux 操作系统的实现，但是《TCP Socket In C》的作者建议在读该书前要对设计模式有所了解，虽然本科期间开设了关于设计模式的课程，但无奈当时我太划水，没怎么听，而且正好最近对设计模式也很感兴趣，所以那就一石三鸟，通过读这本书弥补一下本科的遗憾，满足一下我的兴趣、以及了解一下《TCP Socket In C》这本书的前置知识吧！ 关于作者 Alexander Shvets，俄国人，在领英上的信息显示其硕士毕业于莫斯科国立鲍曼技术大学（Bauman Moscow State Technical University），在很多个公司就职过，现在是 ScanToBuy 公司的CTO。 内容结构 前置部分 前置部分包含三章，分别是： 面向对象介绍，其中分为： 面向对象基础：一些诸如类、对象、继承等 OOP 基础知识，乏善可陈； 面向对象核心思想：抽象、多态、封装、继承。本科知识、乏善可陈。需要注意实现与继承的连线画法上的区别，因为正文部分会有大量的箭头，现在不清楚后面读起来也容易搞混，耽误不必要的时间； 对象之间的关系：对象之间的关系，即关联、依赖、组合、聚合。需要注意它们连线画法上的区别。 设计模式介绍，其中分为： 什么是设计模式：介绍了设计模式的结构、分类以及发明者（GoF）; 为什么要学习设计模式； 软件设计原则，这部分比较重要，也是各个设计模式出现的初衷：当前软件设计面临什么问题、我们应当如何解决这些问题、以及解决这些问题应当遵循哪些原则。其中分为： 设计原则：什么才是好的设计？作者认为应当是： 封装变化：主要的原则是最小化变化所带来的影响，有方法层面的封装以及类层面的封装； 面向接口编程、而非面向实现编程：接口可以理解为没有成员变量的抽象类，面向接口编程的抽象度会更高； 使用组合来代替继承所带来的问题：继承可能带来维护灾难，使用组合关系能够更好地解决这个问题，举个例子，TCP 里的 Socket Base 类有一个域用来存放拥塞控制算法，即我把 Vegas 作为我的拥塞控制算法（has）；而之前则是直接基于基类往下继承，即我是 Vegas 拥塞控制算法（is）。在 NS3 的技术文档中也描述了这种实现方式： Before, a congestion control was considered in the code as a stand-alone TCP. In software-engineering terms, the inheritance relation between a TCP congestion algorithm, for example TcpNewReno , and the main TCP class TcpSocketBase , logically implied that “TcpNewReno was-a TcpSocketBase ”. The change consisted in reverting this paradigm in a more sound statement: “TcpSocketBase has TcpNewReno as congestion control algorithm”, which basically translates in avoiding the inheritance relation between these classes, and writing an interface to exchange data between sockets and congestion control modules. Such modularity is already employed in real-world stacks (a famous example is the modularization of congestion control algorithms in Linux). 这种设计有很多缺点，此不赘述。 SOLID 原则：SOLID 原则是五个不同原则的简称，它们分别是：单一责任原则（Single Responsibility Principle）、开闭原则（Open/Closed Principle）、里氏代换原则（Liskov Substitution Principle）、接口分离原则（Interface Segregation Principle）以及依赖倒置原则（Dependency Inversion Principle）。下面对这五个原则进行逐一的介绍： Single Responsibility Principle：每一个类应当只负责其应当负责的部分，当软件变得逐渐庞大、责任越来越多时，就应当将责任分离以防止原类变得过于庞大； Open/Closed Principle：类应当对于扩展开放、对于更改封闭（高内聚、低耦合）； Liskov Substitution Principle：这个原则比较有意思，它的出现是基于多态的考虑（当扩展一个类时，应当记住我们在任何时刻都可以传递一个子类的对象在基类的位置，所以我们应当时刻考虑我们的设计基于此所带来的影响）。这个原则也可以细分为几个子原则：相对于父类来说，子类的函数参数应当更加抽象，不能加强前置。子类的返回值、报出异常应当更加具象，不能削弱后置。子类不应该加强前置条件，尽量添加新函数，而不是重写原有函数； Interface Segregation Principle：把不相关的函数分离成多个接口，而不是全部放在一个接口里，这会导致实现该接口的类也要实现那些它们可能用不到的接口； Dependency Inversion Principle：高级类（业务类）应当依赖于低级类（轮子类）的抽象，而不是直接依赖，这会导致耦合关系。 正文部分 正文部分分为三部分，分别是： 创建型设计模式：包含工厂模式、抽象工厂模式、建造者模式、原型模式、单例模式； 结构型设计模式：包含适配器模式、桥接模式、复合模式、装饰器模式、外观模式、享元模式、代理模式； 行为型设计模式：包含责任链模式、命令模式、迭代器模式、中介者模式、备忘录模式、观察者模式、状态模式、策略模式、模板方法模式、访问者模式。 在介绍每一个单一的设计模式时，也分为一下几部分： 问题 解决方案 UML 结构 伪代码 应用场景 如何实现 优缺点 和其他设计模式的关系 总的来说，从 UML 的角度，所有的设计模式可以概括为： 设计模式速查手册 附录 书中的箭头 本书中的继承、实现、关联、依赖、组合、聚合分别使用六种箭头表示： 继承：三角实线箭头 实现：三角虚线箭头 关联：普通实线箭头 依赖：普通虚线箭头 组合：实心菱形箭头 聚合：虚心菱形箭头 深入理解设计模式 &amp;#8617; 对原文章内容有所修改。 &amp;#8617;</summary></entry><entry><title type="html">同步 fork</title><link href="https://empvalley.com/2021/09/11/syncing-a-fork/" rel="alternate" type="text/html" title="同步 fork" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/syncing-a-fork</id><content type="html" xml:base="https://empvalley.com/2021/09/11/syncing-a-fork/">&lt;p&gt;从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="设计模式" /><summary type="html">昨天读完了《深入理解设计模式》（《Dive Into Design Patterns》）这本书，还是有颇多感触的，这本书是由 Alexander Shvets 编写，主要对 22 种设计模式做了一个直观、形象并且足够简单的介绍。这本书的结构非常清晰，主要分为前置部分（介绍设计模式的出现的缘由以及其设计所应当遵循的原则）与正文（将 22 种设计模式分为了三类，并对每一个设计模式做了充分的介绍）两部分，其中正文部分是本书的重点，下面对这本书做一个必要的总结，以期在以后查阅该书时能够快速索引。1 2 深入理解设计模式 &amp;#8617; 对原文章内容有所修改。 &amp;#8617;</summary></entry><entry><title type="html">同步 fork</title><link href="https://empvalley.com/2021/09/11/syncing-a-fork/" rel="alternate" type="text/html" title="同步 fork" /><published>2021-09-11T00:00:00-04:00</published><updated>2021-09-11T00:00:00-04:00</updated><id>https://empvalley.com/2021/09/11/syncing-a-fork</id><content type="html" xml:base="https://empvalley.com/2021/09/11/syncing-a-fork/">&lt;p&gt;从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -802,7 +916,7 @@
       &lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork&quot; target=&quot;_blank&quot;&gt;同步 fork&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html">从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。1 打开 Git Bash 切换到项目目录 从上游仓库 fetch 分支及各分支相应的提交，提交到分支 BRANCHNAME 的提交会存储在本地分支 upstream/BRANCHNAME 中 $ git fetch upstream &amp;gt; remote: Counting objects: 75, done. &amp;gt; remote: Compressing objects: 100% (53/53), done. &amp;gt; remote: Total 62 (delta 27), reused 44 (delta 9) &amp;gt; Unpacking objects: 100% (62/62), done. &amp;gt; From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY &amp;gt; * [new branch] main -&amp;gt; upstream/main 切换到本地分支，示例中使用的是 main $ git checkout main &amp;gt; Switched to branch 'main' 合并上游分支改变到本地分支，而不会丢失本地的修改，示例中使用的是 upstream/main $ git merge upstream/main &amp;gt; Updating a422352..5fdff0f &amp;gt; Fast-forward &amp;gt; README | 9 ------- &amp;gt; README.md | 7 ++++++ &amp;gt; 2 files changed, 7 insertions(+), 9 deletions(-) &amp;gt; delete mode 100644 README &amp;gt; create mode 100644 README.md 如果你的本地分支没有能够引起冲突的提交，Git 会使用 &quot;fast-forward&quot;： $ git merge upstream/main &amp;gt; Updating 34e91da..16c56ad &amp;gt; Fast-forward &amp;gt; README.md | 5 +++-- &amp;gt; 1 file changed, 3 insertions(+), 2 deletions(-) 注：同步 fork 只会更新本地仓库，更新远程代码库必须使用 push 命令。 同步 fork &amp;#8617;</summary></entry><entry><title type="html">理解本真的 REST 架构风格</title><link href="https://empvalley.com/2021/09/11/understanding-restful-style/" rel="alternate" type="text/html" title="理解本真的 REST 架构风格" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/understanding-restful-style</id><content type="html" xml:base="https://empvalley.com/2021/09/11/understanding-restful-style/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html"></summary></entry><entry><title type="html">理解本真的 REST 架构风格</title><link href="https://empvalley.com/2021/09/11/understanding-restful-style/" rel="alternate" type="text/html" title="理解本真的 REST 架构风格" /><published>2021-09-11T00:00:00-04:00</published><updated>2021-09-11T00:00:00-04:00</updated><id>https://empvalley.com/2021/09/11/understanding-restful-style</id><content type="html" xml:base="https://empvalley.com/2021/09/11/understanding-restful-style/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-引子&quot; id=&quot;markdown-toc-heading-引子&quot;&gt;引子&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-web-技术发展与-rest-的由来&quot; id=&quot;markdown-toc-heading-web-技术发展与-rest-的由来&quot;&gt;Web 技术发展与 REST 的由来&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-rest-详解&quot; id=&quot;markdown-toc-heading-rest-详解&quot;&gt;REST 详解&lt;/a&gt;&lt;/li&gt;
@@ -1075,7 +1189,7 @@
       &lt;p&gt;&lt;a href=&quot;https://www.infoq.cn/article/understanding-restful-style/&quot; target=&quot;_blank&quot;&gt;理解本真的 REST 架构风格&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="REST架构" /><summary type="html">引子 Web 技术发展与 REST 的由来 REST 详解 本文是“深入探索REST”专栏系列深度内容中的第二篇，它将带您领略REST 架构的起源、与Web 的关系、REST 架构的本质及特性，以及REST 架构与其他架构风格之间的比较。1 引子 在移动互联网、云计算迅猛发展的今天，作为一名Web 开发者，如果您还没听说过“REST”这个buzzword，显然已经落伍了。夸张点说，甚至“出了门都不好意思跟别人打招呼”。尽管如此，对于REST 这个泊来品的理解，大多数人（包括一些资深的架构师）仍然停留在“盲人摸象”的阶段。常常听到各种各样关于REST 的说法，例如：有人说：“我们这套新的API 决定不用Web Service（SOAP+WSDL），而是直接使用HTTP+JSON，也就是用RESTful 的方式来开发。” 不用SOAP，甚至也不用XML，就自动变成了RESTful 了。还有人认为：REST 与传统的Web Service 其实没有本质区别，只是对于URI 的构造方式提出了更多要求，而这些要求Web Service 完全都可以实现。潜台词是：既生瑜，何生亮。Web Service 已经足够好了，干嘛还要再折腾什么REST。这些对于REST 的不同说法，果真如此吗？REST 究竟是什么？是一种新的技术、一种新的架构、还是一种新的规范？ 对于这些问题笔者先不解答，为了深入理解REST 是什么，我们需要回顾一下Web 发展的最初年代，从源头上讲讲REST 是怎么得来的。 Web 技术发展与 REST 的由来 Web（万维网 World Wide Web 的简称）是个包罗万象的万花筒，不同的人从不同的角度观察，对于 Web 究竟是什么会得出大不相同的观点。作为 Web 开发者，我们需要从技术上来理解 Web。从技术架构层面上看，Web 的技术架构包括了四个基石： URI HTTP HyperText（除了 HTML 外，也可以是带有超链接的 XML 或 JSON） MIME 这四个基石相互支撑，促使 Web 这座宏伟的大厦以几何级数的速度发展了起来。在这四个基石之上，Web 开发技术的发展可以粗略划分成以下几个阶段： 静态内容阶段：在这个最初的阶段，使用 Web 的主要是一些研究机构。Web 由大量的静态 HTML 文档组成，其中大多是一些学术论文。Web 服务器可以被看作是支持超文本的共享文件服务器。 CGI 程序阶段：在这个阶段，Web 服务器增加了一些编程 API。通过这些 API 编写的应用程序，可以向客户端提供一些动态变化的内容。Web 服务器与应用程序之间的通信，通过 CGI（Common Gateway Interface）协议完成，应用程序被称作 CGI 程序。 脚本语言阶段：在这个阶段，服务器端出现了 ASP、PHP、JSP、ColdFusion 等支持 session 的脚本语言技术，浏览器端出现了 Java Applet、JavaScript 等技术。使用这些技术，可以提供更加丰富的动态内容。 瘦客户端应用阶段：在这个阶段，在服务器端出现了独立于 Web 服务器的应用服务器。同时出现了 Web MVC 开发模式，各种 Web MVC 开发框架逐渐流行，并且占据了统治地位。基于这些框架开发的 Web 应用，通常都是瘦客户端应用，因为它们是在服务器端生成全部的动态内容。 RIA 应用阶段：在这个阶段，出现了多种 RIA（Rich Internet Application）技术，大幅改善了 Web 应用的用户体验。应用最为广泛的 RIA 技术是 DHTML+Ajax。Ajax 技术支持在不刷新页面的情况下动态更新页面中的局部内容。同时诞生了大量的 Web 前端 DHTML 开发库，例如 Prototype、Dojo、ExtJS、jQuery/jQuery UI 等等，很多开发库都支持单页面应用（Single Page Application）的开发。其他的 RIA 技术还有 Adobe 公司的 Flex、微软公司的 Silverlight、Sun 公司的 JavaFX（现在为 Oracle 公司所有）等等。 移动 Web 应用阶段：在这个阶段，出现了大量面向移动设备的 Web 应用开发技术。除了 Android、iOS、Windows Phone 等操作系统平台原生的开发技术之外，基于 HTML5 的开发技术也变得非常流行。 从上述 Web 开发技术的发展过程看，Web 从最初其设计者所构思的主要支持静态文档的阶段，逐渐变得越来越动态化。Web 应用的交互模式，变得越来越复杂：从静态文档发展到以内容为主的门户网站、电子商务网站、搜索引擎、社交网站，再到以娱乐为主的大型多人在线游戏、手机游戏。 在互联网行业，实践总是走在理论的前面。Web 发展到了 1995 年，在 CGI、ASP 等技术出现之后，沿用了多年、主要面向静态文档的 HTTP/1.0 协议已经无法满足 Web 应用的开发需求，因此需要设计新版本的 HTTP 协议。在 HTTP/1.0 协议专家组之中，有一位年轻人脱颖而出，显示出了不凡的洞察力，后来他成为了 HTTP/1.1 协议专家组的负责人。这位年轻人就是 Apache HTTP 服务器的核心开发者 Roy Fielding，他还是 Apache 软件基金会的合作创始人。 Roy Fielding 和他的同事们在 HTTP/1.1 协议的设计工作中，对于 Web 之所以取得巨大成功，在技术架构方面的因素做了一番深入的总结。Fielding 将这些总结纳入到了一套理论框架之中，然后使用这套理论框架中的指导原则，来指导 HTTP/1.1 协议的设计方向。HTTP/1.1 协议的第一个草稿是在 1996 年 1 月发布的，经过了三年多时间的修订，于 1999 年 6 月成为了 IETF 的正式规范（包括了 RFC 2616 以及用于对客户端做身份认证的 RFC 2617）。HTTP/1.1 协议设计的极为成功，以至于发布之后整整 10 年时间里，都没有多少人认为有修订的必要。用来指导 HTTP/1.1 协议设计的这套理论框架，最初是以备忘录的形式在专家组成员之间交流，除了 IETF/W3C 的专家圈子，并没有在外界广泛流传。Fielding 在完成 HTTP/1.1 协议的设计工作之后，回到了加州大学欧文分校继续攻读自己的博士学位。第二年（2000 年）在他的博士学位论文 Architectural Styles and the Design of Network-based Software Architectures 中，Fielding 更为系统、严谨地阐述了这套理论框架，并且使用这套理论框架推导出了一种新的架构风格，并且为这种架构风格取了一个令人轻松愉快的名字“REST”——Representational State Transfer（表述性状态转移）的缩写。 在笔者看来，Fielding 这篇博士论文在 Web 发展史上的价值，不亚于 Web 之父 Tim Berners-Lee 关于超文本的那篇经典论文。然而遗憾的是，这篇博士论文在诞生之后的将近 5 年时间里，一直没有得到足够的重视。例如 Web Service 相关规范 SOAP/WSDL 的设计者们，显然不大理解 REST 是什么，HTTP/1.1 究竟是一个什么样的协议、为何要设计成这个样子。 这种情况在 2005 年之后有了很大的改善，随着 Ajax、Ruby on Rails 等新的 Web 开发技术的兴起，在 Web 开发技术社区掀起了一场重归 Web 架构设计本源的运动，REST 架构风格得到了越来越多的关注。在 2007 年 1 月，支持 REST 开发的 Ruby on Rails 1.2 版正式发布，并且将支持 REST 开发作为 Rails 未来发展中的优先内容。Ruby on Rails 的创始人 DHH 做了一个名为“World of Resources”的精彩演讲，DHH 在 Web 开发技术社区中的强大影响力，使得 REST 一下子处在 Web 开发技术舞台的聚光灯之下。 今天，各种流行的 Web 开发框架，几乎没有不支持 REST 开发的了。大多数 Web 开发者都是通过阅读某种 REST 开发框架的文档，以及通过一些例子代码来学习 REST 开发的。然而，通过例子代码来学习 REST 有非常大的局限性。因为 REST 并不是一种具体的技术，也不是一种具体的规范，REST 其实是一种内涵非常丰富的架构风格。通过例子代码来学习 REST，除了学习到一种有趣的 Web 开发技术之外，并不能全面深入的理解 REST 究竟是什么。甚至还会误以为这些简单的例子代码就是 REST 本身，REST 不过是一种简单的 Web 开发技术而已。就像盲人摸象一样，有的人摸到了象鼻子、有的人摸到了象耳朵、有的人摸到了象腿、有的人摸到了象尾巴。他们都坚信自己感觉到的大象，才是最真实的大象，而其他人的感觉都是错误的。 对于不理解 REST 的 Web 开发者，人们习惯于展示一些例子代码来让他们理解 REST，笔者不赞同上述做法。如果 Web 开发者想要深入理解 REST 是什么，就很难避开 Fielding 的这篇博士论文。笔者在本文中对于 REST 是什么的介绍，也是基于 Fielding 的博士论文的。尽管如此，笔者强烈建议本文的读者亲自去通读一下 Fielding 的博士论文，就像想要了解孔子的思想应该直接去读《论语》等著作，而不是首先去读其他人的转述一样。笔者在本文中也仅仅是努力不做一个把经书念错了的歪嘴和尚而已。那么，下面我们言归正传。 在 Fielding 的这篇名为 Architectural Styles and the Design of Network-based Software Architectures 的博士论文（中文版名为《架构风格与基于网络的软件架构设计》）中，提出了一整套基于网络的软件（即所谓的“分布式应用”）的设计方法，值得所有分布式应用的开发者仔细阅读、深入体会。 在论文的前三章中，Fielding 在批判性继承前人研究成果的基础上，建立起来一整套研究和评价软件架构的方法论。这套方法论的核心是“架构风格”这个概念。架构风格是一种研究和评价软件架构设计的方法，它是比架构更加抽象的概念。一种架构风格是由一组相互协作的架构约束来定义的。架构约束是指软件的运行环境施加在架构设计之上的约束。 在论文的第四章中，Fielding 研究了 Web 这样一个分布式系统对于软件架构设计提出了哪些需求。在第五章中，Fielding 将第四章 Web 提出的需求具体化为一些架构约束，通过逐步添加各种架构约束，推导出来了 REST 这种新的架构风格。 REST 架构风格的推导过程如下图所示： 图 1：REST 所继承的架构风格约束 在图1 中，每一个椭圆形里面的缩写词代表了一种架构风格，而每一个箭头边的单词代表了一种架构约束。 REST 架构风格最重要的架构约束有 6 个： 客户 - 服务器（Client-Server） 通信只能由客户端单方面发起，表现为请求 - 响应的形式。 无状态（Stateless） 通信的会话状态（Session State）应该全部由客户端负责维护。 缓存（Cache） 响应内容可以在通信链的某处被缓存，以改善网络效率。 统一接口（Uniform Interface） 通信链的组件之间通过统一的接口相互通信，以提高交互的可见性。 分层系统（Layered System） 通过限制组件的行为（即，每个组件只能“看到”与其交互的紧邻层），将架构分解为若干等级的层。 按需代码（Code-On-Demand，可选） 支持通过下载并执行一些代码（例如 Java Applet、Flash 或 JavaScript），对客户端的功能进行扩展。 在论文中推导出的 REST 架构风格如下图所示： 图 2：REST 架构风格 而HTTP/1.1 协议作为一种REST 架构风格的架构实例，其架构如下图所示： 图3：一个基于REST 的架构的过程视图 用户代理处在三个并行交互（a、b 和c）的中间。用户代理的客户端连接器缓存无法满足请求，因此它根据每个资源标识符的属性和客户端连接器的配置，将每个请求路由到资源的来源。请求（a）被发送到一个本地代理，代理随后访问一个通过DNS 查找发现的缓存网关，该网关将这个请求转发到一个能够满足该请求的来源服务器，服务器的内部资源由一个封装过的对象请求代理（object request broker）架构来定义。请求（b）直接发送到一个来源服务器，它能够通过自己的缓存来满足这个请求。请求（c）被发送到一个代理，它能够直接访问WAIS（一种与Web 架构分离的信息服务），并将WAIS 的响应翻译为一种通用的连接器接口能够识别的格式。每一个组件只知道与它们自己的客户端或服务器连接器的交互；整个过程拓扑是我们的视图的产物。 通过比较图2 和图3，读者不难发现这两张图中的架构是高度一致的。对于HTTP/1.1 协议为何要设计成这个样子，读者想必已经有所领悟。 在论文的第六章中，Fielding 对于到2000 年为止在Web 基础架构协议的设计和开发方面的一些经验教训进行了深入的分析。其中，“HTTP 不是RPC”、“HTTP 不是一种传输协议”两部分值得读者反复阅读。时至13 年之后的今日，对于HTTP 协议的误解仍然广泛存在。 以上简要介绍了Fielding 博士论文中的内容。为了帮助读者仔细阅读Fielding 的博士论文，笔者整理了一套Fielding 博士论文的导读，将在本专栏后续文章中载出。 REST 详解 REST 究竟是什么？因为 REST 的内涵非常丰富，所以很难用一两句话解释清楚这个问题。 首先，REST 是 Web 自身的架构风格。REST 也是 Web 之所以取得成功的技术架构方面因素的总结。REST 是世界上最成功的分布式应用架构风格（成功案例：Web，还不够吗？）。它是为 运行在互联网环境 的 分布式 超媒体系统量身定制的。互联网环境与企业内网环境有非常大的差别，最主要的差别是两个方面： 可伸缩性需求无法控制：并发访问量可能会暴涨，也可能会暴跌。 安全性需求无法控制：无法控制客户端发来的请求的格式，很可能会是恶意的请求。 而所谓的“超媒体系统”，即，使用了超文本的系统。可以把“超媒体”理解为超文本 + 媒体内容。 REST 是 HTTP/1.1 协议等 Web 规范的设计指导原则，HTTP/1.1 协议正是为实现 REST 风格的架构而设计的。新的 Web 规范，其设计必须符合 REST 的要求，否则整个 Web 的体系架构会因为引入严重矛盾而崩溃。这句话不是危言耸听，做个类比，假如苏州市政府同意在市区著名园林的附近大兴土木，建造大量具有后现代风格的摩天大楼，那么不久之后世界闻名的苏州园林美景将不复存在。 上述这些关于“REST 是什么”的描述，可以总结为一句话：REST 是所有 Web 应用都应该遵守的架构设计指导原则。当然，REST 并不是法律，违反了 REST 的指导原则，仍然能够实现应用的功能。但是违反了 REST 的指导原则，会付出很多代价，特别是对于大流量的网站而言。 要深入理解 REST，需要理解 REST 的五个关键词： 资源（Resource） 资源的表述（Representation） 状态转移（State Transfer） 统一接口（Uniform Interface） 超文本驱动（Hypertext Driven） 什么是资源？ 资源是一种看待服务器的方式，即，将服务器看作是由很多离散的资源组成。每个资源是服务器上一个可命名的抽象概念。因为资源是一个抽象的概念，所以它不仅仅能代表服务器文件系统中的一个文件、数据库中的一张表等等具体的东西，可以将资源设计的要多抽象有多抽象，只要想象力允许而且客户端应用开发者能够理解。与面向对象设计类似，资源是以名词为核心来组织的，首先关注的是名词。一个资源可以由一个或多个 URI 来标识。URI 既是资源的名称，也是资源在 Web 上的地址。对某个资源感兴趣的客户端应用，可以通过资源的 URI 与其进行交互。 什么是资源的表述？ 资源的表述是一段对于资源在某个特定时刻的状态的描述。可以在客户端 - 服务器端之间转移（交换）。资源的表述可以有多种格式，例如 HTML/XML/JSON/ 纯文本 / 图片 / 视频 / 音频等等。资源的表述格式可以通过协商机制来确定。请求 - 响应方向的表述通常使用不同的格式。 什么是状态转移？ 状态转移（state transfer）与状态机中的状态迁移（state transition）的含义是不同的。状态转移说的是：在客户端和服务器端之间转移（transfer）代表资源状态的表述。通过转移和操作资源的表述，来间接实现操作资源的目的。 什么是统一接口？ REST 要求，必须通过统一的接口来对资源执行各种操作。对于每个资源只能执行一组有限的操作。以 HTTP/1.1 协议为例，HTTP/1.1 协议定义了一个操作资源的统一接口，主要包括以下内容： 7 个 HTTP 方法：GET/POST/PUT/DELETE/PATCH/HEAD/OPTIONS HTTP 头信息（可自定义） HTTP 响应状态代码（可自定义） 一套标准的内容协商机制 一套标准的缓存机制 一套标准的客户端身份认证机制 REST 还要求，对于资源执行的操作，其操作语义必须由 HTTP 消息体之前的部分完全表达，不能将操作语义封装在 HTTP 消息体内部。这样做是为了提高交互的可见性，以便于通信链的中间组件实现缓存、安全审计等等功能。 什么是超文本驱动？ “超文本驱动”又名“将超媒体作为应用状态的引擎”（Hypermedia As The Engine Of Application State，来自 Fielding 博士论文中的一句话，缩写为 HATEOAS）。将 Web 应用看作是一个由很多状态（应用状态）组成的有限状态机。资源之间通过超链接相互关联，超链接既代表资源之间的关系，也代表可执行的状态迁移。在超媒体之中不仅仅包含数据，还包含了状态迁移的语义。以超媒体作为引擎，驱动 Web 应用的状态迁移。通过超媒体暴露出服务器所提供的资源，服务器提供了哪些资源是在运行时通过解析超媒体发现的，而不是事先定义的。从面向服务的角度看，超媒体定义了服务器所提供服务的协议。客户端应该依赖的是超媒体的状态迁移语义，而不应该对于是否存在某个 URI 或 URI 的某种特殊构造方式作出假设。一切都有可能变化，只有超媒体的状态迁移语义能够长期保持稳定。 一旦读者理解了上述 REST 的五个关键词，就很容易理解 REST 风格的架构所具有的 6 个的主要特征： 面向资源（Resource Oriented） 可寻址（Addressability） 连通性（Connectedness） 无状态（Statelessness） 统一接口（Uniform Interface） 超文本驱动（Hypertext Driven） 这 6 个特征是 REST 架构设计优秀程度的判断标准。其中，面向资源是 REST 最明显的特征，即，REST 架构设计是以资源抽象为核心展开的。可寻址说的是：每一个资源在 Web 之上都有自己的地址。连通性说的是：应该尽量避免设计孤立的资源，除了设计资源本身，还需要设计资源之间的关联关系，并且通过超链接将资源关联起来。无状态、统一接口是 REST 的两种架构约束，超文本驱动是 REST 的一个关键词，在前面都已经解释过，就不再赘述了。 从架构风格的抽象高度来看，常见的分布式应用架构风格有三种： 分布式对象（Distributed Objects，简称 DO） 架构实例有 CORBA/RMI/EJB/DCOM/.NET Remoting 等等 远程过程调用（Remote Procedure Call，简称 RPC） 架构实例有 SOAP/XML-RPC/Hessian/Flash AMF/DWR 等等 表述性状态转移（Representational State Transfer，简称 REST） 架构实例有 HTTP/WebDAV DO 和 RPC 这两种架构风格在企业应用中非常普遍，而 REST 则是 Web 应用的架构风格，它们之间有非常大的差别。 REST 与 DO 的差别在于： REST 支持抽象（即建模）的工具是资源，DO 支持抽象的工具是对象。在不同的编程语言中，对象的定义有很大差别，所以 DO 风格的架构通常都是与某种编程语言绑定的。跨语言交互即使能实现，实现起来也会非常复杂。而 REST 中的资源，则完全中立于开发平台和编程语言，可以使用任何编程语言来实现。 DO 中没有统一接口的概念。不同的 API，接口设计风格可以完全不同。DO 也不支持操作语义对于中间组件的可见性。 DO 中没有使用超文本，响应的内容中只包含对象本身。REST 使用了超文本，可以实现更大粒度的交互，交互的效率比 DO 更高。 REST 支持数据流和管道，DO 不支持数据流和管道。 DO 风格通常会带来客户端与服务器端的紧耦合。在三种架构风格之中，DO 风格的耦合度是最大的，而 REST 的风格耦合度是最小的。REST 松耦合的源泉来自于统一接口 + 超文本驱动。 REST 与 RPC 的差别在于： REST 支持抽象的工具是资源，RPC 支持抽象的工具是过程。REST 风格的架构建模是以名词为核心的，RPC 风格的架构建模是以动词为核心的。简单类比一下，REST 是面向对象编程，RPC 则是面向过程编程。 RPC 中没有统一接口的概念。不同的 API，接口设计风格可以完全不同。RPC 也不支持操作语义对于中间组件的可见性。 RPC 中没有使用超文本，响应的内容中只包含消息本身。REST 使用了超文本，可以实现更大粒度的交互，交互的效率比 RPC 更高。 REST 支持数据流和管道，RPC 不支持数据流和管道。 因为使用了平台中立的消息，RPC 风格的耦合度比 DO 风格要小一些，但是 RPC 风格也常常会带来客户端与服务器端的紧耦合。支持统一接口 + 超文本驱动的 REST 风格，可以达到最小的耦合度。 比较了三种架构风格之间的差别之后，从面向实用的角度来看，REST 架构风格可以为 Web 开发者带来三方面的利益： 简单性 采用 REST 架构风格，对于开发、测试、运维人员来说，都会更简单。可以充分利用大量 HTTP 服务器端和客户端开发库、Web 功能测试 / 性能测试工具、HTTP 缓存、HTTP 代理服务器、防火墙。这些开发库和基础设施早已成为了日常用品，不需要什么火箭科技（例如神奇昂贵的应用服务器、中间件）就能解决大多数可伸缩性方面的问题。 可伸缩性 充分利用好通信链各个位置的 HTTP 缓存组件，可以带来更好的可伸缩性。其实很多时候，在 Web 前端做性能优化，产生的效果不亚于仅仅在服务器端做性能优化，但是 HTTP 协议层面的缓存常常被一些资深的架构师完全忽略掉。 松耦合 统一接口 + 超文本驱动，带来了最大限度的松耦合。允许服务器端和客户端程序在很大范围内，相对独立地进化。对于设计面向企业内网的 API 来说，松耦合并不是一个很重要的设计关注点。但是对于设计面向互联网的 API 来说，松耦合变成了一个必选项，不仅在设计时应该关注，而且应该放在最优先位置。 有的读者可能会问：“你说了这么多，REST 难道就没有任何缺点了吗？”当然不是，正如 Fielding 在博士论文中阐述的那样，评价一种软件架构的优劣，不能脱离开软件的具体运行环境。永远不存在适用于任何运行环境的、包治百病的银弹式架构。笔者在前面强调过 REST 是一种为运行在互联网环境中的 Web 应用量身定制的架构风格。REST 在互联网这个运行环境之中已经占据了统治地位，然而，在企业内网运行环境之中，REST 还会面临 DO、RPC 的巨大挑战。特别是一些对实时性要求很高的应用，REST 的表现不如 DO 和 RPC。所以需要针对具体的运行环境来具体问题具体分析。但是，REST 可以带来的上述三方面的利益即使在开发企业应用时，仍然是非常有价值的。所以 REST 在企业应用开发，特别是在 SOA 架构的开发中，已经得到了越来越大的重视。本专栏将有一篇文章专门介绍 REST 在企业级应用中与 SOA 的结合。 到了这里，“REST 究竟是什么”这个问题笔者就解答完了。本文开头那些说法是否正确，笔者还是笑而不语，读者此时应该已经有了自己的判断。在接下来的 REST 系列文章中，我将会为读者澄清一些关于 HTTP 协议和 REST 的常见误解。 参考资料： Roy Fielding 博士论文英文版 Roy Fielding 博士论文中文版 HTTP/1.1 协议 RFC2616 、 RFC2617 理解本真的 REST 架构风格 &amp;#8617;</summary></entry><entry><title type="html">什么是服务网格（Service Mesh）</title><link href="https://empvalley.com/2021/09/11/what-is-a-service-mesh/" rel="alternate" type="text/html" title="什么是服务网格（Service Mesh）" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/what-is-a-service-mesh</id><content type="html" xml:base="https://empvalley.com/2021/09/11/what-is-a-service-mesh/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="REST架构" /><summary type="html"></summary></entry><entry><title type="html">什么是服务网格（Service Mesh）</title><link href="https://empvalley.com/2021/09/11/what-is-a-service-mesh/" rel="alternate" type="text/html" title="什么是服务网格（Service Mesh）" /><published>2021-09-11T00:00:00-04:00</published><updated>2021-09-11T00:00:00-04:00</updated><id>https://empvalley.com/2021/09/11/what-is-a-service-mesh</id><content type="html" xml:base="https://empvalley.com/2021/09/11/what-is-a-service-mesh/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-service-mesh的特点&quot; id=&quot;markdown-toc-heading-service-mesh的特点&quot;&gt;Service Mesh的特点&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-理解-service-mesh&quot; id=&quot;markdown-toc-heading-理解-service-mesh&quot;&gt;理解 Service Mesh&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-service-mesh如何工作&quot; id=&quot;markdown-toc-heading-service-mesh如何工作&quot;&gt;Service Mesh如何工作？&lt;/a&gt;&lt;/li&gt;
@@ -1178,7 +1292,7 @@
       &lt;p&gt;&lt;a href=&quot;https://jimmysong.io/blog/what-is-a-service-mesh/&quot; target=&quot;_blank&quot;&gt;什么是Service Mesh（服务网格）？&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Service Mesh" /><category term="服务网格" /><summary type="html">Service Mesh的特点 理解 Service Mesh Service Mesh如何工作？ 为何使用 Service Mesh？ 参考 Service Mesh 又译作 “服务网格”，作为服务间通信的基础设施层。Buoyant 公司的 CEO Willian Morgan 在他的这篇文章 WHAT’S A Service Mesh? AND WHY DO I NEED ONE? 中解释了什么是 Service Mesh，为什么云原生应用需要 Service Mesh。1 下面是 Willian Morgan 对 Service Mesh 的解释。 A Service Mesh is a dedicated infrastructure layer for handling service-to-service communication. It’s responsible for the reliable delivery of requests through the complex topology of services that comprise a modern, cloud native application. In practice, the Service Mesh is typically implemented as an array of lightweight network proxies that are deployed alongside application code, without the application needing to be aware. 翻译成中文是： 服务网格（Service Mesh）是处理服务间通信的基础设施层。它负责构成现代云原生应用程序的复杂服务拓扑来可靠地交付请求。在实践中，Service Mesh 通常以轻量级网络代理阵列的形式实现，这些代理与应用程序代码部署在一起，对应用程序来说无需感知代理的存在。 Service Mesh的特点 Service Mesh 有如下几个特点： 应用程序间通信的中间层 轻量级网络代理 应用程序无感知 解耦应用程序的重试/超时、监控、追踪和服务发现 目前两款流行的 Service Mesh 开源软件 Istio 和 Linkerd 都可以直接在 Kubernetes 中集成，其中 Linkerd 已经成为 CNCF 中的项目。 理解 Service Mesh 如果用一句话来解释什么是 Service Mesh，可以将它比作是应用程序或者说微服务间的 TCP/IP，负责服务之间的网络调用、限流、熔断和监控。对于编写应用程序来说一般无须关心 TCP/IP 这一层（比如通过 HTTP 协议的 RESTful 应用），同样使用 Service Mesh 也就无须关心服务之间的那些原本通过服务框架实现的事情，比如 Spring Cloud、Netflix OSS 和其他中间件，现在只要交给 Service Mesh 就可以了。 Phil Calçado 在他的这篇博客 Pattern: Service Mesh 中详细解释了 Service Mesh 的来龙去脉： 从最原始的主机之间直接使用网线相连 网络层的出现 集成到应用程序内部的控制流 分解到应用程序外部的控制流 应用程序的中集成服务发现和断路器 出现了专门用于服务发现和断路器的软件包/库，如 Twitter 的 Finagle 和 Facebook 的 Proxygen，这时候还是集成在应用程序内部 出现了专门用于服务发现和断路器的开源软件，如 Netflix OSS、Airbnb 的 synapse 和 nerve 最后作为微服务的中间层 Service Mesh 出现 Service Mesh 的架构如下图所示： 图片来自：Pattern: Service Mesh Service Mesh 作为 sidecar 运行，对应用程序来说是透明，所有应用程序间的流量都会通过它，所以对应用程序流量的控制都可以在 serivce mesh 中实现。 Service Mesh如何工作？ 下面以 Istio 为例讲解 Service Mesh 如何工作，后续文章将会详解 Istio 如何在 Kubernetes 中工作。 Sidecar（Istio 中使用 Envoy 作为 sidecar 代理）将服务请求路由到目的地址，根据请求中的参数判断是到生产环境、测试环境还是 staging 环境中的服务（服务可能同时部署在这三个环境中），是路由到本地环境还是公有云环境？所有的这些路由信息可以动态配置，可以是全局配置也可以为某些服务单独配置。这些配置是由服务网格的控制平面推送给各个 sidecar 的， 当 sidecar 确认了目的地址后，将流量发送到相应服务发现端点，在 Kubernetes 中是 service，然后 service 会将服务转发给后端的实例。 Sidecar 根据它观测到最近请求的延迟时间，选择出所有应用程序的实例中响应最快的实例。 Sidecar 将请求发送给该实例，同时记录响应类型和延迟数据。 如果该实例挂了、不响应了或者进程不工作了，sidecar 会将把请求发送到其他实例上重试。 如果该实例持续返回 error，sidecar 会将该实例从负载均衡池中移除，稍后再周期性得重试。 如果请求的截止时间已过，sidecar 主动标记该请求为失败，而不是再次尝试添加负载。 SIdecar 以 metric 和分布式追踪的形式捕获上述行为的各个方面，这些追踪信息将发送到集中 metric 系统。 为何使用 Service Mesh？ Service Mesh 并没有给我们带来新功能，它是用于解决其他工具已经解决过的问题，只不过这次是在以 Kubernetes 为基础的云原生生态环境下的实现。 在传统的 MVC 三层 Web 应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但是在现今的复杂的大型网站情况下，单体应用被分解为众多的微服务，服务之间的依赖和通讯十分复杂，出现了 twitter 开发的 Finagle、Netflix 开发的 Hystrix 和 Google 的 Stubby 这样的 “胖客户端” 库，这些就是早期的 Service Mesh，但是它们都仅适用于特定的环境和特定的开发语言，并不能作为平台级的 Service Mesh 支持。 在 Cloud Native 架构下，容器的使用赋予了异构应用程序更多的可能性，Kubernetes 增强了应用的横向扩容能力，用户可以快速的编排出复杂环境、复杂依赖关系的应用程序，同时开发者又无须过分关心应用程序的监控、扩展性、服务发现和分布式追踪这些繁琐的事情，进而专注于程序开发，赋予开发者更多的创造性。 参考 What's a Service Mesh? And why do I need one? So what even is a Service Mesh? Hot take on Istio and Linkerd linkerd: A Service Mesh for AWS ECS Introducing Istio: A robust Service Mesh for microservices Application Network Functions With ESBs, API Management, and Now.. Service Mesh? Pattern: Service Mesh Envoy 官方文档 Istio 官方文档 Istio Handbook - Istio 服务网格进阶实战 什么是Service Mesh（服务网格）？ &amp;#8617;</summary></entry><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Service Mesh" /><category term="服务网格" /><summary type="html"></summary></entry><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00-04:00</published><updated>2021-08-28T00:00:00-04:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -1208,7 +1322,7 @@
       &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/q922LRPmln1n2JXIOFOV_A&quot; target=&quot;_blank&quot;&gt;两年，我学会了所有的编程语言！&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">1 本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。 所以学习一门新的语言，更重要的是关注它和你所掌握语言的不同之处。这些不同之处所涉及到的基本概念是有限的，本文就列出了一些。 另外，学完了一门新语言以后，如果项目中用不到，是无法熟练使用的，也有可能很快忘记那些语法，因为编程确实需要不断的练习，尤其是项目的历练，从这个意义上来说，学习并理解那些基本概念会更加重要。 本文的灵感来源于 How to learn all programming languages, YES! ALL! 两年，我学会了所有的编程语言！ &amp;#8617;</summary></entry><entry><title type="html">如何学习所有编程语言</title><link href="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/" rel="alternate" type="text/html" title="如何学习所有编程语言" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages</id><content type="html" xml:base="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">1 两年，我学会了所有的编程语言！ &amp;#8617;</summary></entry><entry><title type="html">如何学习所有编程语言</title><link href="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/" rel="alternate" type="text/html" title="如何学习所有编程语言" /><published>2021-08-28T00:00:00-04:00</published><updated>2021-08-28T00:00:00-04:00</updated><id>https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages</id><content type="html" xml:base="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-如果编程语言是一辆车&quot; id=&quot;markdown-toc-heading-如果编程语言是一辆车&quot;&gt;如果编程语言是一辆车&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-为什么有这么多的编程语言&quot; id=&quot;markdown-toc-heading-为什么有这么多的编程语言&quot;&gt;为什么有这么多的编程语言&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-编程语言的基本要素&quot; id=&quot;markdown-toc-heading-编程语言的基本要素&quot;&gt;编程语言的基本要素&lt;/a&gt;&lt;/li&gt;
@@ -1499,7 +1613,7 @@
       &lt;p&gt;没有银子弹：指没有万能药的意思。（译者注） &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">如果编程语言是一辆车 为什么有这么多的编程语言 编程语言的基本要素 关注编程语言概念而不是语法 实现或创建编程语言 学习新语言的步骤 #1 明白该语言的设计哲学和语言特性 #2 学习语法，按照教程或书籍进行实践 #3 读、写更多新语言的代码 #4 理解更多语言实现细节 如何选择你的第一个编程语言？ 哪一个编程语言是最好的？ 我应该从哪个编程语言开始学起？1 许多新手刚开始学编码时都会问这个问题。 最好的编程语言是什么？ 在获得一些实际的开发经验后，开发者便产生了这样的问题。 这种类型的问题能够引发无休止的争论，而根本不会有标准的答案。 相反，我想要分享的更重要的东西是：如何精通学习新语言的技巧。 对于熟练的开发者来说，学习新的语言应该是一件简单的事情。花费一个周末的时间甚至几个小时就使用新的编程语言写代码是很平常的事。更熟练的开发者只需要看一眼手册，完成任务的过程中就能掌握该语言。 精通学习所有语言的技巧无需天资，只需知道编程语言的核心知识并多加练习就可以达成。 当然，我们不需要学会所有类型的编程语言，但掌握更多的编程语言能够让我们选择更适合的编程语言完成特定的任务。 如果编程语言是一辆车 世界上有成千上万种编程语言，在 IT 领域种被广泛应用的只有大约20种。 进一步研究会发现所有编程语言都共享一些特性。 拿汽车举例子，世界上有不同的车，有小而动力足的车，也有大而慢的车；不同品牌的车有不同类型的驾驶体验。 如果一个人会开一辆车，那么他也会开大部分的车；即使是一辆其它牌子的新车。 为什么？因为不同的车有许多相同的东西，从根本上来说，它们都是在发动机和轮胎的基础上制造出来的。汽车被设计出来用于相同的目的：送你到目的地。 bctt 的推特：“设计编程语言的目的：表达程序员的思想。” 为什么有这么多的编程语言 在计算机的世界里，编程语言扮演两种角色： 程序员利用它们发送指令给计算机，告诉计算机我们需要什么，从而得到我们想要的东西。 传递想法给其他程序员，分享我们的经验和观点。 因此，代码只是传递给其他程序员或计算机的“消息”。而在编程语言进行设计与实现时就需要进行权衡。 主要原因应该是： 硬件和计算机理论是逐渐发展而来的，通常来说，编程语言被设计的更简单易用的同时具有更强的表现力。 计算机被应用在许多领域，针对不同领域有不同的编程语言。 不同的编程语言有不同的设计方法和哲学。 语言有不同类型的语法或特性，但归根结底它们都是图灵完整的（Turing complete）。 简洁地说，这意味着：所有的编程语言都能够用来实现任意算法。 编程语言的基本要素 几乎所有的编程语言都包含这些类型，事实上，它们全都是关于“抽象的“： 数据类型和数据抽象 控制流和控制抽象 低级别的抽象 特定领域额外的抽象 这就是我们可以掌握所有的编程语言的原因：语言的概念是有限的，经常被用到的只有不到15种。 过程式 面向对象 指针 递归 异常 静态类型 动态类型 类型推断 匿名函数（Lambda function） 垃圾回收 程序剩下的部分（Continuation） 宏指令和元编程 和设计原则一样，编程语言概念趋于固定。 编程语言设计者彼此借鉴想法，通过不同的实现方式实现出来。所以有时我们可能会说语言 PL_C 是语言 PL_A 和语言 PL_B 的孩子，语言 PL 家族树类似于这样： 理解这些概念不仅帮助我们更快速的学习语言，同样能够帮助我们写出更好的代码。例如过程式编程语言和面向对象编程语言有着不同的编码风格和范式。 如果你不明白它们之间的区别，实践中将不可避免的写出糟糕的代码。 关注编程语言概念而不是语法 如何开始学习编程语言的概念呢？ 要完全理解编程语言的概念，首先需要我们回答几个关于它的问题。 为什么要发明编程语言的概念？ 需要解决的问题是什么？ 有什么好处和弊端？ 如何实现？ 拿垃圾回收为例，第一个问题是：什么是垃圾回收？ 在谷歌上面进行搜索，来到 维基百科垃圾回收页面可以看到：发明垃圾回收是为了解决内存管理问题，它能减少程序中的内存错误；有了垃圾回收机制，写起代码会更加简单，因为无需再手动管理内存。代价是会损耗性能，因为会有额外的代码分配和释放内存；因此在使用有垃圾回收机制的编程语言时，要注意垃圾回收机制对程序性能的影响。 使用一段时间后，就需要知道垃圾回收是如何工作的，使用了什么算法？垃圾回收有多种不同类型的实现，各有优缺点。 学习一种新的编程语言时，就是学习编程语言概念最好的时机。 举个例子，假如 Ruby 是你学习的第一种编程语言，那么这同时也是你学习理解面向对象编程优缺点的最好时机。 理解了面向对面编程的概念再学其它面向对象的编程语言就会简单许多。 实现或创建编程语言 别害怕，解释器和编译器只是一种特殊类型的程序。它们接收你的代码，之后运行你的代码或者是把你的代码编译为字符码或字节码。 实现或创建编程语言可以帮助你战胜内心深处对编程语言的恐惧。 这是学习所有编程语言的又一个秘密。 如果你的编程语言语法不是很复杂，实现起来并不费事。 看一下这个项目：写一个Lisp语言 任何语言都可以用来实现一个Lisp，Lisp/Scheme 有清晰的语法，很容易被解析；编程语言教育广泛采用Lisp。 8cc 是 C 语言的编译器，如果你意在写一个编译器，它将是一个很好的参考。 一些好的编程语言实现的数据对你学习同样是有帮助的： EOPL 是一本教科书，包含许多可以拿来玩儿的编译器。 Programming Language Pragmatics 同样是本编程语言教育性的书籍。 学习新语言的步骤 按以下步骤学习编程语言的概念会更高效： #1 明白该语言的设计哲学和语言特性 例如，如果开始学习 Ruby，先看看它有什么特别的地方。 然后看官网的介绍，更深一步进行了解：http://www.ruby-lang.org/en/about/ 在开始学习之前，试着总结出需要理解的主要特性： 简单、高效率、代码可读性高 自带解释器，因此有垃圾回收机制，同样意味着对于某些任务，性能可能会受到影响 一切皆对象，属于面向对象编程语言，甚至完全是面向对象的。 灵活，语言的很多部分都能够被重新定义。 了解语言最重要的特性，包括它的优缺点，在你使用新的语言写代码时会很有帮助，它就是你的路线图。 #2 学习语法，按照教程或书籍进行实践 你需要掌握语言基础的部分，包括语法、基础的IO、debug 工具、单元测试工具等。 如果你是个新手，试着找一些该语言权威的书籍，如该语言作者写的或在 Amazon 上面搜索该语言的名称，找那些评分高的书籍。 记着，在你没有成为专家前最好自己手写代码，不要只是复制粘贴。 在 exercism.io 上面练习新语言，会有导师免费检查你的代码并给予你建议，棒极了。 如果你是编程语言的专家，只需找一些该语言简单的手册甚至只需要一些代码示例。 看一下这个网站 learnxinyminutes.com #3 读、写更多新语言的代码 是时候用新语言、相关知识、工具或库写一个项目了。 开始可以写些简单的项目，例如写一个猜数字的游戏或一个简单的书籍商店，又或者是一个待办事项应用。 Github 上有许多类似的项目。 #4 理解更多语言实现细节 这不是必须的，如同我在 成为一个程序员 中说的那样，一个有追求的程序员对语言的细节和实现是充满兴趣的。 有时 bug 的出现仅仅是由于我们不清楚该语言的实现细节导致的。 如何选择你的第一个编程语言？ 根据你的目标和自身条件： 有人指导你或你需要在学校学习一门编程语言吗？ 如果老师告诉你做练习使用 C 语言，这是开始学习 C 语言的一个绝好机会，因为你有人指导（你的老师），也有同学；有利于开展学习。 你的目标是什么？ 如果你想开发一个 Web 应用，学习 Javascript/Python/Ruby 就可以了。 如果你想开发游戏， C++ 是个不错的选择。 如果你的目标是处理数据，Python/R 都可以。 如果你想创建一个安卓应用，可以使用 Java/Kotlin。 只需要在你选择的领域里挑选出被广泛使用的语言就可以了。如果你不清楚，可以请教有经验的开发者。 你是为了申请一份需要特定语言的工作吗？ 你只需要学习工作描述中提及的语言就可以了。 不要花费太多时间选择第一个编程语言。 先快速上手，获取一定的经验，之后如果你不喜欢或你涉及的领域有所改变，你可以很容易地学会并使用另一种编程语言。 哪一个编程语言是最好的？ 这同样取决于你涉及的领域，编程语言各有所长。 没有任何一种编程语言能适用于所有场景，如果存在，我们只需要学习一种编程语言就可以了，不是吗？记得，没有银子弹2 几乎所有的程序员由于各自不同的体验都有自己偏爱的程序语言。 一些人声称他们喜欢的语言是最好的，别信；他们喜欢的不代表就是最好的。 就个人的体会而言，我喜欢的语言包括 C/Ruby/Lua/OCaml；我能使用这些语言产出东西，但可能不是你喜欢的，你应该尝试不同的语言找到自己喜爱的。 有人说至少掌握5种程序语言才是一个合格的程序员。 正如我上面说的那样，你不应该执着于学习越来越多的语言；而应该学习更多的语言思想和设计原理。 如果你日常的工作中使用的是过程式语言，为什么不学习一种面向对象的语言呢？ 如果你使用动态语言，可以学习一种静态类型的语言。 这些就是我学习编程语言的技巧。 如何学习所有编程语言，没错！是所有！ &amp;#8617; 没有银子弹：指没有万能药的意思。（译者注） &amp;#8617;</summary></entry><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">我应该从哪个编程语言开始学起？1 如何学习所有编程语言，没错！是所有！ &amp;#8617;</summary></entry><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00-04:00</published><updated>2021-08-22T00:00:00-04:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;（摄影：Christopher Michel）&lt;/p&gt;
 
@@ -1791,472 +1905,4 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/143834871&quot;&gt;KK 在 68 岁生日时给出的 68 条建议&lt;/a&gt;，略作修改并注明。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">（摄影：Christopher Michel） 上个月 28 号是凯文·凯利（Kevin Kelly，网名 KK）的 68 岁生日，他准备了 68 条简短的建议，作为礼物送给年轻人。 (1) Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe. 学着从那些你不认同甚至是冒犯你的人身上学习。看是否能从他们所信奉的东西中找到真相。 (2) Being enthusiastic is worth 25 IQ points. 充满热情抵得上 25 点智商。 (3) Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better. 做任何事都应该设个 deadline。它可以帮你排除那些无关紧要之事，并避免追求尽善尽美，而是努力去做到与众不同。差异胜于完美。 (4) Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it. 不要担心自己问的问题听起来很傻。99% 的情况下，其他人都有和你一样的问题，只不过羞于问出口而已。 (5) Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more. 善于倾听是一种超能力。倾听时，要不时地追问「还有吗」，直到他们没有更多东西可讲。 原译：善于倾听是一种超能力。倾听你所喜欢的人时，要不时地追问「还有吗」，直到他们没有更多东西可讲。 (6) A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier. 一个有意义的年度目标是去充分了解一个话题。这样，（到了年底的时候，）你就会对一年前的无知感到难以置信。 (7) Gratitude will unlock all other virtues and is something you can get better at. 感恩可以解锁其他所有美德，也是你能做得更好的一件事情。 (8) Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends. 不管是旧识还是新交，请他吃饭都是一个既简单又行得通的办法。 (9) Don’t trust all-purpose glue. 别信有什么万能药。 (10) Reading to your children regularly will bond you together and kickstart their imaginations. 经常为你的孩子读书既能巩固你们的感情，也能开启他们的想象力。 (11) Never use a credit card for credit. The only kind of credit, or debt, that is acceptable is debt to acquire something whose exchange value is extremely likely to increase, like in a home. The exchange value of most things diminishes or vanishes the moment you purchase them. Don’t be in debt to losers. 永远不要用信用卡去透支。唯一可接受的透支或负债，应该用来获取那些极可能增值的事物。绝大多数事物在你买下它的那一刻起就开始贬值了。别为那些没有未来的事物而透支。 (12) Pros are just amateurs who know how to gracefully recover from their mistakes. 所谓高手，不过是善于从跌跤中优雅起身的菜鸟而已。 (13) Extraordinary claims should require extraordinary evidence to be believed. 非同寻常的观点要有非同寻常的证据，才能令人信服。 (14) Don’t be the smartest person in the room. Hangout with, and learn from, people smarter than yourself. Even better, find smart people who will disagree with you. 别成为一群人里最聪明的那个。和那些比你聪明的人待在一起，向他们学习。如果能找到和你观点相左的聪明人，那就更好了。 (15) Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth. 对话的“数字 3 原则”：想要摸清一个人的真正意图，请他就刚才所说再深入一些，如此反复，直到第三遍，你所得到的就近于真相了。 (16) Don’t be the best. Be the only. 别做最好的。做唯一的。 (17) Everyone is shy. Other people are waiting for you to introduce yourself to them, they are waiting for you to send them an email, they are waiting for you to ask them on a date. Go ahead. 大家其实都很羞涩。没准儿人们正等着你去向他们做自我介绍，或是给他们发邮件，或是约他们见面。大胆往前走。 (18) Don’t take it personally when someone turns you down. Assume they are like you: busy, occupied, distracted. Try again later. It’s amazing how often a second try works. 如果被别人拒绝了，别往心里去。假设他们和你一样忙，一样腾不出手来，一样无暇分心。稍后再试一次。第二次的成功率超乎你想象。 (19) The purpose of a habit is to remove that action from self-negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing. 习惯的意义在于无需再为某类行为纠结，不用再为要不要做它而费思量。做就是了。讲真话和用牙线都属于好习惯。 (20) Promptness is a sign of respect. 及时回应是表示尊重的一种方式。 (21) When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario. 在你年轻的时候，至少花六个月到一年的时间，尽可能穷地过日子，尽可能少地拥有身外之物，居陋室而箪食瓢饮，以体验你可能会经历的最穷困潦倒的生活。这样，当你在将来需要行冒险之事时，就不至于为最糟糕的情况而忧心不已。 (22) Trust me: There is no “them”. 相信我，这世上没有“他们”。（注：出自爱尔兰摇滚乐队 U2 的一首歌 Invisible，&quot;There's no them / only us&quot;。） (23) The more you are interested in others, the more interesting they find you. To be interesting, be interested. 你越有兴趣了解他人，他人就会发现你越有趣。要成为有趣的人，先要对别人感兴趣。 (24) Optimize your generosity. No one on their deathbed has ever regretted giving too much away. 尽你所能行慷慨之事。没人会在死前后悔给出去太多。 (25) To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them. 想做好一件事，做就是了。想把一件事做到令人称颂，那就再来一遍，再来一遍，再来一遍。把事情做到极致的秘诀在于不停地重做。 (26) The Golden Rule will never fail you. It is the foundation of all other virtues. “设身处地”是待人接物之道。它是所有其他美德的基石。（注：英文中，“黄金法则”是指应该用自己希望被对待的方式来对待他人。） (27) If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it. 如果你在房间里遍寻某样东西并最终找到的话，那么用完后不要放回你找到它的地方，而是放到你最初找它的地方。 (28) Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth. 存钱和投资都是好习惯。几十年如一日不假思索地进行定期小额投资，是一条致富之道。 (29) To make mistakes is human. To own your mistakes is divine. Nothing elevates a person higher than quickly admitting and taking personal responsibility for the mistakes you make and then fixing them fairly. If you mess up, fess up. It’s astounding how powerful this ownership is. 犯错乃是人性。难的是责己。承认错误，勇于担责，并尽力弥补——没有什么比这更可贵的了。是自己搞砸的，就该坦承。这反而能彰显你的强大。 (30) Never get involved in a land war in Asia. 永远不要在亚洲陷入地面战争。 (31) You can obsess about serving your customers/audience/clients, or you can obsess about beating the competition. Both work, but of the two, obsessing about your customers will take you further. 你既可以专注于服务你的客户或听众，也可以专注于打败你的竞争对手。两者都行得通。但专注于服务你的客户会让你走得更远。 (32) Show up. Keep showing up. Somebody successful said: 99% of success is just showing up. 在场。坚持在场。某个成功人士说过：99% 的成功只不过是因为在场。 (33) Separate the processes of creation from improving. You can’t write and edit, or sculpt and polish, or make and analyze at the same time. If you do, the editor stops the creator. While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator mind must be unleashed from judgement. 将创造和改进分开。你不可能在写做的同时进行编辑，也不可能在凿刻的同时进行打磨，更不可能在制造的同时进行分析。如果你这么做，求善之心就会打断创造之意。创新时就要忘掉已有方案；勾勒草图时就不能太着眼于细处。写作时，先打草稿而不要去抠细节。在新事物之初，创意的思想必须得到无拘无束的释放。 (34) If you are not falling down occasionally, you are just coasting. 如果你从未跌倒过，那么你也就从未努力过。 (35) Perhaps the most counter-intuitive truth of the universe is that the more you give to others, the more you’ll get. Understanding this is the beginning of wisdom. 也许宇宙中最违反直觉的真理就是，你给予他人越多，你收获的就越多。这是智慧的起点。 (36) Friends are better than money. Almost anything money can do, friends can do better. In so many ways a friend with a boat is better than owning a boat. 朋友胜过金钱。用钱能办到的事情，朋友可以做得更好。很多时候，自己有条船不如有个有船的朋友。 (37) This is true: It’s hard to cheat an honest man. 相信我，你很难欺骗一个诚实的人。 (38) When an object is lost, 95% of the time it is hiding within arm’s reach of where it was last seen. Search in all possible locations in that radius and you’ll find it. 当你找不到一样东西时，它往往就在上次现身之处的一臂之内。仔细搜寻这个范围，你就能找到它。 (39) You are what you do. Not what you say, not what you believe, not how you vote, but what you spend your time on. 你的所作所为定义了你——既不是你所说的，也不是你所信的，更不是你所支持的，而是你花费时间于其上的。 (40) If you lose or forget to bring a cable, adapter or charger, check with your hotel. Most hotels now have a drawer full of cables, adapters and chargers others have left behind, and probably have the one you are missing. You can often claim it after borrowing it. 如果你把电源线、充电器什么的丢在或落在某个地方，不妨去问问你的酒店。绝大多数酒店都会有满满一抽屉的电源线、数据线和充电器——都是其他人落下的，没准儿其中就有你的。酒店也并不介意你借用后随身带走。 (41) Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison. 仇恨是一种对被仇恨者无用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。 原译：仇恨是一种对被仇恨者并无卵用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。 (42) There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with. 没有最好，只有更好。个人的天分有高有低，但不论高低，自身的提升都永无止境。 (43) Be prepared: When you are 90% done any large project (a house, a film, an event, an app) the rest of the myriad details will take a second 90% to complete. 任何一项大工程（修房子、拍电影、开发 app）完成度为 90% 的时候，你都要做好心理准备：剩余的大量细节工作会占掉你另一段与之前相当的时间。 (44) When you die you take absolutely nothing with you except your reputation. 离世时，除了名声，你什么都带不走。 (45) Before you are old, attend as many funerals as you can bear, and listen. Nobody talks about the departed’s achievements. The only thing people will remember is what kind of person you were while you were achieving. 上岁数之前，尽可能多地参加葬礼并听听人们的谈话。没人会谈论死者的成就。人们记住的只有死者的人品。 (46) For every dollar you spend purchasing something substantial, expect to pay a dollar in repairs, maintenance, or disposal by the end of its life. 你购买实体商品时所花的每一元钱，将来都要再花一元钱去维修、保养，或是在它报废后处理掉它。 (47) Anything real begins with the fiction of what could be. Imagination is therefore the most potent force in the universe, and a skill you can get better at. It’s the one skill in life that benefits from ignoring what everyone else knows. 任何真实之物都源于虚构之意。想象是宇宙中最强大的力量，也是你能够日益精进的能力。生命中可以因不知众人所知而获益的能力，仅此一项。 (48) When crisis and disaster strike, don’t waste them. No problems, no progress. 当危机和灾难来袭时，别错过他们。没有问题，就没有进步。 (49) On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back. 度假时，先跳过城市，去路线中最偏远的地方。这样你就能最大程度地体验到异域风情带给你的冲击。而在返程的路上，你则可以享受熟悉的城市所带给你的舒适。 (50) When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter. 当你被邀请在未来的某个时间点做某件事情时，问问自己：如果这件事情明天就启动，你会否接受？绝大多数邀约都经不住这种迫切性检验。 (51) Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they will read it. 不要在邮件里对他人品头论足——如果这些话你不会当面说给那些人听的话。要知道，他们早晚会读到你的这些评论。 (52) If you desperately need a job, you are just another problem for a boss; if you can solve many of the problems the boss has right now, you are hired. To be hired, think like your boss. 如果你只是迫切需要一份工作，那么对老板来说，你不过是又一个问题。如果你能解决老板的很多问题，那你自然能得到这份工作。要得到一份工作，需要像老板一样去想问题。 (53) Art is in what you leave out. 艺术藏身于你所遗漏之处。 (54) Acquiring things will rarely bring you deep satisfaction. But acquiring experiences will. 拥有物品很少能带给你极大的满足感。但拥有体验则能。 (55) Rule of 7 in research. You can find out anything if you are willing to go seven levels. If the first source you ask doesn’t know, ask them who you should ask next, and so on down the line. If you are willing to go to the 7th source, you’ll almost always get your answer. 研究的“数字 7 原则”：当你愿意就一个问题深入七层时，总能找到你想要的答案。如果你求教的第一层人不知道，那么就问问他们应该去找谁。如此追索下去。到第七层时，通常都会如愿以偿。 (56) How to apologize: Quickly, specifically, sincerely. 如何道歉？快速，具体，真诚。 (57) Don’t ever respond to a solicitation or a proposal on the phone. The urgency is a disguise. 不要在电话上答应任何请求或提议。所谓的紧急不过是个假象。 (58) When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict. 当一个人对你粗鄙、无礼、刻薄、甚至是无耻下流时，当他们有病就好。这有利于你对他生出同情心，从而缓解冲突。 (59) Eliminating clutter makes room for your true treasures. 清除杂物，为真正重要的东西腾出空间。 (60) You really don’t want to be famous. Read the biography of any famous person. 你绝不会想要出名。不信的话，随便找本名人传记读读。 (61) Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time. 经验往往被高估了。招募的时候，要看资质，技能则可以培训。许多令人惊奇和赞叹的事情，都是由第一次做的人做出来的。 (62) A vacation + a disaster = an adventure. 假期 + 灾难 = 冒险。 (63) Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford. 买工具时，起步阶段一定要买最便宜的。升级那些使用频次高的工具。如果你的工具是用于工作，那么买你能买得起的最好的。 (64) Learn how to take a 20-minute power nap without embarrassment. 学会毫不尴尬地打 20 分钟小盹儿。（注：20-minute power nap 通常指午后 20～30 分钟的小憩。近期有研究表明，20-minute power nap 有助于提振情绪，提升专注度和创造力。） (65) Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is. 在你不知道自己真正的激情所在时，追寻心之所向往往会带你误入歧途。对年轻人来说，更好的格言是：“精通一件事，任何事。”在精通一件事的过程中，你可以顺着带给你更多快乐的方向继续深入，并最终发现你的心之所向。 (66) I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today. 我敢肯定，我今天确信的很多事情在 100 年后都会被证明是错误的，甚至是错得离谱。而我非常努力在做的事情，就是去识别我对今天的错误认知。 (67) Over the long term, the future is decided by optimists. To be an optimist you don’t have to ignore all the many problems we create; you just have to imagine improving our capacity to solve problems. 从长远来说，未来取决于乐观主义者。成为一个乐观主义者并非要对我们制造的问题视而不见，而是要想象如何提升我们解决问题的能力。 (68) The universe is conspiring behind your back to make you a success. This will be much easier to do if you embrace this pronoia. 整个宇宙都在背后为你而谋划。如果你不怀有人人都与自己为敌的心态，会更容易成功。（注：pronoia 是 paranoia 的反义词。Paranoia 可以译为“迫害妄想症”，也即觉得所有人、所有事都与自己为敌的心理状态。） 原译：整个宇宙都在背后为你而谋划。要相信，天助人愿。 原文：KK 在 68 岁生日时给出的 68 条建议，略作修改并注明。</summary></entry><entry><title type="html">KK 在 69 岁生日时给出的 99 条建议</title><link href="https://empvalley.com/2021/08/22/99-additional-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 69 岁生日时给出的 99 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/99-additional-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/99-additional-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/99-additional-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I have another birthday, and another bunch of unsolicited advice.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;又一年生日；又一堆碎碎念。&lt;/p&gt;
-
-&lt;p&gt;(1) That thing that made you weird as a kid could make you great as an adult — if you don’t lose it.&lt;/p&gt;
-
-&lt;p&gt;儿时让你显得出格的事情会让你成年后与众不同——只要你还没有丢掉它。&lt;/p&gt;
-
-&lt;p&gt;【weird 一词的常用义是“怪异、离奇”。原文评论中有人指出，这个词来源于古英语 wyrd，意指“命运”。每个人都有自己的 wyrd 或 weird；也许应该学会运用我们身上的出格之处，而不是把它装进世俗的框架。KK 表示，涨姿势了。有兴趣的童鞋可以参考&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Wyrd&quot;&gt;维基百科上 wyrd 这个词条&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;另外，KK 也承认，很多建议都来自老话，他只不过把它们收集进来。所以，如果你在其他地方也读到过类似的建议，不用惊讶。】&lt;/p&gt;
-
-&lt;p&gt;(2) If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips.&lt;/p&gt;
-
-&lt;p&gt;如果你担心一趟带不上所有家伙事儿，那就分两次带好了。&lt;/p&gt;
-
-&lt;p&gt;(3) What you get by achieving your goals is not as important as what you become by achieving your goals. At your funeral people will not recall what you did; they will only remember how you made them feel.&lt;/p&gt;
-
-&lt;p&gt;达成目标所带给你的，远不及你为此而做出的自身改变。在你的葬礼上，人们不会记得你做过什么，只会记得你带给他们的感受。&lt;/p&gt;
-
-&lt;p&gt;(4) Recipe for success: under-promise and over-deliver.&lt;/p&gt;
-
-&lt;p&gt;成功的秘诀：不要承诺太满，而要超预期交付。&lt;/p&gt;
-
-&lt;p&gt;【看到网上有些译文把 under- 翻译成“少”，over- 翻译成“多”，但更确切的理解应该是：under- 为“不足”，over- 为“过度”。这其中的差别比较微妙。】&lt;/p&gt;
-
-&lt;p&gt;(5) It’s not an apology if it comes with an excuse. It is not a compliment if it comes with a request.&lt;/p&gt;
-
-&lt;p&gt;带有借口的道歉不是道歉；附有请求的夸赞也不是夸赞。&lt;/p&gt;
-
-&lt;p&gt;(6) Jesus, Superman, and Mother Teresa never made art. Only imperfect beings can make art because art begins in what is broken.&lt;/p&gt;
-
-&lt;p&gt;耶稣、超人和特蕾莎修女搞不了艺术。只有不完美的存在才能创作艺术，因为艺术始于残缺。&lt;/p&gt;
-
-&lt;p&gt;(7) If someone is trying to convince you it’s not a pyramid scheme, it’s a pyramid scheme.&lt;/p&gt;
-
-&lt;p&gt;如果某人试图让你相信这不是个老鼠会，那它就是个老鼠会。&lt;/p&gt;
-
-&lt;p&gt;(8) Learn how to tie a bowline knot. Practice in the dark. With one hand. For the rest of your life you’ll use this knot more times than you would ever believe.&lt;/p&gt;
-
-&lt;p&gt;学会如何打称人结。练习在黑暗中打；练习用一只手打。你会发现今后用到它的地方要远超出你的想象。&lt;/p&gt;
-
-&lt;p&gt;【称人结，也有叫单套结、帆索结的，是一种安全性较高也较容易解开的绳结。我照着视频学习了一下，闭着眼睛打应该没问题，单手打还不能够。】&lt;/p&gt;
-
-&lt;p&gt;(9) If something fails where you thought it would fail, that is not a failure.&lt;/p&gt;
-
-&lt;p&gt;预料中的失败算不上失败。&lt;/p&gt;
-
-&lt;p&gt;【这句做了一定程度的意译。原文评论中有人对此不解，认为失败就是失败，不能阻止可以预见的失败也是失败。这是看问题的角度不同，或者说，对失败的定义不同。】&lt;/p&gt;
-
-&lt;p&gt;(10) Be governed not by the tyranny of the urgent but by the elevation of the important.&lt;/p&gt;
-
-&lt;p&gt;不要被事情的紧急性牵着鼻子走，而要看它的重要性。&lt;/p&gt;
-
-&lt;p&gt;(11) Leave a gate behind you the way you first found it.&lt;/p&gt;
-
-&lt;p&gt;穿过一扇门后，保持它原来开或合的状态。&lt;/p&gt;
-
-&lt;p&gt;【没想到这居然是一条写入英国《乡村守则》（The Country Code）的规则，原始条文是“Leave all gates as you found them”。 有兴趣的童鞋可以查看&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Leave_the_gate_as_you_found_it&quot;&gt;维基百科上的词条&lt;/a&gt;。】&lt;/p&gt;
-
-&lt;p&gt;(12) The greatest rewards come from working on something that nobody has a name for. If you possibly can, work where there are no words for what you do.&lt;/p&gt;
-
-&lt;p&gt;做一件没有人能说清楚的事儿会带给你最大的回报。但凡有可能的话，去做一件还未被人们谈及的事情。&lt;/p&gt;
-
-&lt;p&gt;(13) A balcony or porch needs to be at least 6 feet (2m) deep or it won’t be used.&lt;/p&gt;
-
-&lt;p&gt;阳台至少应该有两米宽才有用。&lt;/p&gt;
-
-&lt;p&gt;(14) Don’t create things to make money; make money so you can create things. The reward for good work is more work.&lt;/p&gt;
-
-&lt;p&gt;不要为了赚钱而去做事；而是为了做事去赚钱。干好工作的回报是有更多的工作。&lt;/p&gt;
-
-&lt;p&gt;(15) In all things — except love — start with the exit strategy. Prepare for the ending. Almost anything is easier to get into than out of.&lt;/p&gt;
-
-&lt;p&gt;在所有事情（除去爱情）开始时做好退出计划。为结局做准备。几乎任何事情都是陷入易而抽身难。&lt;/p&gt;
-
-&lt;p&gt;(16) Train employees well enough they could get another job, but treat them well enough so they never want to.&lt;/p&gt;
-
-&lt;p&gt;尽力培训员工，使他们能有更多的职业机会；尽心善待员工，让他们永远不会考虑跳槽。&lt;/p&gt;
-
-&lt;p&gt;(17) Don’t aim to have others like you; aim to have them respect you.&lt;/p&gt;
-
-&lt;p&gt;要以获得他人的尊重而非喜爱为目标。&lt;/p&gt;
-
-&lt;p&gt;(18) The foundation of maturity: Just because it’s not your fault doesn’t mean it’s not your responsibility.&lt;/p&gt;
-
-&lt;p&gt;成熟的基本要素：不因事不关己而高高挂起。&lt;/p&gt;
-
-&lt;p&gt;(19) A multitude of bad ideas is necessary for one good idea.&lt;/p&gt;
-
-&lt;p&gt;无数个糟糕的想法中才能诞生一个好想法。&lt;/p&gt;
-
-&lt;p&gt;(20) Being wise means having more questions than answers.&lt;/p&gt;
-
-&lt;p&gt;有智慧意味着有更多的问题而非答案。&lt;/p&gt;
-
-&lt;p&gt;(21) Compliment people behind their back. It’ll come back to you.&lt;/p&gt;
-
-&lt;p&gt;背后夸人。别人也会背后夸你。&lt;/p&gt;
-
-&lt;p&gt;(22) Most overnight successes — in fact any significant successes — take at least 5 years. Budget your life accordingly.&lt;/p&gt;
-
-&lt;p&gt;绝大多数一夜之间的功成名就——事实上，任何显著的成就——都要经过至少五年（的准备）。请据此来规划你的人生。&lt;/p&gt;
-
-&lt;p&gt;(23) You are only as young as the last time you changed your mind.&lt;/p&gt;
-
-&lt;p&gt;你的年轻程度取决于你上一次改变想法的时候（想法有多成熟）。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;原译：你的年轻程度取决于你上一次改变想法的时候（距今有多久）。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;(24) Assume anyone asking for your account information for any reason is guilty of scamming you, unless proven innocent. The way to prove innocence is to call them back, or login to your account using numbers or a website that you provide, not them. Don’t release any identifying information while they are contacting you via phone, message or email. You must control the channel.&lt;/p&gt;
-
-&lt;p&gt;任何人以任何借口向你索要账号信息，都可以认为他们是骗子，除非能证明他们是无辜的。而证明他们无辜的方法是，给你自己确知的号码打电话或登录你自己确知的网站，而不是用他们给你的号码或网页地址。不要在他们打给你的电话或是在回复他们发给你的消息、邮件中透露任何个人信息。你的数据安全你掌控。&lt;/p&gt;
-
-&lt;p&gt;(25) Sustained outrage makes you stupid.&lt;/p&gt;
-
-&lt;p&gt;持续的愤怒会让你变得愚蠢。&lt;/p&gt;
-
-&lt;p&gt;(26) Be strict with yourself and forgiving of others. The reverse is hell for everyone.&lt;/p&gt;
-
-&lt;p&gt;严以律己，宽以待人。反其道而行对谁来说都是灾难。&lt;/p&gt;
-
-&lt;p&gt;(27) Your best response to an insult is “You’re probably right.” Often they are.&lt;/p&gt;
-
-&lt;p&gt;当别人冒犯你时，最好的回应是“也许您是对的”。而通常他们确实是对的。&lt;/p&gt;
-
-&lt;p&gt;(28) The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil.&lt;/p&gt;
-
-&lt;p&gt;历史上最严重的罪行总是由那些真心相信自己在与邪恶战斗的人而犯下的。警惕与邪恶做斗争。&lt;/p&gt;
-
-&lt;p&gt;(29) If you can avoid seeking approval of others, your power is limitless.&lt;/p&gt;
-
-&lt;p&gt;如果你不用在意别人的眼光，那你的力量就是无穷的。&lt;/p&gt;
-
-&lt;p&gt;(30) When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?”&lt;/p&gt;
-
-&lt;p&gt;当孩子不停地问“为什么”时，最聪明的回答是：“我不知道。你怎么看呢？”&lt;/p&gt;
-
-&lt;p&gt;(31) To be wealthy, accumulate all those things that money can’t buy.&lt;/p&gt;
-
-&lt;p&gt;积攒那些用钱买不到的东西可以致富。&lt;/p&gt;
-
-&lt;p&gt;(32) Be the change you wish to see.&lt;/p&gt;
-
-&lt;p&gt;成为你想要看见的改变。&lt;/p&gt;
-
-&lt;p&gt;【这句话曾被认为是圣雄甘地所说，但其实甘地并没有说过这句话。】&lt;/p&gt;
-
-&lt;p&gt;(33) When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply.&lt;/p&gt;
-
-&lt;p&gt;在与他人一起头脑风暴或是即兴创作时，用令人鼓舞的“没错——而且”——而非令人泄气的“不——可是”——来回应每一条贡献，那你就能走得更深更远。&lt;/p&gt;
-
-&lt;p&gt;(34) Work to become, not to acquire.&lt;/p&gt;
-
-&lt;p&gt;工作是为了成长而非获取。&lt;/p&gt;
-
-&lt;p&gt;【注：此句出自美国作家和出版人阿尔伯特·哈伯德（Elbert Hubbard）。他以短篇故事《把信送给加西亚》（另译为《致加西亚的信》，A Message to Garcia）而闻名。】&lt;/p&gt;
-
-&lt;p&gt;(35) Don’t loan money to a friend unless you are ready to make it a gift.&lt;/p&gt;
-
-&lt;p&gt;别借钱给朋友，除非你已做好心理准备当作是送给他。&lt;/p&gt;
-
-&lt;p&gt;(36) On the way to a grand goal, celebrate the smallest victories as if each one were the final goal. No matter where it ends you are victorious.&lt;/p&gt;
-
-&lt;p&gt;在通往宏伟目标的路上，把每一次微不足道的胜利都当作最终目标来庆祝。这样无论在哪里结束，你都是胜利者。&lt;/p&gt;
-
-&lt;p&gt;(37) Calm is contagious.&lt;/p&gt;
-
-&lt;p&gt;镇定具有传染力。&lt;/p&gt;
-
-&lt;p&gt;(38) Even a foolish person can still be right about most things. Most conventional wisdom is true.&lt;/p&gt;
-
-&lt;p&gt;即便是一个蠢人，在大多数事情上也是对的。大多数老话都是有道理的。&lt;/p&gt;
-
-&lt;p&gt;(39) Always cut away from yourself.&lt;/p&gt;
-
-&lt;p&gt;切削时刀子的方向要朝外。&lt;/p&gt;
-
-&lt;p&gt;(40) Show me your calendar and I will tell you your priorities. Tell me who your friends are, and I’ll tell you where you’re going.&lt;/p&gt;
-
-&lt;p&gt;从你的日程安排可以看出你看重什么事情；从你的交往圈子可以看出你会是什么样的人。&lt;/p&gt;
-
-&lt;p&gt;【我再补充半句：从一个国家的年轻人可以看出这个国家的未来。】&lt;/p&gt;
-
-&lt;p&gt;(41) When hitchhiking, look like the person you want to pick you up.&lt;/p&gt;
-
-&lt;p&gt;搭便车时，要表现得像是你自己愿意搭载的人。&lt;/p&gt;
-
-&lt;p&gt;(42) Contemplating the weaknesses of others is easy; contemplating the weaknesses in yourself is hard, but it pays a much higher reward.&lt;/p&gt;
-
-&lt;p&gt;审视别人的弱点很容易；审视自己的弱点很难，但这会让你受益匪浅。&lt;/p&gt;
-
-&lt;p&gt;(43) Worth repeating: measure twice, cut once.&lt;/p&gt;
-
-&lt;p&gt;值得多念两遍：量两次，切一次。&lt;/p&gt;
-
-&lt;p&gt;【这是一句木工谚语，指在动手切割之前要核查测量是否准确，以免浪费材料。也有译为“三思而后行”的。】&lt;/p&gt;
-
-&lt;p&gt;(44) Your passion in life should fit you exactly; but your purpose in life should exceed you. Work for something much larger than yourself.&lt;/p&gt;
-
-&lt;p&gt;生活的欲望应与自身相匹配，但生命的意义应超越自我。致力于那些超越自我的事情。&lt;/p&gt;
-
-&lt;p&gt;【passion 的常用译法是“热情”。不过，这种热情往往是受内心的欲望或渴望而驱动的，它和另一个词 &lt;em&gt;lust&lt;/em&gt; 可以看作是同一个本源的正反两面。】&lt;/p&gt;
-
-&lt;p&gt;(45) If you can’t tell what you desperately need, it’s probably sleep.&lt;/p&gt;
-
-&lt;p&gt;如果你不知道自己迫切想要什么的话，那么答案很可能是“睡上一觉”。&lt;/p&gt;
-
-&lt;p&gt;(46) When playing Monopoly, spend all you have to buy, barter, or trade for the Orange properties. Don’t bother with Utilities.&lt;/p&gt;
-
-&lt;p&gt;在玩《地产大亨》（也译为《大富翁》、《强手棋》）时，尽你所能去购买、交换或是竞标那些橙色资产。别管那些水、电、气公司。&lt;/p&gt;
-
-&lt;p&gt;【在《地产大亨》游戏中，玩家在橙色地段停留的几率最高。】&lt;/p&gt;
-
-&lt;p&gt;(47) If you borrow something, try to return it in better shape than you received it. Clean it, sharpen it, fill it up.&lt;/p&gt;
-
-&lt;p&gt;还东西时，要让它比你借它时状态更好。清洗它，磨快它，加满它。&lt;/p&gt;
-
-&lt;p&gt;(48) Even in the tropics it gets colder at night than you think. Pack warmly.&lt;/p&gt;
-
-&lt;p&gt;即便在热带，夜晚也比你想象的冷。多带两件衣服。&lt;/p&gt;
-
-&lt;p&gt;(49) To quiet a crowd or a drunk, just whisper.&lt;/p&gt;
-
-&lt;p&gt;让人群或醉鬼安静下来的办法是对他们低声耳语。&lt;/p&gt;
-
-&lt;p&gt;(50) Writing down one thing you are grateful for each day is the cheapest possible therapy ever.&lt;/p&gt;
-
-&lt;p&gt;每天记下一件让你感恩的事情。这是成本最低的（心灵）疗法。&lt;/p&gt;
-
-&lt;p&gt;(51) When someone tells you something is wrong, they’re usually right. When someone tells you how to fix it, they’re usually wrong.&lt;/p&gt;
-
-&lt;p&gt;如果人们告诉你某件事是错的，他们通常是对的；但如果他们告诉你该如何去解决问题，那通常都行不通。&lt;/p&gt;
-
-&lt;p&gt;(52) If you think you saw a mouse, you did. And, if there is one, there are more.&lt;/p&gt;
-
-&lt;p&gt;如果你觉得自己看到了一只老鼠，那一定是看到了。如果有一只的话，就一定会有更多。&lt;/p&gt;
-
-&lt;p&gt;(53) Money is overrated. Truly new things rarely need an abundance of money. If that was so, billionaires would have a monopoly on inventing new things, and they don’t. Instead almost all breakthroughs are made by those who lack money, because they are forced to rely on their passion, persistence and ingenuity to figure out new ways. Being poor is an advantage in innovation.&lt;/p&gt;
-
-&lt;p&gt;金钱被高估了。真正的新事物很少需要大量金钱。不然的话，所有新发明都会被那些亿万富翁们所垄断，但并没有。相反，几乎所有的突破都来自于那些囊中羞涩的人——他们唯有依赖自己的热情、执着和才智，才能闯出一条新路来。穷，则思变。&lt;/p&gt;
-
-&lt;p&gt;【穷则思变这个成语中，“穷”的原意并非贫穷，而是“穷尽”，指事物走到了尽头。不过今天，这则成语更多用来指贫穷会促使人想办法改变现状。&lt;/p&gt;
-
-&lt;p&gt;这和前段时间网上流行的“贫穷限制了你的想象力”是截然不同的两个视角。也许，限制想象力的从来都不是贫穷或富有。】&lt;/p&gt;
-
-&lt;p&gt;(54) Ignore what others may be thinking of you, because they aren’t.&lt;/p&gt;
-
-&lt;p&gt;不用在意别人怎么看你。他们也并不在意你。&lt;/p&gt;
-
-&lt;p&gt;(55) Avoid hitting the snooze button. That’s just training you to oversleep.&lt;/p&gt;
-
-&lt;p&gt;（闹钟响时）别按“稍后提醒（snooze）”按钮。这只能让你习惯性地睡过头。&lt;/p&gt;
-
-&lt;p&gt;(56) Always say less than necessary.&lt;/p&gt;
-
-&lt;p&gt;智者不多言。&lt;/p&gt;
-
-&lt;p&gt;【原文出自美国作家罗伯特·格林（Robert Greene）的《权力的 48 条法则》（The 48 Laws of Power）。意思是说，当你试图用言语打动他人时，说得越多，越显得你所言之事平淡无奇。要少言，要留白。&lt;/p&gt;
-
-&lt;p&gt;《老子·道德经》中有“知者不言，言者不知”的说法，虽然不完全是一个意思，但可以参照着来回味。】&lt;/p&gt;
-
-&lt;p&gt;(57) You are given the gift of life in order to discover what your gift in life is. You will complete your mission when you figure out what your mission is. This is not a paradox. This is the way.&lt;/p&gt;
-
-&lt;p&gt;上天赋予你生命，是要你来发现你的天赋所在。当你找到你的使命时，你就完成了你的使命。这并非自相矛盾，而是道之所在。&lt;/p&gt;
-
-&lt;p&gt;【中文可以用三个字来概括这段话，就是“知天命”。】&lt;/p&gt;
-
-&lt;p&gt;(58) Don’t treat people as bad as they are. Treat them as good as you are.&lt;/p&gt;
-
-&lt;p&gt;投我以木瓜，报之以琼琚。&lt;/p&gt;
-
-&lt;p&gt;【这句纯粹是意译。原文直译是：“不要以他人对你的恶意来待他，而要以你的善意来待他”。】&lt;/p&gt;
-
-&lt;p&gt;(59) It is much easier to change how you think by changing your behavior, than it is to change your behavior by changing how you think. Act out the change you seek.&lt;/p&gt;
-
-&lt;p&gt;通过改变行为而改变想法，要比通过改变想法来改变行为容易得多。去实践你所寻求的改变。&lt;/p&gt;
-
-&lt;p&gt;(60) You can eat any dessert you want if you take only 3 bites.&lt;/p&gt;
-
-&lt;p&gt;如果你能只吃三小口，那任何甜点随你吃。&lt;/p&gt;
-
-&lt;p&gt;(61) Each time you reach out to people, bring them a blessing; then they’ll be happy to see you when you bring them a problem.&lt;/p&gt;
-
-&lt;p&gt;每次去到别人那里都能给人带来祝福的话，那人们也很乐意帮你解决你的问题。&lt;/p&gt;
-
-&lt;p&gt;【这段做了一定程度的意译。】&lt;/p&gt;
-
-&lt;p&gt;(62) Bad things can happen fast, but almost all good things happen slowly.&lt;/p&gt;
-
-&lt;p&gt;坏事无常，好事多磨。&lt;/p&gt;
-
-&lt;p&gt;(63) Don’t worry how or where you begin. As long as you keep moving, your success will be far from where you start.&lt;/p&gt;
-
-&lt;p&gt;不要太在意从哪儿或是如何开始。只要不停前进，你的成就将远远超越你的起点。&lt;/p&gt;
-
-&lt;p&gt;(64) When you confront a stuck bolt or screw: righty tighty, lefty loosey.&lt;/p&gt;
-
-&lt;p&gt;遇上卡住的螺栓时，记住：右旋（顺时针）紧，左旋（逆时针）松。&lt;/p&gt;
-
-&lt;p&gt;【相信我们都碰到过这种情况：想要把一个拧紧的螺丝拧松时，忽然就想不清楚该往哪个方向拧了。英语里面用 righty tighty, lefty loosey 这个押韵的短语来帮助记忆。不过，我还是会经常糊涂，特别是螺丝的位置是在物体的底部时。】&lt;/p&gt;
-
-&lt;p&gt;(65) If you meet a jerk, overlook them. If you meet jerks everywhere everyday, look deeper into yourself.&lt;/p&gt;
-
-&lt;p&gt;碰上一个混蛋的话，不用理他。总是碰上混蛋的话，好好反省一下自己。&lt;/p&gt;
-
-&lt;p&gt;(66) Dance with your hips.&lt;/p&gt;
-
-&lt;p&gt;要用你的臀部来跳舞。&lt;/p&gt;
-
-&lt;p&gt;【说实话，不是很清楚为啥。原文的评论里也有人较真儿说，交谊舞是不能动胯的，功夫全在脚上。&lt;/p&gt;
-
-&lt;p&gt;但&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//www.scientificamerican.com/article/what-makes-for-the-hottest-dance-moves-hips-dont-lie-video1/&quot;&gt;有科学研究表明&lt;/a&gt;，女性舞者摆臀的动作是最吸引异性的；而男性舞者则应该动脖子和上身，再加上右膝的快速动作。&lt;/p&gt;
-
-&lt;p&gt;所以，这段建议其实不完整，有冒犯女权之嫌。应该再加上半句：（男舞者）要用你的脖子来跳舞。】&lt;/p&gt;
-
-&lt;p&gt;(67) We are not bodies that temporarily have souls. We are souls that temporarily have bodies.&lt;/p&gt;
-
-&lt;p&gt;我们并非短暂拥有灵魂的躯壳，而是短暂拥有躯壳的灵魂。&lt;/p&gt;
-
-&lt;p&gt;(68) You can reduce the annoyance of someone’s stupid belief by increasing your understanding of why they believe it.&lt;/p&gt;
-
-&lt;p&gt;如果你对某些人的愚蠢信念感到费解的话，不妨试着去理解他们为什么会有这种信念。&lt;/p&gt;
-
-&lt;p&gt;(69) If your goal does not have a schedule, it is a dream.&lt;/p&gt;
-
-&lt;p&gt;没有行动计划的目标只不过是白日梦。&lt;/p&gt;
-
-&lt;p&gt;(70) All the greatest gains in life — in wealth, relationships, or knowledge —come from the magic of compounding interest — amplifying small steady gains. All you need for abundance is to keep adding 1% more than you subtract on a regular basis.&lt;/p&gt;
-
-&lt;p&gt;生命中所有最重要的收益——不论是财富、人际关系还是知识——都来自于神奇的复利，它可以将持续的微小收益进一步放大。你所要做的，就是在日常基础上，持之以恒地加上 1%。&lt;/p&gt;
-
-&lt;p&gt;(71) The greatest breakthroughs are missed because they look like hard work.&lt;/p&gt;
-
-&lt;p&gt;人们之所以会错过重大突破，是因为它们看着就很难。&lt;/p&gt;
-
-&lt;p&gt;(72) People can’t remember more than 3 points from a speech.&lt;/p&gt;
-
-&lt;p&gt;一段讲话中能被人记住的点不超过三个。&lt;/p&gt;
-
-&lt;p&gt;(73) I have never met a person I admired who did not read more books than I did.&lt;/p&gt;
-
-&lt;p&gt;我所仰慕的人，读的书都比我多。&lt;/p&gt;
-
-&lt;p&gt;(74) The greatest teacher is called “doing”.&lt;/p&gt;
-
-&lt;p&gt;实践出真知。&lt;/p&gt;
-
-&lt;p&gt;(75) Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards.&lt;/p&gt;
-
-&lt;p&gt;有限的游戏旨在分出胜负；无限的游戏旨在让游戏继续进行下去。去寻找那些无限的游戏，因为它们能带给你无尽的回报。&lt;/p&gt;
-
-&lt;p&gt;【关于有限游戏和无限游戏，可以读读「东西文库」出品的一本小书&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//book.douban.com/subject/25742296/&quot;&gt;《有限与无限的游戏》&lt;/a&gt;。】&lt;/p&gt;
-
-&lt;p&gt;(76) Everything is hard before it is easy. The day before something is a breakthrough, it’s a stupid idea.&lt;/p&gt;
-
-&lt;p&gt;每件事在变得容易之前都是很难的。某个想法在取得突破之前都会显得很愚蠢。&lt;/p&gt;
-
-&lt;p&gt;(77) A problem that can be solved with money is not really a problem.&lt;/p&gt;
-
-&lt;p&gt;能用钱解决的事儿就不叫事儿。&lt;/p&gt;
-
-&lt;p&gt;(78) When you are stuck, sleep on it. Let your subconscious work for you.&lt;/p&gt;
-
-&lt;p&gt;碰到卡壳的时候就睡上一觉。让潜意识来帮你解决问题。&lt;/p&gt;
-
-&lt;p&gt;(79) Your work will be endless, but your time is finite. You cannot limit the work so you must limit your time. Hours are the only thing you can manage.&lt;/p&gt;
-
-&lt;p&gt;事情是做不完的，但时间是有限的。你不可能不去做事儿，但你可以控制你的时间。时间是你唯一能掌控的事情。&lt;/p&gt;
-
-&lt;p&gt;(80) To succeed, get other people to pay you; to become wealthy, help other people to succeed.&lt;/p&gt;
-
-&lt;p&gt;让别人付钱给你可成事；帮别人成事可致富。&lt;/p&gt;
-
-&lt;p&gt;(81) Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies.&lt;/p&gt;
-
-&lt;p&gt;孩子对立规矩其实是接受甚至欢迎的。家长想要立规矩的话，只需声明“我们家对这事儿有个规矩”。事实上，你想为自己定规矩的话，也只需要“我对这件事情有个规矩”这一个理由。&lt;/p&gt;
-
-&lt;p&gt;(82) All guns are loaded.&lt;/p&gt;
-
-&lt;p&gt;所有的枪都是上了膛的。&lt;/p&gt;
-
-&lt;p&gt;【这是保证枪支安全的一条重要原则。永远不要将你的枪口对着人。】&lt;/p&gt;
-
-&lt;p&gt;(83) Many backward steps are made by standing still.&lt;/p&gt;
-
-&lt;p&gt;逆水行舟，不进则退。&lt;/p&gt;
-
-&lt;p&gt;(84) This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late.&lt;/p&gt;
-
-&lt;p&gt;当下是创造的最佳时机。未来二十年内最伟大、最酷炫的发明尚未诞生。你一点儿都不晚。&lt;/p&gt;
-
-&lt;p&gt;(85) No rain, no rainbow.&lt;/p&gt;
-
-&lt;p&gt;不经历风雨，怎能见彩虹。&lt;/p&gt;
-
-&lt;p&gt;(86) Every person you meet knows an amazing lot about something you know virtually nothing about. Your job is to discover what it is, and it won’t be obvious.&lt;/p&gt;
-
-&lt;p&gt;你遇到的每个人都会熟知某个你几乎一无所知的事物，而你的任务就是发现这个事物是什么。答案并非显而易见。&lt;/p&gt;
-
-&lt;p&gt;(87) You don’t marry a person, you marry a family.&lt;/p&gt;
-
-&lt;p&gt;你与之步入婚姻的并非是一个人，而是一个家庭。&lt;/p&gt;
-
-&lt;p&gt;(88) Always give credit, take blame.&lt;/p&gt;
-
-&lt;p&gt;功劳归于他人，责难归于自己。&lt;/p&gt;
-
-&lt;p&gt;【西方人很重视给别人足够的 credit。该给别人的 credit 没有给，就构成 plagiarism（抄袭、剽窃），是非常严重的学术不端行为。&lt;/p&gt;
-
-&lt;p&gt;国内年轻人缺少这方面的意识和习惯。如果你的成果中含有别人的工作，一定要明确声明，哪怕你觉得这种声明并不能给他人带来任何好处。因为这体现的是，你是否尊重事实并能如实陈述。】&lt;/p&gt;
-
-&lt;p&gt;(89) Be frugal in all things, except in your passions splurge.&lt;/p&gt;
-
-&lt;p&gt;在任何事情上都要精打细算，唯有你的热情无需如此。&lt;/p&gt;
-
-&lt;p&gt;(90) When making something, always get a few extras — extra material, extra parts, extra space, extra finishes. The extras serve as backups for mistakes, reduce stress, and fill your inventory for the future. They are the cheapest insurance.&lt;/p&gt;
-
-&lt;p&gt;做事留出裕量——多备些材料和部件，多留些空间和时间，多做些成品。这些裕量可以弥补错误、减轻压力，并可放入仓库以备将来所需。裕量是最便宜的保险。&lt;/p&gt;
-
-&lt;p&gt;(91) Something does not need to be perfect to be wonderful. Especially weddings.&lt;/p&gt;
-
-&lt;p&gt;某些事情即便不完美也很精彩，特别是婚礼。&lt;/p&gt;
-
-&lt;p&gt;(92) Don’t let your email inbox become your to-do list.&lt;/p&gt;
-
-&lt;p&gt;别把你的邮件收件箱当 to-do list 来用。&lt;/p&gt;
-
-&lt;p&gt;【很多时候我们并没有意识到，我们在把邮件收件箱当 to-do list 来用。比如，你可能会想着稍后再回复一封邮件；再比如，有一封看起来重要但又不紧急的邮件，你也许会故意让它保持“未读”状态，这样你有空或想起来的时候就可以把它读了。这些做法都不如用一个专门的 to-do list 工具来得有效。如果你想稍后再回复一封邮件，那就在 to-do list 里记上一笔；如果你想稍后再读某封邮件，同样把这件事记在 to-do list 里。&lt;/p&gt;
-
-&lt;p&gt;当然，另一种做法是，立刻、马上把该做的事儿做了。第一时间读该读的邮件，第一时间回复该回复的邮件。任何管理工具都会带来额外的成本。】&lt;/p&gt;
-
-&lt;p&gt;(93) The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables.&lt;/p&gt;
-
-&lt;p&gt;解开一团乱麻的最好方法不是去“解”，而是把它不断向外拉扯，尽可能让它变大、变松。打结处就会自然而然地解开。绳索、软管、毛线、电缆，都可以用这种方法。&lt;/p&gt;
-
-&lt;p&gt;【也适用于想法或心情。】&lt;/p&gt;
-
-&lt;p&gt;(94) Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree.&lt;/p&gt;
-
-&lt;p&gt;做一个称职的祖先，做一些造福子孙后代的事情。一件简单的事情就是种棵树。&lt;/p&gt;
-
-&lt;p&gt;(95) To combat an adversary, become their friend.&lt;/p&gt;
-
-&lt;p&gt;对敌之道是化敌为友。&lt;/p&gt;
-
-&lt;p&gt;(96) Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky.&lt;/p&gt;
-
-&lt;p&gt;找一件简单的事情——任何事情，极其认真地对待它，仿佛它是世界上唯一的事情。只要认真对待，你就能照亮天空。&lt;/p&gt;
-
-&lt;p&gt;(97) History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?”&lt;/p&gt;
-
-&lt;p&gt;历史告诉我们，今天我们相信的很多道理一百年后都将不再正确。今天给自己提的一个好问题就是：“我有哪些看法可能是错的？”&lt;/p&gt;
-
-&lt;p&gt;(98) Be nice to your children because they are going to choose your nursing home.&lt;/p&gt;
-
-&lt;p&gt;善待子女，因为他们会决定你的养老条件。&lt;/p&gt;
-
-&lt;p&gt;(99) Advice like these are not laws. They are like hats. If one doesn’t fit, try another.&lt;/p&gt;
-
-&lt;p&gt;这些建议并非什么金科玉律。它们更像是帽子。如果戴着不合适，换一顶就是了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/372580671&quot;&gt;KK 在 69 岁生日时给出的 99 条建议&lt;/a&gt;&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html">I have another birthday, and another bunch of unsolicited advice. 又一年生日；又一堆碎碎念。 (1) That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. 儿时让你显得出格的事情会让你成年后与众不同——只要你还没有丢掉它。 【weird 一词的常用义是“怪异、离奇”。原文评论中有人指出，这个词来源于古英语 wyrd，意指“命运”。每个人都有自己的 wyrd 或 weird；也许应该学会运用我们身上的出格之处，而不是把它装进世俗的框架。KK 表示，涨姿势了。有兴趣的童鞋可以参考维基百科上 wyrd 这个词条。 另外，KK 也承认，很多建议都来自老话，他只不过把它们收集进来。所以，如果你在其他地方也读到过类似的建议，不用惊讶。】 (2) If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips. 如果你担心一趟带不上所有家伙事儿，那就分两次带好了。 (3) What you get by achieving your goals is not as important as what you become by achieving your goals. At your funeral people will not recall what you did; they will only remember how you made them feel. 达成目标所带给你的，远不及你为此而做出的自身改变。在你的葬礼上，人们不会记得你做过什么，只会记得你带给他们的感受。 (4) Recipe for success: under-promise and over-deliver. 成功的秘诀：不要承诺太满，而要超预期交付。 【看到网上有些译文把 under- 翻译成“少”，over- 翻译成“多”，但更确切的理解应该是：under- 为“不足”，over- 为“过度”。这其中的差别比较微妙。】 (5) It’s not an apology if it comes with an excuse. It is not a compliment if it comes with a request. 带有借口的道歉不是道歉；附有请求的夸赞也不是夸赞。 (6) Jesus, Superman, and Mother Teresa never made art. Only imperfect beings can make art because art begins in what is broken. 耶稣、超人和特蕾莎修女搞不了艺术。只有不完美的存在才能创作艺术，因为艺术始于残缺。 (7) If someone is trying to convince you it’s not a pyramid scheme, it’s a pyramid scheme. 如果某人试图让你相信这不是个老鼠会，那它就是个老鼠会。 (8) Learn how to tie a bowline knot. Practice in the dark. With one hand. For the rest of your life you’ll use this knot more times than you would ever believe. 学会如何打称人结。练习在黑暗中打；练习用一只手打。你会发现今后用到它的地方要远超出你的想象。 【称人结，也有叫单套结、帆索结的，是一种安全性较高也较容易解开的绳结。我照着视频学习了一下，闭着眼睛打应该没问题，单手打还不能够。】 (9) If something fails where you thought it would fail, that is not a failure. 预料中的失败算不上失败。 【这句做了一定程度的意译。原文评论中有人对此不解，认为失败就是失败，不能阻止可以预见的失败也是失败。这是看问题的角度不同，或者说，对失败的定义不同。】 (10) Be governed not by the tyranny of the urgent but by the elevation of the important. 不要被事情的紧急性牵着鼻子走，而要看它的重要性。 (11) Leave a gate behind you the way you first found it. 穿过一扇门后，保持它原来开或合的状态。 【没想到这居然是一条写入英国《乡村守则》（The Country Code）的规则，原始条文是“Leave all gates as you found them”。 有兴趣的童鞋可以查看维基百科上的词条。】 (12) The greatest rewards come from working on something that nobody has a name for. If you possibly can, work where there are no words for what you do. 做一件没有人能说清楚的事儿会带给你最大的回报。但凡有可能的话，去做一件还未被人们谈及的事情。 (13) A balcony or porch needs to be at least 6 feet (2m) deep or it won’t be used. 阳台至少应该有两米宽才有用。 (14) Don’t create things to make money; make money so you can create things. The reward for good work is more work. 不要为了赚钱而去做事；而是为了做事去赚钱。干好工作的回报是有更多的工作。 (15) In all things — except love — start with the exit strategy. Prepare for the ending. Almost anything is easier to get into than out of. 在所有事情（除去爱情）开始时做好退出计划。为结局做准备。几乎任何事情都是陷入易而抽身难。 (16) Train employees well enough they could get another job, but treat them well enough so they never want to. 尽力培训员工，使他们能有更多的职业机会；尽心善待员工，让他们永远不会考虑跳槽。 (17) Don’t aim to have others like you; aim to have them respect you. 要以获得他人的尊重而非喜爱为目标。 (18) The foundation of maturity: Just because it’s not your fault doesn’t mean it’s not your responsibility. 成熟的基本要素：不因事不关己而高高挂起。 (19) A multitude of bad ideas is necessary for one good idea. 无数个糟糕的想法中才能诞生一个好想法。 (20) Being wise means having more questions than answers. 有智慧意味着有更多的问题而非答案。 (21) Compliment people behind their back. It’ll come back to you. 背后夸人。别人也会背后夸你。 (22) Most overnight successes — in fact any significant successes — take at least 5 years. Budget your life accordingly. 绝大多数一夜之间的功成名就——事实上，任何显著的成就——都要经过至少五年（的准备）。请据此来规划你的人生。 (23) You are only as young as the last time you changed your mind. 你的年轻程度取决于你上一次改变想法的时候（想法有多成熟）。 原译：你的年轻程度取决于你上一次改变想法的时候（距今有多久）。 (24) Assume anyone asking for your account information for any reason is guilty of scamming you, unless proven innocent. The way to prove innocence is to call them back, or login to your account using numbers or a website that you provide, not them. Don’t release any identifying information while they are contacting you via phone, message or email. You must control the channel. 任何人以任何借口向你索要账号信息，都可以认为他们是骗子，除非能证明他们是无辜的。而证明他们无辜的方法是，给你自己确知的号码打电话或登录你自己确知的网站，而不是用他们给你的号码或网页地址。不要在他们打给你的电话或是在回复他们发给你的消息、邮件中透露任何个人信息。你的数据安全你掌控。 (25) Sustained outrage makes you stupid. 持续的愤怒会让你变得愚蠢。 (26) Be strict with yourself and forgiving of others. The reverse is hell for everyone. 严以律己，宽以待人。反其道而行对谁来说都是灾难。 (27) Your best response to an insult is “You’re probably right.” Often they are. 当别人冒犯你时，最好的回应是“也许您是对的”。而通常他们确实是对的。 (28) The worst evils in history have always been committed by those who truly believed they were combating evil. Beware of combating evil. 历史上最严重的罪行总是由那些真心相信自己在与邪恶战斗的人而犯下的。警惕与邪恶做斗争。 (29) If you can avoid seeking approval of others, your power is limitless. 如果你不用在意别人的眼光，那你的力量就是无穷的。 (30) When a child asks an endless string of “why?” questions, the smartest reply is, “I don’t know, what do you think?” 当孩子不停地问“为什么”时，最聪明的回答是：“我不知道。你怎么看呢？” (31) To be wealthy, accumulate all those things that money can’t buy. 积攒那些用钱买不到的东西可以致富。 (32) Be the change you wish to see. 成为你想要看见的改变。 【这句话曾被认为是圣雄甘地所说，但其实甘地并没有说过这句话。】 (33) When brainstorming, improvising, jamming with others, you’ll go much further and deeper if you build upon each contribution with a playful “yes — and” example instead of a deflating “no — but” reply. 在与他人一起头脑风暴或是即兴创作时，用令人鼓舞的“没错——而且”——而非令人泄气的“不——可是”——来回应每一条贡献，那你就能走得更深更远。 (34) Work to become, not to acquire. 工作是为了成长而非获取。 【注：此句出自美国作家和出版人阿尔伯特·哈伯德（Elbert Hubbard）。他以短篇故事《把信送给加西亚》（另译为《致加西亚的信》，A Message to Garcia）而闻名。】 (35) Don’t loan money to a friend unless you are ready to make it a gift. 别借钱给朋友，除非你已做好心理准备当作是送给他。 (36) On the way to a grand goal, celebrate the smallest victories as if each one were the final goal. No matter where it ends you are victorious. 在通往宏伟目标的路上，把每一次微不足道的胜利都当作最终目标来庆祝。这样无论在哪里结束，你都是胜利者。 (37) Calm is contagious. 镇定具有传染力。 (38) Even a foolish person can still be right about most things. Most conventional wisdom is true. 即便是一个蠢人，在大多数事情上也是对的。大多数老话都是有道理的。 (39) Always cut away from yourself. 切削时刀子的方向要朝外。 (40) Show me your calendar and I will tell you your priorities. Tell me who your friends are, and I’ll tell you where you’re going. 从你的日程安排可以看出你看重什么事情；从你的交往圈子可以看出你会是什么样的人。 【我再补充半句：从一个国家的年轻人可以看出这个国家的未来。】 (41) When hitchhiking, look like the person you want to pick you up. 搭便车时，要表现得像是你自己愿意搭载的人。 (42) Contemplating the weaknesses of others is easy; contemplating the weaknesses in yourself is hard, but it pays a much higher reward. 审视别人的弱点很容易；审视自己的弱点很难，但这会让你受益匪浅。 (43) Worth repeating: measure twice, cut once. 值得多念两遍：量两次，切一次。 【这是一句木工谚语，指在动手切割之前要核查测量是否准确，以免浪费材料。也有译为“三思而后行”的。】 (44) Your passion in life should fit you exactly; but your purpose in life should exceed you. Work for something much larger than yourself. 生活的欲望应与自身相匹配，但生命的意义应超越自我。致力于那些超越自我的事情。 【passion 的常用译法是“热情”。不过，这种热情往往是受内心的欲望或渴望而驱动的，它和另一个词 lust 可以看作是同一个本源的正反两面。】 (45) If you can’t tell what you desperately need, it’s probably sleep. 如果你不知道自己迫切想要什么的话，那么答案很可能是“睡上一觉”。 (46) When playing Monopoly, spend all you have to buy, barter, or trade for the Orange properties. Don’t bother with Utilities. 在玩《地产大亨》（也译为《大富翁》、《强手棋》）时，尽你所能去购买、交换或是竞标那些橙色资产。别管那些水、电、气公司。 【在《地产大亨》游戏中，玩家在橙色地段停留的几率最高。】 (47) If you borrow something, try to return it in better shape than you received it. Clean it, sharpen it, fill it up. 还东西时，要让它比你借它时状态更好。清洗它，磨快它，加满它。 (48) Even in the tropics it gets colder at night than you think. Pack warmly. 即便在热带，夜晚也比你想象的冷。多带两件衣服。 (49) To quiet a crowd or a drunk, just whisper. 让人群或醉鬼安静下来的办法是对他们低声耳语。 (50) Writing down one thing you are grateful for each day is the cheapest possible therapy ever. 每天记下一件让你感恩的事情。这是成本最低的（心灵）疗法。 (51) When someone tells you something is wrong, they’re usually right. When someone tells you how to fix it, they’re usually wrong. 如果人们告诉你某件事是错的，他们通常是对的；但如果他们告诉你该如何去解决问题，那通常都行不通。 (52) If you think you saw a mouse, you did. And, if there is one, there are more. 如果你觉得自己看到了一只老鼠，那一定是看到了。如果有一只的话，就一定会有更多。 (53) Money is overrated. Truly new things rarely need an abundance of money. If that was so, billionaires would have a monopoly on inventing new things, and they don’t. Instead almost all breakthroughs are made by those who lack money, because they are forced to rely on their passion, persistence and ingenuity to figure out new ways. Being poor is an advantage in innovation. 金钱被高估了。真正的新事物很少需要大量金钱。不然的话，所有新发明都会被那些亿万富翁们所垄断，但并没有。相反，几乎所有的突破都来自于那些囊中羞涩的人——他们唯有依赖自己的热情、执着和才智，才能闯出一条新路来。穷，则思变。 【穷则思变这个成语中，“穷”的原意并非贫穷，而是“穷尽”，指事物走到了尽头。不过今天，这则成语更多用来指贫穷会促使人想办法改变现状。 这和前段时间网上流行的“贫穷限制了你的想象力”是截然不同的两个视角。也许，限制想象力的从来都不是贫穷或富有。】 (54) Ignore what others may be thinking of you, because they aren’t. 不用在意别人怎么看你。他们也并不在意你。 (55) Avoid hitting the snooze button. That’s just training you to oversleep. （闹钟响时）别按“稍后提醒（snooze）”按钮。这只能让你习惯性地睡过头。 (56) Always say less than necessary. 智者不多言。 【原文出自美国作家罗伯特·格林（Robert Greene）的《权力的 48 条法则》（The 48 Laws of Power）。意思是说，当你试图用言语打动他人时，说得越多，越显得你所言之事平淡无奇。要少言，要留白。 《老子·道德经》中有“知者不言，言者不知”的说法，虽然不完全是一个意思，但可以参照着来回味。】 (57) You are given the gift of life in order to discover what your gift in life is. You will complete your mission when you figure out what your mission is. This is not a paradox. This is the way. 上天赋予你生命，是要你来发现你的天赋所在。当你找到你的使命时，你就完成了你的使命。这并非自相矛盾，而是道之所在。 【中文可以用三个字来概括这段话，就是“知天命”。】 (58) Don’t treat people as bad as they are. Treat them as good as you are. 投我以木瓜，报之以琼琚。 【这句纯粹是意译。原文直译是：“不要以他人对你的恶意来待他，而要以你的善意来待他”。】 (59) It is much easier to change how you think by changing your behavior, than it is to change your behavior by changing how you think. Act out the change you seek. 通过改变行为而改变想法，要比通过改变想法来改变行为容易得多。去实践你所寻求的改变。 (60) You can eat any dessert you want if you take only 3 bites. 如果你能只吃三小口，那任何甜点随你吃。 (61) Each time you reach out to people, bring them a blessing; then they’ll be happy to see you when you bring them a problem. 每次去到别人那里都能给人带来祝福的话，那人们也很乐意帮你解决你的问题。 【这段做了一定程度的意译。】 (62) Bad things can happen fast, but almost all good things happen slowly. 坏事无常，好事多磨。 (63) Don’t worry how or where you begin. As long as you keep moving, your success will be far from where you start. 不要太在意从哪儿或是如何开始。只要不停前进，你的成就将远远超越你的起点。 (64) When you confront a stuck bolt or screw: righty tighty, lefty loosey. 遇上卡住的螺栓时，记住：右旋（顺时针）紧，左旋（逆时针）松。 【相信我们都碰到过这种情况：想要把一个拧紧的螺丝拧松时，忽然就想不清楚该往哪个方向拧了。英语里面用 righty tighty, lefty loosey 这个押韵的短语来帮助记忆。不过，我还是会经常糊涂，特别是螺丝的位置是在物体的底部时。】 (65) If you meet a jerk, overlook them. If you meet jerks everywhere everyday, look deeper into yourself. 碰上一个混蛋的话，不用理他。总是碰上混蛋的话，好好反省一下自己。 (66) Dance with your hips. 要用你的臀部来跳舞。 【说实话，不是很清楚为啥。原文的评论里也有人较真儿说，交谊舞是不能动胯的，功夫全在脚上。 但有科学研究表明，女性舞者摆臀的动作是最吸引异性的；而男性舞者则应该动脖子和上身，再加上右膝的快速动作。 所以，这段建议其实不完整，有冒犯女权之嫌。应该再加上半句：（男舞者）要用你的脖子来跳舞。】 (67) We are not bodies that temporarily have souls. We are souls that temporarily have bodies. 我们并非短暂拥有灵魂的躯壳，而是短暂拥有躯壳的灵魂。 (68) You can reduce the annoyance of someone’s stupid belief by increasing your understanding of why they believe it. 如果你对某些人的愚蠢信念感到费解的话，不妨试着去理解他们为什么会有这种信念。 (69) If your goal does not have a schedule, it is a dream. 没有行动计划的目标只不过是白日梦。 (70) All the greatest gains in life — in wealth, relationships, or knowledge —come from the magic of compounding interest — amplifying small steady gains. All you need for abundance is to keep adding 1% more than you subtract on a regular basis. 生命中所有最重要的收益——不论是财富、人际关系还是知识——都来自于神奇的复利，它可以将持续的微小收益进一步放大。你所要做的，就是在日常基础上，持之以恒地加上 1%。 (71) The greatest breakthroughs are missed because they look like hard work. 人们之所以会错过重大突破，是因为它们看着就很难。 (72) People can’t remember more than 3 points from a speech. 一段讲话中能被人记住的点不超过三个。 (73) I have never met a person I admired who did not read more books than I did. 我所仰慕的人，读的书都比我多。 (74) The greatest teacher is called “doing”. 实践出真知。 (75) Finite games are played to win or lose. Infinite games are played to keep the game going. Seek out infinite games because they yield infinite rewards. 有限的游戏旨在分出胜负；无限的游戏旨在让游戏继续进行下去。去寻找那些无限的游戏，因为它们能带给你无尽的回报。 【关于有限游戏和无限游戏，可以读读「东西文库」出品的一本小书《有限与无限的游戏》。】 (76) Everything is hard before it is easy. The day before something is a breakthrough, it’s a stupid idea. 每件事在变得容易之前都是很难的。某个想法在取得突破之前都会显得很愚蠢。 (77) A problem that can be solved with money is not really a problem. 能用钱解决的事儿就不叫事儿。 (78) When you are stuck, sleep on it. Let your subconscious work for you. 碰到卡壳的时候就睡上一觉。让潜意识来帮你解决问题。 (79) Your work will be endless, but your time is finite. You cannot limit the work so you must limit your time. Hours are the only thing you can manage. 事情是做不完的，但时间是有限的。你不可能不去做事儿，但你可以控制你的时间。时间是你唯一能掌控的事情。 (80) To succeed, get other people to pay you; to become wealthy, help other people to succeed. 让别人付钱给你可成事；帮别人成事可致富。 (81) Children totally accept — and crave — family rules. “In our family we have a rule for X” is the only excuse a parent needs for setting a family policy. In fact, “I have a rule for X” is the only excuse you need for your own personal policies. 孩子对立规矩其实是接受甚至欢迎的。家长想要立规矩的话，只需声明“我们家对这事儿有个规矩”。事实上，你想为自己定规矩的话，也只需要“我对这件事情有个规矩”这一个理由。 (82) All guns are loaded. 所有的枪都是上了膛的。 【这是保证枪支安全的一条重要原则。永远不要将你的枪口对着人。】 (83) Many backward steps are made by standing still. 逆水行舟，不进则退。 (84) This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late. 当下是创造的最佳时机。未来二十年内最伟大、最酷炫的发明尚未诞生。你一点儿都不晚。 (85) No rain, no rainbow. 不经历风雨，怎能见彩虹。 (86) Every person you meet knows an amazing lot about something you know virtually nothing about. Your job is to discover what it is, and it won’t be obvious. 你遇到的每个人都会熟知某个你几乎一无所知的事物，而你的任务就是发现这个事物是什么。答案并非显而易见。 (87) You don’t marry a person, you marry a family. 你与之步入婚姻的并非是一个人，而是一个家庭。 (88) Always give credit, take blame. 功劳归于他人，责难归于自己。 【西方人很重视给别人足够的 credit。该给别人的 credit 没有给，就构成 plagiarism（抄袭、剽窃），是非常严重的学术不端行为。 国内年轻人缺少这方面的意识和习惯。如果你的成果中含有别人的工作，一定要明确声明，哪怕你觉得这种声明并不能给他人带来任何好处。因为这体现的是，你是否尊重事实并能如实陈述。】 (89) Be frugal in all things, except in your passions splurge. 在任何事情上都要精打细算，唯有你的热情无需如此。 (90) When making something, always get a few extras — extra material, extra parts, extra space, extra finishes. The extras serve as backups for mistakes, reduce stress, and fill your inventory for the future. They are the cheapest insurance. 做事留出裕量——多备些材料和部件，多留些空间和时间，多做些成品。这些裕量可以弥补错误、减轻压力，并可放入仓库以备将来所需。裕量是最便宜的保险。 (91) Something does not need to be perfect to be wonderful. Especially weddings. 某些事情即便不完美也很精彩，特别是婚礼。 (92) Don’t let your email inbox become your to-do list. 别把你的邮件收件箱当 to-do list 来用。 【很多时候我们并没有意识到，我们在把邮件收件箱当 to-do list 来用。比如，你可能会想着稍后再回复一封邮件；再比如，有一封看起来重要但又不紧急的邮件，你也许会故意让它保持“未读”状态，这样你有空或想起来的时候就可以把它读了。这些做法都不如用一个专门的 to-do list 工具来得有效。如果你想稍后再回复一封邮件，那就在 to-do list 里记上一笔；如果你想稍后再读某封邮件，同样把这件事记在 to-do list 里。 当然，另一种做法是，立刻、马上把该做的事儿做了。第一时间读该读的邮件，第一时间回复该回复的邮件。任何管理工具都会带来额外的成本。】 (93) The best way to untangle a knotty tangle is not to “untie” the knots, but to keep pulling the loops apart wider and wider. Just make the mess as big, loose and open as possible. As you open up the knots they will unravel themselves. Works on cords, strings, hoses, yarns, or electronic cables. 解开一团乱麻的最好方法不是去“解”，而是把它不断向外拉扯，尽可能让它变大、变松。打结处就会自然而然地解开。绳索、软管、毛线、电缆，都可以用这种方法。 【也适用于想法或心情。】 (94) Be a good ancestor. Do something a future generation will thank you for. A simple thing is to plant a tree. 做一个称职的祖先，做一些造福子孙后代的事情。一件简单的事情就是种棵树。 (95) To combat an adversary, become their friend. 对敌之道是化敌为友。 (96) Take one simple thing — almost anything — but take it extremely seriously, as if it was the only thing in the world, or maybe the entire world is in it — and by taking it seriously you’ll light up the sky. 找一件简单的事情——任何事情，极其认真地对待它，仿佛它是世界上唯一的事情。只要认真对待，你就能照亮天空。 (97) History teaches us that in 100 years from now some of the assumptions you believed will turn out to be wrong. A good question to ask yourself today is “What might I be wrong about?” 历史告诉我们，今天我们相信的很多道理一百年后都将不再正确。今天给自己提的一个好问题就是：“我有哪些看法可能是错的？” (98) Be nice to your children because they are going to choose your nursing home. 善待子女，因为他们会决定你的养老条件。 (99) Advice like these are not laws. They are like hats. If one doesn’t fit, try another. 这些建议并非什么金科玉律。它们更像是帽子。如果戴着不合适，换一顶就是了。 原文：KK 在 69 岁生日时给出的 99 条建议</summary></entry></feed>
+&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/143834871&quot;&gt;KK 在 68 岁生日时给出的 68 条建议&lt;/a&gt;，略作修改并注明。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html"></summary></entry></feed>

@@ -1,394 +1,401 @@
 [
   
     {
+      "title"      : "乔布斯弥留之际关于生命意义的最后遗言",
+      "url"        : "/2022/03/31/jobs-thought-about-life-on-his-last-days/",
+      "date"       : "2022-03-31 00:00:00 -0400",
+      "shortdate"  : "March 31, 2022"
+    } ,
+  
+    {
       "title"      : "从零搭建创业公司后台技术栈",
       "url"        : "/2021/09/22/build-technology-stack-from-scratch/",
-      "date"       : "2021-09-22 00:00:00 +0800",
+      "date"       : "2021-09-22 00:00:00 -0400",
       "shortdate"  : "September 22, 2021"
     } ,
   
     {
       "title"      : "SSL证书问题：不能访问本地发行的证书",
       "url"        : "/2021/09/17/unable-to-get-local-issuer-certificate/",
-      "date"       : "2021-09-17 00:00:00 +0800",
+      "date"       : "2021-09-17 00:00:00 -0400",
       "shortdate"  : "September 17, 2021"
     } ,
   
     {
       "title"      : "什么是服务网格（Service Mesh）",
       "url"        : "/2021/09/11/what-is-a-service-mesh/",
-      "date"       : "2021-09-11 00:00:00 +0800",
+      "date"       : "2021-09-11 00:00:00 -0400",
       "shortdate"  : "September 11, 2021"
     } ,
   
     {
       "title"      : "理解本真的 REST 架构风格",
       "url"        : "/2021/09/11/understanding-restful-style/",
-      "date"       : "2021-09-11 00:00:00 +0800",
+      "date"       : "2021-09-11 00:00:00 -0400",
       "shortdate"  : "September 11, 2021"
     } ,
   
     {
       "title"      : "同步 fork",
       "url"        : "/2021/09/11/syncing-a-fork/",
-      "date"       : "2021-09-11 00:00:00 +0800",
+      "date"       : "2021-09-11 00:00:00 -0400",
       "shortdate"  : "September 11, 2021"
     } ,
   
     {
       "title"      : "深入理解设计模式",
       "url"        : "/2021/09/11/dive-into-design-patterns/",
-      "date"       : "2021-09-11 00:00:00 +0800",
+      "date"       : "2021-09-11 00:00:00 -0400",
       "shortdate"  : "September 11, 2021"
     } ,
   
     {
       "title"      : "如何学习所有编程语言",
       "url"        : "/2021/08/28/how-to-learn-all-programming-languages/",
-      "date"       : "2021-08-28 00:00:00 +0800",
+      "date"       : "2021-08-28 00:00:00 -0400",
       "shortdate"  : "August 28, 2021"
     } ,
   
     {
       "title"      : "如何学习所有编程语言漫画版",
       "url"        : "/2021/08/28/comic-of-several-programming-languages-concepts/",
-      "date"       : "2021-08-28 00:00:00 +0800",
+      "date"       : "2021-08-28 00:00:00 -0400",
       "shortdate"  : "August 28, 2021"
     } ,
   
     {
       "title"      : "KK 在 69 岁生日时给出的 99 条建议",
       "url"        : "/2021/08/22/99-additional-bits-of-unsolicited-advice/",
-      "date"       : "2021-08-22 00:00:00 +0800",
+      "date"       : "2021-08-22 00:00:00 -0400",
       "shortdate"  : "August 22, 2021"
     } ,
   
     {
       "title"      : "KK 在 68 岁生日时给出的 68 条建议",
       "url"        : "/2021/08/22/68-bits-of-unsolicited-advice/",
-      "date"       : "2021-08-22 00:00:00 +0800",
+      "date"       : "2021-08-22 00:00:00 -0400",
       "shortdate"  : "August 22, 2021"
     } ,
   
     {
       "title"      : "Mysql CTE",
       "url"        : "/2021/08/02/mysql-cte/",
-      "date"       : "2021-08-02 00:00:00 +0800",
+      "date"       : "2021-08-02 00:00:00 -0400",
       "shortdate"  : "August 02, 2021"
     } ,
   
     {
       "title"      : "Commit message 和 Change log 编写指南",
       "url"        : "/2021/07/01/commit-message-change-log/",
-      "date"       : "2021-07-01 00:00:00 +0800",
+      "date"       : "2021-07-01 00:00:00 -0400",
       "shortdate"  : "July 01, 2021"
     } ,
   
     {
       "title"      : "解决 Maven 仓库镜像被锁定",
       "url"        : "/2021/06/26/blocked-mirror-for-repositories-of-maven/",
-      "date"       : "2021-06-26 00:00:00 +0800",
+      "date"       : "2021-06-26 00:00:00 -0400",
       "shortdate"  : "June 26, 2021"
     } ,
   
     {
       "title"      : "备份和恢复 Windows10 驱动",
       "url"        : "/2021/06/23/backup-and-restore-device-drivers-in-windows10/",
-      "date"       : "2021-06-23 00:00:00 +0800",
+      "date"       : "2021-06-23 00:00:00 -0400",
       "shortdate"  : "June 23, 2021"
     } ,
   
     {
       "title"      : "客户端使用多个 SSH Keys",
       "url"        : "/2021/06/22/use-multiple-ssh-private-keys-on-client/",
-      "date"       : "2021-06-22 00:00:00 +0800",
+      "date"       : "2021-06-22 00:00:00 -0400",
       "shortdate"  : "June 22, 2021"
     } ,
   
     {
       "title"      : "生成 SSH Key",
       "url"        : "/2021/06/22/generating-a-new-ssh-key/",
-      "date"       : "2021-06-22 00:00:00 +0800",
+      "date"       : "2021-06-22 00:00:00 -0400",
       "shortdate"  : "June 22, 2021"
     } ,
   
     {
       "title"      : "Intellij Idea 常用插件",
       "url"        : "/2021/06/21/intellij-idea-common-plugins/",
-      "date"       : "2021-06-21 00:00:00 +0800",
+      "date"       : "2021-06-21 00:00:00 -0400",
       "shortdate"  : "June 21, 2021"
     } ,
   
     {
       "title"      : "备份 VMware Workstation 虚拟机的最佳做法",
       "url"        : "/2021/06/20/backup-vmware-workstation/",
-      "date"       : "2021-06-20 00:00:00 +0800",
+      "date"       : "2021-06-20 00:00:00 -0400",
       "shortdate"  : "June 20, 2021"
     } ,
   
     {
       "title"      : "Dell Inspiron 5488 双硬盘安装 Win10 Ubuntu 双系统",
       "url"        : "/2020/08/28/win10-ubuntu-dual-boot/",
-      "date"       : "2020-08-28 00:00:00 +0800",
+      "date"       : "2020-08-28 00:00:00 -0400",
       "shortdate"  : "August 28, 2020"
     } ,
   
     {
       "title"      : "人生只有900个月",
       "url"        : "/2020/04/12/900-month-lifespan/",
-      "date"       : "2020-04-12 00:00:00 +0800",
+      "date"       : "2020-04-12 00:00:00 -0400",
       "shortdate"  : "April 12, 2020"
     } ,
   
     {
       "title"      : "限制房租对谁有利？",
       "url"        : "/2020/04/11/who-benefits-from-restricting-rent/",
-      "date"       : "2020-04-11 00:00:00 +0800",
+      "date"       : "2020-04-11 00:00:00 -0400",
       "shortdate"  : "April 11, 2020"
     } ,
   
     {
       "title"      : "理查德·斯托曼一直是对的",
       "url"        : "/2020/04/11/richard-stallman-was-right-all-along/",
-      "date"       : "2020-04-11 00:00:00 +0800",
+      "date"       : "2020-04-11 00:00:00 -0400",
       "shortdate"  : "April 11, 2020"
     } ,
   
     {
       "title"      : "共享 SESSION",
       "url"        : "/2019/12/23/share-session/",
-      "date"       : "2019-12-23 00:00:00 +0800",
+      "date"       : "2019-12-23 00:00:00 -0500",
       "shortdate"  : "December 23, 2019"
     } ,
   
     {
       "title"      : "IDEA TOMCAT 控制台中文乱码",
       "url"        : "/2019/12/22/idea-tomcat-console-chinese-messy-code/",
-      "date"       : "2019-12-22 00:00:00 +0800",
+      "date"       : "2019-12-22 00:00:00 -0500",
       "shortdate"  : "December 22, 2019"
     } ,
   
     {
       "title"      : "疯子唧唧",
       "url"        : "/2019/08/08/all-nonsense/",
-      "date"       : "2019-08-08 00:00:00 +0800",
+      "date"       : "2019-08-08 00:00:00 -0400",
       "shortdate"  : "August 08, 2019"
     } ,
   
     {
       "title"      : "落了片白茫茫大地真干净",
       "url"        : "/2019/07/13/nothing-at-all/",
-      "date"       : "2019-07-13 00:00:00 +0800",
+      "date"       : "2019-07-13 00:00:00 -0400",
       "shortdate"  : "July 13, 2019"
     } ,
   
     {
       "title"      : "Java 设计模式",
       "url"        : "/2019/07/06/java-design-patterns-example-tutorial/",
-      "date"       : "2019-07-06 00:00:00 +0800",
+      "date"       : "2019-07-06 00:00:00 -0400",
       "shortdate"  : "July 06, 2019"
     } ,
   
     {
       "title"      : "一个大屎坑",
       "url"        : "/2019/05/21/a-big-cesspool/",
-      "date"       : "2019-05-21 00:00:00 +0800",
+      "date"       : "2019-05-21 00:00:00 -0400",
       "shortdate"  : "May 21, 2019"
     } ,
   
     {
       "title"      : "Spring @Async 的异常处理",
       "url"        : "/2019/03/14/spring-async-exception-handling/",
-      "date"       : "2019-03-14 00:00:00 +0800",
+      "date"       : "2019-03-14 00:00:00 -0400",
       "shortdate"  : "March 14, 2019"
     } ,
   
     {
       "title"      : "使用 ES File Explorer 在手机和电脑之间传输数据",
       "url"        : "/2018/11/24/trans-data-between-mobile-and-pc/",
-      "date"       : "2018-11-24 00:00:00 +0800",
+      "date"       : "2018-11-24 00:00:00 -0500",
       "shortdate"  : "November 24, 2018"
     } ,
   
     {
       "title"      : "抽象工厂模式",
       "url"        : "/2018/11/08/java-abstract-factory-design-pattern/",
-      "date"       : "2018-11-08 00:00:00 +0800",
+      "date"       : "2018-11-08 00:00:00 -0500",
       "shortdate"  : "November 08, 2018"
     } ,
   
     {
       "title"      : "Java 中的多节点树",
       "url"        : "/2018/10/22/java-multi-way-tree/",
-      "date"       : "2018-10-22 00:00:00 +0800",
+      "date"       : "2018-10-22 00:00:00 -0400",
       "shortdate"  : "October 22, 2018"
     } ,
   
     {
       "title"      : "RabbitMQ ConfirmCallback 和 ReturnCallback 的区别",
       "url"        : "/2018/10/08/rabbitmq-confirmcallback-returncallback-difference/",
-      "date"       : "2018-10-08 00:00:00 +0800",
+      "date"       : "2018-10-08 00:00:00 -0400",
       "shortdate"  : "October 08, 2018"
     } ,
   
     {
       "title"      : "SVN stuck due to previous operation has not finished",
       "url"        : "/2018/08/03/svn-stuck-previous-operation-has-not-finished/",
-      "date"       : "2018-08-03 00:00:00 +0800",
+      "date"       : "2018-08-03 00:00:00 -0400",
       "shortdate"  : "August 03, 2018"
     } ,
   
     {
       "title"      : "web.xml 配置示例",
       "url"        : "/2018/06/29/web-xml-deployment-descriptor-examples/",
-      "date"       : "2018-06-29 00:00:00 +0800",
+      "date"       : "2018-06-29 00:00:00 -0400",
       "shortdate"  : "June 29, 2018"
     } ,
   
     {
       "title"      : "JavaEE 中 web.xml 文件的作用",
       "url"        : "/2018/06/29/the-functions-of-the-web-xml-file-in-javaee/",
-      "date"       : "2018-06-29 00:00:00 +0800",
+      "date"       : "2018-06-29 00:00:00 -0400",
       "shortdate"  : "June 29, 2018"
     } ,
   
     {
       "title"      : "SpringBoot 中 application.yml 和 bootstrap.yml 文件的区别",
       "url"        : "/2018/06/10/the-difference-between-application.yml-and-bootstrap.yml/",
-      "date"       : "2018-06-10 00:00:00 +0800",
+      "date"       : "2018-06-10 00:00:00 -0400",
       "shortdate"  : "June 10, 2018"
     } ,
   
     {
       "title"      : "一暴十寒",
       "url"        : "/2018/05/18/yi-pu-shi-han/",
-      "date"       : "2018-05-18 00:00:00 +0800",
+      "date"       : "2018-05-18 00:00:00 -0400",
       "shortdate"  : "May 18, 2018"
     } ,
   
     {
       "title"      : "林则徐",
       "url"        : "/2018/05/09/lin-zexu/",
-      "date"       : "2018-05-09 00:00:00 +0800",
+      "date"       : "2018-05-09 00:00:00 -0400",
       "shortdate"  : "May 09, 2018"
     } ,
   
     {
       "title"      : "Linux 命令",
       "url"        : "/2018/05/03/linux-commands/",
-      "date"       : "2018-05-03 00:00:00 +0800",
+      "date"       : "2018-05-03 00:00:00 -0400",
       "shortdate"  : "May 03, 2018"
     } ,
   
     {
       "title"      : "配置安装在 Virtual box 中的 Ubuntu",
       "url"        : "/2018/04/19/install-ubuntu-on-virtualbox/",
-      "date"       : "2018-04-19 00:00:00 +0800",
+      "date"       : "2018-04-19 00:00:00 -0400",
       "shortdate"  : "April 19, 2018"
     } ,
   
     {
       "title"      : "配置安装在 Virtual box 中的 CentOS",
       "url"        : "/2018/04/19/install-centos-on-virtualbox/",
-      "date"       : "2018-04-19 00:00:00 +0800",
+      "date"       : "2018-04-19 00:00:00 -0400",
       "shortdate"  : "April 19, 2018"
     } ,
   
     {
       "title"      : "Docker 入门教程",
       "url"        : "/2018/04/19/docker-tutorial/",
-      "date"       : "2018-04-19 00:00:00 +0800",
+      "date"       : "2018-04-19 00:00:00 -0400",
       "shortdate"  : "April 19, 2018"
     } ,
   
     {
       "title"      : "素书",
       "url"        : "/2018/03/25/sushu/",
-      "date"       : "2018-03-25 00:00:00 +0800",
+      "date"       : "2018-03-25 00:00:00 -0400",
       "shortdate"  : "March 25, 2018"
     } ,
   
     {
       "title"      : "vi 常用命令",
       "url"        : "/2018/03/09/vi-commands/",
-      "date"       : "2018-03-09 00:00:00 +0800",
+      "date"       : "2018-03-09 00:00:00 -0500",
       "shortdate"  : "March 09, 2018"
     } ,
   
     {
       "title"      : "佳句",
       "url"        : "/2017/12/19/graceful-sentences/",
-      "date"       : "2017-12-19 00:00:00 +0800",
+      "date"       : "2017-12-19 00:00:00 -0500",
       "shortdate"  : "December 19, 2017"
     } ,
   
     {
       "title"      : "公开课《死亡》QA",
       "url"        : "/2017/02/25/questions-about-death/",
-      "date"       : "2017-02-25 00:00:00 +0800",
+      "date"       : "2017-02-25 00:00:00 -0500",
       "shortdate"  : "February 25, 2017"
     } ,
   
     {
       "title"      : "英语中的同义词",
       "url"        : "/2017/01/04/english-synonyms/",
-      "date"       : "2017-01-04 00:00:00 +0800",
+      "date"       : "2017-01-04 00:00:00 -0500",
       "shortdate"  : "January 04, 2017"
     } ,
   
     {
       "title"      : "XML 文件中标签的含义",
       "url"        : "/2016/12/26/xml-label-meaning/",
-      "date"       : "2016-12-26 00:00:00 +0800",
+      "date"       : "2016-12-26 00:00:00 -0500",
       "shortdate"  : "December 26, 2016"
     } ,
   
     {
       "title"      : "Mybatis 一对多和多对一关系映射配置",
       "url"        : "/2016/12/23/mybatis-one-to-many-and-many-to-one-relations-mapping/",
-      "date"       : "2016-12-23 00:00:00 +0800",
+      "date"       : "2016-12-23 00:00:00 -0500",
       "shortdate"  : "December 23, 2016"
     } ,
   
     {
       "title"      : "一碗毒鸡汤",
       "url"        : "/2016/12/10/a-bowl-of-toxic-chicken-soup/",
-      "date"       : "2016-12-10 00:00:00 +0800",
+      "date"       : "2016-12-10 00:00:00 -0500",
       "shortdate"  : "December 10, 2016"
     } ,
   
     {
       "title"      : "Oracle 和 Mysql 中的分页 SQL",
       "url"        : "/2016/11/26/paging-sql/",
-      "date"       : "2016-11-26 00:00:00 +0800",
+      "date"       : "2016-11-26 00:00:00 -0500",
       "shortdate"  : "November 26, 2016"
     } ,
   
     {
       "title"      : "常用 Git 命令清单",
       "url"        : "/2016/11/17/git-common-commands/",
-      "date"       : "2016-11-17 00:00:00 +0800",
+      "date"       : "2016-11-17 00:00:00 -0500",
       "shortdate"  : "November 17, 2016"
     } ,
   
     {
       "title"      : "Mybatis 批量插入数据到 Oracle 数据库",
       "url"        : "/2016/11/15/mybatis-batch-insert-data-to-oracle/",
-      "date"       : "2016-11-15 00:00:00 +0800",
+      "date"       : "2016-11-15 00:00:00 -0500",
       "shortdate"  : "November 15, 2016"
     } ,
   
     {
       "title"      : "让世界是世界, 你甘心是你的茧",
       "url"        : "/2014/03/17/FIGHTING/",
-      "date"       : "2014-03-17 00:00:00 +0800",
+      "date"       : "2014-03-17 00:00:00 -0400",
       "shortdate"  : "March 17, 2014"
     } ,
   
     {
       "title"      : "Kramdown使用示例",
       "url"        : "/2013/04/22/quick-kramdown-demo-and-code-highlighting/",
-      "date"       : "2013-04-22 00:00:00 +0800",
+      "date"       : "2013-04-22 00:00:00 -0400",
       "shortdate"  : "April 22, 2013"
     } 
   
