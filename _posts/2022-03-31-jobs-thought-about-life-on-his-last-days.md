@@ -31,13 +31,13 @@ At this moment, lying on the sick bed and recalling my whole life, I realize tha
 
 In the darkness, I look at the green lights from the life supporting machines and hear the humming mechanical sounds, I can feel the breath of god of death drawing closer …
 
-此时此刻在黑暗中，我双眼看着维持生命的仪器发出的绿光的时候，两耳听见这些仪器发出的蜂鸣声的时候，我切身感受到了死亡之神一步步走进时发出的呼吸声音。。。。。。
+此时此刻在黑暗中，我双眼看着维持生命的仪器发出的绿光的时候，两耳听见这些仪器发出的蜂鸣声的时候，我切身感受到了死亡之神一步步走进时发出的呼吸声音……
 
 
 
 Now I know, when we have accumulated sufficient wealth to last our lifetime, we should pursue other matters that are unrelated to wealth …
 
-现在我明白了，在我们积累了足够的物质财富可以让我们享受一生的时候，我们还应该追求其它无关财富的东西。。。。。。
+现在我明白了，在我们积累了足够的物质财富可以让我们享受一生的时候，我们还应该追求其它无关财富的东西……
 
 
 
@@ -91,7 +91,7 @@ What is the most expensive bed in the world?
 
 Sick bed …
 
-是病榻。。。。。
+是病榻……
 
 
 
@@ -103,7 +103,7 @@ You can employ someone to drive the car for you, make money for you but you cann
 
 Material things lost can be found. But there is one thing that can never be found when it is lost — Life.
 
-荣华富贵失去可以复还来，但有一样东西一旦失去将永不复归：那就是生命
+荣华富贵失去可以复还来，但有一样东西一旦失去将永不复归：那就是生命。
 
 
 
@@ -160,6 +160,8 @@ Treat yourself well. Cherish others.
 6）朋友
 
 上面的道理来自一位海外的朋友，在最后的岁月，让我们共勉！
+
+
 
 
 [^1]: [乔布斯弥留之际关于生命意义的最后遗言](https://mrxn.net/other/466.html){:target="_blank"}
