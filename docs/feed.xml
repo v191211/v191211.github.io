@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2022-08-17T08:48:20+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">乔布斯弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="乔布斯弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2022-09-06T18:28:15+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">SSH 登录后进入指定目录</title><link href="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/" rel="alternate" type="text/html" title="SSH 登录后进入指定目录" /><published>2022-09-06T00:00:00+08:00</published><updated>2022-09-06T00:00:00+08:00</updated><id>https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login</id><content type="html" xml:base="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-需求&quot; id=&quot;markdown-toc-heading-需求&quot;&gt;需求&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-解决&quot; id=&quot;markdown-toc-heading-解决&quot;&gt;解决&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-原理&quot; id=&quot;markdown-toc-heading-原理&quot;&gt;原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-扩展&quot; id=&quot;markdown-toc-heading-扩展&quot;&gt;扩展&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-需求&quot;&gt;需求&lt;/h2&gt;
+
+&lt;p&gt;所有用户通过 SSH 登录到服务器时，默认进入到 /data 目录下。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-解决&quot;&gt;解决&lt;/h2&gt;
+
+&lt;p&gt;在 /etc/profile.d 目录下创建 cd_data.sh 文件，内容：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# cd /data when user login&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /data
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-原理&quot;&gt;原理&lt;/h2&gt;
+
+&lt;p&gt;/etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-扩展&quot;&gt;扩展&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;/etc/profile: 系统初始化文件，登录 shell 时执行&lt;/li&gt;
+  &lt;li&gt;~/.bash_profile: 个人初始化文件，登录 shell 时执行&lt;/li&gt;
+  &lt;li&gt;~/.bashrc: 每次启动一个交互 shell 时都会执行&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，全局的配置文件可以放到 /etc/profile 文件中。&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://unix.stackexchange.com/questions/409126/how-to-set-path-for-all-users-on-centos-7&quot; target=&quot;_blank&quot;&gt;如何在 CentOS7 系统中为所有用户设置路径？&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile&quot; target=&quot;_blank&quot;&gt;.bashrc, .bash-profile, .profile 之间的区别&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/415403/whats-the-difference-between-bashrc-bash-profile-and-environment&quot; target=&quot;_blank&quot;&gt;.bashrc, .bash_profile, .environment 之间有什么区别？&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile&quot; target=&quot;_blank&quot;&gt;对比在 /etc/environment 与 .profile 中设置 PATH 变量&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html">需求 解决 原理 扩展 需求 所有用户通过 SSH 登录到服务器时，默认进入到 /data 目录下。 解决 在 /etc/profile.d 目录下创建 cd_data.sh 文件，内容： # cd /data when user login cd /data 原理 /etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。1 2 3 4 扩展 /etc/profile: 系统初始化文件，登录 shell 时执行 ~/.bash_profile: 个人初始化文件，登录 shell 时执行 ~/.bashrc: 每次启动一个交互 shell 时都会执行 所以，全局的配置文件可以放到 /etc/profile 文件中。 如何在 CentOS7 系统中为所有用户设置路径？ &amp;#8617; .bashrc, .bash-profile, .profile 之间的区别 &amp;#8617; .bashrc, .bash_profile, .environment 之间有什么区别？ &amp;#8617; 对比在 /etc/environment 与 .profile 中设置 PATH 变量 &amp;#8617;</summary></entry><entry><title type="html">乔布斯弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="乔布斯弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。&lt;/p&gt;
 
@@ -1613,296 +1661,4 @@
       &lt;p&gt;没有银子弹：指没有万能药的意思。（译者注） &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">我应该从哪个编程语言开始学起？1 如何学习所有编程语言，没错！是所有！ &amp;#8617;</summary></entry><entry><title type="html">KK 在 68 岁生日时给出的 68 条建议</title><link href="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/" rel="alternate" type="text/html" title="KK 在 68 岁生日时给出的 68 条建议" /><published>2021-08-22T00:00:00+08:00</published><updated>2021-08-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice</id><content type="html" xml:base="https://empvalley.com/2021/08/22/68-bits-of-unsolicited-advice/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/68-bits-of-unsolicited-advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;（摄影：Christopher Michel）&lt;/p&gt;
-
-&lt;p&gt;上个月 28 号是凯文·凯利（Kevin Kelly，网名 KK）的 68 岁生日，他准备了 68 条简短的建议，作为礼物送给年轻人。&lt;/p&gt;
-
-&lt;p&gt;(1) Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe.&lt;/p&gt;
-
-&lt;p&gt;学着从那些你不认同甚至是冒犯你的人身上学习。看是否能从他们所信奉的东西中找到真相。&lt;/p&gt;
-
-&lt;p&gt;(2) Being enthusiastic is worth 25 IQ points.&lt;/p&gt;
-
-&lt;p&gt;充满热情抵得上 25 点智商。&lt;/p&gt;
-
-&lt;p&gt;(3) Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.&lt;/p&gt;
-
-&lt;p&gt;做任何事都应该设个 deadline。它可以帮你排除那些无关紧要之事，并避免追求尽善尽美，而是努力去做到与众不同。差异胜于完美。&lt;/p&gt;
-
-&lt;p&gt;(4) Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.&lt;/p&gt;
-
-&lt;p&gt;不要担心自己问的问题听起来很傻。99% 的情况下，其他人都有和你一样的问题，只不过羞于问出口而已。&lt;/p&gt;
-
-&lt;p&gt;(5) Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more.&lt;/p&gt;
-
-&lt;p&gt;善于倾听是一种超能力。倾听时，要不时地追问「还有吗」，直到他们没有更多东西可讲。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;原译：善于倾听是一种超能力。倾听你所喜欢的人时，要不时地追问「还有吗」，直到他们没有更多东西可讲。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;(6) A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier.&lt;/p&gt;
-
-&lt;p&gt;一个有意义的年度目标是去充分了解一个话题。这样，（到了年底的时候，）你就会对一年前的无知感到难以置信。&lt;/p&gt;
-
-&lt;p&gt;(7) Gratitude will unlock all other virtues and is something you can get better at.&lt;/p&gt;
-
-&lt;p&gt;感恩可以解锁其他所有美德，也是你能做得更好的一件事情。&lt;/p&gt;
-
-&lt;p&gt;(8) Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends.&lt;/p&gt;
-
-&lt;p&gt;不管是旧识还是新交，请他吃饭都是一个既简单又行得通的办法。&lt;/p&gt;
-
-&lt;p&gt;(9) Don’t trust all-purpose glue.&lt;/p&gt;
-
-&lt;p&gt;别信有什么万能药。&lt;/p&gt;
-
-&lt;p&gt;(10) Reading to your children regularly will bond you together and kickstart their imaginations.&lt;/p&gt;
-
-&lt;p&gt;经常为你的孩子读书既能巩固你们的感情，也能开启他们的想象力。&lt;/p&gt;
-
-&lt;p&gt;(11) Never use a credit card for credit. The only kind of credit, or debt, that is acceptable is debt to acquire something whose exchange value is extremely likely to increase, like in a home. The exchange value of most things diminishes or vanishes the moment you purchase them. Don’t be in debt to losers.&lt;/p&gt;
-
-&lt;p&gt;永远不要用信用卡去透支。唯一可接受的透支或负债，应该用来获取那些极可能增值的事物。绝大多数事物在你买下它的那一刻起就开始贬值了。别为那些没有未来的事物而透支。&lt;/p&gt;
-
-&lt;p&gt;(12) Pros are just amateurs who know how to gracefully recover from their mistakes.&lt;/p&gt;
-
-&lt;p&gt;所谓高手，不过是善于从跌跤中优雅起身的菜鸟而已。&lt;/p&gt;
-
-&lt;p&gt;(13) Extraordinary claims should require extraordinary evidence to be believed.&lt;/p&gt;
-
-&lt;p&gt;非同寻常的观点要有非同寻常的证据，才能令人信服。&lt;/p&gt;
-
-&lt;p&gt;(14) Don’t be the smartest person in the room. Hangout with, and learn from, people smarter than yourself. Even better, find smart people who will disagree with you.&lt;/p&gt;
-
-&lt;p&gt;别成为一群人里最聪明的那个。和那些比你聪明的人待在一起，向他们学习。如果能找到和你观点相左的聪明人，那就更好了。&lt;/p&gt;
-
-&lt;p&gt;(15) Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth.&lt;/p&gt;
-
-&lt;p&gt;对话的“数字 3 原则”：想要摸清一个人的真正意图，请他就刚才所说再深入一些，如此反复，直到第三遍，你所得到的就近于真相了。&lt;/p&gt;
-
-&lt;p&gt;(16) Don’t be the best. Be the only.&lt;/p&gt;
-
-&lt;p&gt;别做最好的。做唯一的。&lt;/p&gt;
-
-&lt;p&gt;(17) Everyone is shy. Other people are waiting for you to introduce yourself to them, they are waiting for you to send them an email, they are waiting for you to ask them on a date. Go ahead.&lt;/p&gt;
-
-&lt;p&gt;大家其实都很羞涩。没准儿人们正等着你去向他们做自我介绍，或是给他们发邮件，或是约他们见面。大胆往前走。&lt;/p&gt;
-
-&lt;p&gt;(18) Don’t take it personally when someone turns you down. Assume they are like you: busy, occupied, distracted. Try again later. It’s amazing how often a second try works.&lt;/p&gt;
-
-&lt;p&gt;如果被别人拒绝了，别往心里去。假设他们和你一样忙，一样腾不出手来，一样无暇分心。稍后再试一次。第二次的成功率超乎你想象。&lt;/p&gt;
-
-&lt;p&gt;(19) The purpose of a habit is to remove that action from self-negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing.&lt;/p&gt;
-
-&lt;p&gt;习惯的意义在于无需再为某类行为纠结，不用再为要不要做它而费思量。做就是了。讲真话和用牙线都属于好习惯。&lt;/p&gt;
-
-&lt;p&gt;(20) Promptness is a sign of respect.&lt;/p&gt;
-
-&lt;p&gt;及时回应是表示尊重的一种方式。&lt;/p&gt;
-
-&lt;p&gt;(21) When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.&lt;/p&gt;
-
-&lt;p&gt;在你年轻的时候，至少花六个月到一年的时间，尽可能穷地过日子，尽可能少地拥有身外之物，居陋室而箪食瓢饮，以体验你可能会经历的最穷困潦倒的生活。这样，当你在将来需要行冒险之事时，就不至于为最糟糕的情况而忧心不已。&lt;/p&gt;
-
-&lt;p&gt;(22) Trust me: There is no “them”.&lt;/p&gt;
-
-&lt;p&gt;相信我，这世上没有“他们”。（注：出自爱尔兰摇滚乐队 U2 的一首歌 Invisible，&quot;There's no them / only us&quot;。）&lt;/p&gt;
-
-&lt;p&gt;(23) The more you are interested in others, the more interesting they find you. To be interesting, be interested.&lt;/p&gt;
-
-&lt;p&gt;你越有兴趣了解他人，他人就会发现你越有趣。要成为有趣的人，先要对别人感兴趣。&lt;/p&gt;
-
-&lt;p&gt;(24) Optimize your generosity. No one on their deathbed has ever regretted giving too much away.&lt;/p&gt;
-
-&lt;p&gt;尽你所能行慷慨之事。没人会在死前后悔给出去太多。&lt;/p&gt;
-
-&lt;p&gt;(25) To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them.&lt;/p&gt;
-
-&lt;p&gt;想做好一件事，做就是了。想把一件事做到令人称颂，那就再来一遍，再来一遍，再来一遍。把事情做到极致的秘诀在于不停地重做。&lt;/p&gt;
-
-&lt;p&gt;(26) The Golden Rule will never fail you. It is the foundation of all other virtues.&lt;/p&gt;
-
-&lt;p&gt;“设身处地”是待人接物之道。它是所有其他美德的基石。（注：英文中，“黄金法则”是指应该用自己希望被对待的方式来对待他人。）&lt;/p&gt;
-
-&lt;p&gt;(27) If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it.&lt;/p&gt;
-
-&lt;p&gt;如果你在房间里遍寻某样东西并最终找到的话，那么用完后不要放回你找到它的地方，而是放到你最初找它的地方。&lt;/p&gt;
-
-&lt;p&gt;(28) Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth.&lt;/p&gt;
-
-&lt;p&gt;存钱和投资都是好习惯。几十年如一日不假思索地进行定期小额投资，是一条致富之道。&lt;/p&gt;
-
-&lt;p&gt;(29) To make mistakes is human. To own your mistakes is divine. Nothing elevates a person higher than quickly admitting and taking personal responsibility for the mistakes you make and then fixing them fairly. If you mess up, fess up. It’s astounding how powerful this ownership is.&lt;/p&gt;
-
-&lt;p&gt;犯错乃是人性。难的是责己。承认错误，勇于担责，并尽力弥补——没有什么比这更可贵的了。是自己搞砸的，就该坦承。这反而能彰显你的强大。&lt;/p&gt;
-
-&lt;p&gt;(30) Never get involved in a land war in Asia.&lt;/p&gt;
-
-&lt;p&gt;永远不要在亚洲陷入地面战争。&lt;/p&gt;
-
-&lt;p&gt;(31) You can obsess about serving your customers/audience/clients, or you can obsess about beating the competition. Both work, but of the two, obsessing about your customers will take you further.&lt;/p&gt;
-
-&lt;p&gt;你既可以专注于服务你的客户或听众，也可以专注于打败你的竞争对手。两者都行得通。但专注于服务你的客户会让你走得更远。&lt;/p&gt;
-
-&lt;p&gt;(32) Show up. Keep showing up. Somebody successful said: 99% of success is just showing up.&lt;/p&gt;
-
-&lt;p&gt;在场。坚持在场。某个成功人士说过：99% 的成功只不过是因为在场。&lt;/p&gt;
-
-&lt;p&gt;(33) Separate the processes of creation from improving. You can’t write and edit, or sculpt and polish, or make and analyze at the same time. If you do, the editor stops the creator. While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator mind must be unleashed from judgement.&lt;/p&gt;
-
-&lt;p&gt;将创造和改进分开。你不可能在写做的同时进行编辑，也不可能在凿刻的同时进行打磨，更不可能在制造的同时进行分析。如果你这么做，求善之心就会打断创造之意。创新时就要忘掉已有方案；勾勒草图时就不能太着眼于细处。写作时，先打草稿而不要去抠细节。在新事物之初，创意的思想必须得到无拘无束的释放。&lt;/p&gt;
-
-&lt;p&gt;(34) If you are not falling down occasionally, you are just coasting.&lt;/p&gt;
-
-&lt;p&gt;如果你从未跌倒过，那么你也就从未努力过。&lt;/p&gt;
-
-&lt;p&gt;(35) Perhaps the most counter-intuitive truth of the universe is that the more you give to others, the more you’ll get. Understanding this is the beginning of wisdom.&lt;/p&gt;
-
-&lt;p&gt;也许宇宙中最违反直觉的真理就是，你给予他人越多，你收获的就越多。这是智慧的起点。&lt;/p&gt;
-
-&lt;p&gt;(36) Friends are better than money. Almost anything money can do, friends can do better. In so many ways a friend with a boat is better than owning a boat.&lt;/p&gt;
-
-&lt;p&gt;朋友胜过金钱。用钱能办到的事情，朋友可以做得更好。很多时候，自己有条船不如有个有船的朋友。&lt;/p&gt;
-
-&lt;p&gt;(37) This is true: It’s hard to cheat an honest man.&lt;/p&gt;
-
-&lt;p&gt;相信我，你很难欺骗一个诚实的人。&lt;/p&gt;
-
-&lt;p&gt;(38) When an object is lost, 95% of the time it is hiding within arm’s reach of where it was last seen. Search in all possible locations in that radius and you’ll find it.&lt;/p&gt;
-
-&lt;p&gt;当你找不到一样东西时，它往往就在上次现身之处的一臂之内。仔细搜寻这个范围，你就能找到它。&lt;/p&gt;
-
-&lt;p&gt;(39) You are what you do. Not what you say, not what you believe, not how you vote, but what you spend your time on.&lt;/p&gt;
-
-&lt;p&gt;你的所作所为定义了你——既不是你所说的，也不是你所信的，更不是你所支持的，而是你花费时间于其上的。&lt;/p&gt;
-
-&lt;p&gt;(40) If you lose or forget to bring a cable, adapter or charger, check with your hotel. Most hotels now have a drawer full of cables, adapters and chargers others have left behind, and probably have the one you are missing. You can often claim it after borrowing it.&lt;/p&gt;
-
-&lt;p&gt;如果你把电源线、充电器什么的丢在或落在某个地方，不妨去问问你的酒店。绝大多数酒店都会有满满一抽屉的电源线、数据线和充电器——都是其他人落下的，没准儿其中就有你的。酒店也并不介意你借用后随身带走。&lt;/p&gt;
-
-&lt;p&gt;(41) Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison.&lt;/p&gt;
-
-&lt;p&gt;仇恨是一种对被仇恨者无用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;原译：仇恨是一种对被仇恨者并无卵用的诅咒。它只会毒害仇恨者。把你的怨恨当作毒药一样丢掉吧。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;(42) There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with.&lt;/p&gt;
-
-&lt;p&gt;没有最好，只有更好。个人的天分有高有低，但不论高低，自身的提升都永无止境。&lt;/p&gt;
-
-&lt;p&gt;(43) Be prepared: When you are 90% done any large project (a house, a film, an event, an app) the rest of the myriad details will take a second 90% to complete.&lt;/p&gt;
-
-&lt;p&gt;任何一项大工程（修房子、拍电影、开发 app）完成度为 90% 的时候，你都要做好心理准备：剩余的大量细节工作会占掉你另一段与之前相当的时间。&lt;/p&gt;
-
-&lt;p&gt;(44) When you die you take absolutely nothing with you except your reputation.&lt;/p&gt;
-
-&lt;p&gt;离世时，除了名声，你什么都带不走。&lt;/p&gt;
-
-&lt;p&gt;(45) Before you are old, attend as many funerals as you can bear, and listen. Nobody talks about the departed’s achievements. The only thing people will remember is what kind of person you were while you were achieving.&lt;/p&gt;
-
-&lt;p&gt;上岁数之前，尽可能多地参加葬礼并听听人们的谈话。没人会谈论死者的成就。人们记住的只有死者的人品。&lt;/p&gt;
-
-&lt;p&gt;(46) For every dollar you spend purchasing something substantial, expect to pay a dollar in repairs, maintenance, or disposal by the end of its life.&lt;/p&gt;
-
-&lt;p&gt;你购买实体商品时所花的每一元钱，将来都要再花一元钱去维修、保养，或是在它报废后处理掉它。&lt;/p&gt;
-
-&lt;p&gt;(47) Anything real begins with the fiction of what could be. Imagination is therefore the most potent force in the universe, and a skill you can get better at. It’s the one skill in life that benefits from ignoring what everyone else knows.&lt;/p&gt;
-
-&lt;p&gt;任何真实之物都源于虚构之意。想象是宇宙中最强大的力量，也是你能够日益精进的能力。生命中可以因不知众人所知而获益的能力，仅此一项。&lt;/p&gt;
-
-&lt;p&gt;(48) When crisis and disaster strike, don’t waste them. No problems, no progress.&lt;/p&gt;
-
-&lt;p&gt;当危机和灾难来袭时，别错过他们。没有问题，就没有进步。&lt;/p&gt;
-
-&lt;p&gt;(49) On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back.&lt;/p&gt;
-
-&lt;p&gt;度假时，先跳过城市，去路线中最偏远的地方。这样你就能最大程度地体验到异域风情带给你的冲击。而在返程的路上，你则可以享受熟悉的城市所带给你的舒适。&lt;/p&gt;
-
-&lt;p&gt;(50) When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter.&lt;/p&gt;
-
-&lt;p&gt;当你被邀请在未来的某个时间点做某件事情时，问问自己：如果这件事情明天就启动，你会否接受？绝大多数邀约都经不住这种迫切性检验。&lt;/p&gt;
-
-&lt;p&gt;(51) Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they &lt;em&gt;will&lt;/em&gt; read it.&lt;/p&gt;
-
-&lt;p&gt;不要在邮件里对他人品头论足——如果这些话你不会当面说给那些人听的话。要知道，他们早晚会读到你的这些评论。&lt;/p&gt;
-
-&lt;p&gt;(52) If you desperately need a job, you are just another problem for a boss; if you can solve many of the problems the boss has right now, you are hired. To be hired, think like your boss.&lt;/p&gt;
-
-&lt;p&gt;如果你只是迫切需要一份工作，那么对老板来说，你不过是又一个问题。如果你能解决老板的很多问题，那你自然能得到这份工作。要得到一份工作，需要像老板一样去想问题。&lt;/p&gt;
-
-&lt;p&gt;(53) Art is in what you leave out.&lt;/p&gt;
-
-&lt;p&gt;艺术藏身于你所遗漏之处。&lt;/p&gt;
-
-&lt;p&gt;(54) Acquiring things will rarely bring you deep satisfaction. But acquiring experiences will.&lt;/p&gt;
-
-&lt;p&gt;拥有物品很少能带给你极大的满足感。但拥有体验则能。&lt;/p&gt;
-
-&lt;p&gt;(55) Rule of 7 in research. You can find out anything if you are willing to go seven levels. If the first source you ask doesn’t know, ask them who you should ask next, and so on down the line. If you are willing to go to the 7th source, you’ll almost always get your answer.&lt;/p&gt;
-
-&lt;p&gt;研究的“数字 7 原则”：当你愿意就一个问题深入七层时，总能找到你想要的答案。如果你求教的第一层人不知道，那么就问问他们应该去找谁。如此追索下去。到第七层时，通常都会如愿以偿。&lt;/p&gt;
-
-&lt;p&gt;(56) How to apologize: Quickly, specifically, sincerely.&lt;/p&gt;
-
-&lt;p&gt;如何道歉？快速，具体，真诚。&lt;/p&gt;
-
-&lt;p&gt;(57) Don’t ever respond to a solicitation or a proposal on the phone. The urgency is a disguise.&lt;/p&gt;
-
-&lt;p&gt;不要在电话上答应任何请求或提议。所谓的紧急不过是个假象。&lt;/p&gt;
-
-&lt;p&gt;(58) When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict.&lt;/p&gt;
-
-&lt;p&gt;当一个人对你粗鄙、无礼、刻薄、甚至是无耻下流时，当他们有病就好。这有利于你对他生出同情心，从而缓解冲突。&lt;/p&gt;
-
-&lt;p&gt;(59) Eliminating clutter makes room for your true treasures.&lt;/p&gt;
-
-&lt;p&gt;清除杂物，为真正重要的东西腾出空间。&lt;/p&gt;
-
-&lt;p&gt;(60) You really don’t want to be famous. Read the biography of any famous person.&lt;/p&gt;
-
-&lt;p&gt;你绝不会想要出名。不信的话，随便找本名人传记读读。&lt;/p&gt;
-
-&lt;p&gt;(61) Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time.&lt;/p&gt;
-
-&lt;p&gt;经验往往被高估了。招募的时候，要看资质，技能则可以培训。许多令人惊奇和赞叹的事情，都是由第一次做的人做出来的。&lt;/p&gt;
-
-&lt;p&gt;(62) A vacation + a disaster = an adventure.&lt;/p&gt;
-
-&lt;p&gt;假期 + 灾难 = 冒险。&lt;/p&gt;
-
-&lt;p&gt;(63) Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford.&lt;/p&gt;
-
-&lt;p&gt;买工具时，起步阶段一定要买最便宜的。升级那些使用频次高的工具。如果你的工具是用于工作，那么买你能买得起的最好的。&lt;/p&gt;
-
-&lt;p&gt;(64) Learn how to take a 20-minute power nap without embarrassment.&lt;/p&gt;
-
-&lt;p&gt;学会毫不尴尬地打 20 分钟小盹儿。（注：20-minute power nap 通常指午后 20～30 分钟的小憩。近期有研究表明，20-minute power nap 有助于提振情绪，提升专注度和创造力。）&lt;/p&gt;
-
-&lt;p&gt;(65) Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.&lt;/p&gt;
-
-&lt;p&gt;在你不知道自己真正的激情所在时，追寻心之所向往往会带你误入歧途。对年轻人来说，更好的格言是：“精通一件事，任何事。”在精通一件事的过程中，你可以顺着带给你更多快乐的方向继续深入，并最终发现你的心之所向。&lt;/p&gt;
-
-&lt;p&gt;(66) I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today.&lt;/p&gt;
-
-&lt;p&gt;我敢肯定，我今天确信的很多事情在 100 年后都会被证明是错误的，甚至是错得离谱。而我非常努力在做的事情，就是去识别我对今天的错误认知。&lt;/p&gt;
-
-&lt;p&gt;(67) Over the long term, the future is decided by optimists. To be an optimist you don’t have to ignore all the many problems we create; you just have to imagine improving our capacity to solve problems.&lt;/p&gt;
-
-&lt;p&gt;从长远来说，未来取决于乐观主义者。成为一个乐观主义者并非要对我们制造的问题视而不见，而是要想象如何提升我们解决问题的能力。&lt;/p&gt;
-
-&lt;p&gt;(68) The universe is conspiring behind your back to make you a success. This will be much easier to do if you embrace this pronoia.&lt;/p&gt;
-
-&lt;p&gt;整个宇宙都在背后为你而谋划。如果你不怀有人人都与自己为敌的心态，会更容易成功。（注：pronoia 是 paranoia 的反义词。Paranoia 可以译为“迫害妄想症”，也即觉得所有人、所有事都与自己为敌的心理状态。）&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;原译：整个宇宙都在背后为你而谋划。要相信，天助人愿。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;原文：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/143834871&quot;&gt;KK 在 68 岁生日时给出的 68 条建议&lt;/a&gt;，略作修改并注明。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="观点与感想" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">我应该从哪个编程语言开始学起？1 如何学习所有编程语言，没错！是所有！ &amp;#8617;</summary></entry></feed>

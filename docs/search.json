@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "SSH 登录后进入指定目录",
+      "url"        : "/2022/09/06/automatically-change-directory-on-ssh-login/",
+      "date"       : "2022-09-06 00:00:00 +0800",
+      "shortdate"  : "September 06, 2022"
+    } ,
+  
+    {
       "title"      : "乔布斯弥留之际关于生命意义的最后遗言",
       "url"        : "/2022/03/31/jobs-thought-about-life-on-his-last-days/",
       "date"       : "2022-03-31 00:00:00 +0800",
