@@ -23,7 +23,7 @@ cd /data
 
 ## 原理
 
-/etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。[^1] [^2] [^3] [^4]
+/etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。[^1] [^2] [^3] [^4] [^5]
 
 ## 扩展
 
@@ -40,3 +40,5 @@ cd /data
 [^3]: [.bashrc, .bash_profile, .environment 之间有什么区别？](https://stackoverflow.com/questions/415403/whats-the-difference-between-bashrc-bash-profile-and-environment){:target="_blank"}
 
 [^4]: [对比在 /etc/environment 与 .profile 中设置 PATH 变量](https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile){:target="_blank"}
+
+[^5]: [如何在登录 SSH 时自动改变目录](https://newbedev.com/how-can-i-automatically-change-directory-on-ssh-login){:target="_blank"}
