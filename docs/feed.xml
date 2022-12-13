@@ -1,4 +1,176 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2022-09-06T18:28:15+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">SSH 登录后进入指定目录</title><link href="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/" rel="alternate" type="text/html" title="SSH 登录后进入指定目录" /><published>2022-09-06T00:00:00+08:00</published><updated>2022-09-06T00:00:00+08:00</updated><id>https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login</id><content type="html" xml:base="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2022-12-14T00:01:11+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">为什么要进行 URL 编码</title><link href="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/" rel="alternate" type="text/html" title="为什么要进行 URL 编码" /><published>2022-12-13T00:00:00+08:00</published><updated>2022-12-13T00:00:00+08:00</updated><id>https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls</id><content type="html" xml:base="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-不编码-url-引出的问题&quot; id=&quot;markdown-toc-heading-不编码-url-引出的问题&quot;&gt;不编码 URL 引出的问题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-解决方案&quot; id=&quot;markdown-toc-heading-解决方案&quot;&gt;解决方案&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-哪些字符需要编码&quot; id=&quot;markdown-toc-heading-哪些字符需要编码&quot;&gt;哪些字符需要编码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-如何对-url-中的非法字符进行编码&quot; id=&quot;markdown-toc-heading-如何对-url-中的非法字符进行编码&quot;&gt;如何对 URL 中的非法字符进行编码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-javascript-中-escape-encodeuri-和-encodeuricomponent-区别&quot; id=&quot;markdown-toc-heading-javascript-中-escape-encodeuri-和-encodeuricomponent-区别&quot;&gt;Javascript 中 escape, encodeURI 和 encodeURIComponent 区别&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-表单提交&quot; id=&quot;markdown-toc-heading-表单提交&quot;&gt;表单提交&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-不编码-url-引出的问题&quot;&gt;不编码 URL 引出的问题&lt;/h2&gt;
+
+&lt;p&gt;我们都知道 HTTP 协议中参数的传输是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key=value&lt;/code&gt; 这种简直对形式的，如果要传多个参数就需要用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 符号对键值对进行分割。如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?name1=value1&amp;amp;name2=value2&lt;/code&gt;，这样在服务端在收到这种字符串的时候，会用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 分割出每一个参数，然后再用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 来分割出参数值。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;针对 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=value1&amp;amp;name2=value2&lt;/code&gt; 我们来说一下客户端到服务端的概念上解析过程:&lt;/p&gt;
+
+&lt;p&gt;上述字符串在计算机中用 ASCII 码表示为： 
+&lt;strong&gt;6E616D6531 3D 76616C756531 26 6E616D6532 3D 76616C756532。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6E616D6531：name1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3D：=&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;76616C756531：value1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;26：&amp;amp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6E616D6532：name2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3D：=&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;76616C756532：value2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;服务端在接收到该数据后就可以遍历该字节流，首先一个字节一个字节的吃，当吃到 3D 这字节后，服务端就知道前面吃得字节表示一个 key，再向后吃，如果遇到 26，说明从刚才吃的 3D 到 26 字节之间的是上一个 key 的 value，以此类推就可以解析出客户端传过来的参数。&lt;/p&gt;
+
+&lt;p&gt;现在有这样一个问题，如果我的参数值中就包含 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 这种特殊字符的时候该怎么办。&lt;/p&gt;
+
+&lt;p&gt;比如说 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=value1&lt;/code&gt;,其中 value1 的值是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;va&amp;amp;lu=e1&lt;/code&gt; 字符串，那么实际在传输过程中就会变成这样 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=va&amp;amp;lu=e1&lt;/code&gt;。我们的本意是就只有一个键值对，但是服务端会解析成两个键值对，这样就产生了歧义。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-解决方案&quot;&gt;解决方案&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;如何解决上述问题带来的歧义呢？解决的办法就是对参数进行 URL 编码。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;URL 编码只是简单的在特殊字符的各个字节前加上 %，例如，我们对上述会产生奇异的字符进行 URL 编码后结果：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=va%26lu%3D&lt;/code&gt;，这样服务端会把紧跟在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; 后的字节当成普通的字节，就是不会把它当成各个参数或键值对的分隔符。&lt;/p&gt;
+
+&lt;p&gt;另外一个问题，就是为什么我们要用 ASCII 传输，可不可以用别的编码？&lt;/p&gt;
+
+&lt;p&gt;当然可以用别的编码，你自己可以开发一套编码，然后自己解析。就像大部分国家都有自己的语言一样。那国家之间要交流，怎么办？ 用英语吧，英语的使用范围最广。&lt;/p&gt;
+
+&lt;p&gt;通常如果一样东西需要编码，说明这样东西并不适合传输。原因多种多样，如 Size 过大，包含隐私数据，对于 URL 来说，之所以要进行编码，是因为 URL 中有些字符会引起歧义。&lt;/p&gt;
+
+&lt;p&gt;例如，URL 参数字符串中使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key=value&lt;/code&gt; 键值对这样的形式来传参，键值对之间以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 符号分隔，如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/s?q=abc&amp;amp;ie=utf-8&lt;/code&gt;。如果你的 value 字符串中包含了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;，那么势必会造成接收 URL 的服务器解析错误，因此必须将引起歧义的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 符号进行转义，也就是对其进行编码。&lt;/p&gt;
+
+&lt;p&gt;又如，URL 的编码格式采用的是 ASCII 码，而不是 Unicode，这也就是说你不能在 URL 中包含任何非 ASCII 字符，例如中文。否则如果客户端浏览器和服务端浏览器支持的字符集不同的情况下，中文可能会造成问题。&lt;/p&gt;
+
+&lt;p&gt;URL 编码的原则就是使用安全的字符（没有特殊用途或者特殊意义的可打印字符）去表示那些不安全的字符。&lt;/p&gt;
+
+&lt;p&gt;预备知识：URI 是统一资源标识的意思，通常我们所说的 URL 只是 URI 的一种。典型 URL 的格式如下所示。下面提到的 URL 编码，实际上应该指的是 URI 编码。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;foo://example.com:8042/over/there?name=ferret#nose
+\_/  \______________/ \________/ \_________/  \__/
+ |          |              |          |        |
+scheme  authority         path      query   fragment
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-哪些字符需要编码&quot;&gt;哪些字符需要编码&lt;/h2&gt;
+
+&lt;p&gt;RFC3986 文档规定，URL 中只允许包含英文字母（a-zA-Z）、数字（0-9）、-_.~ 4个特殊字符以及所有保留字符。RFC3986 文档对 URL 的编解码问题做出了详细的建议，指出了哪些字符需要被编码才不会引起 URL 语义的转变，以及对为什么这些字符需要编码做出了相应的解释。&lt;/p&gt;
+
+&lt;p&gt;US-ASCII 字符集中没有对应的可打印字符：URL 中只允许使用可打印字符。US-ASCII 码中的 10-7F 字节全都表示控制字符，这些字符都不能直接出现在 URL 中。同时，对于 80-FF 字节（ISO-8859-1），由于已经超出了 US-ACII 定义的字节范围，因此也不可以放在 URL 中。&lt;/p&gt;
+
+&lt;p&gt;保留字符：URL 可以划分成若干个组件，协议、主机、路径等。有一些字符（:/?#[]@）是用作分隔不同组件的。例如：冒号用于分隔协议和主机，/ 用于分隔主机和路径，? 用于分隔路径和查询参数，等等。还有一些字符（!$&amp;amp;'()*+,;=）用于在每个组件中起到分隔作用的，如 = 用于表示查询参数中的键值对，&amp;amp; 符号用于分隔查询多个键值对。当组件中的普通数据包含这些特殊字符时，需要对其进行编码。&lt;/p&gt;
+
+&lt;p&gt;RFC3986 中指定了以下字符为保留字符：! * ' ( ) ; : @ &amp;amp; = + $ , / ? # [ ]&lt;/p&gt;
+
+&lt;p&gt;不安全字符：还有一些字符，当他们直接放在 URL 中的时候，可能会引起解析程序的歧义。这些字符被视为不安全字符，原因有很多。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;空格：URL 在传输的过程，或者用户在排版的过程，或者文本处理程序在处理 URL 的过程，都有可能引入无关紧要的空格，或者将那些有意义的空格给去掉。&lt;/li&gt;
+  &lt;li&gt;引号以及 &amp;lt;&amp;gt;：引号和尖括号通常用于在普通文本中起到分隔 URL 的作用。&lt;/li&gt;
+  &lt;li&gt;#：通常用于表示书签或者锚点。&lt;/li&gt;
+  &lt;li&gt;%：百分号本身用作对不安全字符进行编码时使用的特殊字符，因此本身需要编码。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;{}&lt;/td&gt;
+          &lt;td&gt;\^[]`~：某一些网关或者传输代理会篡改这些字符。&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;需要注意的是，对于 URL 中的合法字符，编码和不编码是等价的，但是对于上面提到的这些字符，如果不经过编码，那么它们有可能会造成 URL 语义的不同。因此对于 URL 而言，只有普通英文字符和数字，特殊字符 $-_.+!*'() 还有保留字符，才能出现在未经编码的 URL 之中。其他字符均需要经过编码之后才能出现在 URL 中。&lt;/p&gt;
+
+&lt;p&gt;但是由于历史原因，目前尚存在一些不标准的编码实现。例如对于 ~ 符号，虽然 RFC3986 文档规定，对于波浪符号 ~，不需要进行 URL 编码，但是还是有很多老的网关或者传输代理会进行编码。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-如何对-url-中的非法字符进行编码&quot;&gt;如何对 URL 中的非法字符进行编码&lt;/h2&gt;
+
+&lt;p&gt;URL 编码通常也被称为百分号编码（URL Encoding，also known as percent-encoding），是因为它的编码方式非常简单，使用 % 百分号加上两位的字符——0123456789ABCDEF —— 代表一个字节的十六进制形式。URL 编码默认使用的字符集是 US-ASCII。例如 a 在 US-ASCII 码中对应的字节是 0x61，那么 URL 编码之后得到的就是 %61，我们在地址栏上输入http://g.cn/search?q=%61%62%63，实际上就等同于在 google 上搜索 abc 了。又如 @ 符号在 ASCII 字符集中对应的字节为 0x40，经过 URL 编码之后得到的是 %40。&lt;/p&gt;
+
+&lt;p&gt;对于非 ASCII 字符，需要使用 ASCII 字符集的超集进行编码得到相应的字节，然后对每个字节执行百分号编码。对于 Unicode 字符，RFC 文档建议使用 utf-8 对其进行编码得到相应的字节，然后对每个字节执行百分号编码。如&quot;中文&quot;使用 UTF-8 字符集得到的字节为 0xE4 0xB8 0xAD 0xE6 0x96 0x87，经过 URL 编码之后得到&quot;%E4%B8%AD%E6%96%87&quot;。&lt;/p&gt;
+
+&lt;p&gt;如果某个字节对应着 ASCII 字符集中的某个非保留字符，则此字节无需使用百分号表示。例如&quot;URL编码&quot;，使用 UTF-8 编码得到的字节是 0x55 0x72 0x6C 0xE7 0xBC 0x96 0xE7 0xA0 0x81，由于前三个字节对应着 ASCII 中的非保留字符&quot;URL&quot;，因此这三个字节可以用非保留字符&quot;URL&quot;表示。最终的 URL 编码可以简化成&quot;URL%E7%BC%96%E7%A0%81&quot; ，当然，如果你用&quot;%55%72%6C%E7%BC%96%E7%A0%81&quot;也是可以的。&lt;/p&gt;
+
+&lt;p&gt;由于历史的原因，有一些 URL 编码实现并不完全遵循这样的原则，下面会提到。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-javascript-中-escape-encodeuri-和-encodeuricomponent-区别&quot;&gt;Javascript 中 escape, encodeURI 和 encodeURIComponent 区别&lt;/h2&gt;
+
+&lt;p&gt;JavaScript 中提供了3对函数用来对 URL 编码以得到合法的 URL，它们分别是 escape / unescape, encodeURI / decodeURI，encodeURIComponent / decodeURIComponent。由于解码和编码的过程是可逆的，因此这里只解释编码的过程。&lt;/p&gt;
+
+&lt;p&gt;这三个编码的函数 ——escape，encodeURI，encodeURIComponent—— 都是用于将不安全不合法的 URL 字符转换为合法的 URL 字符表示，它们有以下几个不同点。&lt;/p&gt;
+
+&lt;p&gt;安全字符不同：&lt;/p&gt;
+
+&lt;p&gt;下面列出了这三个函数的安全字符（即函数不会对这些字符进行编码）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;escape（69个）：*/@+-._0-9a-zA-Z&lt;/li&gt;
+  &lt;li&gt;encodeURI（82个）：!#$&amp;amp;'()*+,/:;=?@-._~0-9a-zA-Z&lt;/li&gt;
+  &lt;li&gt;encodeURIComponent（71个）：!'()*-._~0-9a-zA-Z&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;兼容性不同：escape 函数是从 Javascript 1.0 的时候就存在了，其他两个函数是在 Javascript 1.5 才引入的。但是由于 Javascript 1.5 已经非常普及了，所以实际上使用 encodeURI 和 encodeURIComponent 并不会有什么兼容性问题。&lt;/p&gt;
+
+&lt;p&gt;对 Unicode 字符的编码方式不同：这三个函数对于 ASCII 字符的编码方式相同，均是使用百分号 + 两位十六进制字符来表示。但是对于 Unicode 字符，escape 的编码方式是 %uxxxx，其中的 xxxx 是用来表示 unicode 字符的4位十六进制字符。这种方式已经被 W3C 废弃了。但是在 ECMA-262 标准中仍然保留着 escape 的这种编码语法。encodeURI 和 encodeURIComponent 则使用 UTF-8 对非 ASCII 字符进行编码，然后再进行百分号编码。这是 RFC 推荐的。因此建议尽可能的使用这两个函数替代 escape 进行编码。&lt;/p&gt;
+
+&lt;p&gt;适用场合不同：encodeURI 被用作对一个完整的 URI 进行编码，而 encodeURIComponent 被用作对URI的一个组件进行编码。从上面提到的安全字符范围表格来看，我们会发现，encodeURIComponent 编码的字符范围要比 encodeURI 的大。我们上面提到过，保留字符一般是用来分隔 URI 组件（一个 URI 可以被切割成多个组件，参考预备知识一节）或者子组件（如 URI 中查询参数的分隔符），如：号用于分隔 scheme 和主机，?号用于分隔主机和路径。由于 encodeURI 操纵的对象是一个完整的的 URI，这些字符在 URI 中本来就有特殊用途，因此这些保留字符不会被 encodeURI 编码，否则意义就变了。&lt;/p&gt;
+
+&lt;p&gt;组件内部有自己的数据表示格式，但是这些数据内部不能包含有分隔组件的保留字符，否则就会导致整个 URI 中组件的分隔混乱。因此对于单个组件使用encodeURIComponent，需要编码的字符就更多了。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-表单提交&quot;&gt;表单提交&lt;/h2&gt;
+
+&lt;p&gt;当 HTML 的表单被提交时，每个表单域都会被 URL 编码之后才在被发送。由于历史的原因，表单使用的 URL 编码实现并不符合最新的标准。例如对于空格使用的编码并不是 %20，而是 + 号，如果表单使用的是 Post 方法提交的，我们可以在 HTTP 头中看到有一个 Content-Type 的 header，值为 application/x-www-form-URLencoded。大部分应用程序均能处理这种非标准实现的 URL 编码，但是在客户端 Javascript 中，并没有一个函数能够将 + 号解码成空格，只能自己写转换函数。还有，对于非 ASCII 字符，使用的编码字符集取决于当前文档使用的字符集。例如我们在 HTML 头部加上&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html; charset=gb2312&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这样浏览器就会使用 gb2312 去渲染此文档（注意，当 HTML 文档中没有设置此 meta 标签，则浏览器会根据当前用户喜好去自动选择字符集，用户也可以强制当前网站使用某个指定的字符集）。当提交表单时，URL 编码使用的字符集就是 gb2312。&lt;/p&gt;
+
+&lt;p&gt;之前在使用 Aptana（为什么专指 aptana 下面会提到）遇到一个很迷惑的问题，就是在使用 encodeURI 的时候，发现它编码得到的结果和我想的很不一样。下面是我的示例代码：&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; 
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/1999/xhtml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html; charset=gb2312&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;encodeURI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;中文&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;运行结果输出 %E6%B6%93%EE%85%9F%E6%9E%83。显然这并不是使用 UTF-8 字符集进行 URL 编码得到的结果（在 Google 上搜索&quot;中文&quot;，URL 中显示的是 %E4%B8%AD%E6%96%87）。&lt;/p&gt;
+
+&lt;p&gt;所以我当时就很质疑，难道 encodeURI 还跟页面编码有关，但是我发现，正常情况下，如果你使用 gb2312 进行 URL 编码也不会得到这个结果的才是。后来终于被我发现，原来是页面文件存储使用的字符集和 Meta 标签中指定的字符集不一致导致的问题。Aptana 的编辑器默认情况下使用 UTF-8 字符集。也就是说这个文件实际存储的时候使用的是 UTF-8 字符集。但是由于 Meta 标签中指定了 gb2312，这个时候，浏览器就会按照 gb2312 去解析这个文档，那么自然在&quot;中文&quot;这个字符串这里就会出错，因为&quot;中文&quot;字符串用 UTF-8 编码过后得到的字节是 0xE4 0xB8 0xAD 0xE6 0x96 0x87，这6个字节又被浏览器拿 gb2312 去解码，那么就会得到另外三个汉字&quot;涓枃&quot;（GBK 中一个汉字占两个字节），这三个汉字在传入 encodeURI 函数之后得到的结果就是 %E6%B6%93%EE%85%9F%E6%9E%83。因此，encodeURI 使用的还是 UTF-8，并不会受到页面字符集的影响。&lt;/p&gt;
+
+&lt;p&gt;对于包含中文的 URL 的处理问题，不同浏览器有不同的表现。例如对于 IE，如果你勾选了高级设置&quot;总是以 UTF-8 发送 URL&quot;，那么 URL 中的路径部分的中文会使用 UTF-8 进行 URL 编码之后发送给服务端，而查询参数中的中文部分使用系统默认字符集进行 URL 编码。为了保证最大互操作性，建议所有放到 URL 中的组件全部显式指定某个字符集进行 URL 编码，而不依赖于浏览器的默认实现。&lt;/p&gt;
+
+&lt;p&gt;另外，很多 HTTP 监视工具或者浏览器地址栏等在显示 URL 的时候会自动将 URL 进行一次解码（使用 UTF-8 字符集），这就是为什么当你在 Firefox 中访问Google 搜索中文的时候，地址栏显示的 URL 包含中文的缘故。但实际上发送给服务端的原始 URL 还是经过编码的。你可以在地址栏上使用 Javascript 访问location.href 就可以看出来了。在研究 URL 编解码的时候千万别被这些假象给迷惑了。&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jerrysion/p/5522673.html&quot; target=&quot;_blank&quot;&gt;为什么要进行URL编码&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.URLencoder.io/learn/&quot; target=&quot;_blank&quot;&gt;什么是 URL 编码以及工作原理&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="URL" /><summary type="html">不编码 URL 引出的问题 不编码 URL 引出的问题</summary></entry><entry><title type="html">SSH 登录后进入指定目录</title><link href="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/" rel="alternate" type="text/html" title="SSH 登录后进入指定目录" /><published>2022-09-06T00:00:00+08:00</published><updated>2022-09-06T00:00:00+08:00</updated><id>https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login</id><content type="html" xml:base="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-需求&quot; id=&quot;markdown-toc-heading-需求&quot;&gt;需求&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-解决&quot; id=&quot;markdown-toc-heading-解决&quot;&gt;解决&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-原理&quot; id=&quot;markdown-toc-heading-原理&quot;&gt;原理&lt;/a&gt;&lt;/li&gt;
@@ -19,7 +191,7 @@
 
 &lt;h2 id=&quot;heading-原理&quot;&gt;原理&lt;/h2&gt;
 
-&lt;p&gt;/etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;/etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:5&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;heading-扩展&quot;&gt;扩展&lt;/h2&gt;
 
@@ -45,8 +217,11 @@
     &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
       &lt;p&gt;&lt;a href=&quot;https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile&quot; target=&quot;_blank&quot;&gt;对比在 /etc/environment 与 .profile 中设置 PATH 变量&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://newbedev.com/how-can-i-automatically-change-directory-on-ssh-login&quot; target=&quot;_blank&quot;&gt;如何在登录 SSH 时自动改变目录&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html">需求 解决 原理 扩展 需求 所有用户通过 SSH 登录到服务器时，默认进入到 /data 目录下。 解决 在 /etc/profile.d 目录下创建 cd_data.sh 文件，内容： # cd /data when user login cd /data 原理 /etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。1 2 3 4 扩展 /etc/profile: 系统初始化文件，登录 shell 时执行 ~/.bash_profile: 个人初始化文件，登录 shell 时执行 ~/.bashrc: 每次启动一个交互 shell 时都会执行 所以，全局的配置文件可以放到 /etc/profile 文件中。 如何在 CentOS7 系统中为所有用户设置路径？ &amp;#8617; .bashrc, .bash-profile, .profile 之间的区别 &amp;#8617; .bashrc, .bash_profile, .environment 之间有什么区别？ &amp;#8617; 对比在 /etc/environment 与 .profile 中设置 PATH 变量 &amp;#8617;</summary></entry><entry><title type="html">乔布斯弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="乔布斯弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">乔布斯弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="乔布斯弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。&lt;/p&gt;
 
@@ -692,7 +867,794 @@
       &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/sDzpa0BhkwvXuapPxZ7fug&quot; target=&quot;_blank&quot;&gt;从零搭建创业公司后台技术栈&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="技术栈" /><summary type="html"></summary></entry><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="技术栈" /><summary type="html"></summary></entry><entry><title type="html">好听</title><link href="https://empvalley.com/2021/09/20/favorite-music/" rel="alternate" type="text/html" title="好听" /><published>2021-09-20T00:00:00+08:00</published><updated>2021-09-20T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/20/favorite-music</id><content type="html" xml:base="https://empvalley.com/2021/09/20/favorite-music/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-en&quot; id=&quot;markdown-toc-heading-en&quot;&gt;EN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-cn&quot; id=&quot;markdown-toc-heading-cn&quot;&gt;CN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-other&quot; id=&quot;markdown-toc-heading-other&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-en&quot;&gt;EN&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Song&lt;/th&gt;
+      &lt;th&gt;Artist&lt;/th&gt;
+      &lt;th&gt;Album&lt;/th&gt;
+      &lt;th&gt;Label&lt;/th&gt;
+      &lt;th&gt;Format&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Released&lt;/th&gt;
+      &lt;th&gt;Genre&lt;/th&gt;
+      &lt;th&gt;Style&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;That Place In Your Heart&lt;/td&gt;
+      &lt;td&gt;Leslie Dowdall&lt;/td&gt;
+      &lt;td&gt;That Place In Your Heart&lt;/td&gt;
+      &lt;td&gt;Decca – 012 159 403-2&lt;/td&gt;
+      &lt;td&gt;CD, Album&lt;/td&gt;
+      &lt;td&gt;US&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+      &lt;td&gt;Electronic, Pop&lt;/td&gt;
+      &lt;td&gt;New Age, Modern Classical, Ambient&lt;/td&gt;
+      &lt;td&gt;https://youtu.be/OTgwBWdYvNQ&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Jar Of Love&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Take Me To Your Heart&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The Day You Went Away&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chilly Cha Cha&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;U Make Me Wanna&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Here we are again&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;heading-cn&quot;&gt;CN&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Song&lt;/th&gt;
+      &lt;th&gt;Artist&lt;/th&gt;
+      &lt;th&gt;Album&lt;/th&gt;
+      &lt;th&gt;Label&lt;/th&gt;
+      &lt;th&gt;Format&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Released&lt;/th&gt;
+      &lt;th&gt;Genre&lt;/th&gt;
+      &lt;th&gt;Style&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;漂洋过海来看你&lt;/td&gt;
+      &lt;td&gt;娃娃（金智娟）&lt;/td&gt;
+      &lt;td&gt;大雨&lt;/td&gt;
+      &lt;td&gt;滚石唱片&lt;/td&gt;
+      &lt;td&gt;录音室专辑&lt;/td&gt;
+      &lt;td&gt;台湾&lt;/td&gt;
+      &lt;td&gt;1991年08月&lt;/td&gt;
+      &lt;td&gt;流行&lt;/td&gt;
+      &lt;td&gt;流行 Mandarin Pop&lt;/td&gt;
+      &lt;td&gt;https://youtu.be/hNQohQBFnwI&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;假如&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;思念的极限&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;胆小鬼&lt;/td&gt;
+      &lt;td&gt;梁咏琪&lt;/td&gt;
+      &lt;td&gt;梁咏琪gigi&lt;/td&gt;
+      &lt;td&gt;EEI唱片&lt;/td&gt;
+      &lt;td&gt;CD, Album&lt;/td&gt;
+      &lt;td&gt;中国大陆&lt;/td&gt;
+      &lt;td&gt;1998年06月&lt;/td&gt;
+      &lt;td&gt;流行&lt;/td&gt;
+      &lt;td&gt;流行&lt;/td&gt;
+      &lt;td&gt;https://youtu.be/8uwmtv9U5GM&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;那么骄傲&lt;/td&gt;
+      &lt;td&gt;金海心&lt;/td&gt;
+      &lt;td&gt;那么骄傲&lt;/td&gt;
+      &lt;td&gt;索尼音乐&lt;/td&gt;
+      &lt;td&gt;CD, Album&lt;/td&gt;
+      &lt;td&gt;中国内地&lt;/td&gt;
+      &lt;td&gt;2000年7月&lt;/td&gt;
+      &lt;td&gt;流行&lt;/td&gt;
+      &lt;td&gt;流行&lt;/td&gt;
+      &lt;td&gt;https://youtu.be/7rAcSynyOog&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;拥抱你离去&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;爱上你我很快乐&lt;/td&gt;
+      &lt;td&gt;水木年华&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;欧若拉&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;谢谢你的爱1999&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;第一号伤心人&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;无赖&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;天上没有乌云盖&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;我说我爱你&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;我要找到你&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;假如&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;水手&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;爱的主打歌&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;最熟悉的陌生人&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;我要找到你&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;枕着你的名字入眠&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;向天再借五百年&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;离别的车站&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;雨季的故事&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;情深深雨濛濛&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;童话&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;一生所爱&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;梅&lt;/td&gt;
+      &lt;td&gt;马宝平&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;女儿情&lt;/td&gt;
+      &lt;td&gt;吴静&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;新鸳鸯蝴蝶梦&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;东南西北风&lt;/td&gt;
+      &lt;td&gt;黄安&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;我是女生&lt;/td&gt;
+      &lt;td&gt;徐怀钰&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;窗外&lt;/td&gt;
+      &lt;td&gt;李琛&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;流浪歌&lt;/td&gt;
+      &lt;td&gt;陈星&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;别哭我最爱的人&lt;/td&gt;
+      &lt;td&gt;郑智化&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;灰色空间&lt;/td&gt;
+      &lt;td&gt;罗志祥&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;别怕我伤心&lt;/td&gt;
+      &lt;td&gt;张信哲&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;过火&lt;/td&gt;
+      &lt;td&gt;张信哲&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;女儿情&lt;/td&gt;
+      &lt;td&gt;吴静&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;站台&lt;/td&gt;
+      &lt;td&gt;刘鸿&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;大头皮鞋&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;众人划浆开大船&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;开门红&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;霸王别姬&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;新霸王别姬&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;爸爸妈妈&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分飞&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跟我回家&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;舞女&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;九妹&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;中华民谣&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;heading-other&quot;&gt;Other&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Song&lt;/th&gt;
+      &lt;th&gt;Artist&lt;/th&gt;
+      &lt;th&gt;Album&lt;/th&gt;
+      &lt;th&gt;Label&lt;/th&gt;
+      &lt;th&gt;Format&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Released&lt;/th&gt;
+      &lt;th&gt;Genre&lt;/th&gt;
+      &lt;th&gt;Style&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="音乐" /><summary type="html"></summary></entry><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-描述&quot; id=&quot;markdown-toc-heading-error-描述&quot;&gt;Error 描述&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-环境&quot; id=&quot;markdown-toc-heading-环境&quot;&gt;环境&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-原因&quot; id=&quot;markdown-toc-heading-error-原因&quot;&gt;Error 原因&lt;/a&gt;&lt;/li&gt;
@@ -1340,325 +2302,4 @@
       &lt;p&gt;&lt;a href=&quot;https://jimmysong.io/blog/what-is-a-service-mesh/&quot; target=&quot;_blank&quot;&gt;什么是Service Mesh（服务网格）？&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Service Mesh" /><category term="服务网格" /><summary type="html"></summary></entry><entry><title type="html">如何学习所有编程语言漫画版</title><link href="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/" rel="alternate" type="text/html" title="如何学习所有编程语言漫画版" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts</id><content type="html" xml:base="https://empvalley.com/2021/08/28/comic-of-several-programming-languages-concepts/">&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-1.png&quot; alt=&quot;&quot; /&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/comic-of-several-programming-languages-concepts-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;本文想要探讨的一个话题是：作为一个程序员，如何看待这么多的编程语言？是不是要学习？该怎么学习？其实很多人都有这样的体会，当你学会了一门语言以后，再去学习新的语言，难度会大大降低，因为很多概念是一样的， 只是换了一种包装形式，但是每一门语言都有自己独特之处，比如Ruby可以轻松地在运行时“打开”一个类，对这个类增加行为，还有method_missing的处理，这种特性，让它特别适合去实现DSL，RoR的火爆也就不足为怪了。&lt;/p&gt;
-
-&lt;p&gt;所以&lt;strong&gt;学习一门新的语言，更重要的是关注它和你所掌握语言的不同之处&lt;/strong&gt;。这些不同之处所涉及到的基本概念是有限的，本文就列出了一些。&lt;/p&gt;
-
-&lt;p&gt;另外，学完了一门新语言以后，如果项目中用不到，是无法熟练使用的，也有可能很快忘记那些语法，因为编程确实需要不断的练习，尤其是项目的历练，从这个意义上来说，学习并理解那些基本概念会更加重要。&lt;/p&gt;
-
-&lt;p&gt;本文的灵感来源于 &lt;a href=&quot;https://www.coderscat.com/how-to-learn-all-pl&quot;&gt;How to learn all programming languages, YES! ALL!&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/q922LRPmln1n2JXIOFOV_A&quot; target=&quot;_blank&quot;&gt;两年，我学会了所有的编程语言！&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">1 两年，我学会了所有的编程语言！ &amp;#8617;</summary></entry><entry><title type="html">如何学习所有编程语言</title><link href="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/" rel="alternate" type="text/html" title="如何学习所有编程语言" /><published>2021-08-28T00:00:00+08:00</published><updated>2021-08-28T00:00:00+08:00</updated><id>https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages</id><content type="html" xml:base="https://empvalley.com/2021/08/28/how-to-learn-all-programming-languages/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-如果编程语言是一辆车&quot; id=&quot;markdown-toc-heading-如果编程语言是一辆车&quot;&gt;如果编程语言是一辆车&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-为什么有这么多的编程语言&quot; id=&quot;markdown-toc-heading-为什么有这么多的编程语言&quot;&gt;为什么有这么多的编程语言&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-编程语言的基本要素&quot; id=&quot;markdown-toc-heading-编程语言的基本要素&quot;&gt;编程语言的基本要素&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-关注编程语言概念而不是语法&quot; id=&quot;markdown-toc-heading-关注编程语言概念而不是语法&quot;&gt;关注编程语言概念而不是语法&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-实现或创建编程语言&quot; id=&quot;markdown-toc-heading-实现或创建编程语言&quot;&gt;实现或创建编程语言&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-学习新语言的步骤&quot; id=&quot;markdown-toc-heading-学习新语言的步骤&quot;&gt;学习新语言的步骤&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-1-明白该语言的设计哲学和语言特性&quot; id=&quot;markdown-toc-heading-1-明白该语言的设计哲学和语言特性&quot;&gt;#1 明白该语言的设计哲学和语言特性&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-2-学习语法按照教程或书籍进行实践&quot; id=&quot;markdown-toc-heading-2-学习语法按照教程或书籍进行实践&quot;&gt;#2 学习语法，按照教程或书籍进行实践&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-3-读写更多新语言的代码&quot; id=&quot;markdown-toc-heading-3-读写更多新语言的代码&quot;&gt;#3 读、写更多新语言的代码&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-4-理解更多语言实现细节&quot; id=&quot;markdown-toc-heading-4-理解更多语言实现细节&quot;&gt;#4 理解更多语言实现细节&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-如何选择你的第一个编程语言&quot; id=&quot;markdown-toc-heading-如何选择你的第一个编程语言&quot;&gt;如何选择你的第一个编程语言？&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-哪一个编程语言是最好的&quot; id=&quot;markdown-toc-heading-哪一个编程语言是最好的&quot;&gt;哪一个编程语言是最好的？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;我应该从哪个编程语言开始学起？&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;许多新手刚开始学编码时都会问这个问题。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;最好的编程语言是什么？&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;在获得一些实际的开发经验后，开发者便产生了这样的问题。&lt;/p&gt;
-
-&lt;p&gt;这种类型的问题能够引发无休止的争论，而根本不会有标准的答案。&lt;/p&gt;
-
-&lt;p&gt;相反，我想要分享的更重要的东西是：&lt;strong&gt;如何精通学习新语言的技巧。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;对于熟练的开发者来说，学习新的语言应该是一件简单的事情。花费一个周末的时间甚至几个小时就使用新的编程语言写代码是很平常的事。更熟练的开发者只需要看一眼手册，完成任务的过程中就能掌握该语言。&lt;/p&gt;
-
-&lt;p&gt;精通学习所有语言的技巧无需天资，只需知道编程语言的核心知识并多加练习就可以达成。&lt;/p&gt;
-
-&lt;p&gt;当然，我们不需要学会所有类型的编程语言，但掌握更多的编程语言能够让我们选择更适合的编程语言完成特定的任务。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-如果编程语言是一辆车&quot;&gt;如果编程语言是一辆车&lt;/h2&gt;
-
-&lt;p&gt;世界上有成千上万种编程语言，在 IT 领域种被广泛应用的只有大约20种。&lt;/p&gt;
-
-&lt;p&gt;进一步研究会发现所有编程语言都共享一些特性。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;拿汽车举例子，世界上有不同的车，有小而动力足的车，也有大而慢的车；不同品牌的车有不同类型的驾驶体验。&lt;/p&gt;
-
-&lt;p&gt;如果一个人会开一辆车，那么他也会开大部分的车；即使是一辆其它牌子的新车。&lt;/p&gt;
-
-&lt;p&gt;为什么？因为不同的车有许多相同的东西，从根本上来说，它们都是在发动机和轮胎的基础上制造出来的。汽车被设计出来用于相同的目的：送你到目的地。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;bctt 的推特：“设计编程语言的目的：表达程序员的思想。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;heading-为什么有这么多的编程语言&quot;&gt;为什么有这么多的编程语言&lt;/h2&gt;
-
-&lt;p&gt;在计算机的世界里，编程语言扮演两种角色：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;程序员利用它们发送指令给计算机，告诉计算机我们需要什么，从而得到我们想要的东西。&lt;/li&gt;
-  &lt;li&gt;传递想法给其他程序员，分享我们的经验和观点。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;因此，代码只是传递给其他程序员或计算机的“消息”。而在编程语言进行设计与实现时就需要进行权衡。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;主要原因应该是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;硬件和计算机理论是逐渐发展而来的，通常来说，编程语言被设计的更简单易用的同时具有更强的表现力。&lt;/li&gt;
-  &lt;li&gt;计算机被应用在许多领域，针对不同领域有不同的编程语言。&lt;/li&gt;
-  &lt;li&gt;不同的编程语言有不同的设计方法和哲学。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;语言有不同类型的语法或特性，但归根结底它们都是&lt;strong&gt;图灵完整的（Turing complete）&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;简洁地说，这意味着：&lt;strong&gt;所有的编程语言都能够用来实现任意算法。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-编程语言的基本要素&quot;&gt;编程语言的基本要素&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;几乎所有的编程语言都包含这些类型，事实上，它们全都是关于“抽象的“：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;数据类型和数据抽象&lt;/li&gt;
-  &lt;li&gt;控制流和控制抽象&lt;/li&gt;
-  &lt;li&gt;低级别的抽象&lt;/li&gt;
-  &lt;li&gt;特定领域额外的抽象&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这就是我们可以掌握所有的编程语言的原因：&lt;strong&gt;语言的概念是有限的&lt;/strong&gt;，经常被用到的只有不到15种。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;过程式&lt;/li&gt;
-  &lt;li&gt;面向对象&lt;/li&gt;
-  &lt;li&gt;指针&lt;/li&gt;
-  &lt;li&gt;递归&lt;/li&gt;
-  &lt;li&gt;异常&lt;/li&gt;
-  &lt;li&gt;静态类型&lt;/li&gt;
-  &lt;li&gt;动态类型&lt;/li&gt;
-  &lt;li&gt;类型推断&lt;/li&gt;
-  &lt;li&gt;匿名函数（Lambda function）&lt;/li&gt;
-  &lt;li&gt;垃圾回收&lt;/li&gt;
-  &lt;li&gt;程序剩下的部分（Continuation）&lt;/li&gt;
-  &lt;li&gt;宏指令和元编程&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;和设计原则一样，编程语言概念趋于固定。&lt;/p&gt;
-
-&lt;p&gt;编程语言设计者彼此借鉴想法，通过不同的实现方式实现出来。所以有时我们可能会说语言 PL_C 是语言 PL_A 和语言 PL_B 的孩子，语言 PL 家族树类似于这样：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;理解这些概念不仅帮助我们更快速的学习语言，同样能够帮助我们写出更好的代码。例如过程式编程语言和面向对象编程语言有着不同的编码风格和范式。&lt;/p&gt;
-
-&lt;p&gt;如果你不明白它们之间的区别，实践中将不可避免的写出糟糕的代码。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-关注编程语言概念而不是语法&quot;&gt;关注编程语言概念而不是语法&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如何开始学习编程语言的概念呢？&lt;/p&gt;
-
-&lt;p&gt;要完全理解编程语言的概念，首先需要我们回答几个关于它的问题。&lt;/p&gt;
-
-&lt;p&gt;为什么要发明编程语言的概念？&lt;/p&gt;
-
-&lt;p&gt;需要解决的问题是什么？&lt;/p&gt;
-
-&lt;p&gt;有什么好处和弊端？&lt;/p&gt;
-
-&lt;p&gt;如何实现？&lt;/p&gt;
-
-&lt;p&gt;拿垃圾回收为例，第一个问题是：什么是垃圾回收？&lt;/p&gt;
-
-&lt;p&gt;在谷歌上面进行搜索，来到 &lt;a href=&quot;https://en.wikipedia.org/wiki/Garbage_collection&quot;&gt;维基百科垃圾回收页面&lt;/a&gt;可以看到：发明垃圾回收是为了解决内存管理问题，它能减少程序中的内存错误；有了垃圾回收机制，写起代码会更加简单，因为无需再手动管理内存。代价是会损耗性能，因为会有额外的代码分配和释放内存；因此在使用有垃圾回收机制的编程语言时，要注意垃圾回收机制对程序性能的影响。&lt;/p&gt;
-
-&lt;p&gt;使用一段时间后，就需要知道垃圾回收是如何工作的，使用了什么算法？垃圾回收有多种不同类型的实现，各有优缺点。&lt;/p&gt;
-
-&lt;p&gt;学习一种新的编程语言时，就是学习编程语言概念最好的时机。&lt;/p&gt;
-
-&lt;p&gt;举个例子，假如 Ruby 是你学习的第一种编程语言，那么这同时也是你学习理解面向对象编程优缺点的最好时机。&lt;/p&gt;
-
-&lt;p&gt;理解了面向对面编程的概念再学其它面向对象的编程语言就会简单许多。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-实现或创建编程语言&quot;&gt;实现或创建编程语言&lt;/h2&gt;
-
-&lt;p&gt;别害怕，解释器和编译器只是一种特殊类型的程序。它们接收你的代码，之后运行你的代码或者是把你的代码编译为字符码或字节码。&lt;/p&gt;
-
-&lt;p&gt;实现或创建编程语言可以帮助你战胜内心深处对编程语言的恐惧。&lt;/p&gt;
-
-&lt;p&gt;这是学习所有编程语言的又一个秘密。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如果你的编程语言语法不是很复杂，实现起来并不费事。&lt;/p&gt;
-
-&lt;p&gt;看一下这个项目：&lt;a href=&quot;https://github.com/kanaka/mal&quot;&gt;写一个Lisp语言&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;任何语言都可以用来实现一个Lisp，Lisp/Scheme 有清晰的语法，很容易被解析；编程语言教育广泛采用Lisp。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/rui314/8cc&quot;&gt;8cc&lt;/a&gt; 是 C 语言的编译器，如果你意在写一个编译器，它将是一个很好的参考。&lt;/p&gt;
-
-&lt;p&gt;一些好的编程语言实现的数据对你学习同样是有帮助的：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://amzn.to/32Rq6tS&quot;&gt;EOPL&lt;/a&gt; 是一本教科书，包含许多可以拿来玩儿的编译器。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://amzn.to/31a7tjG&quot;&gt;Programming Language Pragmatics &lt;/a&gt; 同样是本编程语言教育性的书籍。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-学习新语言的步骤&quot;&gt;学习新语言的步骤&lt;/h2&gt;
-
-&lt;p&gt;按以下步骤学习编程语言的概念会更高效：&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-1-明白该语言的设计哲学和语言特性&quot;&gt;#1 明白该语言的设计哲学和语言特性&lt;/h3&gt;
-
-&lt;p&gt;例如，如果开始学习 Ruby，先看看它有什么特别的地方。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;然后看官网的介绍，更深一步进行了解：&lt;a href=&quot;http://www.ruby-lang.org/en/about/&quot;&gt;http://www.ruby-lang.org/en/about/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;在开始学习之前，试着总结出需要理解的主要特性：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;简单、高效率、代码可读性高&lt;/li&gt;
-  &lt;li&gt;自带解释器，因此有垃圾回收机制，同样意味着对于某些任务，性能可能会受到影响&lt;/li&gt;
-  &lt;li&gt;一切皆对象，属于面向对象编程语言，甚至完全是面向对象的。&lt;/li&gt;
-  &lt;li&gt;灵活，语言的很多部分都能够被重新定义。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;了解语言最重要的特性，包括它的优缺点，在你使用新的语言写代码时会很有帮助，它就是你的路线图。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-2-学习语法按照教程或书籍进行实践&quot;&gt;#2 学习语法，按照教程或书籍进行实践&lt;/h3&gt;
-
-&lt;p&gt;你需要掌握语言基础的部分，包括语法、基础的IO、debug 工具、单元测试工具等。&lt;/p&gt;
-
-&lt;p&gt;如果你是个新手，试着找一些该语言权威的书籍，如该语言作者写的或在 Amazon 上面搜索该语言的名称，找那些评分高的书籍。&lt;/p&gt;
-
-&lt;p&gt;记着，在你没有成为专家前最好自己手写代码，不要只是复制粘贴。&lt;/p&gt;
-
-&lt;p&gt;在 &lt;a href=&quot;https://exercism.io/&quot;&gt;exercism.io&lt;/a&gt; 上面练习新语言，会有导师免费检查你的代码并给予你建议，棒极了。&lt;/p&gt;
-
-&lt;p&gt;如果你是编程语言的专家，只需找一些该语言简单的手册甚至只需要一些代码示例。&lt;/p&gt;
-
-&lt;p&gt;看一下这个网站 &lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;learnxinyminutes.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-3-读写更多新语言的代码&quot;&gt;#3 读、写更多新语言的代码&lt;/h3&gt;
-
-&lt;p&gt;是时候用新语言、相关知识、工具或库写一个项目了。&lt;/p&gt;
-
-&lt;p&gt;开始可以写些简单的项目，例如写一个猜数字的游戏或一个简单的书籍商店，又或者是一个待办事项应用。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://github.com/&quot;&gt;Github&lt;/a&gt; 上有许多类似的项目。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-4-理解更多语言实现细节&quot;&gt;#4 理解更多语言实现细节&lt;/h3&gt;
-
-&lt;p&gt;这不是必须的，如同我在 &lt;a href=&quot;https://www.coderscat.com/to-be-a-programmer&quot;&gt;成为一个程序员&lt;/a&gt; 中说的那样，一个有追求的程序员对语言的细节和实现是充满兴趣的。&lt;/p&gt;
-
-&lt;p&gt;有时 bug 的出现仅仅是由于我们不清楚该语言的实现细节导致的。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-如何选择你的第一个编程语言&quot;&gt;如何选择你的第一个编程语言？&lt;/h2&gt;
-
-&lt;p&gt;根据你的目标和自身条件：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;有人指导你或你需要在学校学习一门编程语言吗？&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;如果老师告诉你做练习使用 C 语言，这是开始学习 C 语言的一个绝好机会，因为你有人指导（你的老师），也有同学；有利于开展学习。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;你的目标是什么？&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;如果你想开发一个 Web 应用，学习 Javascript/Python/Ruby 就可以了。&lt;/p&gt;
-
-    &lt;p&gt;如果你想开发游戏， C++ 是个不错的选择。&lt;/p&gt;
-
-    &lt;p&gt;如果你的目标是处理数据，Python/R 都可以。&lt;/p&gt;
-
-    &lt;p&gt;如果你想创建一个安卓应用，可以使用 Java/Kotlin。&lt;/p&gt;
-
-    &lt;p&gt;只需要在你选择的领域里挑选出被广泛使用的语言就可以了。如果你不清楚，可以请教有经验的开发者。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;你是为了申请一份需要特定语言的工作吗？&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;你只需要学习工作描述中提及的语言就可以了。&lt;/p&gt;
-
-    &lt;p&gt;不要花费太多时间选择第一个编程语言。&lt;/p&gt;
-
-    &lt;p&gt;先快速上手，获取一定的经验，之后如果你不喜欢或你涉及的领域有所改变，你可以很容易地学会并使用另一种编程语言。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;heading-哪一个编程语言是最好的&quot;&gt;哪一个编程语言是最好的？&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这同样取决于你涉及的领域，编程语言各有所长。&lt;/p&gt;
-
-&lt;p&gt;没有任何一种编程语言能适用于所有场景，如果存在，我们只需要学习一种编程语言就可以了，不是吗？记得，&lt;a href=&quot;https://en.wikipedia.org/wiki/No_Silver_Bullet&quot;&gt;没有银子弹&lt;/a&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;几乎所有的程序员由于各自不同的体验都有自己偏爱的程序语言。&lt;/p&gt;
-
-&lt;p&gt;一些人声称他们喜欢的语言是最好的，别信；他们喜欢的不代表就是最好的。&lt;/p&gt;
-
-&lt;p&gt;就个人的体会而言，我喜欢的语言包括 C/Ruby/Lua/OCaml；我能使用这些语言产出东西，但可能不是你喜欢的，你应该尝试不同的语言找到自己喜爱的。&lt;/p&gt;
-
-&lt;p&gt;有人说至少掌握5种程序语言才是一个合格的程序员。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/learn-programming-languages-10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;正如我上面说的那样，你不应该执着于学习越来越多的语言；而应该学习更多的语言思想和设计原理。&lt;/p&gt;
-
-&lt;p&gt;如果你日常的工作中使用的是过程式语言，为什么不学习一种面向对象的语言呢？&lt;/p&gt;
-
-&lt;p&gt;如果你使用动态语言，可以学习一种静态类型的语言。&lt;/p&gt;
-
-&lt;p&gt;这些就是我学习编程语言的技巧。&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://coderscat.com/learn-programming-languages/&quot; target=&quot;_blank&quot;&gt;如何学习所有编程语言，没错！是所有！&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;没有银子弹：指没有万能药的意思。（译者注） &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="编程语言概念" /><summary type="html">我应该从哪个编程语言开始学起？1 如何学习所有编程语言，没错！是所有！ &amp;#8617;</summary></entry></feed>
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Service Mesh" /><category term="服务网格" /><summary type="html"></summary></entry></feed>
