@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2022-12-14T00:01:11+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">为什么要进行 URL 编码</title><link href="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/" rel="alternate" type="text/html" title="为什么要进行 URL 编码" /><published>2022-12-13T00:00:00+08:00</published><updated>2022-12-13T00:00:00+08:00</updated><id>https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls</id><content type="html" xml:base="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-04-05T03:23:49+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">使用 netstat 命令查看指定端口占用情况</title><link href="https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat/" rel="alternate" type="text/html" title="使用 netstat 命令查看指定端口占用情况" /><published>2023-04-05T00:00:00+08:00</published><updated>2023-04-05T00:00:00+08:00</updated><id>https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat</id><content type="html" xml:base="https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat/">&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;netstat &lt;span class=&quot;nt&quot;&gt;-anp&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; :&amp;lt;port_number&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;-a: 监听、非监听状态的连接都显示&lt;/p&gt;
+
+  &lt;p&gt;-n: 显示 ip 地址，而不是域名或用户名&lt;/p&gt;
+
+  &lt;p&gt;-p: 显示连接所属 PID 和程序名称&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="netstat" /><summary type="html">$ netstat -anp | grep :&amp;lt;port_number&amp;gt; -a: 监听、非监听状态的连接都显示 -n: 显示 ip 地址，而不是域名或用户名 -p: 显示连接所属 PID 和程序名称</summary></entry><entry><title type="html">使用 grep 命令查找包含指定文本的所有文件</title><link href="https://empvalley.com/2023/04/05/finding-all-files-containing-specific-text-on-linux/" rel="alternate" type="text/html" title="使用 grep 命令查找包含指定文本的所有文件" /><published>2023-04-05T00:00:00+08:00</published><updated>2023-04-05T00:00:00+08:00</updated><id>https://empvalley.com/2023/04/05/finding-all-files-containing-specific-text-on-linux</id><content type="html" xml:base="https://empvalley.com/2023/04/05/finding-all-files-containing-specific-text-on-linux/">&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pattern'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;-r&lt;/strong&gt; 或 &lt;strong&gt;-R&lt;/strong&gt; 表示递归查找。
+&lt;strong&gt;-n&lt;/strong&gt; 展示行号。
+&lt;strong&gt;-w&lt;/strong&gt; 完全匹配（匹配整个单词）。
+&lt;strong&gt;-l&lt;/strong&gt; （小写 L）只显示文件名，而不是结果本身。
+&lt;strong&gt;i&lt;/strong&gt; 忽略大小写（可选）。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;和标签 &lt;strong&gt;–exclude&lt;/strong&gt;、&lt;strong&gt;–include&lt;/strong&gt;、&lt;strong&gt;–exclude-dir&lt;/strong&gt; 一起使用可以更有效的查找：&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;只搜索扩展名为 .c 或 .h 的文件：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;.&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;c,h&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;排除所有扩展名为 .o 的文件：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;.o &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;通过 &lt;strong&gt;–exclude-dir&lt;/strong&gt; 参数可以排除指定的目录。
+例如，下面的命令将排除目录 dir1/、dir2/ 和所有 *.dst/ 目录。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude-dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;={&lt;/span&gt;dir1,dir2,&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.dst&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;也可以从根目录开始查找：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Ril&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;text-to-find-here&quot;&lt;/span&gt; /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这些命令能够出色的完成任务，同样能够帮你完成类似的搜索。
+更多选项可以查看 man 命令手册 &lt;strong&gt;man grep&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/16956844/4612522&quot; target=&quot;_blank&quot;&gt;Linux 中查找包含指定文本的所有文件&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="grep" /><summary type="html">$ grep -rnw '/path/to/somewhere/' -e 'pattern' -r 或 -R 表示递归查找。 -n 展示行号。 -w 完全匹配（匹配整个单词）。 -l （小写 L）只显示文件名，而不是结果本身。 i 忽略大小写（可选）。 和标签 –exclude、–include、–exclude-dir 一起使用可以更有效的查找：1 只搜索扩展名为 .c 或 .h 的文件： $ grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 排除所有扩展名为 .o 的文件： $ grep --exclude=\*.o -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 通过 –exclude-dir 参数可以排除指定的目录。 例如，下面的命令将排除目录 dir1/、dir2/ 和所有 *.dst/ 目录。 $ grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 也可以从根目录开始查找： $ grep -Ril &quot;text-to-find-here&quot; / 这些命令能够出色的完成任务，同样能够帮你完成类似的搜索。 更多选项可以查看 man 命令手册 man grep Linux 中查找包含指定文本的所有文件 &amp;#8617;</summary></entry><entry><title type="html">为什么要进行 URL 编码</title><link href="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/" rel="alternate" type="text/html" title="为什么要进行 URL 编码" /><published>2022-12-13T00:00:00+08:00</published><updated>2022-12-13T00:00:00+08:00</updated><id>https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls</id><content type="html" xml:base="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-不编码-url-引出的问题&quot; id=&quot;markdown-toc-heading-不编码-url-引出的问题&quot;&gt;不编码 URL 引出的问题&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-解决方案&quot; id=&quot;markdown-toc-heading-解决方案&quot;&gt;解决方案&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-哪些字符需要编码&quot; id=&quot;markdown-toc-heading-哪些字符需要编码&quot;&gt;哪些字符需要编码&lt;/a&gt;&lt;/li&gt;
@@ -170,7 +222,7 @@ scheme  authority         path      query   fragment
       &lt;p&gt;&lt;a href=&quot;https://www.URLencoder.io/learn/&quot; target=&quot;_blank&quot;&gt;什么是 URL 编码以及工作原理&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="URL" /><summary type="html">不编码 URL 引出的问题 不编码 URL 引出的问题</summary></entry><entry><title type="html">SSH 登录后进入指定目录</title><link href="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/" rel="alternate" type="text/html" title="SSH 登录后进入指定目录" /><published>2022-09-06T00:00:00+08:00</published><updated>2022-09-06T00:00:00+08:00</updated><id>https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login</id><content type="html" xml:base="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="URL" /><summary type="html">不编码 URL 引出的问题 不编码 URL 引出的问题</summary></entry><entry><title type="html">配置 SSH 登录后进入指定目录</title><link href="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/" rel="alternate" type="text/html" title="配置 SSH 登录后进入指定目录" /><published>2022-09-06T00:00:00+08:00</published><updated>2022-09-06T00:00:00+08:00</updated><id>https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login</id><content type="html" xml:base="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-需求&quot; id=&quot;markdown-toc-heading-需求&quot;&gt;需求&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-解决&quot; id=&quot;markdown-toc-heading-解决&quot;&gt;解决&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-原理&quot; id=&quot;markdown-toc-heading-原理&quot;&gt;原理&lt;/a&gt;&lt;/li&gt;
@@ -221,7 +273,7 @@ scheme  authority         path      query   fragment
       &lt;p&gt;&lt;a href=&quot;https://newbedev.com/how-can-i-automatically-change-directory-on-ssh-login&quot; target=&quot;_blank&quot;&gt;如何在登录 SSH 时自动改变目录&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">乔布斯弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="乔布斯弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/jobs-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html">需求 解决 原理 扩展 需求 所有用户通过 SSH 登录到服务器时，默认进入到 /data 目录下。 解决 在 /etc/profile.d 目录下创建 cd_data.sh 文件，内容： # cd /data when user login cd /data 原理 /etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。1 2 3 4 5 扩展 /etc/profile: 系统初始化文件，登录 shell 时执行 ~/.bash_profile: 个人初始化文件，登录 shell 时执行 ~/.bashrc: 每次启动一个交互 shell 时都会执行 所以，全局的配置文件可以放到 /etc/profile 文件中。 如何在 CentOS7 系统中为所有用户设置路径？ &amp;#8617; .bashrc, .bash-profile, .profile 之间的区别 &amp;#8617; .bashrc, .bash_profile, .environment 之间有什么区别？ &amp;#8617; 对比在 /etc/environment 与 .profile 中设置 PATH 变量 &amp;#8617; 如何在登录 SSH 时自动改变目录 &amp;#8617;</summary></entry><entry><title type="html">友人弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/someone-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="友人弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/someone-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/someone-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。&lt;/p&gt;
 
@@ -335,7 +387,7 @@ scheme  authority         path      query   fragment
       &lt;p&gt;&lt;a href=&quot;https://mrxn.net/other/466.html&quot; target=&quot;_blank&quot;&gt;乔布斯弥留之际关于生命意义的最后遗言&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="乔布斯" /><category term="生命意义" /><summary type="html"></summary></entry><entry><title type="html">从零搭建创业公司后台技术栈</title><link href="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/" rel="alternate" type="text/html" title="从零搭建创业公司后台技术栈" /><published>2021-09-22T00:00:00+08:00</published><updated>2021-09-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/22/build-technology-stack-from-scratch</id><content type="html" xml:base="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="生命意义" /><summary type="html">I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.1 我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。 However, aside from work, I have little joy. In the end, wealth is only a fact of life that I am accustomed to. 但是除工作外，我并不觉得幸福，财富只是一个我习惯了的生活方式。 At this moment, lying on the sick bed and recalling my whole life, I realize that all the recognition and wealth that I took so much pride in, have paled and become meaningless in the face of impending death. 此时此刻躺在病床上回顾我的一生，我知道我曾引为自豪的公众认可的财富和面临即将到来的死亡时显得得苍白和毫无意义。 In the darkness, I look at the green lights from the life supporting machines and hear the humming mechanical sounds, I can feel the breath of god of death drawing closer … 此时此刻在黑暗中，我双眼看着维持生命的仪器发出的绿光的时候，两耳听见这些仪器发出的蜂鸣声的时候，我切身感受到了死亡之神一步步走进时发出的呼吸声音…… Now I know, when we have accumulated sufficient wealth to last our lifetime, we should pursue other matters that are unrelated to wealth … 现在我明白了，在我们积累了足够的物质财富可以让我们享受一生的时候，我们还应该追求其它无关财富的东西…… Should be something that is more important: 一些比财富更重要的东西： Perhaps relationships, perhaps art, perhaps a dream from younger days 可以是亲情关系的东西，可以是艺术的东西，可以是你少年时的梦。 Non-stop pursuing of wealth will only turn a person into a twisted being, just like me. 无休止地物质财富只会把一个人变成一具扭曲的生命，就好比现在的我。 God gave us the senses to let us feel the love in everyone’s heart, not the illusions brought about by wealth. 上帝给了我们知觉，让我们可以感受每个人内心的那份爱，不是感受财富带来的幻觉。 The wealth I have won in my life I cannot bring with me. What I can bring is only the memories precipitated by love. 我一生换来的荣华富贵我是无法带走的。我唯一能带走的，就是爱沉淀下来的美好回忆。 That’s the true riches which will follow you, accompany you, giving you strength and light to go on. 这才是真正的富有：它随你身后，它伴你左右，它给你前行的力量和一束光亮。 Love can travel a thousand miles. Life has no limit. Go where you want to go. Reach the height you want to reach. It is all in your heart and in your hands. 爱能跨越千山万水，生命无止境。放飞身心，无限攀登。这一切就在你心里就在你手中。 What is the most expensive bed in the world? 这世界上最昂贵的床榻是什么？ Sick bed … 是病榻…… You can employ someone to drive the car for you, make money for you but you cannot have someone to bear the sickness for you. 你可以请司机为你开车，请人为你赚钱，但是你请不到人为你分担病痛。 Material things lost can be found. But there is one thing that can never be found when it is lost — Life. 荣华富贵失去可以复还来，但有一样东西一旦失去将永不复归：那就是生命。 When a person goes into the operating room, he will realize that there is one book that he has yet to finish reading — Book of Healthy Life. 当人进到手术室时，他才会发现有一本书自己还没卒读，书名叫“健康生活之书”。 Whichever stage in life we are at right now, with time, we will face the day when the curtain comes down. 无论我们现在处于生活的哪个阶段，我们终有帷幕落下的那一天。 Treasure Love for your family, love for your spouse, love for your friends. 珍惜珍爱你的家庭，珍爱你的配偶，珍爱你的朋友。 Treat yourself well. Cherish others. 珍惜自己，珍惜他人。 进而，生活有四个真理： 1）不要教育孩子发财，而是教育他们快乐。当他们长大时，他们会知道事物的价值，而不仅仅是价格。 2）以食物为药，否则，你必须以药物为食。 3）爱你的人永远不会抛弃你，即使有100个理由放弃，她也会找到坚持的理由。 4）很少人知道，他出生时就被爱，死时也被爱着。在这两者之间，您必须对爱进行管理。 如果你只想走得快点，可以一个人走！但是，如果你想走得远一点，那就和朋友一起走吧！ 世界上最好得医生： 1）阳光 2）休息 3）锻炼 4）健康饮食 5）信心与爱心 6）朋友 上面的道理来自一位海外的朋友，在最后的岁月，让我们共勉！ 乔布斯弥留之际关于生命意义的最后遗言 &amp;#8617;</summary></entry><entry><title type="html">从零搭建创业公司后台技术栈</title><link href="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/" rel="alternate" type="text/html" title="从零搭建创业公司后台技术栈" /><published>2021-09-22T00:00:00+08:00</published><updated>2021-09-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/22/build-technology-stack-from-scratch</id><content type="html" xml:base="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-前言&quot; id=&quot;markdown-toc-heading-前言&quot;&gt;前言&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-各系统组件选型&quot; id=&quot;markdown-toc-heading-各系统组件选型&quot;&gt;各系统组件选型&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#heading-1项目管理bug管理问题管理&quot; id=&quot;markdown-toc-heading-1项目管理bug管理问题管理&quot;&gt;1、项目管理/Bug管理/问题管理&lt;/a&gt;&lt;/li&gt;
@@ -1654,7 +1706,7 @@ scheme  authority         path      query   fragment
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="音乐" /><summary type="html"></summary></entry><entry><title type="html">SSL证书问题：不能访问本地发行的证书</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="SSL证书问题：不能访问本地发行的证书" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/table&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="音乐" /><summary type="html"></summary></entry><entry><title type="html">不能访问本地发行的证书异常</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="不能访问本地发行的证书异常" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-描述&quot; id=&quot;markdown-toc-heading-error-描述&quot;&gt;Error 描述&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-环境&quot; id=&quot;markdown-toc-heading-环境&quot;&gt;环境&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-error-原因&quot; id=&quot;markdown-toc-heading-error-原因&quot;&gt;Error 原因&lt;/a&gt;&lt;/li&gt;
@@ -1736,7 +1788,7 @@ scheme  authority         path      query   fragment
       &lt;p&gt;&lt;a href=&quot;https://learnku.com/laravel/t/14111/curl-error-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate-see-httpcurlhaxxselibcurlclibcurl-errorshtml&quot; target=&quot;_blank&quot;&gt;cURL error 60: SSL证书问题:无法获取本地发行的证书&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSL" /><summary type="html">Error 描述 Error 描述</summary></entry><entry><title type="html">深入理解设计模式</title><link href="https://empvalley.com/2021/09/11/dive-into-design-patterns/" rel="alternate" type="text/html" title="深入理解设计模式" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/dive-into-design-patterns</id><content type="html" xml:base="https://empvalley.com/2021/09/11/dive-into-design-patterns/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSL" /><summary type="html">Error 描述 环境 Error 原因 解决方案 Error 描述 cURL error 60: SSL certificate problem: unable to get local issuer certificate (see http://curl.haxx.se/libcurl/c/libcurl-errors.html) 1 2 3 环境 名称 版本 来客PHP在线客服系统 LK_DIY5.0.8 PHP PHP-56 Web服务器 Apache2.4.48 DB MySQL5.7.26 部署环境 Windows Server 2019 Datacenter 管理软件 宝塔免费版7.3.0 Error 原因 操作系统中的 CA 证书列表过期了。 解决方案 下载证书 pem 文件。 修改 宝塔目录/php/php版本/php.ini 文件： curl.cainfo = &quot;下载的pem文件路径&quot; 重新启动 Apache 和 在线客服系统。 在线客服系统中的 CURLOPT_SSL_VERIFYPEER 参数本身就是关闭的。 curl: (60) SSL 证书问题 &amp;#8617; curl error 60 ssl证书问题，无法获取本地发行的证书 &amp;#8617; cURL error 60: SSL证书问题:无法获取本地发行的证书 &amp;#8617;</summary></entry><entry><title type="html">深入理解设计模式</title><link href="https://empvalley.com/2021/09/11/dive-into-design-patterns/" rel="alternate" type="text/html" title="深入理解设计模式" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/dive-into-design-patterns</id><content type="html" xml:base="https://empvalley.com/2021/09/11/dive-into-design-patterns/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-关于本书&quot; id=&quot;markdown-toc-heading-关于本书&quot;&gt;关于本书&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-关于作者&quot; id=&quot;markdown-toc-heading-关于作者&quot;&gt;关于作者&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-内容结构&quot; id=&quot;markdown-toc-heading-内容结构&quot;&gt;内容结构&lt;/a&gt;    &lt;ul&gt;
@@ -1866,7 +1918,7 @@ scheme  authority         path      query   fragment
       &lt;p&gt;对原文章内容有所修改。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="设计模式" /><summary type="html">昨天读完了《深入理解设计模式》（《Dive Into Design Patterns》）这本书，还是有颇多感触的，这本书是由 Alexander Shvets 编写，主要对 22 种设计模式做了一个直观、形象并且足够简单的介绍。这本书的结构非常清晰，主要分为前置部分（介绍设计模式的出现的缘由以及其设计所应当遵循的原则）与正文（将 22 种设计模式分为了三类，并对每一个设计模式做了充分的介绍）两部分，其中正文部分是本书的重点，下面对这本书做一个必要的总结，以期在以后查阅该书时能够快速索引。1 2 深入理解设计模式 &amp;#8617; 对原文章内容有所修改。 &amp;#8617;</summary></entry><entry><title type="html">同步 fork</title><link href="https://empvalley.com/2021/09/11/syncing-a-fork/" rel="alternate" type="text/html" title="同步 fork" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/syncing-a-fork</id><content type="html" xml:base="https://empvalley.com/2021/09/11/syncing-a-fork/">&lt;p&gt;从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="设计模式" /><summary type="html">昨天读完了《深入理解设计模式》（《Dive Into Design Patterns》）这本书，还是有颇多感触的，这本书是由 Alexander Shvets 编写，主要对 22 种设计模式做了一个直观、形象并且足够简单的介绍。这本书的结构非常清晰，主要分为前置部分（介绍设计模式的出现的缘由以及其设计所应当遵循的原则）与正文（将 22 种设计模式分为了三类，并对每一个设计模式做了充分的介绍）两部分，其中正文部分是本书的重点，下面对这本书做一个必要的总结，以期在以后查阅该书时能够快速索引。1 2 深入理解设计模式 &amp;#8617; 对原文章内容有所修改。 &amp;#8617;</summary></entry><entry><title type="html">Git 同步 fork</title><link href="https://empvalley.com/2021/09/11/syncing-a-fork/" rel="alternate" type="text/html" title="Git 同步 fork" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/syncing-a-fork</id><content type="html" xml:base="https://empvalley.com/2021/09/11/syncing-a-fork/">&lt;p&gt;从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -1926,380 +1978,4 @@ scheme  authority         path      query   fragment
       &lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork&quot; target=&quot;_blank&quot;&gt;同步 fork&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html"></summary></entry><entry><title type="html">理解本真的 REST 架构风格</title><link href="https://empvalley.com/2021/09/11/understanding-restful-style/" rel="alternate" type="text/html" title="理解本真的 REST 架构风格" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/understanding-restful-style</id><content type="html" xml:base="https://empvalley.com/2021/09/11/understanding-restful-style/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-引子&quot; id=&quot;markdown-toc-heading-引子&quot;&gt;引子&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-web-技术发展与-rest-的由来&quot; id=&quot;markdown-toc-heading-web-技术发展与-rest-的由来&quot;&gt;Web 技术发展与 REST 的由来&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-rest-详解&quot; id=&quot;markdown-toc-heading-rest-详解&quot;&gt;REST 详解&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;本文是&lt;a href=&quot;http://www.infoq.com/cn/rest-deep-dive&quot;&gt;“深入探索REST”专栏&lt;/a&gt;系列深度内容中的第二篇，它将带您领略REST 架构的起源、与Web 的关系、REST 架构的本质及特性，以及REST 架构与其他架构风格之间的比较。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-引子&quot;&gt;引子&lt;/h2&gt;
-
-&lt;p&gt;在移动互联网、云计算迅猛发展的今天，作为一名Web 开发者，如果您还没听说过“REST”这个buzzword，显然已经落伍了。夸张点说，甚至“出了门都不好意思跟别人打招呼”。尽管如此，对于REST 这个泊来品的理解，大多数人（包括一些资深的架构师）仍然停留在“盲人摸象”的阶段。常常听到各种各样关于REST 的说法，例如：有人说：“我们这套新的API 决定不用Web Service（SOAP+WSDL），而是直接使用HTTP+JSON，也就是用RESTful 的方式来开发。” 不用SOAP，甚至也不用XML，就自动变成了RESTful 了。还有人认为：REST 与传统的Web Service 其实没有本质区别，只是对于URI 的构造方式提出了更多要求，而这些要求Web Service 完全都可以实现。潜台词是：既生瑜，何生亮。Web Service 已经足够好了，干嘛还要再折腾什么REST。这些对于REST 的不同说法，果真如此吗？REST 究竟是什么？是一种新的技术、一种新的架构、还是一种新的规范？&lt;/p&gt;
-
-&lt;p&gt;对于这些问题笔者先不解答，为了深入理解REST 是什么，我们需要回顾一下Web 发展的最初年代，从源头上讲讲REST 是怎么得来的。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-web-技术发展与-rest-的由来&quot;&gt;Web 技术发展与 REST 的由来&lt;/h2&gt;
-
-&lt;p&gt;Web（万维网 World Wide Web 的简称）是个包罗万象的万花筒，不同的人从不同的角度观察，对于 Web 究竟是什么会得出大不相同的观点。作为 Web 开发者，我们需要从技术上来理解 Web。从技术架构层面上看，Web 的技术架构包括了四个基石：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;URI&lt;/li&gt;
-  &lt;li&gt;HTTP&lt;/li&gt;
-  &lt;li&gt;HyperText（除了 HTML 外，也可以是带有超链接的 XML 或 JSON）&lt;/li&gt;
-  &lt;li&gt;MIME&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这四个基石相互支撑，促使 Web 这座宏伟的大厦以几何级数的速度发展了起来。在这四个基石之上，Web 开发技术的发展可以粗略划分成以下几个阶段：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;静态内容阶段：在这个最初的阶段，使用 Web 的主要是一些研究机构。Web 由大量的静态 HTML 文档组成，其中大多是一些学术论文。Web 服务器可以被看作是支持超文本的共享文件服务器。&lt;/li&gt;
-  &lt;li&gt;CGI 程序阶段：在这个阶段，Web 服务器增加了一些编程 API。通过这些 API 编写的应用程序，可以向客户端提供一些动态变化的内容。Web 服务器与应用程序之间的通信，通过 CGI（Common Gateway Interface）协议完成，应用程序被称作 CGI 程序。&lt;/li&gt;
-  &lt;li&gt;脚本语言阶段：在这个阶段，服务器端出现了 ASP、PHP、JSP、ColdFusion 等支持 session 的脚本语言技术，浏览器端出现了 Java Applet、JavaScript 等技术。使用这些技术，可以提供更加丰富的动态内容。&lt;/li&gt;
-  &lt;li&gt;瘦客户端应用阶段：在这个阶段，在服务器端出现了独立于 Web 服务器的应用服务器。同时出现了 Web MVC 开发模式，各种 Web MVC 开发框架逐渐流行，并且占据了统治地位。基于这些框架开发的 Web 应用，通常都是瘦客户端应用，因为它们是在服务器端生成全部的动态内容。&lt;/li&gt;
-  &lt;li&gt;RIA 应用阶段：在这个阶段，出现了多种 RIA（Rich Internet Application）技术，大幅改善了 Web 应用的用户体验。应用最为广泛的 RIA 技术是 DHTML+Ajax。Ajax 技术支持在不刷新页面的情况下动态更新页面中的局部内容。同时诞生了大量的 Web 前端 DHTML 开发库，例如 Prototype、Dojo、ExtJS、jQuery/jQuery UI 等等，很多开发库都支持单页面应用（Single Page Application）的开发。其他的 RIA 技术还有 Adobe 公司的 Flex、微软公司的 Silverlight、Sun 公司的 JavaFX（现在为 Oracle 公司所有）等等。&lt;/li&gt;
-  &lt;li&gt;移动 Web 应用阶段：在这个阶段，出现了大量面向移动设备的 Web 应用开发技术。除了 Android、iOS、Windows Phone 等操作系统平台原生的开发技术之外，基于 HTML5 的开发技术也变得非常流行。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;从上述 Web 开发技术的发展过程看，Web 从最初其设计者所构思的主要支持静态文档的阶段，逐渐变得越来越动态化。Web 应用的交互模式，变得越来越复杂：从静态文档发展到以内容为主的门户网站、电子商务网站、搜索引擎、社交网站，再到以娱乐为主的大型多人在线游戏、手机游戏。&lt;/p&gt;
-
-&lt;p&gt;在互联网行业，实践总是走在理论的前面。Web 发展到了 1995 年，在 CGI、ASP 等技术出现之后，沿用了多年、主要面向静态文档的 HTTP/1.0 协议已经无法满足 Web 应用的开发需求，因此需要设计新版本的 HTTP 协议。在 HTTP/1.0 协议专家组之中，有一位年轻人脱颖而出，显示出了不凡的洞察力，后来他成为了 HTTP/1.1 协议专家组的负责人。这位年轻人就是 Apache HTTP 服务器的核心开发者 Roy Fielding，他还是 Apache 软件基金会的合作创始人。&lt;/p&gt;
-
-&lt;p&gt;Roy Fielding 和他的同事们在 HTTP/1.1 协议的设计工作中，对于 Web 之所以取得巨大成功，在技术架构方面的因素做了一番深入的总结。Fielding 将这些总结纳入到了一套理论框架之中，然后使用这套理论框架中的指导原则，来指导 HTTP/1.1 协议的设计方向。HTTP/1.1 协议的第一个草稿是在 1996 年 1 月发布的，经过了三年多时间的修订，于 1999 年 6 月成为了 IETF 的正式规范（包括了 RFC 2616 以及用于对客户端做身份认证的 RFC 2617）。HTTP/1.1 协议设计的极为成功，以至于发布之后整整 10 年时间里，都没有多少人认为有修订的必要。用来指导 HTTP/1.1 协议设计的这套理论框架，最初是以备忘录的形式在专家组成员之间交流，除了 IETF/W3C 的专家圈子，并没有在外界广泛流传。Fielding 在完成 HTTP/1.1 协议的设计工作之后，回到了加州大学欧文分校继续攻读自己的博士学位。第二年（2000 年）在他的博士学位论文 Architectural Styles and the Design of Network-based Software Architectures 中，Fielding 更为系统、严谨地阐述了这套理论框架，并且使用这套理论框架推导出了一种新的架构风格，并且为这种架构风格取了一个令人轻松愉快的名字“REST”——Representational State Transfer（表述性状态转移）的缩写。&lt;/p&gt;
-
-&lt;p&gt;在笔者看来，Fielding 这篇博士论文在 Web 发展史上的价值，不亚于 Web 之父 Tim Berners-Lee 关于超文本的那篇经典论文。然而遗憾的是，这篇博士论文在诞生之后的将近 5 年时间里，一直没有得到足够的重视。例如 Web Service 相关规范 SOAP/WSDL 的设计者们，显然不大理解 REST 是什么，HTTP/1.1 究竟是一个什么样的协议、为何要设计成这个样子。&lt;/p&gt;
-
-&lt;p&gt;这种情况在 2005 年之后有了很大的改善，随着 Ajax、Ruby on Rails 等新的 Web 开发技术的兴起，在 Web 开发技术社区掀起了一场重归 Web 架构设计本源的运动，REST 架构风格得到了越来越多的关注。在 2007 年 1 月，支持 REST 开发的 Ruby on Rails 1.2 版正式发布，并且将支持 REST 开发作为 Rails 未来发展中的优先内容。Ruby on Rails 的创始人 DHH 做了一个名为“World of Resources”的精彩演讲，DHH 在 Web 开发技术社区中的强大影响力，使得 REST 一下子处在 Web 开发技术舞台的聚光灯之下。&lt;/p&gt;
-
-&lt;p&gt;今天，各种流行的 Web 开发框架，几乎没有不支持 REST 开发的了。大多数 Web 开发者都是通过阅读某种 REST 开发框架的文档，以及通过一些例子代码来学习 REST 开发的。然而，通过例子代码来学习 REST 有非常大的局限性。因为 REST 并不是一种具体的技术，也不是一种具体的规范，REST 其实是一种内涵非常丰富的架构风格。通过例子代码来学习 REST，除了学习到一种有趣的 Web 开发技术之外，并不能全面深入的理解 REST 究竟是什么。甚至还会误以为这些简单的例子代码就是 REST 本身，REST 不过是一种简单的 Web 开发技术而已。就像盲人摸象一样，有的人摸到了象鼻子、有的人摸到了象耳朵、有的人摸到了象腿、有的人摸到了象尾巴。他们都坚信自己感觉到的大象，才是最真实的大象，而其他人的感觉都是错误的。&lt;/p&gt;
-
-&lt;p&gt;对于不理解 REST 的 Web 开发者，人们习惯于展示一些例子代码来让他们理解 REST，笔者不赞同上述做法。如果 Web 开发者想要深入理解 REST 是什么，就很难避开 Fielding 的这篇博士论文。笔者在本文中对于 REST 是什么的介绍，也是基于 Fielding 的博士论文的。尽管如此，笔者强烈建议本文的读者亲自去通读一下 Fielding 的博士论文，就像想要了解孔子的思想应该直接去读《论语》等著作，而不是首先去读其他人的转述一样。笔者在本文中也仅仅是努力不做一个把经书念错了的歪嘴和尚而已。那么，下面我们言归正传。&lt;/p&gt;
-
-&lt;p&gt;在 Fielding 的这篇名为 Architectural Styles and the Design of Network-based Software Architectures 的博士论文（中文版名为《架构风格与基于网络的软件架构设计》）中，提出了一整套基于网络的软件（即所谓的“分布式应用”）的设计方法，值得所有分布式应用的开发者仔细阅读、深入体会。&lt;/p&gt;
-
-&lt;p&gt;在论文的前三章中，Fielding 在批判性继承前人研究成果的基础上，建立起来一整套研究和评价软件架构的方法论。这套方法论的核心是“架构风格”这个概念。架构风格是一种研究和评价软件架构设计的方法，它是比架构更加抽象的概念。一种架构风格是由一组相互协作的架构约束来定义的。架构约束是指软件的运行环境施加在架构设计之上的约束。&lt;/p&gt;
-
-&lt;p&gt;在论文的第四章中，Fielding 研究了 Web 这样一个分布式系统对于软件架构设计提出了哪些需求。在第五章中，Fielding 将第四章 Web 提出的需求具体化为一些架构约束，通过逐步添加各种架构约束，推导出来了 REST 这种新的架构风格。&lt;/p&gt;
-
-&lt;p&gt;REST 架构风格的推导过程如下图所示：&lt;/p&gt;
-
-&lt;p&gt;图 1：REST 所继承的架构风格约束&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/understanding-restful-style-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在图1 中，每一个椭圆形里面的缩写词代表了一种架构风格，而每一个箭头边的单词代表了一种架构约束。&lt;/p&gt;
-
-&lt;p&gt;REST 架构风格最重要的架构约束有 6 个：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;客户 - 服务器（Client-Server）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;通信只能由客户端单方面发起，表现为请求 - 响应的形式。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;无状态（Stateless）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;通信的会话状态（Session State）应该全部由客户端负责维护。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;缓存（Cache）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;响应内容可以在通信链的某处被缓存，以改善网络效率。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;统一接口（Uniform Interface）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;通信链的组件之间通过统一的接口相互通信，以提高交互的可见性。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;分层系统（Layered System）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;通过限制组件的行为（即，每个组件只能“看到”与其交互的紧邻层），将架构分解为若干等级的层。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;按需代码（Code-On-Demand，可选）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;支持通过下载并执行一些代码（例如 Java Applet、Flash 或 JavaScript），对客户端的功能进行扩展。&lt;/p&gt;
-
-&lt;p&gt;在论文中推导出的 REST 架构风格如下图所示：&lt;/p&gt;
-
-&lt;p&gt;图 2：REST 架构风格&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/understanding-restful-style-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;而HTTP/1.1 协议作为一种REST 架构风格的架构实例，其架构如下图所示：&lt;/p&gt;
-
-&lt;p&gt;图3：一个基于REST 的架构的过程视图&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/understanding-restful-style-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;用户代理处在三个并行交互（a、b 和c）的中间。用户代理的客户端连接器缓存无法满足请求，因此它根据每个资源标识符的属性和客户端连接器的配置，将每个请求路由到资源的来源。请求（a）被发送到一个本地代理，代理随后访问一个通过DNS 查找发现的缓存网关，该网关将这个请求转发到一个能够满足该请求的来源服务器，服务器的内部资源由一个封装过的对象请求代理（object request broker）架构来定义。请求（b）直接发送到一个来源服务器，它能够通过自己的缓存来满足这个请求。请求（c）被发送到一个代理，它能够直接访问WAIS（一种与Web 架构分离的信息服务），并将WAIS 的响应翻译为一种通用的连接器接口能够识别的格式。每一个组件只知道与它们自己的客户端或服务器连接器的交互；整个过程拓扑是我们的视图的产物。&lt;/p&gt;
-
-&lt;p&gt;通过比较图2 和图3，读者不难发现这两张图中的架构是高度一致的。对于HTTP/1.1 协议为何要设计成这个样子，读者想必已经有所领悟。&lt;/p&gt;
-
-&lt;p&gt;在论文的第六章中，Fielding 对于到2000 年为止在Web 基础架构协议的设计和开发方面的一些经验教训进行了深入的分析。其中，“HTTP 不是RPC”、“HTTP 不是一种传输协议”两部分值得读者反复阅读。时至13 年之后的今日，对于HTTP 协议的误解仍然广泛存在。&lt;/p&gt;
-
-&lt;p&gt;以上简要介绍了Fielding 博士论文中的内容。为了帮助读者仔细阅读Fielding 的博士论文，笔者整理了一套Fielding 博士论文的导读，将在&lt;a href=&quot;http://www.infoq.com/cn/rest-deep-dive&quot;&gt;本专栏&lt;/a&gt;后续文章中载出。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-rest-详解&quot;&gt;REST 详解&lt;/h2&gt;
-
-&lt;p&gt;REST 究竟是什么？因为 REST 的内涵非常丰富，所以很难用一两句话解释清楚这个问题。&lt;/p&gt;
-
-&lt;p&gt;首先，REST 是 Web 自身的架构风格。REST 也是 Web 之所以取得成功的技术架构方面因素的总结。REST 是世界上最成功的分布式应用架构风格（成功案例：Web，还不够吗？）。它是为 运行在互联网环境 的 分布式 超媒体系统量身定制的。互联网环境与企业内网环境有非常大的差别，最主要的差别是两个方面：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;可伸缩性需求无法控制：并发访问量可能会暴涨，也可能会暴跌。&lt;/li&gt;
-  &lt;li&gt;安全性需求无法控制：无法控制客户端发来的请求的格式，很可能会是恶意的请求。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;而所谓的“超媒体系统”，即，使用了超文本的系统。可以把“超媒体”理解为超文本 + 媒体内容。&lt;/p&gt;
-
-&lt;p&gt;REST 是 HTTP/1.1 协议等 Web 规范的设计指导原则，HTTP/1.1 协议正是为实现 REST 风格的架构而设计的。新的 Web 规范，其设计必须符合 REST 的要求，否则整个 Web 的体系架构会因为引入严重矛盾而崩溃。这句话不是危言耸听，做个类比，假如苏州市政府同意在市区著名园林的附近大兴土木，建造大量具有后现代风格的摩天大楼，那么不久之后世界闻名的苏州园林美景将不复存在。&lt;/p&gt;
-
-&lt;p&gt;上述这些关于“REST 是什么”的描述，可以总结为一句话：REST 是所有 Web 应用都应该遵守的架构设计指导原则。当然，REST 并不是法律，违反了 REST 的指导原则，仍然能够实现应用的功能。但是违反了 REST 的指导原则，会付出很多代价，特别是对于大流量的网站而言。&lt;/p&gt;
-
-&lt;p&gt;要深入理解 REST，需要理解 REST 的五个关键词：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;资源（Resource）&lt;/li&gt;
-  &lt;li&gt;资源的表述（Representation）&lt;/li&gt;
-  &lt;li&gt;状态转移（State Transfer）&lt;/li&gt;
-  &lt;li&gt;统一接口（Uniform Interface）&lt;/li&gt;
-  &lt;li&gt;超文本驱动（Hypertext Driven）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;什么是资源？&lt;/p&gt;
-
-&lt;p&gt;资源是一种看待服务器的方式，即，将服务器看作是由很多离散的资源组成。每个资源是服务器上一个可命名的抽象概念。因为资源是一个抽象的概念，所以它不仅仅能代表服务器文件系统中的一个文件、数据库中的一张表等等具体的东西，可以将资源设计的要多抽象有多抽象，只要想象力允许而且客户端应用开发者能够理解。与面向对象设计类似，资源是以名词为核心来组织的，首先关注的是名词。一个资源可以由一个或多个 URI 来标识。URI 既是资源的名称，也是资源在 Web 上的地址。对某个资源感兴趣的客户端应用，可以通过资源的 URI 与其进行交互。&lt;/p&gt;
-
-&lt;p&gt;什么是资源的表述？&lt;/p&gt;
-
-&lt;p&gt;资源的表述是一段对于资源在某个特定时刻的状态的描述。可以在客户端 - 服务器端之间转移（交换）。资源的表述可以有多种格式，例如 HTML/XML/JSON/ 纯文本 / 图片 / 视频 / 音频等等。资源的表述格式可以通过协商机制来确定。请求 - 响应方向的表述通常使用不同的格式。&lt;/p&gt;
-
-&lt;p&gt;什么是状态转移？&lt;/p&gt;
-
-&lt;p&gt;状态转移（state transfer）与状态机中的状态迁移（state transition）的含义是不同的。状态转移说的是：在客户端和服务器端之间转移（transfer）代表资源状态的表述。通过转移和操作资源的表述，来间接实现操作资源的目的。&lt;/p&gt;
-
-&lt;p&gt;什么是统一接口？&lt;/p&gt;
-
-&lt;p&gt;REST 要求，必须通过统一的接口来对资源执行各种操作。对于每个资源只能执行一组有限的操作。以 HTTP/1.1 协议为例，HTTP/1.1 协议定义了一个操作资源的统一接口，主要包括以下内容：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;7 个 HTTP 方法：GET/POST/PUT/DELETE/PATCH/HEAD/OPTIONS&lt;/li&gt;
-  &lt;li&gt;HTTP 头信息（可自定义）&lt;/li&gt;
-  &lt;li&gt;HTTP 响应状态代码（可自定义）&lt;/li&gt;
-  &lt;li&gt;一套标准的内容协商机制&lt;/li&gt;
-  &lt;li&gt;一套标准的缓存机制&lt;/li&gt;
-  &lt;li&gt;一套标准的客户端身份认证机制&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;REST 还要求，对于资源执行的操作，其操作语义必须由 HTTP 消息体之前的部分完全表达，不能将操作语义封装在 HTTP 消息体内部。这样做是为了提高交互的可见性，以便于通信链的中间组件实现缓存、安全审计等等功能。&lt;/p&gt;
-
-&lt;p&gt;什么是超文本驱动？&lt;/p&gt;
-
-&lt;p&gt;“超文本驱动”又名“将超媒体作为应用状态的引擎”（Hypermedia As The Engine Of Application State，来自 Fielding 博士论文中的一句话，缩写为 HATEOAS）。将 Web 应用看作是一个由很多状态（应用状态）组成的有限状态机。资源之间通过超链接相互关联，超链接既代表资源之间的关系，也代表可执行的状态迁移。在超媒体之中不仅仅包含数据，还包含了状态迁移的语义。以超媒体作为引擎，驱动 Web 应用的状态迁移。通过超媒体暴露出服务器所提供的资源，服务器提供了哪些资源是在运行时通过解析超媒体发现的，而不是事先定义的。从面向服务的角度看，超媒体定义了服务器所提供服务的协议。客户端应该依赖的是超媒体的状态迁移语义，而不应该对于是否存在某个 URI 或 URI 的某种特殊构造方式作出假设。一切都有可能变化，只有超媒体的状态迁移语义能够长期保持稳定。&lt;/p&gt;
-
-&lt;p&gt;一旦读者理解了上述 REST 的五个关键词，就很容易理解 REST 风格的架构所具有的 6 个的主要特征：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;面向资源（Resource Oriented）&lt;/li&gt;
-  &lt;li&gt;可寻址（Addressability）&lt;/li&gt;
-  &lt;li&gt;连通性（Connectedness）&lt;/li&gt;
-  &lt;li&gt;无状态（Statelessness）&lt;/li&gt;
-  &lt;li&gt;统一接口（Uniform Interface）&lt;/li&gt;
-  &lt;li&gt;超文本驱动（Hypertext Driven）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这 6 个特征是 REST 架构设计优秀程度的判断标准。其中，面向资源是 REST 最明显的特征，即，REST 架构设计是以资源抽象为核心展开的。可寻址说的是：每一个资源在 Web 之上都有自己的地址。连通性说的是：应该尽量避免设计孤立的资源，除了设计资源本身，还需要设计资源之间的关联关系，并且通过超链接将资源关联起来。无状态、统一接口是 REST 的两种架构约束，超文本驱动是 REST 的一个关键词，在前面都已经解释过，就不再赘述了。&lt;/p&gt;
-
-&lt;p&gt;从架构风格的抽象高度来看，常见的分布式应用架构风格有三种：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;分布式对象（Distributed Objects，简称 DO）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;架构实例有 CORBA/RMI/EJB/DCOM/.NET Remoting 等等&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;远程过程调用（Remote Procedure Call，简称 RPC）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;架构实例有 SOAP/XML-RPC/Hessian/Flash AMF/DWR 等等&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;表述性状态转移（Representational State Transfer，简称 REST）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;架构实例有 HTTP/WebDAV&lt;/p&gt;
-
-&lt;p&gt;DO 和 RPC 这两种架构风格在企业应用中非常普遍，而 REST 则是 Web 应用的架构风格，它们之间有非常大的差别。&lt;/p&gt;
-
-&lt;p&gt;REST 与 DO 的差别在于：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;REST 支持抽象（即建模）的工具是资源，DO 支持抽象的工具是对象。在不同的编程语言中，对象的定义有很大差别，所以 DO 风格的架构通常都是与某种编程语言绑定的。跨语言交互即使能实现，实现起来也会非常复杂。而 REST 中的资源，则完全中立于开发平台和编程语言，可以使用任何编程语言来实现。&lt;/li&gt;
-  &lt;li&gt;DO 中没有统一接口的概念。不同的 API，接口设计风格可以完全不同。DO 也不支持操作语义对于中间组件的可见性。&lt;/li&gt;
-  &lt;li&gt;DO 中没有使用超文本，响应的内容中只包含对象本身。REST 使用了超文本，可以实现更大粒度的交互，交互的效率比 DO 更高。&lt;/li&gt;
-  &lt;li&gt;REST 支持数据流和管道，DO 不支持数据流和管道。&lt;/li&gt;
-  &lt;li&gt;DO 风格通常会带来客户端与服务器端的紧耦合。在三种架构风格之中，DO 风格的耦合度是最大的，而 REST 的风格耦合度是最小的。REST 松耦合的源泉来自于统一接口 + 超文本驱动。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;REST 与 RPC 的差别在于：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;REST 支持抽象的工具是资源，RPC 支持抽象的工具是过程。REST 风格的架构建模是以名词为核心的，RPC 风格的架构建模是以动词为核心的。简单类比一下，REST 是面向对象编程，RPC 则是面向过程编程。&lt;/li&gt;
-  &lt;li&gt;RPC 中没有统一接口的概念。不同的 API，接口设计风格可以完全不同。RPC 也不支持操作语义对于中间组件的可见性。&lt;/li&gt;
-  &lt;li&gt;RPC 中没有使用超文本，响应的内容中只包含消息本身。REST 使用了超文本，可以实现更大粒度的交互，交互的效率比 RPC 更高。&lt;/li&gt;
-  &lt;li&gt;REST 支持数据流和管道，RPC 不支持数据流和管道。&lt;/li&gt;
-  &lt;li&gt;因为使用了平台中立的消息，RPC 风格的耦合度比 DO 风格要小一些，但是 RPC 风格也常常会带来客户端与服务器端的紧耦合。支持统一接口 + 超文本驱动的 REST 风格，可以达到最小的耦合度。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;比较了三种架构风格之间的差别之后，从面向实用的角度来看，REST 架构风格可以为 Web 开发者带来三方面的利益：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;简单性&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;采用 REST 架构风格，对于开发、测试、运维人员来说，都会更简单。可以充分利用大量 HTTP 服务器端和客户端开发库、Web 功能测试 / 性能测试工具、HTTP 缓存、HTTP 代理服务器、防火墙。这些开发库和基础设施早已成为了日常用品，不需要什么火箭科技（例如神奇昂贵的应用服务器、中间件）就能解决大多数可伸缩性方面的问题。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;可伸缩性&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;充分利用好通信链各个位置的 HTTP 缓存组件，可以带来更好的可伸缩性。其实很多时候，在 Web 前端做性能优化，产生的效果不亚于仅仅在服务器端做性能优化，但是 HTTP 协议层面的缓存常常被一些资深的架构师完全忽略掉。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;松耦合&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;统一接口 + 超文本驱动，带来了最大限度的松耦合。允许服务器端和客户端程序在很大范围内，相对独立地进化。对于设计面向企业内网的 API 来说，松耦合并不是一个很重要的设计关注点。但是对于设计面向互联网的 API 来说，松耦合变成了一个必选项，不仅在设计时应该关注，而且应该放在最优先位置。&lt;/p&gt;
-
-&lt;p&gt;有的读者可能会问：“你说了这么多，REST 难道就没有任何缺点了吗？”当然不是，正如 Fielding 在博士论文中阐述的那样，评价一种软件架构的优劣，不能脱离开软件的具体运行环境。永远不存在适用于任何运行环境的、包治百病的银弹式架构。笔者在前面强调过 REST 是一种为运行在互联网环境中的 Web 应用量身定制的架构风格。REST 在互联网这个运行环境之中已经占据了统治地位，然而，在企业内网运行环境之中，REST 还会面临 DO、RPC 的巨大挑战。特别是一些对实时性要求很高的应用，REST 的表现不如 DO 和 RPC。所以需要针对具体的运行环境来具体问题具体分析。但是，REST 可以带来的上述三方面的利益即使在开发企业应用时，仍然是非常有价值的。所以 REST 在企业应用开发，特别是在 SOA 架构的开发中，已经得到了越来越大的重视。本专栏将有一篇文章专门介绍 REST 在企业级应用中与 SOA 的结合。&lt;/p&gt;
-
-&lt;p&gt;到了这里，“REST 究竟是什么”这个问题笔者就解答完了。本文开头那些说法是否正确，笔者还是笑而不语，读者此时应该已经有了自己的判断。在接下来的 REST 系列文章中，我将会为读者澄清一些关于 HTTP 协议和 REST 的常见误解。&lt;/p&gt;
-
-&lt;p&gt;参考资料：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm&quot;&gt;Roy Fielding 博士论文英文版&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/cn/minibooks/dissertation-rest-cn&quot;&gt;Roy Fielding 博士论文中文版&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;HTTP/1.1 协议&lt;a href=&quot;http://www.ietf.org/rfc/rfc2616.txt&quot;&gt; RFC2616 &lt;/a&gt;、&lt;a href=&quot;http://www.ietf.org/rfc/rfc2617.txt&quot;&gt; RFC2617&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.infoq.cn/article/understanding-restful-style/&quot; target=&quot;_blank&quot;&gt;理解本真的 REST 架构风格&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="REST架构" /><summary type="html"></summary></entry><entry><title type="html">什么是服务网格（Service Mesh）</title><link href="https://empvalley.com/2021/09/11/what-is-a-service-mesh/" rel="alternate" type="text/html" title="什么是服务网格（Service Mesh）" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/what-is-a-service-mesh</id><content type="html" xml:base="https://empvalley.com/2021/09/11/what-is-a-service-mesh/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-service-mesh的特点&quot; id=&quot;markdown-toc-heading-service-mesh的特点&quot;&gt;Service Mesh的特点&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-理解-service-mesh&quot; id=&quot;markdown-toc-heading-理解-service-mesh&quot;&gt;理解 Service Mesh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-service-mesh如何工作&quot; id=&quot;markdown-toc-heading-service-mesh如何工作&quot;&gt;Service Mesh如何工作？&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-为何使用-service-mesh&quot; id=&quot;markdown-toc-heading-为何使用-service-mesh&quot;&gt;为何使用 Service Mesh？&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-参考&quot; id=&quot;markdown-toc-heading-参考&quot;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Service Mesh 又译作 “服务网格”，作为服务间通信的基础设施层。Buoyant 公司的 CEO Willian Morgan 在他的这篇文章 &lt;a href=&quot;https://buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/&quot;&gt;WHAT’S A Service Mesh? AND WHY DO I NEED ONE?&lt;/a&gt; 中解释了什么是 Service Mesh，为什么云原生应用需要 Service Mesh。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;下面是 &lt;a href=&quot;https://twitter.com/wm&quot;&gt;Willian Morgan&lt;/a&gt; 对 Service Mesh 的解释。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A Service Mesh is a dedicated infrastructure layer for handling service-to-service communication. It’s responsible for the reliable delivery of requests through the complex topology of services that comprise a modern, cloud native application. In practice, the Service Mesh is typically implemented as an array of lightweight network proxies that are deployed alongside application code, without the application needing to be aware.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;翻译成中文是：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;服务网格（Service Mesh）是处理服务间通信的基础设施层。它负责构成现代云原生应用程序的复杂服务拓扑来可靠地交付请求。在实践中，Service Mesh 通常以轻量级网络代理阵列的形式实现，这些代理与应用程序代码部署在一起，对应用程序来说无需感知代理的存在。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;heading-service-mesh的特点&quot;&gt;Service Mesh的特点&lt;/h2&gt;
-
-&lt;p&gt;Service Mesh 有如下几个特点：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;应用程序间通信的中间层&lt;/li&gt;
-  &lt;li&gt;轻量级网络代理&lt;/li&gt;
-  &lt;li&gt;应用程序无感知&lt;/li&gt;
-  &lt;li&gt;解耦应用程序的重试/超时、监控、追踪和服务发现&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;目前两款流行的 Service Mesh 开源软件 &lt;a href=&quot;https://istio.io/&quot;&gt;Istio&lt;/a&gt; 和 &lt;a href=&quot;https://linkerd.io/&quot;&gt;Linkerd&lt;/a&gt; 都可以直接在 Kubernetes 中集成，其中 Linkerd 已经成为 CNCF 中的项目。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-理解-service-mesh&quot;&gt;理解 Service Mesh&lt;/h2&gt;
-
-&lt;p&gt;如果用一句话来解释什么是 Service Mesh，可以将它比作是应用程序或者说微服务间的 TCP/IP，负责服务之间的网络调用、限流、熔断和监控。对于编写应用程序来说一般无须关心 TCP/IP 这一层（比如通过 HTTP 协议的 RESTful 应用），同样使用 Service Mesh 也就无须关心服务之间的那些原本通过服务框架实现的事情，比如 Spring Cloud、Netflix OSS 和其他中间件，现在只要交给 Service Mesh 就可以了。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://philcalcado.com/&quot;&gt;Phil Calçado&lt;/a&gt; 在他的这篇博客 &lt;a href=&quot;http://philcalcado.com/2017/08/03/pattern_service_mesh.html&quot;&gt;Pattern: Service Mesh&lt;/a&gt; 中详细解释了 Service Mesh 的来龙去脉：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;从最原始的主机之间直接使用网线相连&lt;/li&gt;
-  &lt;li&gt;网络层的出现&lt;/li&gt;
-  &lt;li&gt;集成到应用程序内部的控制流&lt;/li&gt;
-  &lt;li&gt;分解到应用程序外部的控制流&lt;/li&gt;
-  &lt;li&gt;应用程序的中集成服务发现和断路器&lt;/li&gt;
-  &lt;li&gt;出现了专门用于服务发现和断路器的软件包/库，如 &lt;a href=&quot;https://finagle.github.io/&quot;&gt;Twitter 的 Finagle&lt;/a&gt; 和 &lt;a href=&quot;https://code.facebook.com/posts/1503205539947302&quot;&gt;Facebook 的 Proxygen&lt;/a&gt;，这时候还是集成在应用程序内部&lt;/li&gt;
-  &lt;li&gt;出现了专门用于服务发现和断路器的开源软件，如 &lt;a href=&quot;https://netflix.github.io/&quot;&gt;Netflix OSS&lt;/a&gt;、Airbnb 的 &lt;a href=&quot;https://github.com/airbnb/synapse&quot;&gt;synapse&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/airbnb/nerve&quot;&gt;nerve&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;最后作为微服务的中间层 Service Mesh 出现&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Service Mesh 的架构如下图所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/what-is-a-service-mesh.png&quot; alt=&quot;Service Mesh 架构图&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;图片来自：&lt;a href=&quot;http://philcalcado.com/2017/08/03/pattern_service_mesh.html&quot;&gt;Pattern: Service Mesh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Service Mesh 作为 sidecar 运行，对应用程序来说是透明，所有应用程序间的流量都会通过它，所以对应用程序流量的控制都可以在 serivce mesh 中实现。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-service-mesh如何工作&quot;&gt;Service Mesh如何工作？&lt;/h2&gt;
-
-&lt;p&gt;下面以 Istio 为例讲解 Service Mesh 如何工作，后续文章将会详解 Istio 如何在 Kubernetes 中工作。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Sidecar（Istio 中使用 &lt;a href=&quot;https://envoyproxy.io/&quot;&gt;Envoy&lt;/a&gt; 作为 sidecar 代理）将服务请求路由到目的地址，根据请求中的参数判断是到生产环境、测试环境还是 staging 环境中的服务（服务可能同时部署在这三个环境中），是路由到本地环境还是公有云环境？所有的这些路由信息可以动态配置，可以是全局配置也可以为某些服务单独配置。这些配置是由服务网格的控制平面推送给各个 sidecar 的，&lt;/li&gt;
-  &lt;li&gt;当 sidecar 确认了目的地址后，将流量发送到相应服务发现端点，在 Kubernetes 中是 service，然后 service 会将服务转发给后端的实例。&lt;/li&gt;
-  &lt;li&gt;Sidecar 根据它观测到最近请求的延迟时间，选择出所有应用程序的实例中响应最快的实例。&lt;/li&gt;
-  &lt;li&gt;Sidecar 将请求发送给该实例，同时记录响应类型和延迟数据。&lt;/li&gt;
-  &lt;li&gt;如果该实例挂了、不响应了或者进程不工作了，sidecar 会将把请求发送到其他实例上重试。&lt;/li&gt;
-  &lt;li&gt;如果该实例持续返回 error，sidecar 会将该实例从负载均衡池中移除，稍后再周期性得重试。&lt;/li&gt;
-  &lt;li&gt;如果请求的截止时间已过，sidecar 主动标记该请求为失败，而不是再次尝试添加负载。&lt;/li&gt;
-  &lt;li&gt;SIdecar 以 metric 和分布式追踪的形式捕获上述行为的各个方面，这些追踪信息将发送到集中 metric 系统。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;heading-为何使用-service-mesh&quot;&gt;为何使用 Service Mesh？&lt;/h2&gt;
-
-&lt;p&gt;Service Mesh 并没有给我们带来新功能，它是用于解决其他工具已经解决过的问题，只不过这次是在以 Kubernetes 为基础的云原生生态环境下的实现。&lt;/p&gt;
-
-&lt;p&gt;在传统的 MVC 三层 Web 应用程序架构下，服务之间的通讯并不复杂，在应用程序内部自己管理即可，但是在现今的复杂的大型网站情况下，单体应用被分解为众多的微服务，服务之间的依赖和通讯十分复杂，出现了 twitter 开发的 &lt;a href=&quot;https://twitter.github.io/finagle/&quot;&gt;Finagle&lt;/a&gt;、Netflix 开发的 &lt;a href=&quot;https://github.com/Netflix/Hystrix&quot;&gt;Hystrix&lt;/a&gt; 和 Google 的 Stubby 这样的 “胖客户端” 库，这些就是早期的 Service Mesh，但是它们都仅适用于特定的环境和特定的开发语言，并不能作为平台级的 Service Mesh 支持。&lt;/p&gt;
-
-&lt;p&gt;在 Cloud Native 架构下，容器的使用赋予了异构应用程序更多的可能性，Kubernetes 增强了应用的横向扩容能力，用户可以快速的编排出复杂环境、复杂依赖关系的应用程序，同时开发者又无须过分关心应用程序的监控、扩展性、服务发现和分布式追踪这些繁琐的事情，进而专注于程序开发，赋予开发者更多的创造性。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-参考&quot;&gt;参考&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/&quot;&gt;What's a Service Mesh? And why do I need one?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://redmonk.com/jgovernor/2017/05/31/so-what-even-is-a-service-mesh-hot-take-on-istio-and-linkerd&quot;&gt;So what even is a Service Mesh? Hot take on Istio and Linkerd&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a&quot;&gt;linkerd: A Service Mesh for AWS ECS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://istio.io/blog/istio-service-mesh-for-microservices.html&quot;&gt;Introducing Istio: A robust Service Mesh for microservices&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.christianposta.com/microservices/application-network-functions-with-esbs-api-management-and-now-service-mesh/&quot;&gt;Application Network Functions With ESBs, API Management, and Now.. Service Mesh?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://philcalcado.com/2017/08/03/pattern_service_mesh.html&quot;&gt;Pattern: Service Mesh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://envoyproxy.io/&quot;&gt;Envoy 官方文档&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://istio.io/&quot;&gt;Istio 官方文档&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.servicemesher.com/istio-handbook/&quot;&gt;Istio Handbook - Istio 服务网格进阶实战&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://jimmysong.io/blog/what-is-a-service-mesh/&quot; target=&quot;_blank&quot;&gt;什么是Service Mesh（服务网格）？&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Service Mesh" /><category term="服务网格" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html">从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。1 打开 Git Bash 切换到项目目录 从上游仓库 fetch 分支及各分支相应的提交，提交到分支 BRANCHNAME 的提交会存储在本地分支 upstream/BRANCHNAME 中 $ git fetch upstream &amp;gt; remote: Counting objects: 75, done. &amp;gt; remote: Compressing objects: 100% (53/53), done. &amp;gt; remote: Total 62 (delta 27), reused 44 (delta 9) &amp;gt; Unpacking objects: 100% (62/62), done. &amp;gt; From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY &amp;gt; * [new branch] main -&amp;gt; upstream/main 切换到本地分支，示例中使用的是 main $ git checkout main &amp;gt; Switched to branch 'main' 合并上游分支改变到本地分支，而不会丢失本地的修改，示例中使用的是 upstream/main $ git merge upstream/main &amp;gt; Updating a422352..5fdff0f &amp;gt; Fast-forward &amp;gt; README | 9 ------- &amp;gt; README.md | 7 ++++++ &amp;gt; 2 files changed, 7 insertions(+), 9 deletions(-) &amp;gt; delete mode 100644 README &amp;gt; create mode 100644 README.md 如果你的本地分支没有能够引起冲突的提交，Git 会使用 &quot;fast-forward&quot;： $ git merge upstream/main &amp;gt; Updating 34e91da..16c56ad &amp;gt; Fast-forward &amp;gt; README.md | 5 +++-- &amp;gt; 1 file changed, 3 insertions(+), 2 deletions(-) 注：同步 fork 只会更新本地仓库，更新远程代码库必须使用 push 命令。 同步 fork &amp;#8617;</summary></entry></feed>

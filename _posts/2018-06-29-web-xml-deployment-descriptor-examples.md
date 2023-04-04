@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "web.xml 配置示例"
+title: "JavaEE 中 web.xml 配置示例"
 categories: ["技术"]
 tags: ["Servlet"]
 ---

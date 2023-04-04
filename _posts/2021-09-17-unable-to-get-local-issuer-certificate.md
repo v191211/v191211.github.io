@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SSL证书问题：不能访问本地发行的证书"
+title: "不能访问本地发行的证书异常"
 categories: ["技术"]
 tags: ["SSL"]
 ---

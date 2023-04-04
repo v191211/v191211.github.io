@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Commit message 和 Change log 编写指南"
+title: "Git Commit message 和 Change log 编写指南"
 categories: ["技术"]
 tags: ["Git"]
 ---

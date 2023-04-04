@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用 ES File Explorer 在手机和电脑之间传输数据"
+title: "利用 ES File Explorer 在手机和电脑之间传输数据"
 categories: ["技术"]
 tags: ["手机电脑互传数据"]
 ---
@@ -25,10 +25,6 @@ tags: ["手机电脑互传数据"]
     7. Turn off password protected sharing
     8. Save changes
     
-    win7 操作：
-    
-    （后续补充。）
-
 
 4. 在手机上打开 ES File Explorer
 

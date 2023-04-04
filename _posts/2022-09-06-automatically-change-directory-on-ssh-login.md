@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SSH 登录后进入指定目录"
+title: "配置 SSH 登录后进入指定目录"
 categories: ["技术"]
 tags: ["Linux"]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "同步 fork"
+title: "Git 同步 fork"
 categories: ["技术"]
 tags: ["Git"]
 ---

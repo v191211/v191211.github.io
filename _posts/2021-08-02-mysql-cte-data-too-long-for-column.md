@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mysql CTE"
+title: "Mysql CTE 列数据过长异常"
 categories: ["技术"]
 tags: ["Mysql", "CTE"]
 ---

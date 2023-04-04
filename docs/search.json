@@ -1,6 +1,20 @@
 [
   
     {
+      "title"      : "使用 grep 命令查找包含指定文本的所有文件",
+      "url"        : "/2023/04/05/finding-all-files-containing-specific-text-on-linux/",
+      "date"       : "2023-04-05 00:00:00 +0800",
+      "shortdate"  : "April 05, 2023"
+    } ,
+  
+    {
+      "title"      : "使用 netstat 命令查看指定端口占用情况",
+      "url"        : "/2023/04/05/check-used-port-in-linux-by-netstat/",
+      "date"       : "2023-04-05 00:00:00 +0800",
+      "shortdate"  : "April 05, 2023"
+    } ,
+  
+    {
       "title"      : "为什么要进行 URL 编码",
       "url"        : "/2022/12/13/why-do-u-need-2-encode-urls/",
       "date"       : "2022-12-13 00:00:00 +0800",
@@ -8,15 +22,15 @@
     } ,
   
     {
-      "title"      : "SSH 登录后进入指定目录",
+      "title"      : "配置 SSH 登录后进入指定目录",
       "url"        : "/2022/09/06/automatically-change-directory-on-ssh-login/",
       "date"       : "2022-09-06 00:00:00 +0800",
       "shortdate"  : "September 06, 2022"
     } ,
   
     {
-      "title"      : "乔布斯弥留之际关于生命意义的最后遗言",
-      "url"        : "/2022/03/31/jobs-thought-about-life-on-his-last-days/",
+      "title"      : "友人弥留之际关于生命意义的最后遗言",
+      "url"        : "/2022/03/31/someone-thought-about-life-on-his-last-days/",
       "date"       : "2022-03-31 00:00:00 +0800",
       "shortdate"  : "March 31, 2022"
     } ,
@@ -36,7 +50,7 @@
     } ,
   
     {
-      "title"      : "SSL证书问题：不能访问本地发行的证书",
+      "title"      : "不能访问本地发行的证书异常",
       "url"        : "/2021/09/17/unable-to-get-local-issuer-certificate/",
       "date"       : "2021-09-17 00:00:00 +0800",
       "shortdate"  : "September 17, 2021"
@@ -57,7 +71,7 @@
     } ,
   
     {
-      "title"      : "同步 fork",
+      "title"      : "Git 同步 fork",
       "url"        : "/2021/09/11/syncing-a-fork/",
       "date"       : "2021-09-11 00:00:00 +0800",
       "shortdate"  : "September 11, 2021"
@@ -99,14 +113,14 @@
     } ,
   
     {
-      "title"      : "Mysql CTE",
-      "url"        : "/2021/08/02/mysql-cte/",
+      "title"      : "Mysql CTE 列数据过长异常",
+      "url"        : "/2021/08/02/mysql-cte-data-too-long-for-column/",
       "date"       : "2021-08-02 00:00:00 +0800",
       "shortdate"  : "August 02, 2021"
     } ,
   
     {
-      "title"      : "Commit message 和 Change log 编写指南",
+      "title"      : "Git Commit message 和 Change log 编写指南",
       "url"        : "/2021/07/01/commit-message-change-log/",
       "date"       : "2021-07-01 00:00:00 +0800",
       "shortdate"  : "July 01, 2021"
@@ -127,7 +141,7 @@
     } ,
   
     {
-      "title"      : "客户端使用多个 SSH Keys",
+      "title"      : "Git 客户端使用多个 SSH Keys",
       "url"        : "/2021/06/22/use-multiple-ssh-private-keys-on-client/",
       "date"       : "2021-06-22 00:00:00 +0800",
       "shortdate"  : "June 22, 2021"
@@ -145,13 +159,6 @@
       "url"        : "/2021/06/21/intellij-idea-common-plugins/",
       "date"       : "2021-06-21 00:00:00 +0800",
       "shortdate"  : "June 21, 2021"
-    } ,
-  
-    {
-      "title"      : "备份 VMware Workstation 虚拟机的最佳做法",
-      "url"        : "/2021/06/20/backup-vmware-workstation/",
-      "date"       : "2021-06-20 00:00:00 +0800",
-      "shortdate"  : "June 20, 2021"
     } ,
   
     {
@@ -211,13 +218,6 @@
     } ,
   
     {
-      "title"      : "Java 设计模式",
-      "url"        : "/2019/07/06/java-design-patterns-example-tutorial/",
-      "date"       : "2019-07-06 00:00:00 +0800",
-      "shortdate"  : "July 06, 2019"
-    } ,
-  
-    {
       "title"      : "一个大屎坑",
       "url"        : "/2019/05/21/a-big-cesspool/",
       "date"       : "2019-05-21 00:00:00 +0800",
@@ -232,17 +232,10 @@
     } ,
   
     {
-      "title"      : "使用 ES File Explorer 在手机和电脑之间传输数据",
+      "title"      : "利用 ES File Explorer 在手机和电脑之间传输数据",
       "url"        : "/2018/11/24/trans-data-between-mobile-and-pc/",
       "date"       : "2018-11-24 00:00:00 +0800",
       "shortdate"  : "November 24, 2018"
-    } ,
-  
-    {
-      "title"      : "抽象工厂模式",
-      "url"        : "/2018/11/08/java-abstract-factory-design-pattern/",
-      "date"       : "2018-11-08 00:00:00 +0800",
-      "shortdate"  : "November 08, 2018"
     } ,
   
     {
@@ -267,7 +260,7 @@
     } ,
   
     {
-      "title"      : "web.xml 配置示例",
+      "title"      : "JavaEE 中 web.xml 配置示例",
       "url"        : "/2018/06/29/web-xml-deployment-descriptor-examples/",
       "date"       : "2018-06-29 00:00:00 +0800",
       "shortdate"  : "June 29, 2018"
@@ -302,7 +295,7 @@
     } ,
   
     {
-      "title"      : "Linux 命令",
+      "title"      : "Linux 命令集",
       "url"        : "/2018/05/03/linux-commands/",
       "date"       : "2018-05-03 00:00:00 +0800",
       "shortdate"  : "May 03, 2018"
