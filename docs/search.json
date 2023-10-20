@@ -1,6 +1,62 @@
 [
   
     {
+      "title"      : "定位 JS 的三种方式",
+      "url"        : "/2023/10/19/three-ways-to-locate-js/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "Centos7 安装 Webmin",
+      "url"        : "/2023/10/19/install-webmin-on-centos7/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "Centos7 安装 PhpMyAdmin",
+      "url"        : "/2023/10/19/install-phpmyadmin-on-centos7/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "Centos7 安装 Percona server for MySQL",
+      "url"        : "/2023/10/19/install-percona-server-for-mysql-on-centos7/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "Centos7 安装 LEMP",
+      "url"        : "/2023/10/19/install-lemp-stack-on-centos7/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "Centos7 编译安装 Nginx",
+      "url"        : "/2023/10/19/compile-install-nginx-on-centos7/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "5分钟在 Centos7 上配置 OpenVPN",
+      "url"        : "/2023/10/19/centos7-set-up-openvpn-server/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
+      "title"      : "创建 tar.gz 时忽略文件和目录",
+      "url"        : "/2023/04/07/tar-excluding-certain-files-folders/",
+      "date"       : "2023-04-07 00:00:00 +0800",
+      "shortdate"  : "April 07, 2023"
+    } ,
+  
+    {
       "title"      : "使用 grep 命令查找包含指定文本的所有文件",
       "url"        : "/2023/04/05/finding-all-files-containing-specific-text-on-linux/",
       "date"       : "2023-04-05 00:00:00 +0800",

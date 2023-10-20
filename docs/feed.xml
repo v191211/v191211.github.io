@@ -1,4 +1,496 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-04-05T03:23:49+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">使用 netstat 命令查看指定端口占用情况</title><link href="https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat/" rel="alternate" type="text/html" title="使用 netstat 命令查看指定端口占用情况" /><published>2023-04-05T00:00:00+08:00</published><updated>2023-04-05T00:00:00+08:00</updated><id>https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat</id><content type="html" xml:base="https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat/">&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;netstat &lt;span class=&quot;nt&quot;&gt;-anp&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; :&amp;lt;port_number&amp;gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-10-20T14:43:36+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">5分钟在 Centos7 上配置 OpenVPN</title><link href="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/" rel="alternate" type="text/html" title="5分钟在 Centos7 上配置 OpenVPN" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server</id><content type="html" xml:base="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
+
+&lt;p&gt;目前 VPS 用的是 &lt;a href=&quot;https://bandwagonhost.com/&quot;&gt;bandwagonhost&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;有时间翻译。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cyberciti.biz/faq/centos-7-0-set-up-openvpn-server-in-5-minutes/&quot;&gt;5分钟在 Centos7 上配置 OpenVPN&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VPN" /><summary type="html">过程 过程</summary></entry><entry><title type="html">Centos7 编译安装 Nginx</title><link href="https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7/" rel="alternate" type="text/html" title="Centos7 编译安装 Nginx" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-说明&quot; id=&quot;markdown-toc-heading-说明&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-说明&quot;&gt;说明&lt;/h2&gt;
+
+&lt;p&gt;仅凭记忆记录安装步骤。&lt;/p&gt;
+
+&lt;p&gt;以后可能会补充详细过程，更大可能不会。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
+
+&lt;p&gt;安装过程参考：&lt;a href=&quot;https://www.tecmint.com/install-nginx-from-source/&quot;&gt;源码安装 Nginx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;执行配置的时候，结合了：&lt;a href=&quot;https://blog.51cto.com/kele/7230473&quot;&gt;Centos 7.9 tar包编译安装 nginx1.24.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最终形成的执行配置如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nginx &lt;span class=&quot;nt&quot;&gt;--group&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nginx &lt;span class=&quot;nt&quot;&gt;--prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/etc/nginx &lt;span class=&quot;nt&quot;&gt;--sbin-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/sbin/nginx &lt;span class=&quot;nt&quot;&gt;--conf-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/etc/nginx/nginx.conf &lt;span class=&quot;nt&quot;&gt;--error-log-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/log/nginx/error.log &lt;span class=&quot;nt&quot;&gt;--http-log-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/log/nginx/access.log &lt;span class=&quot;nt&quot;&gt;--pid-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/run/nginx.pid &lt;span class=&quot;nt&quot;&gt;--lock-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/run/nginx.lock &lt;span class=&quot;nt&quot;&gt;--with-http_ssl_module&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--with-stream&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--with-http_stub_status_module&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--with-http_gzip_static_module&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--with-mail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;dynamic &lt;span class=&quot;nt&quot;&gt;--with-pcre&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--with-zlib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/root/nginx/zlib-1.3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行配置主要是对模块的选择，模块的具体作用可参考官方手册。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/&quot;&gt;安装 Nginx&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Nginx" /><summary type="html"></summary></entry><entry><title type="html">Centos7 安装 LEMP</title><link href="https://empvalley.com/2023/10/19/install-lemp-stack-on-centos7/" rel="alternate" type="text/html" title="Centos7 安装 LEMP" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/install-lemp-stack-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/install-lemp-stack-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-说明&quot; id=&quot;markdown-toc-heading-说明&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-lemp-释义&quot; id=&quot;markdown-toc-heading-lemp-释义&quot;&gt;LEMP 释义&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-过程---&quot; id=&quot;markdown-toc-heading-过程---&quot;&gt;过程   &lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-安装-nginx&quot; id=&quot;markdown-toc-heading-安装-nginx&quot;&gt;安装 Nginx&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-安装-mysql&quot; id=&quot;markdown-toc-heading-安装-mysql&quot;&gt;安装 Mysql&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-安装-php-&quot; id=&quot;markdown-toc-heading-安装-php-&quot;&gt;安装 PHP &lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-配置-nginx-支持-php-程序&quot; id=&quot;markdown-toc-heading-配置-nginx-支持-php-程序&quot;&gt;配置 Nginx 支持 PHP 程序&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-说明&quot;&gt;说明&lt;/h2&gt;
+
+&lt;p&gt;仅凭记忆记录安装步骤。&lt;/p&gt;
+
+&lt;p&gt;以后可能会补充详细过程，更大可能不会。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-lemp-释义&quot;&gt;LEMP 释义&lt;/h2&gt;
+
+&lt;p&gt;L: Linux 操作系统&lt;/p&gt;
+
+&lt;p&gt;E: Nginx (引擎)，HTTP 和反向代理服务器&lt;/p&gt;
+
+&lt;p&gt;M: MySQL 或 MariaDB 数据库&lt;/p&gt;
+
+&lt;p&gt;P: PHP 程序语言&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-过程---&quot;&gt;过程 &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-安装-nginx&quot;&gt;安装 Nginx&lt;/h3&gt;
+
+&lt;p&gt;参考文章中使用的是 yum 包安装方式，也可以使用手动安装方式，参考 &lt;a href=&quot;Jekyll::Drops::SiteDrop/2023/10/19/compile-install-nginx-on-centos7&quot;&gt;Centos7 编译安装 Nginx&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-安装-mysql&quot;&gt;安装 Mysql&lt;/h3&gt;
+
+&lt;p&gt;参考文章中使用的是 MariaDB，实际安装时使用的是 Percona Server for MySQL，参考 &lt;a href=&quot;Jekyll::Drops::SiteDrop/2023/10/19/percona-server-for-mysql-on-centos7&quot;&gt;Centos7 安装 Percona Server for MySQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-安装-php-&quot;&gt;安装 PHP &lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+
+&lt;p&gt;Centos7 中自带的 PHP 版本是 5.4，已经停止支持了。&lt;/p&gt;
+
+&lt;p&gt;使用的是 Remi 仓库。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-配置-nginx-支持-php-程序&quot;&gt;配置 Nginx 支持 PHP 程序&lt;/h3&gt;
+
+&lt;p&gt;参考文章中配置的所有 .php 结尾的程序都使用 PHP 处理&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.hostinger.com/tutorials/how-to-install-lemp-centos7&quot;&gt;Centos7 安装 LEMP&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://linuxize.com/series/install-lemp-stack-on-centos-7/&quot;&gt;Centos7 安装 LEMP&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7#step-4-configuring-nginx-to-process-php-pages&quot;&gt;Centos7 安装 LEMP&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://rpms.remirepo.net/wizard/&quot;&gt;Remi RPM 仓库配置&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="LEMP" /><summary type="html"></summary></entry><entry><title type="html">Centos7 安装 Percona server for MySQL</title><link href="https://empvalley.com/2023/10/19/install-percona-server-for-mysql-on-centos7/" rel="alternate" type="text/html" title="Centos7 安装 Percona server for MySQL" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/install-percona-server-for-mysql-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/install-percona-server-for-mysql-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-rpm-包文件-&quot; id=&quot;markdown-toc-heading-rpm-包文件-&quot;&gt;RPM 包文件 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
+
+&lt;p&gt;使用的是 RPM 包安装方式，参考官方文档即可。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;唯一需要特别注意的是，官方文档上面给出的下载地址是 RHEL 8 的地址，不适用于 Centos7，需要自己到下载页面选择 RHEL 7版本然后按照指令进行安装。&lt;/p&gt;
+
+&lt;p&gt;安装时注意顺序（不注意也可，缺少某个 rpm 时会有提示），印象中顺序是：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rpm &lt;span class=&quot;nt&quot;&gt;-ivh&lt;/span&gt; percona-server-shared-compat percona-server-shared percona-server-devel percona-server-client percona-server-server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;安装完后，需要更新 root 密码 &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-rpm-包文件-&quot;&gt;RPM 包文件 &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;包&lt;/th&gt;
+      &lt;th&gt;内容&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-server&lt;/td&gt;
+      &lt;td&gt;服务&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-debuginfo&lt;/td&gt;
+      &lt;td&gt;debug 标志&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-client&lt;/td&gt;
+      &lt;td&gt;命令行客户端&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-devel&lt;/td&gt;
+      &lt;td&gt;头文件，使用 client 库编译文件时需要&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-shared&lt;/td&gt;
+      &lt;td&gt;client 共享库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-shared-compat&lt;/td&gt;
+      &lt;td&gt;编译旧版本 client 库用到的共享库，包含以下包： libmysqlclient.so.12, libmysqlclient.so.14, libmysqlclient.so.15, libmysqlclient.so.16, and libmysqlclient.so.18.&lt;br /&gt;这些软件包不包含在 Red Hat Enterprise Linux 9 及其衍生版本的下载中。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;percona-server-test&lt;/td&gt;
+      &lt;td&gt;一组测试 Percona Server for MySQL 的工具&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://docs.percona.com/percona-server/8.0/yum-download-rpm.html&quot;&gt;下载 RPM 包安装 Percona server for MySQL&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://docs.percona.com/percona-server/8.0/post-installation.html&quot;&gt;安装 Percona server for MySQL 后设置&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://docs.percona.com/percona-server/8.0/yum-files.html&quot;&gt;RPM 包文件&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Mysql" /><category term="Percona" /><summary type="html">过程 过程</summary></entry><entry><title type="html">Centos7 安装 PhpMyAdmin</title><link href="https://empvalley.com/2023/10/19/install-phpmyadmin-on-centos7/" rel="alternate" type="text/html" title="Centos7 安装 PhpMyAdmin" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/install-phpmyadmin-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/install-phpmyadmin-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-说明&quot; id=&quot;markdown-toc-heading-说明&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-说明&quot;&gt;说明&lt;/h2&gt;
+&lt;p&gt;仅凭记忆记录安装步骤。&lt;/p&gt;
+
+&lt;p&gt;以后可能会补充详细过程，更大可能不会。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
+
+&lt;p&gt;Centos7 仓库只能安装较低版本的 PhpMyAdmin，Remi 仓库提供了更高版本。&lt;/p&gt;
+
+&lt;p&gt;首先安装 LEMP 环境，安装过程参考：&lt;a href=&quot;https://empvalley.com/2023/10/19/install-lemp-stack-on&quot;&gt;Centos7 安装 LEMP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;安装 PHP 使用的是 Remi 仓库。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;同时安装了 php-mbstring 和 php-gettext 扩展，PhpMyAdmin 需要使用 php-mbstring 扩展命令：&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php-mbstring php-gettext
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;安装 PhpMyadmin 同样使用的 Remi 仓库。&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;安装好后根据 &lt;a href=&quot;https://linuxize.com/post/how-to-install-phpmyadmin-with-nginx-on-centos-7/&quot;&gt;Centos7 安装 PhpMyAdmin 集成 Nginx&lt;/a&gt; 做的 nginx 反向代理配置。&lt;/p&gt;
+
+&lt;p&gt;同时，设置了 Authentication Gate。&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:5&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://rpms.remirepo.net/wizard/&quot;&gt;Remi RPM 仓库配置&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/30047169/phpmyadmin-error-the-mbstring-extension-is-missing-please-check-your-php-confi&quot;&gt;phpMyAdmin Error: The mbstring extension is missing&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://blog.remirepo.net/post/2020/01/22/phpMyAdmin-version-5-en&quot;&gt;phpMyAdmin version 5&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-a-centos-7-server&quot;&gt;安装并增强 PhpMyAdmin 安全&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://community.hetzner.com/tutorials/install-and-secure-phpmyadmin-with-nginx-on-centos-7&quot;&gt;安装并增强 PhpMyAdmin 安全&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="PhpMyAdmin" /><summary type="html"></summary></entry><entry><title type="html">Centos7 安装 Webmin</title><link href="https://empvalley.com/2023/10/19/install-webmin-on-centos7/" rel="alternate" type="text/html" title="Centos7 安装 Webmin" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/install-webmin-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/install-webmin-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-说明&quot; id=&quot;markdown-toc-heading-说明&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-安装-lemp&quot; id=&quot;markdown-toc-heading-安装-lemp&quot;&gt;安装 LEMP&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-安装-webmin&quot; id=&quot;markdown-toc-heading-安装-webmin&quot;&gt;安装 Webmin&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-后记&quot; id=&quot;markdown-toc-heading-后记&quot;&gt;后记&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-说明&quot;&gt;说明&lt;/h2&gt;
+&lt;p&gt;计划安装 Webmin + PhpMyAdmin，PhpMyAdmin 需要 PHP 环境，所以先安装 LEMP 后才安装的 Webmin，也可以直接安装 Webmin&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
+&lt;h3 id=&quot;heading-安装-lemp&quot;&gt;安装 LEMP&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://empvalley.com/2023/10/19/install-lemp-stack-on-centos7&quot;&gt;Centos7 安装 LEMP&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-安装-webmin&quot;&gt;安装 Webmin&lt;/h3&gt;
+&lt;p&gt;按照官网 &lt;a href=&quot;https://webmin.com/download/&quot;&gt;下载与安装&lt;/a&gt; 页面安装。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-后记&quot;&gt;后记&lt;/h2&gt;
+
+&lt;p&gt;管理 MySQL，不需要安装 PhpMyAdmin，Webmin 上面可以直接管理 MySQL&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Webmin" /><summary type="html"></summary></entry><entry><title type="html">定位 JS 的三种方式</title><link href="https://empvalley.com/2023/10/19/three-ways-to-locate-js/" rel="alternate" type="text/html" title="定位 JS 的三种方式" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/three-ways-to-locate-js</id><content type="html" xml:base="https://empvalley.com/2023/10/19/three-ways-to-locate-js/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-通过-initiator-定位-js&quot; id=&quot;markdown-toc-heading-通过-initiator-定位-js&quot;&gt;通过 Initiator 定位 JS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-通过-search-关键字定位-js&quot; id=&quot;markdown-toc-heading-通过-search-关键字定位-js&quot;&gt;通过 Search 关键字定位 JS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-通过-event-listeners-定位-js&quot; id=&quot;markdown-toc-heading-通过-event-listeners-定位-js&quot;&gt;通过 Event Listeners 定位 JS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-通过-initiator-定位-js&quot;&gt;通过 Initiator 定位 JS&lt;/h2&gt;
+
+&lt;p&gt;请求是由 JS 发出的。&lt;/p&gt;
+
+&lt;p&gt;例如某些用户登录场景：&lt;/p&gt;
+
+&lt;p&gt;请求服务器之前密码已经被 JS 加密，也就是密码由 JS 进行加密后才触发请求服务器动作。&lt;/p&gt;
+
+&lt;p&gt;可以通过开发者工具中的 NetWork –&amp;gt; Initiator 查看是哪个 JS 文件中触发了请求服务器的动作，定位 JS。&lt;/p&gt;
+
+&lt;p&gt;然后查询发送请求时的关键字，找到相关 JS 代码。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-通过-search-关键字定位-js&quot;&gt;通过 Search 关键字定位 JS&lt;/h2&gt;
+
+&lt;p&gt;通过开发者工具中的 Search（快捷键：Ctrl + Shift + F）搜索请求参数 Key 定位 JS。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-通过-event-listeners-定位-js&quot;&gt;通过 Event Listeners 定位 JS&lt;/h2&gt;
+
+&lt;p&gt;通过开发者工具中的 Elements –&amp;gt; Event Listeners 找到相应的监听事件，定位 JS。&lt;/p&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="JS" /><summary type="html">通过 Initiator 定位 JS 通过 Initiator 定位 JS</summary></entry><entry><title type="html">创建 tar.gz 时忽略文件和目录</title><link href="https://empvalley.com/2023/04/07/tar-excluding-certain-files-folders/" rel="alternate" type="text/html" title="创建 tar.gz 时忽略文件和目录" /><published>2023-04-07T00:00:00+08:00</published><updated>2023-04-07T00:00:00+08:00</updated><id>https://empvalley.com/2023/04/07/tar-excluding-certain-files-folders</id><content type="html" xml:base="https://empvalley.com/2023/04/07/tar-excluding-certain-files-folders/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-快速使用&quot; id=&quot;markdown-toc-heading-快速使用&quot;&gt;快速使用&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-1-概述&quot; id=&quot;markdown-toc-heading-1-概述&quot;&gt;1. 概述&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-2-环境准备&quot; id=&quot;markdown-toc-heading-2-环境准备&quot;&gt;2. 环境准备&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-3-使用--exclude-选项&quot; id=&quot;markdown-toc-heading-3-使用--exclude-选项&quot;&gt;3. 使用 -exclude 选项&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-31-排除多个文件和目录&quot; id=&quot;markdown-toc-heading-31-排除多个文件和目录&quot;&gt;3.1 排除多个文件和目录&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#heading-32-排除指定扩展名文件&quot; id=&quot;markdown-toc-heading-32-排除指定扩展名文件&quot;&gt;3.2 排除指定扩展名文件&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-4-使用排除文件&quot; id=&quot;markdown-toc-heading-4-使用排除文件&quot;&gt;4. 使用排除文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-5-总结&quot; id=&quot;markdown-toc-heading-5-总结&quot;&gt;5. 总结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-快速使用&quot;&gt;快速使用&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./folder'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./upload/folder2'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; /backup/filename.tgz &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-1-概述&quot;&gt;1. 概述&lt;/h2&gt;
+
+&lt;p&gt;在 Linux 和 类 Unix 系统中，tar 命令用于打包文件。&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;它能打包成多种格式，像是 .tar, .tar.gz, .cpio, .tar.bz2, .zip, .rar 等。&lt;/p&gt;
+
+&lt;p&gt;打包成 .tar.gz 格式时使用的是 gzip 算法，打包成 .tar.bz2 格式时使用 bzip 算法。&lt;/p&gt;
+
+&lt;p&gt;这篇教程介绍了打包 .tar.gz 文件时以不同的方式排除 1 个或多个文件、目录。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-2-环境准备&quot;&gt;2. 环境准备&lt;/h2&gt;
+
+&lt;p&gt;使用 mkdir 命令创建名称为 parent_directory 的目录，目录中存放教程要用到的文件和目录。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;parent_directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;进入到该目录。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;parent_directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用 touch 命令创建 3 个文件：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;touch &lt;/span&gt;file1.txt file2.txt file3.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;创建 3 个目录：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;folder1 folder2 folder3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行完上面的命令，的目录结构如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;file1.txt file3.txt folder2
+file2.txt folder1	folder3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-3-使用--exclude-选项&quot;&gt;3. 使用 -exclude 选项&lt;/h2&gt;
+
+&lt;p&gt;tar -exclude 选项基础语法：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;options] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;archive_name] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;path]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;打包 .tar.gz 时使用 -exclude 选项跳过文件或目录。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'file1.txt'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./
+./folder3/
+./file3.txt
+./folder1/
+./file2.txt
+./folder2/
+&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt;: .: file changed as we &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;it
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;一起来分析一下这个命令：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;-z 使用 gzip 算法压缩文件和目录&lt;/li&gt;
+  &lt;li&gt;-c 创建新的打包文件&lt;/li&gt;
+  &lt;li&gt;-v 显示打包文件和目录的过程&lt;/li&gt;
+  &lt;li&gt;-f 给打包的文件起一个名字&lt;/li&gt;
+  &lt;li&gt;–exclude 打包时排除 file1.txt 文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最后的 . 代表当前工作目录，里面包含了我们需要打包的文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;排除目录时，不能用正斜线 / 结尾。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;我们看到消息 &quot;file changed as we read it&quot;，是因为 backup.tar.gz 文件和被打包的文件在同一目录中。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;使用 -v 选项可以看到上面命令执行时跳过了 file1.txt 文件。&lt;/p&gt;
+
+&lt;p&gt;使用以下命令列出 backup.tar.gz 文件中的内容而无需解压。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; backup.tar.gz
+./
+./folder3/
+./file3.txt
+./folder1/
+./file2.txt
+./folder2/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;-t 选项列出打包文件中的内容。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-31-排除多个文件和目录&quot;&gt;3.1 排除多个文件和目录&lt;/h3&gt;
+
+&lt;p&gt;使用多个 –exclude 选项排除多个文件或目录。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'file1.txt'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'folder1'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./
+./folder3/
+./file3.txt
+./file2.txt
+./folder2/
+&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt;: .: file changed as we &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;it
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;也可以用下面这种方式：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;={&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;file1.txt&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;file2.txt&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+file3.txt
+folder3
+folder2
+folder1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;花括号这种方式在 Bash 方法中可能会有问题， –exclude 选项可能无法正确工作。&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-32-排除指定扩展名文件&quot;&gt;3.2 排除指定扩展名文件&lt;/h3&gt;
+
+&lt;p&gt;通过匹配正则表达式可以排除指定扩展名文件：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'*.txt'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./
+./folder3/
+./folder1/
+./folder2/
+&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt;: .: file changed as we &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;it
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上面的命令跳过所有扩展名是 .txt 的文件。&lt;/p&gt;
+
+&lt;p&gt;同样因为 backup.tar.gz 文件和被打包的文件在同一目录中，返回了 &quot;file changed as we read it&quot; 消息。&lt;/p&gt;
+
+&lt;p&gt;tar 命令内置了一些选项可以忽略一些自动生成的文件，下面是一些选项和他们的行为：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;–exclude-backups 排除所有 backup 和 lock 文件&lt;/li&gt;
+  &lt;li&gt;–exclude-cashes 排除所有有 CACHEDIR.TAG 标签的目录，不包括标签本身&lt;/li&gt;
+  &lt;li&gt;–exclude-vcs 排除所有版本控制文件&lt;/li&gt;
+  &lt;li&gt;–exclude-vcs-ignores 排除所有版本控制系统中忽略的文件，例如在 .gitignore 中列出的文件、目录以及扩展名都将被排除，包括 .gitignore 文件本身也会被排除。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heading-4-使用排除文件&quot;&gt;4. 使用排除文件&lt;/h2&gt;
+
+&lt;p&gt;使用 tar 命令打包或解压文件时，可以提供一个文件，文件中包含需要排除的文件、目录。这个文件叫做排除文件。&lt;/p&gt;
+
+&lt;p&gt;下面是打包时使用排除文件忽略指定文件。&lt;/p&gt;
+
+&lt;p&gt;首先，创建一个名称为 exclude_file.txt 的排除文件：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;touch &lt;/span&gt;exclude_file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;接着添加需要被排除的文件或目录名，以行进行分割。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;file1.txt
+folder3
+file2.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;排除包含在 exclude_file.txt 文件中的项目。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; exclude_file.txt &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./
+./folder1/
+./folder2/
+./exclude_file.txt
+./file3.txt
+&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt;: .: file changed as we &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;it
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;使用 -X 选项接收一个排除文件。&lt;/strong&gt;它是 –exclude-from 选项的简写形式：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcvf&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nt&quot;&gt;--exclude-from&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;exclude_file.txt&quot;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;排除文件中同样可以使用正则表达式。&lt;/p&gt;
+
+&lt;p&gt;改变一些 exclude_file.txt 文件内容：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;再次打包文件：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zcfv&lt;/span&gt; backup.tar.gz &lt;span class=&quot;nt&quot;&gt;--exclude-from&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;exclude_file.txt&quot;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+./
+./folder3/
+./folder2/
+./folder1/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以看到上面的命令跳过了扩展名是 .txt 的文件。&lt;/p&gt;
+
+&lt;h2 id=&quot;heading-5-总结&quot;&gt;5. 总结&lt;/h2&gt;
+
+&lt;p&gt;这篇文章介绍了打包 .tar.gz 文件时排除一些指定文件或目录的方法。&lt;/p&gt;
+
+&lt;p&gt;打包小型目录时 –exclude 选项很实用，而打包大型目录时使用排除文件则很方便。&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/984204/shell-command-to-tar-directory-excluding-certain-files-folders&quot; target=&quot;_blank&quot;&gt;tar 命令打包时忽略某些文件、目录&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.baeldung.com/linux/tar-exclude-files-directories&quot; target=&quot;_blank&quot;&gt;打包 tar.gz 文件时排除指定文件和目录&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="tar" /><summary type="html">快速使用 快速使用1 tar 命令打包时忽略某些文件、目录 &amp;#8617;</summary></entry><entry><title type="html">使用 netstat 命令查看指定端口占用情况</title><link href="https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat/" rel="alternate" type="text/html" title="使用 netstat 命令查看指定端口占用情况" /><published>2023-04-05T00:00:00+08:00</published><updated>2023-04-05T00:00:00+08:00</updated><id>https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat</id><content type="html" xml:base="https://empvalley.com/2023/04/05/check-used-port-in-linux-by-netstat/">&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;netstat &lt;span class=&quot;nt&quot;&gt;-anp&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; :&amp;lt;port_number&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
@@ -50,1932 +542,4 @@
       &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/16956844/4612522&quot; target=&quot;_blank&quot;&gt;Linux 中查找包含指定文本的所有文件&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="grep" /><summary type="html">$ grep -rnw '/path/to/somewhere/' -e 'pattern' -r 或 -R 表示递归查找。 -n 展示行号。 -w 完全匹配（匹配整个单词）。 -l （小写 L）只显示文件名，而不是结果本身。 i 忽略大小写（可选）。 和标签 –exclude、–include、–exclude-dir 一起使用可以更有效的查找：1 只搜索扩展名为 .c 或 .h 的文件： $ grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 排除所有扩展名为 .o 的文件： $ grep --exclude=\*.o -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 通过 –exclude-dir 参数可以排除指定的目录。 例如，下面的命令将排除目录 dir1/、dir2/ 和所有 *.dst/ 目录。 $ grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 也可以从根目录开始查找： $ grep -Ril &quot;text-to-find-here&quot; / 这些命令能够出色的完成任务，同样能够帮你完成类似的搜索。 更多选项可以查看 man 命令手册 man grep Linux 中查找包含指定文本的所有文件 &amp;#8617;</summary></entry><entry><title type="html">为什么要进行 URL 编码</title><link href="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/" rel="alternate" type="text/html" title="为什么要进行 URL 编码" /><published>2022-12-13T00:00:00+08:00</published><updated>2022-12-13T00:00:00+08:00</updated><id>https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls</id><content type="html" xml:base="https://empvalley.com/2022/12/13/why-do-u-need-2-encode-urls/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-不编码-url-引出的问题&quot; id=&quot;markdown-toc-heading-不编码-url-引出的问题&quot;&gt;不编码 URL 引出的问题&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-解决方案&quot; id=&quot;markdown-toc-heading-解决方案&quot;&gt;解决方案&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-哪些字符需要编码&quot; id=&quot;markdown-toc-heading-哪些字符需要编码&quot;&gt;哪些字符需要编码&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-如何对-url-中的非法字符进行编码&quot; id=&quot;markdown-toc-heading-如何对-url-中的非法字符进行编码&quot;&gt;如何对 URL 中的非法字符进行编码&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-javascript-中-escape-encodeuri-和-encodeuricomponent-区别&quot; id=&quot;markdown-toc-heading-javascript-中-escape-encodeuri-和-encodeuricomponent-区别&quot;&gt;Javascript 中 escape, encodeURI 和 encodeURIComponent 区别&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-表单提交&quot; id=&quot;markdown-toc-heading-表单提交&quot;&gt;表单提交&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-不编码-url-引出的问题&quot;&gt;不编码 URL 引出的问题&lt;/h2&gt;
-
-&lt;p&gt;我们都知道 HTTP 协议中参数的传输是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key=value&lt;/code&gt; 这种简直对形式的，如果要传多个参数就需要用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 符号对键值对进行分割。如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?name1=value1&amp;amp;name2=value2&lt;/code&gt;，这样在服务端在收到这种字符串的时候，会用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 分割出每一个参数，然后再用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 来分割出参数值。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;针对 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=value1&amp;amp;name2=value2&lt;/code&gt; 我们来说一下客户端到服务端的概念上解析过程:&lt;/p&gt;
-
-&lt;p&gt;上述字符串在计算机中用 ASCII 码表示为： 
-&lt;strong&gt;6E616D6531 3D 76616C756531 26 6E616D6532 3D 76616C756532。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;6E616D6531：name1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3D：=&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;76616C756531：value1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;26：&amp;amp;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;6E616D6532：name2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3D：=&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;76616C756532：value2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;服务端在接收到该数据后就可以遍历该字节流，首先一个字节一个字节的吃，当吃到 3D 这字节后，服务端就知道前面吃得字节表示一个 key，再向后吃，如果遇到 26，说明从刚才吃的 3D 到 26 字节之间的是上一个 key 的 value，以此类推就可以解析出客户端传过来的参数。&lt;/p&gt;
-
-&lt;p&gt;现在有这样一个问题，如果我的参数值中就包含 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 这种特殊字符的时候该怎么办。&lt;/p&gt;
-
-&lt;p&gt;比如说 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=value1&lt;/code&gt;,其中 value1 的值是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;va&amp;amp;lu=e1&lt;/code&gt; 字符串，那么实际在传输过程中就会变成这样 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=va&amp;amp;lu=e1&lt;/code&gt;。我们的本意是就只有一个键值对，但是服务端会解析成两个键值对，这样就产生了歧义。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-解决方案&quot;&gt;解决方案&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;如何解决上述问题带来的歧义呢？解决的办法就是对参数进行 URL 编码。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;URL 编码只是简单的在特殊字符的各个字节前加上 %，例如，我们对上述会产生奇异的字符进行 URL 编码后结果：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name1=va%26lu%3D&lt;/code&gt;，这样服务端会把紧跟在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; 后的字节当成普通的字节，就是不会把它当成各个参数或键值对的分隔符。&lt;/p&gt;
-
-&lt;p&gt;另外一个问题，就是为什么我们要用 ASCII 传输，可不可以用别的编码？&lt;/p&gt;
-
-&lt;p&gt;当然可以用别的编码，你自己可以开发一套编码，然后自己解析。就像大部分国家都有自己的语言一样。那国家之间要交流，怎么办？ 用英语吧，英语的使用范围最广。&lt;/p&gt;
-
-&lt;p&gt;通常如果一样东西需要编码，说明这样东西并不适合传输。原因多种多样，如 Size 过大，包含隐私数据，对于 URL 来说，之所以要进行编码，是因为 URL 中有些字符会引起歧义。&lt;/p&gt;
-
-&lt;p&gt;例如，URL 参数字符串中使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key=value&lt;/code&gt; 键值对这样的形式来传参，键值对之间以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 符号分隔，如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/s?q=abc&amp;amp;ie=utf-8&lt;/code&gt;。如果你的 value 字符串中包含了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;，那么势必会造成接收 URL 的服务器解析错误，因此必须将引起歧义的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; 符号进行转义，也就是对其进行编码。&lt;/p&gt;
-
-&lt;p&gt;又如，URL 的编码格式采用的是 ASCII 码，而不是 Unicode，这也就是说你不能在 URL 中包含任何非 ASCII 字符，例如中文。否则如果客户端浏览器和服务端浏览器支持的字符集不同的情况下，中文可能会造成问题。&lt;/p&gt;
-
-&lt;p&gt;URL 编码的原则就是使用安全的字符（没有特殊用途或者特殊意义的可打印字符）去表示那些不安全的字符。&lt;/p&gt;
-
-&lt;p&gt;预备知识：URI 是统一资源标识的意思，通常我们所说的 URL 只是 URI 的一种。典型 URL 的格式如下所示。下面提到的 URL 编码，实际上应该指的是 URI 编码。&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;foo://example.com:8042/over/there?name=ferret#nose
-\_/  \______________/ \________/ \_________/  \__/
- |          |              |          |        |
-scheme  authority         path      query   fragment
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;heading-哪些字符需要编码&quot;&gt;哪些字符需要编码&lt;/h2&gt;
-
-&lt;p&gt;RFC3986 文档规定，URL 中只允许包含英文字母（a-zA-Z）、数字（0-9）、-_.~ 4个特殊字符以及所有保留字符。RFC3986 文档对 URL 的编解码问题做出了详细的建议，指出了哪些字符需要被编码才不会引起 URL 语义的转变，以及对为什么这些字符需要编码做出了相应的解释。&lt;/p&gt;
-
-&lt;p&gt;US-ASCII 字符集中没有对应的可打印字符：URL 中只允许使用可打印字符。US-ASCII 码中的 10-7F 字节全都表示控制字符，这些字符都不能直接出现在 URL 中。同时，对于 80-FF 字节（ISO-8859-1），由于已经超出了 US-ACII 定义的字节范围，因此也不可以放在 URL 中。&lt;/p&gt;
-
-&lt;p&gt;保留字符：URL 可以划分成若干个组件，协议、主机、路径等。有一些字符（:/?#[]@）是用作分隔不同组件的。例如：冒号用于分隔协议和主机，/ 用于分隔主机和路径，? 用于分隔路径和查询参数，等等。还有一些字符（!$&amp;amp;'()*+,;=）用于在每个组件中起到分隔作用的，如 = 用于表示查询参数中的键值对，&amp;amp; 符号用于分隔查询多个键值对。当组件中的普通数据包含这些特殊字符时，需要对其进行编码。&lt;/p&gt;
-
-&lt;p&gt;RFC3986 中指定了以下字符为保留字符：! * ' ( ) ; : @ &amp;amp; = + $ , / ? # [ ]&lt;/p&gt;
-
-&lt;p&gt;不安全字符：还有一些字符，当他们直接放在 URL 中的时候，可能会引起解析程序的歧义。这些字符被视为不安全字符，原因有很多。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;空格：URL 在传输的过程，或者用户在排版的过程，或者文本处理程序在处理 URL 的过程，都有可能引入无关紧要的空格，或者将那些有意义的空格给去掉。&lt;/li&gt;
-  &lt;li&gt;引号以及 &amp;lt;&amp;gt;：引号和尖括号通常用于在普通文本中起到分隔 URL 的作用。&lt;/li&gt;
-  &lt;li&gt;#：通常用于表示书签或者锚点。&lt;/li&gt;
-  &lt;li&gt;%：百分号本身用作对不安全字符进行编码时使用的特殊字符，因此本身需要编码。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;{}&lt;/td&gt;
-          &lt;td&gt;\^[]`~：某一些网关或者传输代理会篡改这些字符。&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;需要注意的是，对于 URL 中的合法字符，编码和不编码是等价的，但是对于上面提到的这些字符，如果不经过编码，那么它们有可能会造成 URL 语义的不同。因此对于 URL 而言，只有普通英文字符和数字，特殊字符 $-_.+!*'() 还有保留字符，才能出现在未经编码的 URL 之中。其他字符均需要经过编码之后才能出现在 URL 中。&lt;/p&gt;
-
-&lt;p&gt;但是由于历史原因，目前尚存在一些不标准的编码实现。例如对于 ~ 符号，虽然 RFC3986 文档规定，对于波浪符号 ~，不需要进行 URL 编码，但是还是有很多老的网关或者传输代理会进行编码。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-如何对-url-中的非法字符进行编码&quot;&gt;如何对 URL 中的非法字符进行编码&lt;/h2&gt;
-
-&lt;p&gt;URL 编码通常也被称为百分号编码（URL Encoding，also known as percent-encoding），是因为它的编码方式非常简单，使用 % 百分号加上两位的字符——0123456789ABCDEF —— 代表一个字节的十六进制形式。URL 编码默认使用的字符集是 US-ASCII。例如 a 在 US-ASCII 码中对应的字节是 0x61，那么 URL 编码之后得到的就是 %61，我们在地址栏上输入http://g.cn/search?q=%61%62%63，实际上就等同于在 google 上搜索 abc 了。又如 @ 符号在 ASCII 字符集中对应的字节为 0x40，经过 URL 编码之后得到的是 %40。&lt;/p&gt;
-
-&lt;p&gt;对于非 ASCII 字符，需要使用 ASCII 字符集的超集进行编码得到相应的字节，然后对每个字节执行百分号编码。对于 Unicode 字符，RFC 文档建议使用 utf-8 对其进行编码得到相应的字节，然后对每个字节执行百分号编码。如&quot;中文&quot;使用 UTF-8 字符集得到的字节为 0xE4 0xB8 0xAD 0xE6 0x96 0x87，经过 URL 编码之后得到&quot;%E4%B8%AD%E6%96%87&quot;。&lt;/p&gt;
-
-&lt;p&gt;如果某个字节对应着 ASCII 字符集中的某个非保留字符，则此字节无需使用百分号表示。例如&quot;URL编码&quot;，使用 UTF-8 编码得到的字节是 0x55 0x72 0x6C 0xE7 0xBC 0x96 0xE7 0xA0 0x81，由于前三个字节对应着 ASCII 中的非保留字符&quot;URL&quot;，因此这三个字节可以用非保留字符&quot;URL&quot;表示。最终的 URL 编码可以简化成&quot;URL%E7%BC%96%E7%A0%81&quot; ，当然，如果你用&quot;%55%72%6C%E7%BC%96%E7%A0%81&quot;也是可以的。&lt;/p&gt;
-
-&lt;p&gt;由于历史的原因，有一些 URL 编码实现并不完全遵循这样的原则，下面会提到。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-javascript-中-escape-encodeuri-和-encodeuricomponent-区别&quot;&gt;Javascript 中 escape, encodeURI 和 encodeURIComponent 区别&lt;/h2&gt;
-
-&lt;p&gt;JavaScript 中提供了3对函数用来对 URL 编码以得到合法的 URL，它们分别是 escape / unescape, encodeURI / decodeURI，encodeURIComponent / decodeURIComponent。由于解码和编码的过程是可逆的，因此这里只解释编码的过程。&lt;/p&gt;
-
-&lt;p&gt;这三个编码的函数 ——escape，encodeURI，encodeURIComponent—— 都是用于将不安全不合法的 URL 字符转换为合法的 URL 字符表示，它们有以下几个不同点。&lt;/p&gt;
-
-&lt;p&gt;安全字符不同：&lt;/p&gt;
-
-&lt;p&gt;下面列出了这三个函数的安全字符（即函数不会对这些字符进行编码）&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;escape（69个）：*/@+-._0-9a-zA-Z&lt;/li&gt;
-  &lt;li&gt;encodeURI（82个）：!#$&amp;amp;'()*+,/:;=?@-._~0-9a-zA-Z&lt;/li&gt;
-  &lt;li&gt;encodeURIComponent（71个）：!'()*-._~0-9a-zA-Z&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;兼容性不同：escape 函数是从 Javascript 1.0 的时候就存在了，其他两个函数是在 Javascript 1.5 才引入的。但是由于 Javascript 1.5 已经非常普及了，所以实际上使用 encodeURI 和 encodeURIComponent 并不会有什么兼容性问题。&lt;/p&gt;
-
-&lt;p&gt;对 Unicode 字符的编码方式不同：这三个函数对于 ASCII 字符的编码方式相同，均是使用百分号 + 两位十六进制字符来表示。但是对于 Unicode 字符，escape 的编码方式是 %uxxxx，其中的 xxxx 是用来表示 unicode 字符的4位十六进制字符。这种方式已经被 W3C 废弃了。但是在 ECMA-262 标准中仍然保留着 escape 的这种编码语法。encodeURI 和 encodeURIComponent 则使用 UTF-8 对非 ASCII 字符进行编码，然后再进行百分号编码。这是 RFC 推荐的。因此建议尽可能的使用这两个函数替代 escape 进行编码。&lt;/p&gt;
-
-&lt;p&gt;适用场合不同：encodeURI 被用作对一个完整的 URI 进行编码，而 encodeURIComponent 被用作对URI的一个组件进行编码。从上面提到的安全字符范围表格来看，我们会发现，encodeURIComponent 编码的字符范围要比 encodeURI 的大。我们上面提到过，保留字符一般是用来分隔 URI 组件（一个 URI 可以被切割成多个组件，参考预备知识一节）或者子组件（如 URI 中查询参数的分隔符），如：号用于分隔 scheme 和主机，?号用于分隔主机和路径。由于 encodeURI 操纵的对象是一个完整的的 URI，这些字符在 URI 中本来就有特殊用途，因此这些保留字符不会被 encodeURI 编码，否则意义就变了。&lt;/p&gt;
-
-&lt;p&gt;组件内部有自己的数据表示格式，但是这些数据内部不能包含有分隔组件的保留字符，否则就会导致整个 URI 中组件的分隔混乱。因此对于单个组件使用encodeURIComponent，需要编码的字符就更多了。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-表单提交&quot;&gt;表单提交&lt;/h2&gt;
-
-&lt;p&gt;当 HTML 的表单被提交时，每个表单域都会被 URL 编码之后才在被发送。由于历史的原因，表单使用的 URL 编码实现并不符合最新的标准。例如对于空格使用的编码并不是 %20，而是 + 号，如果表单使用的是 Post 方法提交的，我们可以在 HTTP 头中看到有一个 Content-Type 的 header，值为 application/x-www-form-URLencoded。大部分应用程序均能处理这种非标准实现的 URL 编码，但是在客户端 Javascript 中，并没有一个函数能够将 + 号解码成空格，只能自己写转换函数。还有，对于非 ASCII 字符，使用的编码字符集取决于当前文档使用的字符集。例如我们在 HTML 头部加上&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html; charset=gb2312&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这样浏览器就会使用 gb2312 去渲染此文档（注意，当 HTML 文档中没有设置此 meta 标签，则浏览器会根据当前用户喜好去自动选择字符集，用户也可以强制当前网站使用某个指定的字符集）。当提交表单时，URL 编码使用的字符集就是 gb2312。&lt;/p&gt;
-
-&lt;p&gt;之前在使用 Aptana（为什么专指 aptana 下面会提到）遇到一个很迷惑的问题，就是在使用 encodeURI 的时候，发现它编码得到的结果和我想的很不一样。下面是我的示例代码：&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; 
-&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/1999/xhtml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html; charset=gb2312&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;encodeURI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;中文&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;运行结果输出 %E6%B6%93%EE%85%9F%E6%9E%83。显然这并不是使用 UTF-8 字符集进行 URL 编码得到的结果（在 Google 上搜索&quot;中文&quot;，URL 中显示的是 %E4%B8%AD%E6%96%87）。&lt;/p&gt;
-
-&lt;p&gt;所以我当时就很质疑，难道 encodeURI 还跟页面编码有关，但是我发现，正常情况下，如果你使用 gb2312 进行 URL 编码也不会得到这个结果的才是。后来终于被我发现，原来是页面文件存储使用的字符集和 Meta 标签中指定的字符集不一致导致的问题。Aptana 的编辑器默认情况下使用 UTF-8 字符集。也就是说这个文件实际存储的时候使用的是 UTF-8 字符集。但是由于 Meta 标签中指定了 gb2312，这个时候，浏览器就会按照 gb2312 去解析这个文档，那么自然在&quot;中文&quot;这个字符串这里就会出错，因为&quot;中文&quot;字符串用 UTF-8 编码过后得到的字节是 0xE4 0xB8 0xAD 0xE6 0x96 0x87，这6个字节又被浏览器拿 gb2312 去解码，那么就会得到另外三个汉字&quot;涓枃&quot;（GBK 中一个汉字占两个字节），这三个汉字在传入 encodeURI 函数之后得到的结果就是 %E6%B6%93%EE%85%9F%E6%9E%83。因此，encodeURI 使用的还是 UTF-8，并不会受到页面字符集的影响。&lt;/p&gt;
-
-&lt;p&gt;对于包含中文的 URL 的处理问题，不同浏览器有不同的表现。例如对于 IE，如果你勾选了高级设置&quot;总是以 UTF-8 发送 URL&quot;，那么 URL 中的路径部分的中文会使用 UTF-8 进行 URL 编码之后发送给服务端，而查询参数中的中文部分使用系统默认字符集进行 URL 编码。为了保证最大互操作性，建议所有放到 URL 中的组件全部显式指定某个字符集进行 URL 编码，而不依赖于浏览器的默认实现。&lt;/p&gt;
-
-&lt;p&gt;另外，很多 HTTP 监视工具或者浏览器地址栏等在显示 URL 的时候会自动将 URL 进行一次解码（使用 UTF-8 字符集），这就是为什么当你在 Firefox 中访问Google 搜索中文的时候，地址栏显示的 URL 包含中文的缘故。但实际上发送给服务端的原始 URL 还是经过编码的。你可以在地址栏上使用 Javascript 访问location.href 就可以看出来了。在研究 URL 编解码的时候千万别被这些假象给迷惑了。&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jerrysion/p/5522673.html&quot; target=&quot;_blank&quot;&gt;为什么要进行URL编码&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.URLencoder.io/learn/&quot; target=&quot;_blank&quot;&gt;什么是 URL 编码以及工作原理&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="URL" /><summary type="html">不编码 URL 引出的问题 不编码 URL 引出的问题</summary></entry><entry><title type="html">配置 SSH 登录后进入指定目录</title><link href="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/" rel="alternate" type="text/html" title="配置 SSH 登录后进入指定目录" /><published>2022-09-06T00:00:00+08:00</published><updated>2022-09-06T00:00:00+08:00</updated><id>https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login</id><content type="html" xml:base="https://empvalley.com/2022/09/06/automatically-change-directory-on-ssh-login/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-需求&quot; id=&quot;markdown-toc-heading-需求&quot;&gt;需求&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-解决&quot; id=&quot;markdown-toc-heading-解决&quot;&gt;解决&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-原理&quot; id=&quot;markdown-toc-heading-原理&quot;&gt;原理&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-扩展&quot; id=&quot;markdown-toc-heading-扩展&quot;&gt;扩展&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;heading-需求&quot;&gt;需求&lt;/h2&gt;
-
-&lt;p&gt;所有用户通过 SSH 登录到服务器时，默认进入到 /data 目录下。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-解决&quot;&gt;解决&lt;/h2&gt;
-
-&lt;p&gt;在 /etc/profile.d 目录下创建 cd_data.sh 文件，内容：&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# cd /data when user login&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /data
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;heading-原理&quot;&gt;原理&lt;/h2&gt;
-
-&lt;p&gt;/etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:5&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-扩展&quot;&gt;扩展&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;/etc/profile: 系统初始化文件，登录 shell 时执行&lt;/li&gt;
-  &lt;li&gt;~/.bash_profile: 个人初始化文件，登录 shell 时执行&lt;/li&gt;
-  &lt;li&gt;~/.bashrc: 每次启动一个交互 shell 时都会执行&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;所以，全局的配置文件可以放到 /etc/profile 文件中。&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://unix.stackexchange.com/questions/409126/how-to-set-path-for-all-users-on-centos-7&quot; target=&quot;_blank&quot;&gt;如何在 CentOS7 系统中为所有用户设置路径？&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile&quot; target=&quot;_blank&quot;&gt;.bashrc, .bash-profile, .profile 之间的区别&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/415403/whats-the-difference-between-bashrc-bash-profile-and-environment&quot; target=&quot;_blank&quot;&gt;.bashrc, .bash_profile, .environment 之间有什么区别？&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile&quot; target=&quot;_blank&quot;&gt;对比在 /etc/environment 与 .profile 中设置 PATH 变量&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:5&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://newbedev.com/how-can-i-automatically-change-directory-on-ssh-login&quot; target=&quot;_blank&quot;&gt;如何在登录 SSH 时自动改变目录&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html">需求 解决 原理 扩展 需求 所有用户通过 SSH 登录到服务器时，默认进入到 /data 目录下。 解决 在 /etc/profile.d 目录下创建 cd_data.sh 文件，内容： # cd /data when user login cd /data 原理 /etc/profile.d 目录下的所有脚本，会在用户登录初始化环境时执行。1 2 3 4 5 扩展 /etc/profile: 系统初始化文件，登录 shell 时执行 ~/.bash_profile: 个人初始化文件，登录 shell 时执行 ~/.bashrc: 每次启动一个交互 shell 时都会执行 所以，全局的配置文件可以放到 /etc/profile 文件中。 如何在 CentOS7 系统中为所有用户设置路径？ &amp;#8617; .bashrc, .bash-profile, .profile 之间的区别 &amp;#8617; .bashrc, .bash_profile, .environment 之间有什么区别？ &amp;#8617; 对比在 /etc/environment 与 .profile 中设置 PATH 变量 &amp;#8617; 如何在登录 SSH 时自动改变目录 &amp;#8617;</summary></entry><entry><title type="html">友人弥留之际关于生命意义的最后遗言</title><link href="https://empvalley.com/2022/03/31/someone-thought-about-life-on-his-last-days/" rel="alternate" type="text/html" title="友人弥留之际关于生命意义的最后遗言" /><published>2022-03-31T00:00:00+08:00</published><updated>2022-03-31T00:00:00+08:00</updated><id>https://empvalley.com/2022/03/31/someone-thought-about-life-on-his-last-days</id><content type="html" xml:base="https://empvalley.com/2022/03/31/someone-thought-about-life-on-his-last-days/">&lt;p&gt;I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。&lt;/p&gt;
-
-&lt;p&gt;However, aside from work, I have little joy. In the end, wealth is only a fact of life that I am accustomed to.&lt;/p&gt;
-
-&lt;p&gt;但是除工作外，我并不觉得幸福，财富只是一个我习惯了的生活方式。&lt;/p&gt;
-
-&lt;p&gt;At this moment, lying on the sick bed and recalling my whole life, I realize that all the recognition and wealth that I took so much pride in, have paled and become meaningless in the face of impending death.&lt;/p&gt;
-
-&lt;p&gt;此时此刻躺在病床上回顾我的一生，我知道我曾引为自豪的公众认可的财富和面临即将到来的死亡时显得得苍白和毫无意义。&lt;/p&gt;
-
-&lt;p&gt;In the darkness, I look at the green lights from the life supporting machines and hear the humming mechanical sounds, I can feel the breath of god of death drawing closer …&lt;/p&gt;
-
-&lt;p&gt;此时此刻在黑暗中，我双眼看着维持生命的仪器发出的绿光的时候，两耳听见这些仪器发出的蜂鸣声的时候，我切身感受到了死亡之神一步步走进时发出的呼吸声音……&lt;/p&gt;
-
-&lt;p&gt;Now I know, when we have accumulated sufficient wealth to last our lifetime, we should pursue other matters that are unrelated to wealth …&lt;/p&gt;
-
-&lt;p&gt;现在我明白了，在我们积累了足够的物质财富可以让我们享受一生的时候，我们还应该追求其它无关财富的东西……&lt;/p&gt;
-
-&lt;p&gt;Should be something that is more important:&lt;/p&gt;
-
-&lt;p&gt;一些比财富更重要的东西：&lt;/p&gt;
-
-&lt;p&gt;Perhaps relationships, perhaps art, perhaps a dream from younger days&lt;/p&gt;
-
-&lt;p&gt;可以是亲情关系的东西，可以是艺术的东西，可以是你少年时的梦。&lt;/p&gt;
-
-&lt;p&gt;Non-stop pursuing of wealth will only turn a person into a twisted being, just like me.&lt;/p&gt;
-
-&lt;p&gt;无休止地物质财富只会把一个人变成一具扭曲的生命，就好比现在的我。&lt;/p&gt;
-
-&lt;p&gt;God gave us the senses to let us feel the love in everyone’s heart, not the illusions brought about by wealth.&lt;/p&gt;
-
-&lt;p&gt;上帝给了我们知觉，让我们可以感受每个人内心的那份爱，不是感受财富带来的幻觉。&lt;/p&gt;
-
-&lt;p&gt;The wealth I have won in my life I cannot bring with me. What I can bring is only the memories precipitated by love.&lt;/p&gt;
-
-&lt;p&gt;我一生换来的荣华富贵我是无法带走的。我唯一能带走的，就是爱沉淀下来的美好回忆。&lt;/p&gt;
-
-&lt;p&gt;That’s the true riches which will follow you, accompany you, giving you strength and light to go on.&lt;/p&gt;
-
-&lt;p&gt;这才是真正的富有：它随你身后，它伴你左右，它给你前行的力量和一束光亮。&lt;/p&gt;
-
-&lt;p&gt;Love can travel a thousand miles. Life has no limit. Go where you want to go. Reach the height you want to reach. It is all in your heart and in your hands.&lt;/p&gt;
-
-&lt;p&gt;爱能跨越千山万水，生命无止境。放飞身心，无限攀登。这一切就在你心里就在你手中。&lt;/p&gt;
-
-&lt;p&gt;What is the most expensive bed in the world?&lt;/p&gt;
-
-&lt;p&gt;这世界上最昂贵的床榻是什么？&lt;/p&gt;
-
-&lt;p&gt;Sick bed …&lt;/p&gt;
-
-&lt;p&gt;是病榻……&lt;/p&gt;
-
-&lt;p&gt;You can employ someone to drive the car for you, make money for you but you cannot have someone to bear the sickness for you.&lt;/p&gt;
-
-&lt;p&gt;你可以请司机为你开车，请人为你赚钱，但是你请不到人为你分担病痛。&lt;/p&gt;
-
-&lt;p&gt;Material things lost can be found. But there is one thing that can never be found when it is lost — Life.&lt;/p&gt;
-
-&lt;p&gt;荣华富贵失去可以复还来，但有一样东西一旦失去将永不复归：那就是生命。&lt;/p&gt;
-
-&lt;p&gt;When a person goes into the operating room, he will realize that there is one book that he has yet to finish reading — Book of Healthy Life.&lt;/p&gt;
-
-&lt;p&gt;当人进到手术室时，他才会发现有一本书自己还没卒读，书名叫“健康生活之书”。&lt;/p&gt;
-
-&lt;p&gt;Whichever stage in life we are at right now, with time, we will face the day when the curtain comes down.&lt;/p&gt;
-
-&lt;p&gt;无论我们现在处于生活的哪个阶段，我们终有帷幕落下的那一天。&lt;/p&gt;
-
-&lt;p&gt;Treasure Love for your family, love for your spouse, love for your friends.&lt;/p&gt;
-
-&lt;p&gt;珍惜珍爱你的家庭，珍爱你的配偶，珍爱你的朋友。&lt;/p&gt;
-
-&lt;p&gt;Treat yourself well. Cherish others.&lt;/p&gt;
-
-&lt;p&gt;珍惜自己，珍惜他人。&lt;/p&gt;
-
-&lt;p&gt;进而，生活有四个真理：&lt;/p&gt;
-
-&lt;p&gt;1）不要教育孩子发财，而是教育他们快乐。当他们长大时，他们会知道事物的价值，而不仅仅是价格。&lt;/p&gt;
-
-&lt;p&gt;2）以食物为药，否则，你必须以药物为食。&lt;/p&gt;
-
-&lt;p&gt;3）爱你的人永远不会抛弃你，即使有100个理由放弃，她也会找到坚持的理由。&lt;/p&gt;
-
-&lt;p&gt;4）很少人知道，他出生时就被爱，死时也被爱着。在这两者之间，您必须对爱进行管理。&lt;/p&gt;
-
-&lt;p&gt;如果你只想走得快点，可以一个人走！但是，如果你想走得远一点，那就和朋友一起走吧！&lt;/p&gt;
-
-&lt;p&gt;世界上最好得医生：&lt;/p&gt;
-
-&lt;p&gt;1）阳光&lt;/p&gt;
-
-&lt;p&gt;2）休息&lt;/p&gt;
-
-&lt;p&gt;3）锻炼&lt;/p&gt;
-
-&lt;p&gt;4）健康饮食&lt;/p&gt;
-
-&lt;p&gt;5）信心与爱心&lt;/p&gt;
-
-&lt;p&gt;6）朋友&lt;/p&gt;
-
-&lt;p&gt;上面的道理来自一位海外的朋友，在最后的岁月，让我们共勉！&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://mrxn.net/other/466.html&quot; target=&quot;_blank&quot;&gt;乔布斯弥留之际关于生命意义的最后遗言&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="生命意义" /><summary type="html">I reached the pinnacle of success in the business world. In others’ eyes, my life is an epitome of success.1 我在商界的成功抵达顶峰，在别人的眼中，我是他们的榜样。 However, aside from work, I have little joy. In the end, wealth is only a fact of life that I am accustomed to. 但是除工作外，我并不觉得幸福，财富只是一个我习惯了的生活方式。 At this moment, lying on the sick bed and recalling my whole life, I realize that all the recognition and wealth that I took so much pride in, have paled and become meaningless in the face of impending death. 此时此刻躺在病床上回顾我的一生，我知道我曾引为自豪的公众认可的财富和面临即将到来的死亡时显得得苍白和毫无意义。 In the darkness, I look at the green lights from the life supporting machines and hear the humming mechanical sounds, I can feel the breath of god of death drawing closer … 此时此刻在黑暗中，我双眼看着维持生命的仪器发出的绿光的时候，两耳听见这些仪器发出的蜂鸣声的时候，我切身感受到了死亡之神一步步走进时发出的呼吸声音…… Now I know, when we have accumulated sufficient wealth to last our lifetime, we should pursue other matters that are unrelated to wealth … 现在我明白了，在我们积累了足够的物质财富可以让我们享受一生的时候，我们还应该追求其它无关财富的东西…… Should be something that is more important: 一些比财富更重要的东西： Perhaps relationships, perhaps art, perhaps a dream from younger days 可以是亲情关系的东西，可以是艺术的东西，可以是你少年时的梦。 Non-stop pursuing of wealth will only turn a person into a twisted being, just like me. 无休止地物质财富只会把一个人变成一具扭曲的生命，就好比现在的我。 God gave us the senses to let us feel the love in everyone’s heart, not the illusions brought about by wealth. 上帝给了我们知觉，让我们可以感受每个人内心的那份爱，不是感受财富带来的幻觉。 The wealth I have won in my life I cannot bring with me. What I can bring is only the memories precipitated by love. 我一生换来的荣华富贵我是无法带走的。我唯一能带走的，就是爱沉淀下来的美好回忆。 That’s the true riches which will follow you, accompany you, giving you strength and light to go on. 这才是真正的富有：它随你身后，它伴你左右，它给你前行的力量和一束光亮。 Love can travel a thousand miles. Life has no limit. Go where you want to go. Reach the height you want to reach. It is all in your heart and in your hands. 爱能跨越千山万水，生命无止境。放飞身心，无限攀登。这一切就在你心里就在你手中。 What is the most expensive bed in the world? 这世界上最昂贵的床榻是什么？ Sick bed … 是病榻…… You can employ someone to drive the car for you, make money for you but you cannot have someone to bear the sickness for you. 你可以请司机为你开车，请人为你赚钱，但是你请不到人为你分担病痛。 Material things lost can be found. But there is one thing that can never be found when it is lost — Life. 荣华富贵失去可以复还来，但有一样东西一旦失去将永不复归：那就是生命。 When a person goes into the operating room, he will realize that there is one book that he has yet to finish reading — Book of Healthy Life. 当人进到手术室时，他才会发现有一本书自己还没卒读，书名叫“健康生活之书”。 Whichever stage in life we are at right now, with time, we will face the day when the curtain comes down. 无论我们现在处于生活的哪个阶段，我们终有帷幕落下的那一天。 Treasure Love for your family, love for your spouse, love for your friends. 珍惜珍爱你的家庭，珍爱你的配偶，珍爱你的朋友。 Treat yourself well. Cherish others. 珍惜自己，珍惜他人。 进而，生活有四个真理： 1）不要教育孩子发财，而是教育他们快乐。当他们长大时，他们会知道事物的价值，而不仅仅是价格。 2）以食物为药，否则，你必须以药物为食。 3）爱你的人永远不会抛弃你，即使有100个理由放弃，她也会找到坚持的理由。 4）很少人知道，他出生时就被爱，死时也被爱着。在这两者之间，您必须对爱进行管理。 如果你只想走得快点，可以一个人走！但是，如果你想走得远一点，那就和朋友一起走吧！ 世界上最好得医生： 1）阳光 2）休息 3）锻炼 4）健康饮食 5）信心与爱心 6）朋友 上面的道理来自一位海外的朋友，在最后的岁月，让我们共勉！ 乔布斯弥留之际关于生命意义的最后遗言 &amp;#8617;</summary></entry><entry><title type="html">从零搭建创业公司后台技术栈</title><link href="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/" rel="alternate" type="text/html" title="从零搭建创业公司后台技术栈" /><published>2021-09-22T00:00:00+08:00</published><updated>2021-09-22T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/22/build-technology-stack-from-scratch</id><content type="html" xml:base="https://empvalley.com/2021/09/22/build-technology-stack-from-scratch/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-前言&quot; id=&quot;markdown-toc-heading-前言&quot;&gt;前言&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-各系统组件选型&quot; id=&quot;markdown-toc-heading-各系统组件选型&quot;&gt;各系统组件选型&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-1项目管理bug管理问题管理&quot; id=&quot;markdown-toc-heading-1项目管理bug管理问题管理&quot;&gt;1、项目管理/Bug管理/问题管理&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-2dns&quot; id=&quot;markdown-toc-heading-2dns&quot;&gt;2、DNS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-3lb负载均衡&quot; id=&quot;markdown-toc-heading-3lb负载均衡&quot;&gt;3、LB（负载均衡）&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-4cdn&quot; id=&quot;markdown-toc-heading-4cdn&quot;&gt;4、CDN&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-5rpc-框架&quot; id=&quot;markdown-toc-heading-5rpc-框架&quot;&gt;5、RPC 框架&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-6名字发现服务发现&quot; id=&quot;markdown-toc-heading-6名字发现服务发现&quot;&gt;6、名字发现/服务发现&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-7关系数据库&quot; id=&quot;markdown-toc-heading-7关系数据库&quot;&gt;7、关系数据库&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-8nosql&quot; id=&quot;markdown-toc-heading-8nosql&quot;&gt;8、NoSQL&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-9消息中间件&quot; id=&quot;markdown-toc-heading-9消息中间件&quot;&gt;9、消息中间件&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-10代码管理&quot; id=&quot;markdown-toc-heading-10代码管理&quot;&gt;10、代码管理&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-11持续集成&quot; id=&quot;markdown-toc-heading-11持续集成&quot;&gt;11、持续集成&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-12日志系统&quot; id=&quot;markdown-toc-heading-12日志系统&quot;&gt;12、日志系统&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-13监控系统&quot; id=&quot;markdown-toc-heading-13监控系统&quot;&gt;13、监控系统&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-14配置系统&quot; id=&quot;markdown-toc-heading-14配置系统&quot;&gt;14、配置系统&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-15发布系统部署系统&quot; id=&quot;markdown-toc-heading-15发布系统部署系统&quot;&gt;15、发布系统/部署系统&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-16跳板机&quot; id=&quot;markdown-toc-heading-16跳板机&quot;&gt;16、跳板机&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-17机器管理&quot; id=&quot;markdown-toc-heading-17机器管理&quot;&gt;17、机器管理&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-创业公司的选择&quot; id=&quot;markdown-toc-heading-创业公司的选择&quot;&gt;创业公司的选择&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-1选择合适的语言&quot; id=&quot;markdown-toc-heading-1选择合适的语言&quot;&gt;1、选择合适的语言&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-2选择合适的组件和云服务商&quot; id=&quot;markdown-toc-heading-2选择合适的组件和云服务商&quot;&gt;2、选择合适的组件和云服务商&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-3制定流程和规范&quot; id=&quot;markdown-toc-heading-3制定流程和规范&quot;&gt;3、制定流程和规范&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-4自研和选型合适的辅助系统&quot; id=&quot;markdown-toc-heading-4自研和选型合适的辅助系统&quot;&gt;4、自研和选型合适的辅助系统&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-5选择过程中需要思考的问题&quot; id=&quot;markdown-toc-heading-5选择过程中需要思考的问题&quot;&gt;5、选择过程中需要思考的问题&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-基于云的创业公司后台技术架构&quot; id=&quot;markdown-toc-heading-基于云的创业公司后台技术架构&quot;&gt;基于云的创业公司后台技术架构&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;heading-前言&quot;&gt;前言&lt;/h2&gt;
-
-&lt;p&gt;说到后台技术栈，脑海中是不是浮现的是这样一幅图？ &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_1.png&quot; alt=&quot;图 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;有点眼晕，以下只是我们会用到的一些语言的合集，而且只是语言层面的一部分，就整个后台技术栈来说，这只是一个开始，从语言开始，还有很多很多的内容。今天要说的后台是大后台的概念，放在服务器上的东西都属于后台的东西，比如使用的框架，语言，数据库，服务，操作系统等等。&lt;/p&gt;
-
-&lt;p&gt;整个后台技术栈我的理解包括 4 个层面的内容：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;语言：用了哪些开发语言，如：C++/Java/Go/PHP/Python/Ruby 等等；&lt;/li&gt;
-  &lt;li&gt;组件：用了哪些组件，如：MQ 组件，数据库组件等等；&lt;/li&gt;
-  &lt;li&gt;流程：怎样的流程和规范，如：开发流程，项目流程，发布流程，监控告警流程，代码规范等等；&lt;/li&gt;
-  &lt;li&gt;系统：系统化建设，上面的流程需要有系统来保证，如：规范发布流程的发布系统，代码管理系统等等；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;结合以上的的 4 个层面的内容，整个后台技术栈的结构如图 2 所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_2.png&quot; alt=&quot;图2 后台技术栈结构&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;以上的这些内容都需要我们从零开始搭建，在创业公司，没有大公司那些完善的基础设施，需要我们从开源界，从云服务商甚至有些需要自己去组合，去拼装，去开发一个适合自己的组件或系统以达成我们的目标。咱们一个个系统和组件的做选型，最终形成我们的后台技术栈。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-各系统组件选型&quot;&gt;各系统组件选型&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-1项目管理bug管理问题管理&quot;&gt;1、项目管理/Bug管理/问题管理&lt;/h3&gt;
-
-&lt;p&gt;项目管理软件是整个业务的需求，问题，流程等等的集中地，大家的跨部门沟通协同大多依赖于项目管理工具。有一些 SaaS 的项目管理服务可以使用，但是很多时间不满足需求，此时我们可以选择一些开源的项目，这些项目本身有一定的定制能力，有丰富的插件可以使用，一般的创业公司需求基本上都能得到满足，常用的项目如下：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redmine：用 Ruby 开发的，有较多的插件可以使用，能自定义字段，集成了项目管理，Bug 问题跟踪，WIKI 等功能，不过好多插件 N 年没有更新了；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Phabricator：用 PHP 开发的，Facebook 之前的内部工具，开发这工具的哥们离职后自己搞了一个公司专门做这个软件，集成了代码托管， Code Review，任务管理，文档管理，问题跟踪等功能，强烈推荐较敏捷的团队使用；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Jira：用 Java 开发的，有用户故事，task 拆分，燃尽图等等，可以做项目管理，也可以应用于跨部门沟通场景，较强大；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;悟空 CRM ：这个不是项目管理，这个是客户管理，之所以在这里提出来，是因为在 To B 的创业公司里面，往往是以客户为核心来做事情的，可以将项目管理和问题跟进的在悟空 CRM 上面来做，他的开源版本已经基本实现了 CR&amp;lt; 的核心 功能，还带有一个任务管理功能，用于问题跟进，不过用这个的话，还是需要另一个项目管理的软件协助，顺便说一嘴，这个系统的代码写得很难维护，只能适用于客户规模小（1万以内）时。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-2dns&quot;&gt;2、DNS&lt;/h3&gt;
-
-&lt;p&gt;DNS 是一个很通用的服务，创业公司基本上选择一个合适的云厂商就行了，国内主要是两家：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;阿里万网：阿里 2014 年收购了万网，整合了其域名服务，最终形成了现在的阿里万网，其中就包含 DNS 这块的服务；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;腾讯 DNSPod：腾讯 2012 年以 4000 万收购 DNSPod 100% 股份，主要提供域名解析和一些防护功能；&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;如果你的业务是在国内，主要就是这两家，选 一个就好，像今日头条这样的企业用的也是 DNSPod 的服务，除非一些特殊的原因才需要自建，比如一些 CDN 厂商，或者对区域有特殊限制的。要实惠一点用阿里最便宜的基础版就好了，要成功率高一些，还是用 DNSPod 的贵的那种。&lt;/p&gt;
-
-&lt;p&gt;在国外还是选择亚马逊吧，阿里的 DNS 服务只有在日本和美国有节点，东南亚最近才开始部点， DNSPod 也只有美国和日本，像一些出海的企业，其选择的云服务基本都是亚马逊。&lt;/p&gt;
-
-&lt;p&gt;如果是线上产品，DNS 强烈建议用付费版，阿里的那几十块钱的付费版基本可以满足需求。如果还需要一些按省份或按区域调试的逻辑，则需要加钱，一年也就几百块，省钱省力。&lt;/p&gt;
-
-&lt;p&gt;如果是国外，优先选择亚马逊，如果需要国内外互通并且有自己的 APP 的话，建议还是自己实现一些容灾逻辑或者智能调度，因为没有一个现成的 DNS 服务能同时较好的满足国内外场景，或者用多个域名，不同的域名走不同的 DNS 。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-3lb负载均衡&quot;&gt;3、LB（负载均衡）&lt;/h3&gt;
-
-&lt;p&gt;LB（负载均衡）是一个通用服务，一般云厂商的 LB 服务基本都会如下功能：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;支持四层协议请求（包括 TCP、UDP 协议）；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;支持七层协议请求（包括 HTTP、HTTPS 协议）；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;集中化的证书管理系统支持 HTTPS 协议；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;健康检查；&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;如果你线上的服务机器都是用的云服务，并且是在同一个云服务商的话，可以直接使用云服务商提供的 LB 服务，如阿里云的 SLB，腾讯云的 CLB，亚马逊的 ELB 等等。如果是自建机房基本都是 LVS + Nginx。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-4cdn&quot;&gt;4、CDN&lt;/h3&gt;
-
-&lt;p&gt;CDN 现在已经是一个很红很红的市场，基本上只能挣一些辛苦钱，都是贴着成本在卖。国内以网宿为龙头，他们家占据整个国内市场份额的 40% 以上，后面就是腾讯，阿里。网宿有很大一部分是因为直播的兴起而崛起。&lt;/p&gt;
-
-&lt;p&gt;国外，Amazon 和 Akamai 合起来占比大概在 50%，曾经的国际市场老大 Akamai 拥有全球超一半的份额，在 Amazon CDN入局后，份额跌去了将近 20%，众多中小企业都转向后者，Akamai 也是无能为力。&lt;/p&gt;
-
-&lt;p&gt;国内出海的 CDN 厂商，更多的是为国内的出海企业服务，三家大一点的 CDN 服务商里面也就网宿的节点多一些，但是也多不了多少。阿里和腾讯还处于前期阶段，仅少部分国家有节点。&lt;/p&gt;
-
-&lt;p&gt;就创业公司来说，CDN 用腾讯云或阿里云即可，其相关系统较完善，能轻松接入，网宿在系统支持层面相对较弱一些，而且还贵一些。并且，当流量上来后，CDN 不能只用一家，需要用多家，不同的 CDN 在全国的节点覆盖不一样，而且针对不同的客户云厂商内部有些区分客户集群，并不是全节点覆盖（但有些云厂商说自己是全网节点），除了节点覆盖的问题，多 CDN 也在一定程度上起到容灾的作用。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-5rpc-框架&quot;&gt;5、RPC 框架&lt;/h3&gt;
-
-&lt;p&gt;维基百科对 RPC 的定义是：远程过程调用（Remote Procedure Call，RPC）是一个计算机通信协议。该协议允许运行于一台计算机的程序调用另一台计算机的子程序，而程序员无需额外地为这个交互作用编程。&lt;/p&gt;
-
-&lt;p&gt;通俗来讲，一个完整的 RPC 调用过程，就是 Server 端实现了一个函数，客户端使用 RPC 框架提供的接口，调用这个函数的实现，并获取返回值的过程。&lt;/p&gt;
-
-&lt;p&gt;业界 RPC 框架大致分为两大流派，一种侧重跨语言调用，另一种是偏重服务治理。&lt;/p&gt;
-
-&lt;p&gt;跨语言调用型的 RPC 框架有 Thrift、gRPC、Hessian、Hprose 等。这类 RPC 框架侧重于服务的跨语言调用，能够支持大部分的语言进行语言无关的调用，非常适合多语言调用场景。但这类框架没有服务发现相关机制，实际使用时需要代理层进行请求转发和负载均衡策略控制。&lt;/p&gt;
-
-&lt;p&gt;其中，gRPC 是 Google 开发的高性能、通用的开源 RPC 框架，其由 Google 主要面向移动应用开发并基于 HTTP/2 协议标准而设计，基于 ProtoBuf（Protocol Buffers）序列化协议开发，且支持众多开发语言。本身它不是分布式的，所以要实现框架的功能需要进一步的开发。&lt;/p&gt;
-
-&lt;p&gt;Hprose（High Performance Remote Object Service Engine）是一个 MIT 开源许可的新型轻量级跨语言跨平台的面向对象的高性能远程动态通讯中间件。&lt;/p&gt;
-
-&lt;p&gt;服务治理型的 RPC 框架的特点是功能丰富，提供高性能的远程调用、服务发现及服务治理能力，适用于大型服务的服务解耦及服务治理，对于特定语言(Java)的项目可以实现透明化接入。缺点是语言耦合度较高，跨语言支持难度较大。国内常见的冶理型 RPC 框架如下：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Dubbo：Dubbo 是阿里巴巴公司开源的一个 Java 高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring 框架无缝集成。当年在淘宝内部，Dubbo 由于跟淘宝另一个类似的框架 HSF 有竞争关系，导致 Dubbo 团队解散，最近又活过来了，有专职同学投入。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;DubboX：DubboX 是由当当在基于 Dubbo 框架扩展的一个 RPC 框架，支持 REST 风格的远程调用、Kryo/FST 序列化，增加了一些新的feature。Motan：Motan 是新浪微博开源的一个 Java 框架。它诞生的比较晚，起于 2013 年，2016 年 5 月开源。Motan 在微博平台中已经广泛应用，每天为数百个服务完成近千亿次的调用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;rpcx：rpcx 是一个类似阿里巴巴 Dubbo 和微博 Motan 的分布式的 RPC 服务框架，基于 Golang net/rpc 实现。但是 rpcx 基本只有一个人在维护，没有完善的社区，使用前要慎重，之前做 Golang 的 RPC 选型时也有考虑这个，最终还是放弃了，选择了 gRPC，如果想自己自研一个 RPC 框架，可以参考学习一下。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-6名字发现服务发现&quot;&gt;6、名字发现/服务发现&lt;/h3&gt;
-
-&lt;p&gt;名字发现和服务发现分为两种模式，一个是客户端发现模式，一种是服务端发现模式。&lt;/p&gt;
-
-&lt;p&gt;框架中常用的服务发现是客户端发现模式。&lt;/p&gt;
-
-&lt;p&gt;所谓服务端发现模式是指客户端通过一个负载均衡器向服务发送请求，负载均衡器查询服务注册表并把请求路由到一台可用的服务实例上。现在常用的负载均衡器都是此类模式，常用于微服务中。&lt;/p&gt;
-
-&lt;p&gt;所有的名字发现和服务发现都要依赖于一个可用性非常高的服务注册表，业界常用的服务注册表有如下三个：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;etcd，一个高可用、分布式、一致性、key-value 方式的存储，被用在分享配置和服务发现中。两个著名的项目使用了它：Kubernetes 和 Cloud Foundry。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Consul，一个发现和配置服务的工具，为客户端注册和发现服务提供了API，Consul还可以通过执行健康检查决定服务的可用性。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apache ZooKeeper，是一个广泛使用、高性能的针对分布式应用的协调服务。Apache ZooKeeper 本来是 Hadoop 的子工程，现在已经是顶级工程了。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;除此之外也可以自己实现服务实现，或者用 Redis 也行，只是需要自己实现高可用性。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-7关系数据库&quot;&gt;7、关系数据库&lt;/h3&gt;
-
-&lt;p&gt;关系数据库分为两种，一种是传统关系数据，如 Oracle，MySQL，Maria，DB2，PostgreSQL 等等，另一种是 NewSQL，即至少要满足以下五点的新型关系数据库：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;完整地支持 SQL，支持 JOIN / GROUP BY /子查询等复杂 SQL 查询。&lt;/li&gt;
-  &lt;li&gt;支持传统数据标配的 ACID 事务，支持强隔离级别。&lt;/li&gt;
-  &lt;li&gt;具有弹性伸缩的能力，扩容缩容对于业务层完全透明。&lt;/li&gt;
-  &lt;li&gt;真正的高可用，异地多活、故障恢复的过程不需要人为的接入，系统能够自动地容灾和进行强一致的数据恢复。&lt;/li&gt;
-  &lt;li&gt;具备一定的大数据分析能力。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;传统关系数据库用得最多的是 MySQL，成熟，稳定，一些基本的需求都能满足，在一定数据量级之前基本单机传统数据库都可以搞定，而且现在较多的开源系统都是基于 MySQL，开箱即用，再加上主从同步和前端缓存，百万 pv 的应用都可以搞定了。不过 CentOS 7 已经放弃了 MySQL，而改使用 MariaDB。MariaDB 数据库管理系统是 MySQ L的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。&lt;/p&gt;
-
-&lt;p&gt;在 Google 发布了 F1: A Distributed SQL Database That Scales 和 Spanner: Google’s Globally-Distributed Databasa 之后，业界开始流行起 NewSQL。于是有了 CockroachDB，于是有了奇叔公司的 TiDB。国内已经有比较多的公司使用 TiDB，之前在创业公司时在大数据分析时已经开始应用 TiDB，当时应用的主要原因是 MySQL 要使用分库分表，逻辑开发比较复杂，扩展性不够。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-8nosql&quot;&gt;8、NoSQL&lt;/h3&gt;
-
-&lt;p&gt;NoSQL 顾名思义就是 Not-Only SQL，也有人说是 No – SQL，个人偏向于 Not-Only SQL，它并不是用来替代关系库，而是作为关系型数据库的补充而存在。&lt;/p&gt;
-
-&lt;p&gt;常见 NoSQL 有4个类型：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;键值，适用于内容缓存，适合混合工作负载并发高扩展要求大的数据集，其优点是简单，查询速度快，缺点是缺少结构化数据，常见的有 Redis，Memcache，BerkeleyDB 和 Voldemort 等等；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;列式，以列簇式存储，将同一列数据存在一起，常见于分布式的文件系统，其中以 Hbase，Cassandra 为代表。Cassandra 多用于写多读少的场景，国内用得比较多的有 360，大概 1500 台机器的集群，国外大规模使用的公司比较多，如 eBay，Instagram，Apple 和沃尔玛等等；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;文档，数据存储方案非常适用承载大量不相关且结构差别很大的复杂信息。性能介于 kv 和关系数据库之间，它的灵感来于 lotus notes，常见的有 MongoDB，CouchDB 等等；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;图形，图形数据库擅长处理任何涉及关系的状况。社交网络，推荐系统等。专注于构建关系图谱，需要对整个图做计算才能得出结果，不容易做分布式的集群方案，常见的有 Neo4J，InfoGrid 等。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;除了以上4种类型，还有一些特种的数据库，如对象数据库，XML 数据库，这些都有针对性对某些存储类型做了优化的数据库。&lt;/p&gt;
-
-&lt;p&gt;在实际应用场景中，何时使用关系数据库，何时使用 NoSQL，使用哪种类型的数据库，这是我们在做架构选型时一个非常重要的考量，甚至会影响整个架构的方案。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-9消息中间件&quot;&gt;9、消息中间件&lt;/h3&gt;
-
-&lt;p&gt;消息中间件在后台系统中是必不可少的一个组件，一般我们会在以下场景中使用消息中间件：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;异步处理：异步处理是使用消息中间件的一个主要原因，在工作中最常见的异步场景有用户注册成功后需要发送注册成功邮件、缓存过期时先返回老的数据，然后异步更新缓存、异步写日志等等；通过异步处理，可以减少主流程的等待响应时间，让非主流程或者非重要业务通过消息中间件做集中的异步处理。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;系统解耦：比如在电商系统中，当用户成功支付完成订单后，需要将支付结果给通知ERP系统、发票系统、WMS、推荐系统、搜索系统、风控系统等进行业务处理；这些业务处理不需要实时处理、不需要强一致，只需要最终一致性即可，因此可以通过消息中间件进行系统解耦。通过这种系统解耦还可以应对未来不明确的系统需求。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;削峰填谷：当系统遇到大流量时，监控图上会看到一个一个的山峰样的流量图，通过使用消息中间件将大流量的请求放入队列，通过消费者程序将队列中的处理请求慢慢消化，达到消峰填谷的效果。最典型的场景是秒杀系统，在电商的秒杀系统中下单服务往往会是系统的瓶颈，因为下单需要对库存等做数据库操作，需要保证强一致性，此时使用消息中间件进行下单排队和流控，让下单服务慢慢把队列中的单处理完，保护下单服务，以达到削峰填谷的作用。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;业界消息中间件是一个非常通用的东西，大家在做选型时有使用开源的，也有自己造轮子的，甚至有直接用 MySQL 或 Redis 做队列的，关键看是否满足你的需求，如果是使用开源的项目，以下的表格在选型时可以参考：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_3.png&quot; alt=&quot;图 3&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-10代码管理&quot;&gt;10、代码管理&lt;/h3&gt;
-
-&lt;p&gt;代码是互联网创业公司的命脉之一，代码管理很重要，常见的考量点包括两块：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;安全和权限管理，将代码放到内网并且对于关系公司命脉的核心代码做严格的代码控制和机器的物理隔离；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;代码管理工具，Git 作为代码管理的不二之选，你值得拥有。GitLab 是当今最火的开源 Git 托管服务端，没有之一，虽然有企业版，但是其社区版基本能满足我们大部分需求，结合 Gerrit 做 Code review，基本就完美了。当然 GitLab 也有代码对比，但没 Gerrit 直观。Gerrit 比 GitLab 提供了更好的代码检查界面与主线管理体验，更适合在对代码质量有高要求的文化下使用。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-11持续集成&quot;&gt;11、持续集成&lt;/h3&gt;
-
-&lt;p&gt;持续集成简，称 CI（continuous integration），是一种软件开发实践，即团队开发成员经常集成他们的工作，每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。持续集成为研发流程提供了代码分支管理/比对、编译、检查、发布物输出等基础工作，为测试的覆盖率版本编译、生成等提供统一支持。&lt;/p&gt;
-
-&lt;p&gt;业界免费的持续集成工具中系统我们有如下一些选择：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Jenkins：Java 写的有强大的插件机制，MIT 协议开源 （免费，定制化程度高，它可以在多台机器上进行分布式地构建和负载测试）。Jenkins 可以算是无所不能，基本没有 Jenkins 做不了的，无论从小型团队到大型团队 Jenkins 都可以搞定。不过如果要大规模使用，还是需要有人力来学习和维护。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;TeamCity：TeamCity 与 Jenkins 相比使用更加友好，也是一个高度可定制化的平台。但是用的人多了，TeamCity就要收费了。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Strider：Strider 是一个开源的持续集成和部署平台，使用 Node.js 实现，存储使用的是 MongoDB，BSD 许可证，概念上类似 Travis 和Jenkins。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;GitLab CI：从GitLab 8.0开始，GitLab CI 就已经集成在 GitLab，我们只要在项目中添加一个 .gitlab-ci.yml 文件，然后添加一个 Runner，即可进行持续集成。并且 GitLab 与 Docker 有着非常好的相互协作的能力。免费版与付费版本不同可以参见这里：https://about.gitlab.com/products/feature-comparison/。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Travis：Travis 和 GitHub 强关联；闭源代码使用 SaaS 还需考虑安全问题；不可定制；开源项目免费，其它收费。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go：Go 是 ThoughtWorks 公司最新的 Cruise Control 的化身。除了 ThoughtWorks 提供的商业支持，Go 是免费的。它适用于 Windows，Mac 和各种 Linux 发行版。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-12日志系统&quot;&gt;12、日志系统&lt;/h3&gt;
-
-&lt;p&gt;日志系统一般包括打日志，采集，中转，收集，存储，分析，呈现，搜索还有分发等。一些特殊的如染色，全链条跟踪或者监控都可能需要依赖于日志系统实现。日志系统的建设不仅仅是工具的建设，还有规范和组件的建设，最好一些基本的日志在框架和组件层面加就行了，比如全链接跟踪之类的。&lt;/p&gt;
-
-&lt;p&gt;对于常规日志系统ELK能满足大部分的需求，ELK 包括如下组件：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;ElasticSearch 是个开源分布式搜索引擎，它的特点有：分布式，零配置，自动发现，索引自动分片，索引副本机制，RESTful 风格接口，多数据源，自动搜索负载等。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Logstash 是一个完全开源的工具，它可以对你的日志进行收集、分析，并将其存储供以后使用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Kibana 是一个开源和免费的工具，它可以为 Logstash 和 ElasticSearch 提供的日志分析友好的 Web 界面，可以帮助汇总、分析和搜索重要数据日志。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Filebeat 已经完全替代了 Logstash-Forwarder 成为新一代的日志采集器，同时鉴于它轻量、安全等特点，越来越多人开始使用它。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;因为免费的 ELK 没有任何安全机制，所以这里使用了 Nginx 作反向代理，避免用户直接访问 Kibana 服务器。加上配置 Nginx 实现简单的用户认证，一定程度上提高安全性。另外，Nginx 本身具有负载均衡的作用，能够提高系统访问性能。ELK 架构如图4所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_4.png&quot; alt=&quot;图 4，ELK 流程图&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;对于有实时计算的需求，可以使用 Flume + Kafka + Storm + MySQL 方案，一 般架构如图 5 所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_5.png&quot; alt=&quot;图 5，实时分析系统架构图&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;其中：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Flume 是一个分布式、可靠、和高可用的海量日志采集、聚合和传输的日志收集系统，支持在日志系统中定制各类数据发送方，用于收集数据；同时，Flume 提供对数据进行简单处理，并写到各种数据接受方（可定制）的能力。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Kafka 是由 Apache 软件基金会开发的一个开源流处理平台，由 Scala 和 Java 编写。其本质上是一个“按照分布式事务日志架构的大规模发布/订阅消息队列”，它以可水平扩展和高吞吐率而被广泛使用。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Kafka 追求的是高吞吐量、高负载，Flume 追求的是数据的多样性，二者结合起来简直完美。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-13监控系统&quot;&gt;13、监控系统&lt;/h3&gt;
-
-&lt;p&gt;监控系统只包含与后台相关的，这里主要是两块，一个是操作系统层的监控，比如机器负载，IO，网络流量，CPU，内存等操作系统指标的监控。另一个是服务质量和业务质量的监控，比如服务的可用性，成功率，失败率，容量，QPS 等等。常见业务的监控系统先有操作系统层面的监控（这部分较成熟），然后扩展出其它监控，如 Zabbix，小米的 Open-Falcon，也有一出来就是两者都支持的，如 Prometheus。如果对业务监控要求比较高一些，在创业选型中建议可以优先考虑 Prometheus。这里有一个有趣的分布，如图6所示。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_6.png&quot; alt=&quot;图 6，监控系统分布&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;亚洲区域使用 Zabbix 较多，而美洲和欧洲，以及澳大利亚使用 Prometheus 居多，换句话说，英文国家地区（发达国家？）使用 Prometheus 较多。&lt;/p&gt;
-
-&lt;p&gt;Prometheus 是由 SoundCloud 开发的开源监控报警系统和时序列数据库（TSDB）。Prometheus 使用 Go 语言开发，是 Google BorgMon 监控系统的开源版本。相对于其它监控系统使用的 push 数据的方式，Prometheus 使用的是 pull 的方式，其架构如图 7 所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_7.png&quot; alt=&quot;图 7，Prometheus 架构图s&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如上图所示，Prometheus 包含的主要组件如下：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Prometheus Server 主要负责数据采集和存储，提供 PromQL 查询语言的支持。Server 通过配置文件、文本文件、ZooKeeper、Consul、DNS SRV Lookup 等方式指定抓取目标。根据这些目标会，Server 定时去抓取 metrics 数据，每个抓取目标需要暴露一个 http 服务的接口给它定时抓取。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;客户端 SDK：官方提供的客户端类库有 Go、Java、Scala、Python、Ruby，其他还有很多第三方开发的类库，支持 Nodejs、PHP、Erlang 等。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Push Gateway 支持临时性 Job 主动推送指标的中间网关。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Exporter Exporter 是 Prometheus 的一类数据采集组件的总称。它负责从目标处搜集数据，并将其转化为 Prometheus 支持的格式。与传统的数据采集组件不同的是，它并不向中央服务器发送数据，而是等待中央服务器主动前来抓取。Prometheus 提供多种类型的 Exporter 用于采集各种不同服务的运行状态。目前支持的有数据库、硬件、消息中间件、存储系统、HTTP 服务器、JMX 等。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Alertmanager：是一个单独的服务，可以支持 Prometheus 的查询语句，提供十分灵活的报警方式。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Prometheus HTTP API 的查询方式，自定义所需要的输出。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Grafana 是一套开源的分析监视平台，支持 Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch 等数据源，其 UI 非常漂亮且高度定制化。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;创业公司选择 Prometheus + Grafana 的方案，再加上统一的服务框架（如 gRPC），可以满足大部分中小团队的监控需求。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-14配置系统&quot;&gt;14、配置系统&lt;/h3&gt;
-
-&lt;p&gt;随着程序功能的日益复杂，程序的配置日益增多：各种功能的开关、降级开关，灰度开关，参数的配置、服务器的地址、数据库配置等等，除此之外，对后台程序配置的要求也越来越高：配置修改后实时生效，灰度发布，分环境、分用户，分集群管理配置，完善的权限、审核机制等等，在这样的大环境下，传统的通过配置文件、数据库等方式已经越来越无法满足开发人员对配置管理的需求，业界有如下两种方案：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;基于 zk 和 etcd，支持界面和 api ，用数据库来保存版本历史，预案，走审核流程，最后下发到 zk 或 etcd 这种有推送能力的存储里（服务注册本身也是用 zk 或 etcd，选型就一块了）。客户端都直接和 zk 或 etcd 打交道。至于灰度发布，各家不同，有一种实现是同时发布一个需要灰度的 IP 列表，客户端监听到配置节点变化时，对比一下自己是否属于该列表。PHP 这种无状态的语言和其他 zk/etcd 不支持的语言，只好自己在客户端的机器上起一个 Agent 来监听变化，再写到配置文件或共享内存，如 360 的 Qconf。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;基于运维自动化的配置文件的推送，审核流程，配置数据管理和方案一类似，下发时生成配置文件，基于运维自动化工具如 Puppet，Ansible 推送到每个客户端，而应用则定时重新读取这个外部的配置文件，灰度发布在下发配置时指定IP列表。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;创业公司前期不需要这种复杂，直接上 zk，弄一个界面管理 zk 的内容，记录一下所有人的操作日志，程序直连 zk，或者或者用 Qconf 等基于 zk 优化后的方案。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-15发布系统部署系统&quot;&gt;15、发布系统/部署系统&lt;/h3&gt;
-
-&lt;p&gt;从软件生产的层面看，代码到最终服务的典型流程如图 8 所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_8.png&quot; alt=&quot;图 8，流程图&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;从上图中可以看出，从开发人员写下代码到服务最终用户是一个漫长过程，整体可以分成三个阶段：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;从代码（Code）到成品库（Artifact）这个阶段主要对开发人员的代码做持续构建并把构建产生的制品集中管理，是为部署系统准备输入内容的阶段。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从制品到可运行服务 这个阶段主要完成制品部署到指定环境，是部署系统的最基本工作内容。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从开发环境到最终生产环境 这个阶段主要完成一次变更在不同环境的迁移，是部署系统上线最终服务的核心能力。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;发布系统集成了制品管理，发布流程，权限控制，线上环境版本变更，灰度发布，线上服务回滚等几方面的内容，是开发人员工作结晶最终呈现的重要通道。开源的项目中没有完全满足的项目，如果只是 Web 类项目，Walle、Piplin 都是可用的，但是功能不太满足，创业初期可以集成 Jenkins + Gitlab + Walle（可以考虑两天时间完善一下），以上方案基本包括制品管理，发布流程，权限控制，线上环境版本变更，灰度发布（需要自己实现），线上服务回滚等功能。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-16跳板机&quot;&gt;16、跳板机&lt;/h3&gt;
-
-&lt;p&gt;跳板机面对的是需求是要有一种能满足角色管理与授权审批、信息资源访问控制、操作记录和审计、系统变更和维护控制要求，并生成一些统计报表配合管理规范来不断提升IT内控的合规性，能对运维人员操作行为的进行控制和审计，对误操作、违规操作导致的操作事故，快速定位原因和责任人。其功能模块一般包括：帐户管理、认证管理、授权管理、审计管理等等。&lt;/p&gt;
-
-&lt;p&gt;开源项目中，Jumpserver 能够实现跳板机常见需求，如授权、用户管理、服务器基本信息记录等，同时又可批量执行脚本等功能；其中录像回放、命令搜索、实时监控等特点，又能帮助运维人员回溯操作历史，方便查找操作痕迹，便于管理其他人员对服务器的操作控制。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-17机器管理&quot;&gt;17、机器管理&lt;/h3&gt;
-
-&lt;p&gt;机器管理的工具选择的考量可以包含以下三个方面：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;是否简单，是否需要每台机器部署 Agent（客户端）&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;语言的选择（Puppet/Chef vs Ansible/SaltStack ）开源技术，不看官网不足以熟练，不懂源码不足以精通；Puppet、Chef 基于 Ruby 开发，Ansible、SaltStack 基于 Python 开发的&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;速度的选择（Ansible vs SaltStack）Ansible 基于 SSH 协议传输数据，SaltStack 使用消息队列 zeroMQ 传输数据；大规模并发的能力对于几十台-200 台规模的兄弟来讲，Ansible的性能也可接受，如果一次操作上千台，用 salt 好一些。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;如图9所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_9.png&quot; alt=&quot;图 9，机器管理软件对比&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;一般创业公司选择 Ansible 能解决大部问题，其简单，不需要安装额外的客户端，可以从命令行来运行，不需要使用配置文件。至于比较复杂的任务，Ansible 配置通过名为 Playbook 的配置文件中的 YAML 语法来加以处理。Playbook 还可以使用模板来扩展其功能。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-创业公司的选择&quot;&gt;创业公司的选择&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-1选择合适的语言&quot;&gt;1、选择合适的语言&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择团队熟悉的/能掌控的，创业公司人少事多，无太多冗余让研发团队熟悉新的语言，能快速上手，能快速出活，出了问题能快速解决的问题的语言才是好的选择。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择更现代一些的，这里的现代是指语言本身已经完成一些之前需要特殊处理的特性，比如内存管理，线程等等。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择开源轮子多的或者社区活跃度高的，这个原则是为了保证在开发过程中减少投入，有稳定可靠的轮子可以使用，遇到问题可以在网上快速搜索到答案。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择好招人的 一门合适的语言会让创业团队减少招聘的成本，快速招到合适的人。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择能让人有兴趣的 与上面一点相关，让人感兴趣，在后面留人时有用。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-2选择合适的组件和云服务商&quot;&gt;2、选择合适的组件和云服务商&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择靠谱的云服务商；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择云服务商的组件；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择成熟的开源组件，而不是最新出的组件；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;选择采用在一线互联网公司落地并且开源的，且在社区内形成良好口碑的产品；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;开源社区活跃度；&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;选择靠谱的云服务商，其实这是一个伪命题，因为哪个服务商都不靠谱，他们所承诺的那些可用性问题基本上都会在你的身上发生，这里我们还是需要自己做一些工作，比如多服务商备份，如用 CDN，你一定不要只选一家，至少选两家，一个是灾备，保持后台切换的能力，另一个是多点覆盖，不同的服务商在 CDN 节点上的资源是不一样的。&lt;/p&gt;
-
-&lt;p&gt;选择了云服务商以后，就会有很多的产品你可以选择了，比较存储，队列这些都会有现成的产品，这个时候就纠结了，是用呢？还是自己在云主机上搭呢？在这里我的建议是前期先用云服务商的，大了后再自己搞，这样会少掉很多运维的事情，但是这里要多了解一下云服务商的组件特性以及一些坑，比如他们内网会经常断开，他们升级也会闪断，所以在业务侧要做好容错和规避。&lt;/p&gt;
-
-&lt;p&gt;关于开源组件，尽可能选择成熟的，成熟的组件经历了时间的考验，基本不会出大的问题，并且有成套的配套工具，出了问题在网上也可以很快的找到答案，你所遇到的坑基本上都有人踩过了。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-3制定流程和规范&quot;&gt;3、制定流程和规范&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;制定开发的规范，代码及代码分支管理规范，关键性代码仅少数人有权限；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;制定发布流程规范，从发布系统落地；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;制定运维规范；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;制定数据库操作规范，收拢数据库操作权限；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;制定告警处理流程，做到告警有人看有人处理；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;制定汇报机制，晨会/周报；&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-4自研和选型合适的辅助系统&quot;&gt;4、自研和选型合适的辅助系统&lt;/h3&gt;
-
-&lt;p&gt;所有的流程和规范都需要用系统来固化，否则就是空中楼阁，如何选择这些系统呢？参照上个章节咱们那些开源的，对比一下选择的语言，组件之类的，选择一个最合适的即可。&lt;/p&gt;
-
-&lt;p&gt;比如项目管理的，看下自己是什么类型的公司，开发的节奏是怎样的，瀑布，敏捷的 按项目划分，还是按客户划分等等，平时是按项目组织还是按任务组织等等。&lt;/p&gt;
-
-&lt;p&gt;比如日志系统，之前是打的文本，那么上一个 ELK，规范化一些日志组件，基本上很长一段时间内不用考虑日志系统的问题，最多拆分一下或者扩容一下。等到组织大了，自己搞一个日志系统。&lt;/p&gt;
-
-&lt;p&gt;比如代码管理，项目管理系统这些都放内网，安全，在互联网公司来说，属于命脉了，命脉的东西还是放在别人拿不到或很难拿到的地方会比较靠谱一些。&lt;/p&gt;
-
-&lt;h3 id=&quot;heading-5选择过程中需要思考的问题&quot;&gt;5、选择过程中需要思考的问题&lt;/h3&gt;
-
-&lt;p&gt;技术栈的选择有点像做出了某种承诺，在一定的时间内这种承诺没法改变，于是我们需要在选择的时候有一些思考。&lt;/p&gt;
-
-&lt;p&gt;看前面内容，有一个词出现了三次，合适，选择是合适的，不是最好，也不是最新，是最合适，适合是针对当下，这种选择是最合适的吗？比如用 Go 这条线的东西，技术比较新，业界组件储备够吗？组织内的人员储备够吗？学习成本多少？写出来的东西能满足业务性能要求吗？能满足时间要求吗？&lt;/p&gt;
-
-&lt;p&gt;向未来看一眼，在一年到三年内，我们需要做出改变吗？技术栈要做根本性的改变吗？如果组织发展很快，在 200 人，500 人时，现有的技术栈是否需要大动？&lt;/p&gt;
-
-&lt;p&gt;创业过程中需要考虑成本，这里的成本不仅仅是花费多少钱，付出多少工资，有时更重要的是时间成本，很多业务在创业时大家拼的就是时间，就是一个时间窗，过了就没你什么事儿了。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-基于云的创业公司后台技术架构&quot;&gt;基于云的创业公司后台技术架构&lt;/h2&gt;
-
-&lt;p&gt;结合上面内容的考量，在对一个个系统和组件的做选型之后，以云服务为基础，一个创业公司的后台技术架构如图10所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://empvalley.com/assets/images/posts/build_technology_stack_from_scratch_10.png&quot; alt=&quot;图 10，后台技术架构&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/sDzpa0BhkwvXuapPxZ7fug&quot; target=&quot;_blank&quot;&gt;从零搭建创业公司后台技术栈&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="技术栈" /><summary type="html"></summary></entry><entry><title type="html">好听</title><link href="https://empvalley.com/2021/09/20/favorite-music/" rel="alternate" type="text/html" title="好听" /><published>2021-09-20T00:00:00+08:00</published><updated>2021-09-20T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/20/favorite-music</id><content type="html" xml:base="https://empvalley.com/2021/09/20/favorite-music/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-en&quot; id=&quot;markdown-toc-heading-en&quot;&gt;EN&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-cn&quot; id=&quot;markdown-toc-heading-cn&quot;&gt;CN&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-other&quot; id=&quot;markdown-toc-heading-other&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;heading-en&quot;&gt;EN&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Song&lt;/th&gt;
-      &lt;th&gt;Artist&lt;/th&gt;
-      &lt;th&gt;Album&lt;/th&gt;
-      &lt;th&gt;Label&lt;/th&gt;
-      &lt;th&gt;Format&lt;/th&gt;
-      &lt;th&gt;Country&lt;/th&gt;
-      &lt;th&gt;Released&lt;/th&gt;
-      &lt;th&gt;Genre&lt;/th&gt;
-      &lt;th&gt;Style&lt;/th&gt;
-      &lt;th&gt;Link&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;That Place In Your Heart&lt;/td&gt;
-      &lt;td&gt;Leslie Dowdall&lt;/td&gt;
-      &lt;td&gt;That Place In Your Heart&lt;/td&gt;
-      &lt;td&gt;Decca – 012 159 403-2&lt;/td&gt;
-      &lt;td&gt;CD, Album&lt;/td&gt;
-      &lt;td&gt;US&lt;/td&gt;
-      &lt;td&gt;2000&lt;/td&gt;
-      &lt;td&gt;Electronic, Pop&lt;/td&gt;
-      &lt;td&gt;New Age, Modern Classical, Ambient&lt;/td&gt;
-      &lt;td&gt;https://youtu.be/OTgwBWdYvNQ&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Jar Of Love&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Take Me To Your Heart&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;The Day You Went Away&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Chilly Cha Cha&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;U Make Me Wanna&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Here we are again&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;heading-cn&quot;&gt;CN&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Song&lt;/th&gt;
-      &lt;th&gt;Artist&lt;/th&gt;
-      &lt;th&gt;Album&lt;/th&gt;
-      &lt;th&gt;Label&lt;/th&gt;
-      &lt;th&gt;Format&lt;/th&gt;
-      &lt;th&gt;Country&lt;/th&gt;
-      &lt;th&gt;Released&lt;/th&gt;
-      &lt;th&gt;Genre&lt;/th&gt;
-      &lt;th&gt;Style&lt;/th&gt;
-      &lt;th&gt;Link&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;漂洋过海来看你&lt;/td&gt;
-      &lt;td&gt;娃娃（金智娟）&lt;/td&gt;
-      &lt;td&gt;大雨&lt;/td&gt;
-      &lt;td&gt;滚石唱片&lt;/td&gt;
-      &lt;td&gt;录音室专辑&lt;/td&gt;
-      &lt;td&gt;台湾&lt;/td&gt;
-      &lt;td&gt;1991年08月&lt;/td&gt;
-      &lt;td&gt;流行&lt;/td&gt;
-      &lt;td&gt;流行 Mandarin Pop&lt;/td&gt;
-      &lt;td&gt;https://youtu.be/hNQohQBFnwI&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;假如&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;思念的极限&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;胆小鬼&lt;/td&gt;
-      &lt;td&gt;梁咏琪&lt;/td&gt;
-      &lt;td&gt;梁咏琪gigi&lt;/td&gt;
-      &lt;td&gt;EEI唱片&lt;/td&gt;
-      &lt;td&gt;CD, Album&lt;/td&gt;
-      &lt;td&gt;中国大陆&lt;/td&gt;
-      &lt;td&gt;1998年06月&lt;/td&gt;
-      &lt;td&gt;流行&lt;/td&gt;
-      &lt;td&gt;流行&lt;/td&gt;
-      &lt;td&gt;https://youtu.be/8uwmtv9U5GM&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;那么骄傲&lt;/td&gt;
-      &lt;td&gt;金海心&lt;/td&gt;
-      &lt;td&gt;那么骄傲&lt;/td&gt;
-      &lt;td&gt;索尼音乐&lt;/td&gt;
-      &lt;td&gt;CD, Album&lt;/td&gt;
-      &lt;td&gt;中国内地&lt;/td&gt;
-      &lt;td&gt;2000年7月&lt;/td&gt;
-      &lt;td&gt;流行&lt;/td&gt;
-      &lt;td&gt;流行&lt;/td&gt;
-      &lt;td&gt;https://youtu.be/7rAcSynyOog&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;拥抱你离去&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;爱上你我很快乐&lt;/td&gt;
-      &lt;td&gt;水木年华&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;欧若拉&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;谢谢你的爱1999&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;第一号伤心人&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;无赖&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;天上没有乌云盖&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;我说我爱你&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;我要找到你&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;假如&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;水手&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;爱的主打歌&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;最熟悉的陌生人&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;我要找到你&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;枕着你的名字入眠&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;向天再借五百年&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;离别的车站&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;雨季的故事&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;情深深雨濛濛&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;童话&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;一生所爱&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;梅&lt;/td&gt;
-      &lt;td&gt;马宝平&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;女儿情&lt;/td&gt;
-      &lt;td&gt;吴静&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;新鸳鸯蝴蝶梦&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;东南西北风&lt;/td&gt;
-      &lt;td&gt;黄安&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;我是女生&lt;/td&gt;
-      &lt;td&gt;徐怀钰&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;窗外&lt;/td&gt;
-      &lt;td&gt;李琛&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;流浪歌&lt;/td&gt;
-      &lt;td&gt;陈星&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;别哭我最爱的人&lt;/td&gt;
-      &lt;td&gt;郑智化&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;灰色空间&lt;/td&gt;
-      &lt;td&gt;罗志祥&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;别怕我伤心&lt;/td&gt;
-      &lt;td&gt;张信哲&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;过火&lt;/td&gt;
-      &lt;td&gt;张信哲&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;女儿情&lt;/td&gt;
-      &lt;td&gt;吴静&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;站台&lt;/td&gt;
-      &lt;td&gt;刘鸿&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;大头皮鞋&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;众人划浆开大船&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;开门红&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;霸王别姬&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;新霸王别姬&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;爸爸妈妈&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;分飞&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;跟我回家&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;舞女&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;九妹&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;中华民谣&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;heading-other&quot;&gt;Other&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Song&lt;/th&gt;
-      &lt;th&gt;Artist&lt;/th&gt;
-      &lt;th&gt;Album&lt;/th&gt;
-      &lt;th&gt;Label&lt;/th&gt;
-      &lt;th&gt;Format&lt;/th&gt;
-      &lt;th&gt;Country&lt;/th&gt;
-      &lt;th&gt;Released&lt;/th&gt;
-      &lt;th&gt;Genre&lt;/th&gt;
-      &lt;th&gt;Style&lt;/th&gt;
-      &lt;th&gt;Link&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>晨霜</name></author><category term="生活" /><category term="音乐" /><summary type="html"></summary></entry><entry><title type="html">不能访问本地发行的证书异常</title><link href="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/" rel="alternate" type="text/html" title="不能访问本地发行的证书异常" /><published>2021-09-17T00:00:00+08:00</published><updated>2021-09-17T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate</id><content type="html" xml:base="https://empvalley.com/2021/09/17/unable-to-get-local-issuer-certificate/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-error-描述&quot; id=&quot;markdown-toc-heading-error-描述&quot;&gt;Error 描述&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-环境&quot; id=&quot;markdown-toc-heading-环境&quot;&gt;环境&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-error-原因&quot; id=&quot;markdown-toc-heading-error-原因&quot;&gt;Error 原因&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-解决方案&quot; id=&quot;markdown-toc-heading-解决方案&quot;&gt;解决方案&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-error-描述&quot;&gt;Error 描述&lt;/h2&gt;
-
-&lt;p&gt;cURL error 60: SSL certificate problem: unable to get local issuer certificate (see http://curl.haxx.se/libcurl/c/libcurl-errors.html) &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-环境&quot;&gt;环境&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;名称&lt;/th&gt;
-      &lt;th&gt;版本&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;来客PHP在线客服系统&lt;/td&gt;
-      &lt;td&gt;LK_DIY5.0.8&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;PHP&lt;/td&gt;
-      &lt;td&gt;PHP-56&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Web服务器&lt;/td&gt;
-      &lt;td&gt;Apache2.4.48&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;DB&lt;/td&gt;
-      &lt;td&gt;MySQL5.7.26&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;部署环境&lt;/td&gt;
-      &lt;td&gt;Windows Server 2019 Datacenter&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;管理软件&lt;/td&gt;
-      &lt;td&gt;宝塔免费版7.3.0&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;heading-error-原因&quot;&gt;Error 原因&lt;/h2&gt;
-
-&lt;p&gt;操作系统中的 CA 证书列表过期了。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-解决方案&quot;&gt;解决方案&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;下载证书 pem 文件。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改 宝塔目录/php/php版本/php.ini 文件：&lt;/p&gt;
-
-    &lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;curl.cainfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;下载的pem文件路径&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;重新启动 Apache 和 在线客服系统。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;在线客服系统中的 CURLOPT_SSL_VERIFYPEER 参数本身就是关闭的。&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.ibm.com/mysupport/s/question/0D50z00005q4FheCAE/curl-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate?language=en_US&quot; target=&quot;_blank&quot;&gt;curl: (60) SSL 证书问题&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://laracasts.com/discuss/channels/general-discussion/curl-error-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate?page=2&quot; target=&quot;_blank&quot;&gt;curl error 60 ssl证书问题，无法获取本地发行的证书&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://learnku.com/laravel/t/14111/curl-error-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate-see-httpcurlhaxxselibcurlclibcurl-errorshtml&quot; target=&quot;_blank&quot;&gt;cURL error 60: SSL证书问题:无法获取本地发行的证书&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="SSL" /><summary type="html">Error 描述 环境 Error 原因 解决方案 Error 描述 cURL error 60: SSL certificate problem: unable to get local issuer certificate (see http://curl.haxx.se/libcurl/c/libcurl-errors.html) 1 2 3 环境 名称 版本 来客PHP在线客服系统 LK_DIY5.0.8 PHP PHP-56 Web服务器 Apache2.4.48 DB MySQL5.7.26 部署环境 Windows Server 2019 Datacenter 管理软件 宝塔免费版7.3.0 Error 原因 操作系统中的 CA 证书列表过期了。 解决方案 下载证书 pem 文件。 修改 宝塔目录/php/php版本/php.ini 文件： curl.cainfo = &quot;下载的pem文件路径&quot; 重新启动 Apache 和 在线客服系统。 在线客服系统中的 CURLOPT_SSL_VERIFYPEER 参数本身就是关闭的。 curl: (60) SSL 证书问题 &amp;#8617; curl error 60 ssl证书问题，无法获取本地发行的证书 &amp;#8617; cURL error 60: SSL证书问题:无法获取本地发行的证书 &amp;#8617;</summary></entry><entry><title type="html">深入理解设计模式</title><link href="https://empvalley.com/2021/09/11/dive-into-design-patterns/" rel="alternate" type="text/html" title="深入理解设计模式" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/dive-into-design-patterns</id><content type="html" xml:base="https://empvalley.com/2021/09/11/dive-into-design-patterns/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-关于本书&quot; id=&quot;markdown-toc-heading-关于本书&quot;&gt;关于本书&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-关于作者&quot; id=&quot;markdown-toc-heading-关于作者&quot;&gt;关于作者&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-内容结构&quot; id=&quot;markdown-toc-heading-内容结构&quot;&gt;内容结构&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-前置部分&quot; id=&quot;markdown-toc-heading-前置部分&quot;&gt;前置部分&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-正文部分&quot; id=&quot;markdown-toc-heading-正文部分&quot;&gt;正文部分&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#heading-附录&quot; id=&quot;markdown-toc-heading-附录&quot;&gt;附录&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;昨天读完了《深入理解设计模式》（《Dive Into Design Patterns》）这本书，还是有颇多感触的，这本书是由 Alexander Shvets 编写，主要对 22 种设计模式做了一个直观、形象并且足够简单的介绍。这本书的结构非常清晰，主要分为前置部分（介绍设计模式的出现的缘由以及其设计所应当遵循的原则）与正文（将 22 种设计模式分为了三类，并对每一个设计模式做了充分的介绍）两部分，其中正文部分是本书的重点，下面对这本书做一个必要的总结，以期在以后查阅该书时能够快速索引。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-关于本书&quot;&gt;关于本书&lt;/h2&gt;
-
-&lt;p&gt;起初这本书是在浏览这个网站 &lt;a href=&quot;https://sourcemaking.com/&quot;&gt;Source Making&lt;/a&gt; 所注意到的，这个网站是代码洁癖的福音，因为里面这个网站对设计模式、反模式、重构以及 UML 做了一个全面的介绍，致力于让开发者能够写出更加漂亮的代码。因为最近打算深入了解下 TCP 在 Linux 操作系统的实现，但是《TCP Socket In C》的作者建议在读该书前要对设计模式有所了解，虽然本科期间开设了关于设计模式的课程，但无奈当时我太划水，没怎么听，而且正好最近对设计模式也很感兴趣，所以那就一石三鸟，通过读这本书弥补一下本科的遗憾，满足一下我的兴趣、以及了解一下《TCP Socket In C》这本书的前置知识吧！&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-关于作者&quot;&gt;关于作者&lt;/h2&gt;
-
-&lt;p&gt;Alexander Shvets，俄国人，在领英上的信息显示其硕士毕业于莫斯科国立鲍曼技术大学（Bauman Moscow State Technical University），在很多个公司就职过，现在是 ScanToBuy 公司的CTO。&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-内容结构&quot;&gt;内容结构&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-前置部分&quot;&gt;前置部分&lt;/h3&gt;
-
-&lt;p&gt;前置部分包含三章，分别是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;面向对象介绍，其中分为：&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;面向对象基础：一些诸如类、对象、继承等 OOP 基础知识，乏善可陈；&lt;/li&gt;
-      &lt;li&gt;面向对象核心思想：抽象、多态、封装、继承。本科知识、乏善可陈。需要注意实现与继承的连线画法上的区别，因为正文部分会有大量的箭头，现在不清楚后面读起来也容易搞混，耽误不必要的时间；&lt;/li&gt;
-      &lt;li&gt;对象之间的关系：对象之间的关系，即关联、依赖、组合、聚合。需要注意它们连线画法上的区别。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;设计模式介绍，其中分为：&lt;/p&gt;
-
-    &lt;p&gt;什么是设计模式：介绍了设计模式的结构、分类以及发明者（GoF）;&lt;/p&gt;
-
-    &lt;p&gt;为什么要学习设计模式；&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;软件设计原则&lt;/strong&gt;，这部分比较重要，也是各个设计模式出现的初衷：&lt;strong&gt;当前软件设计面临什么问题、我们应当如何解决这些问题、以及解决这些问题应当遵循哪些原则&lt;/strong&gt;。其中分为：&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;设计原则：什么才是好的设计？作者认为应当是：&lt;/p&gt;
-
-        &lt;p&gt;封装变化：主要的原则是最小化变化所带来的影响，有方法层面的封装以及类层面的封装；&lt;/p&gt;
-
-        &lt;p&gt;面向接口编程、而非面向实现编程：接口可以理解为没有成员变量的抽象类，面向接口编程的抽象度会更高；&lt;/p&gt;
-
-        &lt;p&gt;使用组合来代替继承所带来的问题：继承可能带来维护灾难，使用组合关系能够更好地解决这个问题，举个例子，TCP 里的 Socket Base 类有一个域用来存放拥塞控制算法，即我把 Vegas 作为我的拥塞控制算法（has）；而之前则是直接基于基类往下继承，即我是 Vegas 拥塞控制算法（is）。在 NS3 的技术文档中也描述了这种实现方式：&lt;/p&gt;
-
-        &lt;blockquote&gt;
-          &lt;p&gt;Before, a congestion control was considered in the code as a stand-alone TCP. In software-engineering terms, the inheritance relation between a TCP congestion algorithm, for example TcpNewReno , and the main TCP class TcpSocketBase , logically implied that “TcpNewReno was-a TcpSocketBase ”. The change consisted in reverting this paradigm in a more sound statement: “TcpSocketBase has TcpNewReno as congestion control algorithm”, which basically translates in avoiding the inheritance relation between these classes, and writing an interface to exchange data between sockets and congestion control modules. Such modularity is already employed in real-world stacks (a famous example is the modularization of congestion control algorithms in Linux).&lt;/p&gt;
-        &lt;/blockquote&gt;
-
-        &lt;p&gt;这种设计有很多缺点，此不赘述。&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;SOLID 原则：SOLID 原则是五个不同原则的简称，它们分别是：单一责任原则（Single Responsibility Principle）、开闭原则（Open/Closed Principle）、里氏代换原则（Liskov Substitution Principle）、接口分离原则（Interface Segregation Principle）以及依赖倒置原则（Dependency Inversion Principle）。下面对这五个原则进行逐一的介绍：&lt;/p&gt;
-
-        &lt;p&gt;&lt;strong&gt;S&lt;/strong&gt;ingle Responsibility Principle：每一个类应当只负责其应当负责的部分，当软件变得逐渐庞大、责任越来越多时，就应当将责任分离以防止原类变得过于庞大；&lt;/p&gt;
-
-        &lt;p&gt;&lt;strong&gt;O&lt;/strong&gt;pen/Closed Principle：类应当对于扩展开放、对于更改封闭（高内聚、低耦合）；&lt;/p&gt;
-
-        &lt;p&gt;&lt;strong&gt;L&lt;/strong&gt;iskov Substitution Principle：这个原则比较有意思，它的出现是基于多态的考虑（当扩展一个类时，应当记住我们在任何时刻都可以传递一个子类的对象在基类的位置，所以我们应当时刻考虑我们的设计基于此所带来的影响）。这个原则也可以细分为几个子原则：相对于父类来说，子类的函数参数应当更加抽象，不能加强前置。子类的返回值、报出异常应当更加具象，不能削弱后置。子类不应该加强前置条件，尽量添加新函数，而不是重写原有函数；&lt;/p&gt;
-
-        &lt;p&gt;&lt;strong&gt;I&lt;/strong&gt;nterface Segregation Principle：把不相关的函数分离成多个接口，而不是全部放在一个接口里，这会导致实现该接口的类也要实现那些它们可能用不到的接口；&lt;/p&gt;
-
-        &lt;p&gt;&lt;strong&gt;D&lt;/strong&gt;ependency Inversion Principle：高级类（业务类）应当依赖于低级类（轮子类）的抽象，而不是直接依赖，这会导致耦合关系。&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;heading-正文部分&quot;&gt;正文部分&lt;/h3&gt;
-
-&lt;p&gt;正文部分分为三部分，分别是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;创建型设计模式：包含工厂模式、抽象工厂模式、建造者模式、原型模式、单例模式；&lt;/li&gt;
-  &lt;li&gt;结构型设计模式：包含适配器模式、桥接模式、复合模式、装饰器模式、外观模式、享元模式、代理模式；&lt;/li&gt;
-  &lt;li&gt;行为型设计模式：包含责任链模式、命令模式、迭代器模式、中介者模式、备忘录模式、观察者模式、状态模式、策略模式、模板方法模式、访问者模式。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在介绍每一个单一的设计模式时，也分为一下几部分：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;问题&lt;/li&gt;
-  &lt;li&gt;解决方案&lt;/li&gt;
-  &lt;li&gt;UML 结构&lt;/li&gt;
-  &lt;li&gt;伪代码&lt;/li&gt;
-  &lt;li&gt;应用场景&lt;/li&gt;
-  &lt;li&gt;如何实现&lt;/li&gt;
-  &lt;li&gt;优缺点&lt;/li&gt;
-  &lt;li&gt;和其他设计模式的关系&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;总的来说，从 UML 的角度，所有的设计模式可以概括为：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.lug.or.kr/files/cheat_sheet/design_pattern_cheatsheet_v1.pdf&quot;&gt;设计模式速查手册&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;heading-附录&quot;&gt;附录&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;书中的箭头&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;本书中的继承、实现、关联、依赖、组合、聚合分别使用六种箭头表示：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;继承：三角实线箭头&lt;/li&gt;
-  &lt;li&gt;实现：三角虚线箭头&lt;/li&gt;
-  &lt;li&gt;关联：普通实线箭头&lt;/li&gt;
-  &lt;li&gt;依赖：普通虚线箭头&lt;/li&gt;
-  &lt;li&gt;组合：实心菱形箭头&lt;/li&gt;
-  &lt;li&gt;聚合：虚心菱形箭头&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://tristone13th.github.io/archivers/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F&quot; target=&quot;_blank&quot;&gt;深入理解设计模式&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;对原文章内容有所修改。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="设计模式" /><summary type="html">昨天读完了《深入理解设计模式》（《Dive Into Design Patterns》）这本书，还是有颇多感触的，这本书是由 Alexander Shvets 编写，主要对 22 种设计模式做了一个直观、形象并且足够简单的介绍。这本书的结构非常清晰，主要分为前置部分（介绍设计模式的出现的缘由以及其设计所应当遵循的原则）与正文（将 22 种设计模式分为了三类，并对每一个设计模式做了充分的介绍）两部分，其中正文部分是本书的重点，下面对这本书做一个必要的总结，以期在以后查阅该书时能够快速索引。1 2 深入理解设计模式 &amp;#8617; 对原文章内容有所修改。 &amp;#8617;</summary></entry><entry><title type="html">Git 同步 fork</title><link href="https://empvalley.com/2021/09/11/syncing-a-fork/" rel="alternate" type="text/html" title="Git 同步 fork" /><published>2021-09-11T00:00:00+08:00</published><updated>2021-09-11T00:00:00+08:00</updated><id>https://empvalley.com/2021/09/11/syncing-a-fork</id><content type="html" xml:base="https://empvalley.com/2021/09/11/syncing-a-fork/">&lt;p&gt;从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;打开 Git Bash&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;切换到项目目录&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从上游仓库 fetch 分支及各分支相应的提交，提交到分支 &lt;strong&gt;BRANCHNAME&lt;/strong&gt; 的提交会存储在本地分支 &lt;strong&gt;upstream/BRANCHNAME&lt;/strong&gt; 中&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git fetch upstream
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; remote: Counting objects: 75, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;53/53&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; remote: Total 62 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 27&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 44 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Unpacking objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;62/62&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;new branch]      main     -&amp;gt; upstream/main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;切换到本地分支，示例中使用的是 &lt;strong&gt;main&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout main
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Switched to branch &lt;span class=&quot;s1&quot;&gt;'main'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;合并上游分支改变到本地分支，而不会丢失本地的修改，示例中使用的是 upstream/main&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git merge upstream/main
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Updating a422352..5fdff0f
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Fast-forward
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  README                    |    9 &lt;span class=&quot;nt&quot;&gt;-------&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  README.md                 |    7 ++++++
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  2 files changed, 7 insertions&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, 9 deletions&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  delete mode 100644 README
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  create mode 100644 README.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;如果你的本地分支没有能够引起冲突的提交，Git 会使用 &quot;fast-forward&quot;：&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git merge upstream/main
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Updating 34e91da..16c56ad
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Fast-forward
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  README.md                 |    5 +++--
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;  1 file changed, 3 insertions&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, 2 deletions&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;注：同步 fork 只会更新本地仓库，更新远程代码库必须使用 push 命令。&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork&quot; target=&quot;_blank&quot;&gt;同步 fork&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Git" /><summary type="html">从上游同步 fork 必须在 Git 中配置指向上游远程仓库的地址。1 打开 Git Bash 切换到项目目录 从上游仓库 fetch 分支及各分支相应的提交，提交到分支 BRANCHNAME 的提交会存储在本地分支 upstream/BRANCHNAME 中 $ git fetch upstream &amp;gt; remote: Counting objects: 75, done. &amp;gt; remote: Compressing objects: 100% (53/53), done. &amp;gt; remote: Total 62 (delta 27), reused 44 (delta 9) &amp;gt; Unpacking objects: 100% (62/62), done. &amp;gt; From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY &amp;gt; * [new branch] main -&amp;gt; upstream/main 切换到本地分支，示例中使用的是 main $ git checkout main &amp;gt; Switched to branch 'main' 合并上游分支改变到本地分支，而不会丢失本地的修改，示例中使用的是 upstream/main $ git merge upstream/main &amp;gt; Updating a422352..5fdff0f &amp;gt; Fast-forward &amp;gt; README | 9 ------- &amp;gt; README.md | 7 ++++++ &amp;gt; 2 files changed, 7 insertions(+), 9 deletions(-) &amp;gt; delete mode 100644 README &amp;gt; create mode 100644 README.md 如果你的本地分支没有能够引起冲突的提交，Git 会使用 &quot;fast-forward&quot;： $ git merge upstream/main &amp;gt; Updating 34e91da..16c56ad &amp;gt; Fast-forward &amp;gt; README.md | 5 +++-- &amp;gt; 1 file changed, 3 insertions(+), 2 deletions(-) 注：同步 fork 只会更新本地仓库，更新远程代码库必须使用 push 命令。 同步 fork &amp;#8617;</summary></entry></feed>
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="grep" /><summary type="html">$ grep -rnw '/path/to/somewhere/' -e 'pattern' -r 或 -R 表示递归查找。 -n 展示行号。 -w 完全匹配（匹配整个单词）。 -l （小写 L）只显示文件名，而不是结果本身。 i 忽略大小写（可选）。 和标签 –exclude、–include、–exclude-dir 一起使用可以更有效的查找：1 只搜索扩展名为 .c 或 .h 的文件： $ grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 排除所有扩展名为 .o 的文件： $ grep --exclude=\*.o -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 通过 –exclude-dir 参数可以排除指定的目录。 例如，下面的命令将排除目录 dir1/、dir2/ 和所有 *.dst/ 目录。 $ grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 也可以从根目录开始查找： $ grep -Ril &quot;text-to-find-here&quot; / 这些命令能够出色的完成任务，同样能够帮你完成类似的搜索。 更多选项可以查看 man 命令手册 man grep Linux 中查找包含指定文本的所有文件 &amp;#8617;</summary></entry></feed>
