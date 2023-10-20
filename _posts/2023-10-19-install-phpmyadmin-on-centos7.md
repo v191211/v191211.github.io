@@ -17,7 +17,7 @@ tags: ["PhpMyAdmin"]
 
 Centos7 仓库只能安装较低版本的 PhpMyAdmin，Remi 仓库提供了更高版本。
 
-首先安装 LEMP 环境，安装过程参考：[Centos7 安装 LEMP]({{site}}/2023/10/19/install-lemp-stack-on)
+首先安装 LEMP 环境，安装过程参考：[Centos7 安装 LEMP]({{ site.url }}/2023/10/19/install-lemp-stack-on)
 
 安装 PHP 使用的是 Remi 仓库。[^1]
 
