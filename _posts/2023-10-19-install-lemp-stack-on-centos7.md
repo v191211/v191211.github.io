@@ -40,6 +40,12 @@ Centos7 中自带的 PHP 版本是 5.4，已经停止支持了。
 
 使用的是 Remi 仓库。
 
+同时安装了一些常用的模块
+
+```bash
+yum install php-fpm php-opcache php-cli php-gd php-curl php-mysql php-mbstring php-gettext
+```
+
 ### 配置 Nginx 支持 PHP 程序
 
 参考文章中配置的所有 .php 结尾的程序都使用 PHP 处理

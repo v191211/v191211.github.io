@@ -24,7 +24,7 @@ Centos7 仓库只能安装较低版本的 PhpMyAdmin，Remi 仓库提供了更�
 同时安装了 php-mbstring 和 php-gettext 扩展，PhpMyAdmin 需要使用 php-mbstring 扩展命令：[^2]
 
 ```bash
-php-mbstring php-gettext
+yum install php-fpm php-opcache php-cli php-gd php-curl php-mysql php-mbstring php-gettext
 ```
 
 安装 PhpMyadmin 同样使用的 Remi 仓库。[^3]
