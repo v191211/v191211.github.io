@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-10-20T14:43:36+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">5分钟在 Centos7 上配置 OpenVPN</title><link href="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/" rel="alternate" type="text/html" title="5分钟在 Centos7 上配置 OpenVPN" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server</id><content type="html" xml:base="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-10-20T15:22:56+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">5分钟在 Centos7 上配置 OpenVPN</title><link href="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/" rel="alternate" type="text/html" title="5分钟在 Centos7 上配置 OpenVPN" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server</id><content type="html" xml:base="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
@@ -13,7 +13,57 @@
       &lt;p&gt;&lt;a href=&quot;https://www.cyberciti.biz/faq/centos-7-0-set-up-openvpn-server-in-5-minutes/&quot;&gt;5分钟在 Centos7 上配置 OpenVPN&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VPN" /><summary type="html">过程 过程</summary></entry><entry><title type="html">Centos7 编译安装 Nginx</title><link href="https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7/" rel="alternate" type="text/html" title="Centos7 编译安装 Nginx" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="VPN" /><summary type="html">过程 过程</summary></entry><entry><title type="html">Linux 查找删除大文件，释放磁盘空间</title><link href="https://empvalley.com/2023/10/19/clean-disk-space-on-centos7/" rel="alternate" type="text/html" title="Linux 查找删除大文件，释放磁盘空间" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/clean-disk-space-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/clean-disk-space-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-查看磁盘占用情况&quot; id=&quot;markdown-toc-heading-查看磁盘占用情况&quot;&gt;查看磁盘占用情况&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-查找大文件&quot; id=&quot;markdown-toc-heading-查找大文件&quot;&gt;查找大文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-按文件大小删除&quot; id=&quot;markdown-toc-heading-按文件大小删除&quot;&gt;按文件大小删除&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#heading-按时间和名称删除&quot; id=&quot;markdown-toc-heading-按时间和名称删除&quot;&gt;按时间和名称删除&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;heading-查看磁盘占用情况&quot;&gt;查看磁盘占用情况&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-查找大文件&quot;&gt;查找大文件&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; / &lt;span class=&quot;nt&quot;&gt;--max-depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 | &lt;span class=&quot;nb&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-hr&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;head&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; 10
+&lt;span class=&quot;c&quot;&gt;# --max-depth=1 只展示第一个层级目录或文件&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# sort -hr, h: 以人类可阅读方式展示, r: 倒叙排列&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# head -n 10 展示10条&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-按文件大小删除&quot;&gt;按文件大小删除&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 测试&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 生成指定大小的文件&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# of=文件名&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# bs后面的单位可以是 G、M等&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# seek 偏移量，例如：2，意思就是产生的文件大小是 800M * 2&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;dd &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/zero &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;test-big1 &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;800M &lt;span class=&quot;nv&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 &lt;span class=&quot;nv&quot;&gt;seek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2
+
+&lt;span class=&quot;c&quot;&gt;# 查找指定大小范围的文件&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# . 当前目录&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# + 表示大于，- 表示小于，无符号表示等于&lt;/span&gt;
+find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-size&lt;/span&gt; +100M
+
+&lt;span class=&quot;c&quot;&gt;# 删除&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# {} \; 必须有，而且 {} 和 \; 之间必须有空格&lt;/span&gt;
+find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-size&lt;/span&gt; +500M &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;heading-按时间和名称删除&quot;&gt;按时间和名称删除&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# -mtime 参数中 0 表示修改时间在 24 小时以内， +X 表示修改时间距今天超过 X 天，-X 表示距今天少于 X 天，无符号表示等于&lt;/span&gt;
+find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-mtime&lt;/span&gt; +10 &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*.gz&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/CL_YD/article/details/79458092&quot;&gt;Linux磁盘空间100% 查找并删除大文件&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux" /><summary type="html">查看磁盘占用情况 查看磁盘占用情况1 Linux磁盘空间100% 查找并删除大文件 &amp;#8617;</summary></entry><entry><title type="html">Centos7 编译安装 Nginx</title><link href="https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7/" rel="alternate" type="text/html" title="Centos7 编译安装 Nginx" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7</id><content type="html" xml:base="https://empvalley.com/2023/10/19/compile-install-nginx-on-centos7/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-说明&quot; id=&quot;markdown-toc-heading-说明&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -499,47 +549,4 @@ file2.txt
   &lt;p&gt;-n: 显示 ip 地址，而不是域名或用户名&lt;/p&gt;
 
   &lt;p&gt;-p: 显示连接所属 PID 和程序名称&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="netstat" /><summary type="html">$ netstat -anp | grep :&amp;lt;port_number&amp;gt; -a: 监听、非监听状态的连接都显示 -n: 显示 ip 地址，而不是域名或用户名 -p: 显示连接所属 PID 和程序名称</summary></entry><entry><title type="html">使用 grep 命令查找包含指定文本的所有文件</title><link href="https://empvalley.com/2023/04/05/finding-all-files-containing-specific-text-on-linux/" rel="alternate" type="text/html" title="使用 grep 命令查找包含指定文本的所有文件" /><published>2023-04-05T00:00:00+08:00</published><updated>2023-04-05T00:00:00+08:00</updated><id>https://empvalley.com/2023/04/05/finding-all-files-containing-specific-text-on-linux</id><content type="html" xml:base="https://empvalley.com/2023/04/05/finding-all-files-containing-specific-text-on-linux/">&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pattern'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;-r&lt;/strong&gt; 或 &lt;strong&gt;-R&lt;/strong&gt; 表示递归查找。
-&lt;strong&gt;-n&lt;/strong&gt; 展示行号。
-&lt;strong&gt;-w&lt;/strong&gt; 完全匹配（匹配整个单词）。
-&lt;strong&gt;-l&lt;/strong&gt; （小写 L）只显示文件名，而不是结果本身。
-&lt;strong&gt;i&lt;/strong&gt; 忽略大小写（可选）。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;和标签 &lt;strong&gt;–exclude&lt;/strong&gt;、&lt;strong&gt;–include&lt;/strong&gt;、&lt;strong&gt;–exclude-dir&lt;/strong&gt; 一起使用可以更有效的查找：&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;只搜索扩展名为 .c 或 .h 的文件：&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;.&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;c,h&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;排除所有扩展名为 .o 的文件：&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;.o &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;通过 &lt;strong&gt;–exclude-dir&lt;/strong&gt; 参数可以排除指定的目录。
-例如，下面的命令将排除目录 dir1/、dir2/ 和所有 *.dst/ 目录。&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--exclude-dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;={&lt;/span&gt;dir1,dir2,&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.dst&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rnw&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/path/to/somewhere/'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pattern&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;也可以从根目录开始查找：&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Ril&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;text-to-find-here&quot;&lt;/span&gt; /
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这些命令能够出色的完成任务，同样能够帮你完成类似的搜索。
-更多选项可以查看 man 命令手册 &lt;strong&gt;man grep&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/16956844/4612522&quot; target=&quot;_blank&quot;&gt;Linux 中查找包含指定文本的所有文件&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="grep" /><summary type="html">$ grep -rnw '/path/to/somewhere/' -e 'pattern' -r 或 -R 表示递归查找。 -n 展示行号。 -w 完全匹配（匹配整个单词）。 -l （小写 L）只显示文件名，而不是结果本身。 i 忽略大小写（可选）。 和标签 –exclude、–include、–exclude-dir 一起使用可以更有效的查找：1 只搜索扩展名为 .c 或 .h 的文件： $ grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 排除所有扩展名为 .o 的文件： $ grep --exclude=\*.o -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 通过 –exclude-dir 参数可以排除指定的目录。 例如，下面的命令将排除目录 dir1/、dir2/ 和所有 *.dst/ 目录。 $ grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e &quot;pattern&quot; 也可以从根目录开始查找： $ grep -Ril &quot;text-to-find-here&quot; / 这些命令能够出色的完成任务，同样能够帮你完成类似的搜索。 更多选项可以查看 man 命令手册 man grep Linux 中查找包含指定文本的所有文件 &amp;#8617;</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>晨霜</name></author><category term="技术" /><category term="Linux 命令" /><category term="netstat" /><summary type="html">$ netstat -anp | grep :&amp;lt;port_number&amp;gt; -a: 监听、非监听状态的连接都显示 -n: 显示 ip 地址，而不是域名或用户名 -p: 显示连接所属 PID 和程序名称</summary></entry></feed>

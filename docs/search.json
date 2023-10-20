@@ -43,6 +43,13 @@
     } ,
   
     {
+      "title"      : "Linux 查找删除大文件，释放磁盘空间",
+      "url"        : "/2023/10/19/clean-disk-space-on-centos7/",
+      "date"       : "2023-10-19 00:00:00 +0800",
+      "shortdate"  : "October 19, 2023"
+    } ,
+  
+    {
       "title"      : "5分钟在 Centos7 上配置 OpenVPN",
       "url"        : "/2023/10/19/centos7-set-up-openvpn-server/",
       "date"       : "2023-10-19 00:00:00 +0800",
