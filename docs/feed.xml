@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-10-20T15:22:56+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">5分钟在 Centos7 上配置 OpenVPN</title><link href="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/" rel="alternate" type="text/html" title="5分钟在 Centos7 上配置 OpenVPN" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server</id><content type="html" xml:base="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://empvalley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://empvalley.com/" rel="alternate" type="text/html" hreflang="zh" /><updated>2023-10-20T16:00:57+08:00</updated><id>https://empvalley.com/feed.xml</id><title type="html">晨霜’s Blog</title><subtitle>晨霜的个人 blog，软件开发，深圳。</subtitle><author><name>晨霜</name></author><entry><title type="html">5分钟在 Centos7 上配置 OpenVPN</title><link href="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/" rel="alternate" type="text/html" title="5分钟在 Centos7 上配置 OpenVPN" /><published>2023-10-19T00:00:00+08:00</published><updated>2023-10-19T00:00:00+08:00</updated><id>https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server</id><content type="html" xml:base="https://empvalley.com/2023/10/19/centos7-set-up-openvpn-server/">&lt;ul class=&quot;toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#heading-过程&quot; id=&quot;markdown-toc-heading-过程&quot;&gt;过程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;heading-过程&quot;&gt;过程&lt;/h2&gt;
@@ -137,6 +137,11 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;使用的是 Remi 仓库。&lt;/p&gt;
 
+&lt;p&gt;同时安装了一些常用的模块&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;php-fpm php-opcache php-cli php-gd php-curl php-mysql php-mbstring php-gettext
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;h3 id=&quot;heading-配置-nginx-支持-php-程序&quot;&gt;配置 Nginx 支持 PHP 程序&lt;/h3&gt;
 
 &lt;p&gt;参考文章中配置的所有 .php 结尾的程序都使用 PHP 处理&lt;/p&gt;
@@ -246,7 +251,7 @@ find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quo
 
 &lt;p&gt;同时安装了 php-mbstring 和 php-gettext 扩展，PhpMyAdmin 需要使用 php-mbstring 扩展命令：&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php-mbstring php-gettext
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;php-fpm php-opcache php-cli php-gd php-curl php-mysql php-mbstring php-gettext
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;安装 PhpMyadmin 同样使用的 Remi 仓库。&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
